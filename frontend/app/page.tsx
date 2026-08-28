@@ -64,7 +64,7 @@ export default function TimetableViewer() {
 
   // Filter Logic
   // Allowed Schools according to requirements
-  const ALLOWED_SCHOOLS = ['School of Management', 'School of Engineering'];
+  const ALLOWED_SCHOOLS = ['School of Computing', 'School of Management', 'School of Engineering'];
 
   const availableSchools = useMemo(() => {
     return ALLOWED_SCHOOLS;

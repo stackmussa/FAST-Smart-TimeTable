@@ -111,130 +111,172 @@ def extract_time_slots(sheet: openpyxl.worksheet.worksheet.Worksheet, start_col:
             break # Found the header row
     return time_slots
 
+# ── FSC (School of Computing) constants ────────────────────────────────────────
+FSC_SPREADSHEET_ID = "1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q"
+
+FSC_DAY_GIDS = {
+    "Monday":    "1882612924",
+    "Tuesday":   "945396749",
+    "Wednesday": "542677125",
+    "Thursday":  "571927841",
+    "Friday":    "1783333514",
+    "Saturday":  "1949393871",
+}
+
+FSC_DEPT_MAP = {
+    "CS": "CS", "DS": "DS", "AI": "AI",
+    "CY": "CY", "SE": "SE",
+}
+
+# Section letter -> batch year mapping.
+# FAST admits 4 batches simultaneously. Sections cycle A-D (2026), E-H (2025),
+# I-L (2024), M-P (2023). Sub-lab sections like "A1", "A2" inherit same batch.
+def _fsc_batch_from_section(section_code: str) -> str:
+    """Infer batch year from section letter (e.g. CS-A -> 2026, CS-E -> 2025)."""
+    # Extract the letter part after the dash
+    parts = section_code.split("-")
+    if len(parts) < 2:
+        return "Unknown"
+    letter_part = parts[1]  # e.g. "A", "E", "I", "A1", "E2"
+    letter = letter_part[0].upper()  # take first char
+    idx = ord(letter) - ord('A')  # A=0, B=1, ...
+    batch_offset = idx // 4  # 0-3->2026, 4-7->2025, 8-11->2024, 12-15->2023
+    batch_year = 2026 - batch_offset
+    return str(batch_year)
+
 def parse_fsc() -> List[Dict[str, Any]]:
-    """Parser for School of Computing using Playwright and BeautifulSoup"""
+    """Parser for School of Computing — fetches each day's HTML frame by GID."""
     entries = []
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
-            page = browser.new_page()
-            logging.info(f"Navigating to {URLS['FSC']}")
-            page.goto(URLS["FSC"], wait_until="networkidle")
-            
-            page.wait_for_selector("iframe")
-            
-            # Extract content from the inner spreadsheet frame
-            frame = page.frame(name="pageswitcher-content")
-            if not frame and len(page.frames) > 1:
-                frame = page.frames[1]
-                
-            if frame:
-                html_content = frame.content()
-            else:
-                html_content = page.content()
-                
-            with open("fsc_downloaded.html", "w", encoding="utf-8") as f:
-                f.write(html_content)
-            browser.close()
-            
-        soup = BeautifulSoup(html_content, "html.parser")
-        tables = soup.find_all("table")
-        
-        for table in tables:
-            current_day = "Monday"
-            time_slots = []
-            
-            rows = table.find_all("tr")
-            for row in rows:
-                # Exclude <th> to prevent row numbers from shifting the index
-                cells = row.find_all("td")
-                if not cells:
+
+            for day_name, gid in FSC_DAY_GIDS.items():
+                frame_url = (
+                    f"https://docs.google.com/spreadsheets/d/{FSC_SPREADSHEET_ID}"
+                    f"/htmlview/sheet?headers=true&gid={gid}"
+                )
+                logging.info(f"Fetching FSC {day_name} (gid={gid})")
+
+                try:
+                    page = browser.new_page()
+                    page.goto(frame_url, wait_until="networkidle", timeout=60000)
+                    page.wait_for_timeout(1500)
+                    html_content = page.content()
+                    page.close()
+                except Exception as e:
+                    logging.warning(f"Failed to load FSC {day_name}: {e}")
                     continue
-                    
-                # 1. Update the current day if found anywhere in the row
-                for cell in cells:
-                    text_lower = clean_text(cell.get_text()).lower()
-                    if text_lower in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
-                        current_day = text_lower.capitalize()
+
+                soup = BeautifulSoup(html_content, "html.parser")
+                table = soup.find("table")
+                if not table:
+                    logging.warning(f"No table for FSC {day_name}")
+                    continue
+
+                all_rows = table.find_all("tr")
+
+                # Step 1: find time-slot header row
+                time_col_map: Dict[int, str] = {}
+                header_row_idx = None
+                for ridx, row in enumerate(all_rows):
+                    cells = row.find_all(["td", "th"])
+                    texts = [clean_text(c.get_text()) for c in cells]
+                    flat = " ".join(texts).lower()
+                    if "room" in flat and "time" in flat:
+                        for cidx, txt in enumerate(texts):
+                            if re.match(r"\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}", txt):
+                                time_col_map[cidx] = txt
+                        header_row_idx = ridx
                         break
-                        
-                # 2. Identify the Room and calculate dynamic rowspan shift
-                first_cell = clean_text(cells[0].get_text())
-                shift = 1 if first_cell.capitalize() == current_day else 0
-                
-                if len(cells) <= shift:
+
+                if not time_col_map or header_row_idx is None:
+                    logging.warning(f"Could not find time header for FSC {day_name}")
                     continue
-                    
-                room = clean_text(cells[shift].get_text())
-                
-                # 3. Build time_slots map from the header row
-                if not time_slots:
-                    if "room" in room.lower() or "time" in room.lower():
-                        for col_idx, cell in enumerate(cells):
-                            val = clean_text(cell.get_text())
-                            if val and "-" in val and any(char.isdigit() for char in val):
-                                time_slots.append((col_idx, val))
-                    continue
-                    
-                if not room or len(room) > 15 or room.lower() == "room/ time":
-                    continue
-                    
-                # 4. Extract class data utilizing the dynamic shift
-                for col_idx, time_val in time_slots:
-                    target_idx = col_idx + shift
-                    if target_idx < len(cells):
-                        cell = cells[target_idx]
+
+                # Step 2: iterate data rows
+                day_count = 0
+                for row in all_rows[header_row_idx + 1:]:
+                    cells = row.find_all(["td", "th"])
+                    if not cells or len(cells) < 2:
+                        continue
+
+                    texts = [clean_text(c.get_text()) for c in cells]
+                    room = texts[1] if len(texts) > 1 else ""
+
+                    if not room or len(room) > 20:
+                        continue
+                    if any(kw in room.lower() for kw in [
+                        "room", "time", "monday", "tuesday", "wednesday",
+                        "thursday", "friday", "saturday", "sunday", "bs ", "ms ", "phd"
+                    ]):
+                        continue
+
+                    # Step 3: each time-slot column
+                    for col_idx, time_val in time_col_map.items():
+                        if col_idx >= len(cells):
+                            continue
+
+                        cell = cells[col_idx]
                         val = clean_text(cell.get_text())
                         if not val:
                             continue
-                            
-                        style = cell.get("style", "")
-                        color_match = re.search(r'background-color:\s*([^;]+)', style)
-                        color_hex = color_match.group(1).strip().upper() if color_match else "Unknown"
-                        
-                        color_info = {"department": "Unknown", "degree": "BS", "batch": "Unknown", "semester": "Unknown"}
-                        for key in COLOR_LEGEND:
-                            if key in color_hex or color_hex.replace("#", "") in key:
-                                color_info = COLOR_LEGEND[key]
-                                break
-                                
-                        course_match = re.match(r"(.*?)\s*\((.*?)\)", val)
-                        if course_match:
-                            course_name = course_match.group(1).strip()
-                            section = course_match.group(2).strip()
-                            
-                            if any(m in section for m in ["PCS", "MS", "PhD"]):
-                                continue
-                                
-                            t_parts = time_val.split("-")
-                            t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
-                            t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
-                            
-                            is_lab = "lab" in course_name.lower() or "lab" in room.lower()
-                            dept, degree, batch = color_info["department"], color_info["degree"], color_info["batch"]
-                            
-                            summary = generate_rag_summary("School of Computing", dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab)
-                            entry_id = f"FSC-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
-                            
-                            entries.append({
-                                "id": entry_id,
-                                "school": "School of Computing",
-                                "department": dept,
-                                "degree": degree,
-                                "batch": batch,
-                                "semester": color_info["semester"],
-                                "course_name": course_name,
-                                "section": section,
-                                "instructor": None,
-                                "room": room,
-                                "day": current_day,
-                                "time_start": t_start,
-                                "time_end": t_end,
-                                "is_lab": is_lab,
-                                "rag_summary": summary
-                            })
+
+                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)"
+                        course_match = re.match(r"^(.+?)\s*\(([A-Z]{2,3}-[A-Z0-9]+)\)", val)
+                        if not course_match:
+                            continue
+
+                        course_name = course_match.group(1).strip()
+                        section_code = course_match.group(2).strip()
+
+                        # Skip postgraduate
+                        if any(pg in val for pg in ["MS", "PhD", "PCS", "Repeat"]):
+                            continue
+
+                        dept_key = section_code.split("-")[0]
+                        dept = FSC_DEPT_MAP.get(dept_key, dept_key)
+                        batch = _fsc_batch_from_section(section_code)
+
+                        t_parts = time_val.split("-")
+                        t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
+                        t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
+
+                        is_lab = "lab" in course_name.lower() or "lab" in room.lower()
+                        entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
+
+                        summary = generate_rag_summary(
+                            "School of Computing", dept, "BS", batch,
+                            section_code, course_name, room, day_name, t_start, t_end, is_lab
+                        )
+
+                        entries.append({
+                            "id": entry_id,
+                            "school": "School of Computing",
+                            "department": dept,
+                            "degree": "BS",
+                            "batch": batch,
+                            "semester": "Unknown",
+                            "course_name": course_name,
+                            "section": section_code,
+                            "instructor": None,
+                            "room": room,
+                            "day": day_name,
+                            "time_start": t_start,
+                            "time_end": t_end,
+                            "is_lab": is_lab,
+                            "rag_summary": summary,
+                        })
+                        day_count += 1
+
+                logging.info(f"  FSC {day_name}: {day_count} entries")
+
+            browser.close()
+
     except Exception as e:
-        logging.error(f"Error parsing FSC: {e}")
+        logging.error(f"Error parsing FSC: {e}", exc_info=True)
+
+    logging.info(f"FSC total: {len(entries)} entries.")
     return entries
 
 def parse_fsm() -> List[Dict[str, Any]]:
