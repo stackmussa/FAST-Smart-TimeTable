@@ -61,6 +61,35 @@ FSE_COLOR_LEGEND = {
     "FFF4B084": {"department": "CE", "degree": "BS", "batch": "2024"}
 }
 
+# School of Computing Color Legend (Batch mapping only)
+FSC_COLOR_LEGEND = {
+    # BS CS
+    "FFB740": "2026",
+    "6D5200": "2025",
+    "C39401": "2024",
+    "FFE599": "2023",
+    # BS DS
+    "7F4CFF": "2026",
+    "351C75": "2025",
+    "B17FD7": "2024",
+    "B4A7D6": "2023",
+    # BS AI
+    "00F600": "2026",
+    "274E13": "2025",
+    "6AA84F": "2024",
+    "B6D7A8": "2023",
+    # BS CY
+    "0000FF": "2026",
+    "073763": "2025",
+    "599DDA": "2024",
+    "ABCCEB": "2023",
+    # BS SE
+    "E62C06": "2026",
+    "85200C": "2025",
+    "DD7E6B": "2024",
+    "F4CCCC": "2023"
+}
+
 def clean_text(text: Any) -> str:
     if not text:
         return ""
@@ -128,22 +157,6 @@ FSC_DEPT_MAP = {
     "CY": "CY", "SE": "SE",
 }
 
-# Section letter -> batch year mapping.
-# FAST admits 4 batches simultaneously. Sections cycle A-D (2026), E-H (2025),
-# I-L (2024), M-P (2023). Sub-lab sections like "A1", "A2" inherit same batch.
-def _fsc_batch_from_section(section_code: str) -> str:
-    """Infer batch year from section letter (e.g. CS-A -> 2026, CS-E -> 2025)."""
-    # Extract the letter part after the dash
-    parts = section_code.split("-")
-    if len(parts) < 2:
-        return "Unknown"
-    letter_part = parts[1]  # e.g. "A", "E", "I", "A1", "E2"
-    letter = letter_part[0].upper()  # take first char
-    idx = ord(letter) - ord('A')  # A=0, B=1, ...
-    batch_offset = idx // 4  # 0-3->2026, 4-7->2025, 8-11->2024, 12-15->2023
-    batch_year = 2026 - batch_offset
-    return str(batch_year)
-
 def parse_fsc() -> List[Dict[str, Any]]:
     """Parser for School of Computing — fetches each day's HTML frame by GID."""
     entries = []
@@ -167,6 +180,11 @@ def parse_fsc() -> List[Dict[str, Any]]:
                 except Exception as e:
                     logging.warning(f"Failed to load FSC {day_name}: {e}")
                     continue
+
+                # Extract class to color mapping from style tags
+                class_to_color = {}
+                for match in re.finditer(r'\.(s\d+)\s*\{[^\}]*background-color:\s*(#[0-9a-fA-F]{6})', html_content):
+                    class_to_color[match.group(1)] = match.group(2).upper().replace("#", "")
 
                 soup = BeautifulSoup(html_content, "html.parser")
                 table = soup.find("table")
@@ -236,7 +254,15 @@ def parse_fsc() -> List[Dict[str, Any]]:
 
                         dept_key = section_code.split("-")[0]
                         dept = FSC_DEPT_MAP.get(dept_key, dept_key)
-                        batch = _fsc_batch_from_section(section_code)
+                        
+                        td_classes = cell.get("class", [])
+                        cell_color = None
+                        for c in td_classes:
+                            if c in class_to_color:
+                                cell_color = class_to_color[c]
+                                break
+                        
+                        batch = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
 
                         t_parts = time_val.split("-")
                         t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
@@ -483,7 +509,9 @@ def main():
     logging.info("Parsing FSE (School of Engineering)...")
     all_entries.extend(parse_fse())
     
-    output_file = "timetable.json"
+    import os
+    output_file = "frontend/public/timetable.json"
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     logging.info(f"Writing {len(all_entries)} entries to {output_file}...")
     
     with open(output_file, 'w', encoding='utf-8') as f:

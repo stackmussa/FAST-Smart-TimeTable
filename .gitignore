@@ -27,7 +27,7 @@ fsc_monday.html
 *.html
 
 # Generated Data files (only track the one inside frontend/public)
-timetable.json
+/timetable.json
 DataSet/
 
 # Temporary debug / test scripts

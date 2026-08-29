@@ -21,7 +21,7 @@ export default function TimetableViewer() {
   const [loading, setLoading] = useState<boolean>(true);
 
   // Form states
-  const [selectedSchool, setSelectedSchool] = useState<string>('School of Management');
+  const [selectedSchool, setSelectedSchool] = useState<string>('School of Computing');
   const [selectedDepartment, setSelectedDepartment] = useState<string>('');
   const [selectedBatch, setSelectedBatch] = useState<string>('');
   const [selectedSection, setSelectedSection] = useState<string>('');
@@ -39,7 +39,7 @@ export default function TimetableViewer() {
 
   useEffect(() => {
     // 1. Fetch Data
-    fetch('/timetable.json')
+    fetch(`/timetable.json?t=${new Date().getTime()}`)
       .then((res) => res.json())
       .then((json: ClassEntry[]) => {
         setData(json);
@@ -93,7 +93,8 @@ export default function TimetableViewer() {
         batches.add(entry.batch);
       }
     });
-    return Array.from(batches).sort();
+    // Sort descending (2026, 2025, 2024, 2023)
+    return Array.from(batches).sort((a, b) => b.localeCompare(a));
   }, [data, selectedSchool, selectedDepartment]);
 
   const availableSections = useMemo(() => {
@@ -106,7 +107,9 @@ export default function TimetableViewer() {
         entry.batch === selectedBatch &&
         entry.section && entry.section !== 'Unknown'
       ) {
-        secs.add(entry.section);
+        // Strip trailing numbers (e.g. "AI-B1" -> "AI-B") to group lab sections
+        const baseSection = entry.section.replace(/\d+$/, '');
+        secs.add(baseSection);
       }
     });
     return Array.from(secs).sort();
@@ -143,13 +146,18 @@ export default function TimetableViewer() {
     if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) return [];
     
     return data
-      .filter((entry) => 
-        entry.school === selectedSchool &&
-        entry.department === selectedDepartment &&
-        entry.batch === selectedBatch &&
-        entry.section === selectedSection &&
-        entry.day === selectedDay
-      )
+      .filter((entry) => {
+        // Handle lab splits (e.g. AI-B1 and AI-B2 should both match AI-B)
+        const baseSection = entry.section ? entry.section.replace(/\d+$/, '') : '';
+        
+        return (
+          entry.school === selectedSchool &&
+          entry.department === selectedDepartment &&
+          entry.batch === selectedBatch &&
+          baseSection === selectedSection &&
+          entry.day === selectedDay
+        );
+      })
       .sort((a, b) => {
         // Sort chronologically by time_start e.g. "08:30"
         return a.time_start.localeCompare(b.time_start);
@@ -294,7 +302,10 @@ export default function TimetableViewer() {
                   isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'
                 }`}>
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className={`text-lg font-bold leading-tight flex-1 pr-3 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{cls.course_name}</h3>
+                    <div>
+                      <h3 className={`text-lg font-bold leading-tight pr-3 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{cls.course_name}</h3>
+                      <span className={`text-xs mt-1 block ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Section: {cls.section}</span>
+                    </div>
                     <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ${
                       isDarkMode ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-800'
                     }`}>
