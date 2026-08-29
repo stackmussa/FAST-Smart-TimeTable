@@ -54,7 +54,7 @@ export default function TimetableViewer() {
     // 2. Determine PKT Day
     const options: Intl.DateTimeFormatOptions = { weekday: 'long', timeZone: 'Asia/Karachi' };
     const pktDay = new Intl.DateTimeFormat('en-US', options).format(new Date());
-    
+
     // If Sunday, default to Monday
     if (pktDay === 'Sunday') {
       setSelectedDay('Monday');
@@ -146,12 +146,12 @@ export default function TimetableViewer() {
 
   const filteredClasses = useMemo(() => {
     if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) return [];
-    
+
     return data
       .filter((entry) => {
         // Handle lab splits (e.g. AI-B1 and AI-B2 should both match AI-B)
         const baseSection = entry.section ? entry.section.replace(/\d+$/, '') : '';
-        
+
         return (
           entry.school === selectedSchool &&
           entry.department === selectedDepartment &&
@@ -179,12 +179,11 @@ export default function TimetableViewer() {
       {/* Header */}
       <header className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} shadow-sm border-b`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>University Timetable Viewer</h1>
-          <button 
+          <h1 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>FAST-NUCES Islamabad Timetable</h1>
+          <button
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-              isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-            }`}
+            className={`px-4 py-2 rounded-lg font-medium transition-colors ${isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+              }`}
           >
             {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
           </button>
@@ -194,13 +193,12 @@ export default function TimetableViewer() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Filters */}
         <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} p-6 rounded-xl shadow-sm border mb-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4`}>
-          
+
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>School</label>
-            <select 
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none ${
-                isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'
-              }`}
+            <select
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'
+                }`}
               value={selectedSchool}
               onChange={(e) => setSelectedSchool(e.target.value)}
             >
@@ -212,10 +210,9 @@ export default function TimetableViewer() {
 
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Department</label>
-            <select 
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 ${
-                isDarkMode ? 'bg-gray-700 border-gray-600 text-white disabled:bg-gray-800' : 'bg-white border-gray-300 text-gray-900 disabled:bg-gray-100'
-              }`}
+            <select
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white disabled:bg-gray-800' : 'bg-white border-gray-300 text-gray-900 disabled:bg-gray-100'
+                }`}
               value={selectedDepartment}
               onChange={(e) => setSelectedDepartment(e.target.value)}
               disabled={!availableDepartments.length}
@@ -232,10 +229,9 @@ export default function TimetableViewer() {
 
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Batch</label>
-            <select 
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 ${
-                isDarkMode ? 'bg-gray-700 border-gray-600 text-white disabled:bg-gray-800' : 'bg-white border-gray-300 text-gray-900 disabled:bg-gray-100'
-              }`}
+            <select
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white disabled:bg-gray-800' : 'bg-white border-gray-300 text-gray-900 disabled:bg-gray-100'
+                }`}
               value={selectedBatch}
               onChange={(e) => setSelectedBatch(e.target.value)}
               disabled={!availableBatches.length}
@@ -252,10 +248,9 @@ export default function TimetableViewer() {
 
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Section</label>
-            <select 
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 ${
-                isDarkMode ? 'bg-gray-700 border-gray-600 text-white disabled:bg-gray-800' : 'bg-white border-gray-300 text-gray-900 disabled:bg-gray-100'
-              }`}
+            <select
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white disabled:bg-gray-800' : 'bg-white border-gray-300 text-gray-900 disabled:bg-gray-100'
+                }`}
               value={selectedSection}
               onChange={(e) => setSelectedSection(e.target.value)}
               disabled={!availableSections.length}
@@ -270,10 +265,9 @@ export default function TimetableViewer() {
 
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Day</label>
-            <select 
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none ${
-                isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'
-              }`}
+            <select
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'
+                }`}
               value={selectedDay}
               onChange={(e) => setSelectedDay(e.target.value)}
             >
@@ -300,9 +294,8 @@ export default function TimetableViewer() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredClasses.map((cls, idx) => (
-                <div key={cls.id || idx} className={`p-6 rounded-xl shadow-sm border transition-all hover:shadow-md ${
-                  isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'
-                }`}>
+                <div key={cls.id || idx} className={`p-6 rounded-xl shadow-sm border transition-all hover:shadow-md ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'
+                  }`}>
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <div className="flex items-center gap-2">
@@ -315,9 +308,8 @@ export default function TimetableViewer() {
                       </div>
                       <span className={`text-xs mt-1 block ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Section: {cls.section}</span>
                     </div>
-                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ${
-                      isDarkMode ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-800'
-                    }`}>
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ${isDarkMode ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-800'
+                      }`}>
                       {cls.time_start && (
                         (() => {
                           const [sh, sm] = cls.time_start.split(':').map(Number);
@@ -335,7 +327,7 @@ export default function TimetableViewer() {
                       )}
                     </span>
                   </div>
-                  
+
                   <div className="space-y-2 mt-4">
                     <div className="flex items-center text-sm">
                       <svg className={`w-4 h-4 mr-2 ${isDarkMode ? 'text-gray-400' : 'text-gray-400'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -359,7 +351,7 @@ export default function TimetableViewer() {
 
       {/* Reserved for future Faculty RAG Chatbot integration */}
       <div className="fixed bottom-6 right-6 z-50">
-        <button 
+        <button
           className="bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           aria-label="Chatbot"
         >
