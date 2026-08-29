@@ -14,6 +14,7 @@ type ClassEntry = {
   room: string;
   instructor: string | null;
   batch: string;
+  is_rescheduled?: boolean;
 };
 
 export default function TimetableViewer() {
@@ -75,6 +76,7 @@ export default function TimetableViewer() {
     const depts = new Set<string>();
     data.forEach((entry) => {
       if (entry.school === selectedSchool && entry.department && entry.department !== 'Unknown') {
+        if (selectedSchool === 'School of Computing' && entry.department.toUpperCase() === 'PHD') return;
         depts.add(entry.department);
       }
     });
@@ -303,7 +305,14 @@ export default function TimetableViewer() {
                 }`}>
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className={`text-lg font-bold leading-tight pr-3 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{cls.course_name}</h3>
+                      <div className="flex items-center gap-2">
+                        <h3 className={`text-lg font-bold leading-tight ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{cls.course_name}</h3>
+                        {cls.is_rescheduled && (
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/20 text-red-500 border border-red-500/30 uppercase tracking-wider">
+                            Rescheduled
+                          </span>
+                        )}
+                      </div>
                       <span className={`text-xs mt-1 block ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Section: {cls.section}</span>
                     </div>
                     <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ${
