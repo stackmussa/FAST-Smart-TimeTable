@@ -195,17 +195,27 @@ def parse_fsc() -> List[Dict[str, Any]]:
 
                 all_rows = table.find_all("tr")
 
+                def extract_row_cells(r):
+                    cells = r.find_all(["td", "th"])
+                    grid = {}
+                    vcol = 0
+                    for c in cells:
+                        colspan = int(c.get('colspan', 1))
+                        grid[vcol] = (clean_text(c.get_text()), c, colspan)
+                        vcol += colspan
+                    return grid
+
                 # Step 1: find time-slot header row
                 time_col_map: Dict[int, str] = {}
                 header_row_idx = None
                 for ridx, row in enumerate(all_rows):
-                    cells = row.find_all(["td", "th"])
-                    texts = [clean_text(c.get_text()) for c in cells]
+                    grid = extract_row_cells(row)
+                    texts = [v[0] for v in grid.values()]
                     flat = " ".join(texts).lower()
                     if "room" in flat and "time" in flat:
-                        for cidx, txt in enumerate(texts):
+                        for vcol, (txt, _, _) in grid.items():
                             if re.match(r"\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}", txt):
-                                time_col_map[cidx] = txt
+                                time_col_map[vcol] = txt
                         header_row_idx = ridx
                         break
 
@@ -216,12 +226,10 @@ def parse_fsc() -> List[Dict[str, Any]]:
                 # Step 2: iterate data rows
                 day_count = 0
                 for row in all_rows[header_row_idx + 1:]:
-                    cells = row.find_all(["td", "th"])
-                    if not cells or len(cells) < 2:
-                        continue
-
-                    texts = [clean_text(c.get_text()) for c in cells]
-                    room = texts[1] if len(texts) > 1 else ""
+                    grid = extract_row_cells(row)
+                    room = ""
+                    if 1 in grid and grid[1][0]:
+                        room = grid[1][0]
 
                     if not room or len(room) > 20:
                         continue
@@ -232,12 +240,11 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         continue
 
                     # Step 3: each time-slot column
-                    for col_idx, time_val in time_col_map.items():
-                        if col_idx >= len(cells):
+                    for vcol, time_val in time_col_map.items():
+                        if vcol not in grid:
                             continue
 
-                        cell = cells[col_idx]
-                        val = clean_text(cell.get_text())
+                        val, cell, colspan = grid[vcol]
                         if not val:
                             continue
 
@@ -269,9 +276,14 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         
                         batch = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
 
+                        # calculate exact time range based on colspan
                         t_parts = time_val.split("-")
                         t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
-                        t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
+                        
+                        end_vcol = max((k for k in time_col_map.keys() if k < vcol + colspan), default=vcol)
+                        end_time_val = time_col_map[end_vcol]
+                        end_t_parts = end_time_val.split("-")
+                        t_end = normalize_time(end_t_parts[1].strip()) if len(end_t_parts) > 1 else ""
 
                         is_lab = "lab" in course_name.lower() or "lab" in room.lower()
                         entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"

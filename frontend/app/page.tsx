@@ -185,7 +185,7 @@ export default function TimetableViewer() {
             className={`px-4 py-2 rounded-lg font-medium transition-colors ${isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
               }`}
           >
-            {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+            {isDarkMode ? 'Light Mode' : 'Dark Mode'}
           </button>
         </div>
       </header>
@@ -328,18 +328,12 @@ export default function TimetableViewer() {
                     </span>
                   </div>
 
-                  <div className="space-y-2 mt-4">
-                    <div className="flex items-center text-sm">
-                      <svg className={`w-4 h-4 mr-2 ${isDarkMode ? 'text-gray-400' : 'text-gray-400'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                    <div className="flex items-center">
+                      <svg className={`w-5 h-5 mr-2.5 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                       </svg>
-                      <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Room: {cls.room}</span>
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <svg className={`w-4 h-4 mr-2 ${isDarkMode ? 'text-gray-400' : 'text-gray-400'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                      <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Instructor: {cls.instructor || 'TBA'}</span>
+                      <span className={`text-base font-medium tracking-wide ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>{cls.room}</span>
                     </div>
                   </div>
                 </div>
