@@ -237,25 +237,31 @@ def parse_fsc() -> List[Dict[str, Any]]:
                     if 1 in grid and grid[1][0]:
                         room = grid[1][0]
 
-                    if not room or len(room) > 20:
+                    if not room or len(room) > 25:
                         continue
-                    if any(kw in room.lower() for kw in [
+                    
+                    room_lower = room.lower()
+                    if any(kw in room_lower for kw in ["bs ", "ms ", "phd"]):
+                        room = "Unknown"
+                    elif any(kw in room_lower for kw in [
                         "room", "time", "monday", "tuesday", "wednesday",
-                        "thursday", "friday", "saturday", "sunday", "bs ", "ms ", "phd"
+                        "thursday", "friday", "saturday", "sunday"
                     ]):
                         continue
 
-                    # Step 3: each time-slot column
-                    for vcol, time_val in time_col_map.items():
-                        if vcol not in grid:
+                    # Step 3: each cell in the row
+                    for vcol, (val, cell, colspan) in grid.items():
+                        if not val or vcol == 0 or vcol == 1: # skip empty or row header cells
                             continue
-
-                        val, cell, colspan = grid[vcol]
-                        if not val:
+                            
+                        # Find closest time header
+                        start_vcol = max((k for k in time_col_map.keys() if k <= vcol), default=None)
+                        if start_vcol is None:
                             continue
+                        time_val = time_col_map[start_vcol]
 
-                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)"
-                        course_match = re.match(r"^(.+?)\s*\(([A-Z]{2,3}-[A-Z0-9]+)(?:,\s*(\d+))?\)", val)
+                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)" or "Seerah (C5-B)"
+                        course_match = re.match(r"^(.+?)\s*\(([A-Z0-9]{2,3}-[A-Z0-9]+)(?:,\s*(\d+))?\)", val)
                         if not course_match:
                             continue
 
@@ -311,6 +317,28 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             t_end = normalize_time(explicit_time_match.group(2).strip())
                             # Remove the explicit time from the course name
                             course_name = re.sub(r"\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}", "", course_name).strip()
+                        else:
+                            # Fallback to predefined special course durations if no explicit time is found
+                            special_durations = {
+                                "seerah": 55,
+                                "uhq-i&ii": 110,
+                                "uhq-i & ii": 110,
+                                "ideology": 105,
+                                "islamic": 105,
+                                "func eng": 105,
+                                "uhq-ii": 55,
+                                "arts & humanities": 105
+                            }
+                            c_lower = course_name.lower()
+                            duration = next((v for k, v in special_durations.items() if k in c_lower), None)
+                            if duration and t_start:
+                                try:
+                                    from datetime import datetime, timedelta
+                                    dt = datetime.strptime(t_start, "%H:%M")
+                                    dt += timedelta(minutes=duration)
+                                    t_end = dt.strftime("%H:%M")
+                                except:
+                                    pass
 
                         is_lab = "lab" in course_name.lower() or "lab" in room.lower()
                         entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
