@@ -16,6 +16,7 @@ type ClassEntry = {
   batch: string;
   is_rescheduled?: boolean;
   is_repeat?: boolean;
+  is_cancelled?: boolean;
 };
 
 export default function TimetableViewer() {
@@ -301,7 +302,12 @@ export default function TimetableViewer() {
                     <div>
                       <div className="flex flex-wrap items-center gap-2">
                         <h3 className={`text-lg font-bold leading-tight ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{cls.course_name}</h3>
-                        {cls.is_rescheduled && (
+                        {cls.is_cancelled && (
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-gray-500/20 text-gray-600 dark:text-gray-400 border border-gray-500/30 uppercase tracking-wider">
+                            Cancelled
+                          </span>
+                        )}
+                        {cls.is_rescheduled && !cls.is_cancelled && (
                           <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/20 text-red-500 border border-red-500/30 uppercase tracking-wider">
                             Rescheduled
                           </span>

@@ -122,12 +122,17 @@ def download_workbook(url: str) -> openpyxl.Workbook:
     return openpyxl.load_workbook(filename=io.BytesIO(response.content), data_only=True)
 
 def generate_rag_summary(school: str, dept: str, degree: str, batch: str, section: str, 
-                         course: str, room: str, day: str, t_start: str, t_end: str, is_lab: bool, is_rescheduled: bool = False, is_repeat: bool = False) -> str:
+                         course: str, room: str, day: str, t_start: str, t_end: str, is_lab: bool, is_rescheduled: bool = False, is_repeat: bool = False, is_cancelled: bool = False) -> str:
     """Generates a text summary string suitable for RAG ingestion."""
     lab_text = " (Lab)" if is_lab else ""
-    resch_prefix = "[RESCHEDULED] " if is_rescheduled else ""
+    status_prefix = ""
+    if is_cancelled:
+        status_prefix = "[CANCELLED] "
+    elif is_rescheduled:
+        status_prefix = "[RESCHEDULED] "
+        
     repeat_tag = " [REPEAT COURSE]" if is_repeat else ""
-    return f"{resch_prefix}{degree} {dept} (Batch {batch}, Section {section}) has {course}{lab_text}{repeat_tag} in Room {room} on {day} from {t_start} to {t_end}."
+    return f"{status_prefix}{degree} {dept} (Batch {batch}, Section {section}) has {course}{lab_text}{repeat_tag} in Room {room} on {day} from {t_start} to {t_end}."
 
 def extract_time_slots(sheet: openpyxl.worksheet.worksheet.Worksheet, start_col: int = 2) -> List[tuple]:
     """Extracts column mappings for time slots by examining headers in the first 10 rows."""
@@ -262,6 +267,10 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         if is_rescheduled:
                             course_name = re.sub(r'(?i)\s*[-]*\s*resch', '', course_name).strip()
 
+                        is_cancelled = "cancelled" in val.lower()
+                        if is_cancelled:
+                            course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
+
                         # Skip postgraduate
                         if any(pg in val for pg in ["MS", "PhD", "PCS", "Repeat"]):
                             continue
@@ -308,7 +317,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
 
                         summary = generate_rag_summary(
                             "School of Computing", dept, "BS", batch,
-                            section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat
+                            section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled
                         )
 
                         entries.append({
@@ -328,6 +337,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             "is_lab": is_lab,
                             "is_rescheduled": is_rescheduled,
                             "is_repeat": is_repeat,
+                            "is_cancelled": is_cancelled,
                             "rag_summary": summary,
                         })
                         day_count += 1
@@ -392,6 +402,10 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 if is_rescheduled:
                     course_name = re.sub(r'(?i)\s*[-]*\s*resch', '', course_name).strip()
                 
+                is_cancelled = "cancelled" in val.lower()
+                if is_cancelled:
+                    course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
+                
                 t_parts = time_val.split("-")
                 t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
                 t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
@@ -413,7 +427,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 school = "School of Management"
                 is_lab = False
                 
-                summary = generate_rag_summary(school, dept_code, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled)
+                summary = generate_rag_summary(school, dept_code, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, False, is_cancelled)
                 entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                 
                 entries.append({
@@ -433,6 +447,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     "is_lab": is_lab,
                     "is_rescheduled": is_rescheduled,
                     "is_repeat": False,
+                    "is_cancelled": is_cancelled,
                     "rag_summary": summary
                 })
     except Exception as e:
@@ -511,6 +526,10 @@ def parse_fse() -> List[Dict[str, Any]]:
                     if is_rescheduled:
                         course_name = re.sub(r'(?i)\s*[-]*\s*resch', '', course_name).strip()
                         
+                    is_cancelled = "cancelled" in val.lower()
+                    if is_cancelled:
+                        course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
+                        
                     t_parts = time_val.split("-")
                     t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
                     t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
@@ -519,7 +538,7 @@ def parse_fse() -> List[Dict[str, Any]]:
                     semester = "Unknown"
                     is_lab = "lab" in course_name.lower() or "lab" in room.lower()
                     
-                    summary = generate_rag_summary(school, dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled)
+                    summary = generate_rag_summary(school, dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, False, is_cancelled)
                     entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                     
                     entries.append({
@@ -539,6 +558,7 @@ def parse_fse() -> List[Dict[str, Any]]:
                         "is_lab": is_lab,
                         "is_rescheduled": is_rescheduled,
                         "is_repeat": False,
+                        "is_cancelled": is_cancelled,
                         "rag_summary": summary
                     })
     except Exception as e:
