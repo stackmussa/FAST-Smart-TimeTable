@@ -122,11 +122,12 @@ def download_workbook(url: str) -> openpyxl.Workbook:
     return openpyxl.load_workbook(filename=io.BytesIO(response.content), data_only=True)
 
 def generate_rag_summary(school: str, dept: str, degree: str, batch: str, section: str, 
-                         course: str, room: str, day: str, t_start: str, t_end: str, is_lab: bool, is_rescheduled: bool = False) -> str:
+                         course: str, room: str, day: str, t_start: str, t_end: str, is_lab: bool, is_rescheduled: bool = False, is_repeat: bool = False) -> str:
     """Generates a text summary string suitable for RAG ingestion."""
     lab_text = " (Lab)" if is_lab else ""
-    prefix = "[RESCHEDULED] " if is_rescheduled else ""
-    return f"{prefix}{degree} {dept} (Batch {batch}, Section {section}) has {course}{lab_text} in Room {room} on {day} from {t_start} to {t_end}."
+    resch_prefix = "[RESCHEDULED] " if is_rescheduled else ""
+    repeat_tag = " [REPEAT COURSE]" if is_repeat else ""
+    return f"{resch_prefix}{degree} {dept} (Batch {batch}, Section {section}) has {course}{lab_text}{repeat_tag} in Room {room} on {day} from {t_start} to {t_end}."
 
 def extract_time_slots(sheet: openpyxl.worksheet.worksheet.Worksheet, start_col: int = 2) -> List[tuple]:
     """Extracts column mappings for time slots by examining headers in the first 10 rows."""
@@ -274,8 +275,9 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             if c in class_to_color:
                                 cell_color = class_to_color[c]
                                 break
-                        
+
                         batch = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
+                        is_repeat = (cell_color == "FFFF00")
                         
                         if explicit_batch_code:
                             explicit_b = explicit_batch_code.strip()
@@ -306,7 +308,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
 
                         summary = generate_rag_summary(
                             "School of Computing", dept, "BS", batch,
-                            section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled
+                            section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat
                         )
 
                         entries.append({
@@ -325,6 +327,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             "time_end": t_end,
                             "is_lab": is_lab,
                             "is_rescheduled": is_rescheduled,
+                            "is_repeat": is_repeat,
                             "rag_summary": summary,
                         })
                         day_count += 1
@@ -429,6 +432,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     "time_end": t_end,
                     "is_lab": is_lab,
                     "is_rescheduled": is_rescheduled,
+                    "is_repeat": False,
                     "rag_summary": summary
                 })
     except Exception as e:
@@ -534,6 +538,7 @@ def parse_fse() -> List[Dict[str, Any]]:
                         "time_end": t_end,
                         "is_lab": is_lab,
                         "is_rescheduled": is_rescheduled,
+                        "is_repeat": False,
                         "rag_summary": summary
                     })
     except Exception as e:
