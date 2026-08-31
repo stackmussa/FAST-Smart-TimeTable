@@ -36,3 +36,4 @@ test_fsc_new.py
 test_fsm_sections.py
 debug_*.py
 test_*.py
+skipped_courses.txt
