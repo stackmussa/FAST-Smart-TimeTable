@@ -176,13 +176,7 @@ export default function TimetableViewer() {
       {/* Header */}
       <header className={`bg-gray-800 border-gray-700 shadow-sm border-b`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className={`text-2xl font-bold text-white`}>FAST-NUCES Islamabad Timetable</h1>
-          <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className={`px-4 py-2 rounded-lg font-medium transition-colors bg-gray-700 text-gray-200 hover:bg-gray-600`}
-          >
-            {\'Light Mode\'}
-          </button>
+          <h1 className="text-2xl font-bold text-white">FAST-NUCES Islamabad Timetable</h1>
         </div>
       </header>
 
