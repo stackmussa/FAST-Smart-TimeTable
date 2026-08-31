@@ -248,13 +248,14 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         if not val:
                             continue
 
-                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)"
-                        course_match = re.match(r"^(.+?)\s*\(([A-Z]{2,3}-[A-Z0-9]+)\)", val)
+                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)"
+                        course_match = re.match(r"^(.+?)\s*\(([A-Z]{2,3}-[A-Z0-9]+)(?:,\s*(\d+))?\)", val)
                         if not course_match:
                             continue
 
                         course_name = course_match.group(1).strip()
                         section_code = course_match.group(2).strip()
+                        explicit_batch_code = course_match.group(3)
                         
                         is_rescheduled = "resch" in val.lower()
                         if is_rescheduled:
@@ -275,6 +276,13 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                 break
                         
                         batch = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
+                        
+                        if explicit_batch_code:
+                            explicit_b = explicit_batch_code.strip()
+                            if len(explicit_b) == 2:
+                                batch = "20" + explicit_b
+                            else:
+                                batch = explicit_b
 
                         # calculate exact time range based on colspan
                         t_parts = time_val.split("-")
