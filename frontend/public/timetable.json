@@ -36,24 +36,6 @@
     "rag_summary": "BS CS (Batch 2026, Section CS-A) has Calculus in Room C-301 on Monday from 10:00 to 11:20."
   },
   {
-    "id": "FSC-MON-C301-1130-CSA",
-    "school": "School of Computing",
-    "department": "CS",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF",
-    "section": "CS-A",
-    "instructor": null,
-    "room": "C-301",
-    "day": "Monday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-A) has PF in Room C-301 on Monday from 11:30 to 12:50."
-  },
-  {
     "id": "FSC-MON-C301-1300-CSA",
     "school": "School of Computing",
     "department": "CS",
@@ -66,10 +48,10 @@
     "room": "C-301",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Ideology of Pak in Room C-301 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Ideology of Pak in Room C-301 on Monday from 13:00 to 14:45."
   },
   {
     "id": "FSC-MON-C302-0830-CSB",
@@ -108,24 +90,6 @@
     "rag_summary": "BS CS (Batch 2026, Section CS-B) has PF in Room C-302 on Monday from 10:00 to 11:20."
   },
   {
-    "id": "FSC-MON-C302-1130-CSD",
-    "school": "School of Computing",
-    "department": "CS",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF",
-    "section": "CS-D",
-    "instructor": null,
-    "room": "C-302",
-    "day": "Monday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-D) has PF in Room C-302 on Monday from 11:30 to 12:50."
-  },
-  {
     "id": "FSC-MON-C302-1300-CSB",
     "school": "School of Computing",
     "department": "CS",
@@ -138,10 +102,10 @@
     "room": "C-302",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Islamic in Room C-302 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Islamic in Room C-302 on Monday from 13:00 to 14:45."
   },
   {
     "id": "FSC-MON-C303-0830-CSC",
@@ -180,24 +144,6 @@
     "rag_summary": "BS CS (Batch 2026, Section CS-C) has PF in Room C-303 on Monday from 10:00 to 11:20."
   },
   {
-    "id": "FSC-MON-C303-1130-CSC",
-    "school": "School of Computing",
-    "department": "CS",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF",
-    "section": "CS-C",
-    "instructor": null,
-    "room": "C-303",
-    "day": "Monday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-C) has PF in Room C-303 on Monday from 11:30 to 12:50."
-  },
-  {
     "id": "FSC-MON-C303-1300-CSC",
     "school": "School of Computing",
     "department": "CS",
@@ -210,10 +156,10 @@
     "room": "C-303",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-C) has Ideology of Pak in Room C-303 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-C) has Ideology of Pak in Room C-303 on Monday from 13:00 to 14:45."
   },
   {
     "id": "FSC-MON-C304-0830-CSD",
@@ -264,10 +210,10 @@
     "room": "C-304",
     "day": "Monday",
     "time_start": "11:30",
-    "time_end": "12:50",
+    "time_end": "12:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Seerah in Room C-304 on Monday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Seerah in Room C-304 on Monday from 11:30 to 12:25."
   },
   {
     "id": "FSC-MON-C304-1300-CSD",
@@ -282,10 +228,10 @@
     "room": "C-304",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-D) has Islamic in Room C-304 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-D) has Islamic in Room C-304 on Monday from 13:00 to 14:45."
   },
   {
     "id": "FSC-MON-C305-0830-CSG",
@@ -300,10 +246,10 @@
     "room": "C-305",
     "day": "Monday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-G) has Func Eng in Room C-305 on Monday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-G) has Func Eng in Room C-305 on Monday from 08:30 to 10:15."
   },
   {
     "id": "FSC-MON-C305-1130-CSJ",
@@ -336,10 +282,10 @@
     "room": "C-305",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Func Eng in Room C-305 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Func Eng in Room C-305 on Monday from 13:00 to 14:45."
   },
   {
     "id": "FSC-MON-C307-0830-CSA",
@@ -558,24 +504,6 @@
     "rag_summary": "BS CS (Batch 2025, Section CS-D) has Data St in Room C-310 on Monday from 08:30 to 09:50."
   },
   {
-    "id": "FSC-MON-C310-1000-CSC",
-    "school": "School of Computing",
-    "department": "CS",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "Data St",
-    "section": "CS-C",
-    "instructor": null,
-    "room": "C-310",
-    "day": "Monday",
-    "time_start": "10:00",
-    "time_end": "11:20",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-C) has Data St in Room C-310 on Monday from 10:00 to 11:20."
-  },
-  {
     "id": "FSC-MON-C310-1130-CSF",
     "school": "School of Computing",
     "department": "CS",
@@ -678,28 +606,10 @@
     "room": "C-311",
     "day": "Monday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:20",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-G) has UHQ-I&II in Room C-311 on Monday from 14:30 to 17:15."
-  },
-  {
-    "id": "FSC-MON-C401-1130-CSG",
-    "school": "School of Computing",
-    "department": "CS",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "Data St",
-    "section": "CS-G",
-    "instructor": null,
-    "room": "C-401",
-    "day": "Monday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-G) has Data St in Room C-401 on Monday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2025, Section CS-G) has UHQ-I&II in Room C-311 on Monday from 14:30 to 16:20."
   },
   {
     "id": "FSC-MON-C401-1300-CSH",
@@ -732,10 +642,10 @@
     "room": "C-401",
     "day": "Monday",
     "time_start": "14:30",
-    "time_end": "15:50",
+    "time_end": "15:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-H) has Seerah in Room C-401 on Monday from 14:30 to 15:50."
+    "rag_summary": "BS CS (Batch 2025, Section CS-H) has Seerah in Room C-401 on Monday from 14:30 to 15:25."
   },
   {
     "id": "FSC-MON-C401-1720-AIB",
@@ -862,24 +772,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CS (Batch 2024, Section CS-B) has Comp Arch in Room C-403 on Monday from 10:00 to 11:20."
-  },
-  {
-    "id": "FSC-MON-C403-1130-SEB",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF",
-    "section": "SE-B",
-    "instructor": null,
-    "room": "C-403",
-    "day": "Monday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-B) has PF in Room C-403 on Monday from 11:30 to 12:50."
   },
   {
     "id": "FSC-MON-C403-1300-CSB",
@@ -1026,14 +918,14 @@
     "rag_summary": "BS CS (Batch 2024, Section CS-F) has Algo in Room C-405 on Monday from 10:00 to 11:20."
   },
   {
-    "id": "FSC-MON-C405-1130-CSD",
+    "id": "FSC-MON-C405-1130-CSG",
     "school": "School of Computing",
     "department": "CS",
     "degree": "BS",
     "batch": "2024",
     "semester": "Unknown",
-    "course_name": "App HCI",
-    "section": "CS-D",
+    "course_name": "TBW",
+    "section": "CS-G",
     "instructor": null,
     "room": "C-405",
     "day": "Monday",
@@ -1041,7 +933,7 @@
     "time_end": "12:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2024, Section CS-D) has App HCI in Room C-405 on Monday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2024, Section CS-G) has TBW in Room C-405 on Monday from 11:30 to 12:50."
   },
   {
     "id": "FSC-MON-C405-1300-CSD",
@@ -1098,14 +990,14 @@
     "rag_summary": "BS CS (Batch 2024, Section CS-E) has TBW in Room C-406 on Monday from 13:00 to 14:20."
   },
   {
-    "id": "FSC-MON-C407-1130-CSG",
+    "id": "FSC-MON-C407-1130-CSD",
     "school": "School of Computing",
     "department": "CS",
     "degree": "BS",
     "batch": "2024",
     "semester": "Unknown",
-    "course_name": "TBW",
-    "section": "CS-G",
+    "course_name": "App HCI",
+    "section": "CS-D",
     "instructor": null,
     "room": "C-407",
     "day": "Monday",
@@ -1113,7 +1005,7 @@
     "time_end": "12:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2024, Section CS-G) has TBW in Room C-407 on Monday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2024, Section CS-D) has App HCI in Room C-407 on Monday from 11:30 to 12:50."
   },
   {
     "id": "FSC-MON-C407-1300-CSG",
@@ -1254,13 +1146,13 @@
     "room": "C-409",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-A) has Func Eng in Room C-409 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-A) has Func Eng in Room C-409 on Monday from 13:00 to 14:45."
   },
   {
-    "id": "FSC-MON-C601-0830-SEA",
+    "id": "FSC-MON-C602-0830-SEA",
     "school": "School of Computing",
     "department": "SE",
     "degree": "BS",
@@ -1269,67 +1161,13 @@
     "course_name": "PF",
     "section": "SE-A",
     "instructor": null,
-    "room": "C-601",
-    "day": "Monday",
-    "time_start": "08:30",
-    "time_end": "09:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-A) has PF in Room C-601 on Monday from 08:30 to 09:50."
-  },
-  {
-    "id": "FSC-MON-C601-1000-SEA",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "AP",
-    "section": "SE-A",
-    "instructor": null,
-    "room": "C-601",
-    "day": "Monday",
-    "time_start": "10:00",
-    "time_end": "11:20",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-A) has AP in Room C-601 on Monday from 10:00 to 11:20."
-  },
-  {
-    "id": "FSC-MON-C601-1300-SEB",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Psychology",
-    "section": "SE-B",
-    "instructor": null,
-    "room": "C-601",
-    "day": "Monday",
-    "time_start": "13:00",
-    "time_end": "15:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-B) has Psychology in Room C-601 on Monday from 13:00 to 15:50."
-  },
-  {
-    "id": "FSC-MON-C602-0830-SEB",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "AP",
-    "section": "SE-B",
-    "instructor": null,
     "room": "C-602",
     "day": "Monday",
     "time_start": "08:30",
     "time_end": "09:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-B) has AP in Room C-602 on Monday from 08:30 to 09:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-A) has PF in Room C-602 on Monday from 08:30 to 09:50."
   },
   {
     "id": "FSC-MON-C602-1000-SEB",
@@ -1512,6 +1350,60 @@
     "rag_summary": "BS SE (Batch 2025, Section SE-C) has LA in Room C-604 on Monday from 10:00 to 11:20."
   },
   {
+    "id": "FSC-MON-C604-1300-SEB",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Arts & Humanities",
+    "section": "SE-B",
+    "instructor": null,
+    "room": "C-604",
+    "day": "Monday",
+    "time_start": "13:00",
+    "time_end": "14:45",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS SE (Batch 2026, Section SE-B) has Arts & Humanities in Room C-604 on Monday from 13:00 to 14:45."
+  },
+  {
+    "id": "FSC-MON-C605-0830-SEB",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "AP",
+    "section": "SE-B",
+    "instructor": null,
+    "room": "C-605",
+    "day": "Monday",
+    "time_start": "08:30",
+    "time_end": "09:50",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS SE (Batch 2026, Section SE-B) has AP in Room C-605 on Monday from 08:30 to 09:50."
+  },
+  {
+    "id": "FSC-MON-C605-1000-SEA",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "AP",
+    "section": "SE-A",
+    "instructor": null,
+    "room": "C-605",
+    "day": "Monday",
+    "time_start": "10:00",
+    "time_end": "11:20",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS SE (Batch 2026, Section SE-A) has AP in Room C-605 on Monday from 10:00 to 11:20."
+  },
+  {
     "id": "FSC-MON-C605-1130-SEC",
     "school": "School of Computing",
     "department": "SE",
@@ -1524,10 +1416,10 @@
     "room": "C-605",
     "day": "Monday",
     "time_start": "11:30",
-    "time_end": "14:20",
+    "time_end": "13:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-C) has Pak Studies in Room C-605 on Monday from 11:30 to 14:20."
+    "rag_summary": "BS SE (Batch 2025, Section SE-C) has Pak Studies in Room C-605 on Monday from 11:30 to 13:15."
   },
   {
     "id": "FSC-MON-C607-0830-SED",
@@ -1560,10 +1452,10 @@
     "room": "C-607",
     "day": "Monday",
     "time_start": "10:00",
-    "time_end": "11:20",
+    "time_end": "10:55",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-D) has UHQ-II in Room C-607 on Monday from 10:00 to 11:20."
+    "rag_summary": "BS SE (Batch 2025, Section SE-D) has UHQ-II in Room C-607 on Monday from 10:00 to 10:55."
   },
   {
     "id": "FSC-MON-C607-1130-SEA",
@@ -1704,10 +1596,10 @@
     "room": "D-301",
     "day": "Monday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Ideology of Pak in Room D-301 on Monday from 13:00 to 15:50."
+    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Ideology of Pak in Room D-301 on Monday from 13:00 to 14:45."
   },
   {
     "id": "FSC-MON-D302-0830-CYA",
@@ -2010,10 +1902,10 @@
     "room": "D-311",
     "day": "Monday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Func Eng in Room D-311 on Monday from 08:30 to 11:20."
+    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Func Eng in Room D-311 on Monday from 08:30 to 10:15."
   },
   {
     "id": "FSC-MON-D311-1130-AIA",
@@ -2140,24 +2032,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS DS (Batch 2024, Section DS-B) has TBW in Room D-315 on Monday from 11:30 to 12:50."
-  },
-  {
-    "id": "FSC-MON-D315-1300-DSB",
-    "school": "School of Computing",
-    "department": "DS",
-    "degree": "BS",
-    "batch": "2024",
-    "semester": "Unknown",
-    "course_name": "TBW",
-    "section": "DS-B",
-    "instructor": null,
-    "room": "D-315",
-    "day": "Monday",
-    "time_start": "13:00",
-    "time_end": "14:20",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS DS (Batch 2024, Section DS-B) has TBW in Room D-315 on Monday from 13:00 to 14:20."
   },
   {
     "id": "FSC-MON-D316-0830-AIA",
@@ -2410,24 +2284,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CS (Batch 2023, Section CS-B) has App HCI in Room D-404 on Monday from 10:00 to 11:20."
-  },
-  {
-    "id": "FSC-MON-D404-1300-DSA",
-    "school": "School of Computing",
-    "department": "DS",
-    "degree": "BS",
-    "batch": "2024",
-    "semester": "Unknown",
-    "course_name": "DAV",
-    "section": "DS-A",
-    "instructor": null,
-    "room": "D-404",
-    "day": "Monday",
-    "time_start": "13:00",
-    "time_end": "14:20",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS DS (Batch 2024, Section DS-A) has DAV in Room D-404 on Monday from 13:00 to 14:20."
   },
   {
     "id": "FSC-MON-D405-0830-CSC",
@@ -2700,24 +2556,6 @@
     "rag_summary": "BS CY (Batch 2025, Section CY-A) has Cy Sec in Room D-414 on Monday from 13:00 to 14:20."
   },
   {
-    "id": "FSC-MON-D414-1430-CYB",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2024",
-    "semester": "Unknown",
-    "course_name": "DB",
-    "section": "CY-B",
-    "instructor": null,
-    "room": "D-414",
-    "day": "Monday",
-    "time_start": "14:30",
-    "time_end": "15:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CY (Batch 2024, Section CY-B) has DB in Room D-414 on Monday from 14:30 to 15:50."
-  },
-  {
     "id": "FSC-MON-D415-1000-CYB",
     "school": "School of Computing",
     "department": "CY",
@@ -2784,10 +2622,10 @@
     "room": "D-416",
     "day": "Monday",
     "time_start": "08:30",
-    "time_end": "09:50",
+    "time_end": "09:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-C) has UHQ-II in Room D-416 on Monday from 08:30 to 09:50."
+    "rag_summary": "BS CY (Batch 2025, Section CY-C) has UHQ-II in Room D-416 on Monday from 08:30 to 09:25."
   },
   {
     "id": "FSC-MON-D416-1000-CYC",
@@ -2806,24 +2644,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CY (Batch 2025, Section CY-C) has LA in Room D-416 on Monday from 10:00 to 11:20."
-  },
-  {
-    "id": "FSC-MON-D416-1430-CYC",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "LA",
-    "section": "CY-C",
-    "instructor": null,
-    "room": "D-416",
-    "day": "Monday",
-    "time_start": "14:30",
-    "time_end": "15:50",
-    "is_lab": false,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CY (Batch 2025, Section CY-C) has LA in Room D-416 on Monday from 14:30 to 15:50."
   },
   {
     "id": "FSC-MON-D416-1555-CYC",
@@ -3738,10 +3558,10 @@
     "room": "C-301",
     "day": "Tuesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Ideology of Pak in Room C-301 on Tuesday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Ideology of Pak in Room C-301 on Tuesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-TUE-C302-0830-CSG",
@@ -3810,10 +3630,10 @@
     "room": "C-302",
     "day": "Tuesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-G) has Islamic in Room C-302 on Tuesday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-G) has Islamic in Room C-302 on Tuesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-TUE-C303-0830-CSH",
@@ -3828,10 +3648,10 @@
     "room": "C-303",
     "day": "Tuesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Ideology of Pak in Room C-303 on Tuesday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Ideology of Pak in Room C-303 on Tuesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-TUE-C303-1130-CSH",
@@ -3900,10 +3720,10 @@
     "room": "C-304",
     "day": "Tuesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-E) has Islamic in Room C-304 on Tuesday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-E) has Islamic in Room C-304 on Tuesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-TUE-C304-1130-CSE",
@@ -3954,10 +3774,10 @@
     "room": "C-304",
     "day": "Tuesday",
     "time_start": "14:30",
-    "time_end": "15:50",
+    "time_end": "15:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Seerah in Room C-304 on Tuesday from 14:30 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Seerah in Room C-304 on Tuesday from 14:30 to 15:25."
   },
   {
     "id": "FSC-TUE-C304-1720-AIB",
@@ -4008,10 +3828,10 @@
     "room": "C-305",
     "day": "Tuesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Func Eng in Room C-305 on Tuesday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Func Eng in Room C-305 on Tuesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-TUE-C305-1130-CSF",
@@ -4368,10 +4188,10 @@
     "room": "C-311",
     "day": "Tuesday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:20",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-A) has UHQ-I&II in Room C-311 on Tuesday from 14:30 to 17:15."
+    "rag_summary": "BS CS (Batch 2025, Section CS-A) has UHQ-I&II in Room C-311 on Tuesday from 14:30 to 16:20."
   },
   {
     "id": "FSC-TUE-C401-1130-CSD",
@@ -4386,10 +4206,10 @@
     "room": "C-401",
     "day": "Tuesday",
     "time_start": "11:30",
-    "time_end": "12:50",
+    "time_end": "12:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-D) has Seerah in Room C-401 on Tuesday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2025, Section CS-D) has Seerah in Room C-401 on Tuesday from 11:30 to 12:25."
   },
   {
     "id": "FSC-TUE-C401-1300-CSD",
@@ -4422,10 +4242,10 @@
     "room": "C-401",
     "day": "Tuesday",
     "time_start": "17:20",
-    "time_end": "08:05",
+    "time_end": "19:10",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS PHD (Batch Unknown, Section PHD-C) has UHQ-I & II in Room C-401 on Tuesday from 17:20 to 08:05."
+    "rag_summary": "BS PHD (Batch Unknown, Section PHD-C) has UHQ-I & II in Room C-401 on Tuesday from 17:20 to 19:10."
   },
   {
     "id": "FSC-TUE-C402-0830-CSF",
@@ -4464,6 +4284,24 @@
     "rag_summary": "BS CS (Batch 2024, Section CS-F) has Comp Arch in Room C-402 on Tuesday from 10:00 to 11:20."
   },
   {
+    "id": "FSC-TUE-C402-1130-CSB",
+    "school": "School of Computing",
+    "department": "CS",
+    "degree": "BS",
+    "batch": "2024",
+    "semester": "Unknown",
+    "course_name": "Comp Arch",
+    "section": "CS-B",
+    "instructor": null,
+    "room": "C-402",
+    "day": "Tuesday",
+    "time_start": "11:30",
+    "time_end": "12:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CS (Batch 2024, Section CS-B) has Comp Arch in Room C-402 on Tuesday from 11:30 to 12:50."
+  },
+  {
     "id": "FSC-TUE-C402-1300-CSE",
     "school": "School of Computing",
     "department": "CS",
@@ -4480,6 +4318,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CS (Batch 2024, Section CS-E) has App HCI in Room C-402 on Tuesday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-TUE-C402-1430-CSC",
+    "school": "School of Computing",
+    "department": "CS",
+    "degree": "BS",
+    "batch": "2023",
+    "semester": "Unknown",
+    "course_name": "App HCI",
+    "section": "CS-C",
+    "instructor": null,
+    "room": "C-402",
+    "day": "Tuesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CS (Batch 2023, Section CS-C) has App HCI in Room C-402 on Tuesday from 14:30 to 15:50."
   },
   {
     "id": "FSC-TUE-C403-0830-CSA",
@@ -4552,6 +4408,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CS (Batch 2024, Section CS-F) has App HCI in Room C-403 on Tuesday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-TUE-C403-1430-CSA",
+    "school": "School of Computing",
+    "department": "CS",
+    "degree": "BS",
+    "batch": "2024",
+    "semester": "Unknown",
+    "course_name": "Comp Arch",
+    "section": "CS-A",
+    "instructor": null,
+    "room": "C-403",
+    "day": "Tuesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CS (Batch 2024, Section CS-A) has Comp Arch in Room C-403 on Tuesday from 14:30 to 15:50."
   },
   {
     "id": "FSC-TUE-C404-0830-CSE",
@@ -4734,6 +4608,24 @@
     "rag_summary": "BS CS (Batch 2024, Section CS-B) has Algo in Room C-406 on Tuesday from 10:00 to 11:20."
   },
   {
+    "id": "FSC-TUE-C407-1130-SEC",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "SE-C",
+    "instructor": null,
+    "room": "C-407",
+    "day": "Tuesday",
+    "time_start": "11:30",
+    "time_end": "12:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2025, Section SE-C) has LA in Room C-407 on Tuesday from 11:30 to 12:50."
+  },
+  {
     "id": "FSC-TUE-C407-1300-SEC",
     "school": "School of Computing",
     "department": "SE",
@@ -4872,10 +4764,28 @@
     "room": "C-409",
     "day": "Tuesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-C) has Func Eng in Room C-409 on Tuesday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-C) has Func Eng in Room C-409 on Tuesday from 13:00 to 14:45."
+  },
+  {
+    "id": "FSC-TUE-C601-0830-SEA",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "Intro to SE",
+    "section": "SE-A",
+    "instructor": null,
+    "room": "C-601",
+    "day": "Tuesday",
+    "time_start": "08:30",
+    "time_end": "09:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2025, Section SE-A) has Intro to SE in Room C-601 on Tuesday from 08:30 to 09:50."
   },
   {
     "id": "FSC-TUE-C601-1000-SED",
@@ -4926,10 +4836,10 @@
     "room": "C-601",
     "day": "Tuesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-D) has Ideology of Pak in Room C-601 on Tuesday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-D) has Ideology of Pak in Room C-601 on Tuesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-TUE-C602-0830-SEB",
@@ -4962,10 +4872,10 @@
     "room": "C-602",
     "day": "Tuesday",
     "time_start": "11:30",
-    "time_end": "14:20",
+    "time_end": "13:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-A) has Pak Studies in Room C-602 on Tuesday from 11:30 to 14:20."
+    "rag_summary": "BS SE (Batch 2025, Section SE-A) has Pak Studies in Room C-602 on Tuesday from 11:30 to 13:15."
   },
   {
     "id": "FSC-TUE-C602-1430-SED",
@@ -5146,6 +5056,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS SE (Batch 2023, Section SE-B) has SMD in Room C-605 on Tuesday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-TUE-C605-1430-SEB",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2024",
+    "semester": "Unknown",
+    "course_name": "Algo",
+    "section": "SE-B",
+    "instructor": null,
+    "room": "C-605",
+    "day": "Tuesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2024, Section SE-B) has Algo in Room C-605 on Tuesday from 14:30 to 15:50."
   },
   {
     "id": "FSC-TUE-C607-0830-SEB",
@@ -5340,10 +5268,10 @@
     "room": "D-301",
     "day": "Tuesday",
     "time_start": "11:30",
-    "time_end": "12:50",
+    "time_end": "12:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Seerah in Room D-301 on Tuesday from 11:30 to 12:50."
+    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Seerah in Room D-301 on Tuesday from 11:30 to 12:25."
   },
   {
     "id": "FSC-TUE-D302-0830-AIC",
@@ -5544,6 +5472,24 @@
     "rag_summary": "BS AI (Batch 2025, Section AI-C) has Prog for AI in Room D-304 on Tuesday from 13:00 to 14:20."
   },
   {
+    "id": "FSC-TUE-D304-1430-AIC",
+    "school": "School of Computing",
+    "department": "AI",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "AI-C",
+    "instructor": null,
+    "room": "D-304",
+    "day": "Tuesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS AI (Batch 2025, Section AI-C) has LA in Room D-304 on Tuesday from 14:30 to 15:50."
+  },
+  {
     "id": "FSC-TUE-D305-1000-AIC",
     "school": "School of Computing",
     "department": "AI",
@@ -5578,6 +5524,42 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS AI (Batch 2024, Section AI-C) has ML in Room D-305 on Tuesday from 11:30 to 12:50."
+  },
+  {
+    "id": "FSC-TUE-D305-1300-AIA",
+    "school": "School of Computing",
+    "department": "AI",
+    "degree": "BS",
+    "batch": "2023",
+    "semester": "Unknown",
+    "course_name": "Blockchain",
+    "section": "AI-A",
+    "instructor": null,
+    "room": "D-305",
+    "day": "Tuesday",
+    "time_start": "13:00",
+    "time_end": "14:20",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS AI (Batch 2023, Section AI-A) has Blockchain in Room D-305 on Tuesday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-TUE-D305-1430-AIA",
+    "school": "School of Computing",
+    "department": "AI",
+    "degree": "BS",
+    "batch": "2023",
+    "semester": "Unknown",
+    "course_name": "Blockchain",
+    "section": "AI-A",
+    "instructor": null,
+    "room": "D-305",
+    "day": "Tuesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS AI (Batch 2023, Section AI-A) has Blockchain in Room D-305 on Tuesday from 14:30 to 15:50."
   },
   {
     "id": "FSC-TUE-D306-0830-AIA",
@@ -5700,10 +5682,10 @@
     "room": "D-311",
     "day": "Tuesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Ideology of Pak in Room D-311 on Tuesday from 13:00 to 15:50."
+    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Ideology of Pak in Room D-311 on Tuesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-TUE-D312-1000-DSB",
@@ -6420,10 +6402,10 @@
     "room": "D-414",
     "day": "Tuesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-A) has Ideology of Pak in Room D-414 on Tuesday from 13:00 to 15:50."
+    "rag_summary": "BS CY (Batch 2026, Section CY-A) has Ideology of Pak in Room D-414 on Tuesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-TUE-D415-1000-CYB",
@@ -6498,6 +6480,42 @@
     "rag_summary": "BS CY (Batch 2026, Section CY-C) has AP in Room D-416 on Tuesday from 11:30 to 12:50."
   },
   {
+    "id": "FSC-TUE-D416-1300-CYA",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "CY-A",
+    "instructor": null,
+    "room": "D-416",
+    "day": "Tuesday",
+    "time_start": "13:00",
+    "time_end": "14:20",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS CY (Batch 2025, Section CY-A) has LA in Room D-416 on Tuesday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-TUE-D416-1430-CYB",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "CY-B",
+    "instructor": null,
+    "room": "D-416",
+    "day": "Tuesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS CY (Batch 2025, Section CY-B) has LA in Room D-416 on Tuesday from 14:30 to 15:50."
+  },
+  {
     "id": "FSC-TUE-D501-0830-CYB",
     "school": "School of Computing",
     "department": "CY",
@@ -6510,46 +6528,10 @@
     "room": "D-501",
     "day": "Tuesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-B) has Pak Studies in Room D-501 on Tuesday from 08:30 to 11:20."
-  },
-  {
-    "id": "FSC-TUE-D501-1300-CYA",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "LA",
-    "section": "CY-A",
-    "instructor": null,
-    "room": "D-501",
-    "day": "Tuesday",
-    "time_start": "13:00",
-    "time_end": "14:20",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-A) has LA in Room D-501 on Tuesday from 13:00 to 14:20."
-  },
-  {
-    "id": "FSC-TUE-D501-1430-CYB",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "LA",
-    "section": "CY-B",
-    "instructor": null,
-    "room": "D-501",
-    "day": "Tuesday",
-    "time_start": "14:30",
-    "time_end": "15:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-B) has LA in Room D-501 on Tuesday from 14:30 to 15:50."
+    "rag_summary": "BS CY (Batch 2025, Section CY-B) has Pak Studies in Room D-501 on Tuesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-TUE-D502-0830-CYC",
@@ -6586,6 +6568,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CY (Batch 2025, Section CY-C) has Cy Sec in Room D-502 on Tuesday from 10:00 to 11:20."
+  },
+  {
+    "id": "FSC-TUE-D502-1130-CYC",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2024",
+    "semester": "Unknown",
+    "course_name": "AI",
+    "section": "CY-C",
+    "instructor": null,
+    "room": "D-502",
+    "day": "Tuesday",
+    "time_start": "11:30",
+    "time_end": "12:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CY (Batch 2024, Section CY-C) has AI in Room D-502 on Tuesday from 11:30 to 12:50."
   },
   {
     "id": "FSC-TUE-D502-1300-CYC",
@@ -7608,10 +7608,10 @@
     "room": "C-301",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Islamic in Room C-301 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Islamic in Room C-301 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C302-0830-CSB",
@@ -7662,10 +7662,10 @@
     "room": "C-302",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Ideology of Pak in Room C-302 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-B) has Ideology of Pak in Room C-302 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C303-0830-CSC",
@@ -7734,10 +7734,10 @@
     "room": "C-303",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-C) has Islamic in Room C-303 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-C) has Islamic in Room C-303 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C304-0830-CSD",
@@ -7788,10 +7788,10 @@
     "room": "C-304",
     "day": "Wednesday",
     "time_start": "11:30",
-    "time_end": "12:50",
+    "time_end": "12:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Seerah in Room C-304 on Wednesday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Seerah in Room C-304 on Wednesday from 11:30 to 12:25."
   },
   {
     "id": "FSC-WED-C305-0830-CSE",
@@ -7806,10 +7806,10 @@
     "room": "C-305",
     "day": "Wednesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-E) has Func Eng in Room C-305 on Wednesday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-E) has Func Eng in Room C-305 on Wednesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-WED-C305-1130-CSF",
@@ -7842,10 +7842,10 @@
     "room": "C-305",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Func Eng in Room C-305 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Func Eng in Room C-305 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C307-0830-CSA",
@@ -8256,10 +8256,10 @@
     "room": "C-402",
     "day": "Wednesday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:20",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-H) has UHQ-I&II in Room C-402 on Wednesday from 14:30 to 17:15."
+    "rag_summary": "BS CS (Batch 2025, Section CS-H) has UHQ-I&II in Room C-402 on Wednesday from 14:30 to 16:20."
   },
   {
     "id": "FSC-WED-C402-1720-AIA",
@@ -8406,7 +8406,7 @@
     "rag_summary": "BS CS (Batch 2024, Section CS-C) has App HCI in Room C-404 on Wednesday from 13:00 to 14:20."
   },
   {
-    "id": "FSC-WED-C404-1555-PHDA",
+    "id": "FSC-WED-C404-1600-PHDA",
     "school": "School of Computing",
     "department": "PHD",
     "degree": "BS",
@@ -8417,11 +8417,11 @@
     "instructor": null,
     "room": "C-404",
     "day": "Wednesday",
-    "time_start": "15:55",
-    "time_end": "17:15",
+    "time_start": "16:00",
+    "time_end": "17:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS PHD (Batch Unknown, Section PHD-A) has UHQ-I & II in Room C-404 on Wednesday from 15:55 to 17:15."
+    "rag_summary": "BS PHD (Batch Unknown, Section PHD-A) has UHQ-I & II in Room C-404 on Wednesday from 16:00 to 17:50."
   },
   {
     "id": "FSC-WED-C404-1720-PHDA",
@@ -8458,6 +8458,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CS (Batch 2024, Section CS-C) has Comp Net in Room C-405 on Wednesday from 10:00 to 11:20."
+  },
+  {
+    "id": "FSC-WED-C405-1130-CSG",
+    "school": "School of Computing",
+    "department": "CS",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "Data St",
+    "section": "CS-G",
+    "instructor": null,
+    "room": "C-405",
+    "day": "Wednesday",
+    "time_start": "11:30",
+    "time_end": "12:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-G) has Data St in Room C-405 on Wednesday from 11:30 to 12:50."
   },
   {
     "id": "FSC-WED-C405-1300-CSD",
@@ -8736,16 +8754,16 @@
     "degree": "BS",
     "batch": "2026",
     "semester": "Unknown",
-    "course_name": "Psychology",
+    "course_name": "Arts & Humanities",
     "section": "SE-A",
     "instructor": null,
     "room": "C-409",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-A) has Psychology in Room C-409 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-A) has Arts & Humanities in Room C-409 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C601-0830-SEB",
@@ -8814,10 +8832,10 @@
     "room": "C-601",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-B) has Func Eng in Room C-601 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-B) has Func Eng in Room C-601 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C602-0830-SEC",
@@ -8832,10 +8850,10 @@
     "room": "C-602",
     "day": "Wednesday",
     "time_start": "08:30",
-    "time_end": "09:50",
+    "time_end": "09:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-C) has UHQ-II in Room C-602 on Wednesday from 08:30 to 09:50."
+    "rag_summary": "BS SE (Batch 2025, Section SE-C) has UHQ-II in Room C-602 on Wednesday from 08:30 to 09:25."
   },
   {
     "id": "FSC-WED-C602-1130-SEC",
@@ -8904,10 +8922,10 @@
     "room": "C-603",
     "day": "Wednesday",
     "time_start": "10:00",
-    "time_end": "12:50",
+    "time_end": "11:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-D) has Pak Studies in Room C-603 on Wednesday from 10:00 to 12:50."
+    "rag_summary": "BS SE (Batch 2025, Section SE-D) has Pak Studies in Room C-603 on Wednesday from 10:00 to 11:45."
   },
   {
     "id": "FSC-WED-C603-1300-SEE",
@@ -8922,10 +8940,10 @@
     "room": "C-603",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-E) has Ideology of Pak in Room C-603 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-E) has Ideology of Pak in Room C-603 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-C604-0830-SEE",
@@ -9228,10 +9246,10 @@
     "room": "D-301",
     "day": "Wednesday",
     "time_start": "11:30",
-    "time_end": "12:50",
+    "time_end": "12:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Seerah in Room D-301 on Wednesday from 11:30 to 12:50."
+    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Seerah in Room D-301 on Wednesday from 11:30 to 12:25."
   },
   {
     "id": "FSC-WED-D301-1300-AIA",
@@ -9246,10 +9264,10 @@
     "room": "D-301",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Islamic in Room D-301 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Islamic in Room D-301 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-D302-0830-CYA",
@@ -9268,6 +9286,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CY (Batch 2023, Section CY-A) has Blockchain in Room D-302 on Wednesday from 08:30 to 09:50."
+  },
+  {
+    "id": "FSC-WED-D302-1130-SEA",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "PF",
+    "section": "SE-A",
+    "instructor": null,
+    "room": "D-302",
+    "day": "Wednesday",
+    "time_start": "11:30",
+    "time_end": "12:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-A) has PF in Room D-302 on Wednesday from 11:30 to 12:50."
   },
   {
     "id": "FSC-WED-D302-1300-CYB",
@@ -9300,10 +9336,10 @@
     "room": "D-303",
     "day": "Wednesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-C) has Func Eng in Room D-303 on Wednesday from 08:30 to 11:20."
+    "rag_summary": "BS AI (Batch 2026, Section AI-C) has Func Eng in Room D-303 on Wednesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-WED-D304-0830-AIA",
@@ -9390,10 +9426,28 @@
     "room": "D-305",
     "day": "Wednesday",
     "time_start": "10:00",
-    "time_end": "11:20",
+    "time_end": "10:55",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2025, Section AI-B) has UHQ-II in Room D-305 on Wednesday from 10:00 to 11:20."
+    "rag_summary": "BS AI (Batch 2025, Section AI-B) has UHQ-II in Room D-305 on Wednesday from 10:00 to 10:55."
+  },
+  {
+    "id": "FSC-WED-D305-1300-SED",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "SE-D",
+    "instructor": null,
+    "room": "D-305",
+    "day": "Wednesday",
+    "time_start": "13:00",
+    "time_end": "14:20",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2025, Section SE-D) has LA in Room D-305 on Wednesday from 13:00 to 14:20."
   },
   {
     "id": "FSC-WED-D306-0830-AIC",
@@ -9462,10 +9516,10 @@
     "room": "D-311",
     "day": "Wednesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-B) has Ideology of Pak in Room D-311 on Wednesday from 08:30 to 11:20."
+    "rag_summary": "BS AI (Batch 2026, Section AI-B) has Ideology of Pak in Room D-311 on Wednesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-WED-D311-1130-AIB",
@@ -9624,10 +9678,10 @@
     "room": "D-313",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-C) has Func Eng in Room D-313 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS DS (Batch 2026, Section DS-C) has Func Eng in Room D-313 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-D314-0830-DSA",
@@ -10290,10 +10344,10 @@
     "room": "D-414",
     "day": "Wednesday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-C) has Arts & Humanities in Room D-414 on Wednesday from 13:00 to 15:50."
+    "rag_summary": "BS CY (Batch 2026, Section CY-C) has Arts & Humanities in Room D-414 on Wednesday from 13:00 to 14:45."
   },
   {
     "id": "FSC-WED-D415-0830-CYC",
@@ -10380,10 +10434,10 @@
     "room": "D-415",
     "day": "Wednesday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-A) has Func Eng in Room D-415 on Wednesday from 14:30 to 17:15."
+    "rag_summary": "BS CY (Batch 2026, Section CY-A) has Func Eng in Room D-415 on Wednesday from 14:30 to 16:15."
   },
   {
     "id": "FSC-WED-D416-0830-CYD",
@@ -10398,10 +10452,10 @@
     "room": "D-416",
     "day": "Wednesday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-D) has Func Eng in Room D-416 on Wednesday from 08:30 to 11:20."
+    "rag_summary": "BS CY (Batch 2026, Section CY-D) has Func Eng in Room D-416 on Wednesday from 08:30 to 10:15."
   },
   {
     "id": "FSC-WED-D416-1130-CYD",
@@ -10438,6 +10492,42 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CY (Batch 2026, Section CY-D) has AP in Room D-416 on Wednesday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-WED-D416-1430-CYD",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Calculus",
+    "section": "CY-D",
+    "instructor": null,
+    "room": "D-416",
+    "day": "Wednesday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CY (Batch 2026, Section CY-D) has Calculus in Room D-416 on Wednesday from 14:30 to 15:50."
+  },
+  {
+    "id": "FSC-WED-D416-1555-CYC",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Calculus",
+    "section": "CY-C",
+    "instructor": null,
+    "room": "D-416",
+    "day": "Wednesday",
+    "time_start": "15:55",
+    "time_end": "17:15",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CY (Batch 2026, Section CY-C) has Calculus in Room D-416 on Wednesday from 15:55 to 17:15."
   },
   {
     "id": "FSC-WED-D501-0830-CYA",
@@ -10542,10 +10632,10 @@
     "room": "D-502",
     "day": "Wednesday",
     "time_start": "11:30",
-    "time_end": "14:20",
+    "time_end": "13:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-C) has Pak Studies in Room D-502 on Wednesday from 11:30 to 14:20."
+    "rag_summary": "BS CY (Batch 2025, Section CY-C) has Pak Studies in Room D-502 on Wednesday from 11:30 to 13:15."
   },
   {
     "id": "FSC-WED-D502-1430-CYB",
@@ -11514,10 +11604,10 @@
     "room": "C-301",
     "day": "Thursday",
     "time_start": "11:30",
-    "time_end": "12:50",
+    "time_end": "12:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Seerah in Room C-301 on Thursday from 11:30 to 12:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Seerah in Room C-301 on Thursday from 11:30 to 12:25."
   },
   {
     "id": "FSC-THU-C301-1300-CSF",
@@ -11532,10 +11622,10 @@
     "room": "C-301",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Islamic in Room C-301 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-F) has Islamic in Room C-301 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-C302-0830-CSG",
@@ -11586,10 +11676,10 @@
     "room": "C-302",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-G) has Ideology of Pak in Room C-302 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-G) has Ideology of Pak in Room C-302 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-C303-0830-CSH",
@@ -11604,10 +11694,10 @@
     "room": "C-303",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Islamic in Room C-303 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-H) has Islamic in Room C-303 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-C303-1130-CSH",
@@ -11646,6 +11736,42 @@
     "rag_summary": "BS CS (Batch 2026, Section CS-H) has Calculus in Room C-303 on Thursday from 13:00 to 14:20."
   },
   {
+    "id": "FSC-THU-C303-1430-CSC",
+    "school": "School of Computing",
+    "department": "CS",
+    "degree": "BS",
+    "batch": "2023",
+    "semester": "Unknown",
+    "course_name": "App HCI",
+    "section": "CS-C",
+    "instructor": null,
+    "room": "C-303",
+    "day": "Thursday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CS (Batch 2023, Section CS-C) has App HCI in Room C-303 on Thursday from 14:30 to 15:50."
+  },
+  {
+    "id": "FSC-THU-C303-1555-CSD",
+    "school": "School of Computing",
+    "department": "CS",
+    "degree": "BS",
+    "batch": "2023",
+    "semester": "Unknown",
+    "course_name": "App HCI",
+    "section": "CS-D",
+    "instructor": null,
+    "room": "C-303",
+    "day": "Thursday",
+    "time_start": "15:55",
+    "time_end": "17:15",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS CS (Batch 2023, Section CS-D) has App HCI in Room C-303 on Thursday from 15:55 to 17:15."
+  },
+  {
     "id": "FSC-THU-C303-1720-AIB",
     "school": "School of Computing",
     "department": "AI",
@@ -11676,10 +11802,10 @@
     "room": "C-304",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-E) has Ideology of Pak in Room C-304 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-E) has Ideology of Pak in Room C-304 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-C304-1130-CSE",
@@ -11766,10 +11892,10 @@
     "room": "C-305",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-D) has Func Eng in Room C-305 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS CS (Batch 2026, Section CS-D) has Func Eng in Room C-305 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-C305-1130-CSE",
@@ -11802,10 +11928,10 @@
     "room": "C-305",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Func Eng in Room C-305 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-A) has Func Eng in Room C-305 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-C307-0830-CSF",
@@ -11892,10 +12018,10 @@
     "room": "C-308",
     "day": "Thursday",
     "time_start": "10:00",
-    "time_end": "12:50",
+    "time_end": "11:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2026, Section CS-C) has Func Eng in Room C-308 on Thursday from 10:00 to 12:50."
+    "rag_summary": "BS CS (Batch 2026, Section CS-C) has Func Eng in Room C-308 on Thursday from 10:00 to 11:45."
   },
   {
     "id": "FSC-THU-C308-1300-CSF",
@@ -12054,10 +12180,10 @@
     "room": "C-310",
     "day": "Thursday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:20",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-B) has UHQ-I&II in Room C-310 on Thursday from 14:30 to 17:15."
+    "rag_summary": "BS CS (Batch 2025, Section CS-B) has UHQ-I&II in Room C-310 on Thursday from 14:30 to 16:20."
   },
   {
     "id": "FSC-THU-C310-1845-AIA",
@@ -12090,10 +12216,10 @@
     "room": "C-311",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "09:50",
+    "time_end": "09:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-C) has Seerah in Room C-311 on Thursday from 08:30 to 09:50."
+    "rag_summary": "BS CS (Batch 2025, Section CS-C) has Seerah in Room C-311 on Thursday from 08:30 to 09:25."
   },
   {
     "id": "FSC-THU-C311-1130-CSJ",
@@ -12162,10 +12288,10 @@
     "room": "C-401",
     "day": "Thursday",
     "time_start": "14:30",
-    "time_end": "15:50",
+    "time_end": "15:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CS (Batch 2025, Section CS-A) has Seerah in Room C-401 on Thursday from 14:30 to 15:50."
+    "rag_summary": "BS CS (Batch 2025, Section CS-A) has Seerah in Room C-401 on Thursday from 14:30 to 15:25."
   },
   {
     "id": "FSC-THU-C402-0830-CSB",
@@ -12504,10 +12630,10 @@
     "room": "C-407",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "09:50",
+    "time_end": "09:25",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-A) has UHQ-II in Room C-407 on Thursday from 08:30 to 09:50."
+    "rag_summary": "BS SE (Batch 2025, Section SE-A) has UHQ-II in Room C-407 on Thursday from 08:30 to 09:25."
   },
   {
     "id": "FSC-THU-C407-1300-CSF",
@@ -12612,10 +12738,10 @@
     "room": "C-409",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-A) has Ideology of Pak in Room C-409 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS SE (Batch 2026, Section SE-A) has Ideology of Pak in Room C-409 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-C409-1300-SEB",
@@ -12648,10 +12774,10 @@
     "room": "C-409",
     "day": "Thursday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-B) has Ideology of Pak in Room C-409 on Thursday from 14:30 to 17:15."
+    "rag_summary": "BS SE (Batch 2026, Section SE-B) has Ideology of Pak in Room C-409 on Thursday from 14:30 to 16:15."
   },
   {
     "id": "FSC-THU-C601-0830-SEC",
@@ -12714,16 +12840,16 @@
     "degree": "BS",
     "batch": "2026",
     "semester": "Unknown",
-    "course_name": "Psychology",
+    "course_name": "Arts & Humanities",
     "section": "SE-C",
     "instructor": null,
     "room": "C-601",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-C) has Psychology in Room C-601 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-C) has Arts & Humanities in Room C-601 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-C602-0830-SED",
@@ -12774,10 +12900,10 @@
     "room": "C-602",
     "day": "Thursday",
     "time_start": "11:30",
-    "time_end": "14:20",
+    "time_end": "13:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2025, Section SE-B) has Pak Studies in Room C-602 on Thursday from 11:30 to 14:20."
+    "rag_summary": "BS SE (Batch 2025, Section SE-B) has Pak Studies in Room C-602 on Thursday from 11:30 to 13:15."
   },
   {
     "id": "FSC-THU-C603-0830-SEE",
@@ -12786,16 +12912,16 @@
     "degree": "BS",
     "batch": "2026",
     "semester": "Unknown",
-    "course_name": "Psychology",
+    "course_name": "Arts & Humanities",
     "section": "SE-E",
     "instructor": null,
     "room": "C-603",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-E) has Psychology in Room C-603 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS SE (Batch 2026, Section SE-E) has Arts & Humanities in Room C-603 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-C603-1300-SEE",
@@ -13140,6 +13266,24 @@
     "rag_summary": "BS SE (Batch 2023, Section SE-B) has NLP in Room C-609 on Thursday from 13:00 to 14:20."
   },
   {
+    "id": "FSC-THU-C609-1555-AIB",
+    "school": "School of Computing",
+    "department": "AI",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "PF",
+    "section": "AI-B",
+    "instructor": null,
+    "room": "C-609",
+    "day": "Thursday",
+    "time_start": "15:55",
+    "time_end": "17:15",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS AI (Batch 2026, Section AI-B) has PF in Room C-609 on Thursday from 15:55 to 17:15."
+  },
+  {
     "id": "FSC-THU-D301-0830-AIC",
     "school": "School of Computing",
     "department": "AI",
@@ -13206,10 +13350,10 @@
     "room": "D-301",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-C) has Islamic in Room D-301 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS AI (Batch 2026, Section AI-C) has Islamic in Room D-301 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-D302-0830-AIB",
@@ -13224,10 +13368,10 @@
     "room": "D-302",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-B) has Func Eng in Room D-302 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS AI (Batch 2026, Section AI-B) has Func Eng in Room D-302 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-D302-1130-CYB",
@@ -13260,10 +13404,10 @@
     "room": "D-302",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Func Eng in Room D-302 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS AI (Batch 2026, Section AI-A) has Func Eng in Room D-302 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-D303-1000-DSA",
@@ -13314,10 +13458,10 @@
     "room": "D-303",
     "day": "Thursday",
     "time_start": "14:30",
-    "time_end": "17:15",
+    "time_end": "16:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2025, Section AI-A) has Pak Studies in Room D-303 on Thursday from 14:30 to 17:15."
+    "rag_summary": "BS AI (Batch 2025, Section AI-A) has Pak Studies in Room D-303 on Thursday from 14:30 to 16:15."
   },
   {
     "id": "FSC-THU-D304-0830-AIC",
@@ -13638,10 +13782,10 @@
     "room": "D-312",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Islamic in Room D-312 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS DS (Batch 2026, Section DS-A) has Islamic in Room D-312 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-D313-0830-DSA",
@@ -13962,10 +14106,10 @@
     "room": "D-402",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2025, Section AI-B) has Pak Studies in Room D-402 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS AI (Batch 2025, Section AI-B) has Pak Studies in Room D-402 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-D403-0830-DSC",
@@ -13980,10 +14124,10 @@
     "room": "D-403",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-C) has Ideology of Pak in Room D-403 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS DS (Batch 2026, Section DS-C) has Ideology of Pak in Room D-403 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-D404-0830-CSA",
@@ -14358,10 +14502,10 @@
     "room": "D-414",
     "day": "Thursday",
     "time_start": "13:00",
-    "time_end": "15:50",
+    "time_end": "14:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-A) has Arts & Humanities in Room D-414 on Thursday from 13:00 to 15:50."
+    "rag_summary": "BS CY (Batch 2026, Section CY-A) has Arts & Humanities in Room D-414 on Thursday from 13:00 to 14:45."
   },
   {
     "id": "FSC-THU-D415-1000-CYB",
@@ -14412,10 +14556,10 @@
     "room": "D-416",
     "day": "Thursday",
     "time_start": "08:30",
-    "time_end": "11:20",
+    "time_end": "10:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-D) has Arts & Humanities in Room D-416 on Thursday from 08:30 to 11:20."
+    "rag_summary": "BS CY (Batch 2026, Section CY-D) has Arts & Humanities in Room D-416 on Thursday from 08:30 to 10:15."
   },
   {
     "id": "FSC-THU-D416-1130-CYD",
@@ -14436,6 +14580,42 @@
     "rag_summary": "BS CY (Batch 2026, Section CY-D) has PF in Room D-416 on Thursday from 11:30 to 12:50."
   },
   {
+    "id": "FSC-THU-D416-1300-CYB",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "CY-B",
+    "instructor": null,
+    "room": "D-416",
+    "day": "Thursday",
+    "time_start": "13:00",
+    "time_end": "14:20",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS CY (Batch 2025, Section CY-B) has LA in Room D-416 on Thursday from 13:00 to 14:20."
+  },
+  {
+    "id": "FSC-THU-D416-1430-CYA",
+    "school": "School of Computing",
+    "department": "CY",
+    "degree": "BS",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "LA",
+    "section": "CY-A",
+    "instructor": null,
+    "room": "D-416",
+    "day": "Thursday",
+    "time_start": "14:30",
+    "time_end": "15:50",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS CY (Batch 2025, Section CY-A) has LA in Room D-416 on Thursday from 14:30 to 15:50."
+  },
+  {
     "id": "FSC-THU-D501-1130-CYC",
     "school": "School of Computing",
     "department": "CY",
@@ -14452,42 +14632,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS CY (Batch 2026, Section CY-C) has AP in Room D-501 on Thursday from 11:30 to 12:50."
-  },
-  {
-    "id": "FSC-THU-D501-1300-CYB",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "LA",
-    "section": "CY-B",
-    "instructor": null,
-    "room": "D-501",
-    "day": "Thursday",
-    "time_start": "13:00",
-    "time_end": "14:20",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-B) has LA in Room D-501 on Thursday from 13:00 to 14:20."
-  },
-  {
-    "id": "FSC-THU-D501-1430-CYA",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "LA",
-    "section": "CY-A",
-    "instructor": null,
-    "room": "D-501",
-    "day": "Thursday",
-    "time_start": "14:30",
-    "time_end": "15:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2025, Section CY-A) has LA in Room D-501 on Thursday from 14:30 to 15:50."
   },
   {
     "id": "FSC-THU-D502-0830-CYC",
@@ -15390,7 +15534,7 @@
     "rag_summary": "BS CY (Batch 2026, Section CY-D) has Calculus in Room C-301 on Friday from 11:30 to 12:50."
   },
   {
-    "id": "FSC-FRI-C301-1430-CYC",
+    "id": "FSC-FRI-C301-1400-CYC",
     "school": "School of Computing",
     "department": "CY",
     "degree": "BS",
@@ -15401,11 +15545,11 @@
     "instructor": null,
     "room": "C-301",
     "day": "Friday",
-    "time_start": "14:30",
-    "time_end": "15:50",
+    "time_start": "14:00",
+    "time_end": "15:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-C) has Ideology of Pak in Room C-301 on Friday from 14:30 to 15:50."
+    "rag_summary": "BS CY (Batch 2026, Section CY-C) has Ideology of Pak in Room C-301 on Friday from 14:00 to 15:45."
   },
   {
     "id": "FSC-FRI-C302-0830-CYB",
@@ -15528,10 +15672,46 @@
     "room": "C-304",
     "day": "Friday",
     "time_start": "10:00",
-    "time_end": "12:50",
+    "time_end": "11:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-C) has Islamic in Room C-304 on Friday from 10:00 to 12:50."
+    "rag_summary": "BS DS (Batch 2026, Section DS-C) has Islamic in Room C-304 on Friday from 10:00 to 11:45."
+  },
+  {
+    "id": "FSC-FRI-C305-1000-SEC",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Calculus",
+    "section": "SE-C",
+    "instructor": null,
+    "room": "C-305",
+    "day": "Friday",
+    "time_start": "10:00",
+    "time_end": "11:20",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-C) has Calculus in Room C-305 on Friday from 10:00 to 11:20."
+  },
+  {
+    "id": "FSC-FRI-C305-1130-SED",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Calculus",
+    "section": "SE-D",
+    "instructor": null,
+    "room": "C-305",
+    "day": "Friday",
+    "time_start": "11:30",
+    "time_end": "12:50",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-D) has Calculus in Room C-305 on Friday from 11:30 to 12:50."
   },
   {
     "id": "FSC-FRI-C307-0830-CYA",
@@ -15606,7 +15786,7 @@
     "rag_summary": "BS AI (Batch 2026, Section AI-B) has Calculus in Room C-309 on Friday from 11:30 to 12:50."
   },
   {
-    "id": "FSC-FRI-C309-1300-AIB",
+    "id": "FSC-FRI-C309-1400-AIB",
     "school": "School of Computing",
     "department": "AI",
     "degree": "BS",
@@ -15617,11 +15797,11 @@
     "instructor": null,
     "room": "C-309",
     "day": "Friday",
-    "time_start": "13:00",
-    "time_end": "15:50",
+    "time_start": "14:00",
+    "time_end": "15:45",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-B) has Islamic in Room C-309 on Friday from 13:00 to 15:50."
+    "rag_summary": "BS AI (Batch 2026, Section AI-B) has Islamic in Room C-309 on Friday from 14:00 to 15:45."
   },
   {
     "id": "FSC-FRI-C310-0830-CSF",
@@ -15660,6 +15840,24 @@
     "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-G) has LA in Room C-310 on Friday from 10:00 to 11:20."
   },
   {
+    "id": "FSC-FRI-C401-0830-SED",
+    "school": "School of Computing",
+    "department": "SE",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Arts & Humanities",
+    "section": "SE-D",
+    "instructor": null,
+    "room": "C-401",
+    "day": "Friday",
+    "time_start": "08:30",
+    "time_end": "10:15",
+    "is_lab": false,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-D) has Arts & Humanities in Room C-401 on Friday from 08:30 to 10:15."
+  },
+  {
     "id": "FSC-FRI-IT Lab 1 (D210)-1000-CYB",
     "school": "School of Computing",
     "department": "CY",
@@ -15672,10 +15870,10 @@
     "room": "IT Lab 1 (D-210)",
     "day": "Friday",
     "time_start": "10:00",
-    "time_end": "12:50",
+    "time_end": "12:45",
     "is_lab": true,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-B) has PF Lab (Lab) in Room IT Lab 1 (D-210) on Friday from 10:00 to 12:50."
+    "rag_summary": "BS CY (Batch 2026, Section CY-B) has PF Lab (Lab) in Room IT Lab 1 (D-210) on Friday from 10:00 to 12:45."
   },
   {
     "id": "FSC-FRI-IT Lab 1 (D210)-1430-DSC",
@@ -15708,10 +15906,28 @@
     "room": "IT Lab 2 (D-211)",
     "day": "Friday",
     "time_start": "10:00",
-    "time_end": "12:50",
+    "time_end": "12:45",
     "is_lab": true,
     "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-E) has IICT Lab (Lab) in Room IT Lab 2 (D-211) on Friday from 10:00 to 12:50."
+    "rag_summary": "BS SE (Batch 2026, Section SE-E) has IICT Lab (Lab) in Room IT Lab 2 (D-211) on Friday from 10:00 to 12:45."
+  },
+  {
+    "id": "FSC-FRI-IT Lab 2 (D211)-1300-DSA",
+    "school": "School of Computing",
+    "department": "DS",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "Unknown",
+    "course_name": "Intro to DS Lab",
+    "section": "DS-A",
+    "instructor": null,
+    "room": "IT Lab 2 (D-211)",
+    "day": "Friday",
+    "time_start": "13:00",
+    "time_end": "17:15",
+    "is_lab": true,
+    "is_rescheduled": true,
+    "rag_summary": "[RESCHEDULED] BS DS (Batch 2026, Section DS-A) has Intro to DS Lab (Lab) in Room IT Lab 2 (D-211) on Friday from 13:00 to 17:15."
   },
   {
     "id": "FSC-FRI-IT Lab 3 (D213)-0830-CYA",
@@ -15834,10 +16050,10 @@
     "room": "Cyber (D-514)",
     "day": "Friday",
     "time_start": "10:00",
-    "time_end": "12:50",
+    "time_end": "12:45",
     "is_lab": true,
     "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2024, Section CY-A) has DB Lab (Lab) in Room Cyber (D-514) on Friday from 10:00 to 12:50."
+    "rag_summary": "BS CY (Batch 2024, Section CY-A) has DB Lab (Lab) in Room Cyber (D-514) on Friday from 10:00 to 12:45."
   },
   {
     "id": "FSC-FRI-Cyber (D514)-1300-CYA",
@@ -15928,258 +16144,6 @@
     "is_lab": true,
     "is_rescheduled": false,
     "rag_summary": "BS CY (Batch 2026, Section CY-B2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Friday from 13:00 to 17:15."
-  },
-  {
-    "id": "FSC-FRI-BDigital-0830-CSH",
-    "school": "School of Computing",
-    "department": "CS",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "DLD Lab",
-    "section": "CS-H",
-    "instructor": null,
-    "room": "B-Digital",
-    "day": "Friday",
-    "time_start": "08:30",
-    "time_end": "11:20",
-    "is_lab": true,
-    "is_rescheduled": true,
-    "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-H) has DLD Lab (Lab) in Room B-Digital on Friday from 08:30 to 11:20."
-  },
-  {
-    "id": "FSC-SAT-C301-1130-CYD",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF",
-    "section": "CY-D",
-    "instructor": null,
-    "room": "C-301",
-    "day": "Saturday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-D) has PF in Room C-301 on Saturday from 11:30 to 12:50."
-  },
-  {
-    "id": "FSC-SAT-IT Lab 1 (D210)-0830-DSC",
-    "school": "School of Computing",
-    "department": "DS",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "IICT Lab",
-    "section": "DS-C",
-    "instructor": null,
-    "room": "IT Lab 1 (D-210)",
-    "day": "Saturday",
-    "time_start": "08:30",
-    "time_end": "11:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-C) has IICT Lab (Lab) in Room IT Lab 1 (D-210) on Saturday from 08:30 to 11:20."
-  },
-  {
-    "id": "FSC-SAT-IT Lab 1 (D210)-1430-CYD",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "IICT Lab",
-    "section": "CY-D",
-    "instructor": null,
-    "room": "IT Lab 1 (D-210)",
-    "day": "Saturday",
-    "time_start": "14:30",
-    "time_end": "17:15",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-D) has IICT Lab (Lab) in Room IT Lab 1 (D-210) on Saturday from 14:30 to 17:15."
-  },
-  {
-    "id": "FSC-SAT-IT Lab 2 (D211)-0830-AIB",
-    "school": "School of Computing",
-    "department": "AI",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF Lab",
-    "section": "AI-B",
-    "instructor": null,
-    "room": "IT Lab 2 (D-211)",
-    "day": "Saturday",
-    "time_start": "08:30",
-    "time_end": "11:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-B) has PF Lab (Lab) in Room IT Lab 2 (D-211) on Saturday from 08:30 to 11:20."
-  },
-  {
-    "id": "FSC-SAT-Margala 1 (C209)-1130-AIB2",
-    "school": "School of Computing",
-    "department": "AI",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "AI-B2",
-    "instructor": null,
-    "room": "Margala 1 (C-209)",
-    "day": "Saturday",
-    "time_start": "11:30",
-    "time_end": "14:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-B2) has Func Eng Lab (Lab) in Room Margala 1 (C-209) on Saturday from 11:30 to 14:20."
-  },
-  {
-    "id": "FSC-SAT-Margala 3 (C211)-0830-CYD1",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "CY-D1",
-    "instructor": null,
-    "room": "Margala 3 (C-211)",
-    "day": "Saturday",
-    "time_start": "08:30",
-    "time_end": "11:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-D1) has Func Eng Lab (Lab) in Room Margala 3 (C-211) on Saturday from 08:30 to 11:20."
-  },
-  {
-    "id": "FSC-SAT-Margala 3 (C211)-1130-SEE1",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "SE-E1",
-    "instructor": null,
-    "room": "Margala 3 (C-211)",
-    "day": "Saturday",
-    "time_start": "11:30",
-    "time_end": "14:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-E1) has Func Eng Lab (Lab) in Room Margala 3 (C-211) on Saturday from 11:30 to 14:20."
-  },
-  {
-    "id": "FSC-SAT-Margala 3 (C211)-1430-DSC1",
-    "school": "School of Computing",
-    "department": "DS",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "DS-C1",
-    "instructor": null,
-    "room": "Margala 3 (C-211)",
-    "day": "Saturday",
-    "time_start": "14:30",
-    "time_end": "17:15",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-C1) has Func Eng Lab (Lab) in Room Margala 3 (C-211) on Saturday from 14:30 to 17:15."
-  },
-  {
-    "id": "FSC-SAT-Margala 4 (C212-0830-CYD2",
-    "school": "School of Computing",
-    "department": "CY",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "CY-D2",
-    "instructor": null,
-    "room": "Margala 4 (C-212",
-    "day": "Saturday",
-    "time_start": "08:30",
-    "time_end": "11:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS CY (Batch 2026, Section CY-D2) has Func Eng Lab (Lab) in Room Margala 4 (C-212 on Saturday from 08:30 to 11:20."
-  },
-  {
-    "id": "FSC-SAT-Margala 4 (C212-1130-SEE2",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "SE-E2",
-    "instructor": null,
-    "room": "Margala 4 (C-212",
-    "day": "Saturday",
-    "time_start": "11:30",
-    "time_end": "14:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-E2) has Func Eng Lab (Lab) in Room Margala 4 (C-212 on Saturday from 11:30 to 14:20."
-  },
-  {
-    "id": "FSC-SAT-Margala 4 (C212-1430-DSC2",
-    "school": "School of Computing",
-    "department": "DS",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "DS-C2",
-    "instructor": null,
-    "room": "Margala 4 (C-212",
-    "day": "Saturday",
-    "time_start": "14:30",
-    "time_end": "17:15",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS DS (Batch 2026, Section DS-C2) has Func Eng Lab (Lab) in Room Margala 4 (C-212 on Saturday from 14:30 to 17:15."
-  },
-  {
-    "id": "FSC-SAT-Rawal 1 (C509)-1430-SEE",
-    "school": "School of Computing",
-    "department": "SE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "PF Lab",
-    "section": "SE-E",
-    "instructor": null,
-    "room": "Rawal 1 (C-509)",
-    "day": "Saturday",
-    "time_start": "14:30",
-    "time_end": "17:15",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS SE (Batch 2026, Section SE-E) has PF Lab (Lab) in Room Rawal 1 (C-509) on Saturday from 14:30 to 17:15."
-  },
-  {
-    "id": "FSC-SAT-CRawal 4 (C512)-1130-AIB1",
-    "school": "School of Computing",
-    "department": "AI",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Func Eng Lab",
-    "section": "AI-B1",
-    "instructor": null,
-    "room": "C-Rawal 4 (C-512)",
-    "day": "Saturday",
-    "time_start": "11:30",
-    "time_end": "14:20",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS AI (Batch 2026, Section AI-B1) has Func Eng Lab (Lab) in Room C-Rawal 4 (C-512) on Saturday from 11:30 to 14:20."
   },
   {
     "id": "FSM-MON-A01-0830",
@@ -22752,6 +22716,24 @@
     "rag_summary": "BS FT (Batch 2026, Section Unknown) has SS1007 Islamic Studies/Ethics in Room A- 203 on Wednesday from 13:00 to 14:20."
   },
   {
+    "id": "FSM-WED-A210-0830",
+    "school": "School of Management",
+    "department": "BBA",
+    "degree": "BBA",
+    "batch": "2026",
+    "semester": "1",
+    "course_name": "AF1003 Intro to Financial Accounting",
+    "section": "BBA-C",
+    "instructor": null,
+    "room": "A-210",
+    "day": "Wednesday",
+    "time_start": "08:30",
+    "time_end": "09:50",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BBA BBA (Batch 2026, Section BBA-C) has AF1003 Intro to Financial Accounting in Room A-210 on Wednesday from 08:30 to 09:50."
+  },
+  {
     "id": "FSM-WED-A210-1000",
     "school": "School of Management",
     "department": "FT",
@@ -22930,24 +22912,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS AF (Batch 2024, Section AF-B) has CS3003 Management Information System in Room A--211 on Wednesday from 15:50 to 17:10."
-  },
-  {
-    "id": "FSM-WED-A301-0830",
-    "school": "School of Management",
-    "department": "Unknown",
-    "degree": "BS",
-    "batch": "Unknown",
-    "semester": "Unknown",
-    "course_name": "AF1002 Finacial Accounting",
-    "section": "Unknown",
-    "instructor": null,
-    "room": "A-301",
-    "day": "Wednesday",
-    "time_start": "08:30",
-    "time_end": "09:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF1002 Finacial Accounting in Room A-301 on Wednesday from 08:30 to 09:50."
   },
   {
     "id": "FSM-WED-A301-1000",
@@ -23546,12 +23510,12 @@
   {
     "id": "FSM-WED-A315-0830",
     "school": "School of Management",
-    "department": "BBA",
-    "degree": "BBA",
-    "batch": "2026",
-    "semester": "1",
-    "course_name": "AF1003 Intro to Financial Accounting",
-    "section": "BBA-C",
+    "department": "Unknown",
+    "degree": "BS",
+    "batch": "Unknown",
+    "semester": "Unknown",
+    "course_name": "AF1002 Finacial Accounting",
+    "section": "Unknown",
     "instructor": null,
     "room": "A-315",
     "day": "Wednesday",
@@ -23559,7 +23523,25 @@
     "time_end": "09:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BBA BBA (Batch 2026, Section BBA-C) has AF1003 Intro to Financial Accounting in Room A-315 on Wednesday from 08:30 to 09:50."
+    "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF1002 Finacial Accounting in Room A-315 on Wednesday from 08:30 to 09:50."
+  },
+  {
+    "id": "FSM-WED-A315-1000",
+    "school": "School of Management",
+    "department": "Unknown",
+    "degree": "BS",
+    "batch": "Unknown",
+    "semester": "Unknown",
+    "course_name": "AF1002 Finacial Accounting",
+    "section": "Unknown",
+    "instructor": null,
+    "room": "A-315",
+    "day": "Wednesday",
+    "time_start": "10:00",
+    "time_end": "11:20",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF1002 Finacial Accounting in Room A-315 on Wednesday from 10:00 to 11:20."
   },
   {
     "id": "FSM-WED-A315-1130",
@@ -24768,22 +24750,22 @@
     "rag_summary": "BBA BBA (Batch 2025, Section BBA-A) has MG2001 Organizational Behaviour in Room A-02 on Thursday from 13:00 to 14:20."
   },
   {
-    "id": "FSM-THU-A03-1000",
+    "id": "FSM-THU-A03-0830",
     "school": "School of Management",
-    "department": "BA",
+    "department": "FT",
     "degree": "BS",
-    "batch": "2026",
-    "semester": "1",
-    "course_name": "MG1011 Business Mathematics",
-    "section": "BSBA-A",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "SS2043 Civics and Community Engagement",
+    "section": "Unknown",
     "instructor": null,
     "room": "A-03",
     "day": "Thursday",
-    "time_start": "10:00",
-    "time_end": "11:20",
+    "time_start": "08:30",
+    "time_end": "09:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS BA (Batch 2026, Section BSBA-A) has MG1011 Business Mathematics in Room A-03 on Thursday from 10:00 to 11:20."
+    "rag_summary": "BS FT (Batch 2025, Section Unknown) has SS2043 Civics and Community Engagement in Room A-03 on Thursday from 08:30 to 09:50."
   },
   {
     "id": "FSM-THU-A03-1130",
@@ -25036,6 +25018,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BBA BBA (Batch 2024, Section BBA-B) has MG3004 Human Resource Management in Room A-102 on Thursday from 08:30 to 09:50."
+  },
+  {
+    "id": "FSM-THU-A102-1000",
+    "school": "School of Management",
+    "department": "BA",
+    "degree": "BS",
+    "batch": "2026",
+    "semester": "1",
+    "course_name": "MG1011 Business Mathematics",
+    "section": "BSBA-A",
+    "instructor": null,
+    "room": "A-102",
+    "day": "Thursday",
+    "time_start": "10:00",
+    "time_end": "11:20",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS BA (Batch 2026, Section BSBA-A) has MG1011 Business Mathematics in Room A-102 on Thursday from 10:00 to 11:20."
   },
   {
     "id": "FSM-THU-A102-1130",
@@ -25506,42 +25506,6 @@
     "rag_summary": "BS FT (Batch 2025, Section FT-C) has CS2012 Introduction to Object Oriented Programming in Room A- 203 on Thursday from 13:00 to 14:20."
   },
   {
-    "id": "FSM-THU-A 203-1425",
-    "school": "School of Management",
-    "department": "FT",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "SS2043 Civics and Community Engagement (02:25 - 04:15)",
-    "section": "Unknown",
-    "instructor": null,
-    "room": "A- 203",
-    "day": "Thursday",
-    "time_start": "14:25",
-    "time_end": "15:45",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS FT (Batch 2025, Section Unknown) has SS2043 Civics and Community Engagement (02:25 - 04:15) in Room A- 203 on Thursday from 14:25 to 15:45."
-  },
-  {
-    "id": "FSM-THU-A 203-1550",
-    "school": "School of Management",
-    "department": "FT",
-    "degree": "BS",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "FT03C",
-    "section": "Unknown",
-    "instructor": null,
-    "room": "A- 203",
-    "day": "Thursday",
-    "time_start": "15:50",
-    "time_end": "17:10",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS FT (Batch 2025, Section Unknown) has FT03C in Room A- 203 on Thursday from 15:50 to 17:10."
-  },
-  {
     "id": "FSM-THU-A210-0830",
     "school": "School of Management",
     "department": "FT",
@@ -25810,6 +25774,24 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BS BA (Batch 2025, Section BSBA-B) has CS2016 Programming for Business in Room A-301 on Thursday from 14:25 to 15:45."
+  },
+  {
+    "id": "FSM-THU-A301-1550",
+    "school": "School of Management",
+    "department": "Unknown",
+    "degree": "BS",
+    "batch": "Unknown",
+    "semester": "7",
+    "course_name": "SS 1018U-Holy Quran",
+    "section": "BSBA-A",
+    "instructor": null,
+    "room": "A-301",
+    "day": "Thursday",
+    "time_start": "15:50",
+    "time_end": "17:10",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BS Unknown (Batch Unknown, Section BSBA-A) has SS 1018U-Holy Quran in Room A-301 on Thursday from 15:50 to 17:10."
   },
   {
     "id": "FSM-THU-A302-0830",
@@ -28026,6 +28008,24 @@
     "rag_summary": "BS BA (Batch 2024, Section BSBA-C) has CS2003 Data Structures and Business Application in Room A-210 on Friday from 10:00 to 11:20."
   },
   {
+    "id": "FSM-FRI-A211-0830",
+    "school": "School of Management",
+    "department": "BBA",
+    "degree": "BBA",
+    "batch": "2025",
+    "semester": "Unknown",
+    "course_name": "SS2041 Critical Thinking",
+    "section": "Unknown",
+    "instructor": null,
+    "room": "A--211",
+    "day": "Friday",
+    "time_start": "08:30",
+    "time_end": "09:50",
+    "is_lab": false,
+    "is_rescheduled": false,
+    "rag_summary": "BBA BBA (Batch 2025, Section Unknown) has SS2041 Critical Thinking in Room A--211 on Friday from 08:30 to 09:50."
+  },
+  {
     "id": "FSM-FRI-A301-1000",
     "school": "School of Management",
     "department": "FT",
@@ -28152,24 +28152,6 @@
     "rag_summary": "BBA BBA (Batch 2026, Section Unknown) has SS1007 Islamic Studies/Ethics in Room A-303 on Friday from 08:30 to 09:50."
   },
   {
-    "id": "FSM-FRI-A305-1130",
-    "school": "School of Management",
-    "department": "Unknown",
-    "degree": "BS",
-    "batch": "Unknown",
-    "semester": "Unknown",
-    "course_name": "SS 1018U-Holy Quran  in Room C-310",
-    "section": "Unknown",
-    "instructor": null,
-    "room": "A-305",
-    "day": "Friday",
-    "time_start": "11:30",
-    "time_end": "12:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has SS 1018U-Holy Quran  in Room C-310 in Room A-305 on Friday from 11:30 to 12:50."
-  },
-  {
     "id": "FSM-FRI-A310-0830",
     "school": "School of Management",
     "department": "BBA",
@@ -28242,24 +28224,6 @@
     "rag_summary": "BBA BBA (Batch 2025, Section Unknown) has SS2041 Critical Thinking in Room A-311 on Friday from 14:25 to 15:45."
   },
   {
-    "id": "FSM-FRI-A314-0830",
-    "school": "School of Management",
-    "department": "Unknown",
-    "degree": "BS",
-    "batch": "Unknown",
-    "semester": "Unknown",
-    "course_name": "AF1002 Finacial Accounting",
-    "section": "Unknown",
-    "instructor": null,
-    "room": "A-314",
-    "day": "Friday",
-    "time_start": "08:30",
-    "time_end": "09:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF1002 Finacial Accounting in Room A-314 on Friday from 08:30 to 09:50."
-  },
-  {
     "id": "FSM-FRI-A315-0830",
     "school": "School of Management",
     "department": "BBA",
@@ -28276,24 +28240,6 @@
     "is_lab": false,
     "is_rescheduled": false,
     "rag_summary": "BBA BBA (Batch 2025, Section Unknown) has SS2043 Civics and Community Engagement in Room A-315 on Friday from 08:30 to 09:50."
-  },
-  {
-    "id": "FSM-FRI-A316-0830",
-    "school": "School of Management",
-    "department": "BBA",
-    "degree": "BBA",
-    "batch": "2025",
-    "semester": "Unknown",
-    "course_name": "SS2041 Critical Thinking",
-    "section": "Unknown",
-    "instructor": null,
-    "room": "A-316",
-    "day": "Friday",
-    "time_start": "08:30",
-    "time_end": "09:50",
-    "is_lab": false,
-    "is_rescheduled": false,
-    "rag_summary": "BBA BBA (Batch 2025, Section Unknown) has SS2041 Critical Thinking in Room A-316 on Friday from 08:30 to 09:50."
   },
   {
     "id": "FSM-FRI-Labs-0830",
@@ -29790,24 +29736,6 @@
     "rag_summary": "BS EE (Batch 2026, Section EE-D) has Engineering Drawing in Room Koh on Monday from 12:50 to 14:10."
   },
   {
-    "id": "FSE-MON-Phy-1250",
-    "school": "School of Engineering",
-    "department": "EE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Physics for Engineers Lab",
-    "section": "EE-E",
-    "instructor": null,
-    "room": "Phy",
-    "day": "Monday",
-    "time_start": "12:50",
-    "time_end": "14:10",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch 2026, Section EE-E) has Physics for Engineers Lab (Lab) in Room Phy on Monday from 12:50 to 14:10."
-  },
-  {
     "id": "FSE-MON-MDEL-1250",
     "school": "School of Engineering",
     "department": "EE",
@@ -30922,24 +30850,6 @@
     "is_lab": true,
     "is_rescheduled": false,
     "rag_summary": "BS CE (Batch 2025, Section CE-B) has Object Oriented Programming Lab (Lab) in Room Comp-II on Tuesday from 11:25 to 12:45."
-  },
-  {
-    "id": "FSE-TUE-CompII-1420",
-    "school": "School of Engineering",
-    "department": "EE",
-    "degree": "BS",
-    "batch": "2026",
-    "semester": "Unknown",
-    "course_name": "Applications of ICT Lab",
-    "section": "EE-E",
-    "instructor": null,
-    "room": "Comp-II",
-    "day": "Tuesday",
-    "time_start": "14:20",
-    "time_end": "15:40",
-    "is_lab": true,
-    "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch 2026, Section EE-E) has Applications of ICT Lab (Lab) in Room Comp-II on Tuesday from 14:20 to 15:40."
   },
   {
     "id": "FSE-TUE-MDEL-1125",
@@ -33300,6 +33210,24 @@
     "rag_summary": "BS EE (Batch 2025, Section EE-C) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Thursday from 08:30 to 09:50."
   },
   {
+    "id": "FSE-THU-CompII-1420",
+    "school": "School of Engineering",
+    "department": "EE",
+    "degree": "BS",
+    "batch": "Unknown",
+    "semester": "Unknown",
+    "course_name": "Instrumentation and Measurements - Lab",
+    "section": "EE-A",
+    "instructor": null,
+    "room": "Comp-II",
+    "day": "Thursday",
+    "time_start": "14:20",
+    "time_end": "15:40",
+    "is_lab": true,
+    "is_rescheduled": false,
+    "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Instrumentation and Measurements - Lab (Lab) in Room Comp-II on Thursday from 14:20 to 15:40."
+  },
+  {
     "id": "FSE-THU-Koh-0955",
     "school": "School of Engineering",
     "department": "CE",
@@ -33504,7 +33432,7 @@
     "degree": "BS",
     "batch": "2024",
     "semester": "Unknown",
-    "course_name": "Data Com. & Netwks.",
+    "course_name": "MP Inter. & Prog",
     "section": "EE-A",
     "instructor": null,
     "room": "B-019",
@@ -33513,7 +33441,7 @@
     "time_end": "09:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Com. & Netwks. in Room B-019 on Friday from 08:30 to 09:50."
+    "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-019 on Friday from 08:30 to 09:50."
   },
   {
     "id": "FSE-FRI-B019-0955",
@@ -33522,7 +33450,7 @@
     "degree": "BS",
     "batch": "2024",
     "semester": "Unknown",
-    "course_name": "MP Inter. & Prog",
+    "course_name": "Data Com. & Netwks.",
     "section": "EE-A",
     "instructor": null,
     "room": "B-019",
@@ -33531,7 +33459,7 @@
     "time_end": "11:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-019 on Friday from 09:55 to 11:15."
+    "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Com. & Netwks. in Room B-019 on Friday from 09:55 to 11:15."
   },
   {
     "id": "FSE-FRI-B019-1125",
@@ -33558,8 +33486,8 @@
     "degree": "BS",
     "batch": "2024",
     "semester": "Unknown",
-    "course_name": "Electronic Circuit Design",
-    "section": "EE-A",
+    "course_name": "A & Digital Comm.",
+    "section": "EE-B",
     "instructor": null,
     "room": "B-020",
     "day": "Friday",
@@ -33567,7 +33495,7 @@
     "time_end": "09:50",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch 2024, Section EE-A) has Electronic Circuit Design in Room B-020 on Friday from 08:30 to 09:50."
+    "rag_summary": "BS EE (Batch 2024, Section EE-B) has A & Digital Comm. in Room B-020 on Friday from 08:30 to 09:50."
   },
   {
     "id": "FSE-FRI-B020-0955",
@@ -33576,8 +33504,8 @@
     "degree": "BS",
     "batch": "2024",
     "semester": "Unknown",
-    "course_name": "A & Digital Comm.",
-    "section": "EE-B",
+    "course_name": "Electronic Circuit Design",
+    "section": "EE-A",
     "instructor": null,
     "room": "B-020",
     "day": "Friday",
@@ -33585,7 +33513,7 @@
     "time_end": "11:15",
     "is_lab": false,
     "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch 2024, Section EE-B) has A & Digital Comm. in Room B-020 on Friday from 09:55 to 11:15."
+    "rag_summary": "BS EE (Batch 2024, Section EE-A) has Electronic Circuit Design in Room B-020 on Friday from 09:55 to 11:15."
   },
   {
     "id": "FSE-FRI-B020-1125",
@@ -33786,22 +33714,22 @@
     "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Friday from 11:25 to 12:45."
   },
   {
-    "id": "FSE-FRI-Koh-0955",
+    "id": "FSE-FRI-Phy-0830",
     "school": "School of Engineering",
     "department": "EE",
     "degree": "BS",
-    "batch": "Unknown",
+    "batch": "2026",
     "semester": "Unknown",
-    "course_name": "Instrumentation and Measurements - Lab",
-    "section": "EE-A",
+    "course_name": "Physics for Engineers Lab",
+    "section": "EE-E",
     "instructor": null,
-    "room": "Koh",
+    "room": "Phy",
     "day": "Friday",
-    "time_start": "09:55",
-    "time_end": "11:15",
+    "time_start": "08:30",
+    "time_end": "09:50",
     "is_lab": true,
     "is_rescheduled": false,
-    "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Instrumentation and Measurements - Lab (Lab) in Room Koh on Friday from 09:55 to 11:15."
+    "rag_summary": "BS EE (Batch 2026, Section EE-E) has Physics for Engineers Lab (Lab) in Room Phy on Friday from 08:30 to 09:50."
   },
   {
     "id": "FSE-FRI-Poth-0830",

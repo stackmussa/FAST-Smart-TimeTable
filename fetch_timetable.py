@@ -285,6 +285,14 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         end_t_parts = end_time_val.split("-")
                         t_end = normalize_time(end_t_parts[1].strip()) if len(end_t_parts) > 1 else ""
 
+                        # Override with explicit time if present in the raw cell value
+                        explicit_time_match = re.search(r"(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})", val)
+                        if explicit_time_match:
+                            t_start = normalize_time(explicit_time_match.group(1).strip())
+                            t_end = normalize_time(explicit_time_match.group(2).strip())
+                            # Remove the explicit time from the course name
+                            course_name = re.sub(r"\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}", "", course_name).strip()
+
                         is_lab = "lab" in course_name.lower() or "lab" in room.lower()
                         entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
 
