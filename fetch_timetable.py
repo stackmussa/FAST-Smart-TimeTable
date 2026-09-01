@@ -9,6 +9,7 @@ import logging
 import requests
 import io
 import re
+import time
 import openpyxl
 from typing import List, Dict, Any
 from bs4 import BeautifulSoup
@@ -113,11 +114,16 @@ def normalize_time(t: str) -> str:
 
 def download_workbook(url: str) -> openpyxl.Workbook:
     """Downloads Google Sheet as an Excel file and loads into openpyxl"""
-    logging.info(f"Downloading data from {url}")
+    # Cache-busting parameter
+    cb_url = f"{url}&_cb={int(time.time())}" if "?" in url else f"{url}?_cb={int(time.time())}"
+    logging.info(f"Downloading data from {cb_url}")
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
     }
-    response = requests.get(url, headers=headers, timeout=30)
+    response = requests.get(cb_url, headers=headers, timeout=30)
     response.raise_for_status()
     return openpyxl.load_workbook(filename=io.BytesIO(response.content), data_only=True)
 
@@ -170,16 +176,22 @@ def parse_fsc() -> List[Dict[str, Any]]:
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                extra_http_headers={
+                    "Cache-Control": "no-cache, no-store, must-revalidate",
+                    "Pragma": "no-cache"
+                }
+            )
 
             for day_name, gid in FSC_DAY_GIDS.items():
                 frame_url = (
                     f"https://docs.google.com/spreadsheets/d/{FSC_SPREADSHEET_ID}"
-                    f"/htmlview/sheet?headers=true&gid={gid}"
+                    f"/htmlview/sheet?headers=true&gid={gid}&_cb={int(time.time())}"
                 )
                 logging.info(f"Fetching FSC {day_name} (gid={gid})")
 
                 try:
-                    page = browser.new_page()
+                    page = context.new_page()
                     page.goto(frame_url, wait_until="networkidle", timeout=60000)
                     page.wait_for_timeout(1500)
                     html_content = page.content()

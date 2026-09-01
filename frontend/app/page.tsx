@@ -37,7 +37,13 @@ export default function TimetableViewer() {
 
   useEffect(() => {
     // 1. Fetch Data
-    fetch(`/timetable.json?t=${new Date().getTime()}`)
+    fetch(`/timetable.json?t=${Date.now()}`, {
+      cache: 'no-store',
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache'
+      }
+    })
       .then((res) => res.json())
       .then((json: ClassEntry[]) => {
         setData(json);
