@@ -29,6 +29,7 @@ export default function TimetableViewer() {
   const [selectedBatch, setSelectedBatch] = useState<string>('');
   const [selectedSection, setSelectedSection] = useState<string>('');
   const [selectedDay, setSelectedDay] = useState<string>('');
+  const [showRepeated, setShowRepeated] = useState<boolean>(false);
   
   // Force dark mode on mount
   useEffect(() => {
@@ -195,14 +196,15 @@ export default function TimetableViewer() {
           entry.department === selectedDepartment &&
           entry.batch === selectedBatch &&
           baseSection === selectedSection &&
-          entry.day === selectedDay
+          entry.day === selectedDay &&
+          (showRepeated ? true : !entry.is_repeat)
         );
       })
       .sort((a, b) => {
         // Sort chronologically by time_start e.g. "08:30"
         return a.time_start.localeCompare(b.time_start);
       });
-  }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay]);
+  }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, showRepeated]);
 
   if (loading) {
     return (
@@ -223,7 +225,7 @@ export default function TimetableViewer() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Filters */}
-        <div className={`bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border mb-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4`}>
+        <div className={`bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border mb-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 gap-4`}>
 
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 text-gray-300`}>School</label>
@@ -301,6 +303,20 @@ export default function TimetableViewer() {
                 <option key={d} value={d}>{d}</option>
               ))}
             </select>
+          </div>
+
+          <div className="flex flex-col">
+            <label className={`text-sm font-semibold mb-1 text-gray-300`}>Repeated Courses</label>
+            <button
+              onClick={() => setShowRepeated(!showRepeated)}
+              className={`border rounded-lg p-2.5 font-medium transition-colors ${
+                showRepeated 
+                  ? 'bg-blue-600 text-white border-blue-500 hover:bg-blue-700' 
+                  : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600'
+              }`}
+            >
+              {showRepeated ? 'Show: ON' : 'Show: OFF'}
+            </button>
           </div>
         </div>
 
