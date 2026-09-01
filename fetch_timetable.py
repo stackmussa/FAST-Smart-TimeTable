@@ -672,6 +672,36 @@ def parse_fse() -> List[Dict[str, Any]]:
         logging.error(f"Error parsing FSE: {e}")
     return entries
 
+def save_with_metadata(filepath, new_entries):
+    import datetime, os
+    now_iso = datetime.datetime.utcnow().isoformat() + "Z"
+    
+    old_entries = []
+    last_updated = now_iso
+    
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+                old_entries = old_data.get("classes", []) if isinstance(old_data, dict) else old_data
+                last_updated = old_data.get("last_updated", now_iso) if isinstance(old_data, dict) else now_iso
+        except Exception as e:
+            logging.warning(f"Failed to read existing data for {filepath}: {e}")
+            pass
+            
+    if json.dumps(old_entries, sort_keys=True) == json.dumps(new_entries, sort_keys=True):
+        pass # Data identical, keep old timestamp
+    else:
+        last_updated = now_iso # Data changed
+        
+    final_data = {
+        "last_updated": last_updated,
+        "classes": new_entries
+    }
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(final_data, f, indent=2, ensure_ascii=False)
+
 def main():
     logging.info("Starting timetable fetch and parse process.")
     
@@ -681,20 +711,17 @@ def main():
     
     logging.info("Parsing FSC (School of Computing)...")
     fsc_entries = parse_fsc()
-    with open(os.path.join(out_dir, "computing.json"), 'w', encoding='utf-8') as f:
-        json.dump(fsc_entries, f, indent=2, ensure_ascii=False)
+    save_with_metadata(os.path.join(out_dir, "computing.json"), fsc_entries)
     logging.info(f"Saved {len(fsc_entries)} entries to computing.json")
     
     logging.info("Parsing FSM (School of Management)...")
     fsm_entries = parse_fsm()
-    with open(os.path.join(out_dir, "management.json"), 'w', encoding='utf-8') as f:
-        json.dump(fsm_entries, f, indent=2, ensure_ascii=False)
+    save_with_metadata(os.path.join(out_dir, "management.json"), fsm_entries)
     logging.info(f"Saved {len(fsm_entries)} entries to management.json")
     
     logging.info("Parsing FSE (School of Engineering)...")
     fse_entries = parse_fse()
-    with open(os.path.join(out_dir, "engineering.json"), 'w', encoding='utf-8') as f:
-        json.dump(fse_entries, f, indent=2, ensure_ascii=False)
+    save_with_metadata(os.path.join(out_dir, "engineering.json"), fse_entries)
     logging.info(f"Saved {len(fse_entries)} entries to engineering.json")
         
     logging.info("Process completed successfully.")

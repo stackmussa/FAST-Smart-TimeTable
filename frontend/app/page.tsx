@@ -32,6 +32,7 @@ export default function TimetableViewer() {
   const [showRepeated, setShowRepeated] = useState<boolean>(false);
   const [offlineMode, setOfflineMode] = useState<boolean>(false);
   const [isOnline, setIsOnline] = useState<boolean>(true);
+  const [lastUpdated, setLastUpdated] = useState<{comp: string | null, mgt: string | null, eng: string | null}>({comp: null, mgt: null, eng: null});
 
   // Force dark mode on mount & attach network listeners
   useEffect(() => {
@@ -55,12 +56,17 @@ export default function TimetableViewer() {
   useEffect(() => {
     // 1. Instantly load from local storage if available
     const cached = localStorage.getItem('timetable_data');
+    const cachedTimes = localStorage.getItem('timetable_timestamps');
+    
     if (cached) {
       try {
         const parsed = JSON.parse(cached);
         if (Array.isArray(parsed) && parsed.length > 0) {
           setData(parsed);
           setLoading(false);
+        }
+        if (cachedTimes) {
+          setLastUpdated(JSON.parse(cachedTimes));
         }
       } catch (e) {
         console.error("Failed to parse cached data", e);
@@ -94,16 +100,36 @@ export default function TimetableViewer() {
 
     const fetchData = async () => {
       try {
-        const [comp, mgt, eng] = await Promise.all([
-          fetchWithRetry('/computing.json').catch(() => []),
-          fetchWithRetry('/management.json').catch(() => []),
-          fetchWithRetry('/engineering.json').catch(() => [])
+        const [compRes, mgtRes, engRes] = await Promise.all([
+          fetchWithRetry('/computing.json').catch(() => null),
+          fetchWithRetry('/management.json').catch(() => null),
+          fetchWithRetry('/engineering.json').catch(() => null)
         ]);
 
-        const allData = [...comp, ...mgt, ...eng];
+        const parseRes = (res: any) => {
+          if (!res) return { classes: [], last_updated: null };
+          if (Array.isArray(res)) return { classes: res, last_updated: null };
+          return { classes: res.classes || [], last_updated: res.last_updated || null };
+        };
+
+        const compData = parseRes(compRes);
+        const mgtData = parseRes(mgtRes);
+        const engData = parseRes(engRes);
+
+        const allData = [...compData.classes, ...mgtData.classes, ...engData.classes];
+        
         if (allData.length > 0) {
           setData(allData);
+          
+          const newTimestamps = {
+            comp: compData.last_updated,
+            mgt: mgtData.last_updated,
+            eng: engData.last_updated
+          };
+          setLastUpdated(newTimestamps);
+          
           localStorage.setItem('timetable_data', JSON.stringify(allData));
+          localStorage.setItem('timetable_timestamps', JSON.stringify(newTimestamps));
           setOfflineMode(false);
           setLoading(false);
         } else {
@@ -265,6 +291,23 @@ export default function TimetableViewer() {
       });
   }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, showRepeated]);
 
+  const formatTime = (isoString: string | null) => {
+    if (!isoString) return 'Unknown';
+    try {
+      const date = new Date(isoString);
+      return date.toLocaleString('en-US', { timeZone: 'Asia/Karachi', dateStyle: 'medium', timeStyle: 'short' });
+    } catch {
+      return 'Unknown';
+    }
+  };
+  
+  const getSelectedSchoolTimestamp = () => {
+    if (selectedSchool === 'School of Computing') return lastUpdated.comp;
+    if (selectedSchool === 'School of Management') return lastUpdated.mgt;
+    if (selectedSchool === 'School of Engineering') return lastUpdated.eng;
+    return null;
+  };
+
   return (
     <div className={`min-h-screen transition-colors duration-200 dark bg-gray-900 text-gray-100`}>
       {/* Header */}
@@ -383,6 +426,12 @@ export default function TimetableViewer() {
 
         {/* Results Grid */}
         <div className="mt-6">
+          <div className="flex justify-end mb-3">
+            <span className="text-xs font-semibold text-gray-500 bg-gray-800 border border-gray-700 px-3 py-1.5 rounded-full shadow-sm">
+              <span className="mr-1">🕒</span> Last Updated: {formatTime(getSelectedSchoolTimestamp())}
+            </span>
+          </div>
+
           {loading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[1, 2, 3, 4, 5, 6].map((i) => (
