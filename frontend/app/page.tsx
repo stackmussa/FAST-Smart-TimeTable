@@ -31,10 +31,25 @@ export default function TimetableViewer() {
   const [selectedDay, setSelectedDay] = useState<string>('');
   const [showRepeated, setShowRepeated] = useState<boolean>(false);
   const [offlineMode, setOfflineMode] = useState<boolean>(false);
+  const [isOnline, setIsOnline] = useState<boolean>(true);
 
-  // Force dark mode on mount
+  // Force dark mode on mount & attach network listeners
   useEffect(() => {
     document.documentElement.classList.add('dark');
+
+    if (typeof window !== 'undefined') {
+      setIsOnline(navigator.onLine);
+      const handleOnline = () => setIsOnline(true);
+      const handleOffline = () => setIsOnline(false);
+
+      window.addEventListener('online', handleOnline);
+      window.addEventListener('offline', handleOffline);
+
+      return () => {
+        window.removeEventListener('online', handleOnline);
+        window.removeEventListener('offline', handleOffline);
+      };
+    }
   }, []);
 
   useEffect(() => {
@@ -256,10 +271,12 @@ export default function TimetableViewer() {
       <header className={`bg-gray-800 border-gray-700 shadow-sm border-b`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
           <h1 className="text-2xl font-bold text-white">FAST-NUCES Islamabad Timetable</h1>
-          {offlineMode && (
+          {(!isOnline || offlineMode) && (
             <div className="flex items-center space-x-2 bg-yellow-900/50 text-yellow-400 px-3 py-1.5 rounded-full border border-yellow-700/50 shadow-sm">
               <svg className="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span className="text-sm font-semibold tracking-wide">Offline Mode: Showing cached schedule</span>
+              <span className="text-sm font-semibold tracking-wide">
+                {!isOnline ? 'Device Offline: Showing cached schedule' : 'Offline Mode: Showing cached schedule'}
+              </span>
             </div>
           )}
         </div>
