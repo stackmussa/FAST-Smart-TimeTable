@@ -30,7 +30,7 @@ export default function TimetableViewer() {
   const [selectedSection, setSelectedSection] = useState<string>('');
   const [selectedDay, setSelectedDay] = useState<string>('');
   const [showRepeated, setShowRepeated] = useState<boolean>(false);
-  
+
   // Force dark mode on mount
   useEffect(() => {
     document.documentElement.classList.add('dark');
@@ -46,7 +46,7 @@ export default function TimetableViewer() {
       }
     };
     const t = Date.now();
-    
+
     Promise.all([
       fetch(`/computing.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => []),
       fetch(`/management.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => []),
@@ -145,15 +145,15 @@ export default function TimetableViewer() {
     return Array.from(daySet).sort((a, b) => {
       const aLower = a.toLowerCase();
       const bLower = b.toLowerCase();
-      
+
       let aVal = 8;
       let bVal = 8;
-      
+
       for (const [key, val] of Object.entries(orderMap)) {
         if (aLower.includes(key)) aVal = val;
         if (bLower.includes(key)) bVal = val;
       }
-      
+
       if (aVal === bVal) return a.localeCompare(b);
       return aVal - bVal;
     });
@@ -309,11 +309,10 @@ export default function TimetableViewer() {
             <label className={`text-sm font-semibold mb-1 text-gray-300`}>Repeated Courses</label>
             <button
               onClick={() => setShowRepeated(!showRepeated)}
-              className={`border rounded-lg p-2.5 font-medium transition-colors ${
-                showRepeated 
-                  ? 'bg-blue-600 text-white border-blue-500 hover:bg-blue-700' 
-                  : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600'
-              }`}
+              className={`border rounded-lg p-2.5 font-medium transition-colors ${showRepeated
+                ? 'bg-blue-600 text-white border-blue-500 hover:bg-blue-700'
+                : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600'
+                }`}
             >
               {showRepeated ? 'Show: ON' : 'Show: OFF'}
             </button>
@@ -390,6 +389,29 @@ export default function TimetableViewer() {
               ))}
             </div>
           )}
+        </div>
+
+        {/* About Section */}
+        <div className="mt-12 bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border">
+          <h2 className="text-xl font-bold text-white mb-4">About this System</h2>
+          <p className="text-gray-300 mb-4">
+            This is a simple system built to automate the extraction and display of class schedules from the official university Google Sheets. It dynamically tracks timetable changes and syncs them automatically to ensure you always have the most up-to-date schedule.
+          </p>
+          <div className="flex flex-col space-y-2">
+            <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">Source Data (Google Sheets)</span>
+            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit?gid=945396749#gid=945396749" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline transition-colors w-fit flex items-center">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              School of Computing Timetable
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline transition-colors w-fit flex items-center">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              School of Management Timetable
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?gid=115356958#gid=115356958" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline transition-colors w-fit flex items-center">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              School of Engineering Timetable
+            </a>
+          </div>
         </div>
       </main>
 
