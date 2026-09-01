@@ -37,16 +37,23 @@ export default function TimetableViewer() {
 
   useEffect(() => {
     // 1. Fetch Data
-    fetch(`/timetable.json?t=${Date.now()}`, {
-      cache: 'no-store',
+    const fetchOptions = {
+      cache: 'no-store' as RequestCache,
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
         'Pragma': 'no-cache'
       }
-    })
-      .then((res) => res.json())
-      .then((json: ClassEntry[]) => {
-        setData(json);
+    };
+    const t = Date.now();
+    
+    Promise.all([
+      fetch(`/computing.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => []),
+      fetch(`/management.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => []),
+      fetch(`/engineering.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => [])
+    ])
+      .then(([comp, mgt, eng]) => {
+        const allData = [...comp, ...mgt, ...eng];
+        setData(allData);
         setLoading(false);
       })
       .catch((err) => {

@@ -664,24 +664,28 @@ def parse_fse() -> List[Dict[str, Any]]:
 
 def main():
     logging.info("Starting timetable fetch and parse process.")
-    all_entries = []
-    
-    logging.info("Parsing FSC (School of Computing)...")
-    all_entries.extend(parse_fsc())
-    
-    logging.info("Parsing FSM (School of Management)...")
-    all_entries.extend(parse_fsm())
-    
-    logging.info("Parsing FSE (School of Engineering)...")
-    all_entries.extend(parse_fse())
     
     import os
-    output_file = "frontend/public/timetable.json"
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    logging.info(f"Writing {len(all_entries)} entries to {output_file}...")
+    out_dir = "frontend/public"
+    os.makedirs(out_dir, exist_ok=True)
     
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(all_entries, f, indent=2, ensure_ascii=False)
+    logging.info("Parsing FSC (School of Computing)...")
+    fsc_entries = parse_fsc()
+    with open(os.path.join(out_dir, "computing.json"), 'w', encoding='utf-8') as f:
+        json.dump(fsc_entries, f, indent=2, ensure_ascii=False)
+    logging.info(f"Saved {len(fsc_entries)} entries to computing.json")
+    
+    logging.info("Parsing FSM (School of Management)...")
+    fsm_entries = parse_fsm()
+    with open(os.path.join(out_dir, "management.json"), 'w', encoding='utf-8') as f:
+        json.dump(fsm_entries, f, indent=2, ensure_ascii=False)
+    logging.info(f"Saved {len(fsm_entries)} entries to management.json")
+    
+    logging.info("Parsing FSE (School of Engineering)...")
+    fse_entries = parse_fse()
+    with open(os.path.join(out_dir, "engineering.json"), 'w', encoding='utf-8') as f:
+        json.dump(fse_entries, f, indent=2, ensure_ascii=False)
+    logging.info(f"Saved {len(fse_entries)} entries to engineering.json")
         
     logging.info("Process completed successfully.")
 
