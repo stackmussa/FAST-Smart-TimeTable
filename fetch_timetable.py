@@ -402,11 +402,20 @@ def parse_fsm() -> List[Dict[str, Any]]:
             if not room:
                 continue
                 
-            for col_idx, time_val in time_slots:
+            for col_idx in range(4, sheet.max_column + 1):
                 cell = sheet.cell(row=row_idx, column=col_idx)
                 val = clean_text(cell.value)
                 if not val:
                     continue
+                
+                # Skip if this cell is purely a section tag
+                if re.match(r'^([A-Z]{2,4})(\d{2})([A-Z/0-9]+)$', val.replace(' ', '')):
+                    continue
+                
+                start_col = max((k for k, v in time_slots if k <= col_idx), default=None)
+                if start_col is None:
+                    continue
+                time_val = next(v for k, v in time_slots if k == start_col)
                     
                 color_hex = str(cell.fill.start_color.index).upper() if cell.fill else "Unknown"
                 color_info = {"department": "Unknown", "degree": "BS", "batch": "Unknown"}
@@ -423,7 +432,19 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 semester = "Unknown"
                 section = "Unknown"
                 
-                course_name = re.sub(r'\(\d{2}:\d{2}-\d{2}:\d{2}\)', '', val).strip()
+                t_parts = time_val.split("-")
+                t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
+                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
+                
+                explicit_time_match = re.search(r"\(?(\d{1,2}:\d{2})\s*(?:-|to)\s*(\d{1,2}:\d{2}(?:[ap]m)?)\)?", val, re.IGNORECASE)
+                if explicit_time_match:
+                    t_start = normalize_time(explicit_time_match.group(1).strip())
+                    raw_t_end = explicit_time_match.group(2).strip().lower().replace("pm", "").replace("am", "")
+                    t_end = normalize_time(raw_t_end)
+                    course_name = re.sub(r"\(?\d{1,2}:\d{2}\s*(?:-|to)\s*\d{1,2}:\d{2}(?:[ap]m)?\)?", "", val, flags=re.IGNORECASE).strip()
+                else:
+                    course_name = val.strip()
+                
                 course_name = re.sub(r'[\n\r]+', ' ', course_name).strip()
                 
                 is_rescheduled = "resch" in val.lower()
@@ -434,23 +455,29 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 if is_cancelled:
                     course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
                 
-                t_parts = time_val.split("-")
-                t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
-                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
-                
-                # Check for section in the subsequent merged/hidden columns before the next time slot
-                current_time_slot_idx = next((i for i, v in enumerate(time_slots) if v[0] == col_idx), -1)
-                next_col_idx = time_slots[current_time_slot_idx + 1][0] if current_time_slot_idx + 1 < len(time_slots) else sheet.max_column + 1
-                
-                for c in range(col_idx + 1, next_col_idx):
+                # Search forward for the next non-empty cell in the row
+                for c in range(col_idx + 1, sheet.max_column + 1):
                     next_val = clean_text(sheet.cell(row=row_idx, column=c).value)
                     if next_val:
-                        sec_match = re.search(r'([A-Z]{2,4})(\d{2})([A-Z])', next_val)
+                        sec_match = re.search(r'^([A-Z]{2,4})(\d{2})([A-Z/0-9]+)$', next_val.replace(' ', ''))
                         if sec_match:
-                            semester = sec_match.group(2).lstrip('0')
-                            section = f"{sec_match.group(1)}-{sec_match.group(3)}"
-                            # If batch wasn't mapped by color, maybe estimate it from semester
-                            break
+                            parsed_dept = sec_match.group(1)
+                            sem_code = sec_match.group(2)
+                            section = next_val.replace(' ', '')
+                            
+                            # Deduce department and degree
+                            if parsed_dept == 'BSBA': dept_code = 'BA'
+                            else: dept_code = parsed_dept
+                            
+                            if dept_code == 'BBA': degree = 'BBA'
+                            else: degree = 'BS'
+                            
+                            # Deduce batch
+                            if sem_code == '01': batch = '2026'
+                            elif sem_code == '03': batch = '2025'
+                            elif sem_code == '05': batch = '2024'
+                            elif sem_code == '07': batch = '2023'
+                        break
                 
                 school = "School of Management"
                 is_lab = False
