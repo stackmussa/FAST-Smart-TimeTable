@@ -185,14 +185,12 @@ def fetch_fsc_gids() -> Dict[str, str]:
             name_match = re.search(r'name:\s*"([^"]+)"', m)
             gid_match = re.search(r'gid:\s*"(\d+)"', m)
             if name_match and gid_match:
-                name = name_match.group(1).lower()
+                name = name_match.group(1).strip()
                 gid = gid_match.group(1)
-                if 'monday' in name: gids['Monday'] = gid
-                elif 'tuesday' in name: gids['Tuesday'] = gid
-                elif 'wednesday' in name: gids['Wednesday'] = gid
-                elif 'thursday' in name: gids['Thursday'] = gid
-                elif 'friday' in name: gids['Friday'] = gid
-                elif 'saturday' in name: gids['Saturday'] = gid
+                name_lower = name.lower()
+                if 'monday' in name_lower or 'tuesday' in name_lower or 'wednesday' in name_lower or \
+                   'thursday' in name_lower or 'friday' in name_lower or 'saturday' in name_lower or 'sunday' in name_lower:
+                    gids[name] = gid
         return gids
     except Exception as e:
         logging.error(f"Failed to fetch dynamic FSC GIDs: {e}")

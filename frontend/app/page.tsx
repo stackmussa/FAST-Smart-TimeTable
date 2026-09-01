@@ -120,8 +120,36 @@ export default function TimetableViewer() {
     return Array.from(secs).sort();
   }, [data, selectedSchool, selectedDepartment, selectedBatch]);
 
-  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const availableDays = useMemo(() => {
+    if (!data.length) return [];
+    const daySet = new Set<string>();
+    data.forEach(entry => {
+      if (entry.day && entry.day !== 'Unknown') {
+        daySet.add(entry.day);
+      }
+    });
 
+    const orderMap: Record<string, number> = {
+      'monday': 1, 'tuesday': 2, 'wednesday': 3,
+      'thursday': 4, 'friday': 5, 'saturday': 6, 'sunday': 7
+    };
+
+    return Array.from(daySet).sort((a, b) => {
+      const aLower = a.toLowerCase();
+      const bLower = b.toLowerCase();
+      
+      let aVal = 8;
+      let bVal = 8;
+      
+      for (const [key, val] of Object.entries(orderMap)) {
+        if (aLower.includes(key)) aVal = val;
+        if (bLower.includes(key)) bVal = val;
+      }
+      
+      if (aVal === bVal) return a.localeCompare(b);
+      return aVal - bVal;
+    });
+  }, [data]);
   // Handle cascading resets
   useEffect(() => {
     if (availableDepartments.length > 0 && !availableDepartments.includes(selectedDepartment)) {
@@ -262,7 +290,7 @@ export default function TimetableViewer() {
               value={selectedDay}
               onChange={(e) => setSelectedDay(e.target.value)}
             >
-              {days.map((d) => (
+              {availableDays.map((d) => (
                 <option key={d} value={d}>{d}</option>
               ))}
             </select>
