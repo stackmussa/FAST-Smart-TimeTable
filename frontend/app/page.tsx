@@ -30,6 +30,7 @@ export default function TimetableViewer() {
   const [selectedSection, setSelectedSection] = useState<string>('');
   const [selectedDay, setSelectedDay] = useState<string>('');
   const [showRepeated, setShowRepeated] = useState<boolean>(false);
+  const [offlineMode, setOfflineMode] = useState<boolean>(false);
 
   // Force dark mode on mount
   useEffect(() => {
@@ -37,30 +38,73 @@ export default function TimetableViewer() {
   }, []);
 
   useEffect(() => {
-    // 1. Fetch Data
-    const fetchOptions = {
-      cache: 'no-store' as RequestCache,
-      headers: {
-        'Cache-Control': 'no-cache, no-store, must-revalidate',
-        'Pragma': 'no-cache'
+    // 1. Instantly load from local storage if available
+    const cached = localStorage.getItem('timetable_data');
+    if (cached) {
+      try {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setData(parsed);
+          setLoading(false);
+        }
+      } catch (e) {
+        console.error("Failed to parse cached data", e);
+      }
+    }
+
+    // 2. Fetch fresh data with retry logic
+    const fetchWithRetry = async (url: string, retries = 3, delay = 1000): Promise<any[]> => {
+      const fetchOptions = {
+        cache: 'no-store' as RequestCache,
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache'
+        }
+      };
+      const t = Date.now();
+      
+      try {
+        const res = await fetch(`${url}?t=${t}`, fetchOptions);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.json();
+      } catch (error) {
+        if (retries > 0) {
+          console.warn(`Fetch failed for ${url}, retrying in ${delay}ms...`);
+          await new Promise(resolve => setTimeout(resolve, delay));
+          return fetchWithRetry(url, retries - 1, delay * 2); // Exponential backoff
+        }
+        throw error;
       }
     };
-    const t = Date.now();
 
-    Promise.all([
-      fetch(`/computing.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => []),
-      fetch(`/management.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => []),
-      fetch(`/engineering.json?t=${t}`, fetchOptions).then(res => res.json()).catch(() => [])
-    ])
-      .then(([comp, mgt, eng]) => {
+    const fetchData = async () => {
+      try {
+        const [comp, mgt, eng] = await Promise.all([
+          fetchWithRetry('/computing.json').catch(() => []),
+          fetchWithRetry('/management.json').catch(() => []),
+          fetchWithRetry('/engineering.json').catch(() => [])
+        ]);
+
         const allData = [...comp, ...mgt, ...eng];
-        setData(allData);
-        setLoading(false);
-      })
-      .catch((err) => {
+        if (allData.length > 0) {
+          setData(allData);
+          localStorage.setItem('timetable_data', JSON.stringify(allData));
+          setOfflineMode(false);
+          setLoading(false);
+        } else {
+          throw new Error("Empty data received");
+        }
+      } catch (err) {
         console.error('Failed to fetch timetable:', err);
-        setLoading(false);
-      });
+        if (localStorage.getItem('timetable_data')) {
+          setOfflineMode(true);
+        } else {
+          setLoading(false);
+        }
+      }
+    };
+    
+    fetchData();
 
     // 2. Determine PKT Day
     const options: Intl.DateTimeFormatOptions = { weekday: 'long', timeZone: 'Asia/Karachi' };
@@ -206,20 +250,18 @@ export default function TimetableViewer() {
       });
   }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, showRepeated]);
 
-  if (loading) {
-    return (
-      <div className="flex h-screen w-screen items-center justify-center bg-gray-50">
-        <div className="animate-spin h-10 w-10 border-4 border-blue-500 rounded-full border-t-transparent"></div>
-      </div>
-    );
-  }
-
   return (
     <div className={`min-h-screen transition-colors duration-200 dark bg-gray-900 text-gray-100`}>
       {/* Header */}
       <header className={`bg-gray-800 border-gray-700 shadow-sm border-b`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
           <h1 className="text-2xl font-bold text-white">FAST-NUCES Islamabad Timetable</h1>
+          {offlineMode && (
+            <div className="flex items-center space-x-2 bg-yellow-900/50 text-yellow-400 px-3 py-1.5 rounded-full border border-yellow-700/50 shadow-sm">
+              <svg className="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              <span className="text-sm font-semibold tracking-wide">Offline Mode: Showing cached schedule</span>
+            </div>
+          )}
         </div>
       </header>
 
@@ -230,9 +272,10 @@ export default function TimetableViewer() {
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 text-gray-300`}>School</label>
             <select
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-gray-700 border-gray-600 text-white`}
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
               value={selectedSchool}
               onChange={(e) => setSelectedSchool(e.target.value)}
+              disabled={loading}
             >
               {availableSchools.map((s) => (
                 <option key={s} value={s}>{s}</option>
@@ -246,7 +289,7 @@ export default function TimetableViewer() {
               className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
               value={selectedDepartment}
               onChange={(e) => setSelectedDepartment(e.target.value)}
-              disabled={!availableDepartments.length}
+              disabled={loading || !availableDepartments.length}
             >
               {availableDepartments.length ? (
                 availableDepartments.map((d) => (
@@ -264,7 +307,7 @@ export default function TimetableViewer() {
               className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
               value={selectedBatch}
               onChange={(e) => setSelectedBatch(e.target.value)}
-              disabled={!availableBatches.length}
+              disabled={loading || !availableBatches.length}
             >
               {availableBatches.length ? (
                 availableBatches.map((b) => (
@@ -282,7 +325,7 @@ export default function TimetableViewer() {
               className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
               value={selectedSection}
               onChange={(e) => setSelectedSection(e.target.value)}
-              disabled={!availableSections.length}
+              disabled={loading || !availableSections.length}
             >
               {availableSections.length ? availableSections.map((s) => (
                 <option key={s} value={s}>{s}</option>
@@ -295,9 +338,10 @@ export default function TimetableViewer() {
           <div className="flex flex-col">
             <label className={`text-sm font-semibold mb-1 text-gray-300`}>Day</label>
             <select
-              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-gray-700 border-gray-600 text-white`}
+              className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
               value={selectedDay}
               onChange={(e) => setSelectedDay(e.target.value)}
+              disabled={loading}
             >
               {availableDays.map((d) => (
                 <option key={d} value={d}>{d}</option>
@@ -309,7 +353,8 @@ export default function TimetableViewer() {
             <label className={`text-sm font-semibold mb-1 text-gray-300`}>Repeated Courses</label>
             <button
               onClick={() => setShowRepeated(!showRepeated)}
-              className={`border rounded-lg p-2.5 font-medium transition-colors ${showRepeated
+              disabled={loading}
+              className={`border rounded-lg p-2.5 font-medium transition-colors disabled:opacity-50 ${showRepeated
                 ? 'bg-blue-600 text-white border-blue-500 hover:bg-blue-700'
                 : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600'
                 }`}
@@ -321,7 +366,27 @@ export default function TimetableViewer() {
 
         {/* Results Grid */}
         <div className="mt-6">
-          {(!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) ? (
+          {loading ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div key={i} className="p-6 rounded-xl shadow-sm border bg-gray-800 border-gray-700 animate-pulse">
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="space-y-3 w-2/3">
+                      <div className="h-5 bg-gray-700 rounded w-full"></div>
+                      <div className="h-3 bg-gray-700 rounded w-1/2"></div>
+                    </div>
+                    <div className="h-6 w-16 bg-blue-900/40 rounded-full"></div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-gray-700">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                      <div className="h-4 bg-gray-700 rounded w-1/3"></div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) ? (
             <div className={`flex items-center justify-center h-64 rounded-xl shadow-sm border bg-gray-800 border-gray-700`}>
               <p className={`text-xl font-medium text-gray-400`}>Please select School, Department, Batch, Section, and Day to view classes.</p>
             </div>
