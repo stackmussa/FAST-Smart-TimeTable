@@ -170,6 +170,34 @@ FSC_DEPT_MAP = {
     "CY": "CY", "SE": "SE",
 }
 
+def fetch_fsc_gids() -> Dict[str, str]:
+    """Dynamically fetches GIDs for FSC timetable since they might change when updated."""
+    url = f"https://docs.google.com/spreadsheets/d/{FSC_SPREADSHEET_ID}/htmlview?_cb={int(time.time())}"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Cache-Control': 'no-cache, no-store, must-revalidate'
+    }
+    try:
+        html = requests.get(url, headers=headers, timeout=30).text
+        matches = re.findall(r'items\.push\((.*?)\);', html)
+        gids = {}
+        for m in matches:
+            name_match = re.search(r'name:\s*"([^"]+)"', m)
+            gid_match = re.search(r'gid:\s*"(\d+)"', m)
+            if name_match and gid_match:
+                name = name_match.group(1).lower()
+                gid = gid_match.group(1)
+                if 'monday' in name: gids['Monday'] = gid
+                elif 'tuesday' in name: gids['Tuesday'] = gid
+                elif 'wednesday' in name: gids['Wednesday'] = gid
+                elif 'thursday' in name: gids['Thursday'] = gid
+                elif 'friday' in name: gids['Friday'] = gid
+                elif 'saturday' in name: gids['Saturday'] = gid
+        return gids
+    except Exception as e:
+        logging.error(f"Failed to fetch dynamic FSC GIDs: {e}")
+        return {}
+
 def parse_fsc() -> List[Dict[str, Any]]:
     """Parser for School of Computing — fetches each day's HTML frame by GID."""
     entries = []
@@ -183,7 +211,11 @@ def parse_fsc() -> List[Dict[str, Any]]:
                 }
             )
 
-            for day_name, gid in FSC_DAY_GIDS.items():
+            dynamic_gids = fetch_fsc_gids()
+            day_gids_to_use = dynamic_gids if dynamic_gids else FSC_DAY_GIDS
+            logging.info(f"Using FSC GIDs: {day_gids_to_use}")
+
+            for day_name, gid in day_gids_to_use.items():
                 frame_url = (
                     f"https://docs.google.com/spreadsheets/d/{FSC_SPREADSHEET_ID}"
                     f"/htmlview/sheet?headers=true&gid={gid}&_cb={int(time.time())}"
