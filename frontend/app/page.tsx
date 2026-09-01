@@ -574,7 +574,6 @@ export default function TimetableViewer() {
             {/* Results Grid Content End */}
           </div>
         )}
-      </main>
 
       {/* About Section */}
         <div className="mt-12 bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border">
