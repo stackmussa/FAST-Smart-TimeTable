@@ -127,6 +127,14 @@ def download_workbook(url: str) -> openpyxl.Workbook:
     response.raise_for_status()
     return openpyxl.load_workbook(filename=io.BytesIO(response.content), data_only=True)
 
+def get_timetable_sheet(wb: openpyxl.Workbook) -> openpyxl.worksheet.worksheet.Worksheet:
+    """Finds the correct sheet containing the timetable."""
+    for name in wb.sheetnames:
+        lower_name = name.lower()
+        if 'timetable' in lower_name or 'schedule' in lower_name:
+            return wb[name]
+    return wb.active
+
 def generate_rag_summary(school: str, dept: str, degree: str, batch: str, section: str, 
                          course: str, room: str, day: str, t_start: str, t_end: str, is_lab: bool, is_rescheduled: bool = False, is_repeat: bool = False, is_cancelled: bool = False) -> str:
     """Generates a text summary string suitable for RAG ingestion."""
@@ -427,16 +435,17 @@ def parse_fsm() -> List[Dict[str, Any]]:
     entries = []
     try:
         wb = download_workbook(URLS["FSM"])
-        sheet = wb.active
+        sheet = get_timetable_sheet(wb)
         time_slots = extract_time_slots(sheet, start_col=4)
         current_day = "Monday"
         
         for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
             
-            # Check for day block start
-            if cell_A.lower() in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
-                current_day = cell_A.capitalize()
+            # Check for day block start (allow dynamic names like "Saturday (Sep 05)")
+            cell_lower = cell_A.lower()
+            if len(cell_A) < 40 and any(cell_lower.startswith(d) for d in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]):
+                current_day = cell_A.strip()
                 
             room = clean_text(sheet.cell(row=row_idx, column=3).value)
             if not room:
@@ -556,7 +565,7 @@ def parse_fse() -> List[Dict[str, Any]]:
     entries = []
     try:
         wb = download_workbook(URLS["FSE"])
-        sheet = wb.active
+        sheet = get_timetable_sheet(wb)
         
         # In FSE time slots might be offset if room numbers occupy 2 columns
         # extract_time_slots iterates from column 2 onwards, so it should catch them
@@ -565,8 +574,9 @@ def parse_fse() -> List[Dict[str, Any]]:
         
         for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
-            if cell_A.lower() in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
-                current_day = cell_A.capitalize()
+            cell_lower = cell_A.lower()
+            if len(cell_A) < 40 and any(cell_lower.startswith(d) for d in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]):
+                current_day = cell_A.strip()
                 
             # Room is often in col 3 or col 2
             room = clean_text(sheet.cell(row=row_idx, column=3).value)
