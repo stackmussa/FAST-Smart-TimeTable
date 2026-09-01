@@ -31,9 +31,9 @@ fsc_monday.html
 DataSet/
 
 # Temporary debug / test scripts
-debug_fsc.py
-test_fsc_new.py
-test_fsm_sections.py
 debug_*.py
 test_*.py
+check_*.py
+find_*.py
+*.html
 skipped_courses.txt
