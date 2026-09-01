@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
+import FacultyFinder from './FacultyFinder';
 
 type ClassEntry = {
   id?: string;
@@ -33,6 +34,7 @@ export default function TimetableViewer() {
   const [offlineMode, setOfflineMode] = useState<boolean>(false);
   const [isOnline, setIsOnline] = useState<boolean>(true);
   const [lastUpdated, setLastUpdated] = useState<{comp: string | null, mgt: string | null, eng: string | null}>({comp: null, mgt: null, eng: null});
+  const [activeTab, setActiveTab] = useState<'timetable' | 'faculty'>('timetable');
 
   // Force dark mode on mount & attach network listeners
   useEffect(() => {
@@ -312,21 +314,69 @@ export default function TimetableViewer() {
     <div className={`min-h-screen transition-colors duration-200 dark bg-gray-900 text-gray-100`}>
       {/* Header */}
       <header className={`bg-gray-800 border-gray-700 shadow-sm border-b`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <h1 className="text-2xl font-bold text-white">FAST-NUCES Islamabad Timetable</h1>
-          {(!isOnline || offlineMode) && (
-            <div className="flex items-center space-x-2 bg-yellow-900/50 text-yellow-400 px-3 py-1.5 rounded-full border border-yellow-700/50 shadow-sm">
-              <svg className="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span className="text-sm font-semibold tracking-wide">
-                {!isOnline ? 'Device Offline: Showing cached schedule' : 'Offline Mode: Showing cached schedule'}
-              </span>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-6">
+            <div>
+              <h1 className="text-3xl font-extrabold tracking-tight text-white mb-2">
+                FAST-NUCES Portal
+              </h1>
+              <p className="text-gray-400">Smart Schedule Viewer & Directory</p>
             </div>
-          )}
+            
+            {/* Offline Status Badge */}
+            <div className="mt-4 md:mt-0 flex items-center">
+              {!isOnline ? (
+                <div className="flex items-center space-x-2 bg-red-900/50 border border-red-700 text-red-200 px-4 py-2 rounded-full shadow-sm animate-pulse">
+                  <span className="w-2 h-2 rounded-full bg-red-500"></span>
+                  <span className="text-sm font-medium">Device Offline: Showing cached data</span>
+                </div>
+              ) : offlineMode ? (
+                <div className="flex items-center space-x-2 bg-yellow-900/50 border border-yellow-700 text-yellow-200 px-4 py-2 rounded-full shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+                  <span className="text-sm font-medium">Server Unreachable: Offline Mode</span>
+                </div>
+              ) : (
+                <div className="flex items-center space-x-2 bg-green-900/30 border border-green-800 text-green-400 px-4 py-2 rounded-full shadow-sm opacity-80">
+                  <span className="w-2 h-2 rounded-full bg-green-500"></span>
+                  <span className="text-sm font-medium">Live</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Navigation Tabs */}
+          <div className="flex space-x-2 overflow-x-auto pb-1">
+            <button
+              onClick={() => setActiveTab('timetable')}
+              className={`px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
+                activeTab === 'timetable'
+                  ? 'bg-blue-600 text-white shadow-md border border-blue-500'
+                  : 'bg-gray-800/80 text-gray-400 hover:bg-gray-700 hover:text-gray-200 border border-gray-700'
+              }`}
+            >
+              🗓️ Timetable Viewer
+            </button>
+            <button
+              onClick={() => setActiveTab('faculty')}
+              className={`px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
+                activeTab === 'faculty'
+                  ? 'bg-blue-600 text-white shadow-md border border-blue-500'
+                  : 'bg-gray-800/80 text-gray-400 hover:bg-gray-700 hover:text-gray-200 border border-gray-700'
+              }`}
+            >
+              🧑‍🏫 Faculty Finder
+            </button>
+          </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Filters */}
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto p-6">
+        {activeTab === 'faculty' ? (
+          <FacultyFinder />
+        ) : (
+          <div className="animate-fadeIn">
+            {/* Filters */}
         <div className={`bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border mb-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 gap-4`}>
 
           <div className="flex flex-col">
@@ -521,8 +571,12 @@ export default function TimetableViewer() {
             </div>
           )}
         </div>
+            {/* Results Grid Content End */}
+          </div>
+        )}
+      </main>
 
-        {/* About Section */}
+      {/* About Section */}
         <div className="mt-12 bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border">
           <h2 className="text-xl font-bold text-white mb-4">About this System</h2>
           <p className="text-gray-300 mb-4">
