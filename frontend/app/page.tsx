@@ -58,6 +58,19 @@ export default function TimetableViewer() {
   useEffect(() => {
     // 1. Instantly load from local storage if available
     const cached = localStorage.getItem('timetable_data');
+    const cachedFilters = localStorage.getItem('timetable_filters');
+
+    if (cachedFilters) {
+      try {
+        const p = JSON.parse(cachedFilters);
+        if (p.selectedSchool) setSelectedSchool(p.selectedSchool);
+        if (p.selectedDepartment) setSelectedDepartment(p.selectedDepartment);
+        if (p.selectedBatch) setSelectedBatch(p.selectedBatch);
+        if (p.selectedSection) setSelectedSection(p.selectedSection);
+      } catch (e) {
+        console.error("Failed to parse cached filters", e);
+      }
+    }
     const cachedTimes = localStorage.getItem('timetable_timestamps');
     
     if (cached) {
@@ -161,6 +174,25 @@ export default function TimetableViewer() {
     }
   }, []);
 
+  // Save filters to localStorage whenever they change
+  useEffect(() => {
+    // Only save if data is loaded to avoid overwriting with empty states during initial render
+    if (data.length > 0) {
+      const filters = {
+        selectedSchool,
+        selectedDepartment,
+        selectedBatch,
+        selectedSection
+      };
+      localStorage.setItem('timetable_filters', JSON.stringify(filters));
+    }
+  }, [selectedSchool, selectedDepartment, selectedBatch, selectedSection, data.length]);
+
+  // Scroll to top on tab switch
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeTab]);
+
   // Filter Logic
   // Allowed Schools according to requirements
   const ALLOWED_SCHOOLS = ['School of Computing', 'School of Management', 'School of Engineering'];
@@ -247,28 +279,31 @@ export default function TimetableViewer() {
   }, [data]);
   // Handle cascading resets
   useEffect(() => {
+    if (data.length === 0) return;
     if (availableDepartments.length > 0 && !availableDepartments.includes(selectedDepartment)) {
       setSelectedDepartment(availableDepartments[0]);
     } else if (availableDepartments.length === 0) {
       setSelectedDepartment('');
     }
-  }, [availableDepartments, selectedDepartment]);
+  }, [availableDepartments, selectedDepartment, data.length]);
 
   useEffect(() => {
+    if (data.length === 0) return;
     if (availableBatches.length > 0 && !availableBatches.includes(selectedBatch)) {
       setSelectedBatch(availableBatches[0]);
     } else if (availableBatches.length === 0) {
       setSelectedBatch('');
     }
-  }, [availableBatches, selectedBatch]);
+  }, [availableBatches, selectedBatch, data.length]);
 
   useEffect(() => {
+    if (data.length === 0) return;
     if (availableSections.length > 0 && !availableSections.includes(selectedSection)) {
       setSelectedSection(availableSections[0]);
     } else if (availableSections.length === 0) {
       setSelectedSection('');
     }
-  }, [availableSections, selectedSection]);
+  }, [availableSections, selectedSection, data.length]);
 
   const filteredClasses = useMemo(() => {
     if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) return [];
@@ -344,34 +379,36 @@ export default function TimetableViewer() {
             </div>
           </div>
 
-          {/* Navigation Tabs */}
-          <div className="flex space-x-2 overflow-x-auto pb-1">
+          {/* Navigation Tabs - Bottom fixed on mobile, standard tabs on desktop */}
+          <div className="fixed md:static bottom-0 left-0 right-0 z-50 bg-gray-900 border-t md:border-t-0 border-gray-700 md:bg-transparent md:border-none p-2 md:p-0 flex justify-around md:justify-start md:space-x-2 pb-[env(safe-area-inset-bottom,0.5rem)] shadow-[0_-4px_10px_rgba(0,0,0,0.3)] md:shadow-none">
             <button
               onClick={() => setActiveTab('timetable')}
-              className={`px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
+              className={`flex flex-col md:flex-row items-center justify-center flex-1 md:flex-none px-2 md:px-5 py-3 md:py-2.5 rounded-lg font-medium text-xs md:text-sm transition-all whitespace-nowrap min-h-[44px] min-w-[44px] ${
                 activeTab === 'timetable'
-                  ? 'bg-blue-600 text-white shadow-md border border-blue-500'
-                  : 'bg-gray-800/80 text-gray-400 hover:bg-gray-700 hover:text-gray-200 border border-gray-700'
+                  ? 'bg-blue-600/10 md:bg-blue-600 text-blue-400 md:text-white md:shadow-md border border-transparent md:border-blue-500'
+                  : 'bg-transparent md:bg-gray-800/80 text-gray-400 hover:text-gray-200 md:hover:bg-gray-700 md:border border-transparent md:border-gray-700'
               }`}
             >
-              🗓️ Timetable Viewer
+              <span className="text-xl md:text-base mb-1 md:mb-0 md:mr-2">🗓️</span>
+              <span>Timetable</span>
             </button>
             <button
               onClick={() => setActiveTab('faculty')}
-              className={`px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
+              className={`flex flex-col md:flex-row items-center justify-center flex-1 md:flex-none px-2 md:px-5 py-3 md:py-2.5 rounded-lg font-medium text-xs md:text-sm transition-all whitespace-nowrap min-h-[44px] min-w-[44px] ${
                 activeTab === 'faculty'
-                  ? 'bg-blue-600 text-white shadow-md border border-blue-500'
-                  : 'bg-gray-800/80 text-gray-400 hover:bg-gray-700 hover:text-gray-200 border border-gray-700'
+                  ? 'bg-blue-600/10 md:bg-blue-600 text-blue-400 md:text-white md:shadow-md border border-transparent md:border-blue-500'
+                  : 'bg-transparent md:bg-gray-800/80 text-gray-400 hover:text-gray-200 md:hover:bg-gray-700 md:border border-transparent md:border-gray-700'
               }`}
             >
-              🧑‍🏫 Faculty Finder
+              <span className="text-xl md:text-base mb-1 md:mb-0 md:mr-2">🧑‍🏫</span>
+              <span>Faculty</span>
             </button>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto p-6">
+      <main className="max-w-7xl mx-auto p-6 pb-24 md:pb-6">
         {activeTab === 'faculty' ? (
           <FacultyFinder />
         ) : (

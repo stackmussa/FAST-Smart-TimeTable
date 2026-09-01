@@ -37,3 +37,22 @@ check_*.py
 find_*.py
 *.html
 skipped_courses.txt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Misc
+*.log
+.gemini/
