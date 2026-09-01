@@ -2,7 +2,7 @@ name: Sync Timetable
 
 on:
   schedule:
-    - cron: '0 * * * *' # Hourly
+    - cron: '*/15 * * * *' # Every 15 minutes
   workflow_dispatch: # Allows manual trigger
 
 jobs:
