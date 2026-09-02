@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T05:08:40.616712Z",
+  "last_updated": "2026-09-02T13:54:25.948615Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -40,26 +40,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engr. in Room B-027 on Monday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-MON-B027-1545",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Industrial Processes Control",
-      "section": "EE-A",
-      "instructor": null,
-      "room": "B-027",
-      "day": "Monday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Industrial Processes Control in Room B-027 on Monday from 15:45 to 17:05."
     },
     {
       "id": "FSE-MON-B028-0830",
@@ -1442,26 +1422,6 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-C) has Pakistan Studies in Room B-030 on Tuesday from 08:30 to 09:50."
     },
     {
-      "id": "FSE-TUE-B030-1250",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Industrial Processes Control",
-      "section": "EE-A",
-      "instructor": null,
-      "room": "B-030",
-      "day": "Tuesday",
-      "time_start": "12:50",
-      "time_end": "14:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Industrial Processes Control in Room B-030 on Tuesday from 12:50 to 14:10."
-    },
-    {
       "id": "FSE-TUE-B030-1420",
       "school": "School of Engineering",
       "department": "EE",
@@ -1528,8 +1488,8 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "MP Inter. & Prog",
-      "section": "EE-A",
+      "course_name": "Electromagnetic Theory",
+      "section": "EE-B",
       "instructor": null,
       "room": "B-019",
       "day": "Tuesday",
@@ -1539,7 +1499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-019 on Tuesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Electromagnetic Theory in Room B-019 on Tuesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-TUE-B019-1125",
@@ -1648,8 +1608,8 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "Electromagnetic Theory",
-      "section": "EE-B",
+      "course_name": "MP Inter. & Prog",
+      "section": "EE-A",
       "instructor": null,
       "room": "B-020",
       "day": "Tuesday",
@@ -1659,7 +1619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Electromagnetic Theory in Room B-020 on Tuesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-020 on Tuesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-TUE-B020-1125",
@@ -3102,7 +3062,7 @@
       "rag_summary": "BS EE (Batch 2025, Section EE-C) has Digital Logic Design in Room B-020 on Wednesday from 15:45 to 17:05."
     },
     {
-      "id": "FSE-WED-B119-0830",
+      "id": "FSE-WED-B119-0955",
       "school": "School of Engineering",
       "department": "CE",
       "degree": "BS",
@@ -3113,13 +3073,13 @@
       "instructor": null,
       "room": "B-119",
       "day": "Wednesday",
-      "time_start": "08:30",
-      "time_end": "09:50",
+      "time_start": "09:55",
+      "time_end": "11:15",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engr. in Room B-119 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engr. in Room B-119 on Wednesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-WED-B119-1250",
@@ -3642,7 +3602,7 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-E) has Engineering Drawing in Room Koh on Wednesday from 14:20 to 15:40."
     },
     {
-      "id": "FSE-WED-MDEL-1250",
+      "id": "FSE-WED-MDEL-1420",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
@@ -3653,13 +3613,13 @@
       "instructor": null,
       "room": "MDEL",
       "day": "Wednesday",
-      "time_start": "12:50",
-      "time_end": "14:10",
+      "time_start": "14:20",
+      "time_end": "15:40",
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Wednesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-WED-CompI-0955",
@@ -3682,7 +3642,7 @@
       "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Embedded Systems Lab (Lab) in Room Comp-I on Wednesday from 09:55 to 11:15."
     },
     {
-      "id": "FSE-WED-CompI-1250",
+      "id": "FSE-WED-CompI-1420",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
@@ -3693,13 +3653,13 @@
       "instructor": null,
       "room": "Comp-I",
       "day": "Wednesday",
-      "time_start": "12:50",
-      "time_end": "14:10",
+      "time_start": "14:20",
+      "time_end": "15:40",
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-C) has Analogue and Digital Communication - Lab (Lab) in Room Comp-I on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2024, Section EE-C) has Analogue and Digital Communication - Lab (Lab) in Room Comp-I on Wednesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-WED-DLD-0830",
@@ -3768,7 +3728,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "Industrial Processes Control - Lab",
+      "course_name": "Intro to Internet of Things - Lab",
       "section": "EE-A",
       "instructor": null,
       "room": "Comp-III",
@@ -3779,7 +3739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Industrial Processes Control - Lab (Lab) in Room Comp-III on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Intro to Internet of Things - Lab (Lab) in Room Comp-III on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSE-WED-CompIII-1250",
@@ -5248,8 +5208,8 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "MP Inter. & Prog",
-      "section": "EE-A",
+      "course_name": "A & Digital Comm.",
+      "section": "EE-B",
       "instructor": null,
       "room": "B-019",
       "day": "Friday",
@@ -5259,7 +5219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-019 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has A & Digital Comm. in Room B-019 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B019-0955",
@@ -5308,8 +5268,8 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "A & Digital Comm.",
-      "section": "EE-B",
+      "course_name": "MP Inter. & Prog",
+      "section": "EE-A",
       "instructor": null,
       "room": "B-020",
       "day": "Friday",
@@ -5319,7 +5279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has A & Digital Comm. in Room B-020 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-020 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B020-0955",
@@ -5360,6 +5320,66 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-B) has Data Com. & Netwks. in Room B-020 on Friday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-FRI-B027-0830",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "OBE Seminar BSEE & BSCE",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-027",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch 2026, Section Unknown) has OBE Seminar BSEE & BSCE in Room B-027 on Friday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-FRI-B027-0955",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "OBE Seminar BSEE & BSCE",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-027",
+      "day": "Friday",
+      "time_start": "09:55",
+      "time_end": "11:15",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch 2026, Section Unknown) has OBE Seminar BSEE & BSCE in Room B-027 on Friday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-FRI-B027-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "OBE Seminar BSEE & BSCE",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-027",
+      "day": "Friday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch 2026, Section Unknown) has OBE Seminar BSEE & BSCE in Room B-027 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B127-0830",
