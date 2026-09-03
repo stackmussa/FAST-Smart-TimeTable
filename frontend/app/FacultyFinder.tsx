@@ -35,7 +35,9 @@ export default function FacultyFinder() {
       }
 
       try {
-        const response = await fetch('/Faculty Offices-School of Computing.xlsx - Directory_2.csv');
+        const isProd = process.env.NODE_ENV === 'production';
+        const basePath = isProd ? '/FAST-Smart-TimeTable' : '';
+        const response = await fetch(`${basePath}/Faculty Offices-School of Computing.xlsx - Directory_2.csv`);
         const csvText = await response.text();
         
         Papa.parse(csvText, {

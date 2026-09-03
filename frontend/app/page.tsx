@@ -114,11 +114,15 @@ export default function TimetableViewer() {
     };
 
     const fetchData = async () => {
+      // Determine basePath for GitHub Pages static export
+      const isProd = process.env.NODE_ENV === 'production';
+      const basePath = isProd ? '/FAST-Smart-TimeTable' : '';
+
       try {
         const [compRes, mgtRes, engRes] = await Promise.all([
-          fetchWithRetry('/computing.json').catch(() => null),
-          fetchWithRetry('/management.json').catch(() => null),
-          fetchWithRetry('/engineering.json').catch(() => null)
+          fetchWithRetry(`${basePath}/computing.json`).catch(() => null),
+          fetchWithRetry(`${basePath}/management.json`).catch(() => null),
+          fetchWithRetry(`${basePath}/engineering.json`).catch(() => null)
         ]);
 
         const parseRes = (res: any) => {
