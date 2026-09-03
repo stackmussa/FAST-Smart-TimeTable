@@ -565,9 +565,9 @@ export default function TimetableViewer() {
                 <h2 className="text-xl font-bold text-white mb-2 md:mb-0">
                   {selectedDay}'s Classes
                 </h2>
-                <div className="flex items-center text-slate-400 text-sm">
+                <div className="flex items-center text-emerald-400 text-sm bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.2)] animate-pulse">
                   <Clock className="w-4 h-4 mr-2" />
-                  <span>Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
+                  <span className="font-semibold tracking-wide">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
                 </div>
               </div>
 
@@ -610,17 +610,17 @@ export default function TimetableViewer() {
                           <div className="flex-1">
                             <div className="flex flex-wrap items-center gap-2 mb-2">
                               {cls.is_cancelled && (
-                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-500/10 text-red-400 border border-red-500/20 uppercase tracking-widest">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-500/10 text-red-400 border border-red-500/20 shadow-[0_0_10px_rgba(239,68,68,0.4)] animate-pulse uppercase tracking-widest">
                                   Cancelled
                                 </span>
                               )}
                               {cls.is_rescheduled && !cls.is_cancelled && (
-                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-orange-500/10 text-orange-400 border border-orange-500/20 uppercase tracking-widest">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-orange-500/10 text-orange-400 border border-orange-500/20 shadow-[0_0_10px_rgba(249,115,22,0.4)] animate-pulse uppercase tracking-widest">
                                   Rescheduled
                                 </span>
                               )}
                               {cls.is_repeat && (
-                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 uppercase tracking-widest">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.4)] animate-pulse uppercase tracking-widest">
                                   Repeated
                                 </span>
                               )}
@@ -628,11 +628,8 @@ export default function TimetableViewer() {
                             <h3 className="text-base font-bold text-slate-100 leading-tight">
                               {cls.course_name}
                             </h3>
-                            <p className="text-sm text-slate-400 mt-1">
-                              Section {cls.section}
-                            </p>
                           </div>
-                          <div className="shrink-0 bg-slate-950 text-slate-300 px-2.5 py-1.5 rounded-lg border border-white/5 text-xs font-semibold text-center">
+                          <div className="shrink-0 bg-indigo-500/10 text-indigo-300 px-2.5 py-1.5 rounded-lg border border-indigo-500/20 shadow-[0_0_15px_rgba(99,102,241,0.2)] animate-pulse text-xs font-semibold text-center">
                             {cls.time_start && (
                               <div className="mb-0.5 whitespace-nowrap">
                                 {(() => {
@@ -643,7 +640,7 @@ export default function TimetableViewer() {
                                 })()}
                               </div>
                             )}
-                            <div className="text-slate-500 text-[10px] leading-none mb-0.5">TO</div>
+                            <div className="text-indigo-400/50 text-[10px] leading-none mb-0.5">TO</div>
                             {cls.time_end && (
                               <div className="whitespace-nowrap">
                                 {(() => {
@@ -689,16 +686,16 @@ export default function TimetableViewer() {
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=i243022@isb.nu.edu.pk"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-1 items-center justify-center bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-white/5 min-h-[40px]"
+                    className="flex flex-1 items-center justify-center bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 px-4 py-2 rounded-lg text-sm font-medium transition-all border border-indigo-500/20 shadow-[0_0_15px_rgba(99,102,241,0.3)] animate-pulse min-h-[40px]"
                   >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <svg className="w-4 h-4 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     Email
                   </a>
                   <a
                     href="https://wa.me/923191420404"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-1 items-center justify-center bg-emerald-900/30 hover:bg-emerald-900/50 text-emerald-400 px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-emerald-500/20 min-h-[40px]"
+                    className="flex flex-1 items-center justify-center bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 px-4 py-2 rounded-lg text-sm font-medium transition-all border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.3)] animate-pulse min-h-[40px]"
                   >
                     <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.711.927 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
                     WhatsApp
