@@ -514,8 +514,8 @@ export default function TimetableViewer() {
         {/* Results Grid */}
         <div className="mt-6">
           <div className="flex justify-end mb-3">
-            <span className="text-xs font-semibold text-gray-500 bg-gray-800 border border-gray-700 px-3 py-1.5 rounded-full shadow-sm">
-              <span className="mr-1">🕒</span> Last Updated: {formatTime(getSelectedSchoolTimestamp())}
+            <span className="text-xs font-semibold text-green-400 bg-green-900/30 border border-green-800/50 px-3 py-1.5 rounded-full shadow-sm">
+              <span className="mr-1"></span> Last Updated: {formatTime(getSelectedSchoolTimestamp())}
             </span>
           </div>
 
