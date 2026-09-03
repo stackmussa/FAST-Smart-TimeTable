@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { Megaphone } from 'lucide-react';
 import FacultyFinder from './FacultyFinder';
 
 type ClassEntry = {
@@ -613,6 +614,37 @@ export default function TimetableViewer() {
           )}
         </div>
             {/* Results Grid Content End */}
+          </div>
+        )}
+
+      {/* Report Changes Section */}
+        {activeTab === 'timetable' && (
+          <div className="mt-8 bg-slate-800/80 border-slate-700 p-6 rounded-xl shadow-sm border flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-start md:items-center gap-3">
+              <div className="bg-blue-900/30 p-2.5 rounded-lg border border-blue-800/50 shrink-0">
+                <Megaphone className="w-6 h-6 text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-100">Notice a discrepancy?</h3>
+                <p className="text-sm text-gray-400 mt-1">
+                  Report missing classes, unlisted rescheduled sections, or errors to Mussa Raza.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 mt-2 md:mt-0">
+              <a 
+                href="mailto:i243022@isb.nu.edu.pk" 
+                className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-blue-300 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
+              >
+                i243022@isb.nu.edu.pk
+              </a>
+              <a 
+                href="tel:+923191420404" 
+                className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-blue-300 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
+              >
+                0319-1420404
+              </a>
+            </div>
           </div>
         )}
 
