@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T20:52:43.189029Z",
+  "last_updated": "2026-09-03T05:51:23.327796Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -4560,26 +4560,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CS (Batch 2026, Section CS-B) has Seerah in Room C-304 on Tuesday from 14:30 to 15:25."
-    },
-    {
-      "id": "FSC-TUE-C304-1720-AIB",
-      "school": "School of Computing",
-      "department": "AI",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "App Prog",
-      "section": "AI-B",
-      "instructor": null,
-      "room": "C-304",
-      "day": "Tuesday",
-      "time_start": "17:20",
-      "time_end": "18:40",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2023, Section AI-B) has App Prog in Room C-304 on Tuesday from 17:20 to 18:40."
     },
     {
       "id": "FSC-TUE-C304-1845-AIB",
@@ -13982,26 +13962,6 @@
       "rag_summary": "BS CS (Batch 2026, Section CS-H) has Calculus in Room C-303 on Thursday from 13:00 to 14:20."
     },
     {
-      "id": "FSC-THU-C303-1720-AIB",
-      "school": "School of Computing",
-      "department": "AI",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "App Prog",
-      "section": "AI-B",
-      "instructor": null,
-      "room": "C-303",
-      "day": "Thursday",
-      "time_start": "17:20",
-      "time_end": "18:40",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2023, Section AI-B) has App Prog in Room C-303 on Thursday from 17:20 to 18:40."
-    },
-    {
       "id": "FSC-THU-C304-0830-CSE",
       "school": "School of Computing",
       "department": "CS",
@@ -20482,26 +20442,6 @@
       "rag_summary": "BS CS (Batch 2024, Section CS-B) has App HCI in Room C-402 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
     },
     {
-      "id": "FSC-SAT-C402-1430-CSH",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "UHQ-I&II",
-      "section": "CS-H",
-      "instructor": null,
-      "room": "C-402",
-      "day": "Saturday (Sep. 05, 2026)",
-      "time_start": "14:30",
-      "time_end": "16:20",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2025, Section CS-H) has UHQ-I&II in Room C-402 on Saturday (Sep. 05, 2026) from 14:30 to 16:20."
-    },
-    {
       "id": "FSC-SAT-C402-1720-AIA",
       "school": "School of Computing",
       "department": "AI",
@@ -22782,6 +22722,26 @@
       "rag_summary": "BS AI (Batch 2023, Section AI-A) has Multiagent Sys in Room D-403 on Saturday (Sep. 05, 2026) from 14:30 to 15:50."
     },
     {
+      "id": "FSC-SAT-D404-0830-CSH",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "UHQ-I&II",
+      "section": "CS-H",
+      "instructor": null,
+      "room": "D-404",
+      "day": "Saturday (Sep. 05, 2026)",
+      "time_start": "08:30",
+      "time_end": "10:20",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CS (Batch 2025, Section CS-H) has UHQ-I&II in Room D-404 on Saturday (Sep. 05, 2026) from 08:30 to 10:20."
+    },
+    {
       "id": "FSC-SAT-D405-0830-CSA",
       "school": "School of Computing",
       "department": "CS",
@@ -24438,8 +24398,8 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2025, Section CS-H) has DLD Lab (Lab) in Room B-Digital on Saturday (Sep. 05, 2026) from 08:30 to 11:20."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS CS (Batch 2025, Section CS-H) has DLD Lab (Lab) in Room B-Digital on Saturday (Sep. 05, 2026) from 08:30 to 11:20."
     },
     {
       "id": "FSC-SAT-BDigital-1130-CSJ",
