@@ -464,16 +464,6 @@ export default function TimetableViewer() {
             
             <div className="flex items-center gap-2 sm:gap-3 flex-wrap self-start md:self-auto">
 
-              {mounted && (
-                <button
-                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                  className="p-1.5 sm:p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700 shrink-0"
-                  aria-label="Toggle Dark Mode"
-                >
-                  {theme === 'dark' ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
-                </button>
-              )}
-
               {loading ? (
                 <div className="flex items-center space-x-2 bg-indigo-100 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 text-indigo-600 dark:text-indigo-400 px-3 py-1.5 rounded-lg shadow-sm">
                   <div className="w-4 h-4 rounded-full border-2 border-indigo-500 border-t-transparent animate-spin"></div>
@@ -490,17 +480,27 @@ export default function TimetableViewer() {
               ) : (
                 <>
                   <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
-                    <Clock className="w-3.5 h-3.5" />
-                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
-                  </div>
-                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                     </span>
                     <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
                   </div>
+                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
+                    <Clock className="w-3.5 h-3.5" />
+                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
+                  </div>
                 </>
+              )}
+
+              {mounted && (
+                <button
+                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                  className="p-1.5 sm:p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700 shrink-0"
+                  aria-label="Toggle Dark Mode"
+                >
+                  {theme === 'dark' ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
+                </button>
               )}
 
             </div>
