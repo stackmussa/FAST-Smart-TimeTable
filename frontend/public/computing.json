@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T10:59:15.757706Z",
+  "last_updated": "2026-09-03T14:57:57.621285Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -16980,26 +16980,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS DS (Batch 2026, Section DS-C) has Seerah in Room D-403 on Thursday from 10:30 to 11:25."
-    },
-    {
-      "id": "FSC-THU-D403-1130-DSC",
-      "school": "School of Computing",
-      "department": "DS",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Ideology of Pak",
-      "section": "DS-C",
-      "instructor": null,
-      "room": "D-403",
-      "day": "Thursday",
-      "time_start": "11:30",
-      "time_end": "13:15",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS DS (Batch 2026, Section DS-C) has Ideology of Pak in Room D-403 on Thursday from 11:30 to 13:15."
     },
     {
       "id": "FSC-THU-D404-0830-CSA",
