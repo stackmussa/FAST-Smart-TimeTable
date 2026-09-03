@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T14:57:57.621285Z",
+  "last_updated": "2026-09-03T18:32:10.322910Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -19140,6 +19140,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS AI (Batch 2026, Section AI-B) has Islamic in Room C-309 on Friday from 14:30 to 15:45."
+    },
+    {
+      "id": "FSC-FRI-C310-1300-SEA2",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab",
+      "section": "SE-A2",
+      "instructor": null,
+      "room": "C-310",
+      "day": "Friday",
+      "time_start": "13:00",
+      "time_end": "14:45",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-A2) has Func Eng Lab (Lab) in Room C-310 on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-FRI-C401-0830-SED",
