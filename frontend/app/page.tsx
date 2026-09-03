@@ -633,14 +633,18 @@ export default function TimetableViewer() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 mt-2 md:mt-0">
               <a 
-                href="mailto:i243022@isb.nu.edu.pk" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=i243022@isb.nu.edu.pk" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-blue-300 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
               >
                 i243022@isb.nu.edu.pk
               </a>
               <a 
-                href="tel:+923191420404" 
-                className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-blue-300 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
+                href="https://wa.me/923191420404" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-green-400 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
               >
                 0319-1420404
               </a>
