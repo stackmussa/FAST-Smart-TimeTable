@@ -351,324 +351,395 @@ export default function TimetableViewer() {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-200 dark bg-gray-900 text-gray-100`}>
+    <div className="min-h-screen font-sans bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950/20 text-slate-100 overflow-x-hidden selection:bg-indigo-500/30">
       {/* Header */}
-      <header className={`bg-gray-800 border-gray-700 shadow-sm border-b`}>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-6">
+      <header className="relative z-10 border-b border-white/5 bg-slate-900/50 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-extrabold tracking-tight text-white mb-2">
-                FAST-NUCES Islamabad
+              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-1">
+                FAST-NUCES <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Islamabad</span>
               </h1>
-              <p className="text-gray-400">Smart Schedule Viewer & Directory</p>
+              <p className="text-slate-400 font-medium">Smart Schedule Viewer &amp; Directory</p>
             </div>
 
             {/* Offline Status Badge */}
-            <div className="mt-4 md:mt-0 flex items-center">
+            <div className="flex items-center">
               {!isOnline ? (
-                <div className="flex items-center space-x-2 bg-red-900/50 border border-red-700 text-red-200 px-4 py-2 rounded-full shadow-sm animate-pulse">
-                  <span className="w-2 h-2 rounded-full bg-red-500"></span>
-                  <span className="text-sm font-medium">Device Offline: Showing cached data</span>
+                <div className="flex items-center space-x-2 bg-red-500/10 border border-red-500/20 text-red-400 px-4 py-2 rounded-xl shadow-sm backdrop-blur-md">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                  </span>
+                  <span className="text-sm font-semibold tracking-wide">Device Offline</span>
                 </div>
               ) : offlineMode ? (
-                <div className="flex items-center space-x-2 bg-yellow-900/50 border border-yellow-700 text-yellow-200 px-4 py-2 rounded-full shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
-                  <span className="text-sm font-medium">Server Unreachable: Offline Mode</span>
+                <div className="flex items-center space-x-2 bg-amber-500/10 border border-amber-500/20 text-amber-400 px-4 py-2 rounded-xl shadow-sm backdrop-blur-md">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                  </span>
+                  <span className="text-sm font-semibold tracking-wide">Server Unreachable</span>
                 </div>
               ) : (
-                <div className="flex items-center space-x-2 bg-green-900/30 border border-green-800 text-green-400 px-4 py-2 rounded-full shadow-sm opacity-80">
-                  <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                  <span className="text-sm font-medium">Live</span>
+                <div className="flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-4 py-2 rounded-xl shadow-sm backdrop-blur-md">
+                  <span className="relative flex h-3 w-3">
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                  </span>
+                  <span className="text-sm font-semibold tracking-wide">System Live</span>
                 </div>
               )}
             </div>
-          </div>
-
-          {/* Navigation Tabs - Bottom fixed on mobile, standard tabs on desktop */}
-          <div className="fixed md:static bottom-0 left-0 right-0 z-50 bg-gray-900 border-t md:border-t-0 border-gray-700 md:bg-transparent md:border-none p-2 md:p-0 flex justify-around md:justify-start md:space-x-2 pb-[env(safe-area-inset-bottom,0.5rem)] shadow-[0_-4px_10px_rgba(0,0,0,0.3)] md:shadow-none">
-            <button
-              onClick={() => setActiveTab('timetable')}
-              className={`flex flex-col md:flex-row items-center justify-center flex-1 md:flex-none px-2 md:px-5 py-3 md:py-2.5 rounded-lg font-medium text-xs md:text-sm transition-all whitespace-nowrap min-h-[44px] min-w-[44px] ${activeTab === 'timetable'
-                ? 'bg-blue-600/10 md:bg-blue-600 text-blue-400 md:text-white md:shadow-md border border-transparent md:border-blue-500'
-                : 'bg-transparent md:bg-gray-800/80 text-gray-400 hover:text-gray-200 md:hover:bg-gray-700 md:border border-transparent md:border-gray-700'
-                }`}
-            >
-              <span className="text-xl md:text-base mb-1 md:mb-0 md:mr-2">🗓️</span>
-              <span>Timetable</span>
-            </button>
-            <button
-              onClick={() => setActiveTab('faculty')}
-              className={`flex flex-col md:flex-row items-center justify-center flex-1 md:flex-none px-2 md:px-5 py-3 md:py-2.5 rounded-lg font-medium text-xs md:text-sm transition-all whitespace-nowrap min-h-[44px] min-w-[44px] ${activeTab === 'faculty'
-                ? 'bg-blue-600/10 md:bg-blue-600 text-blue-400 md:text-white md:shadow-md border border-transparent md:border-blue-500'
-                : 'bg-transparent md:bg-gray-800/80 text-gray-400 hover:text-gray-200 md:hover:bg-gray-700 md:border border-transparent md:border-gray-700'
-                }`}
-            >
-              <span className="text-xl md:text-base mb-1 md:mb-0 md:mr-2">🧑‍🏫</span>
-              <span>Faculty</span>
-            </button>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto p-6 pb-24 md:pb-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24 md:pb-12">
+        
+        {/* Navigation Tabs */}
+        <div className="flex bg-white/5 p-1 rounded-2xl border border-white/10 w-full md:w-fit mb-8 shadow-lg">
+          <button
+            onClick={() => setActiveTab('timetable')}
+            className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 min-h-[44px] ${
+              activeTab === 'timetable'
+                ? 'bg-indigo-500 text-white shadow-md'
+                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+            }`}
+          >
+            <span className="mr-2 text-lg">🗓️</span>
+            Timetable
+          </button>
+          <button
+            onClick={() => setActiveTab('faculty')}
+            className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 min-h-[44px] ${
+              activeTab === 'faculty'
+                ? 'bg-indigo-500 text-white shadow-md'
+                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+            }`}
+          >
+            <span className="mr-2 text-lg">🧑‍🏫</span>
+            Faculty
+          </button>
+        </div>
+
         {activeTab === 'faculty' ? (
           <FacultyFinder />
         ) : (
-          <div className="animate-fadeIn">
-            {/* Filters */}
-            <div className={`bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border mb-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 gap-4`}>
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* Sticky Floating Filters */}
+            <div className="sticky top-4 z-40 mb-8 bg-slate-900/70 backdrop-blur-xl border border-white/10 p-4 rounded-3xl shadow-2xl shadow-black/20">
+              <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 md:pb-0 md:grid md:grid-cols-3 xl:grid-cols-6 scrollbar-hide">
+                
+                {/* School */}
+                <div className="flex flex-col min-w-[200px] md:min-w-0 snap-start">
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 text-slate-400 ml-1">School</label>
+                  <div className="relative">
+                    <select
+                      className="w-full h-[44px] bg-slate-950/50 border border-white/10 rounded-xl px-4 appearance-none text-sm font-semibold text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer"
+                      value={selectedSchool}
+                      onChange={(e) => setSelectedSchool(e.target.value)}
+                      disabled={loading}
+                    >
+                      {availableSchools.map((s) => (
+                        <option key={s} value={s} className="bg-slate-900">{s}</option>
+                      ))}
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-slate-400">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
 
-              <div className="flex flex-col">
-                <label className={`text-sm font-semibold mb-1 text-gray-300`}>School</label>
-                <select
-                  className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
-                  value={selectedSchool}
-                  onChange={(e) => setSelectedSchool(e.target.value)}
-                  disabled={loading}
-                >
-                  {availableSchools.map((s) => (
-                    <option key={s} value={s}>{s}</option>
-                  ))}
-                </select>
+                {/* Department */}
+                <div className="flex flex-col min-w-[160px] md:min-w-0 snap-start">
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 text-slate-400 ml-1">Department</label>
+                  <div className="relative">
+                    <select
+                      className="w-full h-[44px] bg-slate-950/50 border border-white/10 rounded-xl px-4 appearance-none text-sm font-semibold text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
+                      value={selectedDepartment}
+                      onChange={(e) => setSelectedDepartment(e.target.value)}
+                      disabled={loading || !availableDepartments.length}
+                    >
+                      {availableDepartments.length ? (
+                        availableDepartments.map((d) => (
+                          <option key={d} value={d} className="bg-slate-900">{d}</option>
+                        ))
+                      ) : (
+                        <option value="" className="bg-slate-900">None</option>
+                      )}
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-slate-400">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Batch */}
+                <div className="flex flex-col min-w-[120px] md:min-w-0 snap-start">
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 text-slate-400 ml-1">Batch</label>
+                  <div className="relative">
+                    <select
+                      className="w-full h-[44px] bg-slate-950/50 border border-white/10 rounded-xl px-4 appearance-none text-sm font-semibold text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
+                      value={selectedBatch}
+                      onChange={(e) => setSelectedBatch(e.target.value)}
+                      disabled={loading || !availableBatches.length}
+                    >
+                      {availableBatches.length ? (
+                        availableBatches.map((b) => (
+                          <option key={b} value={b} className="bg-slate-900">{b}</option>
+                        ))
+                      ) : (
+                        <option value="" className="bg-slate-900">None</option>
+                      )}
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-slate-400">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Section */}
+                <div className="flex flex-col min-w-[120px] md:min-w-0 snap-start">
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 text-slate-400 ml-1">Section</label>
+                  <div className="relative">
+                    <select
+                      className="w-full h-[44px] bg-slate-950/50 border border-white/10 rounded-xl px-4 appearance-none text-sm font-semibold text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
+                      value={selectedSection}
+                      onChange={(e) => setSelectedSection(e.target.value)}
+                      disabled={loading || !availableSections.length}
+                    >
+                      {availableSections.length ? availableSections.map((s) => (
+                        <option key={s} value={s} className="bg-slate-900">{s}</option>
+                      )) : (
+                        <option value="" className="bg-slate-900">None</option>
+                      )}
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-slate-400">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day */}
+                <div className="flex flex-col min-w-[140px] md:min-w-0 snap-start">
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 text-slate-400 ml-1">Day</label>
+                  <div className="relative">
+                    <select
+                      className="w-full h-[44px] bg-slate-950/50 border border-white/10 rounded-xl px-4 appearance-none text-sm font-semibold text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer"
+                      value={selectedDay}
+                      onChange={(e) => setSelectedDay(e.target.value)}
+                      disabled={loading}
+                    >
+                      {availableDays.map((d) => (
+                        <option key={d} value={d} className="bg-slate-900">{d}</option>
+                      ))}
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-slate-400">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Repeated */}
+                <div className="flex flex-col min-w-[140px] md:min-w-0 snap-start">
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 text-slate-400 ml-1">Repeated</label>
+                  <button
+                    onClick={() => setShowRepeated(!showRepeated)}
+                    disabled={loading}
+                    className={`h-[44px] rounded-xl font-bold text-sm transition-all focus:ring-2 focus:ring-indigo-500 outline-none disabled:opacity-50 ${showRepeated
+                      ? 'bg-indigo-500 text-white shadow-lg shadow-indigo-500/20'
+                      : 'bg-slate-950/50 text-slate-300 border border-white/10 hover:bg-white/5'
+                      }`}
+                  >
+                    {showRepeated ? 'Show: ON' : 'Show: OFF'}
+                  </button>
+                </div>
+
               </div>
+            </div>
 
-              <div className="flex flex-col">
-                <label className={`text-sm font-semibold mb-1 text-gray-300`}>Department</label>
-                <select
-                  className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
-                  value={selectedDepartment}
-                  onChange={(e) => setSelectedDepartment(e.target.value)}
-                  disabled={loading || !availableDepartments.length}
-                >
-                  {availableDepartments.length ? (
-                    availableDepartments.map((d) => (
-                      <option key={d} value={d}>{d}</option>
-                    ))
-                  ) : (
-                    <option value="">No Departments Found</option>
-                  )}
-                </select>
-              </div>
-
-              <div className="flex flex-col">
-                <label className={`text-sm font-semibold mb-1 text-gray-300`}>Batch</label>
-                <select
-                  className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
-                  value={selectedBatch}
-                  onChange={(e) => setSelectedBatch(e.target.value)}
-                  disabled={loading || !availableBatches.length}
-                >
-                  {availableBatches.length ? (
-                    availableBatches.map((b) => (
-                      <option key={b} value={b}>{b}</option>
-                    ))
-                  ) : (
-                    <option value="">No Batches Found</option>
-                  )}
-                </select>
-              </div>
-
-              <div className="flex flex-col">
-                <label className={`text-sm font-semibold mb-1 text-gray-300`}>Section</label>
-                <select
-                  className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
-                  value={selectedSection}
-                  onChange={(e) => setSelectedSection(e.target.value)}
-                  disabled={loading || !availableSections.length}
-                >
-                  {availableSections.length ? availableSections.map((s) => (
-                    <option key={s} value={s}>{s}</option>
-                  )) : (
-                    <option value="">No Sections Found</option>
-                  )}
-                </select>
-              </div>
-
-              <div className="flex flex-col">
-                <label className={`text-sm font-semibold mb-1 text-gray-300`}>Day</label>
-                <select
-                  className={`border rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none disabled:opacity-50 bg-gray-700 border-gray-600 text-white disabled:bg-gray-800`}
-                  value={selectedDay}
-                  onChange={(e) => setSelectedDay(e.target.value)}
-                  disabled={loading}
-                >
-                  {availableDays.map((d) => (
-                    <option key={d} value={d}>{d}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="flex flex-col">
-                <label className={`text-sm font-semibold mb-1 text-gray-300`}>Repeated Courses</label>
-                <button
-                  onClick={() => setShowRepeated(!showRepeated)}
-                  disabled={loading}
-                  className={`border rounded-lg p-2.5 font-medium transition-colors disabled:opacity-50 ${showRepeated
-                    ? 'bg-blue-600 text-white border-blue-500 hover:bg-blue-700'
-                    : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600'
-                    }`}
-                >
-                  {showRepeated ? 'Show: ON' : 'Show: OFF'}
-                </button>
+            {/* Results Header */}
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-1">
+              <h2 className="text-2xl font-bold text-white mb-2 md:mb-0">
+                {selectedDay}'s Classes
+              </h2>
+              <div className="flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1.5 rounded-lg">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span className="text-xs font-bold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
               </div>
             </div>
 
             {/* Results Grid */}
-            <div className="mt-6">
-              <div className="flex justify-end mb-3">
-                <span className="text-xs font-semibold text-green-400 bg-green-900/30 border border-green-800/50 px-3 py-1.5 rounded-full shadow-sm">
-                  <span className="mr-1"></span> Last Updated: {formatTime(getSelectedSchoolTimestamp())}
-                </span>
-              </div>
-
-              {loading ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div key={i} className="p-6 rounded-xl shadow-sm border bg-gray-800 border-gray-700 animate-pulse">
-                      <div className="flex justify-between items-start mb-4">
-                        <div className="space-y-3 w-2/3">
-                          <div className="h-5 bg-gray-700 rounded w-full"></div>
-                          <div className="h-3 bg-gray-700 rounded w-1/2"></div>
-                        </div>
-                        <div className="h-6 w-16 bg-blue-900/40 rounded-full"></div>
+            {loading ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <div key={i} className="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10 relative overflow-hidden">
+                    <div className="absolute inset-0 -translate-x-full animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+                    <div className="flex justify-between items-start mb-6">
+                      <div className="space-y-3 w-2/3">
+                        <div className="h-6 bg-white/10 rounded-lg w-full"></div>
+                        <div className="h-4 bg-white/10 rounded-lg w-1/2"></div>
                       </div>
-                      <div className="mt-4 pt-4 border-t border-gray-700">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                          <div className="h-4 bg-gray-700 rounded w-1/3"></div>
-                        </div>
+                      <div className="h-8 w-20 bg-indigo-500/20 rounded-xl"></div>
+                    </div>
+                    <div className="pt-4 border-t border-white/5">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-6 h-6 rounded-md bg-white/10"></div>
+                        <div className="h-5 bg-white/10 rounded-lg w-1/3"></div>
                       </div>
                     </div>
-                  ))}
-                </div>
-              ) : (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) ? (
-                <div className={`flex items-center justify-center h-64 rounded-xl shadow-sm border bg-gray-800 border-gray-700`}>
-                  <p className={`text-xl font-medium text-gray-400`}>Please select School, Department, Batch, Section, and Day to view classes.</p>
-                </div>
-              ) : filteredClasses.length === 0 ? (
-                <div className={`flex items-center justify-center h-64 rounded-xl shadow-sm border bg-gray-800 border-gray-700`}>
-                  <div className="text-center">
-                    <span className="text-4xl block mb-3">🎉</span>
-                    <p className={`text-xl font-medium text-gray-300`}>No classes scheduled for {selectedDay}!</p>
                   </div>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredClasses.map((cls, idx) => (
-                    <div key={cls.id || idx} className={`p-6 rounded-xl shadow-sm border transition-all hover:shadow-md bg-gray-800 border-gray-700`}>
-                      <div className="flex justify-between items-start mb-4">
-                        <div>
-                          <div className="flex flex-wrap items-center gap-2">
-                            <h3 className={`text-lg font-bold leading-tight text-white`}>{cls.course_name}</h3>
+                ))}
+              </div>
+            ) : (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) ? (
+              <div className="flex flex-col items-center justify-center h-64 bg-white/5 rounded-3xl border border-white/10 p-8 text-center">
+                <span className="text-5xl mb-4 opacity-50">🧭</span>
+                <p className="text-xl font-medium text-slate-300">Select your criteria above to view classes.</p>
+              </div>
+            ) : filteredClasses.length === 0 ? (
+              <div className="flex flex-col items-center justify-center h-64 bg-white/5 rounded-3xl border border-white/10 p-8 text-center relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <span className="text-6xl block mb-4 animate-bounce">🎉</span>
+                <p className="text-2xl font-bold text-white mb-2">No Classes Today!</p>
+                <p className="text-slate-400 font-medium">Enjoy your free time.</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredClasses.map((cls, idx) => (
+                  <div key={cls.id || idx} className="group bg-white/5 rounded-3xl p-6 ring-1 ring-white/10 hover:ring-indigo-500/30 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 hover:bg-white/[0.07] transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                      <div className="flex justify-between items-start mb-4 gap-4">
+                        <div className="flex-1">
+                          <div className="flex flex-wrap items-center gap-2 mb-2">
                             {cls.is_cancelled && (
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/50 shadow-[0_0_8px_rgba(239,68,68,0.6)] animate-pulse uppercase tracking-wider">
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 shadow-[0_0_12px_rgba(239,68,68,0.3)] animate-pulse uppercase tracking-widest">
                                 Cancelled
                               </span>
                             )}
                             {cls.is_rescheduled && !cls.is_cancelled && (
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-orange-500/20 text-orange-400 border border-orange-500/50 shadow-[0_0_8px_rgba(249,115,22,0.6)] animate-pulse uppercase tracking-wider">
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-[0_0_12px_rgba(249,115,22,0.5)] uppercase tracking-widest">
                                 Rescheduled
                               </span>
                             )}
                             {cls.is_repeat && (
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-yellow-500/20 text-yellow-400 border border-yellow-500/50 shadow-[0_0_8px_rgba(234,179,8,0.6)] animate-pulse uppercase tracking-wider">
-                                Repeated Course
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 shadow-[0_0_12px_rgba(245,158,11,0.2)] uppercase tracking-widest">
+                                Repeated
                               </span>
                             )}
                           </div>
-                          <span className={`text-xs mt-1 block text-gray-400`}>Section: {cls.section}</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white tracking-tight leading-tight line-clamp-2">
+                            {cls.course_name}
+                          </h3>
+                          <p className="text-sm font-medium text-slate-400 mt-1 flex items-center">
+                            <span className="bg-white/10 px-2 py-0.5 rounded-md text-xs mr-2">SEC</span>
+                            {cls.section}
+                          </p>
                         </div>
-                        <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 bg-blue-900/50 text-blue-300`}>
+                        <div className="shrink-0 bg-indigo-500/20 text-indigo-300 px-3 py-1.5 rounded-xl border border-indigo-500/20 text-xs md:text-sm font-bold text-center">
                           {cls.time_start && (
-                            (() => {
-                              const [sh, sm] = cls.time_start.split(':').map(Number);
-                              const sp = sh >= 12 ? 'PM' : 'AM';
-                              const sH = sh % 12 || 12;
-                              return `${sH.toString().padStart(2, '0')}:${sm.toString().padStart(2, '0')} ${sp}`;
-                            })()
-                          )} - {cls.time_end && (
-                            (() => {
-                              const [eh, em] = cls.time_end.split(':').map(Number);
-                              const ep = eh >= 12 ? 'PM' : 'AM';
-                              const eH = eh % 12 || 12;
-                              return `${eH.toString().padStart(2, '0')}:${em.toString().padStart(2, '0')} ${ep}`;
-                            })()
+                            <div className="mb-0.5 whitespace-nowrap">
+                              {(() => {
+                                const [sh, sm] = cls.time_start.split(':').map(Number);
+                                const sp = sh >= 12 ? 'PM' : 'AM';
+                                const sH = sh % 12 || 12;
+                                return `${sH.toString().padStart(2, '0')}:${sm.toString().padStart(2, '0')} ${sp}`;
+                              })()}
+                            </div>
                           )}
-                        </span>
-                      </div>
-
-                      <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
-                        <div className="flex items-center">
-                          <svg className={`w-5 h-5 mr-2.5 text-blue-400`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                          </svg>
-                          <span className={`text-base font-medium tracking-wide text-gray-200`}>{cls.room}</span>
+                          <div className="text-indigo-400/50 text-[10px] leading-none mb-0.5">TO</div>
+                          {cls.time_end && (
+                            <div className="whitespace-nowrap">
+                              {(() => {
+                                const [eh, em] = cls.time_end.split(':').map(Number);
+                                const ep = eh >= 12 ? 'PM' : 'AM';
+                                const eH = eh % 12 || 12;
+                                return `${eH.toString().padStart(2, '0')}:${em.toString().padStart(2, '0')} ${ep}`;
+                              })()}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
-                  ))}
-                </div>
-              )}
-            </div>
-            {/* Results Grid Content End */}
-          </div>
-        )}
 
-        {/* Report Changes Section */}
-        {activeTab === 'timetable' && (
-          <div className="mt-8 bg-slate-800/80 border-slate-700 p-6 rounded-xl shadow-sm border flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex items-start md:items-center gap-3">
-              <div className="bg-blue-900/30 p-2.5 rounded-lg border border-blue-800/50 shrink-0">
-                <Megaphone className="w-6 h-6 text-blue-400" />
+                    <div className="pt-4 mt-4 border-t border-white/5 group-hover:border-indigo-500/20 transition-colors">
+                      <div className="flex items-center text-slate-300 font-medium">
+                        <div className="bg-white/5 p-1.5 rounded-lg mr-3 group-hover:bg-indigo-500/20 group-hover:text-indigo-400 transition-colors">
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
+                        </div>
+                        <span className="text-[15px]">{cls.room}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-100">Notice a discrepancy?</h3>
-                <p className="text-sm text-gray-400 mt-1">
-                  Report missing classes, unlisted rescheduled sections, or errors to Mussa Raza.
-                </p>
+            )}
+            
+            {/* Report Changes Section */}
+            <div className="mt-12 bg-white/[0.03] backdrop-blur-md border border-white/10 p-6 md:p-8 rounded-3xl shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative overflow-hidden">
+              <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-indigo-500/10 blur-3xl rounded-full pointer-events-none"></div>
+              <div className="flex items-start md:items-center gap-4 relative z-10">
+                <div className="bg-indigo-500/20 p-3 rounded-2xl border border-indigo-500/30 shrink-0 shadow-inner">
+                  <Megaphone className="w-6 h-6 md:w-8 md:h-8 text-indigo-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white tracking-tight">Notice a discrepancy?</h3>
+                  <p className="text-sm font-medium text-slate-400 mt-1 max-w-md">
+                    Report missing classes, unlisted rescheduled sections, or errors directly to Mussa Raza.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 w-full lg:w-auto relative z-10">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=i243022@isb.nu.edu.pk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-1 items-center justify-center bg-white/5 hover:bg-white/10 border border-white/10 hover:border-indigo-500/50 text-slate-200 px-5 py-3 md:py-2.5 rounded-xl text-sm font-bold transition-all min-h-[44px] shadow-sm"
+                >
+                  <svg className="w-4 h-4 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  Email
+                </a>
+                <a
+                  href="https://wa.me/923191420404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-1 items-center justify-center bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 hover:border-emerald-500/60 text-emerald-400 px-5 py-3 md:py-2.5 rounded-xl text-sm font-bold transition-all min-h-[44px] shadow-sm"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.711.927 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
+                  WhatsApp
+                </a>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 mt-2 md:mt-0">
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=i243022@isb.nu.edu.pk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-blue-300 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
-              >
-                i243022@isb.nu.edu.pk
-              </a>
-              <a
-                href="https://wa.me/923191420404"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center bg-gray-700/50 hover:bg-gray-700 border border-gray-600 text-green-400 px-4 py-3 md:py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px]"
-              >
-                0319-1420404
-              </a>
-            </div>
+
           </div>
         )}
 
         {/* About Section */}
-        <div className="mt-12 bg-gray-800 border-gray-700 p-6 rounded-xl shadow-sm border">
-          <h2 className="text-xl font-bold text-white mb-4">About this System</h2>
-          <p className="text-gray-300 mb-4">
-            This is a simple system built to automate the extraction and display of class schedules from the official university Google Sheets. It dynamically tracks timetable changes and syncs them automatically to ensure you always have the most up-to-date schedule.
+        <div className="mt-8 bg-white/5 border border-white/10 p-6 md:p-8 rounded-3xl shadow-sm">
+          <h2 className="text-xl font-bold text-white mb-4 tracking-tight">System Architecture</h2>
+          <p className="text-slate-400 font-medium mb-6 leading-relaxed max-w-3xl">
+            This system automates the extraction and parsing of class schedules directly from the official university Google Sheets. It tracks real-time timetable changes, caches them locally for offline access, and provides a sleek interface for students and faculty.
           </p>
-          <div className="flex flex-col space-y-2">
-            <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">Source Data (Google Sheets)</span>
-            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit?gid=945396749#gid=945396749" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline transition-colors w-fit flex items-center">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              School of Computing Timetable
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all group">
+              <div className="bg-indigo-500/20 p-2 rounded-xl mr-3 group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </div>
+              <span className="text-sm font-bold text-slate-300 group-hover:text-white transition-colors">Computing Dept</span>
             </a>
-            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline transition-colors w-fit flex items-center">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              School of Management Timetable
+            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all group">
+              <div className="bg-indigo-500/20 p-2 rounded-xl mr-3 group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </div>
+              <span className="text-sm font-bold text-slate-300 group-hover:text-white transition-colors">Management Dept</span>
             </a>
-            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?gid=115356958#gid=115356958" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline transition-colors w-fit flex items-center">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              School of Engineering Timetable
+            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all group">
+              <div className="bg-indigo-500/20 p-2 rounded-xl mr-3 group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </div>
+              <span className="text-sm font-bold text-slate-300 group-hover:text-white transition-colors">Engineering Dept</span>
             </a>
           </div>
         </div>
@@ -677,14 +748,29 @@ export default function TimetableViewer() {
       {/* Reserved for future Faculty RAG Chatbot integration */}
       <div className="fixed bottom-6 right-6 z-50">
         <button
-          className="bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          className="bg-indigo-600 text-white w-14 h-14 rounded-full shadow-2xl shadow-indigo-500/40 hover:bg-indigo-500 hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center focus:outline-none ring-2 ring-transparent focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900"
           aria-label="Chatbot"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
           </svg>
         </button>
       </div>
+
+      <style jsx global>{`
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @keyframes shimmer {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      `}</style>
     </div>
   );
 }
