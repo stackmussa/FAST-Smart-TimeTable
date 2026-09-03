@@ -460,15 +460,25 @@ export default function TimetableViewer() {
               </p>
             </div>
             
-            <div className="flex items-center gap-3 self-start md:self-auto">
+            <div className="flex items-center gap-2 sm:gap-3 flex-wrap self-start md:self-auto">
               
+              {nextClass && (
+                  <button 
+                    onClick={() => setIsNextClassModalOpen(true)}
+                    className="flex items-center text-indigo-600 dark:text-indigo-400 text-xs sm:text-sm bg-indigo-100 dark:bg-indigo-500/10 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg sm:rounded-xl border border-indigo-200 dark:border-indigo-500/20 shadow-sm dark:shadow-[0_0_15px_rgba(99,102,241,0.2)] hover:bg-indigo-200 dark:hover:bg-indigo-500/20 transition-all active:scale-95"
+                  >
+                    <Timer className="w-4 h-4 mr-2 shrink-0" />
+                    <span className="font-bold tracking-wide">{countdownText}</span>
+                  </button>
+              )}
+
               {mounted && (
                 <button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                  className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700"
+                  className="p-1.5 sm:p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700 shrink-0"
                   aria-label="Toggle Dark Mode"
                 >
-                  {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                  {theme === 'dark' ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
                 </button>
               )}
 
@@ -676,10 +686,6 @@ export default function TimetableViewer() {
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2 md:mb-0">
                   {selectedDay}'s Classes
                 </h2>
-                <div className="flex items-center text-emerald-400 text-sm bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.2)] animate-pulse">
-                  <Clock className="w-4 h-4 mr-2" />
-                  <span className="font-semibold tracking-wide">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
-                </div>
               </div>
 
               {/* Results Grid */}
