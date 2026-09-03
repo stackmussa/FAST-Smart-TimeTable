@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,9 +12,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
-  title: "TimeTable Viewer | FAST-NUCES Islamabad",
+  title: "FAST Smart TimeTable",
   description: "Smart Schedule Viewer & Directory for FAST-NUCES Islamabad",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "TimeTable",
+  },
 };
 
 import { ThemeProvider } from "next-themes";
