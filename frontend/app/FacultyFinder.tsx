@@ -114,11 +114,11 @@ export default function FacultyFinder() {
   return (
     <div>
       {/* Search filters — match the timetable filter bar style */}
-      <div className="mb-6 bg-white dark:bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-white/5 p-4 rounded-2xl">
+      <div className="mb-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-white/5 p-4 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {/* Search */}
           <div className="flex flex-col">
-            <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Search</label>
+            <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-400 ml-1">Search</label>
             <div className="relative">
               <input
                 type="text"
@@ -137,7 +137,7 @@ export default function FacultyFinder() {
 
           {/* Department */}
           <div className="flex flex-col">
-            <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Department</label>
+            <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-400 ml-1">Department</label>
             <div className="relative">
               <select
                 value={selectedDepartment}
@@ -148,7 +148,7 @@ export default function FacultyFinder() {
                   <option key={dept} value={dept} className="bg-white dark:bg-slate-900">{dept}</option>
                 ))}
               </select>
-              <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-500">
+              <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-400">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                 </svg>
@@ -162,7 +162,7 @@ export default function FacultyFinder() {
       {loading ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="bg-white dark:bg-white/80 dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 relative overflow-hidden">
+            <div key={i} className="bg-white dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 relative overflow-hidden">
               <div className="absolute inset-0 -translate-x-full animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
               <div className="flex justify-between items-start mb-4">
                 <div className="space-y-2 w-2/3">
@@ -183,12 +183,12 @@ export default function FacultyFinder() {
           {filteredData.map((faculty, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-white/80 dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between"
+              className="bg-white dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between"
             >
               {/* Top: name + office badge */}
               <div>
                 <div className="flex justify-between items-start mb-3 gap-3">
-                  <h3 className="text-base font-bold text-slate-100 leading-tight">{faculty.Name}</h3>
+                  <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 leading-tight">{faculty.Name}</h3>
                   {faculty.Office && (
                     <span className="shrink-0 bg-indigo-500/10 text-indigo-300 px-2.5 py-1 rounded-lg border border-indigo-500/20 shadow-[0_0_12px_rgba(99,102,241,0.2)] text-xs font-semibold whitespace-nowrap">
                       {faculty.Office}
@@ -238,12 +238,12 @@ export default function FacultyFinder() {
           ))}
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center h-48 bg-white dark:bg-slate-100/50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-white/5 p-6 text-center">
+        <div className="flex flex-col items-center justify-center h-48 bg-slate-50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-white/5 p-6 text-center">
           <svg className="w-10 h-10 text-slate-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           <p className="text-lg font-bold text-slate-700 dark:text-slate-300 mb-1">No faculty found</p>
-          <p className="text-slate-500 dark:text-slate-500 text-sm">Try adjusting your search or department filter.</p>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">Try adjusting your search or department filter.</p>
         </div>
       )}
     </div>
