@@ -828,21 +828,23 @@ export default function TimetableViewer() {
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-3">System Architecture</h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm mb-5 leading-relaxed max-w-3xl">
             This system automates the extraction and parsing of class schedules directly from the official university Google Sheets. It tracks real-time timetable changes, caches them locally for offline access, and provides a sleek interface for students and faculty.
+            <br/><br/>
+            <strong>Note:</strong> It is recommended to refer to the original timetable using the links below for official verification.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
+            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
               <div className="bg-slate-200 dark:bg-slate-700 p-1.5 rounded-lg mr-3">
                 <svg className="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
               <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Computing Dept</span>
             </a>
-            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
+            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
               <div className="bg-slate-200 dark:bg-slate-700 p-1.5 rounded-lg mr-3">
                 <svg className="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
               <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Management Dept</span>
             </a>
-            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
+            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
               <div className="bg-slate-200 dark:bg-slate-700 p-1.5 rounded-lg mr-3">
                 <svg className="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
