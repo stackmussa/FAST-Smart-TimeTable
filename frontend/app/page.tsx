@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { Megaphone, Calendar, Users, Compass, CheckCircle2, Clock } from 'lucide-react';
+import { Megaphone, Calendar, Users, Compass, CheckCircle2, Clock, Sun, Moon, Timer, X, Sparkles } from 'lucide-react';
+import { useTheme } from 'next-themes';
 import FacultyFinder from './FacultyFinder';
 
 type ClassEntry = {
@@ -36,6 +37,100 @@ export default function TimetableViewer() {
   const [isOnline, setIsOnline] = useState<boolean>(true);
   const [lastUpdated, setLastUpdated] = useState<{ comp: string | null, mgt: string | null, eng: string | null }>({ comp: null, mgt: null, eng: null });
   const [activeTab, setActiveTab] = useState<'timetable' | 'faculty'>('timetable');
+
+  const { theme, setTheme } = useTheme();
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [nextClass, setNextClass] = useState<any>(null);
+  const [isNextClassModalOpen, setIsNextClassModalOpen] = useState(false);
+  const [countdownText, setCountdownText] = useState("");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const timer = setInterval(() => setCurrentTime(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    const dayOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const getNextClass = () => {
+      if (!data.length || !selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection) return null;
+
+      const currentDayIdx = (currentTime.getDay() + 6) % 7; 
+      const currentMins = currentTime.getHours() * 60 + currentTime.getMinutes();
+
+      const filtered = data.filter((c: ClassEntry) => 
+        c.school === selectedSchool && 
+        c.department === selectedDepartment && 
+        c.batch === selectedBatch && 
+        c.section === selectedSection
+      );
+
+      if (filtered.length === 0) return null;
+
+      for (let dayOffset = 0; dayOffset < 7; dayOffset++) {
+        const searchDayIdx = (currentDayIdx + dayOffset) % 7;
+        const searchDayName = dayOrder[searchDayIdx];
+        
+        const dayClasses = filtered.filter((c: ClassEntry) => c.day === searchDayName);
+        
+        dayClasses.sort((a: ClassEntry, b: ClassEntry) => {
+           if(!a.time_start || !b.time_start) return 0;
+           const aMins = parseInt(a.time_start.split(':')[0]) * 60 + parseInt(a.time_start.split(':')[1]);
+           const bMins = parseInt(b.time_start.split(':')[0]) * 60 + parseInt(b.time_start.split(':')[1]);
+           return aMins - bMins;
+        });
+
+        for (const c of dayClasses) {
+          if(!c.time_start) continue;
+          const startMins = parseInt(c.time_start.split(':')[0]) * 60 + parseInt(c.time_start.split(':')[1]);
+          
+          if (dayOffset === 0) {
+            if (currentMins <= startMins + 10) {
+              return { ...c, dayOffset, startMins };
+            }
+          } else {
+            return { ...c, dayOffset, startMins };
+          }
+        }
+      }
+      return null;
+    };
+
+    const nxt = getNextClass();
+    setNextClass(nxt);
+    
+    if (nxt) {
+      const currentMins = currentTime.getHours() * 60 + currentTime.getMinutes();
+      
+      if (nxt.dayOffset === 0 && currentMins >= nxt.startMins && currentMins <= nxt.startMins + 10) {
+        setCountdownText("Class Started (Ongoing)");
+      } else {
+        let targetDate = new Date(currentTime);
+        targetDate.setDate(targetDate.getDate() + nxt.dayOffset);
+        targetDate.setHours(Math.floor(nxt.startMins / 60), nxt.startMins % 60, 0, 0);
+        
+        const diffMs = targetDate.getTime() - currentTime.getTime();
+        const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+        const diffMins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+        const diffSecs = Math.floor((diffMs % (1000 * 60)) / 1000);
+        
+        let text = "Next in: ";
+        if (diffHrs > 0) text += `${diffHrs.toString().padStart(2, '0')}h `;
+        text += `${diffMins.toString().padStart(2, '0')}m `;
+        text += `${diffSecs.toString().padStart(2, '0')}s`;
+        
+        if (nxt.dayOffset > 0) {
+           text = `Next: ${nxt.day} at ${nxt.time_start}`; 
+        }
+        setCountdownText(text);
+      }
+    } else {
+      setCountdownText("");
+    }
+  }, [currentTime, data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, mounted]);
+
 
   // Force dark mode on mount & attach network listeners
   useEffect(() => {
@@ -351,30 +446,39 @@ export default function TimetableViewer() {
   };
 
   return (
-    <div className="min-h-screen font-sans bg-slate-950 text-slate-200 overflow-x-hidden selection:bg-indigo-500/30">
+    <div className="min-h-screen font-sans bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 overflow-x-hidden selection:bg-indigo-500/30">
       {/* Header */}
-      <header className="border-b border-white/5 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
+      <header className="border-b border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-2xl font-bold tracking-tight text-white">
+              <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
                 FAST-NUCES Islamabad
               </h1>
-              <p className="text-sm text-slate-400 mt-1">Smart Schedule Viewer</p>
+              <p className="text-sm font-medium text-slate-600 dark:text-slate-400 mt-1">
+                Smart Schedule Viewer
+              </p>
             </div>
+            
+            <div className="flex items-center gap-3 self-start md:self-auto">
+              
+              {mounted && (
+                <button
+                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                  className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700"
+                  aria-label="Toggle Dark Mode"
+                >
+                  {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                </button>
+              )}
 
-            {/* Offline Status Badge */}
-            <div className="flex items-center">
-              {!isOnline ? (
-                <div className="flex items-center space-x-2 bg-red-500/10 border border-red-500/20 text-red-400 px-3 py-1.5 rounded-lg shadow-sm">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
-                  </span>
-                  <span className="text-xs font-semibold tracking-wide uppercase">Offline</span>
+              {loading ? (
+                <div className="flex items-center space-x-2 bg-indigo-100 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 text-indigo-600 dark:text-indigo-400 px-3 py-1.5 rounded-lg shadow-sm">
+                  <div className="w-4 h-4 rounded-full border-2 border-indigo-500 border-t-transparent animate-spin"></div>
+                  <span className="text-xs font-semibold tracking-wide uppercase">Syncing...</span>
                 </div>
               ) : offlineMode ? (
-                <div className="flex items-center space-x-2 bg-amber-500/10 border border-amber-500/20 text-amber-400 px-3 py-1.5 rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 bg-amber-100 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-600 dark:text-amber-400 px-3 py-1.5 rounded-lg shadow-sm">
                   <span className="relative flex h-2.5 w-2.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
@@ -382,13 +486,19 @@ export default function TimetableViewer() {
                   <span className="text-xs font-semibold tracking-wide uppercase">Unreachable</span>
                 </div>
               ) : (
-                <div className="flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1.5 rounded-lg shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                  </span>
-                  <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
-                </div>
+                <>
+                  <div className="hidden sm:flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm">
+                    <Clock className="w-3.5 h-3.5" />
+                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
+                  </div>
+                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
+                  </div>
+                </>
               )}
             </div>
           </div>
@@ -399,13 +509,13 @@ export default function TimetableViewer() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pb-12">
         
         {/* Navigation Tabs */}
-        <div className="flex bg-slate-900/50 p-1 rounded-xl border border-white/5 w-full md:w-fit mb-5 shadow-sm">
+        <div className="flex bg-white dark:bg-white/80 dark:bg-slate-900/50 p-1 rounded-xl border border-slate-200 dark:border-white/5 w-full md:w-fit mb-5 shadow-sm">
           <button
             onClick={() => setActiveTab('timetable')}
             className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 min-h-[40px] ${
               activeTab === 'timetable'
-                ? 'bg-indigo-600 text-white shadow-sm'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                ? 'bg-indigo-600 text-slate-900 dark:text-white shadow-sm'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:bg-white/5'
             }`}
           >
             <Calendar className="w-4 h-4 mr-2" />
@@ -415,8 +525,8 @@ export default function TimetableViewer() {
             onClick={() => setActiveTab('faculty')}
             className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 min-h-[40px] ${
               activeTab === 'faculty'
-                ? 'bg-indigo-600 text-white shadow-sm'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                ? 'bg-indigo-600 text-slate-900 dark:text-white shadow-sm'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:bg-white/5'
             }`}
           >
             <Users className="w-4 h-4 mr-2" />
@@ -430,24 +540,24 @@ export default function TimetableViewer() {
           ) : (
             <div>
               {/* Filters */}
-              <div className="mb-5 bg-slate-900/40 border border-white/5 p-3 rounded-2xl">
+              <div className="mb-5 bg-white dark:bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-white/5 p-3 rounded-2xl">
                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
                   
                   {/* School */}
                   <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 ml-1">School</label>
+                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">School</label>
                     <div className="relative">
                       <select
-                        className="w-full h-[40px] bg-slate-950 border border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer"
+                        className="w-full h-[40px] bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-800 dark:text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer"
                         value={selectedSchool}
                         onChange={(e) => setSelectedSchool(e.target.value)}
                         disabled={loading}
                       >
                         {availableSchools.map((s) => (
-                          <option key={s} value={s} className="bg-slate-900">{s}</option>
+                          <option key={s} value={s} className="bg-white dark:bg-slate-900">{s}</option>
                         ))}
                       </select>
-                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-500">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                       </div>
                     </div>
@@ -455,23 +565,23 @@ export default function TimetableViewer() {
 
                   {/* Department */}
                   <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 ml-1">Department</label>
+                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Department</label>
                     <div className="relative">
                       <select
-                        className="w-full h-[40px] bg-slate-950 border border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
+                        className="w-full h-[40px] bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-800 dark:text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
                         value={selectedDepartment}
                         onChange={(e) => setSelectedDepartment(e.target.value)}
                         disabled={loading || !availableDepartments.length}
                       >
                         {availableDepartments.length ? (
                           availableDepartments.map((d) => (
-                            <option key={d} value={d} className="bg-slate-900">{d}</option>
+                            <option key={d} value={d} className="bg-white dark:bg-slate-900">{d}</option>
                           ))
                         ) : (
-                          <option value="" className="bg-slate-900">None</option>
+                          <option value="" className="bg-white dark:bg-slate-900">None</option>
                         )}
                       </select>
-                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-500">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                       </div>
                     </div>
@@ -479,23 +589,23 @@ export default function TimetableViewer() {
 
                   {/* Batch */}
                   <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 ml-1">Batch</label>
+                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Batch</label>
                     <div className="relative">
                       <select
-                        className="w-full h-[40px] bg-slate-950 border border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
+                        className="w-full h-[40px] bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-800 dark:text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
                         value={selectedBatch}
                         onChange={(e) => setSelectedBatch(e.target.value)}
                         disabled={loading || !availableBatches.length}
                       >
                         {availableBatches.length ? (
                           availableBatches.map((b) => (
-                            <option key={b} value={b} className="bg-slate-900">{b}</option>
+                            <option key={b} value={b} className="bg-white dark:bg-slate-900">{b}</option>
                           ))
                         ) : (
-                          <option value="" className="bg-slate-900">None</option>
+                          <option value="" className="bg-white dark:bg-slate-900">None</option>
                         )}
                       </select>
-                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-500">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                       </div>
                     </div>
@@ -503,21 +613,21 @@ export default function TimetableViewer() {
 
                   {/* Section */}
                   <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 ml-1">Section</label>
+                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Section</label>
                     <div className="relative">
                       <select
-                        className="w-full h-[40px] bg-slate-950 border border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
+                        className="w-full h-[40px] bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-800 dark:text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer disabled:opacity-50"
                         value={selectedSection}
                         onChange={(e) => setSelectedSection(e.target.value)}
                         disabled={loading || !availableSections.length}
                       >
                         {availableSections.length ? availableSections.map((s) => (
-                          <option key={s} value={s} className="bg-slate-900">{s}</option>
+                          <option key={s} value={s} className="bg-white dark:bg-slate-900">{s}</option>
                         )) : (
-                          <option value="" className="bg-slate-900">None</option>
+                          <option value="" className="bg-white dark:bg-slate-900">None</option>
                         )}
                       </select>
-                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-500">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                       </div>
                     </div>
@@ -525,19 +635,19 @@ export default function TimetableViewer() {
 
                   {/* Day */}
                   <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 ml-1">Day</label>
+                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Day</label>
                     <div className="relative">
                       <select
-                        className="w-full h-[40px] bg-slate-950 border border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer"
+                        className="w-full h-[40px] bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-white/10 rounded-lg px-3 appearance-none text-sm font-medium text-slate-800 dark:text-slate-200 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all cursor-pointer"
                         value={selectedDay}
                         onChange={(e) => setSelectedDay(e.target.value)}
                         disabled={loading}
                       >
                         {availableDays.map((d) => (
-                          <option key={d} value={d} className="bg-slate-900">{d}</option>
+                          <option key={d} value={d} className="bg-white dark:bg-slate-900">{d}</option>
                         ))}
                       </select>
-                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-slate-500 dark:text-slate-500">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                       </div>
                     </div>
@@ -545,13 +655,13 @@ export default function TimetableViewer() {
 
                   {/* Repeated */}
                   <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 ml-1">Repeated</label>
+                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-500 ml-1">Repeated</label>
                     <button
                       onClick={() => setShowRepeated(!showRepeated)}
                       disabled={loading}
                       className={`h-[40px] rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center ${showRepeated
-                        ? 'bg-indigo-600 text-white border-transparent'
-                        : 'bg-slate-950 text-slate-300 border border-white/10 hover:bg-slate-900'
+                        ? 'bg-indigo-600 text-slate-900 dark:text-white border-transparent'
+                        : 'bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10 hover:bg-white dark:bg-slate-900'
                         }`}
                     >
                       {showRepeated ? 'Show: ON' : 'Show: OFF'}
@@ -563,7 +673,7 @@ export default function TimetableViewer() {
 
               {/* Results Header */}
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-1">
-                <h2 className="text-xl font-bold text-white mb-2 md:mb-0">
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2 md:mb-0">
                   {selectedDay}'s Classes
                 </h2>
                 <div className="flex items-center text-emerald-400 text-sm bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.2)] animate-pulse">
@@ -576,36 +686,36 @@ export default function TimetableViewer() {
               {loading ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div key={i} className="bg-slate-900/50 rounded-xl p-5 border border-white/5 relative overflow-hidden">
+                    <div key={i} className="bg-white dark:bg-white/80 dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 relative overflow-hidden">
                       <div className="absolute inset-0 -translate-x-full animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
                       <div className="flex justify-between items-start mb-5">
                         <div className="space-y-2 w-2/3">
-                          <div className="h-5 bg-white/5 rounded w-full"></div>
-                          <div className="h-4 bg-white/5 rounded w-1/2"></div>
+                          <div className="h-5 bg-slate-200 dark:bg-white/5 rounded w-full"></div>
+                          <div className="h-4 bg-slate-200 dark:bg-white/5 rounded w-1/2"></div>
                         </div>
-                        <div className="h-6 w-16 bg-white/5 rounded"></div>
+                        <div className="h-6 w-16 bg-slate-200 dark:bg-white/5 rounded"></div>
                       </div>
-                      <div className="pt-3 border-t border-white/5">
-                        <div className="h-4 bg-white/5 rounded w-1/3"></div>
+                      <div className="pt-3 border-t border-slate-200 dark:border-white/5">
+                        <div className="h-4 bg-slate-200 dark:bg-white/5 rounded w-1/3"></div>
                       </div>
                     </div>
                   ))}
                 </div>
               ) : (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) ? (
-                <div className="flex flex-col items-center justify-center h-48 bg-slate-900/30 rounded-2xl border border-white/5 p-6 text-center">
+                <div className="flex flex-col items-center justify-center h-48 bg-white dark:bg-slate-100/50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-white/5 p-6 text-center">
                   <Compass className="w-12 h-12 text-slate-600 mb-3" />
-                  <p className="text-lg font-medium text-slate-400">Select your criteria above to view classes.</p>
+                  <p className="text-lg font-medium text-slate-600 dark:text-slate-400">Select your criteria above to view classes.</p>
                 </div>
               ) : filteredClasses.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-48 bg-slate-900/30 rounded-2xl border border-white/5 p-6 text-center">
+                <div className="flex flex-col items-center justify-center h-48 bg-white dark:bg-slate-100/50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-white/5 p-6 text-center">
                   <CheckCircle2 className="w-12 h-12 text-slate-600 mb-3" />
-                  <p className="text-xl font-bold text-slate-300 mb-1">No Classes Today!</p>
-                  <p className="text-slate-500 font-medium">Enjoy your free time.</p>
+                  <p className="text-xl font-bold text-slate-700 dark:text-slate-300 mb-1">No Classes Today!</p>
+                  <p className="text-slate-500 dark:text-slate-500 font-medium">Enjoy your free time.</p>
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {filteredClasses.map((cls, idx) => (
-                    <div key={cls.id || idx} className="bg-slate-900/50 rounded-xl p-5 border border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between">
+                    <div key={cls.id || idx} className="bg-white dark:bg-white/80 dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between">
                       <div>
                         <div className="flex justify-between items-start mb-3 gap-4">
                           <div className="flex-1">
@@ -656,8 +766,8 @@ export default function TimetableViewer() {
                         </div>
                       </div>
 
-                      <div className="pt-3 mt-3 border-t border-white/5">
-                        <div className="flex items-center text-slate-400 font-medium text-sm">
+                      <div className="pt-3 mt-3 border-t border-slate-200 dark:border-white/5">
+                        <div className="flex items-center text-slate-600 dark:text-slate-400 font-medium text-sm">
                           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                           </svg>
@@ -670,14 +780,14 @@ export default function TimetableViewer() {
               )}
               
               {/* Report Changes Section */}
-              <div className="mt-10 bg-slate-900/40 border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="mt-10 bg-white dark:bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-white/5 p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex items-start md:items-center gap-4">
-                  <div className="bg-slate-800 p-2.5 rounded-xl shrink-0">
+                  <div className="bg-slate-100 dark:bg-slate-800 p-2.5 rounded-xl shrink-0">
                     <Megaphone className="w-5 h-5 text-indigo-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-200">Notice a discrepancy?</h3>
-                    <p className="text-sm text-slate-400 mt-0.5 max-w-md">
+                    <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Notice a discrepancy?</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 mt-0.5 max-w-md">
                       Report missing classes, unlisted rescheduled sections, or errors to Mussa Raza.
                     </p>
                   </div>
@@ -708,29 +818,29 @@ export default function TimetableViewer() {
         </div>
 
         {/* About Section */}
-        <div className="mt-8 bg-slate-900/40 border border-white/5 p-6 rounded-2xl">
-          <h2 className="text-lg font-bold text-slate-200 mb-3">System Architecture</h2>
-          <p className="text-slate-400 text-sm mb-5 leading-relaxed max-w-3xl">
+        <div className="mt-8 bg-white dark:bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-white/5 p-6 rounded-2xl">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-3">System Architecture</h2>
+          <p className="text-slate-600 dark:text-slate-400 text-sm mb-5 leading-relaxed max-w-3xl">
             This system automates the extraction and parsing of class schedules directly from the official university Google Sheets. It tracks real-time timetable changes, caches them locally for offline access, and provides a sleek interface for students and faculty.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-800/50 hover:bg-slate-800 rounded-xl border border-white/5 transition-colors">
-              <div className="bg-slate-700 p-1.5 rounded-lg mr-3">
-                <svg className="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <a href="https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-200/50 dark:bg-slate-800/50 hover:bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
+              <div className="bg-slate-200 dark:bg-slate-700 p-1.5 rounded-lg mr-3">
+                <svg className="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
-              <span className="text-sm font-medium text-slate-300">Computing Dept</span>
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Computing Dept</span>
             </a>
-            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-800/50 hover:bg-slate-800 rounded-xl border border-white/5 transition-colors">
-              <div className="bg-slate-700 p-1.5 rounded-lg mr-3">
-                <svg className="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <a href="https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-200/50 dark:bg-slate-800/50 hover:bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
+              <div className="bg-slate-200 dark:bg-slate-700 p-1.5 rounded-lg mr-3">
+                <svg className="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
-              <span className="text-sm font-medium text-slate-300">Management Dept</span>
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Management Dept</span>
             </a>
-            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-800/50 hover:bg-slate-800 rounded-xl border border-white/5 transition-colors">
-              <div className="bg-slate-700 p-1.5 rounded-lg mr-3">
-                <svg className="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <a href="https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit" target="_blank" rel="noopener noreferrer" className="flex items-center p-3 bg-slate-100 dark:bg-slate-200/50 dark:bg-slate-800/50 hover:bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-white/5 transition-colors">
+              <div className="bg-slate-200 dark:bg-slate-700 p-1.5 rounded-lg mr-3">
+                <svg className="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
-              <span className="text-sm font-medium text-slate-300">Engineering Dept</span>
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Engineering Dept</span>
             </a>
           </div>
         </div>
@@ -750,6 +860,49 @@ export default function TimetableViewer() {
           }
         }
       `}</style>
-    </div>
+    
+      {/* Next Class Modal Drawer */}
+      {isNextClassModalOpen && nextClass && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/50 dark:bg-slate-950/80 backdrop-blur-sm animate-in fade-in duration-200" onClick={() => setIsNextClassModalOpen(false)}>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 rounded-2xl w-full max-w-md p-6 shadow-2xl relative animate-in zoom-in-95 duration-200" onClick={e => e.stopPropagation()}>
+            <button onClick={() => setIsNextClassModalOpen(false)} className="absolute top-4 right-4 p-2 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+              <X className="w-5 h-5" />
+            </button>
+            
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
+              <Sparkles className="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400" />
+              Upcoming Class
+            </h3>
+            
+            <div className="space-y-4">
+              <div>
+                 <div className="flex flex-wrap gap-2 mb-2">
+                     <span className="text-xs font-bold bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-300 px-2 py-0.5 rounded uppercase tracking-wider">{nextClass.day}</span>
+                     {nextClass.is_rescheduled && <span className="text-xs font-bold bg-orange-100 dark:bg-orange-500/20 text-orange-600 dark:text-orange-300 px-2 py-0.5 rounded uppercase tracking-wider">Rescheduled</span>}
+                 </div>
+                 <h4 className="text-xl font-bold text-slate-900 dark:text-white leading-tight">{nextClass.course_name}</h4>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+                      <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">Time</p>
+                      <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                         {nextClass.time_start} - {nextClass.time_end}
+                      </p>
+                  </div>
+                  <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+                      <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">Room</p>
+                      <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{nextClass.room}</p>
+                  </div>
+                  <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5 col-span-2">
+                      <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">Instructor</p>
+                      <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{nextClass.instructor}</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+</div>
   );
 }
