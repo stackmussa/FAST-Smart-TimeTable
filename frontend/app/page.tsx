@@ -462,16 +462,6 @@ export default function TimetableViewer() {
             
             <div className="flex items-center gap-2 sm:gap-3 flex-wrap self-start md:self-auto">
               
-              {nextClass && (
-                  <button 
-                    onClick={() => setIsNextClassModalOpen(true)}
-                    className="flex items-center text-indigo-600 dark:text-indigo-400 text-xs sm:text-sm bg-indigo-100 dark:bg-indigo-500/10 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg sm:rounded-xl border border-indigo-200 dark:border-indigo-500/20 shadow-sm dark:shadow-[0_0_15px_rgba(99,102,241,0.2)] hover:bg-indigo-200 dark:hover:bg-indigo-500/20 transition-all active:scale-95"
-                  >
-                    <Timer className="w-4 h-4 mr-2 shrink-0" />
-                    <span className="font-bold tracking-wide">{countdownText}</span>
-                  </button>
-              )}
-
               {mounted && (
                 <button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -497,13 +487,12 @@ export default function TimetableViewer() {
                 </div>
               ) : (
                 <>
-                  <div className="hidden sm:flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm">
+                  <div className="hidden sm:flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
                     <Clock className="w-3.5 h-3.5" />
                     <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
+                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm">
                     <span className="relative flex h-2.5 w-2.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                     </span>
                     <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
@@ -682,10 +671,19 @@ export default function TimetableViewer() {
               </div>
 
               {/* Results Header */}
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-1">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-1 gap-4">
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2 md:mb-0">
                   {selectedDay}'s Classes
                 </h2>
+                {nextClass && (
+                  <button 
+                    onClick={() => setIsNextClassModalOpen(true)}
+                    className="flex items-center text-indigo-600 dark:text-indigo-400 text-sm bg-indigo-100 dark:bg-indigo-500/10 px-4 py-2 rounded-xl border border-indigo-200 dark:border-indigo-500/20 shadow-sm dark:shadow-[0_0_15px_rgba(99,102,241,0.2)] hover:bg-indigo-200 dark:hover:bg-indigo-500/20 transition-all active:scale-95 w-full md:w-auto justify-center min-h-[44px]"
+                  >
+                    <Timer className="w-4 h-4 mr-2 shrink-0" />
+                    <span className="font-bold tracking-wide">{countdownText}</span>
+                  </button>
+                )}
               </div>
 
               {/* Results Grid */}
@@ -746,7 +744,7 @@ export default function TimetableViewer() {
                               {cls.course_name}
                             </h3>
                           </div>
-                          <div className="shrink-0 bg-indigo-500/10 text-indigo-300 px-2.5 py-1.5 rounded-lg border border-indigo-500/20 shadow-[0_0_15px_rgba(99,102,241,0.25)] text-xs font-semibold text-center">
+                          <div className="shrink-0 bg-indigo-100 dark:bg-indigo-500/10 text-indigo-800 dark:text-indigo-300 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-500/20 shadow-[0_0_15px_rgba(79,70,229,0.3)] dark:shadow-[0_0_15px_rgba(99,102,241,0.25)] text-xs font-semibold text-center">
                             {cls.time_start && (
                               <div className="mb-0.5 whitespace-nowrap">
                                 {(() => {
@@ -757,7 +755,7 @@ export default function TimetableViewer() {
                                 })()}
                               </div>
                             )}
-                            <div className="text-indigo-400/50 text-[10px] leading-none mb-0.5">TO</div>
+                            <div className="text-indigo-500/70 dark:text-indigo-400/50 text-[10px] leading-none mb-0.5">TO</div>
                             {cls.time_end && (
                               <div className="whitespace-nowrap">
                                 {(() => {
@@ -876,7 +874,6 @@ export default function TimetableViewer() {
             </button>
             
             <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
-              <Sparkles className="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400" />
               Upcoming Class
             </h3>
             
@@ -899,10 +896,6 @@ export default function TimetableViewer() {
                   <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
                       <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">Room</p>
                       <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{nextClass.room}</p>
-                  </div>
-                  <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5 col-span-2">
-                      <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">Instructor</p>
-                      <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{nextClass.instructor}</p>
                   </div>
               </div>
             </div>
