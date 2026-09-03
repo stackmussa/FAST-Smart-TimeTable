@@ -64,7 +64,9 @@ export default function TimetableViewer() {
         c.school === selectedSchool && 
         c.department === selectedDepartment && 
         c.batch === selectedBatch && 
-        c.section === selectedSection
+        c.section === selectedSection &&
+        !c.is_cancelled &&
+        (showRepeated ? true : !c.is_repeat)
       );
 
       if (filtered.length === 0) return null;
@@ -129,7 +131,7 @@ export default function TimetableViewer() {
     } else {
       setCountdownText("");
     }
-  }, [currentTime, data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, mounted]);
+  }, [currentTime, data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, mounted, showRepeated]);
 
 
   // Force dark mode on mount & attach network listeners
@@ -462,6 +464,16 @@ export default function TimetableViewer() {
             
             <div className="flex items-center gap-2 sm:gap-3 flex-wrap self-start md:self-auto">
 
+              {mounted && (
+                <button
+                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                  className="p-1.5 sm:p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700 shrink-0"
+                  aria-label="Toggle Dark Mode"
+                >
+                  {theme === 'dark' ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
+                </button>
+              )}
+
               {loading ? (
                 <div className="flex items-center space-x-2 bg-indigo-100 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 text-indigo-600 dark:text-indigo-400 px-3 py-1.5 rounded-lg shadow-sm">
                   <div className="w-4 h-4 rounded-full border-2 border-indigo-500 border-t-transparent animate-spin"></div>
@@ -478,27 +490,17 @@ export default function TimetableViewer() {
               ) : (
                 <>
                   <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
+                    <Clock className="w-3.5 h-3.5" />
+                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
+                  </div>
+                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                     </span>
                     <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
                   </div>
-                  <div className="hidden sm:flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
-                    <Clock className="w-3.5 h-3.5" />
-                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
-                  </div>
                 </>
-              )}
-              
-              {mounted && (
-                <button
-                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                  className="p-1.5 sm:p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors border border-slate-300 dark:border-slate-700 shrink-0"
-                  aria-label="Toggle Dark Mode"
-                >
-                  {theme === 'dark' ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
-                </button>
               )}
 
             </div>
@@ -877,8 +879,18 @@ export default function TimetableViewer() {
               <X className="w-5 h-5" />
             </button>
             
-            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center flex-wrap gap-2">
               Upcoming Class
+              {nextClass.is_rescheduled && !nextClass.is_cancelled && (
+                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-orange-500/10 text-orange-400 border border-orange-500/20 shadow-[0_0_10px_rgba(249,115,22,0.4)] animate-pulse uppercase tracking-widest">
+                  Rescheduled
+                </span>
+              )}
+              {nextClass.is_repeat && (
+                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.4)] animate-pulse uppercase tracking-widest">
+                  Repeated
+                </span>
+              )}
             </h3>
             
             <div className="space-y-4">
