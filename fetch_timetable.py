@@ -59,7 +59,8 @@ FSE_COLOR_LEGEND = {
     "FFEA4335": {"department": "EE", "degree": "BS", "batch": "2023"},
     "FFEF91F1": {"department": "CE", "degree": "BS", "batch": "2026"},
     "FFC0D91E": {"department": "CE", "degree": "BS", "batch": "2025"},
-    "FFF4B084": {"department": "CE", "degree": "BS", "batch": "2024"}
+    "FFF4B084": {"department": "CE", "degree": "BS", "batch": "2024"},
+    "FFBDD7EE": {"department": "EE", "degree": "BS", "batch": "2025", "is_repeat": True}
 }
 
 # School of Computing Color Legend (Batch mapping only)
@@ -605,8 +606,9 @@ def parse_fse() -> List[Dict[str, Any]]:
                         color_info = FSE_COLOR_LEGEND[key]
                         break
                         
-                batch = color_info["batch"]
-                degree = color_info["degree"]
+                batch = color_info.get("batch", "Unknown")
+                degree = color_info.get("degree", "BS")
+                is_repeat = color_info.get("is_repeat", False)
                     
                 # Look ahead for instructor
                 instructor = None
@@ -688,7 +690,7 @@ def parse_fse() -> List[Dict[str, Any]]:
                                 batch = "2023"
                                 break
                     
-                    summary = generate_rag_summary(school, dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, False, is_cancelled)
+                    summary = generate_rag_summary(school, dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
                     entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                     
                     entries.append({
@@ -707,7 +709,7 @@ def parse_fse() -> List[Dict[str, Any]]:
                         "time_end": t_end,
                         "is_lab": is_lab,
                         "is_rescheduled": is_rescheduled,
-                        "is_repeat": False,
+                        "is_repeat": is_repeat,
                         "is_cancelled": is_cancelled,
                         "rag_summary": summary
                     })
