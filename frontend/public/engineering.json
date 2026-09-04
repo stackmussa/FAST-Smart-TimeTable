@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T10:30:30.528765Z",
+  "last_updated": "2026-09-04T14:31:25.637042Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -10,7 +10,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-027",
       "day": "Monday",
       "time_start": "08:30",
@@ -30,7 +30,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Fakhar Abbas",
       "room": "B-027",
       "day": "Monday",
       "time_start": "09:55",
@@ -50,7 +50,7 @@
       "semester": "Unknown",
       "course_name": "English Language Skills",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Ms. Hajra Khalid",
       "room": "B-028",
       "day": "Monday",
       "time_start": "08:30",
@@ -70,7 +70,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-028",
       "day": "Monday",
       "time_start": "09:55",
@@ -90,7 +90,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Management",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Saeed",
       "room": "B-028",
       "day": "Monday",
       "time_start": "11:25",
@@ -99,18 +99,18 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Engineering Management in Room B-028 on Monday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Engineering Management in Room B-028 on Monday from 11:25 to 12:45."
     },
     {
       "id": "FSE-MON-B028-1250",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2023",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Tech. & Business Writing",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-028",
       "day": "Monday",
       "time_start": "12:50",
@@ -130,7 +130,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Fakhar Abbas",
       "room": "B-030",
       "day": "Monday",
       "time_start": "08:30",
@@ -150,7 +150,7 @@
       "semester": "Unknown",
       "course_name": "English Language Skills",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Ms. Hajra Khalid",
       "room": "B-030",
       "day": "Monday",
       "time_start": "09:55",
@@ -166,11 +166,11 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2023",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Tech. & Business Writing",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-030",
       "day": "Monday",
       "time_start": "11:25",
@@ -190,7 +190,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Management",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Saeed",
       "room": "B-030",
       "day": "Monday",
       "time_start": "12:50",
@@ -199,7 +199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Engineering Management in Room B-030 on Monday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Engineering Management in Room B-030 on Monday from 12:50 to 14:10."
     },
     {
       "id": "FSE-MON-B019-0830",
@@ -210,7 +210,7 @@
       "semester": "Unknown",
       "course_name": "A & Digital Comm.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-019",
       "day": "Monday",
       "time_start": "08:30",
@@ -230,7 +230,7 @@
       "semester": "Unknown",
       "course_name": "Basic Mechanical Engg.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Adnan",
       "room": "B-019",
       "day": "Monday",
       "time_start": "09:55",
@@ -250,7 +250,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Awais",
       "room": "B-019",
       "day": "Monday",
       "time_start": "11:25",
@@ -270,7 +270,7 @@
       "semester": "Unknown",
       "course_name": "Comp. Variables & Trans.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-019",
       "day": "Monday",
       "time_start": "12:50",
@@ -290,7 +290,7 @@
       "semester": "Unknown",
       "course_name": "Advanced Artificial Intel. -",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Farhan Khalid                 05:15 -08:00",
       "room": "B-019",
       "day": "Monday",
       "time_start": "15:45",
@@ -310,7 +310,7 @@
       "semester": "Unknown",
       "course_name": "Basic Mechanical Engg.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Adnan",
       "room": "B-020",
       "day": "Monday",
       "time_start": "08:30",
@@ -330,7 +330,7 @@
       "semester": "Unknown",
       "course_name": "A & Digital Comm.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-020",
       "day": "Monday",
       "time_start": "09:55",
@@ -350,7 +350,7 @@
       "semester": "Unknown",
       "course_name": "Comp. Variables & Trans.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-020",
       "day": "Monday",
       "time_start": "11:25",
@@ -370,7 +370,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Awais",
       "room": "B-020",
       "day": "Monday",
       "time_start": "12:50",
@@ -382,6 +382,26 @@
       "rag_summary": "BS EE (Batch 2025, Section EE-B) has Digital Logic Design in Room B-020 on Monday from 12:50 to 14:10."
     },
     {
+      "id": "FSE-MON-B119-0830",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Applications of ICT",
+      "section": "CE-A",
+      "instructor": "Dr. M. Ibrar Khan                                                 08:30 - 10:20",
+      "room": "B-119",
+      "day": "Monday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Applications of ICT in Room B-119 on Monday from 08:30 to 09:50."
+    },
+    {
       "id": "FSE-MON-B119-1420",
       "school": "School of Engineering",
       "department": "CE",
@@ -390,7 +410,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-119",
       "day": "Monday",
       "time_start": "14:20",
@@ -530,7 +550,7 @@
       "semester": "Unknown",
       "course_name": "Discrete Strucures",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Mukhtar Ullah",
       "room": "B-129",
       "day": "Monday",
       "time_start": "08:30",
@@ -550,7 +570,7 @@
       "semester": "Unknown",
       "course_name": "Elect Devices & Circuits",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Maria Nasir",
       "room": "B-129",
       "day": "Monday",
       "time_start": "09:55",
@@ -562,6 +582,26 @@
       "rag_summary": "BS CE (Batch 2025, Section CE-A) has Elect Devices & Circuits in Room B-129 on Monday from 09:55 to 11:15."
     },
     {
+      "id": "FSE-MON-B129-1250",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "Civics and Comminity Engagement CE-A,CE-B",
+      "section": "Unknown",
+      "instructor": "Ms. Maria Mazhar",
+      "room": "B-129",
+      "day": "Monday",
+      "time_start": "12:50",
+      "time_end": "14:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CE (Batch 2025, Section Unknown) has Civics and Comminity Engagement CE-A,CE-B in Room B-129 on Monday from 12:50 to 14:45."
+    },
+    {
       "id": "FSE-MON-B130-0830",
       "school": "School of Engineering",
       "department": "CE",
@@ -570,7 +610,7 @@
       "semester": "Unknown",
       "course_name": "Elect Devices & Circuits",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Maria Nasir",
       "room": "B-130",
       "day": "Monday",
       "time_start": "08:30",
@@ -590,7 +630,7 @@
       "semester": "Unknown",
       "course_name": "Discrete Strucures",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Dr. Mukhtar Ullah",
       "room": "B-130",
       "day": "Monday",
       "time_start": "09:55",
@@ -608,8 +648,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Reseved for FSM",
-      "section": "Unknown",
+      "course_name": "Reseved for",
+      "section": "CE-FSM",
       "instructor": null,
       "room": "B-227",
       "day": "Monday",
@@ -619,7 +659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section Unknown) has Reseved for FSM in Room B-227 on Monday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2026, Section CE-FSM) has Reseved for in Room B-227 on Monday from 08:30 to 09:50."
     },
     {
       "id": "FSE-MON-B227-0955",
@@ -628,8 +668,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Reseved for FSM",
-      "section": "Unknown",
+      "course_name": "Reseved for",
+      "section": "CE-FSM",
       "instructor": null,
       "room": "B-227",
       "day": "Monday",
@@ -639,7 +679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section Unknown) has Reseved for FSM in Room B-227 on Monday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2026, Section CE-FSM) has Reseved for in Room B-227 on Monday from 09:55 to 11:15."
     },
     {
       "id": "FSE-MON-B227-1125",
@@ -648,8 +688,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Reseved for FSM",
-      "section": "Unknown",
+      "course_name": "Reseved for",
+      "section": "CE-FSM",
       "instructor": null,
       "room": "B-227",
       "day": "Monday",
@@ -659,7 +699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section Unknown) has Reseved for FSM in Room B-227 on Monday from 11:25 to 12:45."
+      "rag_summary": "BS CE (Batch 2026, Section CE-FSM) has Reseved for in Room B-227 on Monday from 11:25 to 12:45."
     },
     {
       "id": "FSE-MON-B227-1250",
@@ -668,8 +708,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Reseved for FSM",
-      "section": "Unknown",
+      "course_name": "Reseved for",
+      "section": "CE-FSM",
       "instructor": null,
       "room": "B-227",
       "day": "Monday",
@@ -679,7 +719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section Unknown) has Reseved for FSM in Room B-227 on Monday from 12:50 to 14:10."
+      "rag_summary": "BS CE (Batch 2026, Section CE-FSM) has Reseved for in Room B-227 on Monday from 12:50 to 14:10."
     },
     {
       "id": "FSE-MON-B227-1420",
@@ -688,8 +728,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Reseved for FSM",
-      "section": "Unknown",
+      "course_name": "Reseved for",
+      "section": "CE-FSM",
       "instructor": null,
       "room": "B-227",
       "day": "Monday",
@@ -699,7 +739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section Unknown) has Reseved for FSM in Room B-227 on Monday from 14:20 to 15:40."
+      "rag_summary": "BS CE (Batch 2026, Section CE-FSM) has Reseved for in Room B-227 on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-B227-1545",
@@ -708,8 +748,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Reseved for FSM",
-      "section": "Unknown",
+      "course_name": "Reseved for",
+      "section": "CE-FSM",
       "instructor": null,
       "room": "B-227",
       "day": "Monday",
@@ -719,7 +759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section Unknown) has Reseved for FSM in Room B-227 on Monday from 15:45 to 17:05."
+      "rag_summary": "BS CE (Batch 2026, Section CE-FSM) has Reseved for in Room B-227 on Monday from 15:45 to 17:05."
     },
     {
       "id": "FSE-MON-B230-0830",
@@ -730,7 +770,7 @@
       "semester": "Unknown",
       "course_name": "Blockchain Technologies",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Tariq",
       "room": "B-230",
       "day": "Monday",
       "time_start": "08:30",
@@ -750,7 +790,7 @@
       "semester": "Unknown",
       "course_name": "Numerical Computing.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-230",
       "day": "Monday",
       "time_start": "11:25",
@@ -770,7 +810,7 @@
       "semester": "Unknown",
       "course_name": "Data Com. & Netwks.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Shahid Qureshi                                                                                                                                \"",
       "room": "B-230",
       "day": "Monday",
       "time_start": "14:20",
@@ -790,7 +830,7 @@
       "semester": "Unknown",
       "course_name": "Digital Signal Processing",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-230",
       "day": "Monday",
       "time_start": "15:45",
@@ -808,7 +848,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -819,7 +859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 (Lab) in Room Labs on Monday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Monday from 08:30 to 11:15."
     },
     {
       "id": "FSE-MON-Labs-0955",
@@ -828,7 +868,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -839,7 +879,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 (Lab) in Room Labs on Monday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Monday from 09:55 to 12:40."
     },
     {
       "id": "FSE-MON-Labs-1125",
@@ -848,7 +888,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -859,7 +899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Monday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Monday from 11:25 to 14:10."
     },
     {
       "id": "FSE-MON-Labs-1250",
@@ -868,7 +908,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -879,7 +919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 (Lab) in Room Labs on Monday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Monday from 12:50 to 15:35."
     },
     {
       "id": "FSE-MON-Labs-1420",
@@ -888,7 +928,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -899,7 +939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 (Lab) in Room Labs on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Monday from 14:20 to 17:05."
     },
     {
       "id": "FSE-MON-Labs-1545",
@@ -908,7 +948,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -919,7 +959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 (Lab) in Room Labs on Monday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Monday from 15:45 to 18:30."
     },
     {
       "id": "FSE-MON-CompI-1250",
@@ -930,7 +970,7 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Alina Gulzar",
       "room": "Comp-I",
       "day": "Monday",
       "time_start": "12:50",
@@ -939,7 +979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT Lab (Lab) in Room Comp-I on Monday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT Lab (Lab) in Room Comp-I on Monday from 12:50 to 15:35."
     },
     {
       "id": "FSE-MON-CompII-1250",
@@ -950,7 +990,7 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Esha Rizwan",
       "room": "Comp-II",
       "day": "Monday",
       "time_start": "12:50",
@@ -959,7 +999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT Lab (Lab) in Room Comp-II on Monday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT Lab (Lab) in Room Comp-II on Monday from 12:50 to 15:35."
     },
     {
       "id": "FSE-MON-Poth-0830",
@@ -970,7 +1010,7 @@
       "semester": "Unknown",
       "course_name": "Fund. Database Systems Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Sajjal Mudassar",
       "room": "Poth",
       "day": "Monday",
       "time_start": "08:30",
@@ -979,7 +1019,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Fund. Database Systems Lab (Lab) in Room Poth on Monday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Fund. Database Systems Lab (Lab) in Room Poth on Monday from 08:30 to 11:15."
     },
     {
       "id": "FSE-MON-Poth-1250",
@@ -990,7 +1030,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Drawing",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Ammar Ali",
       "room": "Poth",
       "day": "Monday",
       "time_start": "12:50",
@@ -1010,7 +1050,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-D",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Koh",
       "day": "Monday",
       "time_start": "08:30",
@@ -1019,7 +1059,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-D) has Elect. Netwk. Analysis Lab (Lab) in Room Koh on Monday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-D) has Elect. Netwk. Analysis Lab (Lab) in Room Koh on Monday from 08:30 to 11:15."
     },
     {
       "id": "FSE-MON-Koh-1250",
@@ -1030,7 +1070,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Drawing",
       "section": "EE-D",
-      "instructor": null,
+      "instructor": "Engr. Moiza Eman",
       "room": "Koh",
       "day": "Monday",
       "time_start": "12:50",
@@ -1059,7 +1099,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Microprocessor. Lab (Lab) in Room MDEL on Monday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Microprocessor. Lab (Lab) in Room MDEL on Monday from 11:25 to 14:10."
     },
     {
       "id": "FSE-MON-MDEL-1250",
@@ -1070,7 +1110,7 @@
       "semester": "Unknown",
       "course_name": "Microprocessor Interfacing & Prog. Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Maryam Zafar",
       "room": "MDEL",
       "day": "Monday",
       "time_start": "12:50",
@@ -1079,7 +1119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-C) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Monday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2024, Section EE-C) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Monday from 12:50 to 15:35."
     },
     {
       "id": "FSE-MON-Mehran1\nA Block-1420",
@@ -1090,7 +1130,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Fasih Ahmed Janjua",
       "room": "Mehran-1\nA- Block",
       "day": "Monday",
       "time_start": "14:20",
@@ -1099,7 +1139,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Applied Machine Learning Lab (Lab) in Room Mehran-1\nA- Block on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Applied Machine Learning Lab (Lab) in Room Mehran-1\nA- Block on Monday from 14:20 to 17:05."
     },
     {
       "id": "FSE-MON-CompIII/\nComm-0830",
@@ -1108,8 +1148,8 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "Reseved For CS",
-      "section": "Unknown",
+      "course_name": "Reseved For",
+      "section": "EE-CS",
       "instructor": null,
       "room": "Comp-III/\nComm",
       "day": "Monday",
@@ -1119,7 +1159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has Reseved For CS in Room Comp-III/\nComm on Monday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-CS) has Reseved For in Room Comp-III/\nComm on Monday from 08:30 to 09:50."
     },
     {
       "id": "FSE-MON-CompIII/\nComm-1420",
@@ -1130,7 +1170,7 @@
       "semester": "Unknown",
       "course_name": "Analogue and Digital Communication - Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Abdur Rehman",
       "room": "Comp-III/\nComm",
       "day": "Monday",
       "time_start": "14:20",
@@ -1139,7 +1179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Analogue and Digital Communication - Lab (Lab) in Room Comp-III/\nComm on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Analogue and Digital Communication - Lab (Lab) in Room Comp-III/\nComm on Monday from 14:20 to 17:05."
     },
     {
       "id": "FSE-MON-Circuit \nLab-0830",
@@ -1150,7 +1190,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-D",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Circuit \nLab",
       "day": "Monday",
       "time_start": "08:30",
@@ -1159,7 +1199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-D) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Monday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-D) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Monday from 08:30 to 11:15."
     },
     {
       "id": "FSE-MON-Room-0830",
@@ -1168,7 +1208,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -1179,7 +1219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 in Room Room on Monday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Monday from 08:30 to 09:50."
     },
     {
       "id": "FSE-MON-Room-0955",
@@ -1188,7 +1228,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -1199,7 +1239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 in Room Room on Monday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Monday from 09:55 to 11:15."
     },
     {
       "id": "FSE-MON-Room-1125",
@@ -1208,7 +1248,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -1219,7 +1259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 in Room Room on Monday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Monday from 11:25 to 12:45."
     },
     {
       "id": "FSE-MON-Room-1250",
@@ -1228,7 +1268,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -1239,7 +1279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 in Room Room on Monday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Monday from 12:50 to 14:10."
     },
     {
       "id": "FSE-MON-Room-1420",
@@ -1248,7 +1288,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -1259,7 +1299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 in Room Room on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-Room-1545",
@@ -1268,7 +1308,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -1279,7 +1319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 in Room Room on Monday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Monday from 15:45 to 17:05."
     },
     {
       "id": "FSE-TUE-B027-0830",
@@ -1290,11 +1330,11 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Nimra Fatima                                         08:30 - 10:20",
       "room": "B-027",
       "day": "Tuesday",
       "time_start": "08:30",
-      "time_end": "10:20",
+      "time_end": "09:50",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
@@ -1302,42 +1342,22 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-027 on Tuesday from 08:30 to 09:50."
     },
     {
-      "id": "FSE-TUE-B027-1055",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "English Language Skills",
-      "section": "EE-A",
-      "instructor": null,
-      "room": "B-027",
-      "day": "Tuesday",
-      "time_start": "10:55",
-      "time_end": "12:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-A) has English Language Skills in Room B-027 on Tuesday from 10:55 to 12:15."
-    },
-    {
       "id": "FSE-TUE-B027-1420",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Applied Physics A                 (Batch 2025)",
-      "section": "EE-A",
-      "instructor": null,
+      "section": "Unknown",
+      "instructor": "Engr. Fakhar Abbas",
       "room": "B-027",
       "day": "Tuesday",
       "time_start": "14:20",
-      "time_end": "16:35",
+      "time_end": "15:40",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch Unknown, Section Unknown) has Applied Physics A                 (Batch 2025) in Room B-027 on Tuesday from 14:20 to 15:40."
     },
@@ -1350,7 +1370,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-028",
       "day": "Tuesday",
       "time_start": "12:50",
@@ -1359,7 +1379,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Applied Machine Learning in Room B-028 on Tuesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Applied Machine Learning in Room B-028 on Tuesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-TUE-B028-1420",
@@ -1370,7 +1390,7 @@
       "semester": "Unknown",
       "course_name": "Embedded Systems -",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Niaz Ahmed",
       "room": "B-028",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -1379,7 +1399,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Embedded Systems - in Room B-028 on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Embedded Systems - in Room B-028 on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-B028-1545",
@@ -1390,7 +1410,7 @@
       "semester": "Unknown",
       "course_name": "Instru. & Measurements",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Awais",
       "room": "B-028",
       "day": "Tuesday",
       "time_start": "15:45",
@@ -1410,36 +1430,16 @@
       "semester": "Unknown",
       "course_name": "Pakistan Studies",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Ms. Zahida Amin",
       "room": "B-030",
       "day": "Tuesday",
       "time_start": "08:30",
-      "time_end": "10:20",
+      "time_end": "09:50",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-C) has Pakistan Studies in Room B-030 on Tuesday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSE-TUE-B027-1055",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Applications of ICT",
-      "section": "EE-C",
-      "instructor": null,
-      "room": "B-030",
-      "day": "Tuesday",
-      "time_start": "10:55",
-      "time_end": "12:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-C) has Applications of ICT in Room B-030 on Tuesday from 10:55 to 12:15."
     },
     {
       "id": "FSE-TUE-B030-1420",
@@ -1450,7 +1450,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-030",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -1459,7 +1459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Applied Machine Learning in Room B-030 on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Applied Machine Learning in Room B-030 on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-B030-1545",
@@ -1470,7 +1470,7 @@
       "semester": "Unknown",
       "course_name": "Fund. Database Systems",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. M. Ibrar Khan",
       "room": "B-030",
       "day": "Tuesday",
       "time_start": "15:45",
@@ -1479,7 +1479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Fund. Database Systems in Room B-030 on Tuesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Fund. Database Systems in Room B-030 on Tuesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-TUE-B019-0830",
@@ -1490,7 +1490,7 @@
       "semester": "Unknown",
       "course_name": "Electromagnetic Theory",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Irum Saba",
       "room": "B-019",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -1510,7 +1510,7 @@
       "semester": "Unknown",
       "course_name": "Electromagnetic Theory",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Irum Saba",
       "room": "B-019",
       "day": "Tuesday",
       "time_start": "09:55",
@@ -1530,7 +1530,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Aamer Munir",
       "room": "B-019",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -1550,7 +1550,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Shahid Qureshi",
       "room": "B-019",
       "day": "Tuesday",
       "time_start": "12:50",
@@ -1570,7 +1570,7 @@
       "semester": "Unknown",
       "course_name": "Data Com. & Netwks.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-019",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -1590,7 +1590,7 @@
       "semester": "Unknown",
       "course_name": "Adv. Network Security -",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Tariq             05:15 -08:00",
       "room": "B-019",
       "day": "Tuesday",
       "time_start": "15:45",
@@ -1610,7 +1610,7 @@
       "semester": "Unknown",
       "course_name": "MP Inter. & Prog",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Shehzad Ahmed",
       "room": "B-020",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -1630,7 +1630,7 @@
       "semester": "Unknown",
       "course_name": "MP Inter. & Prog",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Shehzad Ahmed",
       "room": "B-020",
       "day": "Tuesday",
       "time_start": "09:55",
@@ -1650,7 +1650,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Shahid Qureshi",
       "room": "B-020",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -1670,7 +1670,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Izza Jamal",
       "room": "B-020",
       "day": "Tuesday",
       "time_start": "12:50",
@@ -1682,6 +1682,26 @@
       "rag_summary": "BS EE (Batch 2025, Section EE-B) has Elect. Netwk. Analysis in Room B-020 on Tuesday from 12:50 to 14:10."
     },
     {
+      "id": "FSE-TUE-B020-1545",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Holy Quran I,II /Ethics I & II",
+      "section": "EE-A",
+      "instructor": "Dr. M. Munir                       05:15 -07:00",
+      "room": "B-020",
+      "day": "Tuesday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Holy Quran I,II /Ethics I & II in Room B-020 on Tuesday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-TUE-B119-1250",
       "school": "School of Engineering",
       "department": "CE",
@@ -1690,7 +1710,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-119",
       "day": "Tuesday",
       "time_start": "12:50",
@@ -1830,7 +1850,7 @@
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Irfan Shah",
       "room": "B-129",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -1850,7 +1870,7 @@
       "semester": "Unknown",
       "course_name": "Comp.Var. & Transforms",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-129",
       "day": "Tuesday",
       "time_start": "09:55",
@@ -1890,7 +1910,7 @@
       "semester": "Unknown",
       "course_name": "Comp.Var. & Transforms",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-130",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -1910,7 +1930,7 @@
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Dr. Irfan Shah",
       "room": "B-130",
       "day": "Tuesday",
       "time_start": "09:55",
@@ -1926,10 +1946,10 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "LA & Diff. Equations",
-      "section": "EE-A",
+      "section": "Unknown",
       "instructor": "Dr. Irfan Shah",
       "room": "B-130",
       "day": "Tuesday",
@@ -1937,9 +1957,9 @@
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has LA & Diff. Equations [REPEAT COURSE] in Room B-130 on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has LA & Diff. Equations in Room B-130 on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-B130-1250",
@@ -1970,7 +1990,7 @@
       "semester": "Unknown",
       "course_name": "Numerical Computing.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-230",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -1990,7 +2010,7 @@
       "semester": "Unknown",
       "course_name": "Computer Org.Architecture",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Nasir Ali Shah",
       "room": "B-230",
       "day": "Tuesday",
       "time_start": "09:55",
@@ -2028,7 +2048,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -2039,7 +2059,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 (Lab) in Room Labs on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-Labs-0955",
@@ -2048,7 +2068,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -2059,7 +2079,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 (Lab) in Room Labs on Tuesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Tuesday from 09:55 to 12:40."
     },
     {
       "id": "FSE-TUE-Labs-1125",
@@ -2068,7 +2088,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -2079,7 +2099,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-Labs-1250",
@@ -2088,7 +2108,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -2099,7 +2119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 (Lab) in Room Labs on Tuesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Tuesday from 12:50 to 15:35."
     },
     {
       "id": "FSE-TUE-Labs-1420",
@@ -2108,7 +2128,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -2119,7 +2139,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 (Lab) in Room Labs on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Tuesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-TUE-Labs-1545",
@@ -2128,7 +2148,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -2139,7 +2159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 (Lab) in Room Labs on Tuesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Tuesday from 15:45 to 18:30."
     },
     {
       "id": "FSE-TUE-Poth-0830",
@@ -2150,7 +2170,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Fasih Ahmed Janjua",
       "room": "Poth",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -2159,7 +2179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Applied Machine Learning Lab (Lab) in Room Poth on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Applied Machine Learning Lab (Lab) in Room Poth on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-Poth-1125",
@@ -2170,7 +2190,7 @@
       "semester": "Unknown",
       "course_name": "Computer Organization and Architecture Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Nasir Ali Shah",
       "room": "Poth",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -2179,7 +2199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture Lab (Lab) in Room Poth on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture Lab (Lab) in Room Poth on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-Poth-1420",
@@ -2190,7 +2210,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Drawing",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Ammar Ali",
       "room": "Poth",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2210,7 +2230,7 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Alina Gulzar",
       "room": "Koh",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -2219,7 +2239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-B) has Applications of ICT Lab (Lab) in Room Koh on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2026, Section CE-B) has Applications of ICT Lab (Lab) in Room Koh on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-Koh-1125",
@@ -2230,7 +2250,7 @@
       "semester": "Unknown",
       "course_name": "Analogue and Digital Communication - Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Abdur Rehman",
       "room": "Koh",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -2239,7 +2259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analogue and Digital Communication - Lab (Lab) in Room Koh on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analogue and Digital Communication - Lab (Lab) in Room Koh on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-Koh-1420",
@@ -2250,7 +2270,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Drawing",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Moiza Eman",
       "room": "Koh",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2270,7 +2290,7 @@
       "semester": "Unknown",
       "course_name": "Digital Signal Processing Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Abu Bakar",
       "room": "Comp-I",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -2279,7 +2299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Digital Signal Processing Lab (Lab) in Room Comp-I on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Digital Signal Processing Lab (Lab) in Room Comp-I on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-CompI-1420",
@@ -2290,7 +2310,7 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Alina Gulzar",
       "room": "Comp-I",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2299,7 +2319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-C) has Applications of ICT Lab (Lab) in Room Comp-I on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-C) has Applications of ICT Lab (Lab) in Room Comp-I on Tuesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-TUE-Phy-0830",
@@ -2310,7 +2330,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers  Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Esha Rizwan",
       "room": "Phy",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -2319,7 +2339,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers  Lab (Lab) in Room Phy on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers  Lab (Lab) in Room Phy on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-Phy-1420",
@@ -2330,7 +2350,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers Lab",
       "section": "EE-D",
-      "instructor": null,
+      "instructor": "Engr. Deema Zargoon",
       "room": "Phy",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2339,7 +2359,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Physics for Engineers Lab (Lab) in Room Phy on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Physics for Engineers Lab (Lab) in Room Phy on Tuesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-TUE-CompII-0830",
@@ -2350,7 +2370,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Comp-II",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -2359,7 +2379,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-CompII-1125",
@@ -2370,7 +2390,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Programming Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Ayesha Nadeem",
       "room": "Comp-II",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -2379,7 +2399,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-B) has Object Oriented Programming Lab (Lab) in Room Comp-II on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS CE (Batch 2025, Section CE-B) has Object Oriented Programming Lab (Lab) in Room Comp-II on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-MDEL-1125",
@@ -2390,7 +2410,7 @@
       "semester": "Unknown",
       "course_name": "Microprocessor Interfacing & Prog. Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Maryam Zafar",
       "room": "MDEL",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -2399,7 +2419,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-Comm Lab-1125",
@@ -2410,7 +2430,7 @@
       "semester": "Unknown",
       "course_name": "Analogue and Digital Communication - Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Abdur Rehman",
       "room": "Comm Lab",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -2419,7 +2439,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analogue and Digital Communication - Lab (Lab) in Room Comm Lab on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analogue and Digital Communication - Lab (Lab) in Room Comm Lab on Tuesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-TUE-Elect-1420",
@@ -2430,7 +2450,7 @@
       "semester": "Unknown",
       "course_name": "Electronic Devices & Circuits Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Shahmeer Hussain",
       "room": "Elect",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2439,7 +2459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronic Devices & Circuits Lab (Lab) in Room Elect on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronic Devices & Circuits Lab (Lab) in Room Elect on Tuesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-TUE-DLD-0830",
@@ -2450,7 +2470,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Fakhar Abbas",
       "room": "DLD",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -2459,7 +2479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Digital Logic Design Lab (Lab) in Room DLD on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Digital Logic Design Lab (Lab) in Room DLD on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-DLD-1420",
@@ -2470,7 +2490,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design Lab",
       "section": "EE-D",
-      "instructor": null,
+      "instructor": "Engr. Abu Bakar",
       "room": "DLD",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2479,7 +2499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-D) has Digital Logic Design Lab (Lab) in Room DLD on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2025, Section EE-D) has Digital Logic Design Lab (Lab) in Room DLD on Tuesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-TUE-Circuit \nLab-0830",
@@ -2490,7 +2510,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Circuit \nLab",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -2499,7 +2519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Tuesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-TUE-CompIII-1420",
@@ -2510,7 +2530,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct. Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Zulkaif Sajjad",
       "room": "Comp-III",
       "day": "Tuesday",
       "time_start": "14:20",
@@ -2519,7 +2539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Obj. Oriented Data Struct. Lab (Lab) in Room Comp-III on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Obj. Oriented Data Struct. Lab (Lab) in Room Comp-III on Tuesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-TUE-Room-0830",
@@ -2528,7 +2548,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -2539,7 +2559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 in Room Room on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Tuesday from 08:30 to 09:50."
     },
     {
       "id": "FSE-TUE-Room-0955",
@@ -2548,7 +2568,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -2559,7 +2579,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 in Room Room on Tuesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Tuesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-TUE-Room-1125",
@@ -2568,7 +2588,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -2579,7 +2599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 in Room Room on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-Room-1250",
@@ -2588,9 +2608,9 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
-      "instructor": null,
+      "instructor": "Physics for Engr. EE-A",
       "room": "Room",
       "day": "Tuesday",
       "time_start": "12:50",
@@ -2599,7 +2619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 in Room Room on Tuesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Tuesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-TUE-Room-1420",
@@ -2608,7 +2628,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -2619,7 +2639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 in Room Room on Tuesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-Room-1545",
@@ -2628,7 +2648,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -2639,27 +2659,27 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 in Room Room on Tuesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Tuesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-WED-B027-0955",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Linear Circuit Analysis",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Irum Saba",
       "room": "B-027",
       "day": "Wednesday",
       "time_start": "09:55",
       "time_end": "11:15",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis [REPEAT COURSE] in Room B-027 on Wednesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Circuit Analysis in Room B-027 on Wednesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-WED-B027-1125",
@@ -2670,7 +2690,7 @@
       "semester": "Unknown",
       "course_name": "English Language Skills",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Ms. Hajra Khalid",
       "room": "B-027",
       "day": "Wednesday",
       "time_start": "11:25",
@@ -2690,7 +2710,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Fakhar Abbas",
       "room": "B-027",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -2706,20 +2726,20 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Linear Circuit Analysis",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Irum Saba",
       "room": "B-027",
       "day": "Wednesday",
       "time_start": "15:45",
       "time_end": "17:05",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis [REPEAT COURSE] in Room B-027 on Wednesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Circuit Analysis in Room B-027 on Wednesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-WED-B028-0830",
@@ -2730,7 +2750,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Mukhtar Ullah",
       "room": "B-028",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -2750,7 +2770,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-028",
       "day": "Wednesday",
       "time_start": "09:55",
@@ -2766,20 +2786,20 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Sumaira Azhar",
       "room": "B-028",
       "day": "Wednesday",
       "time_start": "11:25",
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Algebra [REPEAT COURSE] in Room B-028 on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Algebra in Room B-028 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B028-1250",
@@ -2790,7 +2810,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Management",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Saeed",
       "room": "B-028",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -2799,18 +2819,18 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Engineering Management in Room B-028 on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Engineering Management in Room B-028 on Wednesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-WED-B028-1420",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2023",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Tech. & Business Writing",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-028",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -2830,7 +2850,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-030",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -2850,7 +2870,7 @@
       "semester": "Unknown",
       "course_name": "English Language Skills",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Ms. Hajra Khalid",
       "room": "B-030",
       "day": "Wednesday",
       "time_start": "09:55",
@@ -2886,11 +2906,11 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2023",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Tech. & Business Writing",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-030",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -2910,7 +2930,7 @@
       "semester": "Unknown",
       "course_name": "Engineering Management",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Saeed",
       "room": "B-030",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -2919,7 +2939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Engineering Management in Room B-030 on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Engineering Management in Room B-030 on Wednesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-WED-B019-0830",
@@ -2930,7 +2950,7 @@
       "semester": "Unknown",
       "course_name": "Data Com. & Netwks.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -2950,7 +2970,7 @@
       "semester": "Unknown",
       "course_name": "A & Digital Comm.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "09:55",
@@ -2970,7 +2990,7 @@
       "semester": "Unknown",
       "course_name": "FSE Faculty Meeting",
       "section": "Unknown",
-      "instructor": "",
+      "instructor": null,
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "11:25",
@@ -2990,7 +3010,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Awais",
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3010,7 +3030,7 @@
       "semester": "Unknown",
       "course_name": "Comp. Variables & Trans.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3030,7 +3050,7 @@
       "semester": "Unknown",
       "course_name": "Adv. Embedded Sys & Net.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Niaz Ahmed                      05:15 -08:00",
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "15:45",
@@ -3050,7 +3070,7 @@
       "semester": "Unknown",
       "course_name": "Electronic Circuit Design",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Izza Jamal",
       "room": "B-020",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3070,7 +3090,7 @@
       "semester": "Unknown",
       "course_name": "MP Inter. & Prog",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Shehzad Ahmed",
       "room": "B-020",
       "day": "Wednesday",
       "time_start": "09:55",
@@ -3090,7 +3110,7 @@
       "semester": "Unknown",
       "course_name": "Comp. Variables & Trans.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-020",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3110,7 +3130,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Awais",
       "room": "B-020",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3130,7 +3150,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Dr. Nasir Ali Shah",
       "room": "B-020",
       "day": "Wednesday",
       "time_start": "15:45",
@@ -3142,7 +3162,7 @@
       "rag_summary": "BS EE (Batch 2025, Section EE-C) has Digital Logic Design in Room B-020 on Wednesday from 15:45 to 17:05."
     },
     {
-      "id": "FSE-WED-B119-0955",
+      "id": "FSE-WED-B119-0830",
       "school": "School of Engineering",
       "department": "CE",
       "degree": "BS",
@@ -3150,16 +3170,16 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-119",
       "day": "Wednesday",
-      "time_start": "09:55",
-      "time_end": "11:15",
+      "time_start": "08:30",
+      "time_end": "09:50",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engr. in Room B-119 on Wednesday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engr. in Room B-119 on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSE-WED-B119-1250",
@@ -3170,7 +3190,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-119",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3190,7 +3210,7 @@
       "semester": "Unknown",
       "course_name": "English Language Skills",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Ms. Hajra Khalid",
       "room": "B-119",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3310,7 +3330,7 @@
       "semester": "Unknown",
       "course_name": "Discrete Strucures",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Mukhtar Ullah",
       "room": "B-129",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3330,7 +3350,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Prog.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Sana Saleh",
       "room": "B-129",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3350,7 +3370,7 @@
       "semester": "Unknown",
       "course_name": "Intro to Internet of Things.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-130",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3370,7 +3390,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Prog.",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Dr. Sana Saleh",
       "room": "B-130",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3390,7 +3410,7 @@
       "semester": "Unknown",
       "course_name": "Discrete Strucures",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Dr. Mukhtar Ullah",
       "room": "B-130",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3402,26 +3422,6 @@
       "rag_summary": "BS CE (Batch 2025, Section CE-B) has Discrete Strucures in Room B-130 on Wednesday from 14:20 to 15:40."
     },
     {
-      "id": "FSE-WED-B230-0830",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "Unknown",
-      "course_name": "Digital Signal Processing",
-      "section": "CE-A",
-      "instructor": null,
-      "room": "B-230",
-      "day": "Wednesday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-230 on Wednesday from 08:30 to 09:50."
-    },
-    {
       "id": "FSE-WED-B230-0955",
       "school": "School of Engineering",
       "department": "CE",
@@ -3430,7 +3430,7 @@
       "semester": "Unknown",
       "course_name": "Data Com. & Netwks.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Shahid Qureshi",
       "room": "B-230",
       "day": "Wednesday",
       "time_start": "09:55",
@@ -3450,7 +3450,7 @@
       "semester": "Unknown",
       "course_name": "Intro to Internet of Things.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-230",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3462,13 +3462,33 @@
       "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Intro to Internet of Things. in Room B-230 on Wednesday from 12:50 to 14:10."
     },
     {
+      "id": "FSE-WED-B230-1545",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Digital Signal Processing",
+      "section": "CE-A",
+      "instructor": "Dr. Shahzad Saleem",
+      "room": "B-230",
+      "day": "Wednesday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-230 on Wednesday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-WED-Labs-0830",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -3479,7 +3499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 (Lab) in Room Labs on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-Labs-0955",
@@ -3488,7 +3508,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -3499,7 +3519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 (Lab) in Room Labs on Wednesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Wednesday from 09:55 to 12:40."
     },
     {
       "id": "FSE-WED-Labs-1125",
@@ -3508,7 +3528,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -3519,7 +3539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Wednesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-WED-Labs-1250",
@@ -3528,7 +3548,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -3539,7 +3559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 (Lab) in Room Labs on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Wednesday from 12:50 to 15:35."
     },
     {
       "id": "FSE-WED-Labs-1420",
@@ -3548,7 +3568,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -3559,7 +3579,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 (Lab) in Room Labs on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Wednesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-WED-Labs-1545",
@@ -3568,7 +3588,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -3579,7 +3599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 (Lab) in Room Labs on Wednesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Wednesday from 15:45 to 18:30."
     },
     {
       "id": "FSE-WED-PHY-0830",
@@ -3590,7 +3610,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Deema Zargoon",
       "room": "PHY",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3599,7 +3619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engineers Lab (Lab) in Room PHY on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engineers Lab (Lab) in Room PHY on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-PHY-1125",
@@ -3610,7 +3630,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Deema Zargoon",
       "room": "PHY",
       "day": "Wednesday",
       "time_start": "11:25",
@@ -3619,7 +3639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Physics for Engineers Lab (Lab) in Room PHY on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Physics for Engineers Lab (Lab) in Room PHY on Wednesday from 11:25 to 14:10."
     },
     {
       "id": "FSE-WED-PHY-1420",
@@ -3630,7 +3650,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Sajjal Mudassar",
       "room": "PHY",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3639,7 +3659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-C) has Physics for Engineers Lab (Lab) in Room PHY on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-C) has Physics for Engineers Lab (Lab) in Room PHY on Wednesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-WED-Poth-0830",
@@ -3650,7 +3670,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Programming Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Ayesha Nadeem",
       "room": "Poth",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3659,7 +3679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Object Oriented Programming Lab (Lab) in Room Poth on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Object Oriented Programming Lab (Lab) in Room Poth on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-Poth-1250",
@@ -3670,7 +3690,7 @@
       "semester": "Unknown",
       "course_name": "Computer Organization and Architecture Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Fasih Ahmed Janjua",
       "room": "Poth",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3679,7 +3699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Computer Organization and Architecture Lab (Lab) in Room Poth on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Computer Organization and Architecture Lab (Lab) in Room Poth on Wednesday from 12:50 to 15:35."
     },
     {
       "id": "FSE-WED-Koh-0830",
@@ -3690,7 +3710,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct. Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Zulkaif Sajjad",
       "room": "Koh",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3699,7 +3719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Obj. Oriented Data Struct. Lab (Lab) in Room Koh on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Obj. Oriented Data Struct. Lab (Lab) in Room Koh on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-Koh-1420",
@@ -3710,7 +3730,7 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT Lab",
       "section": "EE-D",
-      "instructor": null,
+      "instructor": "Engr. Alina Gulzar",
       "room": "Koh",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3719,7 +3739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Applications of ICT Lab (Lab) in Room Koh on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Applications of ICT Lab (Lab) in Room Koh on Wednesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-WED-MDEL-1420",
@@ -3730,7 +3750,7 @@
       "semester": "Unknown",
       "course_name": "Microprocessor Interfacing & Prog. Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Maryam Zafar",
       "room": "MDEL",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3739,7 +3759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Prog. Lab (Lab) in Room MDEL on Wednesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-WED-CompI-0955",
@@ -3750,7 +3770,7 @@
       "semester": "Unknown",
       "course_name": "Embedded Systems Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Sajjal Mudassar",
       "room": "Comp-I",
       "day": "Wednesday",
       "time_start": "09:55",
@@ -3759,7 +3779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Embedded Systems Lab (Lab) in Room Comp-I on Wednesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Embedded Systems Lab (Lab) in Room Comp-I on Wednesday from 09:55 to 12:40."
     },
     {
       "id": "FSE-WED-CompI-1420",
@@ -3770,7 +3790,7 @@
       "semester": "Unknown",
       "course_name": "Analogue and Digital Communication - Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr.Islamuddin",
       "room": "Comp-I",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3779,7 +3799,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-C) has Analogue and Digital Communication - Lab (Lab) in Room Comp-I on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2024, Section EE-C) has Analogue and Digital Communication - Lab (Lab) in Room Comp-I on Wednesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-WED-DLD-0830",
@@ -3790,7 +3810,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Abu Bakar",
       "room": "DLD",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3799,7 +3819,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Digital Logic Design Lab (Lab) in Room DLD on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Digital Logic Design Lab (Lab) in Room DLD on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-CompII-0830",
@@ -3810,7 +3830,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Comp-II",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3819,7 +3839,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-CompII-1420",
@@ -3830,7 +3850,7 @@
       "semester": "Unknown",
       "course_name": "Intro to Internet of Things - Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Ammar Ali",
       "room": "Comp-II",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3839,7 +3859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Intro to Internet of Things - Lab (Lab) in Room Comp-II on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Intro to Internet of Things - Lab (Lab) in Room Comp-II on Wednesday from 14:20 to 17:05."
     },
     {
       "id": "FSE-WED-CompIII-1250",
@@ -3850,7 +3870,7 @@
       "semester": "Unknown",
       "course_name": "Data Communication and Networks - Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Tooba",
       "room": "Comp-III",
       "day": "Wednesday",
       "time_start": "12:50",
@@ -3859,7 +3879,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Data Communication and Networks - Lab (Lab) in Room Comp-III on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Data Communication and Networks - Lab (Lab) in Room Comp-III on Wednesday from 12:50 to 15:35."
     },
     {
       "id": "FSE-WED-Elect-0830",
@@ -3870,7 +3890,7 @@
       "semester": "Unknown",
       "course_name": "Electronic Devices and Circuits - Lab",
       "section": "CE-C",
-      "instructor": null,
+      "instructor": "Engr. Shahmeer Hussain",
       "room": "Elect",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3879,7 +3899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-C) has Electronic Devices and Circuits - Lab (Lab) in Room Elect on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2025, Section CE-C) has Electronic Devices and Circuits - Lab (Lab) in Room Elect on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-Circuit \nLab-0830",
@@ -3890,7 +3910,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Circuit \nLab",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -3899,7 +3919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Wednesday from 08:30 to 11:15."
     },
     {
       "id": "FSE-WED-Room-0830",
@@ -3908,7 +3928,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -3919,7 +3939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 in Room Room on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSE-WED-Room-0955",
@@ -3928,7 +3948,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -3939,7 +3959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 in Room Room on Wednesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Wednesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-WED-Room-1125",
@@ -3948,7 +3968,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -3959,7 +3979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 in Room Room on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-Room-1250",
@@ -3968,7 +3988,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -3979,7 +3999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 in Room Room on Wednesday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Wednesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-WED-Room-1420",
@@ -3988,9 +4008,9 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
-      "instructor": null,
+      "instructor": "Ocp. Health & Safety\nEE-A,B,C\n\nTeacher: Saad Usman Shah     \n02:20 - 03:30\nD Block Auditoriam",
       "room": "Room",
       "day": "Wednesday",
       "time_start": "14:20",
@@ -3999,7 +4019,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 in Room Room on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Wednesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-WED-Room-1545",
@@ -4008,7 +4028,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -4019,7 +4039,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 in Room Room on Wednesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Wednesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B027-0830",
@@ -4030,7 +4050,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-027",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4050,36 +4070,56 @@
       "semester": "Unknown",
       "course_name": "Pakistan Studies",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Ms. Asefa Zareen                                                   09:55 - 11:45",
       "room": "B-027",
       "day": "Thursday",
       "time_start": "09:55",
-      "time_end": "11:45",
+      "time_end": "11:15",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Pakistan Studies in Room B-027 on Thursday from 09:55 to 11:45."
+      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Pakistan Studies in Room B-027 on Thursday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-THU-B027-1420",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Ocp. Health & Safety",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-027",
+      "day": "Thursday",
+      "time_start": "14:20",
+      "time_end": "15:30",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch 2026, Section Unknown) has Ocp. Health & Safety in Room B-027 on Thursday from 14:20 to 15:30."
     },
     {
       "id": "FSE-THU-B027-1545",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "LA & Diff. Equations",
+      "course_name": "Linear Algebra",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Sumaira Azhar",
       "room": "B-027",
       "day": "Thursday",
       "time_start": "15:45",
       "time_end": "17:05",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has LA & Diff. Equations [REPEAT COURSE] in Room B-027 on Thursday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Algebra in Room B-027 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B028-0830",
@@ -4090,36 +4130,16 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Nimra Fatima                                      08:30 - 10:20",
       "room": "B-028",
       "day": "Thursday",
       "time_start": "08:30",
-      "time_end": "10:20",
+      "time_end": "09:50",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 10:20."
-    },
-    {
-      "id": "FSE-THU-B028-1025",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Physics for Engr.",
-      "section": "EE-B",
-      "instructor": null,
-      "room": "B-028",
-      "day": "Thursday",
-      "time_start": "10:25",
-      "time_end": "11:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Physics for Engr. in Room B-028 on Thursday from 10:25 to 11:45."
+      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSE-THU-B030-0830",
@@ -4130,7 +4150,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engr.",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Fakhar Abbas",
       "room": "B-030",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4150,7 +4170,7 @@
       "semester": "Unknown",
       "course_name": "Applied Calculus",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Dr. Farah Jabeen Awan",
       "room": "B-030",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4166,18 +4186,18 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Nimra Fatima",
       "room": "B-030",
       "day": "Thursday",
       "time_start": "11:25",
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals in Room B-030 on Thursday from 11:25 to 12:45."
     },
@@ -4230,7 +4250,7 @@
       "semester": "Unknown",
       "course_name": "Basic Mechanical Engg.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Adnan",
       "room": "B-019",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4250,7 +4270,7 @@
       "semester": "Unknown",
       "course_name": "Electromagnetic Theory",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Irum Saba",
       "room": "B-019",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4270,7 +4290,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Shahid Qureshi",
       "room": "B-019",
       "day": "Thursday",
       "time_start": "11:25",
@@ -4290,7 +4310,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Aamer Munir",
       "room": "B-019",
       "day": "Thursday",
       "time_start": "12:50",
@@ -4310,7 +4330,7 @@
       "semester": "Unknown",
       "course_name": "Internet of Things   -",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Sana Saleh                      05:15 -08:00",
       "room": "B-019",
       "day": "Thursday",
       "time_start": "15:45",
@@ -4330,7 +4350,7 @@
       "semester": "Unknown",
       "course_name": "Electromagnetic Theory",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Irum Saba",
       "room": "B-020",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4350,7 +4370,7 @@
       "semester": "Unknown",
       "course_name": "Basic Mechanical Engg.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Adnan",
       "room": "B-020",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4370,7 +4390,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Izza Jamal",
       "room": "B-020",
       "day": "Thursday",
       "time_start": "11:25",
@@ -4390,7 +4410,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Shahid Qureshi",
       "room": "B-020",
       "day": "Thursday",
       "time_start": "12:50",
@@ -4410,7 +4430,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Dr. Nasir Ali Shah",
       "room": "B-020",
       "day": "Thursday",
       "time_start": "14:20",
@@ -4430,7 +4450,7 @@
       "semester": "Unknown",
       "course_name": "Instru. & Measurements",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Awais",
       "room": "B-119",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4450,7 +4470,7 @@
       "semester": "Unknown",
       "course_name": "Embedded Systems -",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Niaz Ahmed",
       "room": "B-119",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4459,7 +4479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Embedded Systems - in Room B-119 on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Embedded Systems - in Room B-119 on Thursday from 09:55 to 11:15."
     },
     {
       "id": "FSE-THU-B119-1250",
@@ -4470,7 +4490,7 @@
       "semester": "Unknown",
       "course_name": "English Language Skills",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Ms. Hajra Khalid                    2 Hours Class",
       "room": "B-119",
       "day": "Thursday",
       "time_start": "12:50",
@@ -4490,7 +4510,7 @@
       "semester": "Unknown",
       "course_name": "Health & Safety",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Mr.Saad Usman Shah",
       "room": "B-119",
       "day": "Thursday",
       "time_start": "15:45",
@@ -4630,7 +4650,7 @@
       "semester": "Unknown",
       "course_name": "Comp.Var. & Transforms",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-129",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4650,7 +4670,7 @@
       "semester": "Unknown",
       "course_name": "Elect Devices & Circuits",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Maria Nasir",
       "room": "B-129",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4662,6 +4682,26 @@
       "rag_summary": "BS CE (Batch 2025, Section CE-A) has Elect Devices & Circuits in Room B-129 on Thursday from 09:55 to 11:15."
     },
     {
+      "id": "FSE-THU-B129-1545",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "LA & Diff. Equations",
+      "section": "Unknown",
+      "instructor": "Dr. Irfan Shah",
+      "room": "B-129",
+      "day": "Thursday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has LA & Diff. Equations in Room B-129 on Thursday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-THU-B130-0830",
       "school": "School of Engineering",
       "department": "CE",
@@ -4670,7 +4710,7 @@
       "semester": "Unknown",
       "course_name": "Elect Devices & Circuits",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Maria Nasir",
       "room": "B-130",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4690,7 +4730,7 @@
       "semester": "Unknown",
       "course_name": "Comp.Var. & Transforms",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Mr. Waqar Ahmed Khan",
       "room": "B-130",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4710,7 +4750,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-130",
       "day": "Thursday",
       "time_start": "11:25",
@@ -4719,7 +4759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Applied Machine Learning in Room B-130 on Thursday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Applied Machine Learning in Room B-130 on Thursday from 11:25 to 12:45."
     },
     {
       "id": "FSE-THU-B130-1250",
@@ -4730,7 +4770,7 @@
       "semester": "Unknown",
       "course_name": "Fund. Database Systems",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. M. Ibrar Khan",
       "room": "B-130",
       "day": "Thursday",
       "time_start": "12:50",
@@ -4739,7 +4779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Fund. Database Systems in Room B-130 on Thursday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Fund. Database Systems in Room B-130 on Thursday from 12:50 to 14:10."
     },
     {
       "id": "FSE-THU-B230-0830",
@@ -4750,7 +4790,7 @@
       "semester": "Unknown",
       "course_name": "Blockchain Technologies",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Muhammad Tariq",
       "room": "B-230",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4770,7 +4810,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Aleena Shafiq",
       "room": "B-230",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4779,7 +4819,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Applied Machine Learning in Room B-230 on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Applied Machine Learning in Room B-230 on Thursday from 09:55 to 11:15."
     },
     {
       "id": "FSE-THU-B230-1250",
@@ -4790,7 +4830,7 @@
       "semester": "Unknown",
       "course_name": "Computer Org.Architecture",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Nasir Ali Shah",
       "room": "B-230",
       "day": "Thursday",
       "time_start": "12:50",
@@ -4802,13 +4842,53 @@
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Org.Architecture in Room B-230 on Thursday from 12:50 to 14:10."
     },
     {
+      "id": "FSE-THU-B230-1420",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Digital Signal Processing",
+      "section": "CE-A",
+      "instructor": "Dr. Shahzad Saleem Wk 4&5",
+      "room": "B-230",
+      "day": "Thursday",
+      "time_start": "14:20",
+      "time_end": "15:40",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Digital Signal Processing in Room B-230 on Thursday from 14:20 to 15:40."
+    },
+    {
+      "id": "FSE-THU-B230-1545",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Digital Signal Processing",
+      "section": "CE-A",
+      "instructor": "Dr. Shahzad Saleem Wk 4 &5",
+      "room": "B-230",
+      "day": "Thursday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CE (Batch Unknown, Section CE-A) has Digital Signal Processing in Room B-230 on Thursday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-THU-Labs-0830",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -4819,7 +4899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 (Lab) in Room Labs on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Thursday from 08:30 to 11:15."
     },
     {
       "id": "FSE-THU-Labs-0955",
@@ -4828,7 +4908,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -4839,7 +4919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 (Lab) in Room Labs on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Thursday from 09:55 to 12:40."
     },
     {
       "id": "FSE-THU-Labs-1125",
@@ -4848,7 +4928,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -4859,7 +4939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Thursday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Thursday from 11:25 to 14:10."
     },
     {
       "id": "FSE-THU-Labs-1250",
@@ -4868,7 +4948,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "12:50 - 02:10",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -4879,7 +4959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 12:50 - 02:10 (Lab) in Room Labs on Thursday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Thursday from 12:50 to 15:35."
     },
     {
       "id": "FSE-THU-Labs-1420",
@@ -4888,7 +4968,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "02:20 - 03:40",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -4899,7 +4979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 02:20 - 03:40 (Lab) in Room Labs on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Thursday from 14:20 to 17:05."
     },
     {
       "id": "FSE-THU-Labs-1545",
@@ -4908,7 +4988,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "03:45 - 05:05",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -4919,7 +4999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 03:45 - 05:05 (Lab) in Room Labs on Thursday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Thursday from 15:45 to 18:30."
     },
     {
       "id": "FSE-THU-Poth-0830",
@@ -4930,7 +5010,7 @@
       "semester": "Unknown",
       "course_name": "Obj. Oriented Data Struct. Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Zulkaif Sajjad",
       "room": "Poth",
       "day": "Thursday",
       "time_start": "08:30",
@@ -4939,7 +5019,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Obj. Oriented Data Struct. Lab (Lab) in Room Poth on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-B) has Obj. Oriented Data Struct. Lab (Lab) in Room Poth on Thursday from 08:30 to 11:15."
     },
     {
       "id": "FSE-THU-Poth-1420",
@@ -4950,7 +5030,7 @@
       "semester": "Unknown",
       "course_name": "Fund. Database Systems Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. M. Ibrar Khan",
       "room": "Poth",
       "day": "Thursday",
       "time_start": "14:20",
@@ -4959,7 +5039,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Fund. Database Systems Lab (Lab) in Room Poth on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Fund. Database Systems Lab (Lab) in Room Poth on Thursday from 14:20 to 17:05."
     },
     {
       "id": "FSE-THU-Phy-0955",
@@ -4970,7 +5050,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers  Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Esha Rizwan",
       "room": "Phy",
       "day": "Thursday",
       "time_start": "09:55",
@@ -4979,27 +5059,27 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-B) has Physics for Engineers  Lab (Lab) in Room Phy on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2026, Section CE-B) has Physics for Engineers  Lab (Lab) in Room Phy on Thursday from 09:55 to 12:40."
     },
     {
       "id": "FSE-THU-Phy-1420",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Applied Physics Lab EE-A   (Batch 2025)",
       "section": "Unknown",
-      "instructor": null,
+      "instructor": "Engr. Deema Zargoon",
       "room": "Phy",
       "day": "Thursday",
       "time_start": "14:20",
       "time_end": "17:05",
       "is_lab": true,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section Unknown) has Applied Physics Lab EE-A   (Batch 2025) (Lab) [REPEAT COURSE] in Room Phy on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has Applied Physics Lab EE-A   (Batch 2025) (Lab) in Room Phy on Thursday from 14:20 to 17:05."
     },
     {
       "id": "FSE-THU-CompI-0955",
@@ -5010,7 +5090,7 @@
       "semester": "Unknown",
       "course_name": "Applications of ICT Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Ammar Ali",
       "room": "Comp-I",
       "day": "Thursday",
       "time_start": "09:55",
@@ -5019,7 +5099,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Applications of ICT Lab (Lab) in Room Comp-I on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Applications of ICT Lab (Lab) in Room Comp-I on Thursday from 09:55 to 12:40."
     },
     {
       "id": "FSE-THU-CompI-1420",
@@ -5030,7 +5110,7 @@
       "semester": "Unknown",
       "course_name": "Applied Machine Learning Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Ammar  Ali",
       "room": "Comp-I",
       "day": "Thursday",
       "time_start": "14:20",
@@ -5039,7 +5119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-C) has Applied Machine Learning Lab (Lab) in Room Comp-I on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-C) has Applied Machine Learning Lab (Lab) in Room Comp-I on Thursday from 14:20 to 17:05."
     },
     {
       "id": "FSE-THU-CompII-0830",
@@ -5050,7 +5130,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Comp-II",
       "day": "Thursday",
       "time_start": "08:30",
@@ -5059,7 +5139,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Elect. Netwk. Analysis Lab (Lab) in Room Comp-II on Thursday from 08:30 to 11:15."
     },
     {
       "id": "FSE-THU-CompII-1420",
@@ -5070,7 +5150,7 @@
       "semester": "Unknown",
       "course_name": "Instrumentation and Measurements - Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Shahmeer Hussain",
       "room": "Comp-II",
       "day": "Thursday",
       "time_start": "14:20",
@@ -5079,7 +5159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Instrumentation and Measurements - Lab (Lab) in Room Comp-II on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Instrumentation and Measurements - Lab (Lab) in Room Comp-II on Thursday from 14:20 to 17:05."
     },
     {
       "id": "FSE-THU-Koh-0955",
@@ -5090,7 +5170,7 @@
       "semester": "Unknown",
       "course_name": "Digital Signal Processing Lab",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Engr. Abu Bakar",
       "room": "Koh",
       "day": "Thursday",
       "time_start": "09:55",
@@ -5099,7 +5179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing Lab (Lab) in Room Koh on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing Lab (Lab) in Room Koh on Thursday from 09:55 to 12:40."
     },
     {
       "id": "FSE-THU-Koh-1250",
@@ -5110,7 +5190,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Programming Lab",
       "section": "CE-C",
-      "instructor": null,
+      "instructor": "Engr. Ayesha Nadeem",
       "room": "Koh",
       "day": "Thursday",
       "time_start": "12:50",
@@ -5119,7 +5199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-C) has Object Oriented Programming Lab (Lab) in Room Koh on Thursday from 12:50 to 14:10."
+      "rag_summary": "BS CE (Batch 2025, Section CE-C) has Object Oriented Programming Lab (Lab) in Room Koh on Thursday from 12:50 to 15:35."
     },
     {
       "id": "FSE-THU-Elect-1250",
@@ -5130,7 +5210,7 @@
       "semester": "Unknown",
       "course_name": "Electronic Devices and Circuits - Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Tooba",
       "room": "Elect",
       "day": "Thursday",
       "time_start": "12:50",
@@ -5139,7 +5219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-B) has Electronic Devices and Circuits - Lab (Lab) in Room Elect on Thursday from 12:50 to 14:10."
+      "rag_summary": "BS CE (Batch 2025, Section CE-B) has Electronic Devices and Circuits - Lab (Lab) in Room Elect on Thursday from 12:50 to 15:35."
     },
     {
       "id": "FSE-THU-DLD-0830",
@@ -5150,7 +5230,7 @@
       "semester": "Unknown",
       "course_name": "Digital Logic Design Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Abdur Rehman",
       "room": "DLD",
       "day": "Thursday",
       "time_start": "08:30",
@@ -5159,7 +5239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Digital Logic Design Lab (Lab) in Room DLD on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Digital Logic Design Lab (Lab) in Room DLD on Thursday from 08:30 to 11:15."
     },
     {
       "id": "FSE-THU-Circuit \nLab-0830",
@@ -5170,7 +5250,7 @@
       "semester": "Unknown",
       "course_name": "Elect. Netwk. Analysis Lab",
       "section": "EE-C",
-      "instructor": null,
+      "instructor": "Engr. Abdullah Zaheer",
       "room": "Circuit \nLab",
       "day": "Thursday",
       "time_start": "08:30",
@@ -5179,7 +5259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-C) has Elect. Netwk. Analysis Lab (Lab) in Room Circuit \nLab on Thursday from 08:30 to 11:15."
     },
     {
       "id": "FSE-THU-Circuit \nLab-1250",
@@ -5190,7 +5270,7 @@
       "semester": "Unknown",
       "course_name": "Electronic Circuit Design Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Izza Jamal",
       "room": "Circuit \nLab",
       "day": "Thursday",
       "time_start": "12:50",
@@ -5199,7 +5279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Electronic Circuit Design Lab (Lab) in Room Circuit \nLab on Thursday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Electronic Circuit Design Lab (Lab) in Room Circuit \nLab on Thursday from 12:50 to 15:35."
     },
     {
       "id": "FSE-THU-CompIII\nB 232-0955",
@@ -5210,7 +5290,7 @@
       "semester": "Unknown",
       "course_name": "Data Communication and Networks - Lab",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Engr. Tooba",
       "room": "Comp-III\nB- 232",
       "day": "Thursday",
       "time_start": "09:55",
@@ -5219,7 +5299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Data Communication and Networks - Lab (Lab) in Room Comp-III\nB- 232 on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Data Communication and Networks - Lab (Lab) in Room Comp-III\nB- 232 on Thursday from 09:55 to 12:40."
     },
     {
       "id": "FSE-THU-CompIII\nB 232-1250",
@@ -5230,7 +5310,7 @@
       "semester": "Unknown",
       "course_name": "Data Communication and Networks - Lab",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Engr. Esha Rizwan",
       "room": "Comp-III\nB- 232",
       "day": "Thursday",
       "time_start": "12:50",
@@ -5239,7 +5319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Data Communication and Networks - Lab (Lab) in Room Comp-III\nB- 232 on Thursday from 12:50 to 14:10."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Data Communication and Networks - Lab (Lab) in Room Comp-III\nB- 232 on Thursday from 12:50 to 15:35."
     },
     {
       "id": "FSE-THU-Room-0830",
@@ -5248,7 +5328,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -5259,7 +5339,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 in Room Room on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSE-THU-Room-0955",
@@ -5268,7 +5348,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -5279,7 +5359,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 in Room Room on Thursday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Thursday from 09:55 to 11:15."
     },
     {
       "id": "FSE-THU-Room-1125",
@@ -5288,7 +5368,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Room",
@@ -5299,7 +5379,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 in Room Room on Thursday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  in Room Room on Thursday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B019-0830",
@@ -5310,7 +5390,7 @@
       "semester": "Unknown",
       "course_name": "A & Digital Comm.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-019",
       "day": "Friday",
       "time_start": "08:30",
@@ -5330,7 +5410,7 @@
       "semester": "Unknown",
       "course_name": "Data Com. & Netwks.",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-019",
       "day": "Friday",
       "time_start": "09:55",
@@ -5346,20 +5426,20 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Nimra Fatima",
       "room": "B-019",
       "day": "Friday",
       "time_start": "11:25",
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": true,
+      "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Programming Fundamentals [REPEAT COURSE] in Room B-019 on Friday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals in Room B-019 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B020-0830",
@@ -5370,7 +5450,7 @@
       "semester": "Unknown",
       "course_name": "MP Inter. & Prog",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Shehzad Ahmed",
       "room": "B-020",
       "day": "Friday",
       "time_start": "08:30",
@@ -5390,7 +5470,7 @@
       "semester": "Unknown",
       "course_name": "Electronic Circuit Design",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Izza Jamal",
       "room": "B-020",
       "day": "Friday",
       "time_start": "09:55",
@@ -5410,7 +5490,7 @@
       "semester": "Unknown",
       "course_name": "Data Com. & Netwks.",
       "section": "EE-B",
-      "instructor": null,
+      "instructor": "Dr. Aamer Hafeez",
       "room": "B-020",
       "day": "Friday",
       "time_start": "11:25",
@@ -5428,8 +5508,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "OBE Seminar BSEE & BSCE",
-      "section": "Unknown",
+      "course_name": "OBE Seminar BSEE &",
+      "section": "EE-BSCE",
       "instructor": null,
       "room": "B-027",
       "day": "Friday",
@@ -5439,7 +5519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section Unknown) has OBE Seminar BSEE & BSCE in Room B-027 on Friday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2026, Section EE-BSCE) has OBE Seminar BSEE & in Room B-027 on Friday from 09:55 to 11:15."
     },
     {
       "id": "FSE-FRI-B027-1125",
@@ -5448,8 +5528,8 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "OBE Seminar BSEE & BSCE",
-      "section": "Unknown",
+      "course_name": "OBE Seminar BSEE &",
+      "section": "EE-BSCE",
       "instructor": null,
       "room": "B-027",
       "day": "Friday",
@@ -5459,7 +5539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section Unknown) has OBE Seminar BSEE & BSCE in Room B-027 on Friday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2026, Section EE-BSCE) has OBE Seminar BSEE & in Room B-027 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B127-0830",
@@ -5530,7 +5610,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Prog.",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Sana Saleh",
       "room": "B-129",
       "day": "Friday",
       "time_start": "09:55",
@@ -5550,7 +5630,7 @@
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "CE-A",
-      "instructor": null,
+      "instructor": "Dr. Irfan Shah",
       "room": "B-129",
       "day": "Friday",
       "time_start": "11:25",
@@ -5570,7 +5650,7 @@
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Dr. Irfan Shah",
       "room": "B-130",
       "day": "Friday",
       "time_start": "09:55",
@@ -5590,7 +5670,7 @@
       "semester": "Unknown",
       "course_name": "Object Oriented Prog.",
       "section": "CE-B",
-      "instructor": null,
+      "instructor": "Dr. Sana Saleh",
       "room": "B-130",
       "day": "Friday",
       "time_start": "11:25",
@@ -5608,7 +5688,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "8:30 - 09:50",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -5619,7 +5699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 8:30 - 09:50 (Lab) in Room Labs on Friday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Friday from 08:30 to 11:15."
     },
     {
       "id": "FSE-FRI-Labs-0955",
@@ -5628,7 +5708,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "09:55 - 11:15",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -5639,7 +5719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 09:55 - 11:15 (Lab) in Room Labs on Friday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Friday from 09:55 to 12:40."
     },
     {
       "id": "FSE-FRI-Labs-1125",
@@ -5648,7 +5728,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "11:25 - 12:45",
+      "course_name": "",
       "section": "Unknown",
       "instructor": null,
       "room": "Labs",
@@ -5659,7 +5739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Friday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has  (Lab) in Room Labs on Friday from 11:25 to 14:10."
     },
     {
       "id": "FSE-FRI-Phy-0830",
@@ -5670,7 +5750,7 @@
       "semester": "Unknown",
       "course_name": "Physics for Engineers Lab",
       "section": "EE-E",
-      "instructor": null,
+      "instructor": "Engr. Sajjal Mudassar",
       "room": "Phy",
       "day": "Friday",
       "time_start": "08:30",
@@ -5679,267 +5759,27 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-E) has Physics for Engineers Lab (Lab) in Room Phy on Friday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2026, Section EE-E) has Physics for Engineers Lab (Lab) in Room Phy on Friday from 08:30 to 11:15."
     },
     {
       "id": "FSE-FRI-Poth-0830",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals Lab",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Engr. Zulkaif Sajjad",
       "room": "Poth",
       "day": "Friday",
       "time_start": "08:30",
       "time_end": "11:15",
       "is_lab": true,
       "is_rescheduled": false,
-      "is_repeat": true,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Programming Fundamentals Lab (Lab) [REPEAT COURSE] in Room Poth on Friday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSE-MON-MainAuditoriamABlocK-1250-CE-A-CEA",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "Civics and Comminity Engagement",
-      "section": "CE-A",
-      "instructor": "Ms. Maria Mazhar",
-      "room": "Main Auditoriam A-Block",
-      "day": "Monday",
-      "time_start": "12:50",
-      "time_end": "14:45",
-      "is_lab": false,
-      "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering CE BS has Civics and Comminity Engagement in Main Auditoriam A-BlocK on Monday from 12:50 to 14:45."
-    },
-    {
-      "id": "FSE-MON-MainAuditoriamABlocK-1250-CE-A-CEB",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "Civics and Comminity Engagement",
-      "section": "CE-B",
-      "instructor": "Ms. Maria Mazhar",
-      "room": "Main Auditoriam A-Block",
-      "day": "Monday",
-      "time_start": "12:50",
-      "time_end": "14:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering CE BS has Civics and Comminity Engagement in Main Auditoriam A-BlocK on Monday from 12:50 to 14:45."
-    },
-    {
-      "id": "FSE-MON-MainAuditoriamABlock-1500-A-EEA",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "Understanding of Holy Quran I/Ethics I & II",
-      "section": "EE-A",
-      "instructor": "Mr. Faisal",
-      "room": "Main Auditoriam A-Block",
-      "day": "Monday",
-      "time_start": "15:00",
-      "time_end": "16:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering Unknown BS has Understanding of Holy Quran I/Ethics I & II in Main Auditoriam A-Block on Monday from 15:00 to 16:50."
-    },
-    {
-      "id": "FSE-MON-MainAuditoriamABlock-1500-A-EEB",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "Understanding of Holy Quran I/Ethics I & II",
-      "section": "EE-B",
-      "instructor": "Mr. Faisal",
-      "room": "Main Auditoriam A-Block",
-      "day": "Monday",
-      "time_start": "15:00",
-      "time_end": "16:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering Unknown BS has Understanding of Holy Quran I/Ethics I & II in Main Auditoriam A-Block on Monday from 15:00 to 16:50."
-    },
-    {
-      "id": "FSE-THU-DBlockAuditoriam-1420-EE-A-EEA",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Ocp. Health & Safety",
-      "section": "EE-A",
-      "instructor": "Teacher: Saad Usman Shah",
-      "room": "D Block Auditoriam",
-      "day": "Thursday",
-      "time_start": "14:20",
-      "time_end": "15:30",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering EE BS (Batch 2023) has Ocp. Health & Safety in D Block Auditoriam on Thursday from 14:20 to 15:30."
-    },
-    {
-      "id": "FSE-THU-DBlockAuditoriam-1420-EE-A-EEB",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Ocp. Health & Safety",
-      "section": "EE-B",
-      "instructor": "Teacher: Saad Usman Shah",
-      "room": "D Block Auditoriam",
-      "day": "Thursday",
-      "time_start": "14:20",
-      "time_end": "15:30",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering EE BS (Batch 2023) has Ocp. Health & Safety in D Block Auditoriam on Thursday from 14:20 to 15:30."
-    },
-    {
-      "id": "FSE-THU-DBlockAuditoriam-1420-EE-A-EEC",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Ocp. Health & Safety",
-      "section": "EE-C",
-      "instructor": "Teacher: Saad Usman Shah",
-      "room": "D Block Auditoriam",
-      "day": "Thursday",
-      "time_start": "14:20",
-      "time_end": "15:30",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering EE BS (Batch 2023) has Ocp. Health & Safety in D Block Auditoriam on Thursday from 14:20 to 15:30."
-    },
-    {
-      "id": "FSE-FRI-B020-1400-EE-2023",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "Applied Thermodynamics",
-      "section": "EE-A",
-      "instructor": "Unknown",
-      "room": "B-020",
-      "day": "Friday",
-      "time_start": "14:00",
-      "time_end": "16:55",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": true,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering EE BS (Batch 2023) has Applied Thermodynamics (Repeat) in B-020 on Friday from 14:00 to 16:55."
-    },
-    {
-      "id": "FSE-MON-B119-0830-CE-A",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Applications of ICT",
-      "section": "CE-A",
-      "instructor": "Dr. M. Ibrar Khan",
-      "room": "B-119",
-      "day": "Monday",
-      "time_start": "08:30",
-      "time_end": "10:20",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering CE BS (Batch 2026) has Applications of ICT in B-119 on Monday from 08:30 to 10:20."
-    },
-    {
-      "id": "FSE-MON-B119-1055-CE-A",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Pakistan Studies",
-      "section": "CE-A",
-      "instructor": "Ms. Asefa Zareen",
-      "room": "B-119",
-      "day": "Monday",
-      "time_start": "10:55",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering CE BS (Batch 2026) has Pakistan Studies in B-119 on Monday from 10:55 to 12:45."
-    },
-    {
-      "id": "FSE-TUE-B028-0900-EE-B",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "English Language Skills",
-      "section": "EE-B",
-      "instructor": "Ms. Hajra Khalid",
-      "room": "B-028",
-      "day": "Tuesday",
-      "time_start": "09:00",
-      "time_end": "10:20",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering EE BS (Batch 2026) has English Language Skills in B-028 on Tuesday from 09:00 to 10:20."
-    },
-    {
-      "id": "FSE-TUE-B028-1055-EE-B",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Pakistan Studies",
-      "section": "EE-B",
-      "instructor": "Ms. Zahida Amin",
-      "room": "B-028",
-      "day": "Tuesday",
-      "time_start": "10:55",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "[MANUAL] School of Engineering EE BS (Batch 2026) has Pakistan Studies in B-028 on Tuesday from 10:55 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals Lab (Lab) in Room Poth on Friday from 08:30 to 11:15."
     }
   ]
 }
