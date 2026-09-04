@@ -404,6 +404,13 @@ export default function TimetableViewer() {
     }
   }, [availableSections, selectedSection, data.length]);
 
+  useEffect(() => {
+    if (data.length === 0) return;
+    if (availableDays.length > 0 && !availableDays.includes(selectedDay)) {
+      setSelectedDay(availableDays[0]);
+    }
+  }, [availableDays, selectedDay, data.length]);
+
   const filteredClasses = useMemo(() => {
     if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) return [];
 
