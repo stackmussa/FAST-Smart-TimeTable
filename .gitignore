@@ -64,3 +64,9 @@ playwright/.cache/
 # Misc
 *.log
 .gemini/
+clean_instructors.py
+merge_instructors.py
+fix_fse_classes.py
+update_repeats.py
+engineering_new.json 
+remove_dups.py

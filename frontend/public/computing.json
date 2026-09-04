@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T10:30:22.021923Z",
+  "last_updated": "2026-09-04T15:07:47.065271Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -11382,6 +11382,26 @@
       "rag_summary": "BS AI (Batch 2025, Section AI-C) has LA in Room D-306 on Wednesday from 08:30 to 09:50."
     },
     {
+      "id": "FSC-WED-D306-1000-AIA",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Knowl Rep",
+      "section": "AI-A",
+      "instructor": null,
+      "room": "D-306",
+      "day": "Wednesday",
+      "time_start": "10:00",
+      "time_end": "11:20",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS AI (Batch 2024, Section AI-A) has Knowl Rep in Room D-306 on Wednesday from 10:00 to 11:20."
+    },
+    {
       "id": "FSC-WED-D306-1130-AIB",
       "school": "School of Computing",
       "department": "AI",
@@ -11602,6 +11622,26 @@
       "rag_summary": "BS DS (Batch 2026, Section DS-C) has PF in Room D-313 on Wednesday from 10:00 to 11:20."
     },
     {
+      "id": "FSC-WED-D313-1130-AIA",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Knowl Rep",
+      "section": "AI-A",
+      "instructor": null,
+      "room": "D-313",
+      "day": "Wednesday",
+      "time_start": "11:30",
+      "time_end": "12:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS AI (Batch 2024, Section AI-A) has Knowl Rep in Room D-313 on Wednesday from 11:30 to 12:50."
+    },
+    {
       "id": "FSC-WED-D313-1300-DSC",
       "school": "School of Computing",
       "department": "DS",
@@ -11720,26 +11760,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS DS (Batch 2025, Section DS-B) has UHQ-I&II in Room D-314 on Wednesday from 15:10 to 17:00."
-    },
-    {
-      "id": "FSC-WED-D315-0830-AIA",
-      "school": "School of Computing",
-      "department": "AI",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "Unknown",
-      "course_name": "Knowl Rep",
-      "section": "AI-A",
-      "instructor": null,
-      "room": "D-315",
-      "day": "Wednesday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2024, Section AI-A) has Knowl Rep in Room D-315 on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSC-WED-D315-1000-DSA",
@@ -12100,6 +12120,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS AI (Batch 2023, Section AI-A) has Multiagent Sys in Room D-403 on Wednesday from 14:30 to 15:50."
+    },
+    {
+      "id": "FSC-WED-D404-1430-AIA",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Knowl Rep",
+      "section": "AI-A",
+      "instructor": null,
+      "room": "D-404",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS AI (Batch 2024, Section AI-A) has Knowl Rep in Room D-404 on Wednesday from 14:30 to 15:50."
     },
     {
       "id": "FSC-WED-D405-0830-CSA",
@@ -21498,8 +21538,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2025, Section SE-A) has Intro to SE in Room C-604 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS SE (Batch 2025, Section SE-A) has Intro to SE in Room C-604 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
     },
     {
       "id": "FSC-SAT-C604-1300-SEA",
@@ -21698,8 +21738,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2023, Section SE-A) has Info Sec in Room C-607 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS SE (Batch 2023, Section SE-A) has Info Sec in Room C-607 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
     },
     {
       "id": "FSC-SAT-C607-1300-SEB",
@@ -21718,8 +21758,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2025, Section SE-B) has Intro to SE in Room C-607 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS SE (Batch 2025, Section SE-B) has Intro to SE in Room C-607 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
     },
     {
       "id": "FSC-SAT-C607-1500-SEC",
@@ -21778,8 +21818,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2023, Section SE-B) has Info Sec in Room C-609 on Saturday (Sep. 05, 2026) from 10:00 to 11:20."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS SE (Batch 2023, Section SE-B) has Info Sec in Room C-609 on Saturday (Sep. 05, 2026) from 10:00 to 11:20."
     },
     {
       "id": "FSC-SAT-C609-1130-SEB",
@@ -23540,6 +23580,46 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CY (Batch 2025, Section CY-A) has Cy Sec in Room D-501 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
+    },
+    {
+      "id": "FSC-SAT-D501-1430-CYA",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "UHQ-II",
+      "section": "CY-A",
+      "instructor": null,
+      "room": "D-501",
+      "day": "Saturday (Sep. 05, 2026)",
+      "time_start": "14:30",
+      "time_end": "15:30",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "[RESCHEDULED] BS CY (Batch 2025, Section CY-A) has UHQ-II in Room D-501 on Saturday (Sep. 05, 2026) from 14:30 to 15:30."
+    },
+    {
+      "id": "FSC-SAT-D501-1540-CYB",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "UHQ-II",
+      "section": "CY-B",
+      "instructor": null,
+      "room": "D-501",
+      "day": "Saturday (Sep. 05, 2026)",
+      "time_start": "15:40",
+      "time_end": "16:40",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "[RESCHEDULED] BS CY (Batch 2025, Section CY-B) has UHQ-II in Room D-501 on Saturday (Sep. 05, 2026) from 15:40 to 16:40."
     },
     {
       "id": "FSC-SAT-D502-1000-CYC",

@@ -774,13 +774,19 @@ export default function TimetableViewer() {
                         </div>
                       </div>
 
-                      <div className="pt-3 mt-3 border-t border-slate-200 dark:border-white/5">
+                      <div className="pt-3 mt-3 border-t border-slate-200 dark:border-white/5 flex flex-col gap-2">
                         <div className="flex items-center text-slate-600 dark:text-slate-400 font-medium text-sm">
-                          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                           </svg>
-                          {cls.room}
+                          <span className="truncate">{cls.room}</span>
                         </div>
+                        {cls.school === 'School of Engineering' && cls.instructor && (
+                          <div className="flex items-center text-slate-600 dark:text-slate-400 font-medium text-sm">
+                            <Users className="w-4 h-4 mr-2 shrink-0" />
+                            <span className="truncate">{cls.instructor}</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}
