@@ -158,9 +158,10 @@ export default function TimetableViewer() {
     const cached = localStorage.getItem('timetable_data');
     const cachedFilters = localStorage.getItem('timetable_filters');
 
+    let p: any = null;
     if (cachedFilters) {
       try {
-        const p = JSON.parse(cachedFilters);
+        p = JSON.parse(cachedFilters);
         if (p.selectedSchool) setSelectedSchool(p.selectedSchool);
         if (p.selectedDepartment) setSelectedDepartment(p.selectedDepartment);
         if (p.selectedBatch) setSelectedBatch(p.selectedBatch);
@@ -169,6 +170,12 @@ export default function TimetableViewer() {
         console.error("Failed to parse cached filters", e);
       }
     }
+
+    const options: Intl.DateTimeFormatOptions = { weekday: 'long', timeZone: 'Asia/Karachi' };
+    const pktDay = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    const defaultDay = pktDay === 'Sunday' ? 'Monday' : pktDay;
+
+    setSelectedDay(defaultDay);
     const cachedTimes = localStorage.getItem('timetable_timestamps');
 
     if (cached) {
@@ -263,17 +270,6 @@ export default function TimetableViewer() {
     };
 
     fetchData();
-
-    // 2. Determine PKT Day
-    const options: Intl.DateTimeFormatOptions = { weekday: 'long', timeZone: 'Asia/Karachi' };
-    const pktDay = new Intl.DateTimeFormat('en-US', options).format(new Date());
-
-    // If Sunday, default to Monday
-    if (pktDay === 'Sunday') {
-      setSelectedDay('Monday');
-    } else {
-      setSelectedDay(pktDay);
-    }
   }, []);
 
   // Save filters to localStorage whenever they change
@@ -284,11 +280,12 @@ export default function TimetableViewer() {
         selectedSchool,
         selectedDepartment,
         selectedBatch,
-        selectedSection
+        selectedSection,
+        selectedDay
       };
       localStorage.setItem('timetable_filters', JSON.stringify(filters));
     }
-  }, [selectedSchool, selectedDepartment, selectedBatch, selectedSection, data.length]);
+  }, [selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, data.length]);
 
   // Scroll to top on tab switch
   useEffect(() => {
@@ -469,13 +466,13 @@ export default function TimetableViewer() {
                   <div className="w-4 h-4 rounded-full border-2 border-indigo-500 border-t-transparent animate-spin"></div>
                   <span className="text-xs font-semibold tracking-wide uppercase">Syncing...</span>
                 </div>
-              ) : offlineMode ? (
+              ) : (offlineMode || !isOnline) ? (
                 <div className="flex items-center space-x-2 bg-amber-100 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-600 dark:text-amber-400 px-3 py-1.5 rounded-lg shadow-sm">
                   <span className="relative flex h-2.5 w-2.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
                   </span>
-                  <span className="text-xs font-semibold tracking-wide uppercase">Unreachable</span>
+                  <span className="text-xs font-semibold tracking-wide uppercase">Device lost Connection</span>
                 </div>
               ) : (
                 <>
