@@ -1928,9 +1928,9 @@
       "degree": "BS",
       "batch": "2025",
       "semester": "Unknown",
-      "course_name": "Linear Circuit Analysis",
+      "course_name": "LA & Diff. Equations",
       "section": "EE-A",
-      "instructor": null,
+      "instructor": "Dr. Irfan Shah",
       "room": "B-130",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -1939,7 +1939,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis [REPEAT COURSE] in Room B-130 on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has LA & Diff. Equations [REPEAT COURSE] in Room B-130 on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-B130-1250",
@@ -4068,7 +4068,7 @@
       "degree": "BS",
       "batch": "2025",
       "semester": "Unknown",
-      "course_name": "Linear Algebra",
+      "course_name": "LA & Diff. Equations",
       "section": "EE-A",
       "instructor": null,
       "room": "B-027",
@@ -4079,7 +4079,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Algebra [REPEAT COURSE] in Room B-027 on Thursday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has LA & Diff. Equations [REPEAT COURSE] in Room B-027 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B028-0830",
