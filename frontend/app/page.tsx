@@ -350,8 +350,35 @@ export default function TimetableViewer() {
   }, [data, selectedSchool, selectedDepartment, selectedBatch]);
 
   const availableDays = useMemo(() => {
-    return ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-  }, []);
+    if (!data.length) return [];
+    const daySet = new Set<string>();
+    data.forEach(entry => {
+      if (entry.day && entry.day !== 'Unknown') {
+        daySet.add(entry.day);
+      }
+    });
+
+    const orderMap: Record<string, number> = {
+      'monday': 1, 'tuesday': 2, 'wednesday': 3,
+      'thursday': 4, 'friday': 5, 'saturday': 6, 'sunday': 7
+    };
+
+    return Array.from(daySet).sort((a, b) => {
+      const aLower = a.toLowerCase();
+      const bLower = b.toLowerCase();
+
+      let aVal = 8;
+      let bVal = 8;
+
+      for (const [key, val] of Object.entries(orderMap)) {
+        if (aLower.includes(key)) aVal = val;
+        if (bLower.includes(key)) bVal = val;
+      }
+
+      if (aVal === bVal) return a.localeCompare(b);
+      return aVal - bVal;
+    });
+  }, [data]);
   // Handle cascading resets
   useEffect(() => {
     if (data.length === 0) return;
