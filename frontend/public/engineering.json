@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T17:46:36.760479Z",
+  "last_updated": "2026-09-04T19:55:23.370457Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -5766,7 +5766,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals Lab",
       "section": "EE-A",
@@ -5777,49 +5777,9 @@
       "time_end": "11:15",
       "is_lab": true,
       "is_rescheduled": false,
-      "is_repeat": true,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals Lab (Lab) in Room Poth on Friday from 08:30 to 11:15."
-    },
-    {
-      "id": "FSE-FRI-CircuitLab-1400",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "Linear Circuit Analysis Lab",
-      "section": "EE-A",
-      "instructor": "Engr. Deema Zargoon",
-      "room": "Circuit Lab",
-      "day": "Friday",
-      "time_start": "14:00",
-      "time_end": "16:55",
-      "is_lab": true,
-      "is_rescheduled": false,
-      "is_repeat": true,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis Lab (Lab) in Room Circuit Lab on Friday from 14:00 to 16:55."
-    },
-    {
-      "id": "FSE-FRI-Comp-III-1400",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "Unknown",
-      "course_name": "Data Communication and Networks (Lab)",
-      "section": "EE-A",
-      "instructor": "Engr. Tooba",
-      "room": "Comp-III",
-      "day": "Friday",
-      "time_start": "14:00",
-      "time_end": "16:55",
-      "is_lab": true,
-      "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Communication and Networks (Lab) in Room Comp-III on Friday from 14:00 to 16:55."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals Lab (Lab) in Room Poth on Friday from 08:30 to 11:15."
     }
   ]
 }
