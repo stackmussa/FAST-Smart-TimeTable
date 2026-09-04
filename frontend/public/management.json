@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T05:52:12.213637Z",
+  "last_updated": "2026-09-04T10:30:27.130660Z",
   "classes": [
     {
       "id": "FSM-MON-A01-0830",
@@ -7162,6 +7162,26 @@
       "rag_summary": "BBA BBA (Batch 2024, Section BBA05C) has MG3006 Operations Management in Room A-104 on Wednesday from 10:00 to 11:20."
     },
     {
+      "id": "FSM-WED-A104-1130",
+      "school": "School of Management",
+      "department": "FT",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "MT2004 Business Math-II/MG1004Calulus-II",
+      "section": "FT03C",
+      "instructor": null,
+      "room": "A-104",
+      "day": "Wednesday",
+      "time_start": "11:30",
+      "time_end": "12:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS FT (Batch 2025, Section FT03C) has MT2004 Business Math-II/MG1004Calulus-II in Room A-104 on Wednesday from 11:30 to 12:50."
+    },
+    {
       "id": "FSM-WED-A104-1300",
       "school": "School of Management",
       "department": "BA",
@@ -7644,22 +7664,22 @@
     {
       "id": "FSM-WED-A211-1130",
       "school": "School of Management",
-      "department": "FT",
-      "degree": "BS",
-      "batch": "2025",
+      "department": "BBA",
+      "degree": "BBA",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "MT2004 Business Math-II/MG1004Calulus-II",
-      "section": "FT03C",
+      "course_name": "CS1001 IT in Business",
+      "section": "BBA01A",
       "instructor": null,
       "room": "A--211",
       "day": "Wednesday",
       "time_start": "11:30",
-      "time_end": "12:50",
+      "time_end": "13:20",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS FT (Batch 2025, Section FT03C) has MT2004 Business Math-II/MG1004Calulus-II in Room A--211 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has CS1001 IT in Business in Room A--211 on Wednesday from 11:30 to 13:20."
     },
     {
       "id": "FSM-WED-A211-1425",
@@ -11482,26 +11502,6 @@
       "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CS1001 IT in Business in Room A-310 on Thursday from 13:00 to 14:50."
     },
     {
-      "id": "FSM-THU-A310-1500",
-      "school": "School of Management",
-      "department": "BBA",
-      "degree": "BBA",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "CS1001 IT in Business",
-      "section": "BBA01A",
-      "instructor": null,
-      "room": "A-310",
-      "day": "Thursday",
-      "time_start": "15:00",
-      "time_end": "16:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has CS1001 IT in Business in Room A-310 on Thursday from 15:00 to 16:50."
-    },
-    {
       "id": "FSM-THU-A311-0830",
       "school": "School of Management",
       "department": "Unknown",
@@ -14224,12 +14224,12 @@
     {
       "id": "FSM-FRI-KKI-0830",
       "school": "School of Management",
-      "department": "BBA",
-      "degree": "BBA",
-      "batch": "2026",
+      "department": "AF",
+      "degree": "BS",
+      "batch": "2024",
       "semester": "Unknown",
-      "course_name": "CL1001 IT in Business-Lab",
-      "section": "BBA01A",
+      "course_name": "LG3003 Basic Econometrics Lab",
+      "section": "AF05A",
       "instructor": null,
       "room": "KK-I",
       "day": "Friday",
@@ -14239,17 +14239,17 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has CL1001 IT in Business-Lab in Room KK-I on Friday from 08:30 to 09:50."
+      "rag_summary": "BS AF (Batch 2024, Section AF05A) has LG3003 Basic Econometrics Lab in Room KK-I on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSM-FRI-KKI-1000",
       "school": "School of Management",
-      "department": "BBA",
-      "degree": "BBA",
-      "batch": "2026",
+      "department": "AF",
+      "degree": "BS",
+      "batch": "2024",
       "semester": "Unknown",
-      "course_name": "CL1001 IT in Business-Lab",
-      "section": "BBA01A",
+      "course_name": "LG3003 Basic Econometrics Lab",
+      "section": "AF05A",
       "instructor": null,
       "room": "KK-I",
       "day": "Friday",
@@ -14259,7 +14259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has CL1001 IT in Business-Lab in Room KK-I on Friday from 10:00 to 11:20."
+      "rag_summary": "BS AF (Batch 2024, Section AF05A) has LG3003 Basic Econometrics Lab in Room KK-I on Friday from 10:00 to 11:20."
     },
     {
       "id": "FSM-FRI-KKI-1425",
@@ -14464,12 +14464,12 @@
     {
       "id": "FSM-FRI-Khyber I-0830",
       "school": "School of Management",
-      "department": "AF",
-      "degree": "BS",
-      "batch": "2024",
+      "department": "BBA",
+      "degree": "BBA",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "LG3003 Basic Econometrics Lab",
-      "section": "AF05A",
+      "course_name": "CL1001 IT in Business-Lab",
+      "section": "BBA01A",
       "instructor": null,
       "room": "Khyber I",
       "day": "Friday",
@@ -14479,17 +14479,17 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS AF (Batch 2024, Section AF05A) has LG3003 Basic Econometrics Lab in Room Khyber I on Friday from 08:30 to 09:50."
+      "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has CL1001 IT in Business-Lab in Room Khyber I on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSM-FRI-Khyber I-1000",
       "school": "School of Management",
-      "department": "AF",
-      "degree": "BS",
-      "batch": "2024",
+      "department": "BBA",
+      "degree": "BBA",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "LG3003 Basic Econometrics Lab",
-      "section": "AF05A",
+      "course_name": "CL1001 IT in Business-Lab",
+      "section": "BBA01A",
       "instructor": null,
       "room": "Khyber I",
       "day": "Friday",
@@ -14499,7 +14499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS AF (Batch 2024, Section AF05A) has LG3003 Basic Econometrics Lab in Room Khyber I on Friday from 10:00 to 11:20."
+      "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has CL1001 IT in Business-Lab in Room Khyber I on Friday from 10:00 to 11:20."
     },
     {
       "id": "FSM-FRI-Khyber I-1425",
