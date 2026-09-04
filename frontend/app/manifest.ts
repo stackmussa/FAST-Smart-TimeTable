@@ -9,7 +9,7 @@ export default function manifest(): MetadataRoute.Manifest {
 
   return {
     name: 'FAST Smart TimeTable',
-    short_name: 'TimeTable',
+    short_name: 'FAST TimeTable',
     description: 'Smart Schedule Viewer & Directory for FAST-NUCES Islamabad',
     start_url: `${basePath}/`,
     display: 'standalone',
