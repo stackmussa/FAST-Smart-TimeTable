@@ -270,6 +270,9 @@ export default function TimetableViewer() {
     };
 
     fetchData();
+    const interval = setInterval(fetchData, 600000); // Auto refresh every 10 minutes
+    
+    return () => clearInterval(interval);
   }, []);
 
   // Save filters to localStorage whenever they change
