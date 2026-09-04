@@ -567,6 +567,12 @@ def parse_fse() -> List[Dict[str, Any]]:
         wb = download_workbook(URLS["FSE"])
         sheet = get_timetable_sheet(wb)
         
+        # Dynamically fetch color for EE 2023 from AT192
+        ee_2023_cell = sheet['AT192']
+        if ee_2023_cell and ee_2023_cell.fill and ee_2023_cell.fill.start_color:
+            ee_2023_color = str(ee_2023_cell.fill.start_color.index).upper()
+            FSE_COLOR_LEGEND[ee_2023_color] = {"department": "EE", "degree": "BS", "batch": "2023"}
+
         # In FSE time slots might be offset if room numbers occupy 2 columns
         # extract_time_slots iterates from column 2 onwards, so it should catch them
         time_slots = extract_time_slots(sheet, start_col=2)
@@ -605,16 +611,18 @@ def parse_fse() -> List[Dict[str, Any]]:
                 # Look ahead for instructor
                 instructor = None
                 next_val = clean_text(sheet.cell(row=row_idx + 1, column=col_idx).value)
-                if next_val and "Dr." in next_val or "Ms." in next_val or "Mr." in next_val or "Engr." in next_val:
+                if next_val and ("Dr." in next_val or "Ms." in next_val or "Mr." in next_val or "Engr." in next_val or "Teacher:" in next_val):
                     instructor = next_val
                 
                 # Newline separated for Course Title + Section, or split across rows
                 lines = val.split('\n')
                 if len(lines) >= 1:
                     first_line = lines[0].strip()
-                    instructor = lines[1].strip() if len(lines) > 1 else None
+                    if len(lines) > 1 and not instructor:
+                        if "Dr." in lines[1] or "Ms." in lines[1] or "Mr." in lines[1] or "Engr." in lines[1] or "Teacher:" in lines[1]:
+                            instructor = lines[1].strip()
                     
-                    course_match = re.match(r"(.*?)\s+([A-Z]+-[A-Z]+|\b[A-Z]\b)$", first_line)
+                    course_match = re.match(r"(.*?)\s+([A-Z]+-[A-Z0-9,]+|\b[A-Z,]+\b)$", first_line)
                     if course_match:
                         course_name = course_match.group(1).strip()
                         raw_section = course_match.group(2).strip()
@@ -641,9 +649,44 @@ def parse_fse() -> List[Dict[str, Any]]:
                     t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
                     t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
                     
+                    # Override with explicit time if found in the cell value
+                    explicit_time_match = re.search(r"(\d{1,2}:\d{2})\s*(?:-|to)\s*(\d{1,2}:\d{2})", val, re.IGNORECASE)
+                    if explicit_time_match:
+                        t_start = normalize_time(explicit_time_match.group(1).strip())
+                        t_end = normalize_time(explicit_time_match.group(2).strip())
+                        course_name = re.sub(r"\d{1,2}:\d{2}\s*(?:-|to)\s*\d{1,2}:\d{2}", "", course_name).strip()
+                    
                     school = "School of Engineering"
                     semester = "Unknown"
                     is_lab = "lab" in course_name.lower() or "lab" in room.lower()
+                    
+                    # Lab duration override
+                    if is_lab and t_start:
+                        try:
+                            from datetime import datetime, timedelta
+                            dt = datetime.strptime(t_start, "%H:%M")
+                            dt += timedelta(minutes=165)
+                            t_end = dt.strftime("%H:%M")
+                        except:
+                            pass
+                    
+                    # Hardcoded fallback for EE 2023 batch courses
+                    ee_2023_courses = [
+                        "Applied Thermodynamics",
+                        "Engineering Management",
+                        "Technical and Business Writing",
+                        "Final Year Project",
+                        "Applied Machine Learning",
+                        "Instrumentation and Measurement",
+                        "Embedded Systems",
+                        "Database Systems",
+                        "Ocp. Health & Safety"
+                    ]
+                    if batch == "Unknown" and dept == "EE":
+                        for c in ee_2023_courses:
+                            if c.lower() in course_name.lower():
+                                batch = "2023"
+                                break
                     
                     summary = generate_rag_summary(school, dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, False, is_cancelled)
                     entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"

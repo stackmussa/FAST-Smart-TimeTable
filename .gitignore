@@ -35,6 +35,14 @@ debug_*.py
 test_*.py
 check_*.py
 find_*.py
+patch_*.py
+inject_*.py
+fix_*.py
+update_*.py
+split_*.py
+add_*.py
+inject_special.py
+inject_tuesday.py
 *.html
 skipped_courses.txt
 
