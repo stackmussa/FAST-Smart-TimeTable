@@ -1926,7 +1926,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Linear Circuit Analysis",
       "section": "EE-A",
@@ -1937,9 +1937,9 @@
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Circuit Analysis in Room B-130 on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis [REPEAT COURSE] in Room B-130 on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-B130-1250",
@@ -2646,7 +2646,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Linear Circuit Analysis",
       "section": "EE-A",
@@ -2657,9 +2657,9 @@
       "time_end": "11:15",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Circuit Analysis in Room B-027 on Wednesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis [REPEAT COURSE] in Room B-027 on Wednesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-WED-B027-1125",
@@ -2706,7 +2706,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Linear Circuit Analysis",
       "section": "EE-A",
@@ -2717,9 +2717,9 @@
       "time_end": "17:05",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Circuit Analysis in Room B-027 on Wednesday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Circuit Analysis [REPEAT COURSE] in Room B-027 on Wednesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-WED-B028-0830",
@@ -2766,7 +2766,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "EE-A",
@@ -2777,9 +2777,9 @@
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Algebra in Room B-028 on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Algebra [REPEAT COURSE] in Room B-028 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B028-1250",
@@ -4066,7 +4066,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Linear Algebra",
       "section": "EE-A",
@@ -4077,9 +4077,9 @@
       "time_end": "17:05",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Linear Algebra in Room B-027 on Thursday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Algebra [REPEAT COURSE] in Room B-027 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B028-0830",
@@ -4166,7 +4166,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals",
       "section": "EE-A",
@@ -4177,7 +4177,7 @@
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals in Room B-030 on Thursday from 11:25 to 12:45."
     },
@@ -4986,7 +4986,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Applied Physics Lab EE-A   (Batch 2025)",
       "section": "Unknown",
@@ -4997,9 +4997,9 @@
       "time_end": "17:05",
       "is_lab": true,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has Applied Physics Lab EE-A   (Batch 2025) (Lab) in Room Phy on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2025, Section Unknown) has Applied Physics Lab EE-A   (Batch 2025) (Lab) [REPEAT COURSE] in Room Phy on Thursday from 14:20 to 15:40."
     },
     {
       "id": "FSE-THU-CompI-0955",
@@ -5346,7 +5346,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals",
       "section": "EE-A",
@@ -5357,9 +5357,9 @@
       "time_end": "12:45",
       "is_lab": false,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals in Room B-019 on Friday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Programming Fundamentals [REPEAT COURSE] in Room B-019 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B020-0830",
@@ -5686,7 +5686,7 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "Unknown",
+      "batch": "2025",
       "semester": "Unknown",
       "course_name": "Programming Fundamentals Lab",
       "section": "EE-A",
@@ -5697,9 +5697,9 @@
       "time_end": "11:15",
       "is_lab": true,
       "is_rescheduled": false,
-      "is_repeat": false,
+      "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has Programming Fundamentals Lab (Lab) in Room Poth on Friday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Programming Fundamentals Lab (Lab) [REPEAT COURSE] in Room Poth on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-MON-MainAuditoriamABlocK-1250-CE-A-CEA",
