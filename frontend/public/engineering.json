@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T18:41:07.316838Z",
+  "last_updated": "2026-09-04T05:52:16.096768Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -5340,26 +5340,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-B) has Data Com. & Netwks. in Room B-020 on Friday from 11:25 to 12:45."
-    },
-    {
-      "id": "FSE-FRI-B027-0830",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "OBE Seminar BSEE & BSCE",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-027",
-      "day": "Friday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section Unknown) has OBE Seminar BSEE & BSCE in Room B-027 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B027-0955",
