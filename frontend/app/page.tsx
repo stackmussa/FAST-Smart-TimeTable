@@ -44,6 +44,7 @@ export default function TimetableViewer() {
   const [isNextClassModalOpen, setIsNextClassModalOpen] = useState(false);
   const [countdownText, setCountdownText] = useState("");
   const [mounted, setMounted] = useState(false);
+  const [initialDaySet, setInitialDaySet] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -102,6 +103,8 @@ export default function TimetableViewer() {
 
     const nxt = getNextClass();
     setNextClass(nxt);
+    
+    // (removed initialDaySet logic from here)
     
     if (nxt) {
       const currentMins = currentTime.getHours() * 60 + currentTime.getMinutes();
@@ -171,11 +174,7 @@ export default function TimetableViewer() {
       }
     }
 
-    const options: Intl.DateTimeFormatOptions = { weekday: 'long', timeZone: 'Asia/Karachi' };
-    const pktDay = new Intl.DateTimeFormat('en-US', options).format(new Date());
-    const defaultDay = pktDay === 'Sunday' ? 'Monday' : pktDay;
-
-    setSelectedDay(defaultDay);
+    // Wait for data to load before setting selectedDay to correctly match appended dates
     const cachedTimes = localStorage.getItem('timetable_timestamps');
 
     if (cached) {
@@ -408,11 +407,24 @@ export default function TimetableViewer() {
   }, [availableSections, selectedSection, data.length]);
 
   useEffect(() => {
-    if (data.length === 0) return;
-    if (availableDays.length > 0 && !availableDays.includes(selectedDay)) {
+    if (data.length === 0 || availableDays.length === 0) return;
+    
+    if (!initialDaySet) {
+      const options: Intl.DateTimeFormatOptions = { weekday: 'long', timeZone: 'Asia/Karachi' };
+      const pktDay = new Intl.DateTimeFormat('en-US', options).format(new Date());
+      const targetDay = pktDay === 'Sunday' ? 'Monday' : pktDay;
+      
+      const matchedDay = availableDays.find(d => d.startsWith(targetDay));
+      if (matchedDay) {
+        setSelectedDay(matchedDay);
+      } else {
+        setSelectedDay(availableDays[0]);
+      }
+      setInitialDaySet(true);
+    } else if (!availableDays.includes(selectedDay)) {
       setSelectedDay(availableDays[0]);
     }
-  }, [availableDays, selectedDay, data.length]);
+  }, [availableDays, selectedDay, data.length, initialDaySet]);
 
   const filteredClasses = useMemo(() => {
     if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay) return [];
