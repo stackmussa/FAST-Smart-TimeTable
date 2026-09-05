@@ -767,6 +767,21 @@ def main():
     
     logging.info("Parsing FSC (School of Computing)...")
     fsc_entries = parse_fsc()
+    
+    # Post-process for Batch 2026 Func Eng Lab
+    for entry in fsc_entries:
+        if entry.get("batch") == "2026" and entry.get("course_name") == "Func Eng Lab":
+            section = entry.get("section", "")
+            if section and section[-1].isdigit():
+                sub_section = section[-1]
+                entry["course_name"] = f"Func Eng Lab - {sub_section}"
+                # Rebuild rag_summary with new course name
+                prog = f"{entry.get('degree', '')} {entry.get('department', '')}".strip()
+                summary = f"{prog} (Batch {entry.get('batch')}, Section {section}) has {entry['course_name']} in Room {entry.get('room')} on {entry.get('day')} from {entry.get('time_start')} to {entry.get('time_end')}."
+                if entry.get("instructor"):
+                    summary += f" Instructor: {entry.get('instructor')}."
+                entry["rag_summary"] = summary
+
     if save_with_metadata(os.path.join(out_dir, "computing.json"), fsc_entries):
         changed_files.append("Computing")
         logging.info(f"computing.json CHANGED — {len(fsc_entries)} entries")

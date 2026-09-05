@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T11:55:07.997921Z",
+  "last_updated": "2026-09-05T22:08:13.303805Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -1288,7 +1288,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CY-A1",
       "instructor": null,
       "room": "C-406",
@@ -1299,7 +1299,7 @@
       "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS CY (Batch 2026, Section CY-A1) has Func Eng Lab (Lab) in Room C-406 on Monday from 08:30 to 10:15."
+      "rag_summary": "BS CY (Batch 2026, Section CY-A1) has Func Eng Lab - 1 in Room C-406 on Monday from 08:30 to 10:15."
     },
     {
       "id": "FSC-MON-C406-1130-CSE",
@@ -3448,7 +3448,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CY-C2",
       "instructor": null,
       "room": "D-502",
@@ -3459,7 +3459,7 @@
       "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS CY (Batch 2026, Section CY-C2) has Func Eng Lab (Lab) in Room D-502 on Monday from 11:30 to 13:15."
+      "rag_summary": "BS CY (Batch 2026, Section CY-C2) has Func Eng Lab - 2 in Room D-502 on Monday from 11:30 to 13:15."
     },
     {
       "id": "FSC-MON-D503-1000-CYA",
@@ -4128,7 +4128,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-E1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -4139,7 +4139,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-E1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Monday from 14:30 to 16:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-E1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Monday from 14:30 to 16:15."
     },
     {
       "id": "FSC-MON-CALL2 (A214)-1430-CSE2",
@@ -4148,7 +4148,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-E2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -4159,7 +4159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-E2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Monday from 14:30 to 16:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-E2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Monday from 14:30 to 16:15."
     },
     {
       "id": "FSC-MON-CALL3 (A308)-0830-SED1",
@@ -4168,7 +4168,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-D1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -4179,7 +4179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-D1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Monday from 08:30 to 10:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-D1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Monday from 08:30 to 10:15."
     },
     {
       "id": "FSC-MON-CALL3 (A308)-1130-CSH1",
@@ -4188,7 +4188,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-H1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -4199,7 +4199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-H1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Monday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-H1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Monday from 11:30 to 13:15."
     },
     {
       "id": "FSC-MON-CALL3 (A308)-1430-AIC1",
@@ -4208,7 +4208,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "AI-C1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -4219,7 +4219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2026, Section AI-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Monday from 14:30 to 16:15."
+      "rag_summary": "BS AI (Batch 2026, Section AI-C1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Monday from 14:30 to 16:15."
     },
     {
       "id": "FSC-MON-Mehran2 (A306)-1130-CSH2",
@@ -4228,7 +4228,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-H2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -4239,7 +4239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-H2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Monday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-H2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Monday from 11:30 to 13:15."
     },
     {
       "id": "FSC-MON-Mehran2 (A306)-1430-AIC2",
@@ -4248,7 +4248,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "AI-C2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -4259,7 +4259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2026, Section AI-C2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Monday from 14:30 to 16:15."
+      "rag_summary": "BS AI (Batch 2026, Section AI-C2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Monday from 14:30 to 16:15."
     },
     {
       "id": "FSC-MON-BComputing3-0830-SED2",
@@ -4268,7 +4268,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "SE-D2",
       "instructor": null,
       "room": "B-Computing-3",
@@ -4279,7 +4279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-D2) has Func Eng Lab (Lab) in Room B-Computing-3 on Monday from 08:30 to 10:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-D2) has Func Eng Lab - 2 in Room B-Computing-3 on Monday from 08:30 to 10:15."
     },
     {
       "id": "FSC-MON-BDigital-0830-CSG",
@@ -4968,7 +4968,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-E2",
       "instructor": null,
       "room": "C-309",
@@ -4979,7 +4979,7 @@
       "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-E2) has Func Eng Lab (Lab) in Room C-309 on Tuesday from 14:30 to 16:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-E2) has Func Eng Lab - 2 in Room C-309 on Tuesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-TUE-C310-0830-CSJ",
@@ -8728,7 +8728,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-A1",
       "instructor": null,
       "room": "Kybher-2",
@@ -8739,7 +8739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-A1) has Func Eng Lab (Lab) in Room Kybher-2 on Tuesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-A1) has Func Eng Lab - 1 in Room Kybher-2 on Tuesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-TUE-Kybher3-1130-CSA2",
@@ -8748,7 +8748,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-A2",
       "instructor": null,
       "room": "Kybher-3",
@@ -8759,7 +8759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-A2) has Func Eng Lab (Lab) in Room Kybher-3 on Tuesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-A2) has Func Eng Lab - 2 in Room Kybher-3 on Tuesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-TUE-CALL1 (A213)-1130-CSD1",
@@ -8768,7 +8768,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-D1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -8779,7 +8779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-D1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Tuesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-D1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Tuesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-TUE-CALL2 (A214)-1130-CSD2",
@@ -8788,7 +8788,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-D2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -8799,7 +8799,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-D2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Tuesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-D2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Tuesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-TUE-CALL3 (A308)-0830-SEB1",
@@ -8808,7 +8808,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-B1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -8819,7 +8819,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-B1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Tuesday from 08:30 to 10:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-B1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Tuesday from 08:30 to 10:15."
     },
     {
       "id": "FSC-TUE-CALL3 (A308)-1130-CSC1",
@@ -8828,7 +8828,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-C1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -8839,7 +8839,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Tuesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-C1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Tuesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-TUE-CALL3 (A308)-1430-DSB1",
@@ -8848,7 +8848,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "DS-B1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -8859,7 +8859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2026, Section DS-B1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Tuesday from 14:30 to 16:15."
+      "rag_summary": "BS DS (Batch 2026, Section DS-B1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Tuesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-TUE-Mehran2 (A306)-0830-SEB2",
@@ -8868,7 +8868,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "SE-B2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -8879,7 +8879,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-B2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Tuesday from 08:30 to 10:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-B2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Tuesday from 08:30 to 10:15."
     },
     {
       "id": "FSC-TUE-Mehran2 (A306)-1130-CSC2",
@@ -8888,7 +8888,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-C2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -8899,7 +8899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-C2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Tuesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-C2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Tuesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-TUE-Mehran2 (A306)-1430-DSB2",
@@ -8908,7 +8908,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "DS-B2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -8919,7 +8919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2026, Section DS-B2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Tuesday from 14:30 to 16:15."
+      "rag_summary": "BS DS (Batch 2026, Section DS-B2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Tuesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-TUE-BDigital-0830-CSA",
@@ -13648,7 +13648,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-G1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -13659,7 +13659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-G1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Wednesday from 08:30 to 10:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-G1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Wednesday from 08:30 to 10:15."
     },
     {
       "id": "FSC-WED-CALL1 (A213)-1430-DSA1",
@@ -13668,7 +13668,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "DS-A1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -13679,7 +13679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2026, Section DS-A1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Wednesday from 14:30 to 16:15."
+      "rag_summary": "BS DS (Batch 2026, Section DS-A1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Wednesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-WED-CALL2 (A214)-0830-CSG2",
@@ -13688,7 +13688,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-G2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -13699,7 +13699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-G2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Wednesday from 08:30 to 10:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-G2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Wednesday from 08:30 to 10:15."
     },
     {
       "id": "FSC-WED-CALL2 (A214)-1430-DSA2",
@@ -13708,7 +13708,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "DS-A2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -13719,7 +13719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2026, Section DS-A2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Wednesday from 14:30 to 16:15."
+      "rag_summary": "BS DS (Batch 2026, Section DS-A2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Wednesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-WED-CALL3 (A308)-1130-CSF1",
@@ -13728,7 +13728,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-F1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -13739,7 +13739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-F1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Wednesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-F1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Wednesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-WED-CALL3 (A308)-1430-SEC1",
@@ -13748,7 +13748,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-C1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -13759,7 +13759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Wednesday from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Wednesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-WED-Mehran2 (A306)-1130-CSF2",
@@ -13768,7 +13768,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-F2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -13779,7 +13779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-F2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Wednesday from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-F2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Wednesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-WED-Mehran2 (A306)-1430-SEC2",
@@ -13788,7 +13788,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "SE-C2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -13799,7 +13799,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-C2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Wednesday from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-C2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Wednesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-WED-BDigital-0830-CSH",
@@ -18508,7 +18508,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-B1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -18519,7 +18519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-B1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Thursday from 08:30 to 10:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-B1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Thursday from 08:30 to 10:15."
     },
     {
       "id": "FSC-THU-CALL1 (A213)-1430-SEA1",
@@ -18528,7 +18528,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-A1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -18539,7 +18539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-A1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Thursday from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-A1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Thursday from 14:30 to 16:15."
     },
     {
       "id": "FSC-THU-CALL2 (A214)-0830-CSB2",
@@ -18548,7 +18548,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-B2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -18559,7 +18559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-B2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Thursday from 08:30 to 10:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-B2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Thursday from 08:30 to 10:15."
     },
     {
       "id": "FSC-THU-CALL2 (A214)-1430-CYC2",
@@ -18568,7 +18568,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CY-C2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -18579,7 +18579,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-C2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Thursday from 14:30 to 16:15."
+      "rag_summary": "BS CY (Batch 2026, Section CY-C2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Thursday from 14:30 to 16:15."
     },
     {
       "id": "FSC-THU-CALL3 (A308)-0830-AIA1",
@@ -18588,7 +18588,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "AI-A1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -18599,7 +18599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2026, Section AI-A1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Thursday from 08:30 to 10:15."
+      "rag_summary": "BS AI (Batch 2026, Section AI-A1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Thursday from 08:30 to 10:15."
     },
     {
       "id": "FSC-THU-CALL3 (A308)-1430-CYC1",
@@ -18608,7 +18608,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CY-C1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -18619,7 +18619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Thursday from 14:30 to 16:15."
+      "rag_summary": "BS CY (Batch 2026, Section CY-C1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Thursday from 14:30 to 16:15."
     },
     {
       "id": "FSC-THU-Mehran2 (A306)-0830-AIA2",
@@ -18628,7 +18628,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "AI-A2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -18639,7 +18639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2026, Section AI-A2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Thursday from 08:30 to 10:15."
+      "rag_summary": "BS AI (Batch 2026, Section AI-A2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Thursday from 08:30 to 10:15."
     },
     {
       "id": "FSC-THU-Mehran2 (A306)-1430-SEA2",
@@ -18648,7 +18648,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "SE-A2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -18659,7 +18659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-A2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Thursday from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-A2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Thursday from 14:30 to 16:15."
     },
     {
       "id": "FSC-THU-BDigital-0830-CSB",
@@ -19028,7 +19028,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-A1",
       "instructor": null,
       "room": "C-308",
@@ -19039,7 +19039,7 @@
       "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-A1) has Func Eng Lab (Lab) in Room C-308 on Friday from 13:00 to 14:45."
+      "rag_summary": "BS SE (Batch 2026, Section SE-A1) has Func Eng Lab - 1 in Room C-308 on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-FRI-C309-0830-SEC",
@@ -19128,7 +19128,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "SE-A2",
       "instructor": null,
       "room": "C-310",
@@ -19139,7 +19139,7 @@
       "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-A2) has Func Eng Lab (Lab) in Room C-310 on Friday from 13:00 to 14:45."
+      "rag_summary": "BS SE (Batch 2026, Section SE-A2) has Func Eng Lab - 2 in Room C-310 on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-FRI-C401-0830-SED",
@@ -19648,7 +19648,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CY-A1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -19659,7 +19659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-A1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Friday from 13:00 to 14:45."
+      "rag_summary": "BS CY (Batch 2026, Section CY-A1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-FRI-CALL2 (A214)-1300-CYA2",
@@ -19668,7 +19668,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CY-A2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -19679,7 +19679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-A2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Friday from 13:00 to 14:45."
+      "rag_summary": "BS CY (Batch 2026, Section CY-A2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-FRI-CALL3 (A308)-1300-CYB1",
@@ -19688,7 +19688,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CY-B1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -19699,7 +19699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-B1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Friday from 13:00 to 14:45."
+      "rag_summary": "BS CY (Batch 2026, Section CY-B1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-FRI-Mehran2 (A306)-1300-CYB2",
@@ -19708,7 +19708,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CY-B2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -19719,7 +19719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-B2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Friday from 13:00 to 14:45."
+      "rag_summary": "BS CY (Batch 2026, Section CY-B2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Friday from 13:00 to 14:45."
     },
     {
       "id": "FSC-SAT-C301-0830-CSA",
@@ -19848,7 +19848,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-C1",
       "instructor": null,
       "room": "C-302",
@@ -19859,7 +19859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab (Lab) in Room C-302 on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab - 1 in Room C-302 on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-C303-0830-CSC",
@@ -21068,7 +21068,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-B2",
       "instructor": null,
       "room": "C-406",
@@ -21079,7 +21079,7 @@
       "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-B2) has Func Eng Lab (Lab) in Room C-406 on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-B2) has Func Eng Lab - 2 in Room C-406 on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-C407-0830-CSF",
@@ -24588,7 +24588,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-G1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -24599,7 +24599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-G1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Saturday (Sep. 05, 2026) from 08:30 to 10:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-G1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Saturday (Sep. 05, 2026) from 08:30 to 10:15."
     },
     {
       "id": "FSC-SAT-CALL1 (A213)-1430-DSA1",
@@ -24608,7 +24608,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "DS-A1",
       "instructor": null,
       "room": "CALL-1 (A-213)",
@@ -24619,7 +24619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2026, Section DS-A1) has Func Eng Lab (Lab) in Room CALL-1 (A-213) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "rag_summary": "BS DS (Batch 2026, Section DS-A1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-CALL2 (A214)-0830-CSG2",
@@ -24628,7 +24628,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-G2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -24639,7 +24639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-G2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Saturday (Sep. 05, 2026) from 08:30 to 10:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-G2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Saturday (Sep. 05, 2026) from 08:30 to 10:15."
     },
     {
       "id": "FSC-SAT-CALL2 (A214)-1430-DSA2",
@@ -24648,7 +24648,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "DS-A2",
       "instructor": null,
       "room": "CALL-2 (A-214)",
@@ -24659,7 +24659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2026, Section DS-A2) has Func Eng Lab (Lab) in Room CALL-2 (A-214) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "rag_summary": "BS DS (Batch 2026, Section DS-A2) has Func Eng Lab - 2 in Room CALL-2 (A-214) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-CALL3 (A308)-1130-CSF1",
@@ -24668,7 +24668,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "CS-F1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -24679,7 +24679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-F1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Saturday (Sep. 05, 2026) from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-F1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Saturday (Sep. 05, 2026) from 11:30 to 13:15."
     },
     {
       "id": "FSC-SAT-CALL3 (A308)-1430-SEC1",
@@ -24688,7 +24688,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 1",
       "section": "SE-C1",
       "instructor": null,
       "room": "CALL-3 (A-308)",
@@ -24699,7 +24699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-Mehran2 (A306)-1130-CSF2",
@@ -24708,7 +24708,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "CS-F2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -24719,7 +24719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-F2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Saturday (Sep. 05, 2026) from 11:30 to 13:15."
+      "rag_summary": "BS CS (Batch 2026, Section CS-F2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Saturday (Sep. 05, 2026) from 11:30 to 13:15."
     },
     {
       "id": "FSC-SAT-Mehran2 (A306)-1430-SEC2",
@@ -24728,7 +24728,7 @@
       "degree": "BS",
       "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Func Eng Lab",
+      "course_name": "Func Eng Lab - 2",
       "section": "SE-C2",
       "instructor": null,
       "room": "Mehran-2 (A-306)",
@@ -24739,7 +24739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-C2) has Func Eng Lab (Lab) in Room Mehran-2 (A-306) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "rag_summary": "BS SE (Batch 2026, Section SE-C2) has Func Eng Lab - 2 in Room Mehran-2 (A-306) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-BDigital-0830-CSH",
