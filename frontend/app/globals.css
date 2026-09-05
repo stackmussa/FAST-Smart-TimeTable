@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes aggressiveBreathing {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    border-color: rgba(245, 158, 11, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 3px rgba(245, 158, 11, 0.75), 0 0 28px 6px rgba(249, 115, 22, 0.4);
+    border-color: rgba(245, 158, 11, 1);
+  }
+}
+
+.animate-aggressive-breathing {
+  animation: aggressiveBreathing 1.2s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}

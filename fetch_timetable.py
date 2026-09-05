@@ -461,7 +461,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     continue
                 
                 # Skip if this cell is purely a section tag
-                if re.match(r'^([A-Z]{2,4})(\d{2})([A-Z/0-9]+)$', val.replace(' ', '')):
+                if re.match(r'^([A-Z]{2,4})(\d{1,2})([A-Z/0-9]+)$', val.replace(' ', '')):
                     continue
                 
                 start_col = max((k for k, v in time_slots if k <= col_idx), default=None)
@@ -507,15 +507,20 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 if is_cancelled:
                     course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
                 
+                is_repeat = False
+
                 # Search forward for the next non-empty cell in the row
                 for c in range(col_idx + 1, sheet.max_column + 1):
                     next_val = clean_text(sheet.cell(row=row_idx, column=c).value)
                     if next_val:
-                        sec_match = re.search(r'^([A-Z]{2,4})(\d{2})([A-Z/0-9]+)$', next_val.replace(' ', ''))
+                        sec_match = re.search(r'^([A-Z]{2,4})(\d{1,2})([A-Z/0-9]+)$', next_val.replace(' ', ''))
                         if sec_match:
                             parsed_dept = sec_match.group(1)
                             sem_code = sec_match.group(2)
                             section = next_val.replace(' ', '')
+                            if section in ['FT3A', 'AF3B', 'BBA3A']:
+                                section = f"{section} (R)"
+                                is_repeat = True
                             
                             # Deduce department and degree
                             if parsed_dept == 'BSBA': dept_code = 'BA'
@@ -525,16 +530,16 @@ def parse_fsm() -> List[Dict[str, Any]]:
                             else: degree = 'BS'
                             
                             # Deduce batch
-                            if sem_code == '01': batch = '2026'
-                            elif sem_code == '03': batch = '2025'
-                            elif sem_code == '05': batch = '2024'
-                            elif sem_code == '07': batch = '2023'
+                            if sem_code in ['01', '1']: batch = '2026'
+                            elif sem_code in ['03', '3']: batch = '2025'
+                            elif sem_code in ['05', '5']: batch = '2024'
+                            elif sem_code in ['07', '7']: batch = '2023'
                         break
                 
                 school = "School of Management"
                 is_lab = False
                 
-                summary = generate_rag_summary(school, dept_code, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, False, is_cancelled)
+                summary = generate_rag_summary(school, dept_code, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
                 entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                 
                 entries.append({
@@ -553,7 +558,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     "time_end": t_end,
                     "is_lab": is_lab,
                     "is_rescheduled": is_rescheduled,
-                    "is_repeat": False,
+                    "is_repeat": is_repeat,
                     "is_cancelled": is_cancelled,
                     "rag_summary": summary
                 })

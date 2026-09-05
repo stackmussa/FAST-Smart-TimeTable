@@ -5089,7 +5089,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "AF1002 Finacial Accounting",
-      "section": "FT3A",
+      "section": "FT3A (R)",
       "instructor": null,
       "room": "A-311",
       "day": "Tuesday",
@@ -5099,27 +5099,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF1002 Finacial Accounting in Room A-311 on Tuesday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSM-TUE-A311-0830",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FT3A",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-311",
-      "day": "Tuesday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has FT3A in Room A-311 on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF1002 Finacial Accounting [REPEAT COURSE] in Room A-311 on Tuesday from 08:30 to 09:50."
     },
     {
       "id": "FSM-TUE-A311-1000",
@@ -8409,7 +8389,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "AF1002 Finacial Accounting",
-      "section": "AF3B",
+      "section": "AF3B (R)",
       "instructor": null,
       "room": "A-315",
       "day": "Wednesday",
@@ -8419,27 +8399,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section AF3B) has AF1002 Finacial Accounting in Room A-315 on Wednesday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSM-WED-A315-0830",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "AF3B",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-315",
-      "day": "Wednesday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3B in Room A-315 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch 2025, Section AF3B (R)) has AF1002 Finacial Accounting [REPEAT COURSE] in Room A-315 on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSM-WED-A315-1000",
@@ -8449,7 +8409,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "AF1002 Finacial Accounting",
-      "section": "AF3B",
+      "section": "AF3B (R)",
       "instructor": null,
       "room": "A-315",
       "day": "Wednesday",
@@ -8459,27 +8419,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section AF3B) has AF1002 Finacial Accounting in Room A-315 on Wednesday from 10:00 to 11:20."
-    },
-    {
-      "id": "FSM-WED-A315-1000",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "AF3B",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-315",
-      "day": "Wednesday",
-      "time_start": "10:00",
-      "time_end": "11:20",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3B in Room A-315 on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS Unknown (Batch 2025, Section AF3B (R)) has AF1002 Finacial Accounting [REPEAT COURSE] in Room A-315 on Wednesday from 10:00 to 11:20."
     },
     {
       "id": "FSM-WED-A315-1130",
@@ -9069,7 +9009,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "FL1002 Financial Accounting Lab",
-      "section": "FT3A",
+      "section": "FT3A (R)",
       "instructor": null,
       "room": "Khyber I",
       "day": "Wednesday",
@@ -9079,7 +9019,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section FT3A) has FL1002 Financial Accounting Lab in Room Khyber I on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch 2025, Section FT3A (R)) has FL1002 Financial Accounting Lab [REPEAT COURSE] in Room Khyber I on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSM-WED-Khyber I-1000",
@@ -9089,7 +9029,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "FL1002 Financial Accounting Lab",
-      "section": "FT3A",
+      "section": "FT3A (R)",
       "instructor": null,
       "room": "Khyber I",
       "day": "Wednesday",
@@ -9099,27 +9039,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section FT3A) has FL1002 Financial Accounting Lab in Room Khyber I on Wednesday from 10:00 to 11:20."
-    },
-    {
-      "id": "FSM-WED-Khyber I-1000",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FT3A",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "Khyber I",
-      "day": "Wednesday",
-      "time_start": "10:00",
-      "time_end": "11:20",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has FT3A in Room Khyber I on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS Unknown (Batch 2025, Section FT3A (R)) has FL1002 Financial Accounting Lab [REPEAT COURSE] in Room Khyber I on Wednesday from 10:00 to 11:20."
     },
     {
       "id": "FSM-WED-Khyber I-1130",
@@ -11489,7 +11409,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "AF 1001 Fundamentals of Accounting",
-      "section": "AF3A",
+      "section": "AF3A (R)",
       "instructor": null,
       "room": "A-311",
       "day": "Thursday",
@@ -11499,7 +11419,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section AF3A) has AF 1001 Fundamentals of Accounting in Room A-311 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch 2025, Section AF3A (R)) has AF 1001 Fundamentals of Accounting in Room A-311 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSM-THU-A311-0830",
@@ -11508,7 +11428,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "AF3A",
+      "course_name": "AF3A (R)",
       "section": "Unknown",
       "instructor": null,
       "room": "A-311",
@@ -11519,7 +11439,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3A in Room A-311 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3A (R) in Room A-311 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSM-THU-A311-1000",
@@ -11589,7 +11509,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "AF1002 Finacial Accounting",
-      "section": "FT3A",
+      "section": "FT3A (R)",
       "instructor": null,
       "room": "A-314",
       "day": "Thursday",
@@ -11599,27 +11519,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section FT3A) has AF1002 Finacial Accounting in Room A-314 on Thursday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSM-THU-A314-0830",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FT3A",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-314",
-      "day": "Thursday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has FT3A in Room A-314 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch 2025, Section FT3A (R)) has AF1002 Finacial Accounting [REPEAT COURSE] in Room A-314 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSM-THU-A314-1130",
@@ -13469,7 +13369,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "MT1002 Business Math I (repeat course for all degrees)",
-      "section": "BBA3A",
+      "section": "BBA3A (R)",
       "instructor": null,
       "room": "A-103",
       "day": "Friday",
@@ -13479,27 +13379,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MT1002 Business Math I (repeat course for all degrees) in Room A-103 on Friday from 14:25 to 15:45."
-    },
-    {
-      "id": "FSM-FRI-A103-1425",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "BBA3A",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-103",
-      "day": "Friday",
-      "time_start": "14:25",
-      "time_end": "15:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has BBA3A in Room A-103 on Friday from 14:25 to 15:45."
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MT1002 Business Math I (repeat course for all degrees) [REPEAT COURSE] in Room A-103 on Friday from 14:25 to 15:45."
     },
     {
       "id": "FSM-FRI-A103-1550",
@@ -13509,7 +13389,7 @@
       "batch": "2023",
       "semester": "Unknown",
       "course_name": "MT1002 Business Math I (repeat course for all degrees)",
-      "section": "BBA3A",
+      "section": "BBA3A (R)",
       "instructor": null,
       "room": "A-103",
       "day": "Friday",
@@ -13519,27 +13399,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MT1002 Business Math I (repeat course for all degrees) in Room A-103 on Friday from 15:50 to 17:10."
-    },
-    {
-      "id": "FSM-FRI-A103-1550",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "BBA3A",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-103",
-      "day": "Friday",
-      "time_start": "15:50",
-      "time_end": "17:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has BBA3A in Room A-103 on Friday from 15:50 to 17:10."
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MT1002 Business Math I (repeat course for all degrees) [REPEAT COURSE] in Room A-103 on Friday from 15:50 to 17:10."
     },
     {
       "id": "FSM-FRI-A104-0830",
@@ -14009,7 +13869,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "AF 1001 Fundamentals of Accounting",
-      "section": "AF3A",
+      "section": "AF3A (R)",
       "instructor": null,
       "room": "A-311",
       "day": "Friday",
@@ -14019,7 +13879,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section AF3A) has AF 1001 Fundamentals of Accounting in Room A-311 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch 2025, Section AF3A (R)) has AF 1001 Fundamentals of Accounting in Room A-311 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSM-FRI-A311-0830",
@@ -14028,7 +13888,7 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "AF3A",
+      "course_name": "AF3A (R)",
       "section": "Unknown",
       "instructor": null,
       "room": "A-311",
@@ -14039,7 +13899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3A in Room A-311 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3A (R) in Room A-311 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSM-FRI-A311-1030",
@@ -14509,7 +14369,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "FL1002 Financial Accounting Lab",
-      "section": "AF3B",
+      "section": "AF3B (R)",
       "instructor": null,
       "room": "Khyber I",
       "day": "Friday",
@@ -14519,7 +14379,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2023, Section AF3B) has FL1002 Financial Accounting Lab in Room Khyber I on Friday from 14:25 to 15:45."
+      "rag_summary": "BS Unknown (Batch 2023, Section AF3B (R)) has FL1002 Financial Accounting Lab [REPEAT COURSE] in Room Khyber I on Friday from 14:25 to 15:45."
     },
     {
       "id": "FSM-FRI-Khyber I-1550",
@@ -14529,7 +14389,7 @@
       "batch": "2025",
       "semester": "Unknown",
       "course_name": "FL1002 Financial Accounting Lab",
-      "section": "AF3B",
+      "section": "AF3B (R)",
       "instructor": null,
       "room": "Khyber I",
       "day": "Friday",
@@ -14539,27 +14399,7 @@
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch 2025, Section AF3B) has FL1002 Financial Accounting Lab in Room Khyber I on Friday from 15:50 to 17:10."
-    },
-    {
-      "id": "FSM-FRI-Khyber I-1550",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "AF3B",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "Khyber I",
-      "day": "Friday",
-      "time_start": "15:50",
-      "time_end": "17:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF3B in Room Khyber I on Friday from 15:50 to 17:10."
+      "rag_summary": "BS Unknown (Batch 2025, Section AF3B (R)) has FL1002 Financial Accounting Lab [REPEAT COURSE] in Room Khyber I on Friday from 15:50 to 17:10."
     },
     {
       "id": "FSM-FRI-Khyber II-0830",

@@ -22,6 +22,23 @@ type ClassEntry = {
   is_cancelled?: boolean;
 };
 
+const normalizeClassData = (items: ClassEntry[]): ClassEntry[] => {
+  return items.map((item) => {
+    if (
+      item.school === 'School of Management' &&
+      item.section &&
+      ['FT3A', 'AF3B', 'BBA3A'].includes(item.section)
+    ) {
+      return {
+        ...item,
+        section: `${item.section} (R)`,
+        is_repeat: true,
+      };
+    }
+    return item;
+  });
+};
+
 export default function TimetableViewer() {
   const [data, setData] = useState<ClassEntry[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -61,14 +78,17 @@ export default function TimetableViewer() {
       const currentDayIdx = (currentTime.getDay() + 6) % 7; 
       const currentMins = currentTime.getHours() * 60 + currentTime.getMinutes();
 
-      const filtered = data.filter((c: ClassEntry) => 
-        c.school === selectedSchool && 
-        c.department === selectedDepartment && 
-        c.batch === selectedBatch && 
-        c.section === selectedSection &&
-        !c.is_cancelled &&
-        (showRepeated ? true : !c.is_repeat)
-      );
+      const filtered = data.filter((c: ClassEntry) => {
+        const baseSection = c.section ? c.section.replace(/\d+$/, '') : '';
+        return (
+          c.school === selectedSchool && 
+          c.department === selectedDepartment && 
+          c.batch === selectedBatch && 
+          (baseSection === selectedSection || c.section === selectedSection) &&
+          !c.is_cancelled &&
+          (showRepeated ? true : !c.is_repeat)
+        );
+      });
 
       if (filtered.length === 0) return null;
 
@@ -168,7 +188,13 @@ export default function TimetableViewer() {
         if (p.selectedSchool) setSelectedSchool(p.selectedSchool);
         if (p.selectedDepartment) setSelectedDepartment(p.selectedDepartment);
         if (p.selectedBatch) setSelectedBatch(p.selectedBatch);
-        if (p.selectedSection) setSelectedSection(p.selectedSection);
+        if (p.selectedSection) {
+          let sec = p.selectedSection;
+          if (p.selectedSchool === 'School of Management' && ['FT3A', 'AF3B', 'BBA3A'].includes(sec)) {
+            sec = `${sec} (R)`;
+          }
+          setSelectedSection(sec);
+        }
       } catch (e) {
         console.error("Failed to parse cached filters", e);
       }
@@ -181,7 +207,7 @@ export default function TimetableViewer() {
       try {
         const parsed = JSON.parse(cached);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          setData(parsed);
+          setData(normalizeClassData(parsed));
           setLoading(false);
         }
         if (cachedTimes) {
@@ -242,7 +268,8 @@ export default function TimetableViewer() {
         const allData = [...compData.classes, ...mgtData.classes, ...engData.classes];
 
         if (allData.length > 0) {
-          setData(allData);
+          const normalizedData = normalizeClassData(allData);
+          setData(normalizedData);
 
           const newTimestamps = {
             comp: compData.last_updated,
@@ -251,7 +278,7 @@ export default function TimetableViewer() {
           };
           setLastUpdated(newTimestamps);
 
-          localStorage.setItem('timetable_data', JSON.stringify(allData));
+          localStorage.setItem('timetable_data', JSON.stringify(normalizedData));
           localStorage.setItem('timetable_timestamps', JSON.stringify(newTimestamps));
           setOfflineMode(false);
           setLoading(false);
@@ -448,6 +475,27 @@ export default function TimetableViewer() {
         return a.time_start.localeCompare(b.time_start);
       });
   }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, showRepeated]);
+
+  // Background monitoring system: check if repeated courses exist for the active combination of filters
+  const hasRepeatedCourses = useMemo(() => {
+    if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay || !data.length) {
+      return false;
+    }
+
+    return data.some((entry) => {
+      const baseSection = entry.section ? entry.section.replace(/\d+$/, '') : '';
+      return (
+        entry.school === selectedSchool &&
+        entry.department === selectedDepartment &&
+        entry.batch === selectedBatch &&
+        (baseSection === selectedSection || entry.section === selectedSection) &&
+        entry.day === selectedDay &&
+        Boolean(entry.is_repeat)
+      );
+    });
+  }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay]);
+
+  const shouldAnimateRepeated = hasRepeatedCourses && !showRepeated;
 
   const formatTime = (isoString: string | null) => {
     if (!isoString) return 'Unknown';
@@ -681,10 +729,13 @@ export default function TimetableViewer() {
                     <button
                       onClick={() => setShowRepeated(!showRepeated)}
                       disabled={loading}
-                      className={`h-[40px] rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center ${showRepeated
-                        ? 'bg-indigo-600 text-slate-900 dark:text-white border-transparent'
-                        : 'bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10 hover:bg-white dark:bg-slate-900'
-                        }`}
+                      className={`h-[40px] rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
+                        showRepeated
+                          ? 'bg-indigo-600 text-white border-transparent shadow-sm'
+                          : shouldAnimateRepeated
+                          ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500 animate-aggressive-breathing'
+                          : 'bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10 hover:bg-white dark:bg-slate-900'
+                      }`}
                     >
                       {showRepeated ? 'Show: ON' : 'Show: OFF'}
                     </button>
