@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T00:00:10.385321Z",
+  "last_updated": "2026-09-05T04:13:56.503836Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -21338,8 +21338,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-C) has Ideology of Pak in Room C-602 on Saturday (Sep. 05, 2026) from 09:30 to 11:15."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-C) has Ideology of Pak in Room C-602 on Saturday (Sep. 05, 2026) from 09:30 to 11:15."
     },
     {
       "id": "FSC-SAT-C602-1130-SEC",
@@ -21458,8 +21458,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-E) has Ideology of Pak in Room C-603 on Saturday (Sep. 05, 2026) from 13:00 to 14:45."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-E) has Ideology of Pak in Room C-603 on Saturday (Sep. 05, 2026) from 13:00 to 14:45."
     },
     {
       "id": "FSC-SAT-C603-1530-SEE",
@@ -22698,8 +22698,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2023, Section DS-B) has Business Research in Room D-401 on Saturday (Sep. 05, 2026) from 08:30 to 09:50."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS DS (Batch 2023, Section DS-B) has Business Research in Room D-401 on Saturday (Sep. 05, 2026) from 08:30 to 09:50."
     },
     {
       "id": "FSC-SAT-D401-1000-DSB",
