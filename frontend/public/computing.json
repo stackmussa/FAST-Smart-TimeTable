@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T08:23:59.082366Z",
+  "last_updated": "2026-09-05T11:55:07.997921Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -280,6 +280,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CS (Batch 2026, Section CS-D) has Islamic in Room C-304 on Monday from 13:00 to 14:45."
+    },
+    {
+      "id": "FSC-MON-C304-1500-CSD",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Seerah",
+      "section": "CS-D",
+      "instructor": null,
+      "room": "C-304",
+      "day": "Monday",
+      "time_start": "15:00",
+      "time_end": "16:45",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-D) has Seerah in Room C-304 on Monday from 15:00 to 16:45."
     },
     {
       "id": "FSC-MON-C305-0830-CSG",
@@ -2140,6 +2160,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS AI (Batch 2025, Section AI-C) has LA in Room D-303 on Monday from 11:30 to 12:50."
+    },
+    {
+      "id": "FSC-MON-D303-1300-CSE",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "UHQ-I&II",
+      "section": "CS-E",
+      "instructor": null,
+      "room": "D-303",
+      "day": "Monday",
+      "time_start": "13:00",
+      "time_end": "14:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-E) has UHQ-I&II in Room D-303 on Monday from 13:00 to 14:50."
     },
     {
       "id": "FSC-MON-D304-0830-AIB",
@@ -11502,6 +11542,26 @@
       "rag_summary": "BS AI (Batch 2026, Section AI-B) has Calculus in Room D-311 on Wednesday from 13:00 to 14:20."
     },
     {
+      "id": "FSC-WED-D311-1555-AIA",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "Unknown",
+      "course_name": "AI Prod Dev",
+      "section": "AI-A",
+      "instructor": null,
+      "room": "D-311",
+      "day": "Wednesday",
+      "time_start": "15:55",
+      "time_end": "17:15",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS AI (Batch 2023, Section AI-A) has AI Prod Dev in Room D-311 on Wednesday from 15:55 to 17:15."
+    },
+    {
       "id": "FSC-WED-D312-0830-AIB",
       "school": "School of Computing",
       "department": "AI",
@@ -12020,26 +12080,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS AI (Batch 2023, Section AI-A) has Edge Comp in Room D-402 on Wednesday from 13:00 to 14:20."
-    },
-    {
-      "id": "FSC-WED-D402-1555-AIA",
-      "school": "School of Computing",
-      "department": "AI",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "AI Prod Dev",
-      "section": "AI-A",
-      "instructor": null,
-      "room": "D-402",
-      "day": "Wednesday",
-      "time_start": "15:55",
-      "time_end": "17:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2023, Section AI-A) has AI Prod Dev in Room D-402 on Wednesday from 15:55 to 17:15."
     },
     {
       "id": "FSC-WED-D403-0830-AIA",
@@ -19802,6 +19842,26 @@
       "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-B) has Ideology of Pak in Room C-302 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
     },
     {
+      "id": "FSC-SAT-C302-1430-SEC1",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab",
+      "section": "SE-C1",
+      "instructor": null,
+      "room": "C-302",
+      "day": "Saturday (Sep. 05, 2026)",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab (Lab) in Room C-302 on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+    },
+    {
       "id": "FSC-SAT-C303-0830-CSC",
       "school": "School of Computing",
       "department": "CS",
@@ -24638,8 +24698,8 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
-      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
+      "is_cancelled": false,
+      "rag_summary": "BS SE (Batch 2026, Section SE-C1) has Func Eng Lab (Lab) in Room CALL-3 (A-308) on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-Mehran2 (A306)-1130-CSF2",
