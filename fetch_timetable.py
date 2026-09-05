@@ -723,6 +723,7 @@ def parse_fse() -> List[Dict[str, Any]]:
     return entries
 
 def save_with_metadata(filepath, new_entries):
+    """Saves entries to JSON. Returns True if data changed, False otherwise."""
     import datetime, os
     now_iso = datetime.datetime.utcnow().isoformat() + "Z"
     
@@ -738,11 +739,11 @@ def save_with_metadata(filepath, new_entries):
         except Exception as e:
             logging.warning(f"Failed to read existing data for {filepath}: {e}")
             pass
-            
-    if json.dumps(old_entries, sort_keys=True) == json.dumps(new_entries, sort_keys=True):
-        pass # Data identical, keep old timestamp
-    else:
-        last_updated = now_iso # Data changed
+    
+    changed = json.dumps(old_entries, sort_keys=True) != json.dumps(new_entries, sort_keys=True)
+    
+    if changed:
+        last_updated = now_iso
         
     final_data = {
         "last_updated": last_updated,
@@ -751,29 +752,72 @@ def save_with_metadata(filepath, new_entries):
     
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, indent=2, ensure_ascii=False)
+    
+    return changed
 
 def main():
     logging.info("Starting timetable fetch and parse process.")
     
     import os
+    import datetime
     out_dir = "frontend/public"
     os.makedirs(out_dir, exist_ok=True)
     
+    changed_files = []
+    
     logging.info("Parsing FSC (School of Computing)...")
     fsc_entries = parse_fsc()
-    save_with_metadata(os.path.join(out_dir, "computing.json"), fsc_entries)
-    logging.info(f"Saved {len(fsc_entries)} entries to computing.json")
+    if save_with_metadata(os.path.join(out_dir, "computing.json"), fsc_entries):
+        changed_files.append("Computing")
+        logging.info(f"computing.json CHANGED — {len(fsc_entries)} entries")
+    else:
+        logging.info(f"computing.json unchanged — {len(fsc_entries)} entries")
     
     logging.info("Parsing FSM (School of Management)...")
     fsm_entries = parse_fsm()
-    save_with_metadata(os.path.join(out_dir, "management.json"), fsm_entries)
-    logging.info(f"Saved {len(fsm_entries)} entries to management.json")
+    if save_with_metadata(os.path.join(out_dir, "management.json"), fsm_entries):
+        changed_files.append("Management")
+        logging.info(f"management.json CHANGED — {len(fsm_entries)} entries")
+    else:
+        logging.info(f"management.json unchanged — {len(fsm_entries)} entries")
     
     logging.info("Parsing FSE (School of Engineering)...")
     fse_entries = parse_fse()
-    save_with_metadata(os.path.join(out_dir, "engineering.json"), fse_entries)
-    logging.info(f"Saved {len(fse_entries)} entries to engineering.json")
-        
+    if save_with_metadata(os.path.join(out_dir, "engineering.json"), fse_entries):
+        changed_files.append("Engineering")
+        logging.info(f"engineering.json CHANGED — {len(fse_entries)} entries")
+    else:
+        logging.info(f"engineering.json unchanged — {len(fse_entries)} entries")
+    
+    # ── Write sync_metadata.json ──────────────────────────────────────────────
+    sync_meta_path = os.path.join(out_dir, "sync_metadata.json")
+    
+    # If changes occurred, stamp with current time; otherwise preserve existing timestamp
+    if changed_files:
+        new_timestamp = int(time.time())
+    else:
+        try:
+            with open(sync_meta_path, 'r', encoding='utf-8') as f:
+                existing_meta = json.load(f)
+                new_timestamp = existing_meta.get("last_updated", int(time.time()))
+        except Exception:
+            new_timestamp = int(time.time())
+    
+    sync_metadata = {
+        "last_updated": new_timestamp,
+        "changed_files": changed_files,
+        "last_checked": datetime.datetime.utcnow().isoformat() + "Z"
+    }
+    
+    with open(sync_meta_path, 'w', encoding='utf-8') as f:
+        json.dump(sync_metadata, f, indent=2, ensure_ascii=False)
+    
+    if changed_files:
+        logging.info(f"Changes detected in: {', '.join(changed_files)}")
+    else:
+        logging.info("No changes detected in any timetable.")
+    
+    logging.info(f"sync_metadata.json written: {sync_metadata}")
     logging.info("Process completed successfully.")
 
 if __name__ == "__main__":

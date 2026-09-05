@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { Megaphone, Calendar, Users, Compass, CheckCircle2, Clock, Sun, Moon, Timer, X, Sparkles } from 'lucide-react';
+import { Megaphone, Calendar, Users, Compass, CheckCircle2, Clock, Sun, Moon, Timer, X, Sparkles, Bell } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import FacultyFinder from './FacultyFinder';
 
@@ -62,6 +62,7 @@ export default function TimetableViewer() {
   const [countdownText, setCountdownText] = useState("");
   const [mounted, setMounted] = useState(false);
   const [initialDaySet, setInitialDaySet] = useState(false);
+  const [updateBanner, setUpdateBanner] = useState<{ show: boolean; changedFiles: string[] }>({ show: false, changedFiles: [] });
 
   useEffect(() => {
     setMounted(true);
@@ -280,6 +281,24 @@ export default function TimetableViewer() {
 
           localStorage.setItem('timetable_data', JSON.stringify(normalizedData));
           localStorage.setItem('timetable_timestamps', JSON.stringify(newTimestamps));
+
+          // Stamp last_synced_timestamp on first visit only — subsequent updates
+          // are acknowledged via the banner click handler
+          if (!localStorage.getItem('last_synced_timestamp')) {
+            try {
+              const metaRes = await fetch(`${basePath}/sync_metadata.json?t=${Date.now()}`, {
+                cache: 'no-store' as RequestCache,
+                headers: { 'Cache-Control': 'no-cache, no-store', 'Pragma': 'no-cache' }
+              });
+              if (metaRes.ok) {
+                const meta = await metaRes.json();
+                if (meta.last_updated) {
+                  localStorage.setItem('last_synced_timestamp', String(meta.last_updated));
+                }
+              }
+            } catch { /* silent */ }
+          }
+
           setOfflineMode(false);
           setLoading(false);
         } else {
@@ -300,6 +319,82 @@ export default function TimetableViewer() {
     
     return () => clearInterval(interval);
   }, []);
+
+  // ── Sync metadata polling: check for schedule updates every 5 minutes ──
+  useEffect(() => {
+    const checkForUpdates = async () => {
+      try {
+        const basePath = process.env.NODE_ENV === 'production' ? '/FAST-Smart-TimeTable' : '';
+        const res = await fetch(`${basePath}/sync_metadata.json?t=${Date.now()}`, {
+          cache: 'no-store' as RequestCache,
+          headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+        });
+        if (!res.ok) return;
+        const meta = await res.json();
+        const localTs = parseInt(localStorage.getItem('last_synced_timestamp') || '0', 10);
+        if (meta.last_updated > localTs && meta.changed_files?.length > 0) {
+          setUpdateBanner({ show: true, changedFiles: meta.changed_files });
+        }
+      } catch { /* silent fail — offline or not deployed yet */ }
+    };
+
+    // Initial check after a short delay (let main data load first)
+    const initialTimeout = setTimeout(checkForUpdates, 3000);
+    const interval = setInterval(checkForUpdates, 300000); // Poll every 5 minutes
+
+    return () => {
+      clearTimeout(initialTimeout);
+      clearInterval(interval);
+    };
+  }, []);
+
+  // ── Handle update banner click: refetch all data ──
+  const handleUpdateBannerClick = async () => {
+    setUpdateBanner({ show: false, changedFiles: [] });
+    setLoading(true);
+
+    const basePath = process.env.NODE_ENV === 'production' ? '/FAST-Smart-TimeTable' : '';
+    const t = Date.now();
+    const fetchOpts = { cache: 'no-store' as RequestCache, headers: { 'Cache-Control': 'no-cache, no-store', 'Pragma': 'no-cache' } };
+
+    try {
+      const [compRes, mgtRes, engRes] = await Promise.all([
+        fetch(`${basePath}/computing.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
+        fetch(`${basePath}/management.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
+        fetch(`${basePath}/engineering.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
+      ]);
+
+      const parseRes = (res: any) => {
+        if (!res) return { classes: [], last_updated: null };
+        if (Array.isArray(res)) return { classes: res, last_updated: null };
+        return { classes: res.classes || [], last_updated: res.last_updated || null };
+      };
+
+      const compData = parseRes(compRes);
+      const mgtData = parseRes(mgtRes);
+      const engData = parseRes(engRes);
+      const allData = [...compData.classes, ...mgtData.classes, ...engData.classes];
+
+      if (allData.length > 0) {
+        const normalizedData = normalizeClassData(allData);
+        setData(normalizedData);
+        const newTimestamps = { comp: compData.last_updated, mgt: mgtData.last_updated, eng: engData.last_updated };
+        setLastUpdated(newTimestamps);
+        localStorage.setItem('timetable_data', JSON.stringify(normalizedData));
+        localStorage.setItem('timetable_timestamps', JSON.stringify(newTimestamps));
+      }
+
+      // Update the synced timestamp so the banner doesn't reappear
+      const metaRes = await fetch(`${basePath}/sync_metadata.json?t=${Date.now()}`, fetchOpts);
+      if (metaRes.ok) {
+        const meta = await metaRes.json();
+        localStorage.setItem('last_synced_timestamp', String(meta.last_updated));
+      }
+    } catch (err) {
+      console.error('Failed to refresh data from banner click:', err);
+    }
+    setLoading(false);
+  };
 
   // Save filters to localStorage whenever they change
   useEffect(() => {
@@ -516,6 +611,24 @@ export default function TimetableViewer() {
 
   return (
     <div className="min-h-screen font-sans bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 overflow-x-hidden selection:bg-indigo-500/30">
+
+      {/* Schedule Update Banner */}
+      {updateBanner.show && (
+        <div
+          onClick={handleUpdateBannerClick}
+          className="fixed top-0 left-0 right-0 z-[200] cursor-pointer bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 text-white text-center py-3 px-4 text-sm font-semibold shadow-lg shadow-indigo-500/30"
+          style={{ animation: 'slideInFromTop 0.5s ease-out' }}
+        >
+          <div className="max-w-4xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <Bell className="w-4 h-4 animate-bounce" />
+            <span>
+              Schedule updated! Changes detected in: <strong>{updateBanner.changedFiles.join(', ')}</strong>.
+            </span>
+            <span className="underline decoration-white/60 underline-offset-2 hover:decoration-white transition-all">Click here to load latest data.</span>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <header className="border-b border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -956,6 +1069,16 @@ export default function TimetableViewer() {
         @keyframes shimmer {
           100% {
             transform: translateX(100%);
+          }
+        }
+        @keyframes slideInFromTop {
+          from {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
           }
         }
       `}</style>
