@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 URLS = {
     "FSC": "https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/htmlview?gid=1174567785",
-    "FSM": "https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/export?format=xlsx&gid=0",
+    "FSM": "https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/export?format=xlsx",
     "FSE": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/export?format=xlsx&gid=115356958"
 }
 
@@ -440,6 +440,26 @@ def parse_fsm() -> List[Dict[str, Any]]:
         time_slots = extract_time_slots(sheet, start_col=4)
         current_day = "Monday"
         
+        # Build Instructor Map from Course Plan
+        instructor_map = {}
+        if 'Course Plan ' in wb.sheetnames:
+            cp_sheet = wb['Course Plan ']
+            for r_idx in range(4, cp_sheet.max_row + 1):
+                c_code = clean_text(cp_sheet.cell(row=r_idx, column=2).value)
+                c_title = clean_text(cp_sheet.cell(row=r_idx, column=3).value)
+                c_sections_raw = clean_text(cp_sheet.cell(row=r_idx, column=7).value)
+                instructor = clean_text(cp_sheet.cell(row=r_idx, column=8).value)
+                
+                if c_title and c_sections_raw and instructor:
+                    sections = [s.strip().replace(' ', '') for s in c_sections_raw.split('/')]
+                    c_title_clean = c_title.lower().replace(' ', '')
+                    c_code_clean = (c_code or "").lower().replace(' ', '')
+                    for s in sections:
+                        s_key = s.lower()
+                        if c_code_clean:
+                            instructor_map[(c_code_clean, s_key)] = instructor
+                        instructor_map[(c_title_clean, s_key)] = instructor
+        
         for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
             
@@ -539,7 +559,22 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 school = "School of Management"
                 is_lab = False
                 
+                # Match instructor
+                assigned_instructor = None
+                course_name_clean = course_name.lower().replace(' ', '')
+                section_clean = section.lower().replace(' ', '')
+                
+                if (course_name_clean, section_clean) in instructor_map:
+                    assigned_instructor = instructor_map[(course_name_clean, section_clean)]
+                else:
+                    for (k_course, k_sec), inst in instructor_map.items():
+                        if k_sec == section_clean and (k_course in course_name_clean or course_name_clean in k_course):
+                            assigned_instructor = inst
+                            break
+                            
                 summary = generate_rag_summary(school, dept_code, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
+                if assigned_instructor:
+                    summary += f" Instructor: {assigned_instructor}."
                 entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                 
                 entries.append({
@@ -551,7 +586,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     "semester": semester,
                     "course_name": course_name,
                     "section": section,
-                    "instructor": None,
+                    "instructor": assigned_instructor,
                     "room": room,
                     "day": current_day,
                     "time_start": t_start,

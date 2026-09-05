@@ -970,7 +970,7 @@ export default function TimetableViewer() {
                           </svg>
                           <span className="truncate">{cls.room}</span>
                         </div>
-                        {cls.school === 'School of Engineering' && cls.instructor && (
+                        {(cls.school === 'School of Engineering' || cls.school === 'School of Management') && cls.instructor && (
                           <div className="flex items-center text-slate-600 dark:text-slate-400 font-medium text-sm">
                             <Users className="w-4 h-4 mr-2 shrink-0" />
                             <span className="truncate">{cls.instructor}</span>
