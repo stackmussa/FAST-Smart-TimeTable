@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T04:13:56.503836Z",
+  "last_updated": "2026-09-05T08:23:59.082366Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -18122,6 +18122,26 @@
       "rag_summary": "BS AI (Batch 2025, Section AI-B) has Data St Lab (Lab) in Room IT Lab 3 (D-213) on Thursday from 14:30 to 17:15."
     },
     {
+      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSC",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "IICT Lab",
+      "section": "DS-C",
+      "instructor": null,
+      "room": "IT Lab 4-GPU (D-203)",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "17:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "[RESCHEDULED] BS DS (Batch 2026, Section DS-C) has IICT Lab (Lab) in Room IT Lab 4-GPU (D-203) on Thursday from 14:30 to 17:15."
+    },
+    {
       "id": "FSC-THU-Margala 1 (C209)-1130-CSC",
       "school": "School of Computing",
       "department": "CS",
@@ -20558,8 +20578,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS AI (Batch 2023, Section AI-B) has Research Methodology in Room C-401 on Saturday (Sep. 05, 2026) from 17:20 to 18:40."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS AI (Batch 2023, Section AI-B) has Research Methodology in Room C-401 on Saturday (Sep. 05, 2026) from 17:20 to 18:40."
     },
     {
       "id": "FSC-SAT-C402-0830-CSD",
@@ -21462,7 +21482,7 @@
       "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-E) has Ideology of Pak in Room C-603 on Saturday (Sep. 05, 2026) from 13:00 to 14:45."
     },
     {
-      "id": "FSC-SAT-C603-1530-SEE",
+      "id": "FSC-SAT-C603-1300-SEE",
       "school": "School of Computing",
       "department": "SE",
       "degree": "BS",
@@ -21473,13 +21493,13 @@
       "instructor": null,
       "room": "C-603",
       "day": "Saturday (Sep. 05, 2026)",
-      "time_start": "15:30",
-      "time_end": "16:50",
+      "time_start": "13:00",
+      "time_end": "14:20",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2026, Section SE-E) has PF in Room C-603 on Saturday (Sep. 05, 2026) from 15:30 to 16:50."
+      "rag_summary": "BS SE (Batch 2026, Section SE-E) has PF in Room C-603 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
     },
     {
       "id": "FSC-SAT-C604-0830-SEE",
@@ -21662,7 +21682,7 @@
       "rag_summary": "BS SE (Batch 2024, Section SE-B) has Algo in Room C-605 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
     },
     {
-      "id": "FSC-SAT-C605-1430-SEB",
+      "id": "FSC-SAT-C605-1130-SEB",
       "school": "School of Computing",
       "department": "SE",
       "degree": "BS",
@@ -21673,13 +21693,13 @@
       "instructor": null,
       "room": "C-605",
       "day": "Saturday (Sep. 05, 2026)",
-      "time_start": "14:30",
-      "time_end": "15:50",
+      "time_start": "11:30",
+      "time_end": "12:50",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS SE (Batch 2025, Section SE-B) has COAL in Room C-605 on Saturday (Sep. 05, 2026) from 14:30 to 15:50."
+      "rag_summary": "BS SE (Batch 2025, Section SE-B) has COAL in Room C-605 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
     },
     {
       "id": "FSC-SAT-C607-0830-SEC",
@@ -21940,6 +21960,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CY (Batch 2023, Section CY-A) has Blockchain in Room D-302 on Saturday (Sep. 05, 2026) from 08:30 to 09:50."
+    },
+    {
+      "id": "FSC-SAT-D302-1130-SEB",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "COAL",
+      "section": "SE-B",
+      "instructor": null,
+      "room": "D-302",
+      "day": "Saturday (Sep. 05, 2026)",
+      "time_start": "11:30",
+      "time_end": "12:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS SE (Batch 2025, Section SE-B) has COAL in Room D-302 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
     },
     {
       "id": "FSC-SAT-D302-1300-CYB",
@@ -22718,8 +22758,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2023, Section DS-B) has Fund of CV in Room D-401 on Saturday (Sep. 05, 2026) from 10:00 to 11:20."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS DS (Batch 2023, Section DS-B) has Fund of CV in Room D-401 on Saturday (Sep. 05, 2026) from 10:00 to 11:20."
     },
     {
       "id": "FSC-SAT-D401-1130-DSA",
@@ -22738,8 +22778,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2023, Section DS-A) has Fund of CV in Room D-401 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS DS (Batch 2023, Section DS-A) has Fund of CV in Room D-401 on Saturday (Sep. 05, 2026) from 11:30 to 12:50."
     },
     {
       "id": "FSC-SAT-D401-1300-DSA",
@@ -22758,8 +22798,8 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 2023, Section DS-A) has Business Research in Room D-401 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
+      "is_cancelled": true,
+      "rag_summary": "[CANCELLED] BS DS (Batch 2023, Section DS-A) has Business Research in Room D-401 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
     },
     {
       "id": "FSC-SAT-D402-0830-AIB",
@@ -22960,6 +23000,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CS (Batch 2025, Section CS-H) has UHQ-I&II in Room D-404 on Saturday (Sep. 05, 2026) from 09:30 to 11:20."
+    },
+    {
+      "id": "FSC-SAT-D404-1300-CYA",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng",
+      "section": "CY-A",
+      "instructor": null,
+      "room": "D-404",
+      "day": "Saturday (Sep. 05, 2026)",
+      "time_start": "13:00",
+      "time_end": "14:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS CY (Batch 2026, Section CY-A) has Func Eng in Room D-404 on Saturday (Sep. 05, 2026) from 13:00 to 14:45."
     },
     {
       "id": "FSC-SAT-D405-0830-CSA",
@@ -23420,26 +23480,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CY (Batch 2025, Section CY-B) has COAL in Room D-415 on Saturday (Sep. 05, 2026) from 13:00 to 14:20."
-    },
-    {
-      "id": "FSC-SAT-D415-1430-CYA",
-      "school": "School of Computing",
-      "department": "CY",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "Func Eng",
-      "section": "CY-A",
-      "instructor": null,
-      "room": "D-415",
-      "day": "Saturday (Sep. 05, 2026)",
-      "time_start": "14:30",
-      "time_end": "16:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS CY (Batch 2026, Section CY-A) has Func Eng in Room D-415 on Saturday (Sep. 05, 2026) from 14:30 to 16:15."
     },
     {
       "id": "FSC-SAT-D416-0830-CYD",
