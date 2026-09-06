@@ -906,7 +906,7 @@ export default function TimetableViewer() {
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {filteredClasses.map((cls, idx) => (
-                    <div key={cls.id || idx} className="bg-white dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between">
+                    <div key={`${cls.id || 'class'}-${idx}`} className="bg-white dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between">
                       <div>
                         <div className="flex justify-between items-start mb-3 gap-4">
                           <div className="flex-1">
@@ -922,13 +922,7 @@ export default function TimetableViewer() {
                                 </span>
                               )}
                               {cls.is_repeat && (
-                                <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold border animate-pulse uppercase tracking-widest ${
-                                  cls.school === 'School of Engineering'
-                                    ? 'bg-[#BDD7EE]/10 text-[#BDD7EE] border-[#BDD7EE]/20 shadow-[0_0_10px_rgba(189,215,238,0.4)]'
-                                    : cls.school === 'School of Management'
-                                    ? 'bg-[#84C560]/10 text-[#84C560] border-[#84C560]/20 shadow-[0_0_10px_rgba(132,197,96,0.4)]'
-                                    : 'bg-amber-500/10 text-amber-400 border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.4)]'
-                                }`}>
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold border animate-pulse uppercase tracking-widest bg-amber-500/10 text-amber-400 border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.4)]">
                                   Repeated
                                 </span>
                               )}
