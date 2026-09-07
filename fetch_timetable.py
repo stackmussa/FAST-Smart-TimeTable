@@ -601,6 +601,8 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 assigned_instructor = None
                 course_name_clean = course_name.lower().replace(' ', '')
                 section_clean = section.lower().replace(' ', '')
+                if section_clean.startswith("bsba"):
+                    section_clean = section_clean.replace("bsba", "ba", 1)
                 
                 if (course_name_clean, section_clean) in instructor_map:
                     assigned_instructor = instructor_map[(course_name_clean, section_clean)]

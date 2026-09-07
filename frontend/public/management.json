@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T12:22:23.305339Z",
+  "last_updated": "2026-09-07T22:17:34.402935Z",
   "classes": [
     {
       "id": "FSM-MON-A01-0830",
@@ -50,7 +50,7 @@
       "semester": "Unknown",
       "course_name": "MG2003 Consumer Behaviour",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Sajjad Hussain",
       "room": "A-01",
       "day": "Monday",
       "time_start": "14:25",
@@ -59,7 +59,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG2003 Consumer Behaviour in Room A-01 on Monday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG2003 Consumer Behaviour in Room A-01 on Monday from 14:25 to 15:45. Instructor: Sajjad Hussain."
     },
     {
       "id": "FSM-MON-A02-0830",
@@ -470,7 +470,7 @@
       "semester": "Unknown",
       "course_name": "SS1015 Pakistan Studies",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Mr. M. Ajmal",
       "room": "A-102",
       "day": "Monday",
       "time_start": "08:30",
@@ -479,7 +479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has SS1015 Pakistan Studies in Room A-102 on Monday from 08:30 to 10:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has SS1015 Pakistan Studies in Room A-102 on Monday from 08:30 to 10:20. Instructor: Mr. M. Ajmal."
     },
     {
       "id": "FSM-MON-A102-1130",
@@ -490,7 +490,7 @@
       "semester": "Unknown",
       "course_name": "SS1016 English - I",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Mr Hasham",
       "room": "A-102",
       "day": "Monday",
       "time_start": "11:30",
@@ -499,7 +499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has SS1016 English - I in Room A-102 on Monday from 11:30 to 13:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has SS1016 English - I in Room A-102 on Monday from 11:30 to 13:20. Instructor: Mr Hasham."
     },
     {
       "id": "FSM-MON-A102-1425",
@@ -510,7 +510,7 @@
       "semester": "Unknown",
       "course_name": "AF 3001 Financial Management",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "A-102",
       "day": "Monday",
       "time_start": "14:25",
@@ -519,7 +519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has AF 3001 Financial Management in Room A-102 on Monday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has AF 3001 Financial Management in Room A-102 on Monday from 14:25 to 15:45. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-MON-A102-1550",
@@ -530,7 +530,7 @@
       "semester": "Unknown",
       "course_name": "AF 3001 Financial Management",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "A-102",
       "day": "Monday",
       "time_start": "15:50",
@@ -539,7 +539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has AF 3001 Financial Management in Room A-102 on Monday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has AF 3001 Financial Management in Room A-102 on Monday from 15:50 to 17:10. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-MON-A103-0830",
@@ -630,7 +630,7 @@
       "semester": "Unknown",
       "course_name": "CS2003 Data Structures and Business Application",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "A-103",
       "day": "Monday",
       "time_start": "14:25",
@@ -639,7 +639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CS2003 Data Structures and Business Application in Room A-103 on Monday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CS2003 Data Structures and Business Application in Room A-103 on Monday from 14:25 to 15:45. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-MON-A103-1550",
@@ -650,7 +650,7 @@
       "semester": "Unknown",
       "course_name": "MG3004 Human Resource Management",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Hamnah Rahat",
       "room": "A-103",
       "day": "Monday",
       "time_start": "15:50",
@@ -659,7 +659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3004 Human Resource Management in Room A-103 on Monday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3004 Human Resource Management in Room A-103 on Monday from 15:50 to 17:10. Instructor: Hamnah Rahat."
     },
     {
       "id": "FSM-MON-A104-0830",
@@ -670,7 +670,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Ali Hasnain Sayed",
       "room": "A-104",
       "day": "Monday",
       "time_start": "08:30",
@@ -679,7 +679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1001 Fundamental of Management in Room A-104 on Monday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1001 Fundamental of Management in Room A-104 on Monday from 08:30 to 09:50. Instructor: Ali Hasnain Sayed."
     },
     {
       "id": "FSM-MON-A104-1000",
@@ -790,7 +790,7 @@
       "semester": "Unknown",
       "course_name": "MG4011 Entreprenureship",
       "section": "BSBA07B",
-      "instructor": null,
+      "instructor": "Abdul Wahab",
       "room": "A- 201",
       "day": "Monday",
       "time_start": "11:30",
@@ -799,7 +799,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has MG4011 Entreprenureship in Room A- 201 on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has MG4011 Entreprenureship in Room A- 201 on Monday from 11:30 to 12:50. Instructor: Abdul Wahab."
     },
     {
       "id": "FSM-MON-A 201-1300",
@@ -810,7 +810,7 @@
       "semester": "Unknown",
       "course_name": "MG4011 Entreprenureship",
       "section": "BSBA07A",
-      "instructor": null,
+      "instructor": "Abdul Wahab",
       "room": "A- 201",
       "day": "Monday",
       "time_start": "13:00",
@@ -819,7 +819,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has MG4011 Entreprenureship in Room A- 201 on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has MG4011 Entreprenureship in Room A- 201 on Monday from 13:00 to 14:20. Instructor: Abdul Wahab."
     },
     {
       "id": "FSM-MON-A 201-1425",
@@ -1030,7 +1030,7 @@
       "semester": "Unknown",
       "course_name": "SS1022/SS1021 U-Holy Quran-I&II",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Dr M Naeem",
       "room": "A- 203",
       "day": "Monday",
       "time_start": "14:25",
@@ -1039,7 +1039,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has SS1022/SS1021 U-Holy Quran-I&II in Room A- 203 on Monday from 14:25 to 16:15."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has SS1022/SS1021 U-Holy Quran-I&II in Room A- 203 on Monday from 14:25 to 16:15. Instructor: Dr M Naeem."
     },
     {
       "id": "FSM-MON-A 210-1000",
@@ -1230,7 +1230,7 @@
       "semester": "Unknown",
       "course_name": "SS1015 Pakistan Studies",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Nadia Umair",
       "room": "A-301",
       "day": "Monday",
       "time_start": "08:30",
@@ -1239,7 +1239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has SS1015 Pakistan Studies in Room A-301 on Monday from 08:30 to 10:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has SS1015 Pakistan Studies in Room A-301 on Monday from 08:30 to 10:20. Instructor: Nadia Umair."
     },
     {
       "id": "FSM-MON-A301-1130",
@@ -1310,7 +1310,7 @@
       "semester": "Unknown",
       "course_name": "BA3002 Business Data and Text Mining",
       "section": "BSBA07A",
-      "instructor": null,
+      "instructor": "Usama Arshad",
       "room": "A-302",
       "day": "Monday",
       "time_start": "11:30",
@@ -1319,7 +1319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has BA3002 Business Data and Text Mining in Room A-302 on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has BA3002 Business Data and Text Mining in Room A-302 on Monday from 11:30 to 12:50. Instructor: Usama Arshad."
     },
     {
       "id": "FSM-MON-A302-1300",
@@ -1330,7 +1330,7 @@
       "semester": "Unknown",
       "course_name": "BA3002 Business Data and Text Mining",
       "section": "BSBA07B",
-      "instructor": null,
+      "instructor": "Usama Arshad",
       "room": "A-302",
       "day": "Monday",
       "time_start": "13:00",
@@ -1339,7 +1339,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has BA3002 Business Data and Text Mining in Room A-302 on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has BA3002 Business Data and Text Mining in Room A-302 on Monday from 13:00 to 14:20. Instructor: Usama Arshad."
     },
     {
       "id": "FSM-MON-A302-1425",
@@ -1490,7 +1490,7 @@
       "semester": "Unknown",
       "course_name": "CS2016 Programming for Business",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "A-305",
       "day": "Monday",
       "time_start": "11:30",
@@ -1499,7 +1499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CS2016 Programming for Business in Room A-305 on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CS2016 Programming for Business in Room A-305 on Monday from 11:30 to 12:50. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-MON-A305-1300",
@@ -1510,7 +1510,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Muhammad Nadeem Sarwar",
       "room": "A-305",
       "day": "Monday",
       "time_start": "13:00",
@@ -1519,7 +1519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2012 Business Economics in Room A-305 on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2012 Business Economics in Room A-305 on Monday from 13:00 to 14:20. Instructor: Muhammad Nadeem Sarwar."
     },
     {
       "id": "FSM-MON-A305-1425",
@@ -1530,7 +1530,7 @@
       "semester": "Unknown",
       "course_name": "SS1022/SS1021 U-Holy Quran-I&II",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Mr Usama Islam",
       "room": "A-305",
       "day": "Monday",
       "time_start": "14:25",
@@ -1539,7 +1539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has SS1022/SS1021 U-Holy Quran-I&II in Room A-305 on Monday from 14:25 to 16:15."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has SS1022/SS1021 U-Holy Quran-I&II in Room A-305 on Monday from 14:25 to 16:15. Instructor: Mr Usama Islam."
     },
     {
       "id": "FSM-MON-A310-1000",
@@ -1570,7 +1570,7 @@
       "semester": "Unknown",
       "course_name": "MG2011 Environmental Science and Sustainability for Business",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Qurrat Ul Ain",
       "room": "A-310",
       "day": "Monday",
       "time_start": "11:30",
@@ -1579,7 +1579,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2011 Environmental Science and Sustainability for Business in Room A-310 on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2011 Environmental Science and Sustainability for Business in Room A-310 on Monday from 11:30 to 12:50. Instructor: Qurrat Ul Ain."
     },
     {
       "id": "FSM-MON-A310-1300",
@@ -1590,7 +1590,7 @@
       "semester": "Unknown",
       "course_name": "MG2009 Data Analysis for Business II",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Asma Masood Malik",
       "room": "A-310",
       "day": "Monday",
       "time_start": "13:00",
@@ -1599,7 +1599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2009 Data Analysis for Business II in Room A-310 on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2009 Data Analysis for Business II in Room A-310 on Monday from 13:00 to 14:20. Instructor: Asma Masood Malik."
     },
     {
       "id": "FSM-MON-A310-1425",
@@ -1690,7 +1690,7 @@
       "semester": "Unknown",
       "course_name": "MG2009 Data Analysis for Business II",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Asma Masood Malik",
       "room": "A-311",
       "day": "Monday",
       "time_start": "11:30",
@@ -1699,7 +1699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2009 Data Analysis for Business II in Room A-311 on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2009 Data Analysis for Business II in Room A-311 on Monday from 11:30 to 12:50. Instructor: Asma Masood Malik."
     },
     {
       "id": "FSM-MON-A311-1300",
@@ -1710,7 +1710,7 @@
       "semester": "Unknown",
       "course_name": "MG2011 Environmental Science and Sustainability for Business",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Qurrat Ul Ain",
       "room": "A-311",
       "day": "Monday",
       "time_start": "13:00",
@@ -1719,7 +1719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2011 Environmental Science and Sustainability for Business in Room A-311 on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2011 Environmental Science and Sustainability for Business in Room A-311 on Monday from 13:00 to 14:20. Instructor: Qurrat Ul Ain."
     },
     {
       "id": "FSM-MON-A311-1425",
@@ -1950,7 +1950,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Hasnain Abbas Naqvi",
       "room": "A-316",
       "day": "Monday",
       "time_start": "08:30",
@@ -1959,7 +1959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2012 Business Economics in Room A-316 on Monday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2012 Business Economics in Room A-316 on Monday from 08:30 to 09:50. Instructor: Hasnain Abbas Naqvi."
     },
     {
       "id": "FSM-MON-A316-1000",
@@ -1970,7 +1970,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Hasnain Abbas Naqvi",
       "room": "A-316",
       "day": "Monday",
       "time_start": "10:00",
@@ -1979,7 +1979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2012 Business Economics in Room A-316 on Monday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2012 Business Economics in Room A-316 on Monday from 10:00 to 11:20. Instructor: Hasnain Abbas Naqvi."
     },
     {
       "id": "FSM-MON-A316-1130",
@@ -2290,7 +2290,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "KK-II",
       "day": "Monday",
       "time_start": "08:30",
@@ -2299,7 +2299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has CL1001 IT in Business-Lab in Room KK-II on Monday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has CL1001 IT in Business-Lab in Room KK-II on Monday from 08:30 to 09:50. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-MON-KKII-1000",
@@ -2310,7 +2310,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "KK-II",
       "day": "Monday",
       "time_start": "10:00",
@@ -2319,7 +2319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has CL1001 IT in Business-Lab in Room KK-II on Monday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has CL1001 IT in Business-Lab in Room KK-II on Monday from 10:00 to 11:20. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-MON-KKII-1130",
@@ -2410,7 +2410,7 @@
       "semester": "Unknown",
       "course_name": "LG2009Data Analysis for Business -II Lab",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Ali Hassan",
       "room": "KK-III",
       "day": "Monday",
       "time_start": "08:30",
@@ -2419,7 +2419,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has LG2009Data Analysis for Business -II Lab in Room KK-III on Monday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has LG2009Data Analysis for Business -II Lab in Room KK-III on Monday from 08:30 to 09:50. Instructor: Ali Hassan."
     },
     {
       "id": "FSM-MON-KKIII-1000",
@@ -2430,7 +2430,7 @@
       "semester": "Unknown",
       "course_name": "LG2009Data Analysis for Business -II Lab",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Ali Hassan",
       "room": "KK-III",
       "day": "Monday",
       "time_start": "10:00",
@@ -2439,7 +2439,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has LG2009Data Analysis for Business -II Lab in Room KK-III on Monday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has LG2009Data Analysis for Business -II Lab in Room KK-III on Monday from 10:00 to 11:20. Instructor: Ali Hassan."
     },
     {
       "id": "FSM-MON-KKIII-1130",
@@ -2450,7 +2450,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "KK-III",
       "day": "Monday",
       "time_start": "11:30",
@@ -2459,7 +2459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has CL1001 IT in Business-Lab in Room KK-III on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has CL1001 IT in Business-Lab in Room KK-III on Monday from 11:30 to 12:50. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-MON-KKIII-1300",
@@ -2470,7 +2470,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "KK-III",
       "day": "Monday",
       "time_start": "13:00",
@@ -2479,7 +2479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has CL1001 IT in Business-Lab in Room KK-III on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has CL1001 IT in Business-Lab in Room KK-III on Monday from 13:00 to 14:20. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-MON-KKIII-1425",
@@ -2530,7 +2530,7 @@
       "semester": "Unknown",
       "course_name": "CL2003 Data Structures and Business Application Lab",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "Khyber I",
       "day": "Monday",
       "time_start": "08:30",
@@ -2539,7 +2539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CL2003 Data Structures and Business Application Lab in Room Khyber I on Monday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CL2003 Data Structures and Business Application Lab in Room Khyber I on Monday from 08:30 to 09:50. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-MON-Khyber I-1000",
@@ -2550,7 +2550,7 @@
       "semester": "Unknown",
       "course_name": "CL2003 Data Structures and Business Application Lab",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "Khyber I",
       "day": "Monday",
       "time_start": "10:00",
@@ -2559,7 +2559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CL2003 Data Structures and Business Application Lab in Room Khyber I on Monday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CL2003 Data Structures and Business Application Lab in Room Khyber I on Monday from 10:00 to 11:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-MON-Khyber I-1130",
@@ -2650,7 +2650,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01D1",
-      "instructor": null,
+      "instructor": "Ms. Sidra Shaikh",
       "room": "Khyber II",
       "day": "Monday",
       "time_start": "11:30",
@@ -2659,7 +2659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D1) has SL1016 English - I- Lab in Room Khyber II on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D1) has SL1016 English - I- Lab in Room Khyber II on Monday from 11:30 to 12:50. Instructor: Ms. Sidra Shaikh."
     },
     {
       "id": "FSM-MON-Khyber II-1300",
@@ -2670,7 +2670,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01D1",
-      "instructor": null,
+      "instructor": "Ms. Sidra Shaikh",
       "room": "Khyber II",
       "day": "Monday",
       "time_start": "13:00",
@@ -2679,7 +2679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D1) has SL1016 English - I- Lab in Room Khyber II on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D1) has SL1016 English - I- Lab in Room Khyber II on Monday from 13:00 to 14:20. Instructor: Ms. Sidra Shaikh."
     },
     {
       "id": "FSM-MON-Khyber II-1425",
@@ -2770,7 +2770,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01D2",
-      "instructor": null,
+      "instructor": "Ms. Khanum",
       "room": "Khyber III",
       "day": "Monday",
       "time_start": "11:30",
@@ -2779,7 +2779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D2) has SL1016 English - I- Lab in Room Khyber III on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D2) has SL1016 English - I- Lab in Room Khyber III on Monday from 11:30 to 12:50. Instructor: Ms. Khanum."
     },
     {
       "id": "FSM-MON-Khyber III-1300",
@@ -2790,7 +2790,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01D2",
-      "instructor": null,
+      "instructor": "Ms. Khanum",
       "room": "Khyber III",
       "day": "Monday",
       "time_start": "13:00",
@@ -2799,7 +2799,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D2) has SL1016 English - I- Lab in Room Khyber III on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D2) has SL1016 English - I- Lab in Room Khyber III on Monday from 13:00 to 14:20. Instructor: Ms. Khanum."
     },
     {
       "id": "FSM-MON-Khyber III-1425",
@@ -2850,7 +2850,7 @@
       "semester": "Unknown",
       "course_name": "FL3001 Financial Management Lab",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "Mehran-I",
       "day": "Monday",
       "time_start": "08:30",
@@ -2859,7 +2859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 08:30 to 09:50. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-MON-MehranI-1000",
@@ -2870,7 +2870,7 @@
       "semester": "Unknown",
       "course_name": "FL3001 Financial Management Lab",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "Mehran-I",
       "day": "Monday",
       "time_start": "10:00",
@@ -2879,7 +2879,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 10:00 to 11:20. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-MON-MehranI-1130",
@@ -2890,7 +2890,7 @@
       "semester": "Unknown",
       "course_name": "FL3001 Financial Management Lab",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Rameeza Andleeb",
       "room": "Mehran-I",
       "day": "Monday",
       "time_start": "11:30",
@@ -2899,7 +2899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 11:30 to 12:50. Instructor: Rameeza Andleeb."
     },
     {
       "id": "FSM-MON-MehranI-1300",
@@ -2910,7 +2910,7 @@
       "semester": "Unknown",
       "course_name": "FL3001 Financial Management Lab",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Rameeza Andleeb",
       "room": "Mehran-I",
       "day": "Monday",
       "time_start": "13:00",
@@ -2919,7 +2919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has FL3001 Financial Management Lab in Room Mehran-I on Monday from 13:00 to 14:20. Instructor: Rameeza Andleeb."
     },
     {
       "id": "FSM-MON-MehranI-1425",
@@ -3050,7 +3050,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01C1",
-      "instructor": null,
+      "instructor": "Ms. Amna Fiaz",
       "room": "Cal-I lab",
       "day": "Monday",
       "time_start": "11:30",
@@ -3059,7 +3059,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C1) has SL1016 English - I- Lab in Room Cal-I lab on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C1) has SL1016 English - I- Lab in Room Cal-I lab on Monday from 11:30 to 12:50. Instructor: Ms. Amna Fiaz."
     },
     {
       "id": "FSM-MON-CalI lab-1300",
@@ -3070,7 +3070,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01C1",
-      "instructor": null,
+      "instructor": "Ms. Amna Fiaz",
       "room": "Cal-I lab",
       "day": "Monday",
       "time_start": "13:00",
@@ -3079,7 +3079,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C1) has SL1016 English - I- Lab in Room Cal-I lab on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C1) has SL1016 English - I- Lab in Room Cal-I lab on Monday from 13:00 to 14:20. Instructor: Ms. Amna Fiaz."
     },
     {
       "id": "FSM-MON-CalI lab-1425",
@@ -3150,7 +3150,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01C2",
-      "instructor": null,
+      "instructor": "Ms.Maheen Ali",
       "room": "Cal-II lab",
       "day": "Monday",
       "time_start": "11:30",
@@ -3159,7 +3159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C2) has SL1016 English - I- Lab in Room Cal-II lab on Monday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C2) has SL1016 English - I- Lab in Room Cal-II lab on Monday from 11:30 to 12:50. Instructor: Ms.Maheen Ali."
     },
     {
       "id": "FSM-MON-CalII lab-1300",
@@ -3170,7 +3170,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01C2",
-      "instructor": null,
+      "instructor": "Ms.Maheen Ali",
       "room": "Cal-II lab",
       "day": "Monday",
       "time_start": "13:00",
@@ -3179,7 +3179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C2) has SL1016 English - I- Lab in Room Cal-II lab on Monday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C2) has SL1016 English - I- Lab in Room Cal-II lab on Monday from 13:00 to 14:20. Instructor: Ms.Maheen Ali."
     },
     {
       "id": "FSM-MON-Room-0830",
@@ -3930,7 +3930,7 @@
       "semester": "Unknown",
       "course_name": "CS1001 IT in Business",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "A-104",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -3939,7 +3939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has CS1001 IT in Business in Room A-104 on Tuesday from 08:30 to 10:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has CS1001 IT in Business in Room A-104 on Tuesday from 08:30 to 10:20. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-TUE-A104-1130",
@@ -3950,7 +3950,7 @@
       "semester": "Unknown",
       "course_name": "MG2011 Environmental Science and Sustainability for Business",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Qurrat Ul Ain",
       "room": "A-104",
       "day": "Tuesday",
       "time_start": "11:30",
@@ -3959,7 +3959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2011 Environmental Science and Sustainability for Business in Room A-104 on Tuesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2011 Environmental Science and Sustainability for Business in Room A-104 on Tuesday from 11:30 to 12:50. Instructor: Qurrat Ul Ain."
     },
     {
       "id": "FSM-TUE-A104-1300",
@@ -3970,7 +3970,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Bilal Ahmad",
       "room": "A-104",
       "day": "Tuesday",
       "time_start": "13:00",
@@ -3979,7 +3979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has AF1003 Intro to Financial Accounting in Room A-104 on Tuesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has AF1003 Intro to Financial Accounting in Room A-104 on Tuesday from 13:00 to 14:20. Instructor: Bilal Ahmad."
     },
     {
       "id": "FSM-TUE-A104-1425",
@@ -4110,7 +4110,7 @@
       "semester": "Unknown",
       "course_name": "MG2003 Consumer Behaviour",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Usman Zafar",
       "room": "A- 201",
       "day": "Tuesday",
       "time_start": "14:25",
@@ -4119,7 +4119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG2003 Consumer Behaviour in Room A- 201 on Tuesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG2003 Consumer Behaviour in Room A- 201 on Tuesday from 14:25 to 15:45. Instructor: Usman Zafar."
     },
     {
       "id": "FSM-TUE-A 202-0830",
@@ -4290,7 +4290,7 @@
       "semester": "Unknown",
       "course_name": "CS2003 Data Structures and Business Application",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "A- 203",
       "day": "Tuesday",
       "time_start": "13:00",
@@ -4299,7 +4299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CS2003 Data Structures and Business Application in Room A- 203 on Tuesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CS2003 Data Structures and Business Application in Room A- 203 on Tuesday from 13:00 to 14:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-TUE-A 203-1425",
@@ -4470,7 +4470,7 @@
       "semester": "Unknown",
       "course_name": "MG2009 Data Analysis for Business II",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Asma Masood Malik",
       "room": "A--211",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -4479,7 +4479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2009 Data Analysis for Business II in Room A--211 on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2009 Data Analysis for Business II in Room A--211 on Tuesday from 08:30 to 09:50. Instructor: Asma Masood Malik."
     },
     {
       "id": "FSM-TUE-A211-1000",
@@ -4510,7 +4510,7 @@
       "semester": "Unknown",
       "course_name": "MG3004 Human Resource Management",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Hamnah Rahat",
       "room": "A--211",
       "day": "Tuesday",
       "time_start": "11:30",
@@ -4519,7 +4519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3004 Human Resource Management in Room A--211 on Tuesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3004 Human Resource Management in Room A--211 on Tuesday from 11:30 to 12:50. Instructor: Hamnah Rahat."
     },
     {
       "id": "FSM-TUE-A211-1300",
@@ -4550,7 +4550,7 @@
       "semester": "Unknown",
       "course_name": "SS1016 English - I",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Mr Hasham",
       "room": "A--211",
       "day": "Tuesday",
       "time_start": "14:25",
@@ -4559,7 +4559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has SS1016 English - I in Room A--211 on Tuesday from 14:25 to 16:15."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has SS1016 English - I in Room A--211 on Tuesday from 14:25 to 16:15. Instructor: Mr Hasham."
     },
     {
       "id": "FSM-TUE-A301-0830",
@@ -4870,7 +4870,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "A-305",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -4879,7 +4879,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has AF1003 Intro to Financial Accounting in Room A-305 on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has AF1003 Intro to Financial Accounting in Room A-305 on Tuesday from 08:30 to 09:50. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-TUE-A305-1000",
@@ -4890,7 +4890,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Abuzar",
       "room": "A-305",
       "day": "Tuesday",
       "time_start": "10:00",
@@ -4899,7 +4899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1011 Business Mathematics in Room A-305 on Tuesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1011 Business Mathematics in Room A-305 on Tuesday from 10:00 to 11:20. Instructor: Abuzar."
     },
     {
       "id": "FSM-TUE-A305-1130",
@@ -4950,7 +4950,7 @@
       "semester": "Unknown",
       "course_name": "CS2016 Programming for Business",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "A-305",
       "day": "Tuesday",
       "time_start": "14:25",
@@ -4959,7 +4959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CS2016 Programming for Business in Room A-305 on Tuesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CS2016 Programming for Business in Room A-305 on Tuesday from 14:25 to 15:45. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-TUE-A305-1550",
@@ -4970,7 +4970,7 @@
       "semester": "Unknown",
       "course_name": "CS2016 Programming for Business",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "A-305",
       "day": "Tuesday",
       "time_start": "15:50",
@@ -4979,7 +4979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CS2016 Programming for Business in Room A-305 on Tuesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CS2016 Programming for Business in Room A-305 on Tuesday from 15:50 to 17:10. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-TUE-A310-0830",
@@ -4990,7 +4990,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Mr. Irfan ullah",
       "room": "A-310",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -4999,7 +4999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1011 Business Mathematics in Room A-310 on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1011 Business Mathematics in Room A-310 on Tuesday from 08:30 to 09:50. Instructor: Mr. Irfan ullah."
     },
     {
       "id": "FSM-TUE-A310-1000",
@@ -5010,7 +5010,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "A-310",
       "day": "Tuesday",
       "time_start": "10:00",
@@ -5019,7 +5019,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has AF1003 Intro to Financial Accounting in Room A-310 on Tuesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has AF1003 Intro to Financial Accounting in Room A-310 on Tuesday from 10:00 to 11:20. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-TUE-A310-1130",
@@ -5110,7 +5110,7 @@
       "semester": "Unknown",
       "course_name": "MG3003 Basic Econometrics",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "A-311",
       "day": "Tuesday",
       "time_start": "10:00",
@@ -5119,7 +5119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3003 Basic Econometrics in Room A-311 on Tuesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3003 Basic Econometrics in Room A-311 on Tuesday from 10:00 to 11:20. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-TUE-A311-1130",
@@ -5210,7 +5210,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Huzam",
       "room": "A-314",
       "day": "Tuesday",
       "time_start": "13:00",
@@ -5219,7 +5219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1011 Business Mathematics in Room A-314 on Tuesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1011 Business Mathematics in Room A-314 on Tuesday from 13:00 to 14:20. Instructor: Huzam."
     },
     {
       "id": "FSM-TUE-A314-1425",
@@ -5230,7 +5230,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "A-314",
       "day": "Tuesday",
       "time_start": "14:25",
@@ -5239,7 +5239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has AF1003 Intro to Financial Accounting in Room A-314 on Tuesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has AF1003 Intro to Financial Accounting in Room A-314 on Tuesday from 14:25 to 15:45. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-TUE-A314-1550",
@@ -5250,7 +5250,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Dr. Aqeel",
       "room": "A-314",
       "day": "Tuesday",
       "time_start": "15:50",
@@ -5259,7 +5259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1001 Fundamental of Management in Room A-314 on Tuesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1001 Fundamental of Management in Room A-314 on Tuesday from 15:50 to 17:10. Instructor: Dr. Aqeel."
     },
     {
       "id": "FSM-TUE-A315-0830",
@@ -5350,7 +5350,7 @@
       "semester": "Unknown",
       "course_name": "SS1022/SS1021 U-Holy Quran-I&II",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Mr Usama Islam",
       "room": "A-316",
       "day": "Tuesday",
       "time_start": "14:25",
@@ -5359,7 +5359,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has SS1022/SS1021 U-Holy Quran-I&II in Room A-316 on Tuesday from 14:25 to 16:15."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has SS1022/SS1021 U-Holy Quran-I&II in Room A-316 on Tuesday from 14:25 to 16:15. Instructor: Mr Usama Islam."
     },
     {
       "id": "FSM-TUE-Auditoriam-1000",
@@ -5530,7 +5530,7 @@
       "semester": "Unknown",
       "course_name": "CL2003 Data Structures and Business Application Lab",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "KK-I",
       "day": "Tuesday",
       "time_start": "11:30",
@@ -5539,7 +5539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CL2003 Data Structures and Business Application Lab in Room KK-I on Tuesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CL2003 Data Structures and Business Application Lab in Room KK-I on Tuesday from 11:30 to 12:50. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-TUE-KKI-1300",
@@ -5550,7 +5550,7 @@
       "semester": "Unknown",
       "course_name": "CL2003 Data Structures and Business Application Lab",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "KK-I",
       "day": "Tuesday",
       "time_start": "13:00",
@@ -5559,7 +5559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CL2003 Data Structures and Business Application Lab in Room KK-I on Tuesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CL2003 Data Structures and Business Application Lab in Room KK-I on Tuesday from 13:00 to 14:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-TUE-KKI-1425",
@@ -5610,7 +5610,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "KK-II",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -5619,7 +5619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Tuesday from 08:30 to 09:50. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-TUE-KKII-1000",
@@ -5630,7 +5630,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "KK-II",
       "day": "Tuesday",
       "time_start": "10:00",
@@ -5639,7 +5639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Tuesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Tuesday from 10:00 to 11:20. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-TUE-KKII-1130",
@@ -5650,7 +5650,7 @@
       "semester": "Unknown",
       "course_name": "LG2009Data Analysis for Business -II Lab",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Syeda Hoor-ul-ain Ali",
       "room": "KK-II",
       "day": "Tuesday",
       "time_start": "11:30",
@@ -5659,7 +5659,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has LG2009Data Analysis for Business -II Lab in Room KK-II on Tuesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has LG2009Data Analysis for Business -II Lab in Room KK-II on Tuesday from 11:30 to 12:50. Instructor: Syeda Hoor-ul-ain Ali."
     },
     {
       "id": "FSM-TUE-KKII-1300",
@@ -5670,7 +5670,7 @@
       "semester": "Unknown",
       "course_name": "LG2009Data Analysis for Business -II Lab",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Syeda Hoor-ul-ain Ali",
       "room": "KK-II",
       "day": "Tuesday",
       "time_start": "13:00",
@@ -5679,7 +5679,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has LG2009Data Analysis for Business -II Lab in Room KK-II on Tuesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has LG2009Data Analysis for Business -II Lab in Room KK-II on Tuesday from 13:00 to 14:20. Instructor: Syeda Hoor-ul-ain Ali."
     },
     {
       "id": "FSM-TUE-KKII-1425",
@@ -5810,7 +5810,7 @@
       "semester": "Unknown",
       "course_name": "LG3003 Basic Econometrics Lab",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "Khyber I",
       "day": "Tuesday",
       "time_start": "08:30",
@@ -5819,7 +5819,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 08:30 to 09:50. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-TUE-Khyber I-1000",
@@ -5830,7 +5830,7 @@
       "semester": "Unknown",
       "course_name": "LG3003 Basic Econometrics Lab",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "Khyber I",
       "day": "Tuesday",
       "time_start": "10:00",
@@ -5839,7 +5839,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 10:00 to 11:20. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-TUE-Khyber I-1130",
@@ -5850,7 +5850,7 @@
       "semester": "Unknown",
       "course_name": "CL2016 Programming for Business -Lab",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "Khyber I",
       "day": "Tuesday",
       "time_start": "11:30",
@@ -5859,7 +5859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CL2016 Programming for Business -Lab in Room Khyber I on Tuesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CL2016 Programming for Business -Lab in Room Khyber I on Tuesday from 11:30 to 12:50. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-TUE-Khyber I-1300",
@@ -5870,7 +5870,7 @@
       "semester": "Unknown",
       "course_name": "CL2016 Programming for Business -Lab",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "Khyber I",
       "day": "Tuesday",
       "time_start": "13:00",
@@ -5879,7 +5879,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CL2016 Programming for Business -Lab in Room Khyber I on Tuesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CL2016 Programming for Business -Lab in Room Khyber I on Tuesday from 13:00 to 14:20. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-TUE-Khyber I-1425",
@@ -5890,7 +5890,7 @@
       "semester": "Unknown",
       "course_name": "LG3003 Basic Econometrics Lab",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "Khyber I",
       "day": "Tuesday",
       "time_start": "14:25",
@@ -5899,7 +5899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 14:25 to 15:45. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-TUE-Khyber I-1550",
@@ -5910,7 +5910,7 @@
       "semester": "Unknown",
       "course_name": "LG3003 Basic Econometrics Lab",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "Khyber I",
       "day": "Tuesday",
       "time_start": "15:50",
@@ -5919,7 +5919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has LG3003 Basic Econometrics Lab in Room Khyber I on Tuesday from 15:50 to 17:10. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-TUE-Khyber II-1130",
@@ -6630,7 +6630,7 @@
       "semester": "Unknown",
       "course_name": "MG2003 Consumer Behaviour",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Sajjad Hussain",
       "room": "A-03",
       "day": "Wednesday",
       "time_start": "10:00",
@@ -6639,7 +6639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG2003 Consumer Behaviour in Room A-03 on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG2003 Consumer Behaviour in Room A-03 on Wednesday from 10:00 to 11:20. Instructor: Sajjad Hussain."
     },
     {
       "id": "FSM-WED-A03-1130",
@@ -6770,7 +6770,7 @@
       "semester": "Unknown",
       "course_name": "BA3002 Business Data and Text Mining",
       "section": "BSBA07A",
-      "instructor": null,
+      "instructor": "Usama Arshad",
       "room": "A-04",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -6779,7 +6779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has BA3002 Business Data and Text Mining in Room A-04 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has BA3002 Business Data and Text Mining in Room A-04 on Wednesday from 11:30 to 12:50. Instructor: Usama Arshad."
     },
     {
       "id": "FSM-WED-A04-1300",
@@ -6790,7 +6790,7 @@
       "semester": "Unknown",
       "course_name": "BA3002 Business Data and Text Mining",
       "section": "BSBA07B",
-      "instructor": null,
+      "instructor": "Usama Arshad",
       "room": "A-04",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -6799,7 +6799,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has BA3002 Business Data and Text Mining in Room A-04 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has BA3002 Business Data and Text Mining in Room A-04 on Wednesday from 13:00 to 14:20. Instructor: Usama Arshad."
     },
     {
       "id": "FSM-WED-A101-1000",
@@ -7110,7 +7110,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Ali Hasnain Sayed",
       "room": "A-104",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -7119,7 +7119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1001 Fundamental of Management in Room A-104 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1001 Fundamental of Management in Room A-104 on Wednesday from 08:30 to 09:50. Instructor: Ali Hasnain Sayed."
     },
     {
       "id": "FSM-WED-A104-1000",
@@ -7170,7 +7170,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Bilal Ahmad",
       "room": "A-104",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -7179,7 +7179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has AF1003 Intro to Financial Accounting in Room A-104 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has AF1003 Intro to Financial Accounting in Room A-104 on Wednesday from 13:00 to 14:20. Instructor: Bilal Ahmad."
     },
     {
       "id": "FSM-WED-A104-1425",
@@ -7250,7 +7250,7 @@
       "semester": "Unknown",
       "course_name": "MG4011 Entreprenureship",
       "section": "BSBA07B",
-      "instructor": null,
+      "instructor": "Abdul Wahab",
       "room": "A- 201",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -7259,7 +7259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has MG4011 Entreprenureship in Room A- 201 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07B) has MG4011 Entreprenureship in Room A- 201 on Wednesday from 11:30 to 12:50. Instructor: Abdul Wahab."
     },
     {
       "id": "FSM-WED-A 201-1300",
@@ -7270,7 +7270,7 @@
       "semester": "Unknown",
       "course_name": "MG4011 Entreprenureship",
       "section": "BSBA07A",
-      "instructor": null,
+      "instructor": "Abdul Wahab",
       "room": "A- 201",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -7279,7 +7279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has MG4011 Entreprenureship in Room A- 201 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2023, Section BSBA07A) has MG4011 Entreprenureship in Room A- 201 on Wednesday from 13:00 to 14:20. Instructor: Abdul Wahab."
     },
     {
       "id": "FSM-WED-A 201-1425",
@@ -7830,7 +7830,7 @@
       "semester": "Unknown",
       "course_name": "CS2016 Programming for Business",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "A-302",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -7839,7 +7839,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CS2016 Programming for Business in Room A-302 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CS2016 Programming for Business in Room A-302 on Wednesday from 11:30 to 12:50. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-WED-A302-1300",
@@ -7850,7 +7850,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Muhammad Nadeem Sarwar",
       "room": "A-302",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -7859,7 +7859,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2012 Business Economics in Room A-302 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2012 Business Economics in Room A-302 on Wednesday from 13:00 to 14:20. Instructor: Muhammad Nadeem Sarwar."
     },
     {
       "id": "FSM-WED-A302-1425",
@@ -7890,7 +7890,7 @@
       "semester": "Unknown",
       "course_name": "SS1016 English - I",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Mr. Hasham Ahmed",
       "room": "A-303",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -7899,7 +7899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has SS1016 English - I in Room A-303 on Wednesday from 08:30 to 10:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has SS1016 English - I in Room A-303 on Wednesday from 08:30 to 10:20. Instructor: Mr. Hasham Ahmed."
     },
     {
       "id": "FSM-WED-A303-1030",
@@ -7910,7 +7910,7 @@
       "semester": "Unknown",
       "course_name": "SS1016 English - I",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Mr. Hasham Ahmed",
       "room": "A-303",
       "day": "Wednesday",
       "time_start": "10:30",
@@ -7919,7 +7919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has SS1016 English - I in Room A-303 on Wednesday from 10:30 to 12:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has SS1016 English - I in Room A-303 on Wednesday from 10:30 to 12:20. Instructor: Mr. Hasham Ahmed."
     },
     {
       "id": "FSM-WED-A303-1300",
@@ -7930,7 +7930,7 @@
       "semester": "Unknown",
       "course_name": "AF 3001 Financial Management",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "A-303",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -7939,7 +7939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has AF 3001 Financial Management in Room A-303 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has AF 3001 Financial Management in Room A-303 on Wednesday from 13:00 to 14:20. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-WED-A303-1425",
@@ -7990,7 +7990,7 @@
       "semester": "Unknown",
       "course_name": "AF 3001 Financial Management",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Rameeza Andleeb",
       "room": "A-305",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -7999,7 +7999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has AF 3001 Financial Management in Room A-305 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has AF 3001 Financial Management in Room A-305 on Wednesday from 08:30 to 09:50. Instructor: Rameeza Andleeb."
     },
     {
       "id": "FSM-WED-A305-1000",
@@ -8010,7 +8010,7 @@
       "semester": "Unknown",
       "course_name": "MG3003 Basic Econometrics",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "A-305",
       "day": "Wednesday",
       "time_start": "10:00",
@@ -8019,7 +8019,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3003 Basic Econometrics in Room A-305 on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3003 Basic Econometrics in Room A-305 on Wednesday from 10:00 to 11:20. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-WED-A305-1130",
@@ -8030,7 +8030,7 @@
       "semester": "Unknown",
       "course_name": "MG2011 Environmental Science and Sustainability for Business",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Qurrat Ul Ain",
       "room": "A-305",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -8039,7 +8039,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2011 Environmental Science and Sustainability for Business in Room A-305 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2011 Environmental Science and Sustainability for Business in Room A-305 on Wednesday from 11:30 to 12:50. Instructor: Qurrat Ul Ain."
     },
     {
       "id": "FSM-WED-A305-1300",
@@ -8050,7 +8050,7 @@
       "semester": "Unknown",
       "course_name": "MG2009 Data Analysis for Business II",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Asma Masood Malik",
       "room": "A-305",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -8059,7 +8059,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2009 Data Analysis for Business II in Room A-305 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2009 Data Analysis for Business II in Room A-305 on Wednesday from 13:00 to 14:20. Instructor: Asma Masood Malik."
     },
     {
       "id": "FSM-WED-A305-1425",
@@ -8110,7 +8110,7 @@
       "semester": "Unknown",
       "course_name": "MG3003 Basic Econometrics",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "A-310",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -8119,7 +8119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3003 Basic Econometrics in Room A-310 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3003 Basic Econometrics in Room A-310 on Wednesday from 08:30 to 09:50. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-WED-A310-1000",
@@ -8150,7 +8150,7 @@
       "semester": "Unknown",
       "course_name": "MG2009 Data Analysis for Business II",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Asma Masood Malik",
       "room": "A-310",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -8159,7 +8159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2009 Data Analysis for Business II in Room A-310 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2009 Data Analysis for Business II in Room A-310 on Wednesday from 11:30 to 12:50. Instructor: Asma Masood Malik."
     },
     {
       "id": "FSM-WED-A310-1300",
@@ -8170,7 +8170,7 @@
       "semester": "Unknown",
       "course_name": "MG2011 Environmental Science and Sustainability for Business",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Qurrat Ul Ain",
       "room": "A-310",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -8179,7 +8179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2011 Environmental Science and Sustainability for Business in Room A-310 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2011 Environmental Science and Sustainability for Business in Room A-310 on Wednesday from 13:00 to 14:20. Instructor: Qurrat Ul Ain."
     },
     {
       "id": "FSM-WED-A310-1425",
@@ -8210,7 +8210,7 @@
       "semester": "Unknown",
       "course_name": "MG3004 Human Resource Management",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Hamnah Rahat",
       "room": "A-311",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -8219,7 +8219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3004 Human Resource Management in Room A-311 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3004 Human Resource Management in Room A-311 on Wednesday from 08:30 to 09:50. Instructor: Hamnah Rahat."
     },
     {
       "id": "FSM-WED-A311-1000",
@@ -8230,7 +8230,7 @@
       "semester": "Unknown",
       "course_name": "CS2003 Data Structures and Business Application",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "A-311",
       "day": "Wednesday",
       "time_start": "10:00",
@@ -8239,7 +8239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CS2003 Data Structures and Business Application in Room A-311 on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CS2003 Data Structures and Business Application in Room A-311 on Wednesday from 10:00 to 11:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-WED-A311-1130",
@@ -8430,7 +8430,7 @@
       "semester": "Unknown",
       "course_name": "MG3003 Basic Econometrics",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "A-315",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -8439,7 +8439,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3003 Basic Econometrics in Room A-315 on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3003 Basic Econometrics in Room A-315 on Wednesday from 11:30 to 12:50. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-WED-A315-1425",
@@ -8450,7 +8450,7 @@
       "semester": "Unknown",
       "course_name": "MG2003 Consumer Behaviour",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Usman Zafar",
       "room": "A-315",
       "day": "Wednesday",
       "time_start": "14:25",
@@ -8459,7 +8459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG2003 Consumer Behaviour in Room A-315 on Wednesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG2003 Consumer Behaviour in Room A-315 on Wednesday from 14:25 to 15:45. Instructor: Usman Zafar."
     },
     {
       "id": "FSM-WED-A316-0830",
@@ -8470,7 +8470,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "A-316",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -8479,7 +8479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has AF1003 Intro to Financial Accounting in Room A-316 on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has AF1003 Intro to Financial Accounting in Room A-316 on Wednesday from 08:30 to 09:50. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-WED-A316-1130",
@@ -8890,7 +8890,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "KK-III",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -8899,7 +8899,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has FL1003 Introduction to Financial Accounting- Lab in Room KK-III on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has FL1003 Introduction to Financial Accounting- Lab in Room KK-III on Wednesday from 08:30 to 09:50. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-WED-KKIII-1000",
@@ -8910,7 +8910,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "KK-III",
       "day": "Wednesday",
       "time_start": "10:00",
@@ -8919,7 +8919,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has FL1003 Introduction to Financial Accounting- Lab in Room KK-III on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has FL1003 Introduction to Financial Accounting- Lab in Room KK-III on Wednesday from 10:00 to 11:20. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-WED-KKIII-1130",
@@ -8970,7 +8970,7 @@
       "semester": "Unknown",
       "course_name": "CL2016 Programming for Business -Lab",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "KK-III",
       "day": "Wednesday",
       "time_start": "14:25",
@@ -8979,7 +8979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CL2016 Programming for Business -Lab in Room KK-III on Wednesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CL2016 Programming for Business -Lab in Room KK-III on Wednesday from 14:25 to 15:45. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-WED-KKIII-1550",
@@ -8990,7 +8990,7 @@
       "semester": "Unknown",
       "course_name": "CL2016 Programming for Business -Lab",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "KK-III",
       "day": "Wednesday",
       "time_start": "15:50",
@@ -8999,7 +8999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CL2016 Programming for Business -Lab in Room KK-III on Wednesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has CL2016 Programming for Business -Lab in Room KK-III on Wednesday from 15:50 to 17:10. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-WED-Khyber I-0830",
@@ -9130,7 +9130,7 @@
       "semester": "Unknown",
       "course_name": "CL2016 Programming for Business -Lab",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "Khyber II",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -9139,7 +9139,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CL2016 Programming for Business -Lab in Room Khyber II on Wednesday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CL2016 Programming for Business -Lab in Room Khyber II on Wednesday from 08:30 to 09:50. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-WED-Khyber II-1000",
@@ -9150,7 +9150,7 @@
       "semester": "Unknown",
       "course_name": "CL2016 Programming for Business -Lab",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "Khyber II",
       "day": "Wednesday",
       "time_start": "10:00",
@@ -9159,7 +9159,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CL2016 Programming for Business -Lab in Room Khyber II on Wednesday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CL2016 Programming for Business -Lab in Room Khyber II on Wednesday from 10:00 to 11:20. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-WED-Khyber II-1130",
@@ -9170,7 +9170,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "Khyber II",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -9179,7 +9179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has FL1003 Introduction to Financial Accounting- Lab in Room Khyber II on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has FL1003 Introduction to Financial Accounting- Lab in Room Khyber II on Wednesday from 11:30 to 12:50. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-WED-Khyber II-1300",
@@ -9190,7 +9190,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "Khyber II",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -9199,7 +9199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has FL1003 Introduction to Financial Accounting- Lab in Room Khyber II on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has FL1003 Introduction to Financial Accounting- Lab in Room Khyber II on Wednesday from 13:00 to 14:20. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-WED-Khyber II-1425",
@@ -9330,7 +9330,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01E",
-      "instructor": null,
+      "instructor": "Maryam Ali",
       "room": "Khyber III",
       "day": "Wednesday",
       "time_start": "14:25",
@@ -9339,7 +9339,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01E) has CL1001 IT in Business-Lab in Room Khyber III on Wednesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01E) has CL1001 IT in Business-Lab in Room Khyber III on Wednesday from 14:25 to 15:45. Instructor: Maryam Ali."
     },
     {
       "id": "FSM-WED-Khyber III-1550",
@@ -9350,7 +9350,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01E",
-      "instructor": null,
+      "instructor": "Maryam Ali",
       "room": "Khyber III",
       "day": "Wednesday",
       "time_start": "15:50",
@@ -9359,7 +9359,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01E) has CL1001 IT in Business-Lab in Room Khyber III on Wednesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01E) has CL1001 IT in Business-Lab in Room Khyber III on Wednesday from 15:50 to 17:10. Instructor: Maryam Ali."
     },
     {
       "id": "FSM-WED-MehranI-0830",
@@ -9450,7 +9450,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Rimsha Riaz",
       "room": "Mehran-I",
       "day": "Wednesday",
       "time_start": "14:25",
@@ -9459,7 +9459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CL1001 IT in Business-Lab in Room Mehran-I on Wednesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CL1001 IT in Business-Lab in Room Mehran-I on Wednesday from 14:25 to 15:45. Instructor: Rimsha Riaz."
     },
     {
       "id": "FSM-WED-MehranI-1550",
@@ -9470,7 +9470,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Rimsha Riaz",
       "room": "Mehran-I",
       "day": "Wednesday",
       "time_start": "15:50",
@@ -9479,7 +9479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CL1001 IT in Business-Lab in Room Mehran-I on Wednesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CL1001 IT in Business-Lab in Room Mehran-I on Wednesday from 15:50 to 17:10. Instructor: Rimsha Riaz."
     },
     {
       "id": "FSM-WED-MehranII-1130",
@@ -9550,7 +9550,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01B1",
-      "instructor": null,
+      "instructor": "Ms.Maheen Ali",
       "room": "Cal-I lab",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -9559,7 +9559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B1) has SL1016 English - I- Lab in Room Cal-I lab on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B1) has SL1016 English - I- Lab in Room Cal-I lab on Wednesday from 11:30 to 12:50. Instructor: Ms.Maheen Ali."
     },
     {
       "id": "FSM-WED-CalI lab-1300",
@@ -9570,7 +9570,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01B1",
-      "instructor": null,
+      "instructor": "Ms.Maheen Ali",
       "room": "Cal-I lab",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -9579,7 +9579,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B1) has SL1016 English - I- Lab in Room Cal-I lab on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B1) has SL1016 English - I- Lab in Room Cal-I lab on Wednesday from 13:00 to 14:20. Instructor: Ms.Maheen Ali."
     },
     {
       "id": "FSM-WED-CalII lab-1130",
@@ -9590,7 +9590,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01B2",
-      "instructor": null,
+      "instructor": "Mr. Abdul Basit",
       "room": "Cal-II lab",
       "day": "Wednesday",
       "time_start": "11:30",
@@ -9599,7 +9599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B2) has SL1016 English - I- Lab in Room Cal-II lab on Wednesday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B2) has SL1016 English - I- Lab in Room Cal-II lab on Wednesday from 11:30 to 12:50. Instructor: Mr. Abdul Basit."
     },
     {
       "id": "FSM-WED-CalII lab-1300",
@@ -9610,7 +9610,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01B2",
-      "instructor": null,
+      "instructor": "Mr. Abdul Basit",
       "room": "Cal-II lab",
       "day": "Wednesday",
       "time_start": "13:00",
@@ -9619,7 +9619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B2) has SL1016 English - I- Lab in Room Cal-II lab on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B2) has SL1016 English - I- Lab in Room Cal-II lab on Wednesday from 13:00 to 14:20. Instructor: Mr. Abdul Basit."
     },
     {
       "id": "FSM-WED-Room-0830",
@@ -9750,7 +9750,7 @@
       "semester": "Unknown",
       "course_name": "MG2009 Data Analysis for Business II",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Asma Masood Malik",
       "room": "A-01",
       "day": "Thursday",
       "time_start": "08:30",
@@ -9759,7 +9759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2009 Data Analysis for Business II in Room A-01 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2009 Data Analysis for Business II in Room A-01 on Thursday from 08:30 to 09:50. Instructor: Asma Masood Malik."
     },
     {
       "id": "FSM-THU-A01-1000",
@@ -9930,7 +9930,7 @@
       "semester": "Unknown",
       "course_name": "MG2003 Consumer Behaviour",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Sajjad Hussain",
       "room": "A-03",
       "day": "Thursday",
       "time_start": "11:30",
@@ -9939,7 +9939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG2003 Consumer Behaviour in Room A-03 on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG2003 Consumer Behaviour in Room A-03 on Thursday from 11:30 to 12:50. Instructor: Sajjad Hussain."
     },
     {
       "id": "FSM-THU-A03-1300",
@@ -9990,7 +9990,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Mr. Irfan ullah",
       "room": "A-04",
       "day": "Thursday",
       "time_start": "08:30",
@@ -9999,7 +9999,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1011 Business Mathematics in Room A-04 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1011 Business Mathematics in Room A-04 on Thursday from 08:30 to 09:50. Instructor: Mr. Irfan ullah."
     },
     {
       "id": "FSM-THU-A04-1000",
@@ -10010,7 +10010,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "A-04",
       "day": "Thursday",
       "time_start": "10:00",
@@ -10019,7 +10019,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has AF1003 Intro to Financial Accounting in Room A-04 on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has AF1003 Intro to Financial Accounting in Room A-04 on Thursday from 10:00 to 11:20. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-THU-A04-1130",
@@ -10210,7 +10210,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Abuzar",
       "room": "A-102",
       "day": "Thursday",
       "time_start": "10:00",
@@ -10219,7 +10219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1011 Business Mathematics in Room A-102 on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1011 Business Mathematics in Room A-102 on Thursday from 10:00 to 11:20. Instructor: Abuzar."
     },
     {
       "id": "FSM-THU-A102-1130",
@@ -10230,7 +10230,7 @@
       "semester": "Unknown",
       "course_name": "MG2011 Environmental Science and Sustainability for Business",
       "section": "BSBA03C",
-      "instructor": null,
+      "instructor": "Qurrat Ul Ain",
       "room": "A-102",
       "day": "Thursday",
       "time_start": "11:30",
@@ -10239,7 +10239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2011 Environmental Science and Sustainability for Business in Room A-102 on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03C) has MG2011 Environmental Science and Sustainability for Business in Room A-102 on Thursday from 11:30 to 12:50. Instructor: Qurrat Ul Ain."
     },
     {
       "id": "FSM-THU-A102-1300",
@@ -10250,7 +10250,7 @@
       "semester": "Unknown",
       "course_name": "AF 3001 Financial Management",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "A-102",
       "day": "Thursday",
       "time_start": "13:00",
@@ -10259,7 +10259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has AF 3001 Financial Management in Room A-102 on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has AF 3001 Financial Management in Room A-102 on Thursday from 13:00 to 14:20. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-THU-A102-1425",
@@ -10390,7 +10390,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Huzam",
       "room": "A-104",
       "day": "Thursday",
       "time_start": "08:30",
@@ -10399,7 +10399,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1011 Business Mathematics in Room A-104 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1011 Business Mathematics in Room A-104 on Thursday from 08:30 to 09:50. Instructor: Huzam."
     },
     {
       "id": "FSM-THU-A104-1000",
@@ -10430,7 +10430,7 @@
       "semester": "Unknown",
       "course_name": "AF1003 Intro to Financial Accounting",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Maryam Ayyaz",
       "room": "A-104",
       "day": "Thursday",
       "time_start": "11:30",
@@ -10439,7 +10439,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has AF1003 Intro to Financial Accounting in Room A-104 on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has AF1003 Intro to Financial Accounting in Room A-104 on Thursday from 11:30 to 12:50. Instructor: Maryam Ayyaz."
     },
     {
       "id": "FSM-THU-A104-1425",
@@ -10450,7 +10450,7 @@
       "semester": "Unknown",
       "course_name": "SS1015 Pakistan Studies",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Mr. M. Ajmal",
       "room": "A-104",
       "day": "Thursday",
       "time_start": "14:25",
@@ -10459,7 +10459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has SS1015 Pakistan Studies in Room A-104 on Thursday from 14:25 to 16:15."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has SS1015 Pakistan Studies in Room A-104 on Thursday from 14:25 to 16:15. Instructor: Mr. M. Ajmal."
     },
     {
       "id": "FSM-THU-A 201-0830",
@@ -10930,7 +10930,7 @@
       "semester": "Unknown",
       "course_name": "CS2016 Programming for Business",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "A--211",
       "day": "Thursday",
       "time_start": "15:50",
@@ -10939,7 +10939,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CS2016 Programming for Business in Room A--211 on Thursday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has CS2016 Programming for Business in Room A--211 on Thursday from 15:50 to 17:10. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-THU-A301-0830",
@@ -10950,7 +10950,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Hasnain Abbas Naqvi",
       "room": "A-301",
       "day": "Thursday",
       "time_start": "08:30",
@@ -10959,7 +10959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2012 Business Economics in Room A-301 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has MG2012 Business Economics in Room A-301 on Thursday from 08:30 to 09:50. Instructor: Hasnain Abbas Naqvi."
     },
     {
       "id": "FSM-THU-A301-1000",
@@ -10970,7 +10970,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Hasnain Abbas Naqvi",
       "room": "A-301",
       "day": "Thursday",
       "time_start": "10:00",
@@ -10979,7 +10979,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2012 Business Economics in Room A-301 on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has MG2012 Business Economics in Room A-301 on Thursday from 10:00 to 11:20. Instructor: Hasnain Abbas Naqvi."
     },
     {
       "id": "FSM-THU-A301-1130",
@@ -11030,7 +11030,7 @@
       "semester": "Unknown",
       "course_name": "CS2016 Programming for Business",
       "section": "BSBA03B",
-      "instructor": null,
+      "instructor": "Saood Sarwar",
       "room": "A-301",
       "day": "Thursday",
       "time_start": "14:25",
@@ -11039,7 +11039,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CS2016 Programming for Business in Room A-301 on Thursday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03B) has CS2016 Programming for Business in Room A-301 on Thursday from 14:25 to 15:45. Instructor: Saood Sarwar."
     },
     {
       "id": "FSM-THU-A301-1620",
@@ -11210,7 +11210,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Dr. Aqeel",
       "room": "A-303",
       "day": "Thursday",
       "time_start": "15:50",
@@ -11219,7 +11219,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1001 Fundamental of Management in Room A-303 on Thursday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has MG1001 Fundamental of Management in Room A-303 on Thursday from 15:50 to 17:10. Instructor: Dr. Aqeel."
     },
     {
       "id": "FSM-THU-A305-0830",
@@ -11350,7 +11350,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Muhammad Abbas",
       "room": "A-310",
       "day": "Thursday",
       "time_start": "10:00",
@@ -11359,7 +11359,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1001 Fundamental of Management in Room A-310 on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1001 Fundamental of Management in Room A-310 on Thursday from 10:00 to 11:20. Instructor: Muhammad Abbas."
     },
     {
       "id": "FSM-THU-A310-1130",
@@ -11370,7 +11370,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Muhammad Abbas",
       "room": "A-310",
       "day": "Thursday",
       "time_start": "11:30",
@@ -11379,7 +11379,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1001 Fundamental of Management in Room A-310 on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1001 Fundamental of Management in Room A-310 on Thursday from 11:30 to 12:50. Instructor: Muhammad Abbas."
     },
     {
       "id": "FSM-THU-A310-1300",
@@ -11390,7 +11390,7 @@
       "semester": "Unknown",
       "course_name": "CS1001 IT in Business",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Rimsha Riaz",
       "room": "A-310",
       "day": "Thursday",
       "time_start": "13:00",
@@ -11399,7 +11399,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CS1001 IT in Business in Room A-310 on Thursday from 13:00 to 14:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has CS1001 IT in Business in Room A-310 on Thursday from 13:00 to 14:50. Instructor: Rimsha Riaz."
     },
     {
       "id": "FSM-THU-A311-0830",
@@ -11450,7 +11450,7 @@
       "semester": "Unknown",
       "course_name": "CS2003 Data Structures and Business Application",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "A-311",
       "day": "Thursday",
       "time_start": "11:30",
@@ -11459,7 +11459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CS2003 Data Structures and Business Application in Room A-311 on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CS2003 Data Structures and Business Application in Room A-311 on Thursday from 11:30 to 12:50. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-THU-A311-1300",
@@ -11470,7 +11470,7 @@
       "semester": "Unknown",
       "course_name": "MG3004 Human Resource Management",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Hamnah Rahat",
       "room": "A-311",
       "day": "Thursday",
       "time_start": "13:00",
@@ -11479,7 +11479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3004 Human Resource Management in Room A-311 on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3004 Human Resource Management in Room A-311 on Thursday from 13:00 to 14:20. Instructor: Hamnah Rahat."
     },
     {
       "id": "FSM-THU-A314-0830",
@@ -11510,7 +11510,7 @@
       "semester": "Unknown",
       "course_name": "MG3004 Human Resource Management",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Hamnah Rahat",
       "room": "A-314",
       "day": "Thursday",
       "time_start": "11:30",
@@ -11519,7 +11519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3004 Human Resource Management in Room A-314 on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3004 Human Resource Management in Room A-314 on Thursday from 11:30 to 12:50. Instructor: Hamnah Rahat."
     },
     {
       "id": "FSM-THU-A314-1300",
@@ -11530,7 +11530,7 @@
       "semester": "Unknown",
       "course_name": "CS2003 Data Structures and Business Application",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "A-314",
       "day": "Thursday",
       "time_start": "13:00",
@@ -11539,7 +11539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CS2003 Data Structures and Business Application in Room A-314 on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has CS2003 Data Structures and Business Application in Room A-314 on Thursday from 13:00 to 14:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-THU-A314-1425",
@@ -12270,7 +12270,7 @@
       "semester": "Unknown",
       "course_name": "FL3001 Financial Management Lab",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "Khyber I",
       "day": "Thursday",
       "time_start": "08:30",
@@ -12279,7 +12279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has FL3001 Financial Management Lab in Room Khyber I on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has FL3001 Financial Management Lab in Room Khyber I on Thursday from 08:30 to 09:50. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-THU-Khyber I-1000",
@@ -12290,7 +12290,7 @@
       "semester": "Unknown",
       "course_name": "FL3001 Financial Management Lab",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Imad Rahim",
       "room": "Khyber I",
       "day": "Thursday",
       "time_start": "10:00",
@@ -12299,7 +12299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has FL3001 Financial Management Lab in Room Khyber I on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has FL3001 Financial Management Lab in Room Khyber I on Thursday from 10:00 to 11:20. Instructor: Imad Rahim."
     },
     {
       "id": "FSM-THU-Khyber I-1130",
@@ -12310,7 +12310,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "Khyber I",
       "day": "Thursday",
       "time_start": "11:30",
@@ -12319,7 +12319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has CL1001 IT in Business-Lab in Room Khyber I on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has CL1001 IT in Business-Lab in Room Khyber I on Thursday from 11:30 to 12:50. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-THU-Khyber I-1300",
@@ -12330,7 +12330,7 @@
       "semester": "Unknown",
       "course_name": "CL1001 IT in Business-Lab",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "Khyber I",
       "day": "Thursday",
       "time_start": "13:00",
@@ -12339,7 +12339,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has CL1001 IT in Business-Lab in Room Khyber I on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has CL1001 IT in Business-Lab in Room Khyber I on Thursday from 13:00 to 14:20. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-THU-Khyber I-1425",
@@ -12470,7 +12470,7 @@
       "semester": "Unknown",
       "course_name": "CL2003 Data Structures and Business Application Lab",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "Khyber III",
       "day": "Thursday",
       "time_start": "08:30",
@@ -12479,7 +12479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CL2003 Data Structures and Business Application Lab in Room Khyber III on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CL2003 Data Structures and Business Application Lab in Room Khyber III on Thursday from 08:30 to 09:50. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-THU-Khyber III-1000",
@@ -12490,7 +12490,7 @@
       "semester": "Unknown",
       "course_name": "CL2003 Data Structures and Business Application Lab",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "Khyber III",
       "day": "Thursday",
       "time_start": "10:00",
@@ -12499,7 +12499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CL2003 Data Structures and Business Application Lab in Room Khyber III on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has CL2003 Data Structures and Business Application Lab in Room Khyber III on Thursday from 10:00 to 11:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-THU-Khyber III-1130",
@@ -12510,7 +12510,7 @@
       "semester": "Unknown",
       "course_name": "LG2009Data Analysis for Business -II Lab",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Syeda Hoor-ul-ain Ali",
       "room": "Khyber III",
       "day": "Thursday",
       "time_start": "11:30",
@@ -12519,7 +12519,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has LG2009Data Analysis for Business -II Lab in Room Khyber III on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has LG2009Data Analysis for Business -II Lab in Room Khyber III on Thursday from 11:30 to 12:50. Instructor: Syeda Hoor-ul-ain Ali."
     },
     {
       "id": "FSM-THU-Khyber III-1300",
@@ -12530,7 +12530,7 @@
       "semester": "Unknown",
       "course_name": "LG2009Data Analysis for Business -II Lab",
       "section": "BSBA03A",
-      "instructor": null,
+      "instructor": "Syeda Hoor-ul-ain Ali",
       "room": "Khyber III",
       "day": "Thursday",
       "time_start": "13:00",
@@ -12539,7 +12539,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has LG2009Data Analysis for Business -II Lab in Room Khyber III on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2025, Section BSBA03A) has LG2009Data Analysis for Business -II Lab in Room Khyber III on Thursday from 13:00 to 14:20. Instructor: Syeda Hoor-ul-ain Ali."
     },
     {
       "id": "FSM-THU-Khyber III-1425",
@@ -12590,7 +12590,7 @@
       "semester": "Unknown",
       "course_name": "LG3003 Basic Econometrics Lab",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "Mehran-I",
       "day": "Thursday",
       "time_start": "08:30",
@@ -12599,7 +12599,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has LG3003 Basic Econometrics Lab in Room Mehran-I on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has LG3003 Basic Econometrics Lab in Room Mehran-I on Thursday from 08:30 to 09:50. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-THU-MehranI-1000",
@@ -12610,7 +12610,7 @@
       "semester": "Unknown",
       "course_name": "LG3003 Basic Econometrics Lab",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "Mehran-I",
       "day": "Thursday",
       "time_start": "10:00",
@@ -12619,7 +12619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has LG3003 Basic Econometrics Lab in Room Mehran-I on Thursday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has LG3003 Basic Econometrics Lab in Room Mehran-I on Thursday from 10:00 to 11:20. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-THU-MehranII-0830",
@@ -12710,7 +12710,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01A1",
-      "instructor": null,
+      "instructor": "Ms.Maheen Ali",
       "room": "Cal-I lab",
       "day": "Thursday",
       "time_start": "11:30",
@@ -12719,7 +12719,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A1) has SL1016 English - I- Lab in Room Cal-I lab on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A1) has SL1016 English - I- Lab in Room Cal-I lab on Thursday from 11:30 to 12:50. Instructor: Ms.Maheen Ali."
     },
     {
       "id": "FSM-THU-CalI lab-1300",
@@ -12730,7 +12730,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01A1",
-      "instructor": null,
+      "instructor": "Ms.Maheen Ali",
       "room": "Cal-I lab",
       "day": "Thursday",
       "time_start": "13:00",
@@ -12739,7 +12739,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A1) has SL1016 English - I- Lab in Room Cal-I lab on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A1) has SL1016 English - I- Lab in Room Cal-I lab on Thursday from 13:00 to 14:20. Instructor: Ms.Maheen Ali."
     },
     {
       "id": "FSM-THU-CalII lab-1130",
@@ -12750,7 +12750,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01A2",
-      "instructor": null,
+      "instructor": "Mr. Abdul Basit",
       "room": "Cal-II lab",
       "day": "Thursday",
       "time_start": "11:30",
@@ -12759,7 +12759,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A2) has SL1016 English - I- Lab in Room Cal-II lab on Thursday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A2) has SL1016 English - I- Lab in Room Cal-II lab on Thursday from 11:30 to 12:50. Instructor: Mr. Abdul Basit."
     },
     {
       "id": "FSM-THU-CalII lab-1300",
@@ -12770,7 +12770,7 @@
       "semester": "Unknown",
       "course_name": "SL1016 English - I- Lab",
       "section": "BSBA01A2",
-      "instructor": null,
+      "instructor": "Mr. Abdul Basit",
       "room": "Cal-II lab",
       "day": "Thursday",
       "time_start": "13:00",
@@ -12779,7 +12779,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A2) has SL1016 English - I- Lab in Room Cal-II lab on Thursday from 13:00 to 14:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A2) has SL1016 English - I- Lab in Room Cal-II lab on Thursday from 13:00 to 14:20. Instructor: Mr. Abdul Basit."
     },
     {
       "id": "FSM-THU-CalIII lab-1130",
@@ -13050,7 +13050,7 @@
       "semester": "Unknown",
       "course_name": "MG2003 Consumer Behaviour",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Sajjad Hussain",
       "room": "A-02",
       "day": "Friday",
       "time_start": "10:00",
@@ -13059,7 +13059,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG2003 Consumer Behaviour in Room A-02 on Friday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG2003 Consumer Behaviour in Room A-02 on Friday from 10:00 to 11:20. Instructor: Sajjad Hussain."
     },
     {
       "id": "FSM-FRI-A02-1425",
@@ -13170,7 +13170,7 @@
       "semester": "Unknown",
       "course_name": "AF 3001 Financial Management",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Rameeza Andleeb",
       "room": "A-101",
       "day": "Friday",
       "time_start": "08:30",
@@ -13179,7 +13179,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has AF 3001 Financial Management in Room A-101 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has AF 3001 Financial Management in Room A-101 on Friday from 08:30 to 09:50. Instructor: Rameeza Andleeb."
     },
     {
       "id": "FSM-FRI-A101-1000",
@@ -13190,7 +13190,7 @@
       "semester": "Unknown",
       "course_name": "MG3003 Basic Econometrics",
       "section": "BSBA05A",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "A-101",
       "day": "Friday",
       "time_start": "10:00",
@@ -13199,7 +13199,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3003 Basic Econometrics in Room A-101 on Friday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05A) has MG3003 Basic Econometrics in Room A-101 on Friday from 10:00 to 11:20. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-FRI-A101-1500",
@@ -13230,7 +13230,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Huzam",
       "room": "A-102",
       "day": "Friday",
       "time_start": "08:30",
@@ -13239,7 +13239,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1011 Business Mathematics in Room A-102 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1011 Business Mathematics in Room A-102 on Friday from 08:30 to 09:50. Instructor: Huzam."
     },
     {
       "id": "FSM-FRI-A102-1000",
@@ -13250,7 +13250,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01C",
-      "instructor": null,
+      "instructor": "Muhammad Abbas",
       "room": "A-102",
       "day": "Friday",
       "time_start": "10:00",
@@ -13259,7 +13259,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1001 Fundamental of Management in Room A-102 on Friday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01C) has MG1001 Fundamental of Management in Room A-102 on Friday from 10:00 to 11:20. Instructor: Muhammad Abbas."
     },
     {
       "id": "FSM-FRI-A102-1130",
@@ -13270,7 +13270,7 @@
       "semester": "Unknown",
       "course_name": "MG1001 Fundamental of Management",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Muhammad Abbas",
       "room": "A-102",
       "day": "Friday",
       "time_start": "11:30",
@@ -13279,7 +13279,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1001 Fundamental of Management in Room A-102 on Friday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has MG1001 Fundamental of Management in Room A-102 on Friday from 11:30 to 12:50. Instructor: Muhammad Abbas."
     },
     {
       "id": "FSM-FRI-A103-0830",
@@ -13290,7 +13290,7 @@
       "semester": "Unknown",
       "course_name": "CS1001 IT in Business",
       "section": "BSBA01B",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "A-103",
       "day": "Friday",
       "time_start": "08:30",
@@ -13299,7 +13299,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has CS1001 IT in Business in Room A-103 on Friday from 08:30 to 10:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01B) has CS1001 IT in Business in Room A-103 on Friday from 08:30 to 10:20. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-FRI-A103-1030",
@@ -13310,7 +13310,7 @@
       "semester": "Unknown",
       "course_name": "CS1001 IT in Business",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Sardar Lall Khan",
       "room": "A-103",
       "day": "Friday",
       "time_start": "10:30",
@@ -13319,7 +13319,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has CS1001 IT in Business in Room A-103 on Friday from 10:30 to 12:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has CS1001 IT in Business in Room A-103 on Friday from 10:30 to 12:20. Instructor: Sardar Lall Khan."
     },
     {
       "id": "FSM-FRI-A103-1425",
@@ -13370,7 +13370,7 @@
       "semester": "Unknown",
       "course_name": "SS1015 Pakistan Studies",
       "section": "BSBA01A",
-      "instructor": null,
+      "instructor": "Sidra Shabbir",
       "room": "A-104",
       "day": "Friday",
       "time_start": "08:30",
@@ -13379,7 +13379,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has SS1015 Pakistan Studies in Room A-104 on Friday from 08:30 to 10:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01A) has SS1015 Pakistan Studies in Room A-104 on Friday from 08:30 to 10:20. Instructor: Sidra Shabbir."
     },
     {
       "id": "FSM-FRI-A104-1130",
@@ -13390,7 +13390,7 @@
       "semester": "Unknown",
       "course_name": "MG1011 Business Mathematics",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Huzam",
       "room": "A-104",
       "day": "Friday",
       "time_start": "11:30",
@@ -13399,7 +13399,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1011 Business Mathematics in Room A-104 on Friday from 11:30 to 12:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has MG1011 Business Mathematics in Room A-104 on Friday from 11:30 to 12:50. Instructor: Huzam."
     },
     {
       "id": "FSM-FRI-A 201-1030",
@@ -13490,7 +13490,7 @@
       "semester": "Unknown",
       "course_name": "MG3003 Basic Econometrics",
       "section": "BSBA05B",
-      "instructor": null,
+      "instructor": "Danial Akhtar",
       "room": "A- 203",
       "day": "Friday",
       "time_start": "08:30",
@@ -13499,7 +13499,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3003 Basic Econometrics in Room A- 203 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05B) has MG3003 Basic Econometrics in Room A- 203 on Friday from 08:30 to 09:50. Instructor: Danial Akhtar."
     },
     {
       "id": "FSM-FRI-A 203-1000",
@@ -13550,7 +13550,7 @@
       "semester": "Unknown",
       "course_name": "MG3004 Human Resource Management",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Hamnah Rahat",
       "room": "A-210",
       "day": "Friday",
       "time_start": "08:30",
@@ -13559,7 +13559,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3004 Human Resource Management in Room A-210 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has MG3004 Human Resource Management in Room A-210 on Friday from 08:30 to 09:50. Instructor: Hamnah Rahat."
     },
     {
       "id": "FSM-FRI-A210-1000",
@@ -13570,7 +13570,7 @@
       "semester": "Unknown",
       "course_name": "CS2003 Data Structures and Business Application",
       "section": "BSBA05C",
-      "instructor": null,
+      "instructor": "Abdul Wahab Tahir",
       "room": "A-210",
       "day": "Friday",
       "time_start": "10:00",
@@ -13579,7 +13579,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CS2003 Data Structures and Business Application in Room A-210 on Friday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2024, Section BSBA05C) has CS2003 Data Structures and Business Application in Room A-210 on Friday from 10:00 to 11:20. Instructor: Abdul Wahab Tahir."
     },
     {
       "id": "FSM-FRI-A211-0830",
@@ -14110,7 +14110,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Bilal Ahmad",
       "room": "KK-II",
       "day": "Friday",
       "time_start": "08:30",
@@ -14119,7 +14119,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Friday from 08:30 to 09:50."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Friday from 08:30 to 09:50. Instructor: Bilal Ahmad."
     },
     {
       "id": "FSM-FRI-KKII-1000",
@@ -14130,7 +14130,7 @@
       "semester": "Unknown",
       "course_name": "FL1003 Introduction to Financial Accounting- Lab",
       "section": "BSBA01D",
-      "instructor": null,
+      "instructor": "Bilal Ahmad",
       "room": "KK-II",
       "day": "Friday",
       "time_start": "10:00",
@@ -14139,7 +14139,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Friday from 10:00 to 11:20."
+      "rag_summary": "BS BA (Batch 2026, Section BSBA01D) has FL1003 Introduction to Financial Accounting- Lab in Room KK-II on Friday from 10:00 to 11:20. Instructor: Bilal Ahmad."
     },
     {
       "id": "FSM-FRI-KKII-1425",
