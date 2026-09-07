@@ -47,14 +47,14 @@ Dr. Hasan Mujtaba,,"Professor & Head, FSC ",hasan.mujtaba@nu.edu.pk,C-201 A
 43,Ms. Bushra Kanwal ,Lecturer,bushra.kanwal@isb.nu.edu.pk,D-109 C
 44,Ms. Bushra Fatima Tariq,Lecturer,bushra.fatima@nu.edu.pk,D-110 G
 45,Ms. Sana Razzaq ,Lecturer,sana.razzaq@nu.edu.pk,C-502 D
-46,Mr. Abdullah Bin Zahid,Instructor ,abdullahbin.zahid@isb.nu.edu.pk,C-503 F
+46,Mr. Abdullah Bin Zahid,Instructor ,abdullahbin.zahid@isb.nu.edu.pk,C-203 A
 47,Mr. Ali Umer,Instructor ,ali.umer@isb.nu.edu.pk,D-620 B
 48,Mr. Imran Khan,Instructor,imran.khan@isb.nu.edu.pk,C-203 A
-49,Mr. Muhammad Ismail ,Instructor,muhammad.ismail@isb.nu.edu.pk,D-513 B
-50,Mr. Muhammad Talha Sharif,Instructor,talha.sharif@isb.nu.edu.pk,D-513 B
+49,Mr. Muhammad Ismail ,Instructor,muhammad.ismail@isb.nu.edu.pk,C-204 F
+50,Mr. Muhammad Talha Sharif,Instructor,talha.sharif@isb.nu.edu.pk,C-204 F
 51,Mr. Muhammad Umair Khalid,Instructor ,umair.khalid@isb.nu.edu.pk,D-620 B
 52,Mr. Usama Bin Imran,Instructor,usama.imran@isb.nu.edu.pk ,D-513 F
-53,Ms. Asma Tufail,Instructor,asma.tufail@isb.nu.edu.pk,D-513 G
+53,Ms. Asma Tufail,Instructor,asma.tufail@isb.nu.edu.pk,D 620 B
 54,Ms. Hajira Uzair,Instructor,hajira.uzair@isb.nu.edu.pk,D-513 G
 55,Ms. Laiba Noor,Instructor,laiba.noor@isb.nu.edu.pk,D-110 A
 56,Ms. Syeda Mahnoor Javed,Instructor,mahnoor.javed@isb.nu.edu.pk ,C-204 A
@@ -62,9 +62,10 @@ Dr. Hasan Mujtaba,,"Professor & Head, FSC ",hasan.mujtaba@nu.edu.pk,C-201 A
 58,Mr. Muhammad Faheem Muhammadi,Instructor,muhammad.faheem@isb.nu.edu.pk,C-204 G
 59,Ms. Seerat Afreen Satti,Instructor,seerat.afreen@isb.nu.edu.pk,D-202 H
 60,Ms. Maryam Khalid,Instructor,maryam.khalid@isb.nu.edu.pk, D-110 A
-61,Ms. Mavra Mehak Gill,Instructor,mavra.mehak@isb.nu.edu.pk,D-104
-62,Ms. Haqeeq Ruman,Instructor,haqeeq.ruman@isb.nu.edu.pk,D-104
-63,Ms. Gul E Zahra,Instructor,gul.zahra@isb.nu.edu.pk,D-104
+61,Ms. Mavra Mehak Gill,Instructor,mavra.mehak@isb.nu.edu.pk,D-102
+62,Ms. Haqeeq Ruman,Instructor,haqeeq.ruman@isb.nu.edu.pk,D-102
+63,Ms. Gul E Zahra,Instructor,gul.zahra@isb.nu.edu.pk,D-102
+64,Dr. Zia Ul Qayyum,Professor,zia.qayyum@nu.edu.pk,
 " Faculty Department of Artificial Intelligence & Data Science 						",,,,
 1,Dr. Ahmad Din,Professor & HoD,ahmad.din@nu.edu.pk,D-201 C
 2,Dr. Mirza Omer Beg,Professor (Adjunct),omer.beg@nu.edu.pk,C-205 C
@@ -97,7 +98,6 @@ Dr. Hasan Mujtaba,,"Professor & Head, FSC ",hasan.mujtaba@nu.edu.pk,C-201 A
 28,Ms. Umarah Qaseem,Lecturer,umarah.qaseem@isb.nu.edu.pk,D-202 F
 29,Ms. Zonera Anjum,Lecturer,zonera.anjum@isb.nu.edu.pk,D-204 B
 30,Ms. Mehreen Javaid ,Lecturer,mehreen.javaid@nu.edu.pk ,D-205 H 
-31,Mr. Abdul Hammad Rasheed,Instructor,hammad.rasheed@isb.nu.edu.pk,D-111 C 
 32,Mr. Abdul Wahab Khan ,Instructor,abdul.wahab@isb.nu.edu.pk,C-504 E
 33,Mr. Ali Hamza ,Instructor,ali.hamza@isb.nu.edu.pk,C-504 E
 34,Ms. Mubrra Asma,Instructor,mubrra.asma@isb.nu.edu.pk,C-513 C
@@ -125,7 +125,8 @@ Faculty Department of Software Engineering,,,,
 16,Ms. Anum kaleem,Lecturer,anum.kaleem@isb.nu.edu.pk,C-504 B
 17,Ms. Fatima Gillani,Lecturer ,fatima.gillani@isb.nu.edu.pk,C-505 A
 18,Ms. Laiba Imran,Lecturer,"laiba.imran@nu.edu.pk
-",C-505 G
+
+",C-505 G
 19,Ms. Momina Behzad,Lecturer,momina.behzad@isb.nu.edu.pk,C-504 A
 20,Ms. Zoya Sumbul Zaheer,Lecturer,zoya.sumbul@nu.edu.pk,C-502 F 
 21,Ms. Samia Aziz,Lecturer,samia.aziz@nu.edu.pk,C-504 G 
