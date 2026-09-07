@@ -98,6 +98,41 @@ def clean_text(text: Any) -> str:
         return ""
     return str(text).strip()
 
+def parse_electives(filepath: str) -> set:
+    import os, re
+    if not os.path.exists(filepath):
+        return set()
+    electives = set()
+    current_sections = []
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            section_match = re.match(r'Sections?\s+([A-Z0-9-/\s]+):', line)
+            if section_match:
+                raw_sections = section_match.group(1)
+                current_sections = [s.strip() for s in raw_sections.split('/')]
+                continue
+            course_match = re.match(r'-\s*(?:([A-Z0-9/-]+):)?\s*(.*?)(?:\s*\(.*Elective.*\))?$', line)
+            if course_match and current_sections:
+                course_code = course_match.group(1)
+                course_name = course_match.group(2).strip()
+                course_name = re.sub(r'\s*\(.*?\)$', '', course_name).strip().lower()
+                for sec in current_sections:
+                    sec_clean = sec.strip().upper()
+                    dept_match = re.match(r'^B([A-Z]{2,3})-(\d+)([A-Z0-9]+)$', sec_clean)
+                    if dept_match:
+                        target_sec = f"{dept_match.group(1)}-{dept_match.group(3)}"
+                    else:
+                        target_sec = sec_clean
+                        
+                    if course_code:
+                        electives.add((target_sec, course_code.strip().upper()))
+                    if course_name:
+                        electives.add((target_sec, course_name))
+    return electives
+
 def normalize_time(t: str) -> str:
     """Converts university times (1-7 are PM) to 24-hour format for correct sorting."""
     if not t: return ""
@@ -209,6 +244,7 @@ def fetch_fsc_gids() -> Dict[str, str]:
 def parse_fsc() -> List[Dict[str, Any]]:
     """Parser for School of Computing — fetches each day's HTML frame by GID."""
     entries = []
+    electives_set = parse_electives("frontend/public/electives.txt")
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -430,12 +466,21 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             t_start = "14:30"
                         
                         for dept, section_code in sections_to_add:
+                            is_elective = False
+                            c_name_lower = course_name.lower().strip()
+                            for sec, key in electives_set:
+                                if sec == section_code and (key == c_name_lower or key.upper() in course_name.upper()):
+                                    is_elective = True
+                                    break
+
                             entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
 
                             summary = generate_rag_summary(
                                 "School of Computing", dept, "BS", batch,
                                 section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled
                             )
+                            if is_elective:
+                                summary += " This is an elective course."
 
                             entries.append({
                                 "id": entry_id,
@@ -455,6 +500,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                 "is_rescheduled": is_rescheduled,
                                 "is_repeat": is_repeat,
                                 "is_cancelled": is_cancelled,
+                                "is_elective": is_elective,
                                 "rag_summary": summary,
                             })
                             day_count += 1

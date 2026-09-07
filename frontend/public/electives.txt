@@ -1,0 +1,96 @@
+ELECTIVES OFFERED FOR SEMESTERS 7 & 8 (BATCH 2023) AND SEMESTER 9 (BATCH 2022)
+===============================================================================
+
+COMPUTER SCIENCE (CS)
+---------------------
+Batch 2023 (Semester 7 & 8):
+  Section BCS-7A:
+    - CS3012: Fundamentals of Data Visualization (CS Elective II)
+    - CS4039: Software for Mobile Devices (CS Elective II)
+    - CS4085: MLOPS (CS Elective IV)
+    - AI4009: Generative AI (CS Elective IV)
+    - CS4075: Cloud Computing (CS Elective IV)
+    - CS4045: Deep Learning for Perception (CS Elective IV)
+
+  Section BCS-7B:
+    - CS4085: MLOPS (CS Elective IV)
+    - AI4009: Generative AI (CS Elective IV)
+    - CS4075: Cloud Computing (CS Elective IV)
+    - CS4045: Deep Learning for Perception (CS Elective IV)
+
+  Section BCS-8A:
+    - CS4044: Fundamentals of Software Project Management (CS Elective IV)
+    - AI4015: Agentic AI (CS Elective IV)
+
+  Sections BCS-8B / BCS-8C:
+    - AI4015: Agentic AI (CS Elective IV)
+
+Batch 2022 (Semester 9):
+  Sections BCS-9A / BCS-9B:
+    - MG/SS Elective: To Be Decided
+
+
+ARTIFICIAL INTELLIGENCE (AI)
+----------------------------
+Batch 2023 (Semester 7):
+  Section BAI-7A:
+    - AI4015: Agentic Artificial Intelligence (AI Elective-II)
+    - CY4054: Blockchain Technologies and Applications (AI Elective-III)
+    - AI4013: AI Product Development (AI Elective-III)
+    - AI4012: Multiagent Systems and Game Theory (AI Elective-IV)
+    - AI4019: Edge Computing and Intelligent Systems (AI Elective-IV)
+
+  Section BAI-7B:
+    - AI4015: Agentic Artificial Intelligence (AI Elective-II)
+
+Batch 2022 (Semester 9):
+  Section BAI-9A:
+    - AI4019: Edge Computing and Intelligent Systems (AI Elective)
+
+
+DATA SCIENCE (DS)
+-----------------
+Batch 2023 (Semester 7):
+  Sections BDS-7A / BDS-7B:
+    - CS4059: Fundamentals of Computer Vision (DS Elective-III & IV)
+    - AI4015: Agentic Artificial Intelligence (DS Elective-III & IV)
+    - AI4012: Multiagent Systems and Game Theory (DS Elective-III & IV)
+
+Batch 2022 (Semester 9):
+  Section BDS-9A:
+    - AI4019: Edge Computing (DS Elective)
+
+
+CYBER SECURITY (CY)
+-------------------
+Batch 2023 (Semester 7):
+  Sections BCY-7A / BCY-7B:
+    - CY4048: Security Operations and Administration (Cyber Elective III)
+    - CS4049: Blockchain and Cryptocurrency (Cyber Elective IV)
+    - CY4075: Cloud Computing (Cyber Elective III & IV)
+
+Batch 2022 (Semester 9):
+  Section BCY-9A:
+    - CY4048: Security Operations and Administration (Cyber Elective)
+    - MG/SS Elective: To Be Decided
+
+
+SOFTWARE ENGINEERING (SE)
+-------------------------
+Batch 2023 (Semester 7):
+  Section BSE-7A:
+    - CS4039: Software for Mobile Devices (SE Elective)
+    - AI4009: Generative AI (SE Elective-IV)
+    - CS4063: Natural Language Processing (SE Elective-V)
+    - SE4033: Formal Methods in Software Engineering (SE Elective-III)
+    - SE4009: Process Mining and Simulation (SE Elective-II)
+    - MG-4057: AI-Led Transformation
+
+  Section BSE-7B:
+    - CS4039: Software for Mobile Devices (SE Elective)
+    - AI4009: Generative AI (SE Elective-IV)
+    - CS4063: Natural Language Processing (SE Elective-V)
+
+Batch 2022 (Semester 9):
+  Sections BSE-9A / BSE-9B:
+    - CS4046: Game Design and Development

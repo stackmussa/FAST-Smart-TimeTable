@@ -19,6 +19,7 @@ type ClassEntry = {
   batch: string;
   is_rescheduled?: boolean;
   is_repeat?: boolean;
+  is_elective?: boolean;
   is_cancelled?: boolean;
 };
 
@@ -50,6 +51,7 @@ export default function TimetableViewer() {
   const [selectedSection, setSelectedSection] = useState<string>('');
   const [selectedDay, setSelectedDay] = useState<string>('');
   const [showRepeated, setShowRepeated] = useState<boolean>(false);
+  const [showElectives, setShowElectives] = useState<boolean>(false);
   const [offlineMode, setOfflineMode] = useState<boolean>(false);
   const [isOnline, setIsOnline] = useState<boolean>(true);
   const [lastUpdated, setLastUpdated] = useState<{ comp: string | null, mgt: string | null, eng: string | null }>({ comp: null, mgt: null, eng: null });
@@ -87,7 +89,8 @@ export default function TimetableViewer() {
           c.batch === selectedBatch && 
           (baseSection === selectedSection || c.section === selectedSection) &&
           !c.is_cancelled &&
-          (showRepeated ? true : !c.is_repeat)
+          (showRepeated ? true : !c.is_repeat) &&
+          (showElectives ? true : !c.is_elective)
         );
       });
 
@@ -151,11 +154,11 @@ export default function TimetableViewer() {
            text = `Next: ${nxt.day} at ${nxt.time_start}`; 
         }
         setCountdownText(text);
+        }
       }
-    } else {
-      setCountdownText("");
-    }
-  }, [currentTime, data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, mounted, showRepeated]);
+    };
+    getNextClass();
+  }, [currentTime, data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, mounted, showRepeated, showElectives]);
 
 
   // Force dark mode on mount & attach network listeners
@@ -598,14 +601,15 @@ export default function TimetableViewer() {
           entry.batch === selectedBatch &&
           baseSection === selectedSection &&
           entry.day === selectedDay &&
-          (showRepeated ? true : !entry.is_repeat)
+          (showRepeated ? true : !entry.is_repeat) &&
+          (showElectives ? true : !entry.is_elective)
         );
       })
       .sort((a, b) => {
         // Sort chronologically by time_start e.g. "08:30"
         return a.time_start.localeCompare(b.time_start);
       });
-  }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, showRepeated]);
+  }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay, showRepeated, showElectives]);
 
   // Background monitoring system: check if repeated courses exist for the active combination of filters
   const hasRepeatedCourses = useMemo(() => {
@@ -627,6 +631,26 @@ export default function TimetableViewer() {
   }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay]);
 
   const shouldAnimateRepeated = hasRepeatedCourses && !showRepeated;
+
+  const hasElectiveCourses = useMemo(() => {
+    if (!selectedSchool || !selectedDepartment || !selectedBatch || !selectedSection || !selectedDay || !data.length) {
+      return false;
+    }
+
+    return data.some((entry) => {
+      const baseSection = entry.section ? entry.section.replace(/\d+$/, '') : '';
+      return (
+        entry.school === selectedSchool &&
+        entry.department === selectedDepartment &&
+        entry.batch === selectedBatch &&
+        (baseSection === selectedSection || entry.section === selectedSection) &&
+        entry.day === selectedDay &&
+        Boolean(entry.is_elective)
+      );
+    });
+  }, [data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, selectedDay]);
+
+  const shouldAnimateElectives = hasElectiveCourses && !showElectives;
 
   const formatTime = (isoString: string | null) => {
     if (!isoString) return 'Unknown';
@@ -876,22 +900,41 @@ export default function TimetableViewer() {
                     </div>
                   </div>
 
-                  {/* Repeated */}
-                  <div className="flex flex-col">
-                    <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-400 ml-1">Repeated</label>
-                    <button
-                      onClick={() => setShowRepeated(!showRepeated)}
-                      disabled={loading}
-                      className={`h-[40px] rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
-                        showRepeated
-                          ? 'bg-indigo-600 text-white border-transparent shadow-sm'
-                          : shouldAnimateRepeated
-                          ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500 animate-aggressive-breathing'
-                          : 'bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10 hover:bg-white dark:bg-slate-900'
-                      }`}
-                    >
-                      {showRepeated ? 'Show: ON' : 'Show: OFF'}
-                    </button>
+                  {/* Repeated & Electives */}
+                  <div className="flex flex-row space-x-2">
+                    <div className="flex flex-col">
+                      <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-400 ml-1">Repeated</label>
+                      <button
+                        onClick={() => setShowRepeated(!showRepeated)}
+                        disabled={loading}
+                        className={`h-[40px] px-4 rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
+                          showRepeated
+                            ? 'bg-indigo-600 text-white border-transparent shadow-sm'
+                            : shouldAnimateRepeated
+                            ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500 animate-aggressive-breathing'
+                            : 'bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10 hover:bg-white dark:bg-slate-900'
+                        }`}
+                      >
+                        {showRepeated ? 'Show: ON' : 'Show: OFF'}
+                      </button>
+                    </div>
+
+                    <div className="flex flex-col">
+                      <label className="text-[11px] font-bold uppercase tracking-wider mb-1.5 text-slate-500 dark:text-slate-400 ml-1">Electives</label>
+                      <button
+                        onClick={() => setShowElectives(!showElectives)}
+                        disabled={loading}
+                        className={`h-[40px] px-4 rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
+                          showElectives
+                            ? 'bg-purple-600 text-white border-transparent shadow-sm'
+                            : shouldAnimateElectives
+                            ? 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500 animate-aggressive-breathing'
+                            : 'bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10 hover:bg-white dark:bg-slate-900'
+                        }`}
+                      >
+                        {showElectives ? 'Show: ON' : 'Show: OFF'}
+                      </button>
+                    </div>
                   </div>
 
                 </div>
@@ -937,12 +980,6 @@ export default function TimetableViewer() {
                   <Compass className="w-12 h-12 text-slate-600 mb-3" />
                   <p className="text-lg font-medium text-slate-600 dark:text-slate-400">Select your criteria above to view classes.</p>
                 </div>
-              ) : filteredClasses.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-48 bg-slate-50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-white/5 p-6 text-center">
-                  <CheckCircle2 className="w-12 h-12 text-slate-600 mb-3" />
-                  <p className="text-xl font-bold text-slate-700 dark:text-slate-300 mb-1">No Classes Today!</p>
-                  <p className="text-slate-500 dark:text-slate-400 font-medium">Enjoy your free time.</p>
-                </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {filteredClasses.map((cls, idx) => (
@@ -964,6 +1001,11 @@ export default function TimetableViewer() {
                               {cls.is_repeat && (
                                 <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold border animate-pulse uppercase tracking-widest bg-amber-500/10 text-amber-400 border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.4)]">
                                   Repeated
+                                </span>
+                              )}
+                              {cls.is_elective && (
+                                <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-md text-[10px] font-bold bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 uppercase tracking-wider shrink-0 shadow-sm">
+                                  Elective
                                 </span>
                               )}
                             </div>
@@ -1135,6 +1177,11 @@ export default function TimetableViewer() {
               {nextClass.is_repeat && (
                 <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.4)] animate-pulse uppercase tracking-widest">
                   Repeated
+                </span>
+              )}
+              {nextClass.is_elective && (
+                <span className="inline-flex items-center px-2 py-1 rounded-md text-xs font-bold bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 uppercase tracking-wider">
+                  Elective
                 </span>
               )}
             </h3>
