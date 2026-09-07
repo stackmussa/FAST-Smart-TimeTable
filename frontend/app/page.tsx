@@ -702,10 +702,14 @@ export default function TimetableViewer() {
                     </span>
                     <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
+                  <button 
+                    onClick={() => window.location.reload()}
+                    className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] hover:bg-emerald-200 dark:hover:bg-emerald-500/20 transition-colors cursor-pointer"
+                    title="Click to force refresh"
+                  >
                     <Clock className="w-3.5 h-3.5" />
                     <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
-                  </div>
+                  </button>
                 </>
               )}
 
