@@ -9,6 +9,7 @@ import logging
 import requests
 import io
 import re
+import sys
 import time
 import openpyxl
 from typing import List, Dict, Any
@@ -839,36 +840,29 @@ def main():
     else:
         logging.info(f"engineering.json unchanged — {len(fse_entries)} entries")
     
-    # ── Write sync_metadata.json ──────────────────────────────────────────────
-    sync_meta_path = os.path.join(out_dir, "sync_metadata.json")
-    
-    # If changes occurred, stamp with current time; otherwise preserve existing timestamp
+    # ── Write sync_metadata.json (ONLY when data actually changed) ───────────
+    # Writing on every run (even with identical data) would make sync_metadata.json
+    # always dirty in git due to the live `last_checked` timestamp, causing
+    # false-positive commits. We gate writes on real data changes.
     if changed_files:
-        new_timestamp = int(time.time())
-    else:
-        try:
-            with open(sync_meta_path, 'r', encoding='utf-8') as f:
-                existing_meta = json.load(f)
-                new_timestamp = existing_meta.get("last_updated", int(time.time()))
-        except Exception:
-            new_timestamp = int(time.time())
-    
-    sync_metadata = {
-        "last_updated": new_timestamp,
-        "changed_files": changed_files,
-        "last_checked": datetime.datetime.utcnow().isoformat() + "Z"
-    }
-    
-    with open(sync_meta_path, 'w', encoding='utf-8') as f:
-        json.dump(sync_metadata, f, indent=2, ensure_ascii=False)
-    
-    if changed_files:
+        sync_meta_path = os.path.join(out_dir, "sync_metadata.json")
+        sync_metadata = {
+            "last_updated": int(time.time()),
+            "changed_files": changed_files,
+            "last_checked": datetime.datetime.utcnow().isoformat() + "Z"
+        }
+        with open(sync_meta_path, 'w', encoding='utf-8') as f:
+            json.dump(sync_metadata, f, indent=2, ensure_ascii=False)
         logging.info(f"Changes detected in: {', '.join(changed_files)}")
+        logging.info(f"sync_metadata.json updated: {sync_metadata}")
+        logging.info("Process completed successfully.")
+        # Exit code 1 = changes found — GitHub Actions will trigger a commit
+        sys.exit(1)
     else:
-        logging.info("No changes detected in any timetable.")
-    
-    logging.info(f"sync_metadata.json written: {sync_metadata}")
-    logging.info("Process completed successfully.")
+        logging.info("No changes detected in any timetable — skipping sync_metadata.json write.")
+        logging.info("Process completed successfully.")
+        # Exit code 0 = no changes — GitHub Actions will skip the commit step
+        sys.exit(0)
 
 if __name__ == "__main__":
     main()

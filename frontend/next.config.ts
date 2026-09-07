@@ -22,6 +22,13 @@ const withPWA = withPWAInit({
   dest: "public",
   disable: process.env.NODE_ENV === 'development',
   register: true,
+  // skipWaiting + clientsClaim live inside workboxOptions for @ducanh2912/next-pwa.
+  // skipWaiting: new SW activates immediately (no waiting for tabs to close).
+  // clientsClaim: new SW takes control of all existing open tabs straight away.
+  workboxOptions: {
+    skipWaiting: true,
+    clientsClaim: true,
+  },
 });
 
 export default withPWA(nextConfig);

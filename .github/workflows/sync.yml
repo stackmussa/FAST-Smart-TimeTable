@@ -29,24 +29,42 @@ jobs:
           playwright install chromium --with-deps
 
       - name: Run timetable scraper
-        run: python fetch_timetable.py
+        id: scraper
+        run: |
+          # The scraper exits with code 1 if data changed, 0 if nothing changed.
+          # We capture this cleanly without failing the workflow step.
+          if python fetch_timetable.py; then
+            echo "CHANGES_FOUND=false" >> "$GITHUB_ENV"
+            echo "Scraper exited 0 — no timetable changes detected."
+          else
+            EXIT_CODE=$?
+            if [ "$EXIT_CODE" -eq 1 ]; then
+              echo "CHANGES_FOUND=true" >> "$GITHUB_ENV"
+              echo "Scraper exited 1 — timetable changes detected, will commit."
+            else
+              echo "Scraper exited with unexpected error code $EXIT_CODE"
+              exit $EXIT_CODE
+            fi
+          fi
 
       - name: Commit and Push if changed
+        if: env.CHANGES_FOUND == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage only the data files
+          # Stage only the data files that the scraper may have modified
           git add frontend/public/computing.json \
                   frontend/public/engineering.json \
                   frontend/public/management.json \
                   frontend/public/sync_metadata.json
 
-          # Porcelain diff check — only commit if staged changes exist
+          # Final safety guard: double-check git actually sees staged changes
           if [ -n "$(git status --porcelain frontend/public/)" ]; then
             git commit -m "Auto-sync: Update timetable data $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             git pull --rebase origin main
             git push origin main
+            echo "Changes committed and pushed successfully."
           else
-            echo "No data changes detected — skipping commit."
+            echo "Scraper signaled changes but git sees none — skipping commit (safe no-op)."
           fi

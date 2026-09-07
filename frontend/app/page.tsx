@@ -348,16 +348,47 @@ export default function TimetableViewer() {
     };
   }, []);
 
-  // ── Handle update banner click: refetch all data ──
+  // Maps scraper file keys → display school names & JSON paths
+  const SCHOOL_FILE_MAP: Record<string, string> = {
+    'Computing': 'School of Computing',
+    'Management': 'School of Management',
+    'Engineering': 'School of Engineering',
+  };
+
+  // ── Handle update banner click: navigate to changed school + cache-bust refetch ──
   const handleUpdateBannerClick = async () => {
+    const changedFiles = updateBanner.changedFiles;
+
+    // Determine the primary changed school and navigate to it
+    const primaryChangedFile = changedFiles[0];
+    const targetSchool = SCHOOL_FILE_MAP[primaryChangedFile] ?? selectedSchool;
+
+    // Switch to the updated school tab and reset dependent filters so the
+    // user starts fresh — stale dept/batch/section selections may not exist
+    // in the newly updated school data
+    setSelectedSchool(targetSchool);
+    setSelectedDepartment('');
+    setSelectedBatch('');
+    setSelectedSection('');
+    setSelectedDay('');
+
+    // Clear stale localStorage for filters (they will be re-saved after data loads)
+    localStorage.removeItem('timetable_filters');
+
+    // Dismiss the banner and show loading state
     setUpdateBanner({ show: false, changedFiles: [] });
     setLoading(true);
 
     const basePath = process.env.NODE_ENV === 'production' ? '/FAST-Smart-TimeTable' : '';
     const t = Date.now();
-    const fetchOpts = { cache: 'no-store' as RequestCache, headers: { 'Cache-Control': 'no-cache, no-store', 'Pragma': 'no-cache' } };
+    const fetchOpts: RequestInit = {
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+    };
 
     try {
+      // Refetch all three schools with a cache-busting timestamp so we always
+      // get the freshest data even if the browser/CDN has stale copies
       const [compRes, mgtRes, engRes] = await Promise.all([
         fetch(`${basePath}/computing.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
         fetch(`${basePath}/management.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
@@ -378,13 +409,17 @@ export default function TimetableViewer() {
       if (allData.length > 0) {
         const normalizedData = normalizeClassData(allData);
         setData(normalizedData);
-        const newTimestamps = { comp: compData.last_updated, mgt: mgtData.last_updated, eng: engData.last_updated };
+        const newTimestamps = {
+          comp: compData.last_updated,
+          mgt: mgtData.last_updated,
+          eng: engData.last_updated
+        };
         setLastUpdated(newTimestamps);
         localStorage.setItem('timetable_data', JSON.stringify(normalizedData));
         localStorage.setItem('timetable_timestamps', JSON.stringify(newTimestamps));
       }
 
-      // Update the synced timestamp so the banner doesn't reappear
+      // Stamp the new sync timestamp so the banner won't reappear for this update
       const metaRes = await fetch(`${basePath}/sync_metadata.json?t=${Date.now()}`, fetchOpts);
       if (metaRes.ok) {
         const meta = await metaRes.json();
@@ -395,6 +430,7 @@ export default function TimetableViewer() {
     }
     setLoading(false);
   };
+
 
   // Save filters to localStorage whenever they change
   useEffect(() => {
