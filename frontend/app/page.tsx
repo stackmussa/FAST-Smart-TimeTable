@@ -154,12 +154,11 @@ export default function TimetableViewer() {
            text = `Next: ${nxt.day} at ${nxt.time_start}`; 
         }
         setCountdownText(text);
-        }
       }
-    };
-    getNextClass();
+    } else {
+      setCountdownText("");
+    }
   }, [currentTime, data, selectedSchool, selectedDepartment, selectedBatch, selectedSection, mounted, showRepeated, showElectives]);
-
 
   // Force dark mode on mount & attach network listeners
   useEffect(() => {
