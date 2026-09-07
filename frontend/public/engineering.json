@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T01:05:19.329601Z",
+  "last_updated": "2026-09-07T06:01:57.209366Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -1080,26 +1080,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-D) has Engineering Drawing in Room Koh on Monday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-MON-MDEL-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Microprocessor. Lab",
-      "section": "EE-B",
-      "instructor": null,
-      "room": "MDEL",
-      "day": "Monday",
-      "time_start": "11:25",
-      "time_end": "14:10",
-      "is_lab": true,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section EE-B) has Microprocessor. Lab (Lab) in Room MDEL on Monday from 11:25 to 14:10."
     },
     {
       "id": "FSE-MON-MDEL-1250",
@@ -5500,46 +5480,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-B) has Data Com. & Netwks. in Room B-020 on Friday from 11:25 to 12:45."
-    },
-    {
-      "id": "FSE-FRI-B027-0955",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "OBE Seminar BSEE &",
-      "section": "EE-BSCE",
-      "instructor": null,
-      "room": "B-027",
-      "day": "Friday",
-      "time_start": "09:55",
-      "time_end": "11:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-BSCE) has OBE Seminar BSEE & in Room B-027 on Friday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-FRI-B027-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "OBE Seminar BSEE &",
-      "section": "EE-BSCE",
-      "instructor": null,
-      "room": "B-027",
-      "day": "Friday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-BSCE) has OBE Seminar BSEE & in Room B-027 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B127-0830",
