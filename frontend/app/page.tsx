@@ -61,6 +61,7 @@ export default function TimetableViewer() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [nextClass, setNextClass] = useState<any>(null);
   const [isNextClassModalOpen, setIsNextClassModalOpen] = useState(false);
+  const [isSyncModalOpen, setIsSyncModalOpen] = useState(false);
   const [countdownText, setCountdownText] = useState("");
   const [mounted, setMounted] = useState(false);
   const [initialDaySet, setInitialDaySet] = useState(false);
@@ -726,9 +727,9 @@ export default function TimetableViewer() {
                     <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
                   </div>
                   <button 
-                    onClick={() => window.location.reload()}
+                    onClick={() => setIsSyncModalOpen(true)}
                     className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] hover:bg-emerald-200 dark:hover:bg-emerald-500/20 transition-colors cursor-pointer"
-                    title="Click to force refresh"
+                    title="View Timetable Sync Details"
                   >
                     <Clock className="w-3.5 h-3.5" />
                     <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
@@ -1205,6 +1206,37 @@ export default function TimetableViewer() {
                       <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">Room</p>
                       <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{nextClass.room}</p>
                   </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Sync Info Modal Drawer */}
+      {isSyncModalOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/50 dark:bg-slate-950/80 backdrop-blur-sm animate-in fade-in duration-200" onClick={() => setIsSyncModalOpen(false)}>
+          <div 
+            className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 w-full max-w-sm shadow-2xl relative border border-slate-200 dark:border-slate-800 animate-in slide-in-from-bottom-8 duration-300"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button onClick={() => setIsSyncModalOpen(false)} className="absolute top-4 right-4 p-2 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6 pr-8">
+              Timetable Last Inferred
+            </h3>
+            <div className="space-y-4">
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+                <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Computing</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.comp)}</p>
+              </div>
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+                <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Management</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.mgt)}</p>
+              </div>
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+                <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Engineering</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.eng)}</p>
               </div>
             </div>
           </div>
