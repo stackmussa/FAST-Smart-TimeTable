@@ -906,7 +906,7 @@ export default function TimetableViewer() {
                       <button
                         onClick={() => setShowRepeated(!showRepeated)}
                         disabled={loading}
-                        className={`h-[40px] px-4 rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
+                        className={`h-[40px] px-4 rounded-lg font-bold text-[10px] sm:text-xs transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
                           showRepeated
                             ? 'bg-indigo-600 text-white border-transparent shadow-sm'
                             : shouldAnimateRepeated
@@ -923,7 +923,7 @@ export default function TimetableViewer() {
                       <button
                         onClick={() => setShowElectives(!showElectives)}
                         disabled={loading}
-                        className={`h-[40px] px-4 rounded-lg font-medium text-sm transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
+                        className={`h-[40px] px-4 rounded-lg font-bold text-[10px] sm:text-xs transition-all focus:ring-1 focus:ring-indigo-500 outline-none disabled:opacity-50 flex items-center justify-center relative ${
                           showElectives
                             ? 'bg-purple-600 text-white border-transparent shadow-sm'
                             : shouldAnimateElectives
@@ -1003,7 +1003,7 @@ export default function TimetableViewer() {
                                 </span>
                               )}
                               {cls.is_elective && (
-                                <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-md text-[10px] font-bold bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 uppercase tracking-wider shrink-0 shadow-sm">
+                                <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-md text-[10px] font-bold bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 uppercase tracking-wider shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.4)] animate-pulse">
                                   Elective
                                 </span>
                               )}
@@ -1179,7 +1179,7 @@ export default function TimetableViewer() {
                 </span>
               )}
               {nextClass.is_elective && (
-                <span className="inline-flex items-center px-2 py-1 rounded-md text-xs font-bold bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 uppercase tracking-wider">
+                <span className="inline-flex items-center px-2 py-1 rounded-md text-[10px] font-bold bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 shadow-[0_0_10px_rgba(168,85,247,0.4)] animate-pulse uppercase tracking-wider">
                   Elective
                 </span>
               )}
