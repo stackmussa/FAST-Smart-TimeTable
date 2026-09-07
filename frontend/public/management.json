@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T01:05:15.294391Z",
+  "last_updated": "2026-09-07T12:22:23.305339Z",
   "classes": [
     {
       "id": "FSM-MON-A01-0830",
@@ -1450,7 +1450,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "FT03D",
-      "instructor": "Dr. Jamil",
+      "instructor": "Dr. Muhmmad Jamil",
       "room": "A-305",
       "day": "Monday",
       "time_start": "08:30",
@@ -1459,7 +1459,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS FT (Batch 2025, Section FT03D) has MG2012 Business Economics in Room A-305 on Monday from 08:30 to 09:50. Instructor: Dr. Jamil."
+      "rag_summary": "BS FT (Batch 2025, Section FT03D) has MG2012 Business Economics in Room A-305 on Monday from 08:30 to 09:50. Instructor: Dr. Muhmmad Jamil."
     },
     {
       "id": "FSM-MON-A305-1000",
@@ -1470,7 +1470,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "FT03C",
-      "instructor": "Dr. Jamil",
+      "instructor": "Dr. Muhmmad Jamil",
       "room": "A-305",
       "day": "Monday",
       "time_start": "10:00",
@@ -1479,7 +1479,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS FT (Batch 2025, Section FT03C) has MG2012 Business Economics in Room A-305 on Monday from 10:00 to 11:20. Instructor: Dr. Jamil."
+      "rag_summary": "BS FT (Batch 2025, Section FT03C) has MG2012 Business Economics in Room A-305 on Monday from 10:00 to 11:20. Instructor: Dr. Muhmmad Jamil."
     },
     {
       "id": "FSM-MON-A305-1130",
@@ -7610,7 +7610,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "FT03D",
-      "instructor": "Dr. Jamil",
+      "instructor": "Dr. Muhmmad Jamil",
       "room": "A--211",
       "day": "Wednesday",
       "time_start": "08:30",
@@ -7619,7 +7619,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS FT (Batch 2025, Section FT03D) has MG2012 Business Economics in Room A--211 on Wednesday from 08:30 to 09:50. Instructor: Dr. Jamil."
+      "rag_summary": "BS FT (Batch 2025, Section FT03D) has MG2012 Business Economics in Room A--211 on Wednesday from 08:30 to 09:50. Instructor: Dr. Muhmmad Jamil."
     },
     {
       "id": "FSM-WED-A211-1000",
@@ -7630,7 +7630,7 @@
       "semester": "Unknown",
       "course_name": "MG2012 Business Economics",
       "section": "FT03C",
-      "instructor": "Dr. Jamil",
+      "instructor": "Dr. Muhmmad Jamil",
       "room": "A--211",
       "day": "Wednesday",
       "time_start": "10:00",
@@ -7639,7 +7639,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS FT (Batch 2025, Section FT03C) has MG2012 Business Economics in Room A--211 on Wednesday from 10:00 to 11:20. Instructor: Dr. Jamil."
+      "rag_summary": "BS FT (Batch 2025, Section FT03C) has MG2012 Business Economics in Room A--211 on Wednesday from 10:00 to 11:20. Instructor: Dr. Muhmmad Jamil."
     },
     {
       "id": "FSM-WED-A211-1130",
