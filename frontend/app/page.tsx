@@ -719,9 +719,8 @@ export default function TimetableViewer() {
                 </div>
               ) : (
                 <>
-                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-pulse">
+                  <div className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] animate-green-breathing">
                     <span className="relative flex h-2.5 w-2.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                     </span>
                     <span className="text-xs font-semibold tracking-wide uppercase">Live</span>
@@ -1226,18 +1225,27 @@ export default function TimetableViewer() {
               Timetable Last Inferred
             </h3>
             <div className="space-y-4">
-              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing">
+              <button 
+                onClick={() => { setSelectedSchool('School of Computing'); setIsSyncModalOpen(false); }}
+                className="w-full text-left bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Computing</p>
                 <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.comp)}</p>
-              </div>
-              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing">
+              </button>
+              <button 
+                onClick={() => { setSelectedSchool('School of Management'); setIsSyncModalOpen(false); }}
+                className="w-full text-left bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Management</p>
                 <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.mgt)}</p>
-              </div>
-              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing">
+              </button>
+              <button 
+                onClick={() => { setSelectedSchool('School of Engineering'); setIsSyncModalOpen(false); }}
+                className="w-full text-left bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Engineering</p>
                 <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.eng)}</p>
-              </div>
+              </button>
             </div>
           </div>
         </div>

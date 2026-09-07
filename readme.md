@@ -13,11 +13,14 @@ A robust, automated full-stack application built to dynamically extract, cache, 
 ### 2. Multi-File Architecture & Aggregation
 * **Granular JSON Output:** Timetable data is completely decoupled into three independent JSON endpoints (`computing.json`, `management.json`, `engineering.json`), allowing independent caching, precise updates, and significantly faster payload fetching.
 * **Cache-Busting Integration:** The Next.js frontend utilizes strict `no-store` headers and appends dynamic timestamp parameters (`?t=Date.now()`) to bypass CDN layers and ensure the absolute latest timetable is always presented.
+* **PWA Seamless Auto-Refresh:** The Progressive Web App (PWA) actively listens to service worker updates. Upon any change occurring on deployment, it automatically refreshes the installed app silently without manual user intervention.
 
 ### 3. Advanced Frontend & UI (Timetable Viewer)
 * **Smart Filter Cascading:** Dynamic multi-level dropdown filters (School → Department → Batch → Section → Day). Selecting a higher-level filter seamlessly cascades to dynamically restrict valid choices for lower levels.
 * **Intelligent Filter Persistence:** All dropdown selections are cached into client-side `localStorage`. Upon returning to the application, all previous filter preferences are automatically restored.
 * **Live Connection Monitoring:** The application actively listens for standard Web API `online`/`offline` network events, rendering a live status badge. If the network drops, it immediately falls back to rendering the schedule from local memory.
+* **Immersive Visual Feedback:** Includes a globally paced 'breathing' animation synced natively on both the LIVE indicator and the SYNC indicator. It visually pulses with specific color codes to indicate system state passively.
+* **Interactive Timetable Sync Info:** Instead of basic sync reloads, the user gets detailed 'Last Inferred' timestamps across all schools via an intuitive modal. Tapping on any school immediately redirects the user to that department's active timetable view.
 
 ### 4. Offline-First Faculty Finder
 * **Client-Side CSV Parsing:** A highly customized frontend parser streams the `papaparse` CSV object to dynamically assemble faculty profiles, handling complex nested spreadsheet grouping natively on the client.
