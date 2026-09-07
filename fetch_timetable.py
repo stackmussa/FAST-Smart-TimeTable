@@ -312,14 +312,14 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             continue
                         time_val = time_col_map[start_vcol]
 
-                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)" or "Seerah (C5-B)"
-                        course_match = re.match(r"^(.+?)\s*\(([A-Z0-9]{2,3}-[A-Z0-9]+)(?:,\s*(\d+))?\)", val)
+                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)" or "OOP (AI/DS-A, 25)"
+                        # Or section-less for repeats: "Calculus"
+                        course_match = re.match(r"^(.+?)(?:\s*\((.*?)\))?$", val)
                         if not course_match:
                             continue
 
                         course_name = course_match.group(1).strip()
-                        section_code = course_match.group(2).strip()
-                        explicit_batch_code = course_match.group(3)
+                        inside_parens = course_match.group(2)
                         
                         is_rescheduled = "resch" in val.lower()
                         if is_rescheduled:
@@ -332,9 +332,6 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         # Skip postgraduate
                         if any(pg in val for pg in ["MS", "PhD", "PCS", "Repeat"]):
                             continue
-
-                        dept_key = section_code.split("-")[0]
-                        dept = FSC_DEPT_MAP.get(dept_key, dept_key)
                         
                         td_classes = cell.get("class", [])
                         cell_color = None
@@ -343,8 +340,32 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                 cell_color = class_to_color[c]
                                 break
 
-                        batch = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
                         is_repeat = (cell_color == "FFFF00")
+
+                        explicit_batch_code = None
+                        sections_to_add = []
+
+                        if inside_parens:
+                            parts = [p.strip() for p in inside_parens.split(',')]
+                            sec_part = parts[0]
+                            explicit_batch_code = parts[1] if len(parts) > 1 else None
+                            
+                            sec_split = sec_part.split('-')
+                            dept_part = sec_split[0]
+                            sec_letter = sec_split[1] if len(sec_split) > 1 else "A"
+                            
+                            depts = [d.strip() for d in dept_part.split('/')]
+                            for d in depts:
+                                d_clean = d.replace('B', '') if d.startswith('B') and len(d) > 2 else d
+                                d_mapped = FSC_DEPT_MAP.get(d_clean, d_clean)
+                                sections_to_add.append((d_mapped, f"{d_mapped}-{sec_letter}"))
+                        else:
+                            if is_repeat:
+                                sections_to_add.append(("CS", "CS-A"))
+                            else:
+                                continue # Skip if no section and not a repeat course
+
+                        batch_from_color = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
                         
                         if explicit_batch_code:
                             explicit_b = explicit_batch_code.strip()
@@ -352,6 +373,8 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                 batch = "20" + explicit_b
                             else:
                                 batch = explicit_b
+                        else:
+                            batch = batch_from_color
 
                         # calculate exact time range based on colspan
                         t_parts = time_val.split("-")
@@ -393,34 +416,36 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                     pass
 
                         is_lab = "lab" in course_name.lower() or "lab" in room.lower()
-                        entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
+                        
+                        for dept, section_code in sections_to_add:
+                            entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
 
-                        summary = generate_rag_summary(
-                            "School of Computing", dept, "BS", batch,
-                            section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled
-                        )
+                            summary = generate_rag_summary(
+                                "School of Computing", dept, "BS", batch,
+                                section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled
+                            )
 
-                        entries.append({
-                            "id": entry_id,
-                            "school": "School of Computing",
-                            "department": dept,
-                            "degree": "BS",
-                            "batch": batch,
-                            "semester": "Unknown",
-                            "course_name": course_name,
-                            "section": section_code,
-                            "instructor": None,
-                            "room": room,
-                            "day": day_name,
-                            "time_start": t_start,
-                            "time_end": t_end,
-                            "is_lab": is_lab,
-                            "is_rescheduled": is_rescheduled,
-                            "is_repeat": is_repeat,
-                            "is_cancelled": is_cancelled,
-                            "rag_summary": summary,
-                        })
-                        day_count += 1
+                            entries.append({
+                                "id": entry_id,
+                                "school": "School of Computing",
+                                "department": dept,
+                                "degree": "BS",
+                                "batch": batch,
+                                "semester": "Unknown",
+                                "course_name": course_name,
+                                "section": section_code,
+                                "instructor": None,
+                                "room": room,
+                                "day": day_name,
+                                "time_start": t_start,
+                                "time_end": t_end,
+                                "is_lab": is_lab,
+                                "is_rescheduled": is_rescheduled,
+                                "is_repeat": is_repeat,
+                                "is_cancelled": is_cancelled,
+                                "rag_summary": summary,
+                            })
+                            day_count += 1
 
                 logging.info(f"  FSC {day_name}: {day_count} entries")
 
