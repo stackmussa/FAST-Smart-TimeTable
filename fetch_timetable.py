@@ -312,9 +312,11 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             continue
                         time_val = time_col_map[start_vcol]
 
+                        ALLOWED_DEPTS = {"AI", "CS", "CY", "DS", "SE"}
+                        
                         # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)" or "OOP (AI/DS-A, 25)"
                         # Or section-less for repeats: "Calculus"
-                        course_match = re.match(r"^(.+?)(?:\s*\((.*?)\))?$", val)
+                        course_match = re.match(r"^([^(]+)(?:\(([^)]+)\))?", val)
                         if not course_match:
                             continue
 
@@ -358,23 +360,30 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             for d in depts:
                                 d_clean = d.replace('B', '') if d.startswith('B') and len(d) > 2 else d
                                 d_mapped = FSC_DEPT_MAP.get(d_clean, d_clean)
-                                sections_to_add.append((d_mapped, f"{d_mapped}-{sec_letter}"))
+                                if d_mapped in ALLOWED_DEPTS:
+                                    sections_to_add.append((d_mapped, f"{d_mapped}-{sec_letter}"))
                         else:
                             if is_repeat:
                                 sections_to_add.append(("CS", "CS-A"))
                             else:
                                 continue # Skip if no section and not a repeat course
+                                
+                        if not sections_to_add:
+                            continue
 
                         batch_from_color = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
                         
                         if explicit_batch_code:
                             explicit_b = explicit_batch_code.strip()
-                            if len(explicit_b) == 2:
+                            if len(explicit_b) == 2 and explicit_b.isdigit():
                                 batch = "20" + explicit_b
                             else:
                                 batch = explicit_b
                         else:
                             batch = batch_from_color
+                            
+                        if len(batch) == 2 and batch.isdigit():
+                            batch = "20" + batch
 
                         # calculate exact time range based on colspan
                         t_parts = time_val.split("-")
@@ -416,6 +425,9 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                     pass
 
                         is_lab = "lab" in course_name.lower() or "lab" in room.lower()
+                        
+                        if day_name.lower() == "friday" and is_lab and t_start in ["13:00", "13:30"] and t_end == "17:15":
+                            t_start = "14:30"
                         
                         for dept, section_code in sections_to_add:
                             entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
