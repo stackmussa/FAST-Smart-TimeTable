@@ -18493,7 +18493,7 @@
       "instructor": null,
       "room": "Margala 4 (C-212)",
       "day": "Friday",
-      "time_start": "13:00",
+      "time_start": "14:30",
       "time_end": "17:15",
       "is_lab": true,
       "is_rescheduled": false,
@@ -18513,13 +18513,13 @@
       "instructor": null,
       "room": "Margala 4 (C-212)",
       "day": "Friday",
-      "time_start": "13:00",
+      "time_start": "14:30",
       "time_end": "17:15",
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": true,
       "is_cancelled": false,
-      "rag_summary": "BS DS (Batch 24) in Rawal-1 For Today (September 04, Section DS-A) has COAL Lab (Lab) [REPEAT COURSE] in Room Margala 4 (C-212 on Friday from 13:00 to 17:15."
+      "rag_summary": "BS DS (Batch 24) in Rawal-1 For Today (September 04, Section DS-A) has COAL Lab (Lab) [REPEAT COURSE] in Room Margala 4 (C-212 on Friday from 14:30 to 17:15."
     },
     {
       "id": "FSC-FRI-Rawal 1 (C509)-0830-CSA",
