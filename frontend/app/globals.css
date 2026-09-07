@@ -42,3 +42,21 @@ body {
   animation: aggressiveBreathing 1.2s ease-in-out infinite;
   will-change: transform, box-shadow;
 }
+
+@keyframes greenBreathing {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    border-color: rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 16px 3px rgba(16, 185, 129, 0.5), 0 0 28px 6px rgba(5, 150, 105, 0.2);
+    border-color: rgba(16, 185, 129, 1);
+  }
+}
+
+.animate-green-breathing {
+  animation: greenBreathing 1.8s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}

@@ -728,7 +728,7 @@ export default function TimetableViewer() {
                   </div>
                   <button 
                     onClick={() => setIsSyncModalOpen(true)}
-                    className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] hover:bg-emerald-200 dark:hover:bg-emerald-500/20 transition-colors cursor-pointer"
+                    className="flex items-center space-x-2 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3 py-1.5 rounded-lg shadow-sm dark:shadow-[0_0_12px_rgba(16,185,129,0.3)] hover:bg-emerald-200 dark:hover:bg-emerald-500/20 transition-colors cursor-pointer animate-green-breathing"
                     title="View Timetable Sync Details"
                   >
                     <Clock className="w-3.5 h-3.5" />
@@ -1226,15 +1226,15 @@ export default function TimetableViewer() {
               Timetable Last Inferred
             </h3>
             <div className="space-y-4">
-              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing">
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Computing</p>
                 <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.comp)}</p>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing">
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Management</p>
                 <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.mgt)}</p>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-200 dark:border-white/5">
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing">
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Engineering</p>
                 <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.eng)}</p>
               </div>
