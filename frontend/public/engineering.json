@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08T05:56:53.941158Z",
+  "last_updated": "2026-09-08T10:37:13.312589Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -2982,26 +2982,6 @@
       "rag_summary": "BS EE (Batch 2024, Section EE-A) has A & Digital Comm. in Room B-019 on Wednesday from 09:55 to 11:15."
     },
     {
-      "id": "FSE-WED-B019-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FSE Faculty Meeting",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-019",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has FSE Faculty Meeting in Room B-019 on Wednesday from 11:25 to 12:45."
-    },
-    {
       "id": "FSE-WED-B019-1250",
       "school": "School of Engineering",
       "department": "EE",
@@ -3102,6 +3082,26 @@
       "rag_summary": "BS EE (Batch 2024, Section EE-B) has MP Inter. & Prog in Room B-020 on Wednesday from 09:55 to 11:15."
     },
     {
+      "id": "FSE-WED-B020-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "MP Inter. & Prog",
+      "section": "EE-A",
+      "instructor": "Engr. Shehzad Ahmed",
+      "room": "B-020",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch 2024, Section EE-A) has MP Inter. & Prog in Room B-020 on Wednesday from 11:25 to 12:45."
+    },
+    {
       "id": "FSE-WED-B020-1250",
       "school": "School of Engineering",
       "department": "EE",
@@ -3180,6 +3180,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engr. in Room B-119 on Wednesday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-WED-B119-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "FSE Faculty Meeting",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-119",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has FSE Faculty Meeting in Room B-119 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B119-1250",
