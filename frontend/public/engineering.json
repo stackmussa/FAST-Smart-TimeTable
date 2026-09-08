@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T12:22:27.384925Z",
+  "last_updated": "2026-09-08T05:56:53.941158Z",
   "classes": [
     {
       "id": "FSE-MON-B027-0830",
@@ -1949,7 +1949,7 @@
       "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "LA & Diff. Equations",
-      "section": "Unknown",
+      "section": "EE-A",
       "instructor": "Dr. Irfan Shah",
       "room": "B-130",
       "day": "Tuesday",
@@ -1959,7 +1959,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has LA & Diff. Equations in Room B-130 on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has LA & Diff. Equations in Room B-130 on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-B130-1250",
@@ -4689,7 +4689,7 @@
       "batch": "Unknown",
       "semester": "Unknown",
       "course_name": "LA & Diff. Equations",
-      "section": "Unknown",
+      "section": "EE-A",
       "instructor": "Dr. Irfan Shah",
       "room": "B-129",
       "day": "Thursday",
@@ -4699,7 +4699,7 @@
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has LA & Diff. Equations in Room B-129 on Thursday from 15:45 to 17:05."
+      "rag_summary": "BS EE (Batch Unknown, Section EE-A) has LA & Diff. Equations in Room B-129 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B130-0830",
