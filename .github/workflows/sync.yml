@@ -31,7 +31,7 @@ jobs:
       - name: Run timetable scraper
         id: scraper
         run: |
-          # The scraper exits with code 1 if data changed, 0 if nothing changed.
+          # Scraper exits 1 when data changed, 0 when nothing changed.
           # We capture this cleanly without failing the workflow step.
           if python fetch_timetable.py; then
             echo "CHANGES_FOUND=false" >> "$GITHUB_ENV"
@@ -40,31 +40,84 @@ jobs:
             EXIT_CODE=$?
             if [ "$EXIT_CODE" -eq 1 ]; then
               echo "CHANGES_FOUND=true" >> "$GITHUB_ENV"
-              echo "Scraper exited 1 — timetable changes detected, will commit."
+              echo "Scraper exited 1 — changes detected, proceeding to commit."
             else
               echo "Scraper exited with unexpected error code $EXIT_CODE"
               exit $EXIT_CODE
             fi
           fi
 
-      - name: Commit and Push if changed
+      - name: Determine changed schools and build commit message
+        if: env.CHANGES_FOUND == 'true'
+        run: |
+          # Read the changed_schools array from sync_metadata.json
+          CHANGED_SCHOOLS=$(python3 -c "
+          import json, sys
+          try:
+              with open('frontend/public/sync_metadata.json') as f:
+                  meta = json.load(f)
+              schools = meta.get('changed_schools', [])
+              print(', '.join(s.capitalize() for s in schools))
+          except Exception as e:
+              print('Unknown')
+          ")
+
+          # Count status-level changes (Cancelled / Rescheduled) for commit message detail
+          STATUS_COUNT=$(python3 -c "
+          import json
+          try:
+              with open('frontend/public/sync_metadata.json') as f:
+                  meta = json.load(f)
+              sc = meta.get('status_changes', [])
+              cancelled = sum(1 for s in sc if s.get('field') == 'is_cancelled' and s.get('new'))
+              rescheduled = sum(1 for s in sc if s.get('field') == 'is_rescheduled' and s.get('new'))
+              parts = []
+              if cancelled: parts.append(f'{cancelled} cancelled')
+              if rescheduled: parts.append(f'{rescheduled} rescheduled')
+              print(', '.join(parts) if parts else '')
+          except:
+              print('')
+          ")
+
+          if [ -n "$STATUS_COUNT" ]; then
+            COMMIT_MSG="Auto-sync: $CHANGED_SCHOOLS — $STATUS_COUNT ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+          else
+            COMMIT_MSG="Auto-sync: Updates detected in $CHANGED_SCHOOLS ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+          fi
+
+          echo "COMMIT_MSG=$COMMIT_MSG" >> "$GITHUB_ENV"
+          echo "Commit message: $COMMIT_MSG"
+
+      - name: Stage only changed school files and commit
         if: env.CHANGES_FOUND == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage only the data files that the scraper may have modified
-          git add frontend/public/computing.json \
-                  frontend/public/engineering.json \
-                  frontend/public/management.json \
-                  frontend/public/sync_metadata.json
+          # Identify which specific data files were actually modified by the scraper
+          CHANGED_DATA_FILES=""
 
-          # Final safety guard: double-check git actually sees staged changes
-          if [ -n "$(git status --porcelain frontend/public/)" ]; then
-            git commit -m "Auto-sync: Update timetable data $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for FILE in \
+            frontend/public/computing.json \
+            frontend/public/management.json \
+            frontend/public/engineering.json \
+            frontend/public/sync_metadata.json; do
+            # Check if the file is modified or new according to git
+            STATUS=$(git status --porcelain "$FILE" 2>/dev/null | cut -c1-2 | tr -d ' ')
+            if [ -n "$STATUS" ]; then
+              git add "$FILE"
+              CHANGED_DATA_FILES="$CHANGED_DATA_FILES $FILE"
+              echo "Staged: $FILE (git status: $STATUS)"
+            else
+              echo "Skipped (unchanged in git): $FILE"
+            fi
+          done
+
+          if [ -n "$(git diff --cached --name-only)" ]; then
+            git commit -m "$COMMIT_MSG"
             git pull --rebase origin main
             git push origin main
-            echo "Changes committed and pushed successfully."
+            echo "Successfully committed and pushed:$CHANGED_DATA_FILES"
           else
-            echo "Scraper signaled changes but git sees none — skipping commit (safe no-op)."
+            echo "Scraper signaled changes but git sees none — safe no-op, skipping commit."
           fi

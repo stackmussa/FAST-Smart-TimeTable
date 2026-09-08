@@ -324,7 +324,15 @@ export default function TimetableViewer() {
   }, []);
 
   // ── Sync metadata polling: check for schedule updates every 5 minutes ──
+  // Uses the new `changed_schools` key (lowercase: "computing", "management", "engineering")
+  // to surgically refetch ONLY the school JSONs that actually changed — leaving intact caches.
   useEffect(() => {
+    const SCHOOL_FILE_MAP: Record<string, { key: 'comp' | 'mgt' | 'eng'; path: string; displayName: string }> = {
+      computing:   { key: 'comp', path: 'computing.json',   displayName: 'School of Computing'  },
+      management:  { key: 'mgt', path: 'management.json',  displayName: 'School of Management' },
+      engineering: { key: 'eng', path: 'engineering.json', displayName: 'School of Engineering' },
+    };
+
     const checkForUpdates = async () => {
       try {
         const basePath = process.env.NODE_ENV === 'production' ? '/FAST-Smart-TimeTable' : '';
@@ -334,14 +342,73 @@ export default function TimetableViewer() {
         });
         if (!res.ok) return;
         const meta = await res.json();
+
         const localTs = parseInt(localStorage.getItem('last_synced_timestamp') || '0', 10);
-        if (meta.last_updated > localTs && meta.changed_files?.length > 0) {
-          setUpdateBanner({ show: true, changedFiles: meta.changed_files });
+        if (meta.last_updated <= localTs) return; // Already seen this update
+
+        // Prefer the new lowercase `changed_schools` array; fall back to legacy `changed_files`
+        const changedSchools: string[] = (
+          meta.changed_schools ?? (meta.changed_files ?? []).map((f: string) => f.toLowerCase())
+        );
+
+        if (changedSchools.length === 0) return;
+
+        // Show banner with human-readable school names
+        const displayNames = changedSchools
+          .map(s => SCHOOL_FILE_MAP[s]?.displayName ?? s)
+          .filter(Boolean);
+        setUpdateBanner({ show: true, changedFiles: displayNames });
+
+        // ── Targeted cache-bust: only refetch schools that actually changed ──
+        const fetchOpts: RequestInit = {
+          cache: 'no-store',
+          headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+        };
+        const t = Date.now();
+
+        const updatedClasses: Record<string, any[]> = {};
+        const updatedTimestamps: Partial<{ comp: string | null; mgt: string | null; eng: string | null }> = {};
+
+        await Promise.all(
+          changedSchools.map(async (school) => {
+            const def = SCHOOL_FILE_MAP[school];
+            if (!def) return;
+            try {
+              const r = await fetch(`${basePath}/${def.path}?t=${t}`, fetchOpts);
+              if (!r.ok) return;
+              const raw = await r.json();
+              const parsed = Array.isArray(raw) ? { classes: raw, last_updated: null } : raw;
+              updatedClasses[school] = parsed.classes ?? [];
+              updatedTimestamps[def.key] = parsed.last_updated ?? null;
+            } catch { /* silent — will use stale cache for unchanged school */ }
+          })
+        );
+
+        // Merge the freshly fetched school data into the existing in-memory dataset
+        if (Object.keys(updatedClasses).length > 0) {
+          setData(prev => {
+            // Remove old entries belonging to changed schools, then append fresh ones
+            const schoolDisplayNames = changedSchools
+              .map(s => SCHOOL_FILE_MAP[s]?.displayName)
+              .filter(Boolean) as string[];
+            const retained = prev.filter(e => !schoolDisplayNames.includes(e.school));
+            const fresh = Object.values(updatedClasses).flat() as ClassEntry[];
+            return normalizeClassData([...retained, ...fresh]);
+          });
+          setLastUpdated(prev => ({ ...prev, ...updatedTimestamps }));
+
+          // Persist merged data to cache
+          setData(merged => {
+            localStorage.setItem('timetable_data', JSON.stringify(merged));
+            return merged;
+          });
         }
+
+        // Do NOT stamp last_synced_timestamp here — let the user click the banner
+        // so they are aware of the update and it is acknowledged explicitly.
       } catch { /* silent fail — offline or not deployed yet */ }
     };
 
-    // Initial check after a short delay (let main data load first)
     const initialTimeout = setTimeout(checkForUpdates, 3000);
     const interval = setInterval(checkForUpdates, 300000); // Poll every 5 minutes
 
@@ -352,86 +419,46 @@ export default function TimetableViewer() {
   }, []);
 
   // Maps scraper file keys → display school names & JSON paths
-  const SCHOOL_FILE_MAP: Record<string, string> = {
+  const SCHOOL_FILE_MAP_DISPLAY: Record<string, string> = {
     'Computing': 'School of Computing',
     'Management': 'School of Management',
     'Engineering': 'School of Engineering',
+    // Also handle lowercase keys from new changed_schools field
+    'computing': 'School of Computing',
+    'management': 'School of Management',
+    'engineering': 'School of Engineering',
   };
 
-  // ── Handle update banner click: navigate to changed school + cache-bust refetch ──
+  // ── Handle update banner click: navigate to primary changed school + stamp sync ──
   const handleUpdateBannerClick = async () => {
     const changedFiles = updateBanner.changedFiles;
 
     // Determine the primary changed school and navigate to it
     const primaryChangedFile = changedFiles[0];
-    const targetSchool = SCHOOL_FILE_MAP[primaryChangedFile] ?? selectedSchool;
+    const targetSchool = SCHOOL_FILE_MAP_DISPLAY[primaryChangedFile] ?? primaryChangedFile ?? selectedSchool;
 
-    // Switch to the updated school tab and reset dependent filters so the
-    // user starts fresh — stale dept/batch/section selections may not exist
-    // in the newly updated school data
     setSelectedSchool(targetSchool);
     setSelectedDepartment('');
     setSelectedBatch('');
     setSelectedSection('');
     setSelectedDay('');
-
-    // Clear stale localStorage for filters (they will be re-saved after data loads)
     localStorage.removeItem('timetable_filters');
 
-    // Dismiss the banner and show loading state
     setUpdateBanner({ show: false, changedFiles: [] });
-    setLoading(true);
 
-    const basePath = process.env.NODE_ENV === 'production' ? '/FAST-Smart-TimeTable' : '';
-    const t = Date.now();
-    const fetchOpts: RequestInit = {
-      cache: 'no-store',
-      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
-    };
-
+    // Stamp the new sync timestamp so the banner won't reappear for this update
     try {
-      // Refetch all three schools with a cache-busting timestamp so we always
-      // get the freshest data even if the browser/CDN has stale copies
-      const [compRes, mgtRes, engRes] = await Promise.all([
-        fetch(`${basePath}/computing.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
-        fetch(`${basePath}/management.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
-        fetch(`${basePath}/engineering.json?t=${t}`, fetchOpts).then(r => r.json()).catch(() => null),
-      ]);
-
-      const parseRes = (res: any) => {
-        if (!res) return { classes: [], last_updated: null };
-        if (Array.isArray(res)) return { classes: res, last_updated: null };
-        return { classes: res.classes || [], last_updated: res.last_updated || null };
+      const basePath = process.env.NODE_ENV === 'production' ? '/FAST-Smart-TimeTable' : '';
+      const fetchOpts: RequestInit = {
+        cache: 'no-store',
+        headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
       };
-
-      const compData = parseRes(compRes);
-      const mgtData = parseRes(mgtRes);
-      const engData = parseRes(engRes);
-      const allData = [...compData.classes, ...mgtData.classes, ...engData.classes];
-
-      if (allData.length > 0) {
-        const normalizedData = normalizeClassData(allData);
-        setData(normalizedData);
-        const newTimestamps = {
-          comp: compData.last_updated,
-          mgt: mgtData.last_updated,
-          eng: engData.last_updated
-        };
-        setLastUpdated(newTimestamps);
-        localStorage.setItem('timetable_data', JSON.stringify(normalizedData));
-        localStorage.setItem('timetable_timestamps', JSON.stringify(newTimestamps));
-      }
-
-      // Stamp the new sync timestamp so the banner won't reappear for this update
       const metaRes = await fetch(`${basePath}/sync_metadata.json?t=${Date.now()}`, fetchOpts);
       if (metaRes.ok) {
         const meta = await metaRes.json();
         localStorage.setItem('last_synced_timestamp', String(meta.last_updated));
       }
-    } catch (err) {
-      console.error('Failed to refresh data from banner click:', err);
-    }
-    setLoading(false);
+    } catch { /* silent */ }
   };
 
 
@@ -986,7 +1013,7 @@ export default function TimetableViewer() {
                       <div>
                         <div className="flex justify-between items-start mb-3 gap-4">
                           <div className="flex-1">
-                            <div className="flex flex-wrap items-center gap-2 mb-2">
+                            <div className="flex flex-wrap gap-1.5 mb-2">
                               {cls.is_cancelled && (
                                 <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-500/10 text-red-400 border border-red-500/20 shadow-[0_0_10px_rgba(239,68,68,0.4)] animate-pulse uppercase tracking-widest">
                                   Cancelled
@@ -1008,7 +1035,11 @@ export default function TimetableViewer() {
                                 </span>
                               )}
                             </div>
-                            <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 leading-tight">
+                            <h3 className={`text-base font-bold leading-tight ${
+                              cls.is_cancelled
+                                ? 'line-through text-slate-400 dark:text-slate-500'
+                                : 'text-slate-900 dark:text-slate-100'
+                            }`}>
                               {cls.course_name}
                             </h3>
                           </div>

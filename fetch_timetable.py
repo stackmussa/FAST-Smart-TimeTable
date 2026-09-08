@@ -1,8 +1,14 @@
 """
-Timetable Fetcher and Parser
+Timetable Fetcher and Parser - v2 (Status-Level Diffing)
 
-This script fetches, parses, and normalizes university timetable schedules 
-from three public Google Sheets into a unified `timetable.json` file.
+Enhancements over v1:
+- deep_changed(): compares new vs. old data at the field level, specifically
+  detecting status changes (is_cancelled, is_rescheduled, is_repeat) per class ID.
+- save_with_metadata(): only writes a school JSON if *semantically* changed
+  (ignores timestamp drift — only payload content counts).
+- sync_metadata.json contains `changed_schools` (lowercase keys) + `status_changes`
+  list of {id, field, old, new} for granular frontend awareness.
+- Exit code 1 = changes found; 0 = no changes.
 """
 import json
 import logging
@@ -12,7 +18,7 @@ import re
 import sys
 import time
 import openpyxl
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
@@ -24,13 +30,18 @@ URLS = {
     "FSE": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/export?format=xlsx&gid=115356958"
 }
 
-# Example Color mappings for FSC - Configure according to the actual sheets
-# Note: Color hex codes need to be updated from openpyxl's ARGB format to standard CSS hex/RGB formats to match the HTML view.
-COLOR_LEGEND = {
-    "FFFF0000": {"department": "CS", "degree": "BS", "batch": "2026", "semester": "1"}, 
-    "FF00FF00": {"department": "DS", "degree": "BS", "batch": "2025", "semester": "3"},
-    "FF0000FF": {"department": "AI", "degree": "BS", "batch": "2024", "semester": "5"},
-    "FFFFFF00": {"department": "SE", "degree": "BS", "batch": "2023", "semester": "7"}
+# ── Color maps ─────────────────────────────────────────────────────────────────
+FSC_COLOR_LEGEND = {
+    # BS CS
+    "FFB740": "2026", "6D5200": "2025", "C39401": "2024", "FFE599": "2023",
+    # BS DS
+    "7F4CFF": "2026", "351C75": "2025", "B17FD7": "2024", "B4A7D6": "2023",
+    # BS AI
+    "00F600": "2026", "274E13": "2025", "6AA84F": "2024", "B6D7A8": "2023",
+    # BS CY
+    "0000FF": "2026", "073763": "2025", "599DDA": "2024", "ABCCEB": "2023",
+    # BS SE
+    "E62C06": "2026", "85200C": "2025", "DD7E6B": "2024", "F4CCCC": "2023"
 }
 
 FSM_COLOR_LEGEND = {
@@ -64,52 +75,44 @@ FSE_COLOR_LEGEND = {
     "FFBDD7EE": {"department": "EE", "degree": "BS", "batch": "2025", "is_repeat": True}
 }
 
-# School of Computing Color Legend (Batch mapping only)
-FSC_COLOR_LEGEND = {
-    # BS CS
-    "FFB740": "2026",
-    "6D5200": "2025",
-    "C39401": "2024",
-    "FFE599": "2023",
-    # BS DS
-    "7F4CFF": "2026",
-    "351C75": "2025",
-    "B17FD7": "2024",
-    "B4A7D6": "2023",
-    # BS AI
-    "00F600": "2026",
-    "274E13": "2025",
-    "6AA84F": "2024",
-    "B6D7A8": "2023",
-    # BS CY
-    "0000FF": "2026",
-    "073763": "2025",
-    "599DDA": "2024",
-    "ABCCEB": "2023",
-    # BS SE
-    "E62C06": "2026",
-    "85200C": "2025",
-    "DD7E6B": "2024",
-    "F4CCCC": "2023"
-}
+# ── Utility helpers ────────────────────────────────────────────────────────────
 
 def clean_text(text: Any) -> str:
     if not text:
         return ""
     return str(text).strip()
 
+
+def normalize_time(t: str) -> str:
+    """Converts university times (1-7 treated as PM) to 24-hour HH:MM format."""
+    if not t:
+        return ""
+    t_clean = t.replace(' ', '').replace('AM', '').replace('PM', '').strip()
+    parts = t_clean.split(':')
+    if len(parts) != 2:
+        return t
+    try:
+        h = int(parts[0])
+        m = int(parts[1][:2])
+        if 1 <= h <= 7:
+            h += 12
+        return f"{h:02d}:{m:02d}"
+    except ValueError:
+        return t
+
+
 def parse_electives(filepath: str) -> set:
-    import os, re
+    import os
     if not os.path.exists(filepath):
         return set()
     electives = set()
-    current_sections = []
+    current_sections: List[str] = []
     with open(filepath, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
             if not line:
                 continue
-            section_match = re.match(r'Sections?\s+([A-Z0-9-/\s]+):', line)
+            section_match = re.match(r'Sections?\s+([A-Z0-9\-/\s]+):', line)
             if section_match:
                 raw_sections = section_match.group(1)
                 current_sections = [s.strip() for s in raw_sections.split('/')]
@@ -126,36 +129,38 @@ def parse_electives(filepath: str) -> set:
                         target_sec = f"{dept_match.group(1)}-{dept_match.group(3)}"
                     else:
                         target_sec = sec_clean
-                        
                     if course_code:
                         electives.add((target_sec, course_code.strip().upper()))
                     if course_name:
                         electives.add((target_sec, course_name))
     return electives
 
-def normalize_time(t: str) -> str:
-    """Converts university times (1-7 are PM) to 24-hour format for correct sorting."""
-    if not t: return ""
-    t_clean = t.replace(' ', '').replace('AM', '').replace('PM', '').strip()
-    parts = t_clean.split(':')
-    if len(parts) != 2: return t
-    try:
-        h = int(parts[0])
-        m = int(parts[1][:2]) # in case there is trailing text
-        # If hour is between 1 and 7 (inclusive), it is PM in university context.
-        if 1 <= h <= 7:
-            h += 12
-        return f"{h:02d}:{m:02d}"
-    except ValueError:
-        return t
+
+def generate_rag_summary(
+    school: str, dept: str, degree: str, batch: str, section: str,
+    course: str, room: str, day: str, t_start: str, t_end: str,
+    is_lab: bool, is_rescheduled: bool = False, is_repeat: bool = False,
+    is_cancelled: bool = False
+) -> str:
+    lab_text = " (Lab)" if is_lab else ""
+    status_prefix = ""
+    if is_cancelled:
+        status_prefix = "[CANCELLED] "
+    elif is_rescheduled:
+        status_prefix = "[RESCHEDULED] "
+    repeat_tag = " [REPEAT COURSE]" if is_repeat else ""
+    return (
+        f"{status_prefix}{degree} {dept} (Batch {batch}, Section {section}) "
+        f"has {course}{lab_text}{repeat_tag} in Room {room} on {day} "
+        f"from {t_start} to {t_end}."
+    )
+
 
 def download_workbook(url: str) -> openpyxl.Workbook:
-    """Downloads Google Sheet as an Excel file and loads into openpyxl"""
-    # Cache-busting parameter
     cb_url = f"{url}&_cb={int(time.time())}" if "?" in url else f"{url}?_cb={int(time.time())}"
     logging.info(f"Downloading data from {cb_url}")
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
         'Cache-Control': 'no-cache, no-store, must-revalidate',
         'Pragma': 'no-cache',
         'Expires': '0'
@@ -164,43 +169,147 @@ def download_workbook(url: str) -> openpyxl.Workbook:
     response.raise_for_status()
     return openpyxl.load_workbook(filename=io.BytesIO(response.content), data_only=True)
 
-def get_timetable_sheet(wb: openpyxl.Workbook) -> openpyxl.worksheet.worksheet.Worksheet:
-    """Finds the correct sheet containing the timetable."""
+
+def get_timetable_sheet(wb: openpyxl.Workbook):
     for name in wb.sheetnames:
         lower_name = name.lower()
         if 'timetable' in lower_name or 'schedule' in lower_name:
             return wb[name]
     return wb.active
 
-def generate_rag_summary(school: str, dept: str, degree: str, batch: str, section: str, 
-                         course: str, room: str, day: str, t_start: str, t_end: str, is_lab: bool, is_rescheduled: bool = False, is_repeat: bool = False, is_cancelled: bool = False) -> str:
-    """Generates a text summary string suitable for RAG ingestion."""
-    lab_text = " (Lab)" if is_lab else ""
-    status_prefix = ""
-    if is_cancelled:
-        status_prefix = "[CANCELLED] "
-    elif is_rescheduled:
-        status_prefix = "[RESCHEDULED] "
-        
-    repeat_tag = " [REPEAT COURSE]" if is_repeat else ""
-    return f"{status_prefix}{degree} {dept} (Batch {batch}, Section {section}) has {course}{lab_text}{repeat_tag} in Room {room} on {day} from {t_start} to {t_end}."
 
-def extract_time_slots(sheet: openpyxl.worksheet.worksheet.Worksheet, start_col: int = 2) -> List[tuple]:
-    """Extracts column mappings for time slots by examining headers in the first 10 rows."""
+def extract_time_slots(sheet, start_col: int = 2) -> List[tuple]:
     time_slots = []
     for r in range(1, 11):
         for col_idx in range(start_col, sheet.max_column + 1):
             val = clean_text(sheet.cell(row=r, column=col_idx).value)
-            # Identify typical time slot format like '08:30-09:50'
             if val and "-" in val and any(char.isdigit() for char in val):
                 time_slots.append((col_idx, val))
         if time_slots:
-            break # Found the header row
+            break
     return time_slots
 
-# ── FSC (School of Computing) constants ────────────────────────────────────────
-FSC_SPREADSHEET_ID = "1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q"
 
+# ── Status-Level Diffing ───────────────────────────────────────────────────────
+
+# Fields that are semantically significant (status changes we care about most)
+STATUS_FIELDS = ("is_cancelled", "is_rescheduled", "is_repeat", "is_elective")
+# All content fields (excludes rag_summary to avoid noise from wording changes)
+CONTENT_FIELDS = (
+    "department", "degree", "batch", "semester", "course_name",
+    "section", "instructor", "room", "day", "time_start", "time_end",
+    "is_lab", "is_cancelled", "is_rescheduled", "is_repeat", "is_elective"
+)
+
+
+def deep_diff(old_entries: List[Dict], new_entries: List[Dict]) -> Tuple[bool, List[Dict]]:
+    """
+    Performs a granular, field-level diff between old and new class entries.
+
+    Returns:
+        (changed: bool, status_changes: list of dicts describing each changed field)
+
+    Strategy:
+    1. Index old entries by ID.
+    2. For every new entry, compare content fields against the old entry.
+    3. Track additions, removals, and field-level changes.
+    4. Specifically highlight status field changes for the frontend.
+    """
+    old_index: Dict[str, Dict] = {e["id"]: e for e in old_entries if "id" in e}
+    new_index: Dict[str, Dict] = {e["id"]: e for e in new_entries if "id" in e}
+
+    status_changes: List[Dict] = []
+    any_changed = False
+
+    # Check additions
+    added_ids = set(new_index.keys()) - set(old_index.keys())
+    if added_ids:
+        any_changed = True
+        for eid in added_ids:
+            entry = new_index[eid]
+            for f in STATUS_FIELDS:
+                if entry.get(f):
+                    status_changes.append({
+                        "id": eid,
+                        "course": entry.get("course_name", ""),
+                        "day": entry.get("day", ""),
+                        "section": entry.get("section", ""),
+                        "field": f,
+                        "old": None,
+                        "new": entry.get(f)
+                    })
+
+    # Check removals
+    removed_ids = set(old_index.keys()) - set(new_index.keys())
+    if removed_ids:
+        any_changed = True
+
+    # Check modifications on existing entries
+    for eid in set(old_index.keys()) & set(new_index.keys()):
+        old = old_index[eid]
+        new = new_index[eid]
+        for field in CONTENT_FIELDS:
+            old_val = old.get(field)
+            new_val = new.get(field)
+            if old_val != new_val:
+                any_changed = True
+                if field in STATUS_FIELDS:
+                    status_changes.append({
+                        "id": eid,
+                        "course": new.get("course_name", ""),
+                        "day": new.get("day", ""),
+                        "section": new.get("section", ""),
+                        "field": field,
+                        "old": old_val,
+                        "new": new_val
+                    })
+
+    return any_changed, status_changes
+
+
+def save_with_metadata(filepath: str, new_entries: List[Dict]) -> Tuple[bool, List[Dict]]:
+    """
+    Saves entries to a JSON file ONLY if content differs from the stored version.
+    Returns (changed: bool, status_changes: list).
+    Uses deep_diff() for semantic comparison — ignores rag_summary wording drift.
+    """
+    import datetime, os
+
+    now_iso = datetime.datetime.utcnow().isoformat() + "Z"
+    old_entries: List[Dict] = []
+    last_updated = now_iso
+
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+                old_entries = old_data.get("classes", []) if isinstance(old_data, dict) else old_data
+                last_updated = old_data.get("last_updated", now_iso) if isinstance(old_data, dict) else now_iso
+        except Exception as e:
+            logging.warning(f"Could not read existing data from {filepath}: {e}")
+
+    changed, status_changes = deep_diff(old_entries, new_entries)
+
+    if changed:
+        last_updated = now_iso
+        final_data = {"last_updated": last_updated, "classes": new_entries}
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(final_data, f, indent=2, ensure_ascii=False)
+        logging.info(f"  → {filepath} WRITTEN ({len(status_changes)} status change(s))")
+        for sc in status_changes:
+            logging.info(
+                f"    STATUS CHANGE: [{sc['day']}] {sc['course']} ({sc['section']}) "
+                f"— {sc['field']}: {sc['old']} → {sc['new']}"
+            )
+    else:
+        logging.info(f"  → {filepath} unchanged (no semantic diff)")
+
+    return changed, status_changes
+
+
+# ── FSC Parser ─────────────────────────────────────────────────────────────────
+
+FSC_SPREADSHEET_ID = "1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q"
 FSC_DAY_GIDS = {
     "Monday":    "1882612924",
     "Tuesday":   "945396749",
@@ -209,17 +318,14 @@ FSC_DAY_GIDS = {
     "Friday":    "1783333514",
     "Saturday":  "1949393871",
 }
+FSC_DEPT_MAP = {"CS": "CS", "DS": "DS", "AI": "AI", "CY": "CY", "SE": "SE"}
+ALLOWED_DEPTS = {"AI", "CS", "CY", "DS", "SE"}
 
-FSC_DEPT_MAP = {
-    "CS": "CS", "DS": "DS", "AI": "AI",
-    "CY": "CY", "SE": "SE",
-}
 
 def fetch_fsc_gids() -> Dict[str, str]:
-    """Dynamically fetches GIDs for FSC timetable since they might change when updated."""
     url = f"https://docs.google.com/spreadsheets/d/{FSC_SPREADSHEET_ID}/htmlview?_cb={int(time.time())}"
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
         'Cache-Control': 'no-cache, no-store, must-revalidate'
     }
     try:
@@ -233,16 +339,15 @@ def fetch_fsc_gids() -> Dict[str, str]:
                 name = name_match.group(1).strip()
                 gid = gid_match.group(1)
                 name_lower = name.lower()
-                if 'monday' in name_lower or 'tuesday' in name_lower or 'wednesday' in name_lower or \
-                   'thursday' in name_lower or 'friday' in name_lower or 'saturday' in name_lower or 'sunday' in name_lower:
+                if any(d in name_lower for d in ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']):
                     gids[name] = gid
         return gids
     except Exception as e:
         logging.error(f"Failed to fetch dynamic FSC GIDs: {e}")
         return {}
 
+
 def parse_fsc() -> List[Dict[str, Any]]:
-    """Parser for School of Computing — fetches each day's HTML frame by GID."""
     entries = []
     electives_set = parse_electives("frontend/public/electives.txt")
     try:
@@ -276,7 +381,6 @@ def parse_fsc() -> List[Dict[str, Any]]:
                     logging.warning(f"Failed to load FSC {day_name}: {e}")
                     continue
 
-                # Extract class to color mapping from style tags
                 class_to_color = {}
                 for match in re.finditer(r'\.(s\d+)\s*\{[^\}]*background-color:\s*(#[0-9a-fA-F]{6})', html_content):
                     class_to_color[match.group(1)] = match.group(2).upper().replace("#", "")
@@ -299,7 +403,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
                         vcol += colspan
                     return grid
 
-                # Step 1: find time-slot header row
+                # Find time-slot header row
                 time_col_map: Dict[int, str] = {}
                 header_row_idx = None
                 for ridx, row in enumerate(all_rows):
@@ -317,7 +421,6 @@ def parse_fsc() -> List[Dict[str, Any]]:
                     logging.warning(f"Could not find time header for FSC {day_name}")
                     continue
 
-                # Step 2: iterate data rows
                 day_count = 0
                 for row in all_rows[header_row_idx + 1:]:
                     grid = extract_row_cells(row)
@@ -327,7 +430,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
 
                     if not room or len(room) > 25:
                         continue
-                    
+
                     room_lower = room.lower()
                     if any(kw in room_lower for kw in ["bs ", "ms ", "phd"]):
                         room = "Unknown"
@@ -337,40 +440,44 @@ def parse_fsc() -> List[Dict[str, Any]]:
                     ]):
                         continue
 
-                    # Step 3: each cell in the row
                     for vcol, (val, cell, colspan) in grid.items():
-                        if not val or vcol == 0 or vcol == 1: # skip empty or row header cells
+                        if not val or vcol == 0 or vcol == 1:
                             continue
-                            
-                        # Find closest time header
+
                         start_vcol = max((k for k in time_col_map.keys() if k <= vcol), default=None)
                         if start_vcol is None:
                             continue
                         time_val = time_col_map[start_vcol]
 
-                        ALLOWED_DEPTS = {"AI", "CS", "CY", "DS", "SE"}
-                        
-                        # Format: "Course Name (DEPT-Section)" e.g. "PF (CS-A)" or "OOP (CS-B, 25)" or "OOP (AI/DS-A, 25)"
-                        # Or section-less for repeats: "Calculus"
+                        # ── Status detection (granular) ──────────────────────
+                        val_lower = val.lower()
+                        is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', val_lower))
+                        is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', val_lower))
+
+                        # Parse course name and section info
                         course_match = re.match(r"^([^(]+)(?:\(([^)]+)\))?", val)
                         if not course_match:
                             continue
 
                         course_name = course_match.group(1).strip()
                         inside_parens = course_match.group(2)
-                        
-                        is_rescheduled = "resch" in val.lower()
+
+                        # Clean status keywords from course name
                         if is_rescheduled:
-                            course_name = re.sub(r'(?i)\s*[-]*\s*resch', '', course_name).strip()
-
-                        is_cancelled = "cancelled" in val.lower()
+                            course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', course_name).strip()
                         if is_cancelled:
-                            course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
+                            course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
 
-                        # Skip postgraduate
+                        # Skip graduate courses (MS/PhD), but NOT just because of ResSch/Cancelled
                         if any(pg in val for pg in ["MS", "PhD", "PCS", "Repeat"]):
                             continue
-                        
+
+                        # Skip MS evening slots
+                        t_parts_check = time_val.split("-")
+                        check_start = normalize_time(t_parts_check[0].strip()) if t_parts_check else ""
+                        if check_start >= "17:20":
+                            continue
+
                         td_classes = cell.get("class", [])
                         cell_color = None
                         for c in td_classes:
@@ -387,11 +494,9 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             parts = [p.strip() for p in inside_parens.split(',')]
                             sec_part = parts[0]
                             explicit_batch_code = parts[1] if len(parts) > 1 else None
-                            
                             sec_split = sec_part.split('-')
                             dept_part = sec_split[0]
                             sec_letter = sec_split[1] if len(sec_split) > 1 else "A"
-                            
                             depts = [d.strip() for d in dept_part.split('/')]
                             for d in depts:
                                 d_clean = d.replace('B', '') if d.startswith('B') and len(d) > 2 else d
@@ -402,52 +507,40 @@ def parse_fsc() -> List[Dict[str, Any]]:
                             if is_repeat:
                                 sections_to_add.append(("CS", "CS-A"))
                             else:
-                                continue # Skip if no section and not a repeat course
-                                
+                                continue
+
                         if not sections_to_add:
                             continue
 
                         batch_from_color = FSC_COLOR_LEGEND.get(cell_color, "Unknown") if cell_color else "Unknown"
-                        
+
                         if explicit_batch_code:
                             explicit_b = explicit_batch_code.strip()
-                            if len(explicit_b) == 2 and explicit_b.isdigit():
-                                batch = "20" + explicit_b
-                            else:
-                                batch = explicit_b
+                            batch = ("20" + explicit_b) if (len(explicit_b) == 2 and explicit_b.isdigit()) else explicit_b
                         else:
                             batch = batch_from_color
-                            
+
                         if len(batch) == 2 and batch.isdigit():
                             batch = "20" + batch
 
-                        # calculate exact time range based on colspan
+                        # Time calculation
                         t_parts = time_val.split("-")
                         t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
-                        
                         end_vcol = max((k for k in time_col_map.keys() if k < vcol + colspan), default=vcol)
                         end_time_val = time_col_map[end_vcol]
                         end_t_parts = end_time_val.split("-")
                         t_end = normalize_time(end_t_parts[1].strip()) if len(end_t_parts) > 1 else ""
 
-                        # Override with explicit time if present in the raw cell value
                         explicit_time_match = re.search(r"(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})", val)
                         if explicit_time_match:
                             t_start = normalize_time(explicit_time_match.group(1).strip())
                             t_end = normalize_time(explicit_time_match.group(2).strip())
-                            # Remove the explicit time from the course name
                             course_name = re.sub(r"\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}", "", course_name).strip()
                         else:
-                            # Fallback to predefined special course durations if no explicit time is found
                             special_durations = {
-                                "seerah": 55,
-                                "uhq-i&ii": 110,
-                                "uhq-i & ii": 110,
-                                "ideology": 105,
-                                "islamic": 105,
-                                "func eng": 105,
-                                "uhq-ii": 55,
-                                "arts & humanities": 105
+                                "seerah": 55, "uhq-i&ii": 110, "uhq-i & ii": 110,
+                                "ideology": 105, "islamic": 105, "func eng": 105,
+                                "uhq-ii": 55, "arts & humanities": 105
                             }
                             c_lower = course_name.lower()
                             duration = next((v for k, v in special_durations.items() if k in c_lower), None)
@@ -457,14 +550,13 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                     dt = datetime.strptime(t_start, "%H:%M")
                                     dt += timedelta(minutes=duration)
                                     t_end = dt.strftime("%H:%M")
-                                except:
+                                except Exception:
                                     pass
 
                         is_lab = "lab" in course_name.lower() or "lab" in room.lower()
-                        
                         if day_name.lower() == "friday" and is_lab and t_start in ["13:00", "13:30"] and t_end == "17:15":
                             t_start = "14:30"
-                        
+
                         for dept, section_code in sections_to_add:
                             is_elective = False
                             c_name_lower = course_name.lower().strip()
@@ -473,11 +565,14 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                     is_elective = True
                                     break
 
-                            entry_id = f"FSC-{day_name[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section_code.replace('-','')}"
-
+                            entry_id = (
+                                f"FSC-{day_name[:3].upper()}-{room.replace('-','')}"
+                                f"-{t_start.replace(':','')}-{section_code.replace('-','')}"
+                            )
                             summary = generate_rag_summary(
                                 "School of Computing", dept, "BS", batch,
-                                section_code, course_name, room, day_name, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled
+                                section_code, course_name, room, day_name,
+                                t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled
                             )
                             if is_elective:
                                 summary += " This is an elective course."
@@ -515,16 +610,17 @@ def parse_fsc() -> List[Dict[str, Any]]:
     logging.info(f"FSC total: {len(entries)} entries.")
     return entries
 
+
+# ── FSM Parser ─────────────────────────────────────────────────────────────────
+
 def parse_fsm() -> List[Dict[str, Any]]:
-    """Parser for School of Management"""
     entries = []
     try:
         wb = download_workbook(URLS["FSM"])
         sheet = get_timetable_sheet(wb)
         time_slots = extract_time_slots(sheet, start_col=4)
         current_day = "Monday"
-        
-        # Build Instructor Map from Course Plan
+
         instructor_map = {}
         if 'Course Plan ' in wb.sheetnames:
             cp_sheet = wb['Course Plan ']
@@ -533,7 +629,6 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 c_title = clean_text(cp_sheet.cell(row=r_idx, column=3).value)
                 c_sections_raw = clean_text(cp_sheet.cell(row=r_idx, column=7).value)
                 instructor = clean_text(cp_sheet.cell(row=r_idx, column=8).value)
-                
                 if c_title and c_sections_raw and instructor:
                     sections = [s.strip().replace(' ', '') for s in c_sections_raw.split('/')]
                     c_title_clean = c_title.lower().replace(' ', '')
@@ -543,136 +638,76 @@ def parse_fsm() -> List[Dict[str, Any]]:
                         if c_code_clean:
                             instructor_map[(c_code_clean, s_key)] = instructor
                         instructor_map[(c_title_clean, s_key)] = instructor
-        
+
         for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
-            
-            # Check for day block start (allow dynamic names like "Saturday (Sep 05)")
-            cell_lower = cell_A.lower()
-            if len(cell_A) < 40 and any(cell_lower.startswith(d) for d in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]):
-                current_day = cell_A.strip()
-                
-            room = clean_text(sheet.cell(row=row_idx, column=3).value)
-            if not room:
-                room = clean_text(sheet.cell(row=row_idx, column=2).value)
-            if not room:
+
+            day_pattern = re.compile(
+                r'^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)',
+                re.IGNORECASE
+            )
+            if day_pattern.match(cell_A):
+                current_day = day_pattern.match(cell_A).group(1).capitalize()
                 continue
-                
-            for col_idx in range(4, sheet.max_column + 1):
-                cell = sheet.cell(row=row_idx, column=col_idx)
-                val = clean_text(cell.value)
-                if not val:
-                    continue
-                
-                # Skip if this cell is purely a section tag
-                if re.match(r'^([A-Z]{2,4})(\d{1,2})([A-Z/0-9]+)$', val.replace(' ', '')):
-                    continue
-                
-                start_col = max((k for k, v in time_slots if k <= col_idx), default=None)
-                if start_col is None:
-                    continue
-                time_val = next(v for k, v in time_slots if k == start_col)
-                    
-                color_hex = str(cell.fill.start_color.index).upper() if cell.fill else "Unknown"
-                color_info = {"department": "Unknown", "degree": "BS", "batch": "Unknown"}
-                
-                # Check for color in legend, allow partial match
-                for key in FSM_COLOR_LEGEND:
-                    if key in color_hex or color_hex.replace("#", "") in key:
-                        color_info = FSM_COLOR_LEGEND[key]
-                        break
 
-                dept_code = color_info["department"]
-                batch = color_info["batch"]
-                degree = color_info["degree"]
-                semester = "Unknown"
-                section = "Unknown"
-                
-                t_parts = time_val.split("-")
-                t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
+            cell_C = clean_text(sheet.cell(row=row_idx, column=3).value)
+            if not cell_C:
+                continue
+
+            # Status detection
+            c_val_lower = cell_C.lower()
+            is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', c_val_lower))
+            is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', c_val_lower))
+            is_repeat = False
+
+            course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_C).strip()
+            course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
+
+            section = clean_text(sheet.cell(row=row_idx, column=2).value) or "Unknown"
+            room = clean_text(sheet.cell(row=row_idx, column=4).value) or "TBD"
+
+            cell_color_hex = None
+            cell_obj = sheet.cell(row=row_idx, column=3)
+            if cell_obj.fill and cell_obj.fill.fgColor and cell_obj.fill.fgColor.type == 'rgb':
+                cell_color_hex = cell_obj.fill.fgColor.rgb
+
+            meta = FSM_COLOR_LEGEND.get(cell_color_hex, {})
+            department = meta.get("department", "Unknown")
+            degree = meta.get("degree", "BS")
+            batch = meta.get("batch", "Unknown")
+
+            for col_idx, time_str in time_slots:
+                cell_val = clean_text(sheet.cell(row=row_idx, column=col_idx).value)
+                if not cell_val:
+                    continue
+                t_parts = time_str.split("-")
+                t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
                 t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
-                
-                explicit_time_match = re.search(r"\(?(\d{1,2}:\d{2})\s*(?:-|to)\s*(\d{1,2}:\d{2}(?:[ap]m)?)\)?", val, re.IGNORECASE)
-                if explicit_time_match:
-                    t_start = normalize_time(explicit_time_match.group(1).strip())
-                    raw_t_end = explicit_time_match.group(2).strip().lower().replace("pm", "").replace("am", "")
-                    t_end = normalize_time(raw_t_end)
-                    course_name = re.sub(r"\(?\d{1,2}:\d{2}\s*(?:-|to)\s*\d{1,2}:\d{2}(?:[ap]m)?\)?", "", val, flags=re.IGNORECASE).strip()
-                else:
-                    course_name = val.strip()
-                
-                course_name = re.sub(r'[\n\r]+', ' ', course_name).strip()
-                
-                is_rescheduled = "resch" in val.lower()
-                if is_rescheduled:
-                    course_name = re.sub(r'(?i)\s*[-]*\s*resch', '', course_name).strip()
-                
-                is_cancelled = "cancelled" in val.lower()
-                if is_cancelled:
-                    course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
-                
-                is_repeat = False
 
-                # Search forward for the next non-empty cell in the row
-                for c in range(col_idx + 1, sheet.max_column + 1):
-                    next_val = clean_text(sheet.cell(row=row_idx, column=c).value)
-                    if next_val:
-                        sec_match = re.search(r'^([A-Z]{2,4})(\d{1,2})([A-Z/0-9]+)$', next_val.replace(' ', ''))
-                        if sec_match:
-                            parsed_dept = sec_match.group(1)
-                            sem_code = sec_match.group(2)
-                            section = next_val.replace(' ', '')
-                            if section in ['FT3A', 'AF3B', 'BBA3A']:
-                                section = f"{section} (R)"
-                                is_repeat = True
-                            
-                            # Deduce department and degree
-                            if parsed_dept == 'BSBA': dept_code = 'BA'
-                            else: dept_code = parsed_dept
-                            
-                            if dept_code == 'BBA': degree = 'BBA'
-                            else: degree = 'BS'
-                            
-                            # Deduce batch
-                            if sem_code in ['01', '1']: batch = '2026'
-                            elif sem_code in ['03', '3']: batch = '2025'
-                            elif sem_code in ['05', '5']: batch = '2024'
-                            elif sem_code in ['07', '7']: batch = '2023'
-                        break
-                
-                school = "School of Management"
-                is_lab = False
-                
-                # Match instructor
-                assigned_instructor = None
-                course_name_clean = course_name.lower().replace(' ', '')
-                section_clean = section.lower().replace(' ', '')
-                if section_clean.startswith("bsba"):
-                    section_clean = section_clean.replace("bsba", "ba", 1)
-                
-                if (course_name_clean, section_clean) in instructor_map:
-                    assigned_instructor = instructor_map[(course_name_clean, section_clean)]
-                else:
-                    for (k_course, k_sec), inst in instructor_map.items():
-                        if k_sec == section_clean and (k_course in course_name_clean or course_name_clean in k_course):
-                            assigned_instructor = inst
-                            break
-                            
-                summary = generate_rag_summary(school, dept_code, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
-                if assigned_instructor:
-                    summary += f" Instructor: {assigned_instructor}."
-                entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
-                
+                is_lab = "lab" in course_name.lower() or "lab" in room.lower()
+
+                instructor = instructor_map.get(
+                    (course_name.lower().replace(' ', ''), section.lower()),
+                    instructor_map.get((course_name.lower().replace(' ', ''), ""), None)
+                )
+
+                entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section.replace(' ','')}"
+                summary = generate_rag_summary(
+                    "School of Management", department, degree, batch,
+                    section, course_name, room, current_day, t_start, t_end,
+                    is_lab, is_rescheduled, is_repeat, is_cancelled
+                )
+
                 entries.append({
                     "id": entry_id,
-                    "school": school,
-                    "department": dept_code,
+                    "school": "School of Management",
+                    "department": department,
                     "degree": degree,
                     "batch": batch,
-                    "semester": semester,
+                    "semester": "Unknown",
                     "course_name": course_name,
                     "section": section,
-                    "instructor": assigned_instructor,
+                    "instructor": instructor,
                     "room": room,
                     "day": current_day,
                     "time_start": t_start,
@@ -681,273 +716,203 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     "is_rescheduled": is_rescheduled,
                     "is_repeat": is_repeat,
                     "is_cancelled": is_cancelled,
-                    "rag_summary": summary
+                    "is_elective": False,
+                    "rag_summary": summary,
                 })
+
     except Exception as e:
-        logging.error(f"Error parsing FSM: {e}")
+        logging.error(f"Error parsing FSM: {e}", exc_info=True)
     return entries
 
+
+# ── FSE Parser ─────────────────────────────────────────────────────────────────
+
 def parse_fse() -> List[Dict[str, Any]]:
-    """Parser for School of Engineering"""
     entries = []
     try:
         wb = download_workbook(URLS["FSE"])
         sheet = get_timetable_sheet(wb)
-        
-        # Dynamically fetch color for EE 2023 from AT192
-        ee_2023_cell = sheet['AT192']
-        if ee_2023_cell and ee_2023_cell.fill and ee_2023_cell.fill.start_color:
-            ee_2023_color = str(ee_2023_cell.fill.start_color.index).upper()
-            FSE_COLOR_LEGEND[ee_2023_color] = {"department": "EE", "degree": "BS", "batch": "2023"}
-
-        # In FSE time slots might be offset if room numbers occupy 2 columns
-        # extract_time_slots iterates from column 2 onwards, so it should catch them
-        time_slots = extract_time_slots(sheet, start_col=2)
+        time_slots = extract_time_slots(sheet, start_col=3)
         current_day = "Monday"
-        
-        for row_idx in range(4, sheet.max_row + 1):
+
+        for row_idx in range(3, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
-            cell_lower = cell_A.lower()
-            if len(cell_A) < 40 and any(cell_lower.startswith(d) for d in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]):
-                current_day = cell_A.strip()
-                
-            # Room is often in col 3 or col 2
-            room = clean_text(sheet.cell(row=row_idx, column=3).value)
-            if not room:
-                room = clean_text(sheet.cell(row=row_idx, column=2).value)
-            if not room:
+
+            day_pattern = re.compile(
+                r'^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)',
+                re.IGNORECASE
+            )
+            if day_pattern.match(cell_A):
+                current_day = day_pattern.match(cell_A).group(1).capitalize()
                 continue
-                
-            for col_idx, time_val in time_slots:
-                cell = sheet.cell(row=row_idx, column=col_idx)
-                val = clean_text(cell.value)
-                if not val:
+
+            cell_B = clean_text(sheet.cell(row=row_idx, column=2).value)
+            if not cell_B:
+                continue
+
+            # Status detection
+            b_val_lower = cell_B.lower()
+            is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', b_val_lower))
+            is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', b_val_lower))
+
+            course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_B).strip()
+            course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
+
+            section = clean_text(sheet.cell(row=row_idx, column=1).value) or "Unknown"
+            room = clean_text(sheet.cell(row=row_idx, column=3).value) or "TBD"
+
+            cell_color_hex = None
+            cell_obj = sheet.cell(row=row_idx, column=2)
+            if cell_obj.fill and cell_obj.fill.fgColor and cell_obj.fill.fgColor.type == 'rgb':
+                cell_color_hex = cell_obj.fill.fgColor.rgb
+
+            meta = FSE_COLOR_LEGEND.get(cell_color_hex, {})
+            department = meta.get("department", "Unknown")
+            degree = meta.get("degree", "BS")
+            batch = meta.get("batch", "Unknown")
+            is_repeat = meta.get("is_repeat", False)
+
+            school = "School of Engineering"
+            semester = "Unknown"
+
+            for col_idx, time_str in time_slots:
+                cell_val = clean_text(sheet.cell(row=row_idx, column=col_idx).value)
+                if not cell_val:
                     continue
-                    
-                color_hex = str(cell.fill.start_color.index).upper() if cell.fill else "Unknown"
-                color_info = {"department": "Unknown", "degree": "BS", "batch": "Unknown"}
-                
-                for key in FSE_COLOR_LEGEND:
-                    if key in color_hex or color_hex.replace("#", "") in key:
-                        color_info = FSE_COLOR_LEGEND[key]
-                        break
-                        
-                batch = color_info.get("batch", "Unknown")
-                degree = color_info.get("degree", "BS")
-                is_repeat = color_info.get("is_repeat", False)
-                    
-                # Look ahead for instructor
-                instructor = None
-                next_val = clean_text(sheet.cell(row=row_idx + 1, column=col_idx).value)
-                if next_val and ("Dr." in next_val or "Ms." in next_val or "Mr." in next_val or "Engr." in next_val or "Teacher:" in next_val):
-                    instructor = next_val
-                
-                # Newline separated for Course Title + Section, or split across rows
-                lines = val.split('\n')
-                if len(lines) >= 1:
-                    first_line = lines[0].strip()
-                    if len(lines) > 1 and not instructor:
-                        if "Dr." in lines[1] or "Ms." in lines[1] or "Mr." in lines[1] or "Engr." in lines[1] or "Teacher:" in lines[1]:
-                            instructor = lines[1].strip()
-                    
-                    course_match = re.match(r"(.*?)\s+([A-Z]+-[A-Z0-9,]+|\b[A-Z,]+\b)$", first_line)
-                    if course_match:
-                        course_name = course_match.group(1).strip()
-                        raw_section = course_match.group(2).strip()
-                        if "-" in raw_section:
-                            section = raw_section
-                            dept = section.split('-')[0]
-                        else:
-                            dept = color_info["department"] if color_info["department"] != "Unknown" else "EE"
-                            section = f"{dept}-{raw_section}"
-                    else:
-                        course_name = first_line
-                        section = "Unknown"
-                        dept = color_info["department"] if color_info["department"] != "Unknown" else "EE"
-                        
-                    is_rescheduled = "resch" in val.lower()
-                    if is_rescheduled:
-                        course_name = re.sub(r'(?i)\s*[-]*\s*resch', '', course_name).strip()
-                        
-                    is_cancelled = "cancelled" in val.lower()
-                    if is_cancelled:
-                        course_name = re.sub(r'(?i)\s*[-]*\s*cancelled', '', course_name).strip()
-                        
-                    t_parts = time_val.split("-")
-                    t_start = normalize_time(t_parts[0].strip()) if len(t_parts) > 0 else ""
-                    t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
-                    
-                    # Override with explicit time if found in the cell value
-                    explicit_time_match = re.search(r"(\d{1,2}:\d{2})\s*(?:-|to)\s*(\d{1,2}:\d{2})", val, re.IGNORECASE)
-                    if explicit_time_match:
-                        t_start = normalize_time(explicit_time_match.group(1).strip())
-                        t_end = normalize_time(explicit_time_match.group(2).strip())
-                        course_name = re.sub(r"\d{1,2}:\d{2}\s*(?:-|to)\s*\d{1,2}:\d{2}", "", course_name).strip()
-                    
-                    school = "School of Engineering"
-                    semester = "Unknown"
-                    is_lab = "lab" in course_name.lower() or "lab" in room.lower()
-                    
-                    # Lab duration override
-                    if is_lab and t_start:
-                        try:
-                            from datetime import datetime, timedelta
-                            dt = datetime.strptime(t_start, "%H:%M")
-                            dt += timedelta(minutes=165)
-                            t_end = dt.strftime("%H:%M")
-                        except:
-                            pass
-                    
-                    # Hardcoded fallback for EE 2023 batch courses
-                    ee_2023_courses = [
-                        "Applied Thermodynamics",
-                        "Engineering Management",
-                        "Technical and Business Writing",
-                        "Final Year Project",
-                        "Applied Machine Learning",
-                        "Instrumentation and Measurement",
-                        "Embedded Systems",
-                        "Database Systems",
-                        "Ocp. Health & Safety"
-                    ]
-                    if batch == "Unknown" and dept == "EE":
-                        for c in ee_2023_courses:
-                            if c.lower() in course_name.lower():
-                                batch = "2023"
-                                break
-                    
-                    summary = generate_rag_summary(school, dept, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
-                    entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
-                    
-                    entries.append({
-                        "id": entry_id,
-                        "school": school,
-                        "department": dept,
-                        "degree": degree,
-                        "batch": batch,
-                        "semester": semester,
-                        "course_name": course_name,
-                        "section": section,
-                        "instructor": instructor,
-                        "room": room,
-                        "day": current_day,
-                        "time_start": t_start,
-                        "time_end": t_end,
-                        "is_lab": is_lab,
-                        "is_rescheduled": is_rescheduled,
-                        "is_repeat": is_repeat,
-                        "is_cancelled": is_cancelled,
-                        "rag_summary": summary
-                    })
+                t_parts = time_str.split("-")
+                t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
+                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
+
+                is_lab = "lab" in course_name.lower() or "lab" in room.lower()
+
+                entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}"
+                summary = generate_rag_summary(
+                    school, department, degree, batch, section,
+                    course_name, room, current_day, t_start, t_end,
+                    is_lab, is_rescheduled, is_repeat, is_cancelled
+                )
+
+                entries.append({
+                    "id": entry_id,
+                    "school": school,
+                    "department": department,
+                    "degree": degree,
+                    "batch": batch,
+                    "semester": semester,
+                    "course_name": course_name,
+                    "section": section,
+                    "instructor": None,
+                    "room": room,
+                    "day": current_day,
+                    "time_start": t_start,
+                    "time_end": t_end,
+                    "is_lab": is_lab,
+                    "is_rescheduled": is_rescheduled,
+                    "is_repeat": is_repeat,
+                    "is_cancelled": is_cancelled,
+                    "is_elective": False,
+                    "rag_summary": summary,
+                })
+
     except Exception as e:
-        logging.error(f"Error parsing FSE: {e}")
+        logging.error(f"Error parsing FSE: {e}", exc_info=True)
     return entries
 
-def save_with_metadata(filepath, new_entries):
-    """Saves entries to JSON. Returns True if data changed, False otherwise."""
-    import datetime, os
-    now_iso = datetime.datetime.utcnow().isoformat() + "Z"
-    
-    old_entries = []
-    last_updated = now_iso
-    
-    if os.path.exists(filepath):
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                old_data = json.load(f)
-                old_entries = old_data.get("classes", []) if isinstance(old_data, dict) else old_data
-                last_updated = old_data.get("last_updated", now_iso) if isinstance(old_data, dict) else now_iso
-        except Exception as e:
-            logging.warning(f"Failed to read existing data for {filepath}: {e}")
-            pass
-    
-    changed = json.dumps(old_entries, sort_keys=True) != json.dumps(new_entries, sort_keys=True)
-    
-    if changed:
-        last_updated = now_iso
-        
-    final_data = {
-        "last_updated": last_updated,
-        "classes": new_entries
-    }
-    
-    with open(filepath, 'w', encoding='utf-8') as f:
-        json.dump(final_data, f, indent=2, ensure_ascii=False)
-    
-    return changed
+
+# ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    logging.info("Starting timetable fetch and parse process.")
-    
-    import os
-    import datetime
+    import datetime, os
+
+    logging.info("=== Timetable Sync v2 — Status-Level Diffing ===")
+
     out_dir = "frontend/public"
     os.makedirs(out_dir, exist_ok=True)
-    
-    changed_files = []
-    
+
+    changed_schools: List[str] = []          # e.g. ["computing", "management"]
+    all_status_changes: List[Dict] = []      # granular status change log
+
+    # ── School of Computing ────────────────────────────────────────────────────
     logging.info("Parsing FSC (School of Computing)...")
     fsc_entries = parse_fsc()
-    
-    # Post-process for Batch 2026 Func Eng Lab
+
+    # Post-process Func Eng Lab sub-sections for Batch 2026
     for entry in fsc_entries:
         if entry.get("batch") == "2026" and entry.get("course_name") == "Func Eng Lab":
-            section = entry.get("section", "")
-            if section and section[-1].isdigit():
-                sub_section = section[-1]
-                entry["course_name"] = f"Func Eng Lab - {sub_section}"
-                # Rebuild rag_summary with new course name
-                prog = f"{entry.get('degree', '')} {entry.get('department', '')}".strip()
-                summary = f"{prog} (Batch {entry.get('batch')}, Section {section}) has {entry['course_name']} in Room {entry.get('room')} on {entry.get('day')} from {entry.get('time_start')} to {entry.get('time_end')}."
-                if entry.get("instructor"):
-                    summary += f" Instructor: {entry.get('instructor')}."
+            s = entry.get("section", "")
+            if s and s[-1].isdigit():
+                entry["course_name"] = f"Func Eng Lab - {s[-1]}"
+                summary = (
+                    f"{entry.get('degree','')} {entry.get('department','')} "
+                    f"(Batch {entry.get('batch')}, Section {s}) has {entry['course_name']} "
+                    f"in Room {entry.get('room')} on {entry.get('day')} "
+                    f"from {entry.get('time_start')} to {entry.get('time_end')}."
+                )
                 entry["rag_summary"] = summary
 
-    if save_with_metadata(os.path.join(out_dir, "computing.json"), fsc_entries):
-        changed_files.append("Computing")
-        logging.info(f"computing.json CHANGED — {len(fsc_entries)} entries")
-    else:
-        logging.info(f"computing.json unchanged — {len(fsc_entries)} entries")
-    
+    fsc_changed, fsc_status = save_with_metadata(
+        os.path.join(out_dir, "computing.json"), fsc_entries
+    )
+    if fsc_changed:
+        changed_schools.append("computing")
+        all_status_changes.extend(
+            [dict(s, school="computing") for s in fsc_status]
+        )
+    logging.info(f"computing.json: {'CHANGED' if fsc_changed else 'unchanged'} — {len(fsc_entries)} entries")
+
+    # ── School of Management ───────────────────────────────────────────────────
     logging.info("Parsing FSM (School of Management)...")
     fsm_entries = parse_fsm()
-    if save_with_metadata(os.path.join(out_dir, "management.json"), fsm_entries):
-        changed_files.append("Management")
-        logging.info(f"management.json CHANGED — {len(fsm_entries)} entries")
-    else:
-        logging.info(f"management.json unchanged — {len(fsm_entries)} entries")
-    
+    fsm_changed, fsm_status = save_with_metadata(
+        os.path.join(out_dir, "management.json"), fsm_entries
+    )
+    if fsm_changed:
+        changed_schools.append("management")
+        all_status_changes.extend(
+            [dict(s, school="management") for s in fsm_status]
+        )
+    logging.info(f"management.json: {'CHANGED' if fsm_changed else 'unchanged'} — {len(fsm_entries)} entries")
+
+    # ── School of Engineering ──────────────────────────────────────────────────
     logging.info("Parsing FSE (School of Engineering)...")
     fse_entries = parse_fse()
-    if save_with_metadata(os.path.join(out_dir, "engineering.json"), fse_entries):
-        changed_files.append("Engineering")
-        logging.info(f"engineering.json CHANGED — {len(fse_entries)} entries")
-    else:
-        logging.info(f"engineering.json unchanged — {len(fse_entries)} entries")
-    
-    # ── Write sync_metadata.json (ONLY when data actually changed) ───────────
-    # Writing on every run (even with identical data) would make sync_metadata.json
-    # always dirty in git due to the live `last_checked` timestamp, causing
-    # false-positive commits. We gate writes on real data changes.
-    if changed_files:
+    fse_changed, fse_status = save_with_metadata(
+        os.path.join(out_dir, "engineering.json"), fse_entries
+    )
+    if fse_changed:
+        changed_schools.append("engineering")
+        all_status_changes.extend(
+            [dict(s, school="engineering") for s in fse_status]
+        )
+    logging.info(f"engineering.json: {'CHANGED' if fse_changed else 'unchanged'} — {len(fse_entries)} entries")
+
+    # ── Write sync_metadata.json (only when real changes exist) ───────────────
+    if changed_schools:
         sync_meta_path = os.path.join(out_dir, "sync_metadata.json")
         sync_metadata = {
             "last_updated": int(time.time()),
-            "changed_files": changed_files,
+            "changed_schools": changed_schools,                # lowercase school keys
+            "changed_files": [s.capitalize() for s in changed_schools],  # legacy compat
+            "status_changes": all_status_changes,             # granular diff log
             "last_checked": datetime.datetime.utcnow().isoformat() + "Z"
         }
         with open(sync_meta_path, 'w', encoding='utf-8') as f:
             json.dump(sync_metadata, f, indent=2, ensure_ascii=False)
-        logging.info(f"Changes detected in: {', '.join(changed_files)}")
-        logging.info(f"sync_metadata.json updated: {sync_metadata}")
-        logging.info("Process completed successfully.")
-        # Exit code 1 = changes found — GitHub Actions will trigger a commit
+        logging.info(f"sync_metadata.json written — changed schools: {changed_schools}")
+        logging.info(f"Status changes detected: {len(all_status_changes)}")
+        for sc in all_status_changes:
+            logging.info(
+                f"  [{sc['school'].upper()}] [{sc.get('day','')}] "
+                f"{sc.get('course','')} ({sc.get('section','')}) | "
+                f"{sc['field']}: {sc['old']} → {sc['new']}"
+            )
+        logging.info("Exiting with code 1 (changes found — GitHub Actions will commit).")
         sys.exit(1)
     else:
-        logging.info("No changes detected in any timetable — skipping sync_metadata.json write.")
-        logging.info("Process completed successfully.")
-        # Exit code 0 = no changes — GitHub Actions will skip the commit step
+        logging.info("No changes detected in any timetable — sync_metadata.json NOT updated.")
+        logging.info("Exiting with code 0 (no changes — GitHub Actions will skip commit).")
         sys.exit(0)
+
 
 if __name__ == "__main__":
     main()
