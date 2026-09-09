@@ -1,32 +1,74 @@
 {
-  "last_updated": 1788916947,
+  "last_updated": 1788934803,
   "changed_schools": [
-    "computing"
+    "computing",
+    "management"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Management"
   ],
   "status_changes": [
     {
-      "id": "FSC-WED-CRawal 4 (C512)-1430-CSF",
-      "course": "Data St Lab",
-      "day": "Wednesday",
-      "section": "CS-F",
+      "id": "FSC-TUE-C605-1300-SEC",
+      "course": "Data St",
+      "day": "Tuesday",
+      "section": "SE-C",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C308-1000-CSG",
+      "course": "Data St",
+      "day": "Tuesday",
+      "section": "CS-G",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C404-1130-CSE",
+      "course": "Comp Net",
+      "day": "Thursday",
+      "section": "CS-E",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-IT Lab 2 (D211)-0830-CSF",
-      "course": "IICT Lab",
-      "day": "Wednesday",
-      "section": "CS-F",
+      "id": "FSC-TUE-C602-1430-SED",
+      "course": "Data St",
+      "day": "Tuesday",
+      "section": "SE-D",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-Mehran2 (A306)-1130-CSC2",
+      "course": "Func Eng Lab - 2",
+      "day": "Tuesday",
+      "section": "CS-C2",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C404-1000-CSG",
+      "course": "Comp Net",
+      "day": "Thursday",
+      "section": "CS-G",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-09T01:22:27.209469Z"
+  "last_checked": "2026-09-09T06:20:03.107785Z"
 }
