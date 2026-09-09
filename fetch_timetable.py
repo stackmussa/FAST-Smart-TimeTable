@@ -684,7 +684,7 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 is_lab = 'lab' in course_name.lower() or 'lab' in room.lower()
                 
                 instructor = instructor_map.get((course_name.lower().replace(' ', ''), section.lower()), instructor_map.get((course_name.lower().replace(' ', ''), ''), None))
-                entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}-{section.replace(' ', '')}"
+                entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                 summary = generate_rag_summary('School of Management', department, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
                 entries.append({'id': entry_id, 'school': 'School of Management', 'department': department, 'degree': degree, 'batch': batch, 'semester': 'Unknown', 'course_name': course_name, 'section': section, 'instructor': instructor, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
     except Exception as e:
