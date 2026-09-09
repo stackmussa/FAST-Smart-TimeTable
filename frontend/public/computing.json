@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08T14:46:48.661350Z",
+  "last_updated": "2026-09-09T01:22:19.972571Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -14403,9 +14403,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "rag_summary": "BS CS (Batch 2026, Section CS-F) has IICT Lab (Lab) in Room IT Lab 2 (D-211) on Wednesday from 08:30 to 11:20."
+      "rag_summary": "[CANCELLED] BS CS (Batch 2026, Section CS-F) has IICT Lab (Lab) in Room IT Lab 2 (D-211) on Wednesday from 08:30 to 11:20."
     },
     {
       "id": "FSC-WED-IT Lab 2 (D211)-1130-CSG",
@@ -14928,9 +14928,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "rag_summary": "BS CS (Batch 2025, Section CS-F) has Data St Lab (Lab) in Room C-Rawal 4 (C-512) on Wednesday from 14:30 to 17:15."
+      "rag_summary": "[CANCELLED] BS CS (Batch 2025, Section CS-F) has Data St Lab (Lab) in Room C-Rawal 4 (C-512) on Wednesday from 14:30 to 17:15."
     },
     {
       "id": "FSC-WED-Cyber (D514)-0830-CYB",
