@@ -616,11 +616,10 @@ def parse_fsc() -> List[Dict[str, Any]]:
 def parse_fsm() -> List[Dict[str, Any]]:
     entries = []
     try:
-        wb = download_workbook(URLS["FSM"])
+        wb = download_workbook(URLS['FSM'])
         sheet = get_timetable_sheet(wb)
         time_slots = extract_time_slots(sheet, start_col=4)
-        current_day = "Monday"
-
+        current_day = 'Monday'
         instructor_map = {}
         if 'Course Plan ' in wb.sheetnames:
             cp_sheet = wb['Course Plan ']
@@ -632,96 +631,64 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 if c_title and c_sections_raw and instructor:
                     sections = [s.strip().replace(' ', '') for s in c_sections_raw.split('/')]
                     c_title_clean = c_title.lower().replace(' ', '')
-                    c_code_clean = (c_code or "").lower().replace(' ', '')
+                    c_code_clean = (c_code or '').lower().replace(' ', '')
                     for s in sections:
                         s_key = s.lower()
                         if c_code_clean:
-                            instructor_map[(c_code_clean, s_key)] = instructor
-                        instructor_map[(c_title_clean, s_key)] = instructor
-
+                            instructor_map[c_code_clean, s_key] = instructor
+                        instructor_map[c_title_clean, s_key] = instructor
+        
         for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
-
-            day_pattern = re.compile(
-                r'^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)',
-                re.IGNORECASE
-            )
+            day_pattern = re.compile('^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)', re.IGNORECASE)
             if day_pattern.match(cell_A):
                 current_day = day_pattern.match(cell_A).group(1).capitalize()
                 continue
-
-            cell_C = clean_text(sheet.cell(row=row_idx, column=3).value)
-            if not cell_C:
+            
+            room = clean_text(sheet.cell(row=row_idx, column=3).value)
+            if not room or room.lower() == 'room':
                 continue
-
-            # Status detection
-            c_val_lower = cell_C.lower()
-            is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', c_val_lower))
-            is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', c_val_lower))
-            is_repeat = False
-
-            course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_C).strip()
-            course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
-
-            section = clean_text(sheet.cell(row=row_idx, column=2).value) or "Unknown"
-            room = clean_text(sheet.cell(row=row_idx, column=4).value) or "TBD"
-
-            cell_color_hex = None
-            cell_obj = sheet.cell(row=row_idx, column=3)
-            if cell_obj.fill and cell_obj.fill.fgColor and cell_obj.fill.fgColor.type == 'rgb':
-                cell_color_hex = cell_obj.fill.fgColor.rgb
-
-            meta = FSM_COLOR_LEGEND.get(cell_color_hex, {})
-            department = meta.get("department", "Unknown")
-            degree = meta.get("degree", "BS")
-            batch = meta.get("batch", "Unknown")
-
+                
             for col_idx, time_str in time_slots:
                 cell_val = clean_text(sheet.cell(row=row_idx, column=col_idx).value)
                 if not cell_val:
                     continue
-                t_parts = time_str.split("-")
-                t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
-                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
-
-                is_lab = "lab" in course_name.lower() or "lab" in room.lower()
-
-                instructor = instructor_map.get(
-                    (course_name.lower().replace(' ', ''), section.lower()),
-                    instructor_map.get((course_name.lower().replace(' ', ''), ""), None)
-                )
-
-                entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}-{section.replace(' ','')}"
-                summary = generate_rag_summary(
-                    "School of Management", department, degree, batch,
-                    section, course_name, room, current_day, t_start, t_end,
-                    is_lab, is_rescheduled, is_repeat, is_cancelled
-                )
-
-                entries.append({
-                    "id": entry_id,
-                    "school": "School of Management",
-                    "department": department,
-                    "degree": degree,
-                    "batch": batch,
-                    "semester": "Unknown",
-                    "course_name": course_name,
-                    "section": section,
-                    "instructor": instructor,
-                    "room": room,
-                    "day": current_day,
-                    "time_start": t_start,
-                    "time_end": t_end,
-                    "is_lab": is_lab,
-                    "is_rescheduled": is_rescheduled,
-                    "is_repeat": is_repeat,
-                    "is_cancelled": is_cancelled,
-                    "is_elective": False,
-                    "rag_summary": summary,
-                })
-
+                
+                c_val_lower = cell_val.lower()
+                is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', c_val_lower))
+                is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', c_val_lower))
+                is_repeat = False
+                
+                course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_val).strip()
+                course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
+                
+                section = 'Unknown'
+                possible_sec = clean_text(sheet.cell(row=row_idx, column=col_idx + 7).value)
+                import re as rre
+                if possible_sec and rre.match(r'^[A-Z]{2,3}\d{2,3}[A-Z]?$', possible_sec):
+                    section = possible_sec
+                    
+                cell_obj = sheet.cell(row=row_idx, column=col_idx)
+                cell_color_hex = None
+                if cell_obj.fill and cell_obj.fill.fgColor and (cell_obj.fill.fgColor.type == 'rgb'):
+                    cell_color_hex = cell_obj.fill.fgColor.rgb
+                    
+                meta = FSM_COLOR_LEGEND.get(cell_color_hex, {})
+                department = meta.get('department', 'Unknown')
+                degree = meta.get('degree', 'BS')
+                batch = meta.get('batch', 'Unknown')
+                
+                t_parts = time_str.split('-')
+                t_start = normalize_time(t_parts[0].strip()) if t_parts else ''
+                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ''
+                is_lab = 'lab' in course_name.lower() or 'lab' in room.lower()
+                
+                instructor = instructor_map.get((course_name.lower().replace(' ', ''), section.lower()), instructor_map.get((course_name.lower().replace(' ', ''), ''), None))
+                entry_id = f"FSM-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}-{section.replace(' ', '')}"
+                summary = generate_rag_summary('School of Management', department, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
+                entries.append({'id': entry_id, 'school': 'School of Management', 'department': department, 'degree': degree, 'batch': batch, 'semester': 'Unknown', 'course_name': course_name, 'section': section, 'instructor': instructor, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
     except Exception as e:
-        logging.error(f"Error parsing FSM: {e}", exc_info=True)
+        logging.error(f'Error parsing FSM: {e}', exc_info=True)
     return entries
 
 
@@ -730,92 +697,64 @@ def parse_fsm() -> List[Dict[str, Any]]:
 def parse_fse() -> List[Dict[str, Any]]:
     entries = []
     try:
-        wb = download_workbook(URLS["FSE"])
+        wb = download_workbook(URLS['FSE'])
         sheet = get_timetable_sheet(wb)
-        time_slots = extract_time_slots(sheet, start_col=3)
-        current_day = "Monday"
-
-        for row_idx in range(3, sheet.max_row + 1):
+        time_slots = extract_time_slots(sheet, start_col=4)
+        current_day = 'Monday'
+        for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
-
-            day_pattern = re.compile(
-                r'^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)',
-                re.IGNORECASE
-            )
+            day_pattern = re.compile('^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)', re.IGNORECASE)
             if day_pattern.match(cell_A):
                 current_day = day_pattern.match(cell_A).group(1).capitalize()
                 continue
-
-            cell_B = clean_text(sheet.cell(row=row_idx, column=2).value)
-            if not cell_B:
+            
+            room = clean_text(sheet.cell(row=row_idx, column=3).value)
+            if not room or room.lower() == 'room':
                 continue
-
-            # Status detection
-            b_val_lower = cell_B.lower()
-            is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', b_val_lower))
-            is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', b_val_lower))
-
-            course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_B).strip()
-            course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
-
-            section = clean_text(sheet.cell(row=row_idx, column=1).value) or "Unknown"
-            room = clean_text(sheet.cell(row=row_idx, column=3).value) or "TBD"
-
-            cell_color_hex = None
-            cell_obj = sheet.cell(row=row_idx, column=2)
-            if cell_obj.fill and cell_obj.fill.fgColor and cell_obj.fill.fgColor.type == 'rgb':
-                cell_color_hex = cell_obj.fill.fgColor.rgb
-
-            meta = FSE_COLOR_LEGEND.get(cell_color_hex, {})
-            department = meta.get("department", "Unknown")
-            degree = meta.get("degree", "BS")
-            batch = meta.get("batch", "Unknown")
-            is_repeat = meta.get("is_repeat", False)
-
-            school = "School of Engineering"
-            semester = "Unknown"
-
+                
             for col_idx, time_str in time_slots:
                 cell_val = clean_text(sheet.cell(row=row_idx, column=col_idx).value)
                 if not cell_val:
                     continue
-                t_parts = time_str.split("-")
-                t_start = normalize_time(t_parts[0].strip()) if t_parts else ""
-                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ""
-
-                is_lab = "lab" in course_name.lower() or "lab" in room.lower()
-
-                entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-','')}-{t_start.replace(':','')}"
-                summary = generate_rag_summary(
-                    school, department, degree, batch, section,
-                    course_name, room, current_day, t_start, t_end,
-                    is_lab, is_rescheduled, is_repeat, is_cancelled
-                )
-
-                entries.append({
-                    "id": entry_id,
-                    "school": school,
-                    "department": department,
-                    "degree": degree,
-                    "batch": batch,
-                    "semester": semester,
-                    "course_name": course_name,
-                    "section": section,
-                    "instructor": None,
-                    "room": room,
-                    "day": current_day,
-                    "time_start": t_start,
-                    "time_end": t_end,
-                    "is_lab": is_lab,
-                    "is_rescheduled": is_rescheduled,
-                    "is_repeat": is_repeat,
-                    "is_cancelled": is_cancelled,
-                    "is_elective": False,
-                    "rag_summary": summary,
-                })
-
+                    
+                c_val_lower = cell_val.lower()
+                is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', c_val_lower))
+                is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', c_val_lower))
+                
+                course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_val).strip()
+                course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
+                
+                import re as rre
+                match = rre.search(r'\b([A-Z]{2,3}-[A-Z0-9]{1,2})\b$', course_name)
+                if match:
+                    section = match.group(1)
+                    course_name = course_name[:match.start()].strip()
+                else:
+                    section = 'Unknown'
+                    
+                cell_obj = sheet.cell(row=row_idx, column=col_idx)
+                cell_color_hex = None
+                if cell_obj.fill and cell_obj.fill.fgColor and (cell_obj.fill.fgColor.type == 'rgb'):
+                    cell_color_hex = cell_obj.fill.fgColor.rgb
+                    
+                meta = FSE_COLOR_LEGEND.get(cell_color_hex, {})
+                department = meta.get('department', 'Unknown')
+                degree = meta.get('degree', 'BS')
+                batch = meta.get('batch', 'Unknown')
+                is_repeat = meta.get('is_repeat', False)
+                school = 'School of Engineering'
+                semester = 'Unknown'
+                
+                t_parts = time_str.split('-')
+                t_start = normalize_time(t_parts[0].strip()) if t_parts else ''
+                t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ''
+                is_lab = 'lab' in course_name.lower() or 'lab' in room.lower()
+                
+                entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
+                summary = generate_rag_summary(school, department, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
+                entries.append({'id': entry_id, 'school': school, 'department': department, 'degree': degree, 'batch': batch, 'semester': semester, 'course_name': course_name, 'section': section, 'instructor': None, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
     except Exception as e:
-        logging.error(f"Error parsing FSE: {e}", exc_info=True)
+        logging.error(f'Error parsing FSE: {e}', exc_info=True)
     return entries
 
 
