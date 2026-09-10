@@ -1036,7 +1036,7 @@ export default function TimetableViewer() {
                                 </span>
                               )}
                               {cls.status === "ResSch" && !cls.is_cancelled && (
-                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/10 text-blue-500 dark:text-blue-400 border border-blue-500/30 shadow-[0_0_10px_rgba(59,130,246,0.4)] animate-pulse uppercase tracking-widest">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-orange-500/10 text-orange-500 dark:text-orange-400 border border-orange-500/30 shadow-[0_0_10px_rgba(249,115,22,0.4)] animate-pulse uppercase tracking-widest">
                                   Rescheduled
                                 </span>
                               )}
