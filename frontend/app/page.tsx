@@ -21,6 +21,7 @@ type ClassEntry = {
   is_repeat?: boolean;
   is_elective?: boolean;
   is_cancelled?: boolean;
+  status?: string;
 };
 
 const normalizeClassData = (items: ClassEntry[]): ClassEntry[] => {
