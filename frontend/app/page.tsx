@@ -1006,10 +1006,25 @@ export default function TimetableViewer() {
                   <Compass className="w-12 h-12 text-slate-600 mb-3" />
                   <p className="text-lg font-medium text-slate-600 dark:text-slate-400">Select your criteria above to view classes.</p>
                 </div>
+              ) : filteredClasses.length === 0 ? (
+                <div className="flex flex-col items-center justify-center h-48 bg-slate-50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-white/5 p-6 text-center">
+                  <Calendar className="w-12 h-12 text-slate-400 mb-3" />
+                  <p className="text-lg font-medium text-slate-600 dark:text-slate-400">No classes scheduled for {selectedDay}.</p>
+                </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {filteredClasses.map((cls, idx) => (
-                    <div key={`${cls.id || 'class'}-${idx}`} className="bg-white dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-white/5 hover:border-indigo-500/30 transition-all duration-200 flex flex-col justify-between">
+                  {filteredClasses.map((cls, idx) => {
+                    const currentDayStr = new Intl.DateTimeFormat('en-US', { weekday: 'long', timeZone: 'Asia/Karachi' }).format(currentTime);
+                    const currentMins = currentTime.getHours() * 60 + currentTime.getMinutes();
+                    const isOngoing = !cls.is_cancelled && cls.day === currentDayStr && (() => {
+                      if (!cls.time_start || !cls.time_end) return false;
+                      const sMins = parseInt(cls.time_start.split(':')[0]) * 60 + parseInt(cls.time_start.split(':')[1]);
+                      const eMins = parseInt(cls.time_end.split(':')[0]) * 60 + parseInt(cls.time_end.split(':')[1]);
+                      return currentMins >= sMins && currentMins <= eMins;
+                    })();
+
+                    return (
+                    <div key={`${cls.id || 'class'}-${idx}`} className={`bg-white dark:bg-slate-900/50 rounded-xl p-5 border transition-all duration-200 flex flex-col justify-between ${isOngoing ? 'border-indigo-500 dark:border-indigo-500 shadow-[0_0_20px_rgba(99,102,241,0.4)] ring-1 ring-indigo-500' : 'border-slate-200 dark:border-white/5 hover:border-indigo-500/30'}`}>
                       <div>
                         <div className="flex justify-between items-start mb-3 gap-4">
                           <div className="flex-1">
@@ -1034,6 +1049,11 @@ export default function TimetableViewer() {
                                   Elective
                                 </span>
                               )}
+                              {isOngoing && (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500/10 text-indigo-500 dark:text-indigo-400 border border-indigo-500/30 shadow-[0_0_10px_rgba(99,102,241,0.4)] animate-pulse uppercase tracking-widest">
+                                  Ongoing
+                                </span>
+                              )}
                             </div>
                             <h3 className={`text-base font-bold leading-tight ${
                               cls.is_cancelled
@@ -1043,7 +1063,7 @@ export default function TimetableViewer() {
                               {cls.course_name}
                             </h3>
                           </div>
-                          <div className="shrink-0 bg-indigo-100 dark:bg-indigo-500/10 text-indigo-800 dark:text-indigo-300 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-500/20 shadow-[0_0_15px_rgba(79,70,229,0.3)] dark:shadow-[0_0_15px_rgba(99,102,241,0.25)] text-xs font-semibold text-center">
+                          <div className={`shrink-0 ${isOngoing ? 'bg-indigo-600 text-white shadow-[0_0_15px_rgba(79,70,229,0.5)] border-indigo-500' : 'bg-indigo-100 dark:bg-indigo-500/10 text-indigo-800 dark:text-indigo-300 border-indigo-300 dark:border-indigo-500/20 shadow-[0_0_15px_rgba(79,70,229,0.3)] dark:shadow-[0_0_15px_rgba(99,102,241,0.25)]'} px-2.5 py-1.5 rounded-lg border text-xs font-semibold text-center transition-colors`}>
                             {cls.time_start && (
                               <div className="mb-0.5 whitespace-nowrap">
                                 {(() => {
@@ -1054,7 +1074,7 @@ export default function TimetableViewer() {
                                 })()}
                               </div>
                             )}
-                            <div className="text-indigo-500/70 dark:text-indigo-400/50 text-[10px] leading-none mb-0.5">TO</div>
+                            <div className={`${isOngoing ? 'text-indigo-200' : 'text-indigo-500/70 dark:text-indigo-400/50'} text-[10px] leading-none mb-0.5 transition-colors`}>TO</div>
                             {cls.time_end && (
                               <div className="whitespace-nowrap">
                                 {(() => {
@@ -1091,7 +1111,7 @@ export default function TimetableViewer() {
                         )}
                       </div>
                     </div>
-                  ))}
+                  )})}
                 </div>
               )}
               
