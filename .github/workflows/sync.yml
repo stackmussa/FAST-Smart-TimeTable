@@ -32,21 +32,41 @@ jobs:
       - name: Run timetable scraper
         id: scraper
         run: |
-          # Scraper exits 1 when data changed, 0 when nothing changed.
-          # We capture this cleanly without failing the workflow step.
-          if python fetch_timetable.py; then
+          set +e  # Don't exit on non-zero — we handle it manually
+          python fetch_timetable.py
+          EXIT_CODE=$?
+          set -e
+
+          echo "=== Scraper exited with code: $EXIT_CODE ==="
+
+          if [ "$EXIT_CODE" -eq 0 ]; then
             echo "CHANGES_FOUND=false" >> "$GITHUB_ENV"
             echo "Scraper exited 0 — no timetable changes detected."
+          elif [ "$EXIT_CODE" -eq 1 ]; then
+            echo "CHANGES_FOUND=true" >> "$GITHUB_ENV"
+            echo "Scraper exited 1 — changes detected, proceeding to commit."
           else
-            EXIT_CODE=$?
-            if [ "$EXIT_CODE" -eq 1 ]; then
-              echo "CHANGES_FOUND=true" >> "$GITHUB_ENV"
-              echo "Scraper exited 1 — changes detected, proceeding to commit."
-            else
-              echo "Scraper exited with unexpected error code $EXIT_CODE"
-              exit $EXIT_CODE
-            fi
+            echo "::error::Scraper crashed with unexpected exit code $EXIT_CODE"
+            exit $EXIT_CODE
           fi
+
+      - name: Debug — show git status before commit
+        if: env.CHANGES_FOUND == 'true'
+        run: |
+          echo "=== git status ==="
+          git status
+          echo ""
+          echo "=== git diff --stat ==="
+          git diff --stat
+          echo ""
+          echo "=== Changed files (porcelain) ==="
+          git status --porcelain
+          echo ""
+          echo "=== Override files check ==="
+          ls -la .github/scraper_overrides/ 2>/dev/null || echo "No overrides directory found!"
+          echo ""
+          echo "=== sync_metadata.json ==="
+          cat frontend/public/sync_metadata.json 2>/dev/null || echo "No sync_metadata.json found!"
 
       - name: Determine changed schools and build commit message
         if: env.CHANGES_FOUND == 'true'

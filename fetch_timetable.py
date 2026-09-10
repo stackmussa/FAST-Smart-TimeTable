@@ -170,6 +170,55 @@ def download_workbook(url: str) -> openpyxl.Workbook:
     return openpyxl.load_workbook(filename=io.BytesIO(response.content), data_only=True)
 
 
+def load_manual_overrides(school_key: str, entries: List[Dict]) -> List[Dict]:
+    """
+    Loads manual overrides (missing classes + instructor mappings) from
+    .github/scraper_overrides/{school_key}_manual_overrides.json and merges
+    them into the scraped entries list.
+
+    - Missing classes are appended (if their ID doesn't already exist).
+    - Instructor overrides are applied to matching IDs.
+    """
+    import os
+    override_path = f'.github/scraper_overrides/{school_key}_manual_overrides.json'
+    if not os.path.exists(override_path):
+        logging.warning(f"Override file not found: {override_path}")
+        return entries
+
+    try:
+        with open(override_path, 'r', encoding='utf-8') as f:
+            overrides = json.load(f)
+
+        existing_ids = {e['id'] for e in entries if 'id' in e}
+
+        # Inject missing classes (only if not already scraped)
+        missing = overrides.get('missing_classes', [])
+        added_count = 0
+        for cls in missing:
+            if cls.get('id') and cls['id'] not in existing_ids:
+                entries.append(cls)
+                existing_ids.add(cls['id'])
+                added_count += 1
+
+        # Apply instructor overrides
+        instrs = overrides.get('instructors', {})
+        patched_count = 0
+        for entry in entries:
+            eid = entry.get('id')
+            if eid and eid in instrs:
+                entry['instructor'] = instrs[eid]
+                patched_count += 1
+
+        logging.info(
+            f"  Overrides ({school_key}): +{added_count} missing classes, "
+            f"{patched_count} instructor patches applied"
+        )
+    except Exception as e:
+        logging.error(f"Error loading overrides from {override_path}: {e}", exc_info=True)
+
+    return entries
+
+
 def get_timetable_sheet(wb: openpyxl.Workbook):
     for name in wb.sheetnames:
         lower_name = name.lower()
@@ -655,8 +704,8 @@ def parse_fsm() -> List[Dict[str, Any]]:
                     continue
                 
                 c_val_lower = cell_val.lower()
-                is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', c_val_lower))
-                is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', c_val_lower))
+                is_rescheduled = bool(re.search(r'r(?:e)?s(?:s)?ch(?:eduled)?', c_val_lower))
+                is_cancelled = bool(re.search(r'cancel(?:l)?ed|cancel\b', c_val_lower))
                 is_repeat = False
                 
                 course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_val).strip()
@@ -689,6 +738,9 @@ def parse_fsm() -> List[Dict[str, Any]]:
                 entries.append({'id': entry_id, 'school': 'School of Management', 'department': department, 'degree': degree, 'batch': batch, 'semester': 'Unknown', 'course_name': course_name, 'section': section, 'instructor': instructor, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
     except Exception as e:
         logging.error(f'Error parsing FSM: {e}', exc_info=True)
+
+    entries = load_manual_overrides('fsm', entries)
+    logging.info(f'FSM total (with overrides): {len(entries)} entries.')
     return entries
 
 
@@ -718,8 +770,8 @@ def parse_fse() -> List[Dict[str, Any]]:
                     continue
                     
                 c_val_lower = cell_val.lower()
-                is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', c_val_lower))
-                is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', c_val_lower))
+                is_rescheduled = bool(re.search(r'r(?:e)?s(?:s)?ch(?:eduled)?', c_val_lower))
+                is_cancelled = bool(re.search(r'cancel(?:l)?ed|cancel\b', c_val_lower))
                 
                 course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_val).strip()
                 course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
@@ -755,6 +807,9 @@ def parse_fse() -> List[Dict[str, Any]]:
                 entries.append({'id': entry_id, 'school': school, 'department': department, 'degree': degree, 'batch': batch, 'semester': semester, 'course_name': course_name, 'section': section, 'instructor': None, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
     except Exception as e:
         logging.error(f'Error parsing FSE: {e}', exc_info=True)
+
+    entries = load_manual_overrides('fse', entries)
+    logging.info(f'FSE total (with overrides): {len(entries)} entries.')
     return entries
 
 
@@ -802,6 +857,9 @@ def main():
     # ── School of Management ───────────────────────────────────────────────────
     logging.info("Parsing FSM (School of Management)...")
     fsm_entries = parse_fsm()
+    logging.info(f"FSM parsed {len(fsm_entries)} entries before save_with_metadata")
+    for e in fsm_entries[:3]:
+        logging.info(f"  Sample: {e.get('id')} | cancelled={e.get('is_cancelled')} | resched={e.get('is_rescheduled')} | instructor={e.get('instructor')}")
     fsm_changed, fsm_status = save_with_metadata(
         os.path.join(out_dir, "management.json"), fsm_entries
     )
@@ -815,6 +873,9 @@ def main():
     # ── School of Engineering ──────────────────────────────────────────────────
     logging.info("Parsing FSE (School of Engineering)...")
     fse_entries = parse_fse()
+    logging.info(f"FSE parsed {len(fse_entries)} entries before save_with_metadata")
+    for e in fse_entries[:3]:
+        logging.info(f"  Sample: {e.get('id')} | cancelled={e.get('is_cancelled')} | resched={e.get('is_rescheduled')} | instructor={e.get('instructor')}")
     fse_changed, fse_status = save_with_metadata(
         os.path.join(out_dir, "engineering.json"), fse_entries
     )
