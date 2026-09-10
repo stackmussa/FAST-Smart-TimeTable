@@ -500,8 +500,8 @@ def parse_fsc() -> List[Dict[str, Any]]:
 
                         # ── Status detection (granular) ──────────────────────
                         val_lower = val.lower()
-                        is_rescheduled = bool(re.search(r'\bressch\b|\brescheduled\b', val_lower))
-                        is_cancelled = bool(re.search(r'\bcancelled\b|\bcanceled\b', val_lower))
+                        is_rescheduled = bool(re.search(r'r(?:e)?s(?:s)?ch(?:eduled)?', val_lower))
+                        is_cancelled = bool(re.search(r'cancel(?:l)?ed|cancel\b', val_lower))
 
                         # Parse course name and section info
                         course_match = re.match(r"^([^(]+)(?:\(([^)]+)\))?", val)
@@ -645,6 +645,7 @@ def parse_fsc() -> List[Dict[str, Any]]:
                                 "is_repeat": is_repeat,
                                 "is_cancelled": is_cancelled,
                                 "is_elective": is_elective,
+                                "status": "ResSch" if is_rescheduled else ("Cancelled" if is_cancelled else "Scheduled"),
                                 "rag_summary": summary,
                             })
                             day_count += 1
