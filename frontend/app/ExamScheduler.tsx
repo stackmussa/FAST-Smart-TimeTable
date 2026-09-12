@@ -167,7 +167,6 @@ export default function ExamScheduler() {
       {!examData && (
         <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
           <p className="text-slate-500 dark:text-slate-400 mb-2">No exam data available for {examType}.</p>
-          <p className="text-sm text-slate-400 dark:text-slate-500">Ensure the scraper has run successfully and generated the JSON file.</p>
         </div>
       )}
 
