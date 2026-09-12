@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-12T00:43:06.632143Z",
+  "last_updated": "2026-09-12T12:56:15.577255Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -3894,6 +3894,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CY (Batch 2025, Section CY-C) has LA in Room D-416 on Monday from 10:00 to 11:20."
+    },
+    {
+      "id": "FSC-MON-D416-1130-DSC2",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 2",
+      "section": "DS-C2",
+      "instructor": null,
+      "room": "D-416",
+      "day": "Monday",
+      "time_start": "11:30",
+      "time_end": "13:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS DS (Batch 2026, Section DS-C2) has Func Eng Lab - 2 in Room D-416 on Monday from 11:30 to 13:15."
     },
     {
       "id": "FSC-MON-D501-0830-CYC",
@@ -10336,9 +10358,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS CS (Batch 2026, Section CS-C1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Tuesday from 11:30 to 13:15."
     },
     {
@@ -13178,6 +13200,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS AI (Batch 2025, Section AI-C) has Pak Studies in Room D-305 on Wednesday from 11:15 to 13:00."
+    },
+    {
+      "id": "FSC-WED-D305-1430-AIB1",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "AI-B1",
+      "instructor": null,
+      "room": "D-305",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS AI (Batch 2026, Section AI-B1) has Func Eng Lab - 1 in Room D-305 on Wednesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-WED-D306-0830-AIC",

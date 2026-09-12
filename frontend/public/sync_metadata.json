@@ -1,11 +1,42 @@
 {
-  "last_updated": 1789173794,
+  "last_updated": 1789217781,
   "changed_schools": [
     "computing"
   ],
   "changed_files": [
     "Computing"
   ],
-  "status_changes": [],
-  "last_checked": "2026-09-12T00:43:14.217533Z"
+  "status_changes": [
+    {
+      "id": "FSC-WED-D305-1430-AIB1",
+      "course": "Func Eng Lab - 1",
+      "day": "Wednesday",
+      "section": "AI-B1",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D416-1130-DSC2",
+      "course": "Func Eng Lab - 2",
+      "day": "Monday",
+      "section": "DS-C2",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-CALL3 (A308)-1130-CSC1",
+      "course": "Func Eng Lab - 1",
+      "day": "Tuesday",
+      "section": "CS-C1",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    }
+  ],
+  "last_checked": "2026-09-12T12:56:21.819043Z"
 }
