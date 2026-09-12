@@ -57,6 +57,7 @@ export default function TimetableViewer() {
   const [offlineMode, setOfflineMode] = useState<boolean>(false);
   const [isOnline, setIsOnline] = useState<boolean>(true);
   const [lastUpdated, setLastUpdated] = useState<{ comp: string | null, mgt: string | null, eng: string | null }>({ comp: null, mgt: null, eng: null });
+  const [globalSyncTime, setGlobalSyncTime] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'timetable' | 'faculty' | 'exams'>('timetable');
 
   const { theme, setTheme } = useTheme();
@@ -255,11 +256,23 @@ export default function TimetableViewer() {
       const basePath = isProd ? '/FAST-Smart-TimeTable' : '';
 
       try {
-        const [compRes, mgtRes, engRes] = await Promise.all([
+        const [compRes, mgtRes, engRes, buildMetaRes] = await Promise.all([
           fetchWithRetry(`${basePath}/computing.json`).catch(() => null),
           fetchWithRetry(`${basePath}/management.json`).catch(() => null),
-          fetchWithRetry(`${basePath}/engineering.json`).catch(() => null)
+          fetchWithRetry(`${basePath}/engineering.json`).catch(() => null),
+          fetchWithRetry(`${basePath}/build_meta.json`).catch(() => null)
         ]);
+
+        if (buildMetaRes && buildMetaRes.last_sync) {
+          setGlobalSyncTime(buildMetaRes.last_sync);
+        } else {
+          // Fallback to latest school timestamp for local dev
+          const c_up = compRes?.last_updated;
+          const m_up = mgtRes?.last_updated;
+          const e_up = engRes?.last_updated;
+          const max_time = [c_up, m_up, e_up].sort().reverse()[0] || null;
+          setGlobalSyncTime(max_time);
+        }
 
         const parseRes = (res: any) => {
           if (!res) return { classes: [], last_updated: null };
@@ -760,7 +773,7 @@ export default function TimetableViewer() {
                     title="View Timetable Sync Details"
                   >
                     <Clock className="w-3.5 h-3.5" />
-                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(getSelectedSchoolTimestamp())}</span>
+                    <span className="text-xs font-semibold tracking-wide uppercase">Sync: {formatTime(globalSyncTime)}</span>
                   </button>
                 </>
               )}
