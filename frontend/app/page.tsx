@@ -4,6 +4,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Megaphone, Calendar, Users, Compass, CheckCircle2, Clock, Sun, Moon, Timer, X, Sparkles, Bell } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import FacultyFinder from './FacultyFinder';
+import ExamScheduler from './ExamScheduler';
 
 type ClassEntry = {
   id?: string;
@@ -56,7 +57,7 @@ export default function TimetableViewer() {
   const [offlineMode, setOfflineMode] = useState<boolean>(false);
   const [isOnline, setIsOnline] = useState<boolean>(true);
   const [lastUpdated, setLastUpdated] = useState<{ comp: string | null, mgt: string | null, eng: string | null }>({ comp: null, mgt: null, eng: null });
-  const [activeTab, setActiveTab] = useState<'timetable' | 'faculty'>('timetable');
+  const [activeTab, setActiveTab] = useState<'timetable' | 'faculty' | 'exams'>('timetable');
 
   const { theme, setTheme } = useTheme();
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -806,11 +807,24 @@ export default function TimetableViewer() {
             <Users className="w-4 h-4 mr-2" />
             Faculty
           </button>
+          <button
+            onClick={() => setActiveTab('exams')}
+            className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 min-h-[40px] ${
+              activeTab === 'exams'
+                ? 'bg-indigo-600 text-white shadow-sm'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200 hover:bg-slate-200 hover:dark:bg-white/5'
+            }`}
+          >
+            <Calendar className="w-4 h-4 mr-2" />
+            Exams
+          </button>
         </div>
 
         <div key={activeTab} className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-forwards">
           {activeTab === 'faculty' ? (
             <FacultyFinder />
+          ) : activeTab === 'exams' ? (
+            <ExamScheduler />
           ) : (
             <div>
               {/* Filters */}
