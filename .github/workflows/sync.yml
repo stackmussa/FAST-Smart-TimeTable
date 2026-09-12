@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.DEPLOY_PAT }}
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
@@ -29,25 +28,30 @@ jobs:
           pip install requests openpyxl beautifulsoup4 playwright
           playwright install chromium --with-deps
 
-      - name: Run timetable scraper
+      - name: Run timetable and exam scrapers
         id: scraper
         run: |
           set +e  # Don't exit on non-zero — we handle it manually
           python fetch_timetable.py
-          EXIT_CODE=$?
+          TT_EXIT=$?
+          
+          python fetch_exams.py
+          EXAM_EXIT=$?
           set -e
 
-          echo "=== Scraper exited with code: $EXIT_CODE ==="
+          echo "=== Scraper exited with code: TT=$TT_EXIT, EXAM=$EXAM_EXIT ==="
 
-          if [ "$EXIT_CODE" -eq 0 ]; then
-            echo "CHANGES_FOUND=false" >> "$GITHUB_ENV"
-            echo "Scraper exited 0 — no timetable changes detected."
-          elif [ "$EXIT_CODE" -eq 1 ]; then
+          if [ "$TT_EXIT" -gt 1 ] || [ "$EXAM_EXIT" -gt 1 ]; then
+            echo "::error::Scraper crashed with unexpected exit code (TT: $TT_EXIT, EXAM: $EXAM_EXIT)"
+            exit 2
+          fi
+
+          if [ "$TT_EXIT" -eq 1 ] || [ "$EXAM_EXIT" -eq 1 ]; then
             echo "CHANGES_FOUND=true" >> "$GITHUB_ENV"
-            echo "Scraper exited 1 — changes detected, proceeding to commit."
+            echo "Changes detected, proceeding to commit."
           else
-            echo "::error::Scraper crashed with unexpected exit code $EXIT_CODE"
-            exit $EXIT_CODE
+            echo "CHANGES_FOUND=false" >> "$GITHUB_ENV"
+            echo "No changes detected."
           fi
 
       - name: Debug — show git status before commit
@@ -122,6 +126,7 @@ jobs:
             frontend/public/computing.json \
             frontend/public/management.json \
             frontend/public/engineering.json \
+            frontend/public/exams_s1.json \
             frontend/public/sync_metadata.json; do
             # Check if the file is modified or new according to git
             STATUS=$(git status --porcelain "$FILE" 2>/dev/null | cut -c1-2 | tr -d ' ')

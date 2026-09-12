@@ -76,3 +76,13 @@ frontend/AGENTS.md
 # Temporary scratch scripts
 scratch/
 *.xlsx
+
+# Extracted / analysis scripts
+analyze_allocations.py
+analyze_fsc.py
+analyze_sheet.py
+check_fsm.py
+test_parse.py
+test_fetch_exams.py
+test_dept_extraction.py
+

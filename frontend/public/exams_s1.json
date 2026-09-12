@@ -1,0 +1,2241 @@
+{
+  "is_final_draft": false,
+  "exams": [
+    {
+      "id": "EXAM-EE1005DigitalLogicDesign-2025",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2025",
+      "course_name": "EE1005  Digital Logic Design",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1012FunctionalEnglish-2026",
+      "departments": [
+        "AI",
+        "DS",
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2026",
+      "course_name": "SS1012  Functional English",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3014AppliedHumanComputerInteraction-2023",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2023",
+      "course_name": "CS3014 Applied Human Computer Interaction",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE4009ProcessMiningandSimulation\\-2023",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "SE4009 Process Mining and Simulation\\",
+      "date": "2026-09-19",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2025",
+      "departments": [
+        "AI",
+        "SE",
+        "CY",
+        "DS"
+      ],
+      "batch": "2025",
+      "course_name": "EE2003 Computer Organization and Assembly Language",
+      "date": "2026-09-19",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-NS1001AppliedPhysics-2026",
+      "departments": [
+        "SE",
+        "CY"
+      ],
+      "batch": "2026",
+      "course_name": "NS1001  Applied Physics",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-DS3003DataWarehousingandBusinessIntellligence-2023",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2023",
+      "course_name": "DS3003 Data Warehousing and Business Intellligence",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3014AppliedHumanComputerInteraction-2024",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2024",
+      "course_name": "CS3014 Applied Human Computer Interaction",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4069DigitalSustainability-Unknown",
+      "departments": [
+        "CS"
+      ],
+      "batch": "Unknown",
+      "course_name": "MG4069 Digital Sustainability",
+      "date": "2026-09-19",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-DS3004DataWarehousingandBusinessIntellligence-2024",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2024",
+      "course_name": "DS3004 Data Warehousing and Business Intellligence",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1004EnglishCompositionandComprehension-Unknown",
+      "departments": [
+        "CS",
+        "CY"
+      ],
+      "batch": "Unknown",
+      "course_name": "SS1004 English Composition and Comprehension",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-CS2007HumanComputerInteraction-Unknown",
+      "departments": [
+        "SE"
+      ],
+      "batch": "Unknown",
+      "course_name": "CS2007 Human Computer Interaction",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2024",
+      "departments": [
+        "CS",
+        "AI"
+      ],
+      "batch": "2024",
+      "course_name": "EE2003 Computer Organization and Assembly Language",
+      "date": "2026-09-19",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-CS4075CloudComputing-2023",
+      "departments": [
+        "CS",
+        "CY"
+      ],
+      "batch": "2023",
+      "course_name": "CS4075 Cloud Computing",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI2002-ArtificialIntelligence-2024",
+      "departments": [
+        "SE",
+        "CY"
+      ],
+      "batch": "2024",
+      "course_name": "AI2002 - Artificial Intelligence",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI4009GenerativeAI-2023",
+      "departments": [
+        "CS",
+        "AI",
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "AI4009 Generative AI",
+      "date": "2026-09-19",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3040MethodsinBusinessResearch-2023",
+      "departments": [
+        "AI",
+        "DS"
+      ],
+      "batch": "2023",
+      "course_name": "MG3040 Methods in Business Research",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI3001KnowledgeRep.andReasoningBS(AI)A,B,C2024-2024",
+      "departments": [
+        "AI"
+      ],
+      "batch": "2024",
+      "course_name": "AI3001 Knowledge Rep. and Reasoning BS(AI) A,B,C 2024",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2012TechnicalandBusinessWriting-2024",
+      "departments": [
+        "CS",
+        "AI",
+        "SE",
+        "DS"
+      ],
+      "batch": "2024",
+      "course_name": "SS2012 Technical and Business Writing",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1002ProgrammingFundamentals-2026",
+      "departments": [
+        "AI",
+        "DS",
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2026",
+      "course_name": "CS1002   Programming Fundamentals",
+      "date": "2026-09-21",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3004SoftwareDesignandAnalysis-2025",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2025",
+      "course_name": "CS3004 Software Design and Analysis",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1015PakistanStudies-2025",
+      "departments": [
+        "AI",
+        "SE",
+        "CY"
+      ],
+      "batch": "2025",
+      "course_name": "SS1015 Pakistan Studies",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3009ComputerArchitecture-2024",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2024",
+      "course_name": "EE3009  Computer Architecture",
+      "date": "2026-09-21",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1021-UnderstandingofHolyQuranI/IntroductiontoMajorWorldReligionsI-2025",
+      "departments": [
+        "CS",
+        "DS"
+      ],
+      "batch": "2025",
+      "course_name": "SS1021 - Understanding of Holy Quran I/Introduction to Major World Religions I",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-DS3001DataAnalysisandVisualization-2024",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2024",
+      "course_name": "DS3001 Data Analysis and Visualization",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY3002VulnerabilityAssessmentandReverseEngg-2023",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2023",
+      "course_name": "CY3002 Vulnerability Assessment and Reverse Engg",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4049BlockchainandCryptocurrency-2023",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2023",
+      "course_name": "CS4049 Blockchain and Cryptocurrency",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2007TechnicalandBusinessWriting-2022",
+      "departments": [
+        "CS",
+        "DS"
+      ],
+      "batch": "2022",
+      "course_name": "SS2007 Technical and Business Writing",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4046GameDesignandDevelopment-2023",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "CS4046 Game Design and Development",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI4015AgenticArtificialIntelligenc-2022",
+      "departments": [
+        "CS",
+        "AI",
+        "DS"
+      ],
+      "batch": "2022",
+      "course_name": "AI4015  Agentic Artificial Intelligenc",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3002InformationSecurity-2024",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2024",
+      "course_name": "CS3002 Information Security",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4057AI-LedTransformation-Unknown",
+      "departments": [
+        "AI",
+        "SE"
+      ],
+      "batch": "Unknown",
+      "course_name": "MG4057 AI-Led Transformation",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY3003InformationAssurance-2023",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2023",
+      "course_name": "CY3003 Information Assurance",
+      "date": "2026-09-21",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT2002StatisticalModelling-Unknown",
+      "departments": [
+        "CS"
+      ],
+      "batch": "Unknown",
+      "course_name": "MT2002 Statistical Modelling",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3002InformationSecurity-2023",
+      "departments": [
+        "CS",
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "CS3002 Information Security",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1004ObjectOrientedProgramming-2025",
+      "departments": [
+        "CS",
+        "AI",
+        "SE"
+      ],
+      "batch": "2025",
+      "course_name": "CS1004 Object Oriented Programming",
+      "date": "2026-09-21",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-CS4059FundamentalsofComputerVision-2023",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2023",
+      "course_name": "CS4059  Fundamentals of Computer Vision",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1013IdeologyandConstitutionofPakistan-2026",
+      "departments": [
+        "AI",
+        "DS",
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2026",
+      "course_name": "SS1013 Ideology and Constitution of Pakistan",
+      "date": "2026-09-22",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI3002MachineLearning-2024",
+      "departments": [
+        "AI"
+      ],
+      "batch": "2024",
+      "course_name": "AI3002 Machine Learning",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1007IslamicStudies/EthicsBS(CS)(A,B,C,D,E,F,G,H,Z)BS(AI)(A,B,C)-2026",
+      "departments": [
+        "CS",
+        "AI",
+        "DS"
+      ],
+      "batch": "2026",
+      "course_name": "SS1007 Islamic Studies/Ethics   BS(CS) (A,B,C,D,E,F,G,H,Z)      BS(AI) (A,B, C)",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2001DataStructures-2025",
+      "departments": [
+        "AI",
+        "DS",
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2025",
+      "course_name": "CS2001 Data Structures",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2009DesignandAnalysisofAlgorithms-2024",
+      "departments": [
+        "CS",
+        "AI",
+        "SE",
+        "DS"
+      ],
+      "batch": "2024",
+      "course_name": "CS2009  Design and Analysis of Algorithms",
+      "date": "2026-09-22",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1005DiscreteStructures-2025",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2025",
+      "course_name": "CS1005 Discrete Structures",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4001ProfessionalPracticesinIT-2023",
+      "departments": [
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2023",
+      "course_name": "CS4001 Professional Practices in IT",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4039SoftwareforMobileDevices-2023",
+      "departments": [
+        "CS",
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "CS4039 Software for Mobile Devices",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4001ProfessionalPracticesinITBSE-9A-2022",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2022",
+      "course_name": "CS4001 Professional Practices in IT BSE-9A",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-CS4032WebProgramming-2024",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2024",
+      "course_name": "CS4032 Web Programming",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4044FundamentalsofSoftwareProjectManagement-2023",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2023",
+      "course_name": "CS4044 Fundamentals of Software Project Management",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2005DatabaseSystems-2024",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2024",
+      "course_name": "CS2005 Database Systems",
+      "date": "2026-09-22",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY2004CyberSecurity-2025",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2025",
+      "course_name": "CY2004 Cyber Security",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI4012MultiagentSystemsandGameTheory-2023",
+      "departments": [
+        "AI",
+        "DS"
+      ],
+      "batch": "2023",
+      "course_name": "AI4012  Multiagent Systems and Game Theory",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4085MLOps-2023",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2023",
+      "course_name": "CS4085 MLOps",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-DS2003AdvancedStatistics-2024",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2024",
+      "course_name": "DS2003 Advanced Statistics",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE3001SoftwareConstructionandDevelopmentBS(SE)A,B-Unknown",
+      "departments": [
+        "SE"
+      ],
+      "batch": "Unknown",
+      "course_name": "SE3001 Software Construction and Development  BS(SE) A,B",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4063NaturalLanguageProcessing-2023",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "CS4063 Natural Language Processing",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE3005SoftwareConstructionandDevelopmentBS(SE)(A,B,C)-2024",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2024",
+      "course_name": "SE3005 Software Construction and Development   BS(SE)(A,B,C)",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT1003CalculusandAnalyticalGeometry-2026",
+      "departments": [
+        "AI",
+        "DS",
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2026",
+      "course_name": "MT1003   Calculus and Analytical Geometry",
+      "date": "2026-09-23",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY4054BlockchainTechnologiesandApplications-2023",
+      "departments": [
+        "AI"
+      ],
+      "batch": "2023",
+      "course_name": "CY4054 Blockchain Technologies and Applications",
+      "date": "2026-09-23",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT1004LinearAlgebra-2025",
+      "departments": [
+        "AI",
+        "DS",
+        "CS",
+        "SE",
+        "CY"
+      ],
+      "batch": "2025",
+      "course_name": "MT1004 Linear Algebra",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4045DeepLearningforPerception-2023",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2023",
+      "course_name": "CS4045 Deep Learning for Perception",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3001ComputerNetworks-2024",
+      "departments": [
+        "CS",
+        "AI"
+      ],
+      "batch": "2024",
+      "course_name": "CS3001 Computer Networks",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-DS2001IntroductiontoDataScience-2025",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2025",
+      "course_name": "DS2001 Introduction to Data Science",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI4019EdgeComputingandIntelligentSystems-2023",
+      "departments": [
+        "AI",
+        "DS"
+      ],
+      "batch": "2023",
+      "course_name": "AI4019 Edge Computing and Intelligent Systems",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3001ComputerNetworks-2023",
+      "departments": [
+        "DS"
+      ],
+      "batch": "2023",
+      "course_name": "CS3001 Computer Networks",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE1001IntroductiontoSoftwareEngineering-2025",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2025",
+      "course_name": "SE1001  Introduction to Software Engineering",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT1003-CalculusandAnalyticalGeometry(CS3Z)-2025",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2025",
+      "course_name": "MT1003 - Calculus and Analytical Geometry (CS 3Z)",
+      "date": "2026-09-23",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE4033FormalMethodsinSoftwareEngineering-2023",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "SE4033 Formal Methods in Software Engineering",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS0000ArtsandHumanities-2026",
+      "departments": [
+        "SE",
+        "CY"
+      ],
+      "batch": "2026",
+      "course_name": "SS0000 Arts and Humanities",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY4048SecurityOperationsandAdministration-2023",
+      "departments": [
+        "CY"
+      ],
+      "batch": "2023",
+      "course_name": "CY4048 Security Operations and Administration",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI2001ProgrammingforAI-2025",
+      "departments": [
+        "AI"
+      ],
+      "batch": "2025",
+      "course_name": "AI2001  Programming for AI",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2006OperatingSystems-2024",
+      "departments": [
+        "CY",
+        "DS"
+      ],
+      "batch": "2024",
+      "course_name": "CS2006 Operating Systems",
+      "date": "2026-09-23",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS4095EmbeddedControlofRoboticsBS(CS)A2023-2023",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2023",
+      "course_name": "CS4095 Embedded Control of Robotics  BS(CS) A 2023",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI4013AIProductDevelopment-2023",
+      "departments": [
+        "AI"
+      ],
+      "batch": "2023",
+      "course_name": "AI4013 AI Product Development",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3006ParallelandDistributedComputing-2023",
+      "departments": [
+        "CS",
+        "SE"
+      ],
+      "batch": "2023",
+      "course_name": "CS3006 Parallel and Distributed Computing",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3012FundamentalsofDataVisualization-2023",
+      "departments": [
+        "CS"
+      ],
+      "batch": "2023",
+      "course_name": "CS3012  Fundamentals of Data Visualization",
+      "date": "2026-09-23",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE3002SoftwareQualityEngineeringBS(SE)(A,B,C)-2024",
+      "departments": [
+        "SE"
+      ],
+      "batch": "2024",
+      "course_name": "SE3002 Software Quality Engineering   BS(SE)(A,B,C)",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SE4001SoftwareRe-Engineering-Unknown",
+      "departments": [
+        "SE"
+      ],
+      "batch": "Unknown",
+      "course_name": "SE4001 Software Re-Engineering",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF1003IntroductiontoFinancialAccounting-2026",
+      "departments": [
+        "BBA",
+        "BA",
+        "AF",
+        "FT"
+      ],
+      "batch": "2026",
+      "course_name": "AF1003 Introduction to Financial Accounting",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1021-UnderstandingofHolyQuranI/IntroductiontoMajorWorldReligionsI-2025",
+      "departments": [
+        "AF",
+        "BA"
+      ],
+      "batch": "2025",
+      "course_name": "SS1021 - Understanding of Holy Quran I/Introduction to Major World Religions I",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF3001FinancialManagement-2024",
+      "departments": [
+        "BBA",
+        "AF",
+        "BA"
+      ],
+      "batch": "2024",
+      "course_name": "AF3001 Financial Management",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF1002FinancialAccounting-2025",
+      "departments": [
+        "AF",
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "AF1002 Financial Accounting",
+      "date": "2026-09-19",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF2003ManagementAccounting-2025",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2025",
+      "course_name": "AF2003 Management Accounting",
+      "date": "2026-09-19",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1007IslamicStudies/Ethics-2026",
+      "departments": [
+        "BBA",
+        "FT"
+      ],
+      "batch": "2026",
+      "course_name": "SS1007 Islamic Studies/Ethics",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF4016AppliedFinancialManagement-2023",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2023",
+      "course_name": "AF4016 Applied Financial Management",
+      "date": "2026-09-19",
+      "time": "5:00 to 6:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2041CriticalThinking-2025",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2025",
+      "course_name": "SS2041 Critical Thinking",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF1001FundamentalsofAccounting-2025",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2025",
+      "course_name": "AF1001 Fundamentals of Accounting",
+      "date": "2026-09-19",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4067StrategicDiversity,EquityandInclusion-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4067 Strategic Diversity, Equity and Inclusion",
+      "date": "2026-09-19",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2019Psychology-2026",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2026",
+      "course_name": "SS2019 Psychology",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2051CriticalThinking-Unknown",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "Unknown",
+      "course_name": "SS2051 Critical Thinking",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-AF2004BusinessFinance-2025",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "AF2004 Business Finance",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-FT4005DigitalBankingandPaymentIndustry-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "FT4005 Digital Banking and Payment Industry",
+      "date": "2026-09-19",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2019Psychology-2025",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "SS2019 Psychology",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3012BlockchainTechnologyforBusiness-2024",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2024",
+      "course_name": "MG3012 Blockchain Technology for Business",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF4006InvestmentAnal.andMgmt.-2023",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2023",
+      "course_name": "AF4006 Investment Anal. and Mgmt.",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2019Psychology-2024",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2024",
+      "course_name": "SS2019 Psychology",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-BA4009DesignThinkinginBusinessAnalytics-2023",
+      "departments": [
+        "BA"
+      ],
+      "batch": "2023",
+      "course_name": "BA4009 Design Thinking in Business Analytics",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2042CommunityService-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "SS2042 Community Service",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG1011BusinessMathematics-2026",
+      "departments": [
+        "BA",
+        "AF",
+        "FT"
+      ],
+      "batch": "2026",
+      "course_name": "MG1011 Business Mathematics",
+      "date": "2026-09-21",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4011Entrepreneurship-2024",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2024",
+      "course_name": "MG4011 Entrepreneurship",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG1001FundamentalsofManagement-2026",
+      "departments": [
+        "BBA",
+        "BA"
+      ],
+      "batch": "2026",
+      "course_name": "MG1001 Fundamentals of Management",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG2003ConsumerBehaviour-2024",
+      "departments": [
+        "BBA",
+        "BA"
+      ],
+      "batch": "2024",
+      "course_name": "MG2003 Consumer Behaviour",
+      "date": "2026-09-21",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4523ConflictResolutionandNegotiationSkills-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4523 Conflict Resolution and Negotiation Skills",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-BA4006ContextualMarketingandProductAnalytics-2023",
+      "departments": [
+        "BA"
+      ],
+      "batch": "2023",
+      "course_name": "BA4006 Contextual Marketing and Product Analytics",
+      "date": "2026-09-21",
+      "time": "5:00 to 6:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2043CivicsandCommunityEngagement-2025",
+      "departments": [
+        "BBA",
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "SS2043 Civics and Community Engagement",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4011Entrepreneurship-2023",
+      "departments": [
+        "AF",
+        "BA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4011 Entrepreneurship",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4062BrandManagement-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4062 Brand Management",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2006MacroEconomics-2024",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2024",
+      "course_name": "SS2006 Macro Economics",
+      "date": "2026-09-21",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG2011EnvironmentalScienceandSustainabilityforBusiness-2025",
+      "departments": [
+        "AF",
+        "BA"
+      ],
+      "batch": "2025",
+      "course_name": "MG2011 Environmental Science and Sustainability for Business",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG2001OrganizationalBehaviour-2025",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2025",
+      "course_name": "MG2001 Organizational Behaviour",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF4017DigitalAssetsandCryptocurrencies;ConventiontionalandShariahPersepectives-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "AF4017 Digital Assets and Cryptocurrencies; Conventiontional and Shariah Persepectives",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3002BusinessLaw-2024",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2024",
+      "course_name": "MG3002 Business Law",
+      "date": "2026-09-21",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT2004BusinessMath\u2013II-2025",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "MT2004 Business Math \u2013 II",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF2001CorporateAccounting\u2013I-2025",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2025",
+      "course_name": "AF2001 Corporate Accounting \u2013 I",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG1004BusinessCalculusII-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "MG1004 Business Calculus II",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4066ManagingVirtualGlobalTeams-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4066 Managing Virtual Global Teams",
+      "date": "2026-09-21",
+      "time": "5:00 to 6:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF3006FinancingNewVentures-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "AF3006 Financing New Ventures",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1016English-I-2026",
+      "departments": [
+        "BBA",
+        "BA",
+        "AF",
+        "FT"
+      ],
+      "batch": "2026",
+      "course_name": "SS1016 English - I",
+      "date": "2026-09-22",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-BA3002BusinessDataandTextMining-2023",
+      "departments": [
+        "BA"
+      ],
+      "batch": "2023",
+      "course_name": "BA3002 Business Data and Text Mining",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG2009DataAnalysisforBusinessII-2025",
+      "departments": [
+        "BBA",
+        "AF",
+        "BA"
+      ],
+      "batch": "2025",
+      "course_name": "MG2009 Data Analysis for Business II",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1015PakistanStudies-2026",
+      "departments": [
+        "AF",
+        "BA"
+      ],
+      "batch": "2026",
+      "course_name": "SS1015 Pakistan Studies",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1013IdeologyandConstitutionofPakistan-2025",
+      "departments": [
+        "BBA",
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "SS1013 Ideology and Constitution of Pakistan",
+      "date": "2026-09-22",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2003DataStructuresandBusinessApplications-2024",
+      "departments": [
+        "BA"
+      ],
+      "batch": "2024",
+      "course_name": "CS2003 Data Structures and Business Applications",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY4053CybersecurityforFinTech-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "CY4053 Cybersecurity for FinTech",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3011EnterpriseInformationSystem-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "CS3011 Enterprise Information System",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3006OperationsManagement-2024",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2024",
+      "course_name": "MG3006 Operations Management",
+      "date": "2026-09-22",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2016ProgrammingforBusiness-2025",
+      "departments": [
+        "BA"
+      ],
+      "batch": "2025",
+      "course_name": "CS2016 Programming for Business",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT1002BusinessMath\u2013I-2025",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2025",
+      "course_name": "MT1002 Business Math \u2013 I",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-AF3003FinancialInstitutionsandMarkets-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "AF3003 Financial Institutions and Markets",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3017EnterpriseSystemsandApplications-2024",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2024",
+      "course_name": "CS3017 Enterprise Systems and Applications",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF4005AuditandAssurance-2023",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2023",
+      "course_name": "AF4005 Audit and Assurance",
+      "date": "2026-09-22",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS3003ManagementInformationSystems-2024",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2024",
+      "course_name": "CS3003 Management Information Systems",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS3001BusinessCommunication\u2013II-Unknown",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "Unknown",
+      "course_name": "SS3001 Business Communication\u2013II",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-MG2010BusinessCommunication-2025",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2025",
+      "course_name": "MG2010 Business Communication",
+      "date": "2026-09-22",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2012IntroductiontoObject-OrientedProgramming-2025",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "CS2012 Introduction to Object-Oriented Programming",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3014AdvancedBusinessCommunications-2024",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2024",
+      "course_name": "MG3014 Advanced Business Communications",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1001ITinBusiness-2026",
+      "departments": [
+        "BBA",
+        "BA",
+        "FT"
+      ],
+      "batch": "2026",
+      "course_name": "CS1001 IT in Business",
+      "date": "2026-09-23",
+      "time": "9:00 to 10:00 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4522IslamicBankingandFinance-2023",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2023",
+      "course_name": "MG4522 Islamic Banking and Finance",
+      "date": "2026-09-23",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG2012BusinessEconomics-2025",
+      "departments": [
+        "BBA",
+        "BA",
+        "AF",
+        "FT"
+      ],
+      "batch": "2025",
+      "course_name": "MG2012 Business Economics",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4045StrategicBusinessReporting-2023",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2023",
+      "course_name": "MG4045 Strategic Business Reporting",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG1002MarketingManagement-2026",
+      "departments": [
+        "AF",
+        "FT"
+      ],
+      "batch": "2026",
+      "course_name": "MG1002 Marketing Management",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3003BasicEconometrics-2024",
+      "departments": [
+        "BA",
+        "AF",
+        "FT"
+      ],
+      "batch": "2024",
+      "course_name": "MG3003 Basic Econometrics",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2002MicroEconomics-2024",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2024",
+      "course_name": "SS2002 Micro Economics",
+      "date": "2026-09-23",
+      "time": "10:20 to 11:20 AM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF2005CostandManagementAccounting-2024",
+      "departments": [
+        "AF"
+      ],
+      "batch": "2024",
+      "course_name": "AF2005 Cost and Management Accounting",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2018Sociology-2026",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2026",
+      "course_name": "SS2018 Sociology",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-BA4007EmpoweringOrganizationswithAnalyticsandDataVisualization-2023",
+      "departments": [
+        "BA"
+      ],
+      "batch": "2023",
+      "course_name": "BA4007 Empowering Organizations with Analytics and Data Visualization",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF4011InvestmentandPortfolioAnalytics-2023",
+      "departments": [
+        "FT"
+      ],
+      "batch": "2023",
+      "course_name": "AF4011 Investment and Portfolio Analytics",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2018Sociology-2024",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2024",
+      "course_name": "SS2018 Sociology",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4003StrategicManagement-2023",
+      "departments": [
+        "BBA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4003 Strategic Management",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG3004HumanResourceMgmt.-2024",
+      "departments": [
+        "BBA",
+        "BA"
+      ],
+      "batch": "2024",
+      "course_name": "MG3004 Human Resource Mgmt.",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4521DigitalMarketing-2023",
+      "departments": [
+        "BBA",
+        "BA"
+      ],
+      "batch": "2023",
+      "course_name": "MG4521 Digital Marketing",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AF3005ProgrammingforFinanceBFT-9A-Unknown",
+      "departments": [
+        "FT"
+      ],
+      "batch": "Unknown",
+      "course_name": "AF3005 Programming for Finance BFT-9A",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30 PM",
+      "is_repeat": true
+    },
+    {
+      "id": "EXAM-MT1001AppliedCalculus-2026",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2026",
+      "course_name": "MT1001 Applied Calculus",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE2001ElectronicCircuitDesign-2024",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "EE2001 Electronic Circuit Design",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1004ObjectOrientedProgramming-2025",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2025",
+      "course_name": "CS1004 Object Oriented Programming",
+      "date": "2026-09-19",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG4015EngineeringManagement-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "MG4015 Engineering Management",
+      "date": "2026-09-19",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE1005DigitalLogicDesign-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "EE1005 Digital Logic Design",
+      "date": "2026-09-19",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2043CivicsandCommunityEngagement-2025",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2025",
+      "course_name": "SS2043 Civics and Community Engagement",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE2007DataCommunicationandNetworks-2024",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "EE2007 Data Communication and Networks",
+      "date": "2026-09-19",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE4033IndustrialProcessesControl-Unknown",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "Unknown",
+      "course_name": "EE4033 Industrial Processes Control",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-IO3031IntroductiontoInternetofThings-Unknown",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "Unknown",
+      "course_name": "IO3031 Introduction to Internet of Things",
+      "date": "2026-09-19",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3006EmbeddedSystems-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "EE3006 Embedded Systems",
+      "date": "2026-09-19",
+      "time": "03:40 to 04:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MG1008-OccupationalHealthandSafety-2026",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2026",
+      "course_name": "MG1008 - Occupational Health and Safety",
+      "date": "2026-09-21",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS2007TechnicalandBusinessWriting-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "SS2007 Technical and Business Writing",
+      "date": "2026-09-21",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CY4054BlockchainTechnologiesandApplications-2024",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2024",
+      "course_name": "CY4054 Blockchain Technologies and Applications",
+      "date": "2026-09-21",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2021ObjectOrientedDataStructures-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "CS2021 Object Oriented Data Structures",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE1004ElectronicDevicesandCircuits-2025",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2025",
+      "course_name": "EE1004 Electronic Devices and Circuits",
+      "date": "2026-09-21",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3002\u00b5PInterfacingandProgramming-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "EE3002 \u00b5P Interfacing and Programming",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE2004ElectricalNetworkAnalysis-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "EE2004 Electrical Network Analysis",
+      "date": "2026-09-21",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1002ProgrammingFundamentals-2025",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2025",
+      "course_name": "CS1002 Programming Fundamentals",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3012\u00b5PInterfacingandProgramming-2024",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "EE3012 \u00b5P Interfacing and Programming",
+      "date": "2026-09-21",
+      "time": "03:40 to 04:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1011ProgrammingforEngineers-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "CS1011 Programming for Engineers",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-ME2002AppliedThermodynamics-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "ME2002 Applied Thermodynamics",
+      "date": "2026-09-21",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT2013ComplexVariablesandTransforms-2025",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "MT2013 Complex Variables and Transforms",
+      "date": "2026-09-22",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE2012ComputerOrganizationandArchitecture-2024",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2024",
+      "course_name": "EE2012 Computer Organization and Architecture",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1005EnglishLanguage-2026",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2026",
+      "course_name": "SS1005 English Language",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3005ElectromagneticTheory-2024",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "EE3005 Electromagnetic Theory",
+      "date": "2026-09-22",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT1004LinearAlgebra-2025",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2025",
+      "course_name": "MT1004 Linear Algebra",
+      "date": "2026-09-22",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-NS1002PhysicsforEngineers-2026",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2026",
+      "course_name": "NS1002 Physics for Engineers",
+      "date": "2026-09-22",
+      "time": "03:40 to 04:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT2011ComplexVariablesandTransforms-2024",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "MT2011 Complex Variables and Transforms",
+      "date": "2026-09-22",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-NS1007AppliedPhysics-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "NS1007 Applied Physics",
+      "date": "2026-09-22",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2011FundamentalsofDatabases-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "CS2011 Fundamentals of Databases",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-MT2003ComplexVariablesandTransforms-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "MT2003 Complex Variables and Transforms",
+      "date": "2026-09-22",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE2031InstrumentationandMeasurements-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "EE2031 Instrumentation and Measurements",
+      "date": "2026-09-22",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1009ApplicationsofInformationCommunicationTechnologies-2026",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2026",
+      "course_name": "CS1009 Applications of Information Communication Technologies",
+      "date": "2026-09-23",
+      "time": "9:00 to 10:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS1005DiscreteStructures-2025",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2025",
+      "course_name": "CS1005 Discrete Structures",
+      "date": "2026-09-23",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-ME2001BasicMechanicalEngineering-2024",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "ME2001 Basic Mechanical Engineering",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1021-UnderstandingofHolyQuranI/IntroductiontoMajorWorldReligionsI-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "SS1021 - Understanding of Holy Quran I/Introduction to Major World Religions I",
+      "date": "2026-09-23",
+      "time": "01:00 to 02:00",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3003AnalogueandDigitalCommunication-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "EE3003 Analogue and Digital Communication",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-SS1015PakistanStudies-2026",
+      "departments": [
+        "BCE",
+        "BEE"
+      ],
+      "batch": "2026",
+      "course_name": "SS1015 Pakistan Studies",
+      "date": "2026-09-23",
+      "time": "03:40 to 04:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-AI4003AppliedMachineLearning-2023",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2023",
+      "course_name": "AI4003 Applied Machine Learning",
+      "date": "2026-09-23",
+      "time": "10:20 to 11:20",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3031DigitalSignalProcessing-2024",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2024",
+      "course_name": "EE3031 Digital Signal Processing",
+      "date": "2026-09-23",
+      "time": "11:40 to 12:40",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE3010AnalogueandDigitalCommunication-2024",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2024",
+      "course_name": "EE3010 Analogue and Digital Communication",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-CS2008NumericalComputing-2024",
+      "departments": [
+        "BCE"
+      ],
+      "batch": "2024",
+      "course_name": "CS2008 Numerical Computing",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    },
+    {
+      "id": "EXAM-EE1001LinearCircuitAnalysis-2025",
+      "departments": [
+        "BEE"
+      ],
+      "batch": "2025",
+      "course_name": "EE1001 Linear Circuit Analysis",
+      "date": "2026-09-23",
+      "time": "02:30 to 03:30",
+      "is_repeat": false
+    }
+  ]
+}
