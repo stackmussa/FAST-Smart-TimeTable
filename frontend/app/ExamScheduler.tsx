@@ -53,7 +53,10 @@ export default function ExamScheduler() {
 
   const handleExportPNG = async () => {
     if (scheduleRef.current && examData?.is_final_draft) {
-      const canvas = await html2canvas(scheduleRef.current, { scale: 2 });
+      const canvas = await html2canvas(scheduleRef.current, { 
+        useCORS: true,
+        allowTaint: true
+      });
       const link = document.createElement('a');
       link.download = `Exam_Schedule_${batch}_${department}.png`;
       link.href = canvas.toDataURL('image/png');
