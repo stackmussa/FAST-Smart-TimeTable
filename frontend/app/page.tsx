@@ -225,8 +225,12 @@ export default function TimetableViewer() {
       }
     }
 
+    type BuildMetaPayload = { last_sync?: string; commit?: string; };
+    const isBuildMetaPayload = (x: unknown): x is BuildMetaPayload => typeof x === 'object' && x !== null && !Array.isArray(x) && 'last_sync' in x;
+    const isSchoolPayload = (x: unknown): x is { classes?: ClassEntry[]; last_updated?: string | null } => typeof x === 'object' && x !== null && !Array.isArray(x);
+
     // 2. Fetch fresh data with retry logic
-    const fetchWithRetry = async (url: string, retries = 3, delay = 1000): Promise<any[]> => {
+    const fetchWithRetry = async (url: string, retries = 3, delay = 1000): Promise<unknown> => {
       const fetchOptions = {
         cache: 'no-store' as RequestCache,
         headers: {
@@ -263,14 +267,14 @@ export default function TimetableViewer() {
           fetchWithRetry(`${basePath}/build_meta.json`).catch(() => null)
         ]);
 
-        if (buildMetaRes && buildMetaRes.last_sync) {
+        if (isBuildMetaPayload(buildMetaRes) && buildMetaRes.last_sync) {
           setGlobalSyncTime(buildMetaRes.last_sync);
         } else {
           // Fallback to latest school timestamp for local dev
-          const c_up = compRes?.last_updated;
-          const m_up = mgtRes?.last_updated;
-          const e_up = engRes?.last_updated;
-          const max_time = [c_up, m_up, e_up].sort().reverse()[0] || null;
+          const c_up = isSchoolPayload(compRes) ? compRes.last_updated : null;
+          const m_up = isSchoolPayload(mgtRes) ? mgtRes.last_updated : null;
+          const e_up = isSchoolPayload(engRes) ? engRes.last_updated : null;
+          const max_time = [c_up, m_up, e_up].filter(Boolean).sort().reverse()[0] || null;
           setGlobalSyncTime(max_time);
         }
 
