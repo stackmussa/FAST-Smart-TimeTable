@@ -269,6 +269,9 @@ export default function TimetableViewer() {
 
         if (isBuildMetaPayload(buildMetaRes) && buildMetaRes.last_sync) {
           setGlobalSyncTime(buildMetaRes.last_sync);
+          if (buildMetaRes.commit) {
+            localStorage.setItem('last_build_commit', buildMetaRes.commit);
+          }
         } else {
           // Fallback to latest school timestamp for local dev
           const c_up = isSchoolPayload(compRes) ? compRes.last_updated : null;
@@ -358,25 +361,48 @@ export default function TimetableViewer() {
         const res = await fetch(`${basePath}/sync_metadata.json?t=${Date.now()}`, {
           cache: 'no-store' as RequestCache,
           headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
-        });
-        if (!res.ok) return;
-        const meta = await res.json();
+        }).catch(() => null);
+        
+        const buildRes = await fetch(`${basePath}/build_meta.json?t=${Date.now()}`, {
+          cache: 'no-store' as RequestCache,
+          headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+        }).catch(() => null);
 
-        const localTs = parseInt(localStorage.getItem('last_synced_timestamp') || '0', 10);
-        if (meta.last_updated <= localTs) return; // Already seen this update
+        let dataUpdated = false;
+        let changedSchools: string[] = [];
+        
+        if (res && res.ok) {
+          const meta = await res.json();
+          const localTs = parseInt(localStorage.getItem('last_synced_timestamp') || '0', 10);
+          if (meta.last_updated > localTs) {
+            dataUpdated = true;
+            changedSchools = meta.changed_schools ?? (meta.changed_files ?? []).map((f: string) => f.toLowerCase());
+          }
+        }
 
-        // Prefer the new lowercase `changed_schools` array; fall back to legacy `changed_files`
-        const changedSchools: string[] = (
-          meta.changed_schools ?? (meta.changed_files ?? []).map((f: string) => f.toLowerCase())
-        );
+        let uiUpdated = false;
+        if (buildRes && buildRes.ok) {
+          const buildMeta = await buildRes.json();
+          const localCommit = localStorage.getItem('last_build_commit');
+          if (buildMeta.commit && localCommit && buildMeta.commit !== localCommit) {
+            uiUpdated = true;
+          }
+        }
 
-        if (changedSchools.length === 0) return;
+        if (!dataUpdated && !uiUpdated) return;
 
-        // Show banner with human-readable school names
+        // Show banner with human-readable school names or UI indicator
         const displayNames = changedSchools
           .map(s => SCHOOL_FILE_MAP[s]?.displayName ?? s)
           .filter(Boolean);
-        setUpdateBanner({ show: true, changedFiles: displayNames });
+          
+        if (uiUpdated && displayNames.length === 0) {
+           displayNames.push("the App UI");
+        }
+        
+        if (displayNames.length > 0) {
+          setUpdateBanner({ show: true, changedFiles: displayNames });
+        }
 
         // ── Targeted cache-bust: only refetch schools that actually changed ──
         const fetchOpts: RequestInit = {
@@ -1294,7 +1320,7 @@ export default function TimetableViewer() {
         </div>
       )}
 
-      {/* Sync Info Modal Drawer */}
+    {/* Sync Info Modal Drawer */}
       {isSyncModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/50 dark:bg-slate-950/80 backdrop-blur-sm animate-in fade-in duration-200" onClick={() => setIsSyncModalOpen(false)}>
           <div 
@@ -1313,21 +1339,21 @@ export default function TimetableViewer() {
                 className="w-full text-left bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Computing</p>
-                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.comp)}</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(globalSyncTime)}</p>
               </button>
               <button 
                 onClick={() => { setSelectedSchool('School of Management'); setIsSyncModalOpen(false); }}
                 className="w-full text-left bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Management</p>
-                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.mgt)}</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(globalSyncTime)}</p>
               </button>
               <button 
                 onClick={() => { setSelectedSchool('School of Engineering'); setIsSyncModalOpen(false); }}
                 className="w-full text-left bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-emerald-500/30 animate-green-breathing cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1 tracking-wider">School of Engineering</p>
-                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(lastUpdated.eng)}</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{formatTime(globalSyncTime)}</p>
               </button>
             </div>
           </div>

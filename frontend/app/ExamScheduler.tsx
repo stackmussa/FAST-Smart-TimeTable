@@ -201,8 +201,9 @@ export default function ExamScheduler() {
           )}
 
           {/* Schedule Render Grid (Matching page.tsx classes cards) */}
-          <div ref={scheduleRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-6">
-            {filteredExams.map(exam => (
+          {filteredExams.length > 0 ? (
+            <div ref={scheduleRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-6">
+              {filteredExams.map(exam => (
               <div 
                 key={exam.id} 
                 className="relative overflow-hidden flex flex-col rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-white/5 shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-all duration-300 p-5 group"
@@ -231,12 +232,9 @@ export default function ExamScheduler() {
               </div>
             ))}
           </div>
-          
-          {filteredExams.length === 0 && (
-            <div className="flex flex-col items-center justify-center py-16 px-4 border-2 border-dashed border-slate-200 dark:border-white/10 rounded-2xl text-center">
-              <CalendarDays className="w-12 h-12 text-slate-300 dark:text-slate-600 mb-4" />
-              <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">No exams found</p>
-              <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">Try adjusting your filters for School, Department, and Batch.</p>
+          ) : (
+            <div className="flex flex-col items-center justify-center py-12 px-4 text-center border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-2xl">
+              <p className="text-slate-500 dark:text-slate-400">No exams found for the selected department and batch.</p>
             </div>
           )}
         </>
