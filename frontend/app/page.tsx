@@ -751,12 +751,19 @@ export default function TimetableViewer() {
           className="fixed top-0 left-0 right-0 z-[200] cursor-pointer bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 text-white text-center py-3 px-4 text-sm font-semibold shadow-lg shadow-indigo-500/30"
           style={{ animation: 'slideInFromTop 0.5s ease-out' }}
         >
-          <div className="max-w-4xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+          <div className="max-w-4xl mx-auto flex items-center justify-center gap-2 flex-wrap relative pr-8">
             <Bell className="w-4 h-4 animate-bounce" />
             <span>
               Schedule updated! Changes detected in: <strong>{updateBanner.changedFiles.join(', ')}</strong>.
             </span>
             <span className="underline decoration-white/60 underline-offset-2 hover:decoration-white transition-all">Click here to load latest data.</span>
+            
+            <button 
+              onClick={(e) => { e.stopPropagation(); setUpdateBanner({ show: false, changedFiles: [] }); }} 
+              className="absolute right-0 top-1/2 -translate-y-1/2 p-1.5 hover:bg-white/20 rounded-full transition-colors flex-shrink-0"
+            >
+              <X className="w-4 h-4" />
+            </button>
           </div>
         </div>
       )}
@@ -830,35 +837,35 @@ export default function TimetableViewer() {
         <div className="flex bg-white dark:bg-slate-900/50 p-1 rounded-xl border border-slate-200 dark:border-white/5 w-full md:w-fit mb-5 shadow-sm">
           <button
             onClick={() => setActiveTab('timetable')}
-            className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 min-h-[40px] ${
+            className={`flex items-center justify-center flex-1 md:flex-none px-2 sm:px-4 md:px-6 py-2.5 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 min-h-[40px] ${
               activeTab === 'timetable'
                 ? 'bg-indigo-600 text-white shadow-sm'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200 hover:bg-slate-200 hover:dark:bg-white/5'
             }`}
           >
-            <Calendar className="w-4 h-4 mr-2" />
+            <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
             Timetable
           </button>
           <button
             onClick={() => setActiveTab('faculty')}
-            className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 min-h-[40px] ${
+            className={`flex items-center justify-center flex-1 md:flex-none px-2 sm:px-4 md:px-6 py-2.5 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 min-h-[40px] ${
               activeTab === 'faculty'
                 ? 'bg-indigo-600 text-white shadow-sm'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200 hover:bg-slate-200 hover:dark:bg-white/5'
             }`}
           >
-            <Users className="w-4 h-4 mr-2" />
+            <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
             Faculty
           </button>
           <button
             onClick={() => setActiveTab('exams')}
-            className={`flex items-center justify-center flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 min-h-[40px] ${
+            className={`flex items-center justify-center flex-1 md:flex-none px-2 sm:px-4 md:px-6 py-2.5 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 min-h-[40px] ${
               activeTab === 'exams'
                 ? 'bg-indigo-600 text-white shadow-sm'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200 hover:bg-slate-200 hover:dark:bg-white/5'
             }`}
           >
-            <Calendar className="w-4 h-4 mr-2" />
+            <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
             Exams
           </button>
         </div>
