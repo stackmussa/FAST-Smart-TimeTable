@@ -1,5 +1,5 @@
 {
-  "last_updated": 1789394285,
+  "last_updated": 1789424839,
   "changed_schools": [
     "computing"
   ],
@@ -8,195 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-D302-1000-AIA",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D302-0830-AIA",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D502-1430-CYC",
-      "course": "UHQ-II",
-      "day": "Tuesday",
-      "section": "CY-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D303-0830-AIB",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D403-0830-CYA",
-      "course": "UHQ-II",
-      "day": "Tuesday",
-      "section": "CY-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D301-1300-AIC",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-IT Lab 4GPU (D203)-1000-AIB",
-      "course": "Data St Lab",
-      "day": "Friday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D303-1000-AIB",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-AIB",
-      "course": "Comp Net Lab",
-      "day": "Thursday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C110-0830-SEE1",
-      "course": "Func Eng Lab - 1",
-      "day": "Tuesday",
-      "section": "SE-E1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D403-1300-SED",
-      "course": "UHQ-II",
-      "day": "Wednesday",
-      "section": "SE-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C601-1320-SEA",
-      "course": "UHQ-II",
-      "day": "Tuesday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D403-1030-CYB",
-      "course": "UHQ-II",
-      "day": "Tuesday",
-      "section": "CY-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D401-1130-CYD2",
-      "course": "Func Eng Lab - 2",
-      "day": "Tuesday",
-      "section": "CY-D2",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C407-1130-SEC",
+      "id": "FSC-THU-C407-1130-SEB",
       "course": "AI",
       "day": "Thursday",
-      "section": "SE-C",
+      "section": "SE-B",
       "field": "is_rescheduled",
       "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C605-1200-SEC",
-      "course": "UHQ-II",
-      "day": "Tuesday",
-      "section": "SE-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C602-1300-SEA",
-      "course": "AI",
-      "day": "Tuesday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D301-1150-AIC",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C409-1000-SEA",
-      "course": "Formal Methods",
-      "day": "Tuesday",
-      "section": "SE-A",
-      "field": "is_cancelled",
-      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-14T13:58:05.020278Z"
+  "last_checked": "2026-09-14T22:27:19.880260Z"
 }

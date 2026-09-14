@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T13:57:57.547985Z",
+  "last_updated": "2026-09-14T22:27:13.077399Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -17734,14 +17734,14 @@
       "rag_summary": "BS SE (Batch 2022, Section SE-A) has HCI [REPEAT COURSE] in Room C-407 on Thursday from 10:00 to 11:20."
     },
     {
-      "id": "FSC-THU-C407-1130-SEC",
+      "id": "FSC-THU-C407-1130-SEB",
       "school": "School of Computing",
       "department": "SE",
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
       "course_name": "AI",
-      "section": "SE-C",
+      "section": "SE-B",
       "instructor": null,
       "room": "C-407",
       "day": "Thursday",
@@ -17753,7 +17753,7 @@
       "is_cancelled": false,
       "is_elective": false,
       "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS SE (Batch 2024, Section SE-C) has AI in Room C-407 on Thursday from 11:30 to 12:50."
+      "rag_summary": "[RESCHEDULED] BS SE (Batch 2024, Section SE-B) has AI in Room C-407 on Thursday from 11:30 to 12:50."
     },
     {
       "id": "FSC-THU-C407-1300-CSF",
