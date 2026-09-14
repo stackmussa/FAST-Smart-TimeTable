@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-12T00:19:12.536125Z",
+  "last_updated": "2026-09-14T07:04:22.613974Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -105,6 +105,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BBA BBA (Batch 2023, Section BBA07B) has AF3003 Financial Institutions & Markets in Room A-02 on Monday from 14:25 to 15:45."
+    },
+    {
+      "id": "FSM-MON-A02-1550",
+      "school": "School of Management",
+      "department": "BBA",
+      "degree": "BBA",
+      "batch": "2023",
+      "semester": "Unknown",
+      "course_name": "AF3003 Financial Institutions & Markets",
+      "section": "BBA07A",
+      "instructor": "Riffat Shaheen",
+      "room": "A-02",
+      "day": "Monday",
+      "time_start": "15:50",
+      "time_end": "17:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BBA BBA (Batch 2023, Section BBA07A) has AF3003 Financial Institutions & Markets in Room A-02 on Monday from 15:50 to 17:10."
     },
     {
       "id": "FSM-MON-A03-0830",
@@ -1953,27 +1974,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS AF (Batch 2025, Section AF03B) has MG2011 Environmental Science and Sustainability for Business in Room A-315 on Monday from 14:25 to 15:45."
-    },
-    {
-      "id": "FSM-MON-A315-1550",
-      "school": "School of Management",
-      "department": "BBA",
-      "degree": "BBA",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "AF3003 Financial Institutions & Markets",
-      "section": "BBA07A",
-      "instructor": null,
-      "room": "A-315",
-      "day": "Monday",
-      "time_start": "15:50",
-      "time_end": "17:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BBA BBA (Batch 2023, Section BBA07A) has AF3003 Financial Institutions & Markets in Room A-315 on Monday from 15:50 to 17:10."
     },
     {
       "id": "FSM-MON-A316-0830",
