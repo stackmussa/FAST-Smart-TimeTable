@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import html2canvas from 'html2canvas';
+import { toPng } from 'html-to-image';
 import { Download, CalendarDays, Clock } from 'lucide-react';
 
 type ExamEntry = {
@@ -53,14 +53,21 @@ export default function ExamScheduler() {
 
   const handleExportPNG = async () => {
     if (scheduleRef.current && examData?.is_final_draft) {
-      const canvas = await html2canvas(scheduleRef.current, { 
-        useCORS: true,
-        allowTaint: true
-      });
-      const link = document.createElement('a');
-      link.download = `Exam_Schedule_${batch}_${department}.png`;
-      link.href = canvas.toDataURL('image/png');
-      link.click();
+      try {
+        const dataUrl = await toPng(scheduleRef.current, {
+          quality: 1.0,
+          pixelRatio: window.devicePixelRatio || 2,
+          style: {
+            backgroundColor: document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc',
+          }
+        });
+        const link = document.createElement('a');
+        link.download = `Exam_Schedule_${batch}_${department}.png`;
+        link.href = dataUrl;
+        link.click();
+      } catch (err) {
+        console.error("Failed to export PNG:", err);
+      }
     }
   };
 

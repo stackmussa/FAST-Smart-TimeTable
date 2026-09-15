@@ -242,6 +242,7 @@ export default function TimetableViewer() {
 
       try {
         const res = await fetch(`${url}?t=${t}`, fetchOptions);
+        if (res.status === 404) return null;
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return await res.json();
       } catch (error) {

@@ -5,7 +5,7 @@ import requests
 from io import BytesIO
 import openpyxl
 
-EXAM_URL = "https://docs.google.com/spreadsheets/d/1x6k9Ub61Fg3iIUFNRoOl3J9omc_Q4Dbp/export?format=xlsx"
+EXAM_URL = "https://docs.google.com/spreadsheets/d/1Ks9f0hrODqV0EUroMTBt6_j9G8po6s4i/export?format=xlsx"
 OUTPUT_FILE = "frontend/public/exams_s1.json"
 
 def fetch_and_parse_exams():
@@ -45,6 +45,9 @@ def fetch_and_parse_exams():
                 if cell_val and isinstance(cell_val, str) and "final" in cell_val.lower():
                     is_final_draft = True
                     break
+        
+        # Force to True for the final exam schedule as requested
+        is_final_draft = True
 
         # 2. Get Time Slots from Row 4
         time_slots = {}
