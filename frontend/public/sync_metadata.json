@@ -1,22 +1,94 @@
 {
-  "last_updated": 1789424839,
+  "last_updated": 1789450146,
   "changed_schools": [
-    "computing"
+    "computing",
+    "management"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Management"
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-C407-1130-SEB",
-      "course": "AI",
-      "day": "Thursday",
+      "id": "FSC-MON-C605-0830-SEF",
+      "course": "PF",
+      "day": "Monday",
+      "section": "SE-F",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D414-1300-CYA",
+      "course": "Ideology of Pak",
+      "day": "Tuesday",
+      "section": "CY-A",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-Rawal 1 (C509)-0830-CSE",
+      "course": "Comp Net Lab",
+      "day": "Monday",
+      "section": "CS-E",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D303-1130-AIC",
+      "course": "LA",
+      "day": "Monday",
+      "section": "AI-C",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D416-1000-CYC",
+      "course": "LA",
+      "day": "Monday",
+      "section": "CY-C",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C602-1000-SEB",
+      "course": "PF",
+      "day": "Monday",
       "section": "SE-B",
-      "field": "is_rescheduled",
-      "old": null,
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C409-1000-SEC",
+      "course": "S/w Quality Engg",
+      "day": "Monday",
+      "section": "SE-C",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D301-0830-AIC",
+      "course": "Calculus",
+      "day": "Thursday",
+      "section": "AI-C",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-14T22:27:19.880260Z"
+  "last_checked": "2026-09-15T05:29:06.906223Z"
 }
