@@ -1,5 +1,5 @@
 {
-  "last_updated": 1789467658,
+  "last_updated": 1789484792,
   "changed_schools": [
     "computing"
   ],
@@ -8,89 +8,9 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-D314-1555-DSA & B",
-      "course": "LA",
-      "day": "Tuesday",
-      "section": "DS-A & B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C303-1430-AIC",
-      "course": "Data St Lab",
-      "day": "Thursday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D412-1430-CSD",
-      "course": "Info Sec",
+      "id": "FSC-WED-D504-1300-CYA",
+      "course": "Ideology of Pak",
       "day": "Wednesday",
-      "section": "CS-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C305-1130-CYB",
-      "course": "Cloud Comp",
-      "day": "Friday",
-      "section": "CY-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D302-1130-CSF",
-      "course": "App HCI",
-      "day": "Friday",
-      "section": "CS-F",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D315-1130-AIC",
-      "course": "LA",
-      "day": "Thursday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C607-1430-SEF",
-      "course": "PF Session",
-      "day": "Wednesday",
-      "section": "SE-F",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D502-0830-CYC",
-      "course": "LA",
-      "day": "Wednesday",
-      "section": "CY-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C305-1000-CYA",
-      "course": "Cloud Comp",
-      "day": "Friday",
       "section": "CY-A",
       "field": "is_rescheduled",
       "old": null,
@@ -98,75 +18,15 @@
       "school": "computing"
     },
     {
-      "id": "FSC-THU-D311-1430-DSC",
-      "course": "IICT Lab",
-      "day": "Thursday",
-      "section": "DS-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C307-1000-CSG",
-      "course": "App HCI",
-      "day": "Friday",
-      "section": "CS-G",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C609-1430-SEB",
-      "course": "PF Session",
-      "day": "Wednesday",
-      "section": "SE-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D301-1555-AIC",
-      "course": "Calculus",
-      "day": "Wednesday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D305-1300-SEA",
-      "course": "Formal Methods",
+      "id": "FSC-WED-C409-1500-SEA",
+      "course": "Ideology of Pak",
       "day": "Wednesday",
       "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D305-1300-SEA",
-      "course": "Formal Methods",
-      "day": "Wednesday",
-      "section": "SE-A",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D313-1000-CSC",
-      "course": "Info Sec",
-      "day": "Wednesday",
-      "section": "CS-C",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-15T10:20:58.524907Z"
+  "last_checked": "2026-09-15T15:06:32.287108Z"
 }
