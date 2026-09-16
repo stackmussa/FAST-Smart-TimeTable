@@ -1,32 +1,11 @@
 {
-  "last_updated": 1789484792,
+  "last_updated": 1789529391,
   "changed_schools": [
     "computing"
   ],
   "changed_files": [
     "Computing"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-WED-D504-1300-CYA",
-      "course": "Ideology of Pak",
-      "day": "Wednesday",
-      "section": "CY-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C409-1500-SEA",
-      "course": "Ideology of Pak",
-      "day": "Wednesday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-09-15T15:06:32.287108Z"
+  "status_changes": [],
+  "last_checked": "2026-09-16T03:29:51.759670Z"
 }
