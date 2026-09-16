@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T07:04:26.802567Z",
+  "last_updated": "2026-09-16T08:20:14.353410Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3591,6 +3591,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Intro to Internet of Things - Lab A (Lab) in Room Comp-II on Wednesday from 14:20 to 15:40."
+    },
+    {
+      "id": "FSE-WED-CompIII-0830",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "DLD C",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "Comp-III",
+      "day": "Wednesday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has DLD C in Room Comp-III on Wednesday from 08:30 to 09:50."
     },
     {
       "id": "FSE-WED-CompIII-1250",
