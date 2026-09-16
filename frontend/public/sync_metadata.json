@@ -1,38 +1,18 @@
 {
-  "last_updated": 1789546814,
+  "last_updated": 1789566400,
   "changed_schools": [
     "computing",
-    "engineering"
+    "management"
   ],
   "changed_files": [
     "Computing",
-    "Engineering"
+    "Management"
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-D411-1555-CSA",
-      "course": "PDC",
+      "id": "FSC-THU-Margala 1 (C209)-1000-AIB",
+      "course": "Data St Lab",
       "day": "Thursday",
-      "section": "CS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D411-1555-CSA",
-      "course": "PDC",
-      "day": "Thursday",
-      "section": "CS-A",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C310-1300-AIB",
-      "course": "Algo",
-      "day": "Friday",
       "section": "AI-B",
       "field": "is_rescheduled",
       "old": null,
@@ -40,135 +20,15 @@
       "school": "computing"
     },
     {
-      "id": "FSC-THU-D501-1555-CYD",
-      "course": "PF",
+      "id": "FSC-THU-C307-0830-CSF",
+      "course": "SDA",
       "day": "Thursday",
-      "section": "CY-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D305-1430-AIA",
-      "course": "Comp Net",
-      "day": "Thursday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-Rawal 1 (C509)-1430-AIB",
-      "course": "COAL Lab",
-      "day": "Friday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D305-1300-AIC",
-      "course": "Algo",
-      "day": "Thursday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C409-1000-SEA",
-      "course": "Formal Methods",
-      "day": "Tuesday",
-      "section": "SE-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D403-1130-AIA",
-      "course": "Blockchain",
-      "day": "Wednesday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D313-1500-DSB",
-      "course": "Seerah",
-      "day": "Tuesday",
-      "section": "DS-B",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D414-1300-CYA",
-      "course": "Ideology of Pak",
-      "day": "Tuesday",
-      "section": "CY-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D402-1300-AIA",
-      "course": "Edge Comp",
-      "day": "Wednesday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D301-0830-AIC",
-      "course": "Calculus",
-      "day": "Thursday",
-      "section": "AI-C",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D402-1130-DSA",
-      "course": "Edge Comp",
-      "day": "Wednesday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-CALL3 (A308)-1130-CSC1",
-      "course": "Func Eng Lab - 1",
-      "day": "Tuesday",
-      "section": "CS-C1",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D304-1200-AIC",
-      "course": "UHQ-II",
-      "day": "Thursday",
-      "section": "AI-C",
+      "section": "CS-F",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-16T08:20:14.431225Z"
+  "last_checked": "2026-09-16T13:46:40.230514Z"
 }
