@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 URLS = {
     "FSC": "https://docs.google.com/spreadsheets/d/1vlTuotLw34fedME3gNQj09cZw-todVomxAiu5P1wZ6Q/htmlview?gid=1174567785",
     "FSM": "https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/export?format=xlsx",
-    "FSE": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/export?format=xlsx&gid=115356958"
+    "FSE": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/export?format=xlsx"
 }
 
 # ── Color maps ─────────────────────────────────────────────────────────────────
@@ -323,6 +323,14 @@ def save_with_metadata(filepath: str, new_entries: List[Dict]) -> Tuple[bool, Li
     Uses deep_diff() for semantic comparison — ignores rag_summary wording drift.
     """
     import datetime, os
+
+    # Validation Failsafe: Prevent overwriting with bad scraping data
+    if len(new_entries) < 50:
+        raise ValueError(
+            f"CRITICAL SCRAPER ERROR: Parsed data for {os.path.basename(filepath)} "
+            f"contains only {len(new_entries)} items (expected >= 50). "
+            "Aborting to prevent overwriting JSON with empty/corrupted data."
+        )
 
     now_iso = datetime.datetime.utcnow().isoformat() + "Z"
     old_entries: List[Dict] = []
@@ -751,12 +759,93 @@ def parse_fse() -> List[Dict[str, Any]]:
     entries = []
     try:
         wb = download_workbook(URLS['FSE'])
+        
+        # 1. Build Allocation Map
+        allocation_map = []
+        if 'Course Allocation FA26' in wb.sheetnames:
+            ws_alloc = wb['Course Allocation FA26']
+            current_dept, current_degree, current_batch, current_semester = 'Unknown', 'BS', 'Unknown', 'Unknown'
+            for r in range(1, ws_alloc.max_row + 1):
+                c1 = str(ws_alloc.cell(row=r, column=1).value or "").strip()
+                c2 = str(ws_alloc.cell(row=r, column=2).value or "").strip()
+                if c1.startswith("BS ") and "Semester Courses" in c1:
+                    parts = c1.split()
+                    if len(parts) >= 3:
+                        current_degree, current_dept, current_semester = parts[0], parts[1], parts[2]
+                    current_batch = 'Unknown'
+                    continue
+                
+                if c2.startswith("Batch "):
+                    import re as rre
+                    m = rre.search(r'\d{4}', c2)
+                    if m: current_batch = m.group(0)
+                elif "Repeat" in c2:
+                    import re as rre
+                    m = rre.search(r'\d{4}', c2)
+                    if m: current_batch = m.group(0)
+                    
+                code = str(ws_alloc.cell(row=r, column=3).value or "").strip()
+                title = str(ws_alloc.cell(row=r, column=4).value or "").strip()
+                
+                if code and title and code != "Code" and code != "None":
+                    is_repeat = "Repeat" in c2
+                    section_cols = {'A': 8, 'B': 9, 'C': 10, 'D': 11}
+                    for sec_letter, col in section_cols.items():
+                        instr = str(ws_alloc.cell(row=r, column=col).value or "").strip()
+                        if instr and instr != "None":
+                            import re as rre
+                            instr_clean = rre.sub(r'^(Dr\.|Mr\.|Ms\.|Engr\.)\s*', '', instr, flags=rre.IGNORECASE).strip().lower()
+                            instr_clean = rre.sub(r'\(.*?\)', '', instr_clean).strip()
+                            instr_clean = instr_clean.replace('\n', ' ')
+                            allocation_map.append({
+                                "instr_clean": instr_clean,
+                                "section_letter": sec_letter,
+                                "title": title,
+                                "dept": current_dept,
+                                "degree": current_degree,
+                                "batch": current_batch,
+                                "semester": current_semester,
+                                "is_repeat": is_repeat
+                            })
+        
+        def match_allocation(instr_raw, sec_letter, course_abbr, dept_prefix):
+            import re as rre
+            instr_clean = rre.sub(r'^(Dr\.|Mr\.|Ms\.|Engr\.)\s*', '', instr_raw, flags=rre.IGNORECASE).strip().lower()
+            instr_clean = rre.sub(r'\(.*?\)', '', instr_clean).strip()
+            
+            candidates = allocation_map
+            if dept_prefix:
+                filtered = [m for m in candidates if m['dept'] == dept_prefix]
+                if filtered:
+                    candidates = filtered
+                    
+            # Exact
+            for m in candidates:
+                if m['instr_clean'] == instr_clean and m['section_letter'] == sec_letter:
+                    return m
+            # Substring instr
+            for m in candidates:
+                if m['section_letter'] == sec_letter:
+                    if m['instr_clean'] in instr_clean or instr_clean in m['instr_clean']:
+                        return m
+            # Substring course
+            c_abbr = course_abbr.lower()
+            for m in candidates:
+                if m['section_letter'] == sec_letter:
+                    if c_abbr in m['title'].lower() or m['title'].lower() in c_abbr:
+                        return m
+            return None
+
+        logging.info(f"FSE ALLOCATION MAP HAS {len(allocation_map)} ENTRIES")
+
+        # 2. Parse Timetable
         sheet = get_timetable_sheet(wb)
         time_slots = extract_time_slots(sheet, start_col=4)
         current_day = 'Monday'
         for row_idx in range(4, sheet.max_row + 1):
             cell_A = clean_text(sheet.cell(row=row_idx, column=1).value)
-            day_pattern = re.compile('^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)', re.IGNORECASE)
+            import re as rre
+            day_pattern = rre.compile('^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)', rre.IGNORECASE)
             if day_pattern.match(cell_A):
                 current_day = day_pattern.match(cell_A).group(1).capitalize()
                 continue
@@ -770,34 +859,49 @@ def parse_fse() -> List[Dict[str, Any]]:
                 if not cell_val:
                     continue
                     
+                instructor_raw = clean_text(sheet.cell(row=row_idx + 1, column=col_idx).value)
+                instructor_raw = rre.sub(r'\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}', '', instructor_raw).strip()
+                    
                 c_val_lower = cell_val.lower()
-                is_rescheduled = bool(re.search(r'r(?:e)?s(?:s)?ch(?:eduled)?', c_val_lower))
-                is_cancelled = bool(re.search(r'cancel(?:l)?ed|cancel\b', c_val_lower))
+                is_rescheduled = bool(rre.search(r'r(?:e)?s(?:s)?ch(?:eduled)?', c_val_lower))
+                is_cancelled = bool(rre.search(r'cancel(?:l)?ed|cancel\b', c_val_lower))
                 
-                course_name = re.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_val).strip()
-                course_name = re.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
+                course_name = rre.sub(r'(?i)\s*[-]*\s*r(?:e)?sch(?:eduled)?', '', cell_val).strip()
+                course_name = rre.sub(r'(?i)\s*[-]*\s*cancell?ed?', '', course_name).strip()
                 
-                import re as rre
-                match = rre.search(r'\b([A-Z]{2,3}-[A-Z0-9]{1,2})\b$', course_name)
+                section = 'Unknown'
+                section_letter = ''
+                dept_prefix = ''
+                match = rre.search(r'[- ]+([A-Z0-9]{1,3}(-[A-Z])?|[A-Z])\b$', course_name)
                 if match:
-                    section = match.group(1)
+                    section = match.group(1).strip()
+                    if '-' in section:
+                        dept_prefix = section.split('-')[0].strip()
+                        section_letter = section.split('-')[-1].strip()
+                    else:
+                        section_letter = section.strip()
                     course_name = course_name[:match.start()].strip()
-                else:
-                    section = 'Unknown'
                     
-                cell_obj = sheet.cell(row=row_idx, column=col_idx)
-                cell_color_hex = None
-                if cell_obj.fill and cell_obj.fill.fgColor and (cell_obj.fill.fgColor.type == 'rgb'):
-                    cell_color_hex = cell_obj.fill.fgColor.rgb
-                    
-                meta = FSE_COLOR_LEGEND.get(cell_color_hex, {})
-                department = meta.get('department', 'Unknown')
-                degree = meta.get('degree', 'BS')
-                batch = meta.get('batch', 'Unknown')
-                is_repeat = meta.get('is_repeat', False)
-                school = 'School of Engineering'
-                semester = 'Unknown'
+                alloc = match_allocation(instructor_raw, section_letter, course_name, dept_prefix)
                 
+                if alloc:
+                    department = alloc['dept']
+                    degree = alloc['degree']
+                    batch = alloc['batch']
+                    semester = alloc['semester']
+                    is_repeat = alloc['is_repeat']
+                    course_name = alloc['title']
+                    
+                    if department != 'Unknown' and '-' not in section and section != 'Unknown':
+                        section = f"{department}-{section}"
+                else:
+                    department = 'Unknown'
+                    degree = 'BS'
+                    batch = 'Unknown'
+                    semester = 'Unknown'
+                    is_repeat = False
+
+                school = 'School of Engineering'
                 t_parts = time_str.split('-')
                 t_start = normalize_time(t_parts[0].strip()) if t_parts else ''
                 t_end = normalize_time(t_parts[1].strip()) if len(t_parts) > 1 else ''
@@ -805,7 +909,7 @@ def parse_fse() -> List[Dict[str, Any]]:
                 
                 entry_id = f"FSE-{current_day[:3].upper()}-{room.replace('-', '')}-{t_start.replace(':', '')}"
                 summary = generate_rag_summary(school, department, degree, batch, section, course_name, room, current_day, t_start, t_end, is_lab, is_rescheduled, is_repeat, is_cancelled)
-                entries.append({'id': entry_id, 'school': school, 'department': department, 'degree': degree, 'batch': batch, 'semester': semester, 'course_name': course_name, 'section': section, 'instructor': None, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
+                entries.append({'id': entry_id, 'school': school, 'department': department, 'degree': degree, 'batch': batch, 'semester': semester, 'course_name': course_name, 'section': section, 'instructor': instructor_raw if instructor_raw else None, 'room': room, 'day': current_day, 'time_start': t_start, 'time_end': t_end, 'is_lab': is_lab, 'is_rescheduled': is_rescheduled, 'is_repeat': is_repeat, 'is_cancelled': is_cancelled, 'is_elective': False, 'rag_summary': summary})
     except Exception as e:
         logging.error(f'Error parsing FSE: {e}', exc_info=True)
 
