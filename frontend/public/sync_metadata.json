@@ -1,44 +1,11 @@
 {
-  "last_updated": 1789646536,
+  "last_updated": 1789675184,
   "changed_schools": [
-    "computing",
     "engineering"
   ],
   "changed_files": [
-    "Computing",
     "Engineering"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-FRI-D303-1130-AIA",
-      "course": "ML",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C305-1000-AIC",
-      "course": "Calculus",
-      "day": "Friday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-CRawal 4 (C512)-1430-CYC",
-      "course": "OS Lab",
-      "day": "Thursday",
-      "section": "CY-C",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-09-17T12:02:16.958094Z"
+  "status_changes": [],
+  "last_checked": "2026-09-17T19:59:44.880562Z"
 }
