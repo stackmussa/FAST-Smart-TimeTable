@@ -1,74 +1,44 @@
 {
-  "last_updated": 1789626888,
+  "last_updated": 1789646536,
   "changed_schools": [
     "computing",
-    "management"
+    "engineering"
   ],
   "changed_files": [
     "Computing",
-    "Management"
+    "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-C605-1430-SEC",
-      "course": "LA",
-      "day": "Thursday",
-      "section": "SE-C",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D402-1130-DSA",
-      "course": "Edge Comp",
-      "day": "Wednesday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D403-1130-AIA",
-      "course": "Blockchain",
-      "day": "Wednesday",
+      "id": "FSC-FRI-D303-1130-AIA",
+      "course": "ML",
+      "day": "Friday",
       "section": "AI-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C604-0830-SEB",
-      "course": "LA",
-      "day": "Thursday",
-      "section": "SE-B",
-      "field": "is_cancelled",
-      "old": false,
+      "field": "is_rescheduled",
+      "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-THU-D303-1300-SED",
-      "course": "LA",
-      "day": "Thursday",
-      "section": "SE-D",
-      "field": "is_cancelled",
-      "old": false,
+      "id": "FSC-FRI-C305-1000-AIC",
+      "course": "Calculus",
+      "day": "Friday",
+      "section": "AI-C",
+      "field": "is_rescheduled",
+      "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D402-1300-AIA",
-      "course": "Edge Comp",
-      "day": "Wednesday",
-      "section": "AI-A",
+      "id": "FSC-THU-CRawal 4 (C512)-1430-CYC",
+      "course": "OS Lab",
+      "day": "Thursday",
+      "section": "CY-C",
       "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "old": false,
+      "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-17T06:34:48.234824Z"
+  "last_checked": "2026-09-17T12:02:16.958094Z"
 }

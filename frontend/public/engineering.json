@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T08:20:14.353410Z",
+  "last_updated": "2026-09-17T12:02:16.950335Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -4053,27 +4053,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Embedded Systems - A in Room B-119 on Thursday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-THU-B119-1125",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Appl.Cal Quiz",
-      "section": "EE-C",
-      "instructor": null,
-      "room": "B-119",
-      "day": "Thursday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section EE-C) has Appl.Cal Quiz in Room B-119 on Thursday from 11:25 to 12:45."
     },
     {
       "id": "FSE-THU-B119-1250",
