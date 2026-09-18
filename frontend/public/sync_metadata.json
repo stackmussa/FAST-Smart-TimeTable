@@ -1,5 +1,5 @@
 {
-  "last_updated": 1789725232,
+  "last_updated": 1789740293,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,25 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-AIC",
-      "course": "Prog for AI Lab",
-      "day": "Thursday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
+      "id": "FSC-TUE-D416-1000-CYA",
+      "course": "Vulnerability Asses.",
+      "day": "Tuesday",
+      "section": "CY-A",
+      "field": "is_repeat",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C302-1000-CYA",
+      "course": "Vulnerability Asses.",
+      "day": "Friday",
+      "section": "CY-A",
+      "field": "is_repeat",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-18T09:53:52.259685Z"
+  "last_checked": "2026-09-18T14:04:53.125387Z"
 }
