@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T05:18:48.195443Z",
+  "last_updated": "2026-09-18T09:53:46.779601Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -9314,7 +9314,7 @@
       "degree": "BS",
       "batch": "2025",
       "semester": "Unknown",
-      "course_name": "Prof for AI Lab",
+      "course_name": "Prog for AI Lab",
       "section": "AI-A",
       "instructor": null,
       "room": "IT Lab 4-GPU (D-203)",
@@ -9327,7 +9327,7 @@
       "is_cancelled": false,
       "is_elective": false,
       "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2025, Section AI-A) has Prof for AI Lab (Lab) in Room IT Lab 4-GPU (D-203) on Tuesday from 08:30 to 11:20."
+      "rag_summary": "BS AI (Batch 2025, Section AI-A) has Prog for AI Lab (Lab) in Room IT Lab 4-GPU (D-203) on Tuesday from 08:30 to 11:20."
     },
     {
       "id": "FSC-TUE-IT Lab 4GPU (D203)-1130-AIA",
@@ -9380,7 +9380,7 @@
       "degree": "BS",
       "batch": "2025",
       "semester": "Unknown",
-      "course_name": "Prof for AI Lab",
+      "course_name": "Prog for AI Lab",
       "section": "AI-B",
       "instructor": null,
       "room": "IT Lab 4-GPU (D-203)",
@@ -9393,7 +9393,7 @@
       "is_cancelled": false,
       "is_elective": false,
       "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2025, Section AI-B) has Prof for AI Lab (Lab) in Room IT Lab 4-GPU (D-203) on Tuesday from 14:30 to 17:15."
+      "rag_summary": "BS AI (Batch 2025, Section AI-B) has Prog for AI Lab (Lab) in Room IT Lab 4-GPU (D-203) on Tuesday from 14:30 to 17:15."
     },
     {
       "id": "FSC-TUE-Margala 1 (C209)-0830-CSA",
@@ -20704,6 +20704,28 @@
       "rag_summary": "BS DS (Batch 2023, Section DS-A) has Project (Lab) in Room IT Lab 4-GPU (D-203) on Thursday from 11:30 to 14:20."
     },
     {
+      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-AIC",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "Prog for AI Lab",
+      "section": "AI-C",
+      "instructor": null,
+      "room": "IT Lab 4-GPU (D-203)",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "17:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS AI (Batch 2025, Section AI-C) has Prog for AI Lab (Lab) in Room IT Lab 4-GPU (D-203) on Thursday from 14:30 to 17:15."
+    },
+    {
       "id": "FSC-THU-Margala 1 (C209)-1130-CSC",
       "school": "School of Computing",
       "department": "CS",
@@ -22156,28 +22178,6 @@
       "rag_summary": "BS CY (Batch 2026, Section CY-A) has IICT Lab (Lab) in Room IT Lab 3 (D-213) on Friday from 08:30 to 11:20."
     },
     {
-      "id": "FSC-FRI-IT Lab 3 (D213)-1430-CYD",
-      "school": "School of Computing",
-      "department": "CY",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "PF Lab",
-      "section": "CY-D",
-      "instructor": null,
-      "room": "IT Lab 3 (D-213)",
-      "day": "Friday",
-      "time_start": "14:30",
-      "time_end": "17:15",
-      "is_lab": true,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2026, Section CY-D) has PF Lab (Lab) in Room IT Lab 3 (D-213) on Friday from 14:30 to 17:15."
-    },
-    {
       "id": "FSC-FRI-IT Lab 4GPU (D203)-1430-AIA",
       "school": "School of Computing",
       "department": "AI",
@@ -22418,6 +22418,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2024, Section CS-A) has COAL Lab (Lab) [REPEAT COURSE] in Room Rawal 1 (C-509) on Friday from 08:30 to 11:20."
+    },
+    {
+      "id": "FSC-FRI-Rawal 1 (C509)-1430-CYD",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "PF Lab",
+      "section": "CY-D",
+      "instructor": null,
+      "room": "Rawal 1 (C-509)",
+      "day": "Friday",
+      "time_start": "14:30",
+      "time_end": "17:15",
+      "is_lab": true,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "Scheduled",
+      "rag_summary": "BS CY (Batch 2026, Section CY-D) has PF Lab (Lab) in Room Rawal 1 (C-509) on Friday from 14:30 to 17:15."
     },
     {
       "id": "FSC-FRI-CRawal 4 (C512)-1000-AIA",
