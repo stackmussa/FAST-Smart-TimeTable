@@ -16,8 +16,8 @@
       "id": "EXAM-SS1012FunctionalEnglish-2026",
       "departments": [
         "AI",
-        "DS",
         "CY",
+        "DS",
         "SE",
         "CS"
       ],
@@ -52,10 +52,10 @@
     {
       "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2025",
       "departments": [
-        "DS",
-        "AI",
+        "SE",
         "CY",
-        "SE"
+        "DS",
+        "AI"
       ],
       "batch": "2025",
       "course_name": "EE2003 Computer Organization and Assembly Language",
@@ -66,8 +66,8 @@
     {
       "id": "EXAM-NS1001AppliedPhysics-2026",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "NS1001  Applied Physics",
@@ -122,8 +122,8 @@
     {
       "id": "EXAM-SS1004EnglishCompositionandComprehension-Unknown",
       "departments": [
-        "CS",
-        "CY"
+        "CY",
+        "CS"
       ],
       "batch": "Unknown",
       "course_name": "SS1004 English Composition and Comprehension",
@@ -145,8 +145,8 @@
     {
       "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2024",
       "departments": [
-        "CS",
-        "AI"
+        "AI",
+        "CS"
       ],
       "batch": "2024",
       "course_name": "EE2003 Computer Organization and Assembly Language",
@@ -157,8 +157,8 @@
     {
       "id": "EXAM-CS4075CloudComputing-2023",
       "departments": [
-        "CS",
-        "CY"
+        "CY",
+        "CS"
       ],
       "batch": "2023",
       "course_name": "CS4075 Cloud Computing",
@@ -169,8 +169,8 @@
     {
       "id": "EXAM-AI2002-ArtificialIntelligence-2024",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2024",
       "course_name": "AI2002 - Artificial Intelligence",
@@ -181,9 +181,9 @@
     {
       "id": "EXAM-AI4009GenerativeAI-2023",
       "departments": [
-        "CS",
+        "SE",
         "AI",
-        "SE"
+        "CS"
       ],
       "batch": "2023",
       "course_name": "AI4009 Generative AI",
@@ -194,8 +194,8 @@
     {
       "id": "EXAM-MG3040MethodsinBusinessResearch-2023",
       "departments": [
-        "AI",
-        "DS"
+        "DS",
+        "AI"
       ],
       "batch": "2023",
       "course_name": "MG3040 Methods in Business Research",
@@ -217,10 +217,10 @@
     {
       "id": "EXAM-SS2012TechnicalandBusinessWriting-2024",
       "departments": [
-        "CS",
-        "DS",
+        "SE",
         "AI",
-        "SE"
+        "DS",
+        "CS"
       ],
       "batch": "2024",
       "course_name": "SS2012 Technical and Business Writing",
@@ -232,8 +232,8 @@
       "id": "EXAM-CS1002ProgrammingFundamentals-2026",
       "departments": [
         "AI",
-        "DS",
         "CY",
+        "DS",
         "SE",
         "CS"
       ],
@@ -257,9 +257,9 @@
     {
       "id": "EXAM-SS1015PakistanStudies-2025",
       "departments": [
-        "AI",
+        "SE",
         "CY",
-        "SE"
+        "AI"
       ],
       "batch": "2025",
       "course_name": "SS1015 Pakistan Studies",
@@ -281,8 +281,8 @@
     {
       "id": "EXAM-SS1021-UnderstandingofHolyQuranI/IntroductiontoMajorWorldReligionsI-2025",
       "departments": [
-        "CS",
-        "DS"
+        "DS",
+        "CS"
       ],
       "batch": "2025",
       "course_name": "SS1021 - Understanding of Holy Quran I/Introduction to Major World Religions I",
@@ -326,8 +326,8 @@
     {
       "id": "EXAM-SS2007TechnicalandBusinessWriting-2022",
       "departments": [
-        "CS",
-        "DS"
+        "DS",
+        "CS"
       ],
       "batch": "2022",
       "course_name": "SS2007 Technical and Business Writing",
@@ -349,9 +349,9 @@
     {
       "id": "EXAM-AI4015AgenticArtificialIntelligenc-2022",
       "departments": [
-        "CS",
         "AI",
-        "DS"
+        "DS",
+        "CS"
       ],
       "batch": "2022",
       "course_name": "AI4015  Agentic Artificial Intelligenc",
@@ -373,8 +373,8 @@
     {
       "id": "EXAM-MG4057AI-LedTransformation-Unknown",
       "departments": [
-        "AI",
-        "SE"
+        "SE",
+        "AI"
       ],
       "batch": "Unknown",
       "course_name": "MG4057 AI-Led Transformation",
@@ -385,9 +385,9 @@
     {
       "id": "EXAM-CS1004ObjectOrientedProgramming-2025",
       "departments": [
-        "CS",
+        "SE",
         "AI",
-        "SE"
+        "CS"
       ],
       "batch": "2025",
       "course_name": "CS1004 Object Oriented Programming",
@@ -409,8 +409,8 @@
     {
       "id": "EXAM-CS3002InformationSecurity-2023",
       "departments": [
-        "CS",
-        "SE"
+        "SE",
+        "CS"
       ],
       "batch": "2023",
       "course_name": "CS3002 Information Security",
@@ -444,8 +444,8 @@
       "id": "EXAM-SS1013IdeologyandConstitutionofPakistan-2026",
       "departments": [
         "AI",
-        "DS",
         "CY",
+        "DS",
         "SE",
         "CS"
       ],
@@ -469,9 +469,9 @@
     {
       "id": "EXAM-SS1007IslamicStudies/EthicsBS(CS)(A,B,C,D,E,F,G,H,Z)BS(AI)(A,B,C)-2026",
       "departments": [
-        "CS",
         "AI",
-        "DS"
+        "DS",
+        "CS"
       ],
       "batch": "2026",
       "course_name": "SS1007 Islamic Studies/Ethics   BS(CS) (A,B,C,D,E,F,G,H,Z)      BS(AI) (A,B, C)",
@@ -483,8 +483,8 @@
       "id": "EXAM-CS2001DataStructures-2025",
       "departments": [
         "AI",
-        "DS",
         "CY",
+        "DS",
         "SE",
         "CS"
       ],
@@ -497,10 +497,10 @@
     {
       "id": "EXAM-CS2009DesignandAnalysisofAlgorithms-2024",
       "departments": [
-        "CS",
-        "DS",
+        "SE",
         "AI",
-        "SE"
+        "DS",
+        "CS"
       ],
       "batch": "2024",
       "course_name": "CS2009  Design and Analysis of Algorithms",
@@ -522,9 +522,9 @@
     {
       "id": "EXAM-CS4001ProfessionalPracticesinIT-2023",
       "departments": [
-        "CS",
+        "SE",
         "CY",
-        "SE"
+        "CS"
       ],
       "batch": "2023",
       "course_name": "CS4001 Professional Practices in IT",
@@ -535,8 +535,8 @@
     {
       "id": "EXAM-CS4039SoftwareforMobileDevices-2023",
       "departments": [
-        "CS",
-        "SE"
+        "SE",
+        "CS"
       ],
       "batch": "2023",
       "course_name": "CS4039 Software for Mobile Devices",
@@ -602,8 +602,8 @@
     {
       "id": "EXAM-AI4012MultiagentSystemsandGameTheory-2023",
       "departments": [
-        "AI",
-        "DS"
+        "DS",
+        "AI"
       ],
       "batch": "2023",
       "course_name": "AI4012  Multiagent Systems and Game Theory",
@@ -670,8 +670,8 @@
       "id": "EXAM-MT1003CalculusandAnalyticalGeometry-2026",
       "departments": [
         "AI",
-        "DS",
         "CY",
+        "DS",
         "SE",
         "CS"
       ],
@@ -696,8 +696,8 @@
       "id": "EXAM-MT1004LinearAlgebra-2025",
       "departments": [
         "AI",
-        "DS",
         "CY",
+        "DS",
         "SE",
         "CS"
       ],
@@ -721,8 +721,8 @@
     {
       "id": "EXAM-CS3001ComputerNetworks-2024",
       "departments": [
-        "CS",
-        "AI"
+        "AI",
+        "CS"
       ],
       "batch": "2024",
       "course_name": "CS3001 Computer Networks",
@@ -744,8 +744,8 @@
     {
       "id": "EXAM-AI4019EdgeComputingandIntelligentSystems-2023",
       "departments": [
-        "AI",
-        "DS"
+        "DS",
+        "AI"
       ],
       "batch": "2023",
       "course_name": "AI4019 Edge Computing and Intelligent Systems",
@@ -800,8 +800,8 @@
     {
       "id": "EXAM-SS0000ArtsandHumanities-2026",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS0000 Arts and Humanities",
@@ -834,8 +834,8 @@
     {
       "id": "EXAM-CS2006OperatingSystems-2024",
       "departments": [
-        "DS",
-        "CY"
+        "CY",
+        "DS"
       ],
       "batch": "2024",
       "course_name": "CS2006 Operating Systems",
@@ -868,8 +868,8 @@
     {
       "id": "EXAM-CS3006ParallelandDistributedComputing-2023",
       "departments": [
-        "CS",
-        "SE"
+        "SE",
+        "CS"
       ],
       "batch": "2023",
       "course_name": "CS3006 Parallel and Distributed Computing",
@@ -1142,8 +1142,8 @@
       "id": "EXAM-MG1011BusinessMathematics-2026",
       "departments": [
         "AF",
-        "BA",
-        "FT"
+        "FT",
+        "BA"
       ],
       "batch": "2026",
       "course_name": "MG1011 Business Mathematics",
@@ -1635,8 +1635,8 @@
       "id": "EXAM-MG3003BasicEconometrics-2024",
       "departments": [
         "AF",
-        "BA",
-        "FT"
+        "FT",
+        "BA"
       ],
       "batch": "2024",
       "course_name": "MG3003 Basic Econometrics",
