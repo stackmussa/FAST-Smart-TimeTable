@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19T04:55:19.428788Z",
+  "last_updated": "2026-09-21T14:05:33.344167Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -19426,6 +19426,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2023, Section CS-B) has Gen AI in Room D-405 on Thursday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSC-THU-D405-1430-CSE",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Comp Net Lab",
+      "section": "CS-E",
+      "instructor": null,
+      "room": "D-405",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "17:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2024, Section CS-E) has Comp Net Lab (Lab) in Room D-405 on Thursday from 14:30 to 17:15."
     },
     {
       "id": "FSC-THU-D406-0830-CSC",

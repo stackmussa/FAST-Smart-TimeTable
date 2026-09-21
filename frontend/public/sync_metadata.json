@@ -1,5 +1,5 @@
 {
-  "last_updated": 1789793726,
+  "last_updated": 1789999540,
   "changed_schools": [
     "computing"
   ],
@@ -8,25 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-IT Lab 3 (D213)-1430-AIA",
-      "course": "Prog for AI Lab",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-IT Lab 4GPU (D203)-0830-AIB",
-      "course": "Prog for AI Lab",
-      "day": "Friday",
-      "section": "AI-B",
+      "id": "FSC-THU-D405-1430-CSE",
+      "course": "Comp Net Lab",
+      "day": "Thursday",
+      "section": "CS-E",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-19T04:55:26.984787Z"
+  "last_checked": "2026-09-21T14:05:40.931628Z"
 }
