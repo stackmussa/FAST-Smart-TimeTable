@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T23:31:24.189354Z",
+  "last_updated": "2026-09-22T11:51:26.954589Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -4431,48 +4431,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture in Room B-230 on Thursday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-THU-B230-1420",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Physics for Engineers",
-      "section": "CE-A",
-      "instructor": "Dr. Shahzad Saleem Wk 4&5",
-      "room": "B-230",
-      "day": "Thursday",
-      "time_start": "14:20",
-      "time_end": "15:40",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-230 on Thursday from 14:20 to 15:40."
-    },
-    {
-      "id": "FSE-THU-B230-1545",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Physics for Engineers",
-      "section": "CE-A",
-      "instructor": "Dr. Shahzad Saleem Wk 4 &5",
-      "room": "B-230",
-      "day": "Thursday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-230 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-Labs-0830",

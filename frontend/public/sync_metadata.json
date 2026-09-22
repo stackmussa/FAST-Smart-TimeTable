@@ -1,22 +1,34 @@
 {
-  "last_updated": 1789999540,
+  "last_updated": 1790077886,
   "changed_schools": [
-    "computing"
+    "computing",
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-D405-1430-CSE",
-      "course": "Comp Net Lab",
-      "day": "Thursday",
-      "section": "CS-E",
+      "id": "FSC-FRI-C310-0830-CSC",
+      "course": "OOP Lab",
+      "day": "Friday",
+      "section": "CS-C",
       "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C310-0830-CSC",
+      "course": "OOP Lab",
+      "day": "Friday",
+      "section": "CS-C",
+      "field": "is_repeat",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-21T14:05:40.931628Z"
+  "last_checked": "2026-09-22T11:51:26.962422Z"
 }
