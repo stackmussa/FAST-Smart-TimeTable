@@ -1,11 +1,15 @@
 {
-  "last_updated": 1790140664,
+  "last_updated": 1790157951,
   "changed_schools": [
-    "computing"
+    "computing",
+    "management",
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Management",
+    "Engineering"
   ],
   "status_changes": [],
-  "last_checked": "2026-09-23T05:17:44.674742Z"
+  "last_checked": "2026-09-23T10:05:51.074251Z"
 }

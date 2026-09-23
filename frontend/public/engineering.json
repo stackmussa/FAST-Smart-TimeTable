@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T11:51:26.954589Z",
+  "last_updated": "2026-09-23T10:05:51.066389Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3696,27 +3696,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSE-THU-B028-1250",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Pakistan Studies",
-      "section": "EE-B",
-      "instructor": "Ms. Zahida Amin (Makeup) Sept 17, 2026",
-      "room": "B-028",
-      "day": "Thursday",
-      "time_start": "12:50",
-      "time_end": "14:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Pakistan Studies in Room B-028 on Thursday from 12:50 to 14:10."
     },
     {
       "id": "FSE-THU-B030-0830",
