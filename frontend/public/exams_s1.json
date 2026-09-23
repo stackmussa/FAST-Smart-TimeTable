@@ -17,9 +17,9 @@
       "departments": [
         "DS",
         "AI",
-        "SE",
+        "CY",
         "CS",
-        "CY"
+        "SE"
       ],
       "batch": "2026",
       "course_name": "SS1012  Functional English",
@@ -52,10 +52,10 @@
     {
       "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2025",
       "departments": [
-        "DS",
-        "CY",
         "AI",
-        "SE"
+        "DS",
+        "SE",
+        "CY"
       ],
       "batch": "2025",
       "course_name": "EE2003 Computer Organization and Assembly Language",
@@ -66,8 +66,8 @@
     {
       "id": "EXAM-NS1001AppliedPhysics-2026",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "NS1001  Applied Physics",
@@ -145,8 +145,8 @@
     {
       "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2024",
       "departments": [
-        "AI",
-        "CS"
+        "CS",
+        "AI"
       ],
       "batch": "2024",
       "course_name": "EE2003 Computer Organization and Assembly Language",
@@ -169,8 +169,8 @@
     {
       "id": "EXAM-AI2002-ArtificialIntelligence-2024",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2024",
       "course_name": "AI2002 - Artificial Intelligence",
@@ -217,8 +217,8 @@
     {
       "id": "EXAM-SS2012TechnicalandBusinessWriting-2024",
       "departments": [
-        "DS",
         "AI",
+        "DS",
         "CS",
         "SE"
       ],
@@ -233,9 +233,9 @@
       "departments": [
         "DS",
         "AI",
-        "SE",
+        "CY",
         "CS",
-        "CY"
+        "SE"
       ],
       "batch": "2026",
       "course_name": "CS1002   Programming Fundamentals",
@@ -257,9 +257,9 @@
     {
       "id": "EXAM-SS1015PakistanStudies-2025",
       "departments": [
-        "CY",
         "AI",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2025",
       "course_name": "SS1015 Pakistan Studies",
@@ -350,8 +350,8 @@
       "id": "EXAM-AI4015AgenticArtificialIntelligenc-2022",
       "departments": [
         "DS",
-        "AI",
-        "CS"
+        "CS",
+        "AI"
       ],
       "batch": "2022",
       "course_name": "AI4015  Agentic Artificial Intelligenc",
@@ -445,9 +445,9 @@
       "departments": [
         "DS",
         "AI",
-        "SE",
+        "CY",
         "CS",
-        "CY"
+        "SE"
       ],
       "batch": "2026",
       "course_name": "SS1013 Ideology and Constitution of Pakistan",
@@ -470,8 +470,8 @@
       "id": "EXAM-SS1007IslamicStudies/EthicsBS(CS)(A,B,C,D,E,F,G,H,Z)BS(AI)(A,B,C)-2026",
       "departments": [
         "DS",
-        "AI",
-        "CS"
+        "CS",
+        "AI"
       ],
       "batch": "2026",
       "course_name": "SS1007 Islamic Studies/Ethics   BS(CS) (A,B,C,D,E,F,G,H,Z)      BS(AI) (A,B, C)",
@@ -484,9 +484,9 @@
       "departments": [
         "DS",
         "AI",
-        "SE",
+        "CY",
         "CS",
-        "CY"
+        "SE"
       ],
       "batch": "2025",
       "course_name": "CS2001 Data Structures",
@@ -497,8 +497,8 @@
     {
       "id": "EXAM-CS2009DesignandAnalysisofAlgorithms-2024",
       "departments": [
-        "DS",
         "AI",
+        "DS",
         "CS",
         "SE"
       ],
@@ -522,9 +522,9 @@
     {
       "id": "EXAM-CS4001ProfessionalPracticesinIT-2023",
       "departments": [
-        "CY",
         "CS",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2023",
       "course_name": "CS4001 Professional Practices in IT",
@@ -671,9 +671,9 @@
       "departments": [
         "DS",
         "AI",
-        "SE",
+        "CY",
         "CS",
-        "CY"
+        "SE"
       ],
       "batch": "2026",
       "course_name": "MT1003   Calculus and Analytical Geometry",
@@ -697,9 +697,9 @@
       "departments": [
         "DS",
         "AI",
-        "SE",
+        "CY",
         "CS",
-        "CY"
+        "SE"
       ],
       "batch": "2025",
       "course_name": "MT1004 Linear Algebra",
@@ -721,8 +721,8 @@
     {
       "id": "EXAM-CS3001ComputerNetworks-2024",
       "departments": [
-        "AI",
-        "CS"
+        "CS",
+        "AI"
       ],
       "batch": "2024",
       "course_name": "CS3001 Computer Networks",
@@ -800,8 +800,8 @@
     {
       "id": "EXAM-SS0000ArtsandHumanities-2026",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS0000 Arts and Humanities",
@@ -913,10 +913,10 @@
     {
       "id": "EXAM-AF1003IntroductiontoFinancialAccounting-2026",
       "departments": [
+        "BBA",
         "FT",
-        "BA",
         "AF",
-        "BBA"
+        "BA"
       ],
       "batch": "2026",
       "course_name": "AF1003 Introduction to Financial Accounting",
@@ -939,9 +939,9 @@
     {
       "id": "EXAM-AF3001FinancialManagement-2024",
       "departments": [
+        "BBA",
         "BA",
-        "AF",
-        "BBA"
+        "AF"
       ],
       "batch": "2024",
       "course_name": "AF3001 Financial Management",
@@ -975,8 +975,8 @@
     {
       "id": "EXAM-SS1007IslamicStudies/Ethics-2026",
       "departments": [
-        "FT",
-        "BBA"
+        "BBA",
+        "FT"
       ],
       "batch": "2026",
       "course_name": "SS1007 Islamic Studies/Ethics",
@@ -1142,8 +1142,8 @@
       "id": "EXAM-MG1011BusinessMathematics-2026",
       "departments": [
         "FT",
-        "BA",
-        "AF"
+        "AF",
+        "BA"
       ],
       "batch": "2026",
       "course_name": "MG1011 Business Mathematics",
@@ -1165,8 +1165,8 @@
     {
       "id": "EXAM-MG1001FundamentalsofManagement-2026",
       "departments": [
-        "BA",
-        "BBA"
+        "BBA",
+        "BA"
       ],
       "batch": "2026",
       "course_name": "MG1001 Fundamentals of Management",
@@ -1177,8 +1177,8 @@
     {
       "id": "EXAM-MG2003ConsumerBehaviour-2024",
       "departments": [
-        "BA",
-        "BBA"
+        "BBA",
+        "BA"
       ],
       "batch": "2024",
       "course_name": "MG2003 Consumer Behaviour",
@@ -1211,8 +1211,8 @@
     {
       "id": "EXAM-SS2043CivicsandCommunityEngagement-2025",
       "departments": [
-        "FT",
-        "BBA"
+        "BBA",
+        "FT"
       ],
       "batch": "2025",
       "course_name": "SS2043 Civics and Community Engagement",
@@ -1368,10 +1368,10 @@
     {
       "id": "EXAM-SS1016English-I-2026",
       "departments": [
+        "BBA",
         "FT",
-        "BA",
         "AF",
-        "BBA"
+        "BA"
       ],
       "batch": "2026",
       "course_name": "SS1016 English - I",
@@ -1393,9 +1393,9 @@
     {
       "id": "EXAM-MG2009DataAnalysisforBusinessII-2025",
       "departments": [
+        "BBA",
         "BA",
-        "AF",
-        "BBA"
+        "AF"
       ],
       "batch": "2025",
       "course_name": "MG2009 Data Analysis for Business II",
@@ -1418,8 +1418,8 @@
     {
       "id": "EXAM-SS1013IdeologyandConstitutionofPakistan-2025",
       "departments": [
-        "FT",
-        "BBA"
+        "BBA",
+        "FT"
       ],
       "batch": "2025",
       "course_name": "SS1013 Ideology and Constitution of Pakistan",
@@ -1573,9 +1573,9 @@
     {
       "id": "EXAM-CS1001ITinBusiness-2026",
       "departments": [
+        "BBA",
         "FT",
-        "BA",
-        "BBA"
+        "BA"
       ],
       "batch": "2026",
       "course_name": "CS1001 IT in Business",
@@ -1597,10 +1597,10 @@
     {
       "id": "EXAM-MG2012BusinessEconomics-2025",
       "departments": [
+        "BBA",
         "FT",
-        "BA",
         "AF",
-        "BBA"
+        "BA"
       ],
       "batch": "2025",
       "course_name": "MG2012 Business Economics",
@@ -1635,8 +1635,8 @@
       "id": "EXAM-MG3003BasicEconometrics-2024",
       "departments": [
         "FT",
-        "BA",
-        "AF"
+        "AF",
+        "BA"
       ],
       "batch": "2024",
       "course_name": "MG3003 Basic Econometrics",
@@ -1724,8 +1724,8 @@
     {
       "id": "EXAM-MG3004HumanResourceMgmt.-2024",
       "departments": [
-        "BA",
-        "BBA"
+        "BBA",
+        "BA"
       ],
       "batch": "2024",
       "course_name": "MG3004 Human Resource Mgmt.",
@@ -1736,8 +1736,8 @@
     {
       "id": "EXAM-MG4521DigitalMarketing-2023",
       "departments": [
-        "BA",
-        "BBA"
+        "BBA",
+        "BA"
       ],
       "batch": "2023",
       "course_name": "MG4521 Digital Marketing",
@@ -1759,8 +1759,8 @@
     {
       "id": "EXAM-MT1001AppliedCalculus-2026",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2026",
       "course_name": "MT1001 Applied Calculus",
@@ -1826,8 +1826,8 @@
     {
       "id": "EXAM-EE2007DataCommunicationandNetworks-2024",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2024",
       "course_name": "EE2007 Data Communication and Networks",
@@ -1860,8 +1860,8 @@
     {
       "id": "EXAM-MG1008-OccupationalHealthandSafety-2026",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2026",
       "course_name": "MG1008 - Occupational Health and Safety",
@@ -1982,8 +1982,8 @@
     {
       "id": "EXAM-MT2013ComplexVariablesandTransforms-2025",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2025",
       "course_name": "MT2013 Complex Variables and Transforms",
@@ -2005,8 +2005,8 @@
     {
       "id": "EXAM-SS1005EnglishLanguage-2026",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2026",
       "course_name": "SS1005 English Language",
@@ -2039,8 +2039,8 @@
     {
       "id": "EXAM-NS1002PhysicsforEngineers-2026",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2026",
       "course_name": "NS1002 Physics for Engineers",
@@ -2117,8 +2117,8 @@
     {
       "id": "EXAM-CS1009ApplicationsofInformationCommunicationTechnologies-2026",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2026",
       "course_name": "CS1009 Applications of Information Communication Technologies",
@@ -2173,8 +2173,8 @@
     {
       "id": "EXAM-SS1015PakistanStudies-2026",
       "departments": [
-        "BCE",
-        "BEE"
+        "BEE",
+        "BCE"
       ],
       "batch": "2026",
       "course_name": "SS1015 Pakistan Studies",
