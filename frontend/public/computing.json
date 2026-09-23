@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T14:58:04.732121Z",
+  "last_updated": "2026-09-23T18:54:53.582535Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -18306,28 +18306,6 @@
       "rag_summary": "BS AI (Batch 2024, Section AI-B) has Comp Net in Room D-305 on Thursday from 11:30 to 12:50."
     },
     {
-      "id": "FSC-THU-D306-0830-SEF",
-      "school": "School of Computing",
-      "department": "SE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "PF",
-      "section": "SE-F",
-      "instructor": null,
-      "room": "D-306",
-      "day": "Thursday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-F) has PF in Room D-306 on Thursday from 08:30 to 09:50."
-    },
-    {
       "id": "FSC-THU-D306-1000-AIC",
       "school": "School of Computing",
       "department": "AI",
@@ -20610,10 +20588,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2026, Section AI-B) has IICT Lab (Lab) in Room IT Lab 3 (D-213) on Thursday from 11:30 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2026, Section AI-B) has IICT Lab (Lab) in Room IT Lab 3 (D-213) on Thursday from 11:30 to 14:20."
     },
     {
       "id": "FSC-THU-IT Lab 3 (D213)-1430-AIB",

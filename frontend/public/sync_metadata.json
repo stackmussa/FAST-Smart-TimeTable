@@ -1,5 +1,5 @@
 {
-  "last_updated": 1790175492,
+  "last_updated": 1790189701,
   "changed_schools": [
     "computing"
   ],
@@ -8,25 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-C409-1130-SEB",
-      "course": "PF",
+      "id": "FSC-THU-IT Lab 3 (D213)-1130-AIB",
+      "course": "IICT Lab",
       "day": "Thursday",
-      "section": "SE-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D306-0830-SEF",
-      "course": "PF",
-      "day": "Thursday",
-      "section": "SE-F",
-      "field": "is_rescheduled",
-      "old": null,
+      "section": "AI-B",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-23T14:58:12.581693Z"
+  "last_checked": "2026-09-23T18:55:01.301091Z"
 }
