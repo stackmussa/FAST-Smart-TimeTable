@@ -1,34 +1,11 @@
 {
-  "last_updated": 1790077886,
+  "last_updated": 1790140664,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-FRI-C310-0830-CSC",
-      "course": "OOP Lab",
-      "day": "Friday",
-      "section": "CS-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C310-0830-CSC",
-      "course": "OOP Lab",
-      "day": "Friday",
-      "section": "CS-C",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-09-22T11:51:26.962422Z"
+  "status_changes": [],
+  "last_checked": "2026-09-23T05:17:44.674742Z"
 }
