@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T10:05:45.827976Z",
+  "last_updated": "2026-09-24T09:58:38.399702Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -12455,6 +12455,27 @@
       "rag_summary": "BBA BBA (Batch 2026, Section Unknown) has SS1016 English - I (08:30-10:20) in Room A-03 on Friday from 08:30 to 09:50."
     },
     {
+      "id": "FSM-FRI-A03-1425",
+      "school": "School of Management",
+      "department": "BBA",
+      "degree": "BBA",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "SS2041 Critical Thinking  (02:25-04:15)",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "A-03",
+      "day": "Friday",
+      "time_start": "14:25",
+      "time_end": "15:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BBA BBA (Batch 2025, Section Unknown) has SS2041 Critical Thinking  (02:25-04:15) in Room A-03 on Friday from 14:25 to 15:45."
+    },
+    {
       "id": "FSM-FRI-A04-1000",
       "school": "School of Management",
       "department": "FT",
@@ -13146,27 +13167,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has AF 1001 Fundamentals of Accounting in Room A-311 on Friday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSM-FRI-A311-1425",
-      "school": "School of Management",
-      "department": "BBA",
-      "degree": "BBA",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "SS2041 Critical Thinking  (02:25-04:15)",
-      "section": "Unknown",
-      "instructor": "Talha Iftikhar",
-      "room": "A-311",
-      "day": "Friday",
-      "time_start": "14:25",
-      "time_end": "15:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BBA BBA (Batch 2025, Section Unknown) has SS2041 Critical Thinking  (02:25-04:15) in Room A-311 on Friday from 14:25 to 15:45."
     },
     {
       "id": "FSM-FRI-A315-0830",

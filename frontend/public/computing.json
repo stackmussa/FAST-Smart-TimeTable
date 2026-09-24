@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T18:54:53.582535Z",
+  "last_updated": "2026-09-24T09:58:36.047518Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -17068,10 +17068,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS SE (Batch 2024, Section SE-C) has Algo in Room C-408 on Thursday from 08:30 to 09:50."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS SE (Batch 2024, Section SE-C) has Algo in Room C-408 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSC-THU-C408-1000-SEC",
@@ -18872,10 +18872,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS DS (Batch 2025, Section DS-B) has COAL in Room D-315 on Thursday from 13:00 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS DS (Batch 2025, Section DS-B) has COAL in Room D-315 on Thursday from 13:00 to 14:20."
     },
     {
       "id": "FSC-THU-D316-0830-DSC",
@@ -20104,10 +20104,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2025, Section CY-C) has Cy Sec in Room D-502 on Thursday from 10:00 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CY (Batch 2025, Section CY-C) has Cy Sec in Room D-502 on Thursday from 10:00 to 11:20."
     },
     {
       "id": "FSC-THU-D502-1300-CYC",
@@ -20236,10 +20236,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2024, Section CY-A) has AI in Room D-503 on Thursday from 14:30 to 15:50."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CY (Batch 2024, Section CY-A) has AI in Room D-503 on Thursday from 14:30 to 15:50."
     },
     {
       "id": "FSC-THU-D504-1000-CYB",
@@ -20302,10 +20302,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2024, Section CY-B) has AI in Room D-504 on Thursday from 15:55 to 17:15."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CY (Batch 2024, Section CY-B) has AI in Room D-504 on Thursday from 15:55 to 17:15."
     },
     {
       "id": "FSC-THU-D505-1000-CYA",
@@ -20852,10 +20852,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS SE (Batch 2025, Section SE-A) has COAL Lab (Lab) in Room Margala 4 (C-212 on Thursday from 11:30 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS SE (Batch 2025, Section SE-A) has COAL Lab (Lab) in Room Margala 4 (C-212 on Thursday from 11:30 to 14:20."
     },
     {
       "id": "FSC-THU-Margala 4 (C212-1430-SEB",
@@ -20984,10 +20984,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2024, Section AI-A) has Comp Net Lab (Lab) in Room C-Rawal 4 (C-512) on Thursday from 11:30 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2024, Section AI-A) has Comp Net Lab (Lab) in Room C-Rawal 4 (C-512) on Thursday from 11:30 to 14:20."
     },
     {
       "id": "FSC-THU-CRawal 4 (C512)-1430-CYC",
@@ -21138,9 +21138,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS SE (Batch 2026, Section SE-A1) has Func Eng Lab - 1 in Room CALL-1 (A-213) on Thursday from 14:30 to 16:15."
     },
     {
@@ -21204,9 +21204,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS AI (Batch 2026, Section AI-A1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Thursday from 08:30 to 10:15."
     },
     {
@@ -21534,10 +21534,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2026, Section CY-C) has PF in Room C-303 on Friday from 08:30 to 09:50."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CY (Batch 2026, Section CY-C) has PF in Room C-303 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSC-FRI-C303-1000-CYC",
