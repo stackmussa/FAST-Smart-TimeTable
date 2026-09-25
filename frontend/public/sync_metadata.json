@@ -1,5 +1,5 @@
 {
-  "last_updated": 1790275381,
+  "last_updated": 1790312651,
   "changed_schools": [
     "computing"
   ],
@@ -8,35 +8,25 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-C305-0830-AIA",
-      "course": "OOP",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
       "id": "FSC-FRI-C305-0830-DSA",
       "course": "OOP",
       "day": "Friday",
       "section": "DS-A",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-C303-0830-CYC",
-      "course": "PF",
+      "id": "FSC-FRI-C305-0830-AIA",
+      "course": "OOP",
       "day": "Friday",
-      "section": "CY-C",
+      "section": "AI-A",
       "field": "is_cancelled",
       "old": true,
       "new": false,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-24T18:43:01.638174Z"
+  "last_checked": "2026-09-25T05:04:11.083076Z"
 }

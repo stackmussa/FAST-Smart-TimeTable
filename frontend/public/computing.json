@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T18:42:53.782298Z",
+  "last_updated": "2026-09-25T05:04:03.368158Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -66,28 +66,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2026, Section CS-A) has Ideology of Pak in Room C-301 on Monday from 13:00 to 14:45."
-    },
-    {
-      "id": "FSC-MON-C301-1555-CSA",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "PDC",
-      "section": "CS-A",
-      "instructor": null,
-      "room": "C-301",
-      "day": "Monday",
-      "time_start": "15:55",
-      "time_end": "17:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": true,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch Unknown, Section CS-A) has PDC [REPEAT COURSE] in Room C-301 on Monday from 15:55 to 17:15."
     },
     {
       "id": "FSC-MON-C302-0830-CSB",
@@ -21644,10 +21622,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": true,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS AI (Batch 2025, Section AI-A) has OOP [REPEAT COURSE] in Room C-305 on Friday from 08:30 to 09:50."
+      "status": "Scheduled",
+      "rag_summary": "BS AI (Batch 2025, Section AI-A) has OOP [REPEAT COURSE] in Room C-305 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSC-FRI-C305-0830-DSA",
@@ -21666,10 +21644,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": true,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS DS (Batch 2025, Section DS-A) has OOP [REPEAT COURSE] in Room C-305 on Friday from 08:30 to 09:50."
+      "status": "Scheduled",
+      "rag_summary": "BS DS (Batch 2025, Section DS-A) has OOP [REPEAT COURSE] in Room C-305 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSC-FRI-C307-0830-CYA",
