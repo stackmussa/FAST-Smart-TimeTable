@@ -1,5 +1,5 @@
 {
-  "last_updated": 1790312651,
+  "last_updated": 1790330980,
   "changed_schools": [
     "computing"
   ],
@@ -8,25 +8,55 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-C305-0830-DSA",
-      "course": "OOP",
-      "day": "Friday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "id": "FSC-SAT-C303-0830-AIA1",
+      "course": "Func Eng Lab - 1",
+      "day": "Saturday",
+      "section": "AI-A1",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-C305-0830-AIA",
-      "course": "OOP",
+      "id": "FSC-SAT-C303-1130-SEA1",
+      "course": "Func Eng Lab - 1",
+      "day": "Saturday",
+      "section": "SE-A1",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-IT Lab 2 (D211)-1430-CSE",
+      "course": "Comp Net Lab",
       "day": "Friday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "section": "CS-E",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-IT Lab 1 (D210)-1130-CYB",
+      "course": "COAL Lab",
+      "day": "Saturday",
+      "section": "CY-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-IT Lab 3 (D213)-0830-CYC",
+      "course": "COAL Lab",
+      "day": "Saturday",
+      "section": "CY-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-25T05:04:11.083076Z"
+  "last_checked": "2026-09-25T10:09:40.982847Z"
 }
