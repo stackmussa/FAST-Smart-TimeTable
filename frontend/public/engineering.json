@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T10:05:51.066389Z",
+  "last_updated": "2026-09-28T07:43:29.644782Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -779,6 +779,27 @@
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Blockchain Technologies and Applications in Room B-230 on Monday from 08:30 to 09:50."
     },
     {
+      "id": "FSE-MON-B230-0955",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "5th",
+      "course_name": "Numerical Computing",
+      "section": "CE-A",
+      "instructor": "Aleena Shafiq",
+      "room": "B-230",
+      "day": "Monday",
+      "time_start": "09:55",
+      "time_end": "11:15",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Numerical Computing in Room B-230 on Monday from 09:55 to 11:15."
+    },
+    {
       "id": "FSE-MON-B230-1125",
       "school": "School of Engineering",
       "department": "CE",
@@ -1369,12 +1390,12 @@
     {
       "id": "FSE-TUE-B019-0955",
       "school": "School of Engineering",
-      "department": "EE",
+      "department": "CE",
       "degree": "BS",
       "batch": "2024",
       "semester": "5th",
-      "course_name": "Electromagnetic Theory",
-      "section": "EE-B",
+      "course_name": "Digital Signal Processing",
+      "section": "CE-A",
       "instructor": "Dr. Irum Saba",
       "room": "B-019",
       "day": "Tuesday",
@@ -1385,7 +1406,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Electromagnetic Theory in Room B-019 on Tuesday from 09:55 to 11:15."
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-019 on Tuesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-TUE-B019-1125",
@@ -1495,12 +1516,12 @@
     {
       "id": "FSE-TUE-B020-0955",
       "school": "School of Engineering",
-      "department": "CE",
+      "department": "EE",
       "degree": "BS",
       "batch": "2024",
       "semester": "5th",
-      "course_name": "Digital Signal Processing",
-      "section": "CE-A",
+      "course_name": "Electromagnetic Theory",
+      "section": "EE-B",
       "instructor": "Engr. Shehzad Ahmed",
       "room": "B-020",
       "day": "Tuesday",
@@ -1511,7 +1532,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-020 on Tuesday from 09:55 to 11:15."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Electromagnetic Theory in Room B-020 on Tuesday from 09:55 to 11:15."
     },
     {
       "id": "FSE-TUE-B020-1125",
@@ -2606,6 +2627,27 @@
       "rag_summary": "BS EE (Batch 2023, Section EE-B) has Engineering Management in Room B-030 on Wednesday from 14:20 to 15:40."
     },
     {
+      "id": "FSE-WED-B030-1545",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "7th",
+      "course_name": "Engineering Management",
+      "section": "EE-B",
+      "instructor": "Dr. Muhammad Saeed (Resch)  Sept 30",
+      "room": "B-030",
+      "day": "Wednesday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Engineering Management in Room B-030 on Wednesday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-WED-B019-0830",
       "school": "School of Engineering",
       "department": "EE",
@@ -2646,6 +2688,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-019 on Wednesday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-WED-B019-1125",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "5th",
+      "course_name": "Digital Signal Processing",
+      "section": "CE-A",
+      "instructor": "Engr. Shehzad Ahmed",
+      "room": "B-019",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B019-1250",
@@ -2751,27 +2814,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Programming in Room B-020 on Wednesday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-WED-B020-1125",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "5th",
-      "course_name": "Digital Signal Processing",
-      "section": "CE-A",
-      "instructor": "Engr. Shehzad Ahmed",
-      "room": "B-020",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-020 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B020-1250",
@@ -3593,27 +3635,6 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Engineering Drawing in Room Comp-II on Wednesday from 14:20 to 15:40."
     },
     {
-      "id": "FSE-WED-CompIII-0830",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "DLD",
-      "section": "C",
-      "instructor": "AbuBakar",
-      "room": "Comp-III",
-      "day": "Wednesday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section C) has DLD in Room Comp-III on Wednesday from 08:30 to 09:50."
-    },
-    {
       "id": "FSE-WED-CompIII-1250",
       "school": "School of Engineering",
       "department": "CE",
@@ -3696,6 +3717,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-THU-B028-1545",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "English Language Skills",
+      "section": "EE-B",
+      "instructor": "Ms. Hajra Khalid (Resch)       Oct 01, 2026",
+      "room": "B-028",
+      "day": "Thursday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-B) has English Language Skills in Room B-028 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B030-0830",
@@ -3992,6 +4034,27 @@
       "rag_summary": "BS EE (Batch 2025, Section EE-C) has Digital Logic Design in Room B-020 on Thursday from 14:20 to 15:40."
     },
     {
+      "id": "FSE-THU-B020-1545",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Basic Mechanical Engg.",
+      "section": "B",
+      "instructor": "Dr. M. Adnan  (Resch)       Oct 01, 2026",
+      "room": "B-020",
+      "day": "Thursday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section B) has Basic Mechanical Engg. in Room B-020 on Thursday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-THU-B119-0830",
       "school": "School of Engineering",
       "department": "EE",
@@ -4242,6 +4305,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronics Devices Circuits in Room B-129 on Thursday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-THU-B129-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "English Language Skills",
+      "section": "EE-C",
+      "instructor": "Ms. Hajra Khalid (Resch)       Oct 01, 2026",
+      "room": "B-129",
+      "day": "Thursday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-C) has English Language Skills in Room B-129 on Thursday from 11:25 to 12:45."
     },
     {
       "id": "FSE-THU-B129-1545",
@@ -4876,12 +4960,12 @@
     {
       "id": "FSE-FRI-B020-0830",
       "school": "School of Engineering",
-      "department": "CE",
+      "department": "EE",
       "degree": "BS",
       "batch": "2024",
       "semester": "5th",
-      "course_name": "Digital Signal Processing",
-      "section": "CE-A",
+      "course_name": "Analog & Digital Communications",
+      "section": "EE-B",
       "instructor": "Engr. Shehzad Ahmed",
       "room": "B-020",
       "day": "Friday",
@@ -4892,7 +4976,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-020 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analog & Digital Communications in Room B-020 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B020-0955",
@@ -4956,6 +5040,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-027 on Friday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-FRI-B028-0830",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "7th",
+      "course_name": "Final Year Project – I",
+      "section": "EE-A",
+      "instructor": "Dr. M. Adnan  (Resch)       Oct 2, 2026",
+      "room": "B-028",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Final Year Project – I in Room B-028 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B127-0830",
@@ -5447,26 +5552,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engr. in Room B-027 on Wednesday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-WED-B019-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FSE Faculty Meeting",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-019",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has FSE Faculty Meeting in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-Room-1420",
