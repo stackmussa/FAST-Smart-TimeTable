@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T17:37:43.278372Z",
+  "last_updated": "2026-09-28T01:43:37.934428Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -4528,10 +4528,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2025, Section AI-C) has Data St Lab (Lab) in Room Cyber (D-514) on Monday from 08:30 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2025, Section AI-C) has Data St Lab (Lab) in Room Cyber (D-514) on Monday from 08:30 to 11:20."
     },
     {
       "id": "FSC-MON-Cyber (D514)-1130-CYC",
@@ -9258,10 +9258,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2026, Section AI-A) has IICT Lab (Lab) in Room IT Lab 3 (D-213) on Tuesday from 08:30 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2026, Section AI-A) has IICT Lab (Lab) in Room IT Lab 3 (D-213) on Tuesday from 08:30 to 11:20."
     },
     {
       "id": "FSC-TUE-IT Lab 3 (D213)-1130-CYB",

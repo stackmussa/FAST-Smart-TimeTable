@@ -1,5 +1,5 @@
 {
-  "last_updated": 1790530670,
+  "last_updated": 1790559825,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,25 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-MON-C602-1130-SEF",
-      "course": "PF",
+      "id": "FSC-MON-Cyber (D514)-0830-AIC",
+      "course": "Data St Lab",
       "day": "Monday",
-      "section": "SE-F",
-      "field": "is_rescheduled",
-      "old": null,
+      "section": "AI-C",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-IT Lab 3 (D213)-0830-AIA",
+      "course": "IICT Lab",
+      "day": "Tuesday",
+      "section": "AI-A",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-27T17:37:50.919452Z"
+  "last_checked": "2026-09-28T01:43:45.765513Z"
 }
