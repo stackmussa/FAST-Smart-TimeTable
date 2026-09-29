@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T16:02:56.084125Z",
+  "last_updated": "2026-09-29T14:09:14.759422Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1302,6 +1302,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-C) has Pakistan Studies in Room B-030 on Tuesday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-TUE-B030-1250",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Applications of ICT",
+      "section": "EE-C",
+      "instructor": "Reschedule                     6th Oct 2026",
+      "room": "B-030",
+      "day": "Tuesday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-C) has Applications of ICT in Room B-030 on Tuesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-TUE-B030-1420",
@@ -3759,6 +3780,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-030 on Thursday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-THU-B030-1250",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Applications of ICT",
+      "section": "EE-A",
+      "instructor": "1st Oct 2026",
+      "room": "B-030",
+      "day": "Thursday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-030 on Thursday from 12:50 to 14:10."
     },
     {
       "id": "FSE-THU-B030-1545",
