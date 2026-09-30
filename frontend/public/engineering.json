@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T14:09:14.759422Z",
+  "last_updated": "2026-09-30T08:26:14.831826Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3488,7 +3488,7 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-D) has Applications of ICT - Lab (Lab) in Room Koh on Wednesday from 14:20 to 15:40."
     },
     {
-      "id": "FSE-WED-MDEL-1420",
+      "id": "FSE-WED-MDEL-1250",
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
@@ -3499,14 +3499,14 @@
       "instructor": "Engr. Maryam Zafar",
       "room": "MDEL",
       "day": "Wednesday",
-      "time_start": "14:20",
-      "time_end": "15:40",
+      "time_start": "12:50",
+      "time_end": "14:10",
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Program. Lab (Lab) in Room MDEL on Wednesday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Program. Lab (Lab) in Room MDEL on Wednesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-WED-CompI-0955",
