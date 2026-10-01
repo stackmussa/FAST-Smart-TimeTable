@@ -1,5 +1,5 @@
 {
-  "last_updated": 1790780845,
+  "last_updated": 1790821413,
   "changed_schools": [
     "computing"
   ],
@@ -8,105 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-C310-0830-DSA",
-      "course": "Comp Net Lab",
-      "day": "Friday",
-      "section": "DS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C303-1130-SEF",
-      "course": "PF Lab",
-      "day": "Saturday",
-      "section": "SE-F",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C309-1555-CSA",
-      "course": "Discrete",
-      "day": "Wednesday",
-      "section": "CS-A",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D301-1030-CSH",
-      "course": "UHQ-I&II",
-      "day": "Friday",
+      "id": "FSC-THU-C303-1430-CSH",
+      "course": "PF",
+      "day": "Thursday",
       "section": "CS-H",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C302-1130-AIA",
-      "course": "ML Lab",
-      "day": "Saturday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C309-1000-CSC",
-      "course": "Data St",
-      "day": "Wednesday",
-      "section": "CS-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C309-1430-CS3Z",
-      "course": "Calculus",
-      "day": "Wednesday",
-      "section": "CS-3Z",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-Margala 1 (C209)-0830-SED2",
-      "course": "Func Eng Lab - 2",
-      "day": "Saturday",
-      "section": "SE-D2",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C304-1130-CSH2",
-      "course": "Func Eng Lab - 2",
-      "day": "Saturday",
-      "section": "CS-H2",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C302-1000-AIA",
-      "course": "TBW",
-      "day": "Saturday",
-      "section": "AI-A",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-09-30T15:07:25.733732Z"
+  "last_checked": "2026-10-01T02:23:33.388147Z"
 }
