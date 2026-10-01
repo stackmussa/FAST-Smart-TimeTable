@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T08:26:14.831826Z",
+  "last_updated": "2026-10-01T09:15:29.750650Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3782,27 +3782,6 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-030 on Thursday from 11:25 to 12:45."
     },
     {
-      "id": "FSE-THU-B030-1250",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Applications of ICT",
-      "section": "EE-A",
-      "instructor": "1st Oct 2026",
-      "room": "B-030",
-      "day": "Thursday",
-      "time_start": "12:50",
-      "time_end": "14:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-030 on Thursday from 12:50 to 14:10."
-    },
-    {
       "id": "FSE-THU-B030-1545",
       "school": "School of Engineering",
       "department": "Unknown",
@@ -4307,27 +4286,6 @@
       "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronics Devices Circuits in Room B-129 on Thursday from 09:55 to 11:15."
     },
     {
-      "id": "FSE-THU-B129-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "English Language Skills",
-      "section": "EE-C",
-      "instructor": "Ms. Hajra Khalid (Resch)       Oct 01, 2026",
-      "room": "B-129",
-      "day": "Thursday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-C) has English Language Skills in Room B-129 on Thursday from 11:25 to 12:45."
-    },
-    {
       "id": "FSE-THU-B129-1545",
       "school": "School of Engineering",
       "department": "CE",
@@ -4729,12 +4687,12 @@
     {
       "id": "FSE-THU-CompI-1420",
       "school": "School of Engineering",
-      "department": "Unknown",
+      "department": "CE",
       "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Applied Machine Learning Lab",
-      "section": "C",
+      "batch": "2025",
+      "semester": "3rd",
+      "course_name": "Electronics Devices Circuits Lab",
+      "section": "CE-A",
       "instructor": "Engr. Ammar  Ali",
       "room": "Comp-I",
       "day": "Thursday",
@@ -4745,7 +4703,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section C) has Applied Machine Learning Lab (Lab) in Room Comp-I on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronics Devices Circuits Lab (Lab) in Room Comp-I on Thursday from 14:20 to 15:40."
     },
     {
       "id": "FSE-THU-CompII-0830",
@@ -4771,12 +4729,12 @@
     {
       "id": "FSE-THU-CompII-1420",
       "school": "School of Engineering",
-      "department": "CE",
+      "department": "Unknown",
       "degree": "BS",
-      "batch": "2025",
-      "semester": "3rd",
-      "course_name": "Electronics Devices Circuits Lab",
-      "section": "CE-A",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Applied Machine Learning Lab",
+      "section": "C",
       "instructor": "Engr. Shahmeer Hussain",
       "room": "Comp-II",
       "day": "Thursday",
@@ -4787,7 +4745,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronics Devices Circuits Lab (Lab) in Room Comp-II on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS Unknown (Batch Unknown, Section C) has Applied Machine Learning Lab (Lab) in Room Comp-II on Thursday from 14:20 to 15:40."
     },
     {
       "id": "FSE-THU-Koh-0955",
