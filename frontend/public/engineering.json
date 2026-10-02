@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T06:39:17.211391Z",
+  "last_updated": "2026-10-02T13:10:55.163048Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -4956,27 +4956,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-027 on Friday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSE-FRI-B027-0955",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Reserved for Welcome Preparation",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-027",
-      "day": "Friday",
-      "time_start": "09:55",
-      "time_end": "11:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Reserved for Welcome Preparation in Room B-027 on Friday from 09:55 to 11:15."
     },
     {
       "id": "FSE-FRI-B028-0830",
