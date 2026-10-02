@@ -1,62 +1,44 @@
 {
-  "last_updated": 1790872531,
+  "last_updated": 1790923157,
   "changed_schools": [
-    "computing"
+    "computing",
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-D304-0830-DSB",
-      "course": "Intro to DS",
-      "day": "Friday",
-      "section": "DS-B",
+      "id": "FSC-WED-D313-1000-DSC",
+      "course": "Calculus",
+      "day": "Wednesday",
+      "section": "DS-C",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-D301-1430-DSA",
-      "course": "Data Ware & BI Lab",
-      "day": "Friday",
-      "section": "DS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D312-0830-AIC",
+      "id": "FSC-FRI-IT Lab 4GPU (D203)-0830-AIA",
       "course": "ML Lab",
       "day": "Friday",
-      "section": "AI-C",
+      "section": "AI-A",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-D311-0830-DSB",
-      "course": "Data Ware & BI Lab",
-      "day": "Friday",
-      "section": "DS-B",
+      "id": "FSC-WED-D311-1430-AIB",
+      "course": "Calculus",
+      "day": "Wednesday",
+      "section": "AI-B",
       "field": "is_rescheduled",
       "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C401-1430-CSA",
-      "course": "Seerah",
-      "day": "Thursday",
-      "section": "CS-A",
-      "field": "is_cancelled",
-      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-01T16:35:31.274064Z"
+  "last_checked": "2026-10-02T06:39:17.219181Z"
 }

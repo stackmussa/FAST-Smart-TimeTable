@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T16:35:23.371252Z",
+  "last_updated": "2026-10-02T06:39:08.962305Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -66,28 +66,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2026, Section CS-A) has Ideology of Pak in Room C-301 on Monday from 13:00 to 14:45."
-    },
-    {
-      "id": "FSC-MON-C301-1555-CSB & C",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "PDC",
-      "section": "CS-B & C",
-      "instructor": null,
-      "room": "C-301",
-      "day": "Monday",
-      "time_start": "15:55",
-      "time_end": "17:15",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": true,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2023, Section CS-B & C) has PDC [REPEAT COURSE] in Room C-301 on Monday from 15:55 to 17:15."
     },
     {
       "id": "FSC-MON-C302-0830-CSB",
@@ -13070,6 +13048,28 @@
       "rag_summary": "BS AI (Batch 2026, Section AI-B) has Calculus in Room D-311 on Wednesday from 13:00 to 14:20."
     },
     {
+      "id": "FSC-WED-D311-1430-AIB",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Calculus",
+      "section": "AI-B",
+      "instructor": null,
+      "room": "D-311",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS AI (Batch 2026, Section AI-B) has Calculus in Room D-311 on Wednesday from 14:30 to 15:50."
+    },
+    {
       "id": "FSC-WED-D311-1555-AIA",
       "school": "School of Computing",
       "department": "AI",
@@ -13200,6 +13200,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS DS (Batch 2026, Section DS-C) has Calculus in Room D-313 on Wednesday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSC-WED-D313-1000-DSC",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Calculus",
+      "section": "DS-C",
+      "instructor": null,
+      "room": "D-313",
+      "day": "Wednesday",
+      "time_start": "10:00",
+      "time_end": "11:20",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS DS (Batch 2026, Section DS-C) has Calculus in Room D-313 on Wednesday from 10:00 to 11:20."
     },
     {
       "id": "FSC-WED-D313-1130-DSC",
@@ -22772,14 +22794,14 @@
       "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-F) has Data St Lab (Lab) in Room IT Lab 3 (D-213) on Friday from 14:30 to 17:15."
     },
     {
-      "id": "FSC-FRI-IT Lab 4GPU (D203)-0830-CSF",
+      "id": "FSC-FRI-IT Lab 4GPU (D203)-0830-AIA",
       "school": "School of Computing",
-      "department": "CS",
+      "department": "AI",
       "degree": "BS",
-      "batch": "2026",
+      "batch": "2024",
       "semester": "Unknown",
-      "course_name": "IICT Lab",
-      "section": "CS-F",
+      "course_name": "ML Lab",
+      "section": "AI-A",
       "instructor": null,
       "room": "IT Lab 4-GPU (D-203)",
       "day": "Friday",
@@ -22791,7 +22813,7 @@
       "is_cancelled": false,
       "is_elective": false,
       "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-F) has IICT Lab (Lab) in Room IT Lab 4-GPU (D-203) on Friday from 08:30 to 11:20."
+      "rag_summary": "[RESCHEDULED] BS AI (Batch 2024, Section AI-A) has ML Lab (Lab) in Room IT Lab 4-GPU (D-203) on Friday from 08:30 to 11:20."
     },
     {
       "id": "FSC-FRI-Margala 1 (C209)-0830-CYB",
