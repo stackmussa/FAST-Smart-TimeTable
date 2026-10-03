@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T13:10:46.672485Z",
+  "last_updated": "2026-10-03T12:01:00.879266Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -8030,6 +8030,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS SE (Batch 2023, Section SE-A) has Process Mining [REPEAT COURSE] in Room D-402 on Tuesday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSC-TUE-D403-0830-AIB1",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "AI-B1",
+      "instructor": null,
+      "room": "D-403",
+      "day": "Tuesday",
+      "time_start": "08:30",
+      "time_end": "10:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS AI (Batch 2026, Section AI-B1) has Func Eng Lab - 1 in Room D-403 on Tuesday from 08:30 to 10:15."
     },
     {
       "id": "FSC-TUE-D404-0830-CSA",
