@@ -1,5 +1,5 @@
 {
-  "last_updated": 1791028866,
+  "last_updated": 1791133503,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,25 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-D403-0830-AIB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Tuesday",
-      "section": "AI-B1",
+      "id": "FSC-SAT-C302-0830-SEC",
+      "course": "PF Lab",
+      "day": "Saturday",
+      "section": "SE-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C304-1430-CSD",
+      "course": "IICT Lab",
+      "day": "Monday",
+      "section": "CS-D",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-03T12:01:06.903343Z"
+  "last_checked": "2026-10-04T17:05:03.797092Z"
 }
