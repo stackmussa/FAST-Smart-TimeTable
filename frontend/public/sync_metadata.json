@@ -1,93 +1,21 @@
 {
-  "last_updated": 1791188056,
+  "last_updated": 1791220335,
   "changed_schools": [
     "computing",
-    "management",
-    "engineering"
+    "management"
   ],
   "changed_files": [
     "Computing",
-    "Management",
-    "Engineering"
+    "Management"
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-C302-1130-CSA",
-      "course": "Data St",
+      "id": "FSC-TUE-C311-0830-CSB",
+      "course": "LA",
       "day": "Tuesday",
-      "section": "CS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D301-0830-CSD",
-      "course": "IICT Lab",
-      "day": "Friday",
-      "section": "CS-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-BDigital-0830-CSB",
-      "course": "DLD Lab",
-      "day": "Friday",
       "section": "CS-B",
       "field": "is_rescheduled",
       "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C601-1555-SEE",
-      "course": "AP",
-      "day": "Wednesday",
-      "section": "SE-E",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C302-1130-CSA",
-      "course": "Data St",
-      "day": "Thursday",
-      "section": "CS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C302-1430-SEE",
-      "course": "AP",
-      "day": "Friday",
-      "section": "SE-E",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-C404-1430-CYA",
-      "course": "Pak Studies",
-      "day": "Monday",
-      "section": "CY-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D305-1300-AIA",
-      "course": "Comp Net",
-      "day": "Monday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": false,
       "new": true,
       "school": "computing"
     },
@@ -97,18 +25,8 @@
       "day": "Monday",
       "section": "SE-A",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D416-0900-CYC",
-      "course": "UHQ-II",
-      "day": "Monday",
-      "section": "CY-C",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
       "school": "computing"
     },
     {
@@ -117,8 +35,8 @@
       "day": "Monday",
       "section": "AI-C",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
       "school": "computing"
     },
     {
@@ -127,58 +45,8 @@
       "day": "Monday",
       "section": "SE-D",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-C311-1130-CSB",
-      "course": "LA",
-      "day": "Monday",
-      "section": "CS-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D302-1300-AIA",
-      "course": "PPIT",
-      "day": "Monday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-Margala 3 (C211)-0830-CYD1",
-      "course": "Func Eng Lab - 1",
-      "day": "Saturday",
-      "section": "CY-D1",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D302-1300-DSA",
-      "course": "PPIT",
-      "day": "Monday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D306-0830-AIB",
-      "course": "Algo",
-      "day": "Monday",
-      "section": "AI-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
       "school": "computing"
     },
     {
@@ -187,20 +55,70 @@
       "day": "Monday",
       "section": "CY-C",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
       "school": "computing"
     },
     {
-      "id": "FSC-SAT-Margala 1 (C209)-1130-AIB2",
-      "course": "Func Eng Lab - 2",
-      "day": "Saturday",
-      "section": "AI-B2",
+      "id": "FSC-MON-D306-0830-AIB",
+      "course": "Algo",
+      "day": "Monday",
+      "section": "AI-B",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D305-1300-AIA",
+      "course": "Comp Net",
+      "day": "Monday",
+      "section": "AI-A",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D302-1300-AIA",
+      "course": "PPIT",
+      "day": "Monday",
+      "section": "AI-A",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D416-0900-CYC",
+      "course": "UHQ-II",
+      "day": "Monday",
+      "section": "CY-C",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C311-1130-CSB",
+      "course": "LA",
+      "day": "Monday",
+      "section": "CS-B",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D302-1300-DSA",
+      "course": "PPIT",
+      "day": "Monday",
+      "section": "DS-A",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-05T08:14:16.317624Z"
+  "last_checked": "2026-10-05T17:12:15.844887Z"
 }
