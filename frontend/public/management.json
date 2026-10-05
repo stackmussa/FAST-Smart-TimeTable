@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T08:26:09.548107Z",
+  "last_updated": "2026-10-05T08:14:11.527432Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -9303,6 +9303,48 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BBA BBA (Batch 2025, Section BBA03A) has MG2001 Organizational Behaviour in Room A-02 on Thursday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSM-THU-A02-1425",
+      "school": "School of Management",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "MG2003 Consumer Behaviour",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "A-02",
+      "day": "Thursday",
+      "time_start": "14:25",
+      "time_end": "15:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MG2003 Consumer Behaviour in Room A-02 on Thursday from 14:25 to 15:45."
+    },
+    {
+      "id": "FSM-THU-A02-1550",
+      "school": "School of Management",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "MG2003 Consumer Behaviour",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "A-02",
+      "day": "Thursday",
+      "time_start": "15:50",
+      "time_end": "17:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MG2003 Consumer Behaviour in Room A-02 on Thursday from 15:50 to 17:10."
     },
     {
       "id": "FSM-THU-A03-0830",
