@@ -1,5 +1,5 @@
 {
-  "last_updated": 1791281361,
+  "last_updated": 1791305219,
   "changed_schools": [
     "computing",
     "engineering"
@@ -10,9 +10,9 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-C305-1130-SEB",
-      "course": "AI Lab",
-      "day": "Friday",
+      "id": "FSC-WED-C605-1555-SEB",
+      "course": "LA",
+      "day": "Wednesday",
       "section": "SE-B",
       "field": "is_rescheduled",
       "old": null,
@@ -20,165 +20,35 @@
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-IT Lab 2 (D211)-1430-AIC",
-      "course": "Data St Lab",
+      "id": "FSC-FRI-D302-0830-CSG1",
+      "course": "Func Eng Lab - 1",
       "day": "Friday",
-      "section": "AI-C",
+      "section": "CS-G1",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-C604-1430-SEA",
-      "course": "Pak Studies",
-      "day": "Wednesday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C305-1000-SEB",
-      "course": "AI Lab",
+      "id": "FSC-FRI-D303-1000-AIC1",
+      "course": "Func Eng Lab - 1",
       "day": "Friday",
-      "section": "SE-B",
+      "section": "AI-C1",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-C305-1430-SEC",
-      "course": "AI Lab",
+      "id": "FSC-FRI-D303-1300-SEA1",
+      "course": "Func Eng Lab - 1",
       "day": "Friday",
-      "section": "SE-C",
+      "section": "SE-A1",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
-    },
-    {
-      "id": "FSC-WED-IT Lab 4GPU (D203)-1430-CSC",
-      "course": "Comp Net Lab",
-      "day": "Wednesday",
-      "section": "CS-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D506-1430-SEE",
-      "course": "PF Lab",
-      "day": "Thursday",
-      "section": "SE-E",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C305-1300-SEC",
-      "course": "AI Lab",
-      "day": "Friday",
-      "section": "SE-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C311-1300-CSA",
-      "course": "LA",
-      "day": "Tuesday",
-      "section": "CS-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C308-1130-CSE",
-      "course": "LA",
-      "day": "Tuesday",
-      "section": "CS-E",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C311-0830-CSB",
-      "course": "LA",
-      "day": "Tuesday",
-      "section": "CS-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-CRawal 4 (C512)-1130-AIA",
-      "course": "Comp Net Lab",
-      "day": "Thursday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C305-0830-CSB",
-      "course": "Func Eng",
-      "day": "Tuesday",
-      "section": "CS-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D301-1230-AIC",
-      "course": "Ideology of Pak",
-      "day": "Tuesday",
-      "section": "AI-C",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D311-0830-AIB",
-      "course": "Ideology of Pak",
-      "day": "Wednesday",
-      "section": "AI-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-Margala 3 (C211)-1130-DSC",
-      "course": "Comp Net Lab",
-      "day": "Tuesday",
-      "section": "DS-C",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSE-WED-B019-1125",
-      "course": "FSE Faculty Meeting",
-      "day": "Wednesday",
-      "section": "Unknown",
-      "field": "is_elective",
-      "old": false,
-      "new": null,
-      "school": "engineering"
     }
   ],
-  "last_checked": "2026-10-06T10:09:21.864696Z"
+  "last_checked": "2026-10-06T16:46:59.497958Z"
 }
