@@ -15,11 +15,11 @@
     {
       "id": "EXAM-SS1012FunctionalEnglish-2026",
       "departments": [
-        "CY",
-        "CS",
-        "SE",
         "DS",
-        "AI"
+        "SE",
+        "AI",
+        "CS",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS1012  Functional English",
@@ -53,8 +53,8 @@
       "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2025",
       "departments": [
         "CY",
-        "SE",
         "DS",
+        "SE",
         "AI"
       ],
       "batch": "2025",
@@ -66,8 +66,8 @@
     {
       "id": "EXAM-NS1001AppliedPhysics-2026",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "NS1001  Applied Physics",
@@ -122,8 +122,8 @@
     {
       "id": "EXAM-SS1004EnglishCompositionandComprehension-Unknown",
       "departments": [
-        "CY",
-        "CS"
+        "CS",
+        "CY"
       ],
       "batch": "Unknown",
       "course_name": "SS1004 English Composition and Comprehension",
@@ -157,8 +157,8 @@
     {
       "id": "EXAM-CS4075CloudComputing-2023",
       "departments": [
-        "CY",
-        "CS"
+        "CS",
+        "CY"
       ],
       "batch": "2023",
       "course_name": "CS4075 Cloud Computing",
@@ -169,8 +169,8 @@
     {
       "id": "EXAM-AI2002-ArtificialIntelligence-2024",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2024",
       "course_name": "AI2002 - Artificial Intelligence",
@@ -218,8 +218,8 @@
       "id": "EXAM-SS2012TechnicalandBusinessWriting-2024",
       "departments": [
         "CS",
-        "SE",
         "DS",
+        "SE",
         "AI"
       ],
       "batch": "2024",
@@ -231,11 +231,11 @@
     {
       "id": "EXAM-CS1002ProgrammingFundamentals-2026",
       "departments": [
-        "CY",
-        "CS",
-        "SE",
         "DS",
-        "AI"
+        "SE",
+        "AI",
+        "CS",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "CS1002   Programming Fundamentals",
@@ -443,11 +443,11 @@
     {
       "id": "EXAM-SS1013IdeologyandConstitutionofPakistan-2026",
       "departments": [
-        "CY",
-        "CS",
-        "SE",
         "DS",
-        "AI"
+        "SE",
+        "AI",
+        "CS",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS1013 Ideology and Constitution of Pakistan",
@@ -482,11 +482,11 @@
     {
       "id": "EXAM-CS2001DataStructures-2025",
       "departments": [
-        "CY",
-        "CS",
-        "SE",
         "DS",
-        "AI"
+        "SE",
+        "AI",
+        "CS",
+        "CY"
       ],
       "batch": "2025",
       "course_name": "CS2001 Data Structures",
@@ -498,8 +498,8 @@
       "id": "EXAM-CS2009DesignandAnalysisofAlgorithms-2024",
       "departments": [
         "CS",
-        "SE",
         "DS",
+        "SE",
         "AI"
       ],
       "batch": "2024",
@@ -522,9 +522,9 @@
     {
       "id": "EXAM-CS4001ProfessionalPracticesinIT-2023",
       "departments": [
-        "CY",
         "CS",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2023",
       "course_name": "CS4001 Professional Practices in IT",
@@ -669,11 +669,11 @@
     {
       "id": "EXAM-MT1003CalculusandAnalyticalGeometry-2026",
       "departments": [
-        "CY",
-        "CS",
-        "SE",
         "DS",
-        "AI"
+        "SE",
+        "AI",
+        "CS",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "MT1003   Calculus and Analytical Geometry",
@@ -695,11 +695,11 @@
     {
       "id": "EXAM-MT1004LinearAlgebra-2025",
       "departments": [
-        "CY",
-        "CS",
-        "SE",
         "DS",
-        "AI"
+        "SE",
+        "AI",
+        "CS",
+        "CY"
       ],
       "batch": "2025",
       "course_name": "MT1004 Linear Algebra",
@@ -800,8 +800,8 @@
     {
       "id": "EXAM-SS0000ArtsandHumanities-2026",
       "departments": [
-        "CY",
-        "SE"
+        "SE",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS0000 Arts and Humanities",
@@ -834,8 +834,8 @@
     {
       "id": "EXAM-CS2006OperatingSystems-2024",
       "departments": [
-        "CY",
-        "DS"
+        "DS",
+        "CY"
       ],
       "batch": "2024",
       "course_name": "CS2006 Operating Systems",
@@ -914,8 +914,8 @@
       "id": "EXAM-AF1003IntroductiontoFinancialAccounting-2026",
       "departments": [
         "AF",
-        "FT",
         "BBA",
+        "FT",
         "BA"
       ],
       "batch": "2026",
@@ -1369,8 +1369,8 @@
       "id": "EXAM-SS1016English-I-2026",
       "departments": [
         "AF",
-        "FT",
         "BBA",
+        "FT",
         "BA"
       ],
       "batch": "2026",
@@ -1598,8 +1598,8 @@
       "id": "EXAM-MG2012BusinessEconomics-2025",
       "departments": [
         "AF",
-        "FT",
         "BBA",
+        "FT",
         "BA"
       ],
       "batch": "2025",
