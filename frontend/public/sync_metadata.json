@@ -1,64 +1,32 @@
 {
-  "last_updated": 1791381136,
+  "last_updated": 1791433071,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-D301-1430-AIC",
-      "course": "PF Lab",
+      "id": "FSC-THU-C301-1000-CSF",
+      "course": "Calculus",
       "day": "Thursday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C409-1000-SEB",
-      "course": "LA",
-      "day": "Thursday",
-      "section": "SE-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-IT Lab 3 (D213)-1430-DSA",
-      "course": "PF Lab",
-      "day": "Saturday",
-      "section": "DS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-CRawal 4 (C512)-1130-AIA",
-      "course": "Comp Net Lab",
-      "day": "Thursday",
-      "section": "AI-A",
+      "section": "CS-F",
       "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "old": false,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-C605-1555-SEB",
-      "course": "LA",
-      "day": "Wednesday",
-      "section": "SE-B",
+      "id": "FSC-THU-C302-0830-CSG",
+      "course": "Calculus",
+      "day": "Thursday",
+      "section": "CS-G",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-07T13:52:16.970496Z"
+  "last_checked": "2026-10-08T04:17:51.187823Z"
 }

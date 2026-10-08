@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T13:52:09.034207Z",
+  "last_updated": "2026-10-08T04:17:44.814270Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -15594,10 +15594,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2026, Section CS-F) has Calculus in Room C-301 on Thursday from 10:00 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CS (Batch 2026, Section CS-F) has Calculus in Room C-301 on Thursday from 10:00 to 11:20."
     },
     {
       "id": "FSC-THU-C301-1130-CSA",
@@ -15704,10 +15704,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2026, Section CS-G) has Calculus in Room C-302 on Thursday from 08:30 to 09:50."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CS (Batch 2026, Section CS-G) has Calculus in Room C-302 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSC-THU-C302-1000-CSG",
@@ -17382,28 +17382,6 @@
       "rag_summary": "BS SE (Batch 2026, Section SE-C) has Arts & Humanities in Room C-601 on Thursday from 13:00 to 14:45."
     },
     {
-      "id": "FSC-THU-C602-0830-SED",
-      "school": "School of Computing",
-      "department": "SE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "AP",
-      "section": "SE-D",
-      "instructor": null,
-      "room": "C-602",
-      "day": "Thursday",
-      "time_start": "08:30",
-      "time_end": "09:50",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS SE (Batch 2026, Section SE-D) has AP in Room C-602 on Thursday from 08:30 to 09:50."
-    },
-    {
       "id": "FSC-THU-C602-1000-SEA",
       "school": "School of Computing",
       "department": "SE",
@@ -18150,6 +18128,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS AI (Batch 2026, Section AI-A) has Func Eng in Room D-302 on Thursday from 13:00 to 14:45."
+    },
+    {
+      "id": "FSC-THU-D303-0830-SED",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "AP",
+      "section": "SE-D",
+      "instructor": null,
+      "room": "D-303",
+      "day": "Thursday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "Scheduled",
+      "rag_summary": "BS SE (Batch 2026, Section SE-D) has AP in Room D-303 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSC-THU-D303-1000-DSA",
