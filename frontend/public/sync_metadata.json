@@ -1,184 +1,72 @@
 {
-  "last_updated": 1791539922,
+  "last_updated": 1791564801,
   "changed_schools": [
-    "computing",
-    "management"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Management"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-C604-1430-SED",
-      "course": "PF Lab",
-      "day": "Tuesday",
-      "section": "SE-D",
+      "id": "FSC-SAT-C304-1130-AIB1",
+      "course": "Func Eng Lab - 1",
+      "day": "Saturday",
+      "section": "AI-B1",
+      "field": "is_cancelled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C305-1130-AIB2",
+      "course": "Func Eng Lab - 2",
+      "day": "Saturday",
+      "section": "AI-B2",
+      "field": "is_cancelled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C304-0830-CYD1",
+      "course": "Func Eng Lab - 1",
+      "day": "Saturday",
+      "section": "CY-D1",
+      "field": "is_cancelled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSC",
+      "course": "IICT Lab",
+      "day": "Thursday",
+      "section": "DS-C",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-THU-D501-0930-CYA",
-      "course": "UHQ-II",
-      "day": "Thursday",
-      "section": "CY-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D415-1000-CYB",
-      "course": "PF",
-      "day": "Thursday",
-      "section": "CY-B",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C304-1130-CSE",
-      "course": "Calculus",
-      "day": "Thursday",
-      "section": "CS-E",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D501-1030-CYB",
-      "course": "UHQ-II",
-      "day": "Thursday",
-      "section": "CY-B",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-CALL3 (A308)-0830-AIA1",
-      "course": "Func Eng Lab - 1",
-      "day": "Thursday",
-      "section": "AI-A1",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C301-1130-CSA",
-      "course": "Seerah",
-      "day": "Thursday",
-      "section": "CS-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D316-1430-DSB",
-      "course": "DAV",
-      "day": "Thursday",
-      "section": "DS-B",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C407-0830-SEA",
-      "course": "UHQ-II",
-      "day": "Thursday",
-      "section": "SE-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D416-1130-CYD",
-      "course": "PF",
-      "day": "Thursday",
-      "section": "CY-D",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C303-1300-CSH",
-      "course": "Calculus",
-      "day": "Thursday",
-      "section": "CS-H",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D401-1130-DSA",
-      "course": "DAV",
-      "day": "Thursday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C302-0830-CSG",
-      "course": "Calculus",
-      "day": "Thursday",
-      "section": "CS-G",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C301-1000-CSF",
-      "course": "Calculus",
-      "day": "Thursday",
-      "section": "CS-F",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C308-1000-CSC",
-      "course": "Func Eng",
-      "day": "Thursday",
-      "section": "CS-C",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D303-1430-AIA",
+      "id": "FSC-THU-D502-1430-CYB",
       "course": "Pak Studies",
       "day": "Thursday",
-      "section": "AI-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "section": "CY-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-THU-C309-1130-CSD",
-      "course": "Data St",
-      "day": "Thursday",
-      "section": "CS-D",
-      "field": "is_rescheduled",
-      "old": true,
-      "new": false,
+      "id": "FSC-SAT-C301-1130-CYD",
+      "course": "PF",
+      "day": "Saturday",
+      "section": "CY-D",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-09T09:58:42.870039Z"
+  "last_checked": "2026-10-09T16:53:21.741526Z"
 }
