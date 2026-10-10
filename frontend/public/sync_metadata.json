@@ -1,5 +1,5 @@
 {
-  "last_updated": 1791564801,
+  "last_updated": 1791639334,
   "changed_schools": [
     "computing"
   ],
@@ -8,65 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-SAT-C304-1130-AIB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Saturday",
-      "section": "AI-B1",
-      "field": "is_cancelled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C305-1130-AIB2",
-      "course": "Func Eng Lab - 2",
-      "day": "Saturday",
-      "section": "AI-B2",
-      "field": "is_cancelled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C304-0830-CYD1",
-      "course": "Func Eng Lab - 1",
-      "day": "Saturday",
-      "section": "CY-D1",
-      "field": "is_cancelled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSC",
-      "course": "IICT Lab",
-      "day": "Thursday",
-      "section": "DS-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D502-1430-CYB",
-      "course": "Pak Studies",
-      "day": "Thursday",
-      "section": "CY-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
       "id": "FSC-SAT-C301-1130-CYD",
       "course": "PF",
       "day": "Saturday",
       "section": "CY-D",
       "field": "is_cancelled",
-      "old": false,
-      "new": true,
+      "old": true,
+      "new": false,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-09T16:53:21.741526Z"
+  "last_checked": "2026-10-10T13:35:34.246915Z"
 }
