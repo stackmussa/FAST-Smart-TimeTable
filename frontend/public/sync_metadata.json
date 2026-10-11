@@ -1,5 +1,5 @@
 {
-  "last_updated": 1791639334,
+  "last_updated": 1791722628,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-SAT-C301-1130-CYD",
-      "course": "PF",
-      "day": "Saturday",
-      "section": "CY-D",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "id": "FSC-MON-Cyber (D514)-1430-CYA",
+      "course": "AI Lab",
+      "day": "Monday",
+      "section": "CY-A",
+      "field": "is_rescheduled",
+      "old": false,
+      "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-10T13:35:34.246915Z"
+  "last_checked": "2026-10-11T12:43:48.668567Z"
 }

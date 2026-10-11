@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T13:35:28.629453Z",
+  "last_updated": "2026-10-11T12:43:41.464895Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -176,28 +176,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2026, Section CS-C) has Calculus in Room C-303 on Monday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSC-MON-C303-1000-CSE",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "PF",
-      "section": "CS-E",
-      "instructor": null,
-      "room": "C-303",
-      "day": "Monday",
-      "time_start": "10:00",
-      "time_end": "11:20",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-E) has PF in Room C-303 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSC-MON-C303-1130-CSC",
@@ -484,28 +462,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2025, Section CS-A) has DLD in Room C-307 on Monday from 13:00 to 14:20."
-    },
-    {
-      "id": "FSC-MON-C307-1430-CSH",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "PF",
-      "section": "CS-H",
-      "instructor": null,
-      "room": "C-307",
-      "day": "Monday",
-      "time_start": "14:30",
-      "time_end": "15:50",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-H) has PF in Room C-307 on Monday from 14:30 to 15:50."
     },
     {
       "id": "FSC-MON-C308-1000-CSB",
@@ -4670,22 +4626,22 @@
       "school": "School of Computing",
       "department": "CY",
       "degree": "BS",
-      "batch": "2023",
+      "batch": "2024",
       "semester": "Unknown",
-      "course_name": "Project",
+      "course_name": "AI Lab",
       "section": "CY-A",
       "instructor": null,
       "room": "Cyber (D-514)",
       "day": "Monday",
       "time_start": "14:30",
       "time_end": "17:15",
-      "is_lab": false,
-      "is_rescheduled": false,
+      "is_lab": true,
+      "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2023, Section CY-A) has Project in Room Cyber (D-514) on Monday from 14:30 to 17:15."
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CY (Batch 2024, Section CY-A) has AI Lab (Lab) in Room Cyber (D-514) on Monday from 14:30 to 17:15."
     },
     {
       "id": "FSC-MON-CALL1 (A213)-1430-CSE1",
