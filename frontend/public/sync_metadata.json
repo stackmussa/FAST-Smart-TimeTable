@@ -1,5 +1,5 @@
 {
-  "last_updated": 1791722628,
+  "last_updated": 1791740962,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-MON-Cyber (D514)-1430-CYA",
-      "course": "AI Lab",
+      "id": "FSC-MON-C308-0830-CSJ",
+      "course": "LA",
       "day": "Monday",
-      "section": "CY-A",
+      "section": "CS-J",
       "field": "is_rescheduled",
-      "old": false,
+      "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-11T12:43:48.668567Z"
+  "last_checked": "2026-10-11T17:49:22.665476Z"
 }
