@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T06:24:55.612140Z",
+  "last_updated": "2026-10-12T15:52:44.305672Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -189,27 +189,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2023, Section EE-B) has Engineering Management in Room B-030 on Monday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-MON-B030-1420",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "7th",
-      "course_name": "Applied Machine Learning",
-      "section": "EE-B",
-      "instructor": "Engr. Aleena Shafiq (Resch)  Oct 12, 2026",
-      "room": "B-030",
-      "day": "Monday",
-      "time_start": "14:20",
-      "time_end": "15:40",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Applied Machine Learning in Room B-030 on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-B019-0830",

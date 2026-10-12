@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T09:58:38.779221Z",
+  "last_updated": "2026-10-12T15:52:39.217708Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -676,12 +676,12 @@
     {
       "id": "FSM-MON-A104-1000",
       "school": "School of Management",
-      "department": "AF",
+      "department": "FT",
       "degree": "BS",
-      "batch": "2026",
+      "batch": "2025",
       "semester": "Unknown",
-      "course_name": "AF1003 Introduction to Financial Accounting",
-      "section": "AF01B",
+      "course_name": "AF2004 Business Finance",
+      "section": "FT03A",
       "instructor": "Aleena Nadeem",
       "room": "A-104",
       "day": "Monday",
@@ -692,7 +692,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS AF (Batch 2026, Section AF01B) has AF1003 Introduction to Financial Accounting in Room A-104 on Monday from 10:00 to 11:20."
+      "rag_summary": "BS FT (Batch 2025, Section FT03A) has AF2004 Business Finance in Room A-104 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSM-MON-A104-1130",
@@ -714,27 +714,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS AF (Batch 2026, Section Unknown) has SS1015 Pakistan Studies (11:30-01:20) in Room A-104 on Monday from 11:30 to 12:50."
-    },
-    {
-      "id": "FSM-MON-A104-1425",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "MS",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-104",
-      "day": "Monday",
-      "time_start": "14:25",
-      "time_end": "15:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has MS in Room A-104 on Monday from 14:25 to 15:45."
     },
     {
       "id": "FSM-MON-A 201-0830",
@@ -1096,12 +1075,12 @@
     {
       "id": "FSM-MON-A 210-1000",
       "school": "School of Management",
-      "department": "FT",
+      "department": "AF",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "AF2004 Business Finance",
-      "section": "FT03A",
+      "course_name": "AF1003 Introduction to Financial Accounting",
+      "section": "AF01B",
       "instructor": "Muhammad Akhtar",
       "room": "A- 210",
       "day": "Monday",
@@ -1112,7 +1091,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS FT (Batch 2025, Section FT03A) has AF2004 Business Finance in Room A- 210 on Monday from 10:00 to 11:20."
+      "rag_summary": "BS AF (Batch 2026, Section AF01B) has AF1003 Introduction to Financial Accounting in Room A- 210 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSM-MON-A 210-1130",
