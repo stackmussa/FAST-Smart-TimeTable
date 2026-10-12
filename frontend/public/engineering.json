@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T11:27:40.764608Z",
+  "last_updated": "2026-10-12T06:24:55.612140Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -90,11 +90,11 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2023",
-      "semester": "7th",
-      "course_name": "Applied Machine Learning",
-      "section": "EE-B",
-      "instructor": "Engr. Aleena Shafiq (Resch)  Oct 12, 2026",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Engineering Drawing",
+      "section": "EE-D",
+      "instructor": "Engr. Moiza Eman",
       "room": "B-028",
       "day": "Monday",
       "time_start": "14:20",
@@ -104,7 +104,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Applied Machine Learning in Room B-028 on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Engineering Drawing in Room B-028 on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-B030-0830",
@@ -189,6 +189,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2023, Section EE-B) has Engineering Management in Room B-030 on Monday from 12:50 to 14:10."
+    },
+    {
+      "id": "FSE-MON-B030-1420",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "7th",
+      "course_name": "Applied Machine Learning",
+      "section": "EE-B",
+      "instructor": "Engr. Aleena Shafiq (Resch)  Oct 12, 2026",
+      "room": "B-030",
+      "day": "Monday",
+      "time_start": "14:20",
+      "time_end": "15:40",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Applied Machine Learning in Room B-030 on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-B019-0830",
@@ -1787,6 +1808,27 @@
       "rag_summary": "BS Unknown (Batch Unknown, Section CE-A) has Comp.Var. & Transforms in Room B-129 on Tuesday from 09:55 to 11:15."
     },
     {
+      "id": "FSE-TUE-B129-1420",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Engineering Drawing",
+      "section": "EE-A",
+      "instructor": "Engr. Ammar Ali",
+      "room": "B-129",
+      "day": "Tuesday",
+      "time_start": "14:20",
+      "time_end": "15:40",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-A) has Engineering Drawing in Room B-129 on Tuesday from 14:20 to 15:40."
+    },
+    {
       "id": "FSE-TUE-B130-0830",
       "school": "School of Engineering",
       "department": "Unknown",
@@ -1848,6 +1890,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2025, Section CE-A) has Linear Algebra in Room B-130 on Tuesday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-TUE-B130-1420",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Engineering Drawing",
+      "section": "EE-B",
+      "instructor": "Engr. Moiza Eman",
+      "room": "B-130",
+      "day": "Tuesday",
+      "time_start": "14:20",
+      "time_end": "15:40",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Engineering Drawing in Room B-130 on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-B230-0830",
@@ -5008,7 +5071,7 @@
       "semester": "5th",
       "course_name": "Electronics Circuits Design",
       "section": "EE-A",
-      "instructor": "Engr. Izza Jamal  (Resch)  Oct 09 & Oct 16,2026",
+      "instructor": "Engr. Izza Jamal  (Resch)  Oct 16, 2026",
       "room": "B-027",
       "day": "Friday",
       "time_start": "11:25",
@@ -5019,27 +5082,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-A) has Electronics Circuits Design in Room B-027 on Friday from 11:25 to 12:45."
-    },
-    {
-      "id": "FSE-FRI-B028-1125",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "EMT",
-      "section": "A",
-      "instructor": "2026-10-09 00:00:00",
-      "room": "B-028",
-      "day": "Friday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section A) has EMT in Room B-028 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B127-0830",
