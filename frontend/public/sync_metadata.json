@@ -1,84 +1,22 @@
 {
-  "last_updated": 1791888259,
+  "last_updated": 1791913768,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-FRI-BDigital-0830-CSB",
-      "course": "DLD Lab",
-      "day": "Friday",
-      "section": "CS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-Margala 1 (C209)-0830-CYA",
-      "course": "Vulnerability Assesment Lab",
-      "day": "Thursday",
-      "section": "CY-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D315-1130-DSA",
+      "id": "FSC-MON-D503-1430-CYC",
       "course": "LA",
-      "day": "Thursday",
-      "section": "DS-A",
+      "day": "Monday",
+      "section": "CY-C",
       "field": "is_rescheduled",
       "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D306-0830-DSB",
-      "course": "COAL",
-      "day": "Thursday",
-      "section": "DS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C409-1130-SED",
-      "course": "PF",
-      "day": "Tuesday",
-      "section": "SE-D",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C302-1300-CSG",
-      "course": "Islamic",
-      "day": "Tuesday",
-      "section": "CS-G",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D313-1500-DSB",
-      "course": "Seerah",
-      "day": "Tuesday",
-      "section": "DS-B",
-      "field": "is_cancelled",
-      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-13T10:44:19.892079Z"
+  "last_checked": "2026-10-13T17:49:28.594216Z"
 }
