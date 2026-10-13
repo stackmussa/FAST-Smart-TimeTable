@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T15:52:44.305672Z",
+  "last_updated": "2026-10-13T10:44:19.884208Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3740,6 +3740,27 @@
       "rag_summary": "BS CE (Batch 2025, Section CE-C) has Electronics Devices Circuits Lab (Lab) in Room Elect on Wednesday from 08:30 to 09:50."
     },
     {
+      "id": "FSE-WED-Elect-1125",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Applications of ICT",
+      "section": "CE-A",
+      "instructor": null,
+      "room": "Elect",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Applications of ICT in Room Elect on Wednesday from 11:25 to 12:45."
+    },
+    {
       "id": "FSE-WED-Circuit \nLab-0830",
       "school": "School of Engineering",
       "department": "EE",
@@ -3780,6 +3801,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-THU-B028-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "ICT Quiz 3",
+      "section": "EE-B",
+      "instructor": "15/10/26 at 02:20 pm",
+      "room": "B-028",
+      "day": "Thursday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section EE-B) has ICT Quiz 3 in Room B-028 on Thursday from 12:50 to 14:10."
     },
     {
       "id": "FSE-THU-B030-0830",
@@ -3843,6 +3885,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-030 on Thursday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-THU-B030-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "ICT Quiz 3",
+      "section": "EE-C",
+      "instructor": "15/10/26 at 02:20 pm",
+      "room": "B-030",
+      "day": "Thursday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section EE-C) has ICT Quiz 3 in Room B-030 on Thursday from 12:50 to 14:10."
     },
     {
       "id": "FSE-THU-B030-1545",
