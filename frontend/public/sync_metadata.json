@@ -1,5 +1,5 @@
 {
-  "last_updated": 1791913768,
+  "last_updated": 1791957933,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,65 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-MON-D503-1430-CYC",
-      "course": "LA",
-      "day": "Monday",
-      "section": "CY-C",
+      "id": "FSC-THU-D414-1430-CYA",
+      "course": "IICT Lab",
+      "day": "Thursday",
+      "section": "CY-A",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C302-1300-SEE",
+      "course": "AP",
+      "day": "Friday",
+      "section": "SE-E",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-C604-0830-SEE",
+      "course": "AP",
+      "day": "Wednesday",
+      "section": "SE-E",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C302-1300-CSG",
+      "course": "Islamic",
+      "day": "Tuesday",
+      "section": "CS-G",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C409-1130-SED",
+      "course": "PF",
+      "day": "Tuesday",
+      "section": "SE-D",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D313-1500-DSB",
+      "course": "Seerah",
+      "day": "Tuesday",
+      "section": "DS-B",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
     }
   ],
-  "last_checked": "2026-10-13T17:49:28.594216Z"
+  "last_checked": "2026-10-14T06:05:33.540311Z"
 }
