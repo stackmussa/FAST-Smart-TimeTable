@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T06:16:58.953981Z",
+  "last_updated": "2026-10-15T11:41:00.376863Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -6157,12 +6157,12 @@
     {
       "id": "FSM-WED-A03-1300",
       "school": "School of Management",
-      "department": "BBA",
-      "degree": "BBA",
-      "batch": "2025",
+      "department": "FT",
+      "degree": "BS",
+      "batch": "2024",
       "semester": "Unknown",
-      "course_name": "MG2001 Organizational Behaviour",
-      "section": "BBA03D",
+      "course_name": "MG3012 Blockchain Technology for Business",
+      "section": "FT05D",
       "instructor": "Umber Shakeel",
       "room": "A-03",
       "day": "Wednesday",
@@ -6173,7 +6173,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BBA BBA (Batch 2025, Section BBA03D) has MG2001 Organizational Behaviour in Room A-03 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS FT (Batch 2024, Section FT05D) has MG3012 Blockchain Technology for Business in Room A-03 on Wednesday from 13:00 to 14:20."
     },
     {
       "id": "FSM-WED-A03-1425",
@@ -6976,12 +6976,12 @@
     {
       "id": "FSM-WED-A 203-1300",
       "school": "School of Management",
-      "department": "FT",
-      "degree": "BS",
-      "batch": "2024",
+      "department": "BBA",
+      "degree": "BBA",
+      "batch": "2025",
       "semester": "Unknown",
-      "course_name": "MG3012 Blockchain Technology for Business",
-      "section": "FT05D",
+      "course_name": "MG2001 Organizational Behaviour",
+      "section": "BBA03D",
       "instructor": null,
       "room": "A- 203",
       "day": "Wednesday",
@@ -6992,7 +6992,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS FT (Batch 2024, Section FT05D) has MG3012 Blockchain Technology for Business in Room A- 203 on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BBA BBA (Batch 2025, Section BBA03D) has MG2001 Organizational Behaviour in Room A- 203 on Wednesday from 13:00 to 14:20."
     },
     {
       "id": "FSM-WED-A 203-1425",
@@ -8530,12 +8530,12 @@
     {
       "id": "FSM-WED-KKIII-1425",
       "school": "School of Management",
-      "department": "BA",
+      "department": "FT",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "CL2016 Programming for Business -Lab",
-      "section": "Unknown",
+      "course_name": "FL1003 Introduction to Financial Accounting- Lab",
+      "section": "FT01D",
       "instructor": "Saood Sarwar",
       "room": "KK-III",
       "day": "Wednesday",
@@ -8546,17 +8546,17 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS BA (Batch 2025, Section Unknown) has CL2016 Programming for Business -Lab (Lab) in Room KK-III on Wednesday from 14:25 to 15:45."
+      "rag_summary": "BS FT (Batch 2026, Section FT01D) has FL1003 Introduction to Financial Accounting- Lab (Lab) in Room KK-III on Wednesday from 14:25 to 15:45."
     },
     {
       "id": "FSM-WED-KKIII-1550",
       "school": "School of Management",
-      "department": "BA",
+      "department": "FT",
       "degree": "BS",
-      "batch": "2025",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "CL2016 Programming for Business -Lab",
-      "section": "Unknown",
+      "course_name": "FL1003 Introduction to Financial Accounting- Lab",
+      "section": "FT01D",
       "instructor": "Saood Sarwar",
       "room": "KK-III",
       "day": "Wednesday",
@@ -8567,7 +8567,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS BA (Batch 2025, Section Unknown) has CL2016 Programming for Business -Lab (Lab) in Room KK-III on Wednesday from 15:50 to 17:10."
+      "rag_summary": "BS FT (Batch 2026, Section FT01D) has FL1003 Introduction to Financial Accounting- Lab (Lab) in Room KK-III on Wednesday from 15:50 to 17:10."
     },
     {
       "id": "FSM-WED-Khyber I-0830",
@@ -8656,12 +8656,12 @@
     {
       "id": "FSM-WED-Khyber I-1425",
       "school": "School of Management",
-      "department": "FT",
+      "department": "BA",
       "degree": "BS",
-      "batch": "2026",
+      "batch": "2025",
       "semester": "Unknown",
-      "course_name": "FL1003 Introduction to Financial Accounting- Lab",
-      "section": "FT01D",
+      "course_name": "CL2016 Programming for Business -Lab",
+      "section": "Unknown",
       "instructor": "Waseem Sikhani",
       "room": "Khyber I",
       "day": "Wednesday",
@@ -8672,17 +8672,17 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS FT (Batch 2026, Section FT01D) has FL1003 Introduction to Financial Accounting- Lab (Lab) in Room Khyber I on Wednesday from 14:25 to 15:45."
+      "rag_summary": "BS BA (Batch 2025, Section Unknown) has CL2016 Programming for Business -Lab (Lab) in Room Khyber I on Wednesday from 14:25 to 15:45."
     },
     {
       "id": "FSM-WED-Khyber I-1550",
       "school": "School of Management",
-      "department": "FT",
+      "department": "BA",
       "degree": "BS",
-      "batch": "2026",
+      "batch": "2025",
       "semester": "Unknown",
-      "course_name": "FL1003 Introduction to Financial Accounting- Lab",
-      "section": "FT01D",
+      "course_name": "CL2016 Programming for Business -Lab",
+      "section": "Unknown",
       "instructor": "Waseem Sikhani",
       "room": "Khyber I",
       "day": "Wednesday",
@@ -8693,7 +8693,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS FT (Batch 2026, Section FT01D) has FL1003 Introduction to Financial Accounting- Lab (Lab) in Room Khyber I on Wednesday from 15:50 to 17:10."
+      "rag_summary": "BS BA (Batch 2025, Section Unknown) has CL2016 Programming for Business -Lab (Lab) in Room Khyber I on Wednesday from 15:50 to 17:10."
     },
     {
       "id": "FSM-WED-Khyber II-0830",

@@ -1,5 +1,5 @@
 {
-  "last_updated": 1792045023,
+  "last_updated": 1792064465,
   "changed_schools": [
     "computing",
     "management",
@@ -12,45 +12,35 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-C302-1430-SEC",
-      "course": "PF Lab",
-      "day": "Thursday",
-      "section": "SE-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C310-0830-AIA",
-      "course": "TBW",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-Margala 1 (C209)-0830-CYA",
-      "course": "Vulnerability Assesment Lab Exam",
-      "day": "Thursday",
+      "id": "FSC-MON-Cyber (D514)-1430-CYA",
+      "course": "OS Lab",
+      "day": "Monday",
       "section": "CY-A",
       "field": "is_rescheduled",
-      "old": true,
-      "new": false,
+      "old": null,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-C604-0830-SEE",
-      "course": "AP",
-      "day": "Wednesday",
-      "section": "SE-E",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "id": "FSC-THU-D302-1555-CSB",
+      "course": "LA",
+      "day": "Thursday",
+      "section": "CS-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C407-1430-CSE",
+      "course": "TBW",
+      "day": "Monday",
+      "section": "CS-E",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-15T06:17:03.326189Z"
+  "last_checked": "2026-10-15T11:41:05.717936Z"
 }
