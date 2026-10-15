@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T11:40:57.929784Z",
+  "last_updated": "2026-10-15T15:44:40.980175Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -4598,28 +4598,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CY (Batch 2025, Section CY-C) has COAL Lab (Lab) in Room Cyber (D-514) on Monday from 11:30 to 14:20."
-    },
-    {
-      "id": "FSC-MON-Cyber (D514)-1430-CYA",
-      "school": "School of Computing",
-      "department": "CY",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "Unknown",
-      "course_name": "OS Lab",
-      "section": "CY-A",
-      "instructor": null,
-      "room": "Cyber (D-514)",
-      "day": "Monday",
-      "time_start": "14:30",
-      "time_end": "17:15",
-      "is_lab": true,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CY (Batch 2024, Section CY-A) has OS Lab (Lab) in Room Cyber (D-514) on Monday from 14:30 to 17:15."
     },
     {
       "id": "FSC-MON-CALL1 (A213)-1430-CSE1",

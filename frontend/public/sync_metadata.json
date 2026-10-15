@@ -1,46 +1,13 @@
 {
-  "last_updated": 1792064465,
+  "last_updated": 1792079087,
   "changed_schools": [
     "computing",
-    "management",
     "engineering"
   ],
   "changed_files": [
     "Computing",
-    "Management",
     "Engineering"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-MON-Cyber (D514)-1430-CYA",
-      "course": "OS Lab",
-      "day": "Monday",
-      "section": "CY-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D302-1555-CSB",
-      "course": "LA",
-      "day": "Thursday",
-      "section": "CS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-C407-1430-CSE",
-      "course": "TBW",
-      "day": "Monday",
-      "section": "CS-E",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-10-15T11:41:05.717936Z"
+  "status_changes": [],
+  "last_checked": "2026-10-15T15:44:47.468021Z"
 }
