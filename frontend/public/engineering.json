@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T11:44:49.221664Z",
+  "last_updated": "2026-10-15T06:17:03.311387Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -2562,27 +2562,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Communication & Networks in Room B-028 on Wednesday from 14:20 to 15:40."
-    },
-    {
-      "id": "FSE-WED-B028-1545",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "5th",
-      "course_name": "Numerical Computing",
-      "section": "CE-A",
-      "instructor": "Engr. Aleena Shafiq (Resch)  Oct 14, 2026",
-      "room": "B-028",
-      "day": "Wednesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Numerical Computing in Room B-028 on Wednesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-WED-B030-0830",
