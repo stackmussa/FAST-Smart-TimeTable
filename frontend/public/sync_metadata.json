@@ -1,34 +1,11 @@
 {
-  "last_updated": 1792143871,
+  "last_updated": 1792160449,
   "changed_schools": [
-    "computing",
     "management"
   ],
   "changed_files": [
-    "Computing",
     "Management"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-MON-D302-1430-AIB",
-      "course": "PF Lab",
-      "day": "Monday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-Mehran2 (A306)-1300-CYB2",
-      "course": "Func Eng Lab - 2",
-      "day": "Friday",
-      "section": "CY-B2",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-10-16T09:44:31.862289Z"
+  "status_changes": [],
+  "last_checked": "2026-10-16T14:20:49.927363Z"
 }
