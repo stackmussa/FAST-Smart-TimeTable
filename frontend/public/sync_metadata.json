@@ -1,13 +1,32 @@
 {
-  "last_updated": 1792079087,
+  "last_updated": 1792127331,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
-  "status_changes": [],
-  "last_checked": "2026-10-15T15:44:47.468021Z"
+  "status_changes": [
+    {
+      "id": "FSC-MON-D413-1430-CYC",
+      "course": "LA",
+      "day": "Monday",
+      "section": "CY-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-CALL3 (A308)-1300-CYB1",
+      "course": "Func Eng Lab - 1",
+      "day": "Friday",
+      "section": "CY-B1",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    }
+  ],
+  "last_checked": "2026-10-16T05:08:51.839118Z"
 }

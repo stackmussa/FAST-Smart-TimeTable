@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T15:44:40.980175Z",
+  "last_updated": "2026-10-16T05:08:43.700713Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -3566,6 +3566,28 @@
       "rag_summary": "BS CS (Batch 2023, Section CS-Robo) has Embed Robo in Room D-413 on Monday from 11:30 to 12:50."
     },
     {
+      "id": "FSC-MON-D413-1430-CYC",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "LA",
+      "section": "CY-C",
+      "instructor": null,
+      "room": "D-413",
+      "day": "Monday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CY (Batch 2025, Section CY-C) has LA in Room D-413 on Monday from 14:30 to 15:50."
+    },
+    {
       "id": "FSC-MON-D414-1130-CYA",
       "school": "School of Computing",
       "department": "CY",
@@ -3872,28 +3894,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CY (Batch 2023, Section CY-B) has Security Ops in Room D-503 on Monday from 11:30 to 12:50."
-    },
-    {
-      "id": "FSC-MON-D503-1430-CYC",
-      "school": "School of Computing",
-      "department": "CY",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "Unknown",
-      "course_name": "LA",
-      "section": "CY-C",
-      "instructor": null,
-      "room": "D-503",
-      "day": "Monday",
-      "time_start": "14:30",
-      "time_end": "15:50",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CY (Batch 2025, Section CY-C) has LA in Room D-503 on Monday from 14:30 to 15:50."
     },
     {
       "id": "FSC-MON-D504-1000-CYB",
@@ -22700,9 +22700,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS CY (Batch 2026, Section CY-B1) has Func Eng Lab - 1 in Room CALL-3 (A-308) on Friday from 13:00 to 14:45."
     },
     {
