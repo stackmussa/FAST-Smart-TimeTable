@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-16T09:44:25.254027Z",
+  "last_updated": "2026-10-18T14:04:20.257448Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -154,6 +154,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2026, Section CS-C) has Calculus in Room C-303 on Monday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSC-MON-C303-1000-CSE",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "PF",
+      "section": "CS-E",
+      "instructor": null,
+      "room": "C-303",
+      "day": "Monday",
+      "time_start": "10:00",
+      "time_end": "11:20",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-E) has PF in Room C-303 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSC-MON-C303-1130-CSC",

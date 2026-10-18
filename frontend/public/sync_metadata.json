@@ -1,11 +1,22 @@
 {
-  "last_updated": 1792160449,
+  "last_updated": 1792332267,
   "changed_schools": [
-    "management"
+    "computing"
   ],
   "changed_files": [
-    "Management"
+    "Computing"
   ],
-  "status_changes": [],
-  "last_checked": "2026-10-16T14:20:49.927363Z"
+  "status_changes": [
+    {
+      "id": "FSC-MON-C303-1000-CSE",
+      "course": "PF",
+      "day": "Monday",
+      "section": "CS-E",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    }
+  ],
+  "last_checked": "2026-10-18T14:04:27.640180Z"
 }
