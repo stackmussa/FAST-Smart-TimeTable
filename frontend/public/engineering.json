@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T06:58:51.594261Z",
+  "last_updated": "2026-10-19T14:28:54.415775Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -2585,6 +2585,27 @@
       "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Communication & Networks in Room B-028 on Wednesday from 14:20 to 15:40."
     },
     {
+      "id": "FSE-WED-B028-1545",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "7th",
+      "course_name": "Applied Thermodynamics   (Repeat)",
+      "section": "EE-A",
+      "instructor": "Mr. Albara Shalaby (Resch) Oct 21, 2026",
+      "room": "B-028",
+      "day": "Wednesday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Applied Thermodynamics   (Repeat) in Room B-028 on Wednesday from 15:45 to 17:05."
+    },
+    {
       "id": "FSE-WED-B030-0830",
       "school": "School of Engineering",
       "department": "EE",
@@ -5166,6 +5187,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Resrved for IC Design in Room B-127 on Friday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-FRI-B129-0830",
+      "school": "School of Engineering",
+      "department": "CE",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "3rd",
+      "course_name": "Electronics Devices Circuits",
+      "section": "CE-A",
+      "instructor": "Engr. Maria Nasir (Resch) Oct 23, 2026",
+      "room": "B-129",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Electronics Devices Circuits in Room B-129 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B129-0955",
