@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T14:28:47.079151Z",
+  "last_updated": "2026-10-20T07:27:22.653421Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -154,28 +154,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2026, Section CS-C) has Calculus in Room C-303 on Monday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSC-MON-C303-1000-CSE",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "PF",
-      "section": "CS-E",
-      "instructor": null,
-      "room": "C-303",
-      "day": "Monday",
-      "time_start": "10:00",
-      "time_end": "11:20",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-E) has PF in Room C-303 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSC-MON-C303-1130-CSC",
@@ -590,10 +568,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS CS (Batch 2025, Section CS-C) has SDA in Room C-309 on Monday from 08:30 to 09:50."
+      "status": "Scheduled",
+      "rag_summary": "BS CS (Batch 2025, Section CS-C) has SDA in Room C-309 on Monday from 08:30 to 09:50."
     },
     {
       "id": "FSC-MON-C309-1000-CSE",
@@ -832,10 +810,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS CS (Batch 2025, Section CS-B) has LA in Room C-311 on Monday from 11:30 to 12:50."
+      "status": "Scheduled",
+      "rag_summary": "BS CS (Batch 2025, Section CS-B) has LA in Room C-311 on Monday from 11:30 to 12:50."
     },
     {
       "id": "FSC-MON-C311-1300-CSG",
@@ -964,10 +942,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS CS (Batch 2024, Section CS-A) has Comp Arch in Room C-402 on Monday from 08:30 to 09:50."
+      "status": "Scheduled",
+      "rag_summary": "BS CS (Batch 2024, Section CS-A) has Comp Arch in Room C-402 on Monday from 08:30 to 09:50."
     },
     {
       "id": "FSC-MON-C402-1130-CSA",
@@ -1074,10 +1052,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS CS (Batch 2024, Section CS-B) has Comp Arch in Room C-403 on Monday from 10:00 to 11:20."
+      "status": "Scheduled",
+      "rag_summary": "BS CS (Batch 2024, Section CS-B) has Comp Arch in Room C-403 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSC-MON-C403-1300-CSB",
@@ -1388,28 +1366,6 @@
       "rag_summary": "BS CS (Batch 2024, Section CS-E) has TBW in Room C-407 on Monday from 13:00 to 14:20."
     },
     {
-      "id": "FSC-MON-C407-1430-CSE",
-      "school": "School of Computing",
-      "department": "CS",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "Unknown",
-      "course_name": "TBW",
-      "section": "CS-E",
-      "instructor": null,
-      "room": "C-407",
-      "day": "Monday",
-      "time_start": "14:30",
-      "time_end": "15:50",
-      "is_lab": false,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS CS (Batch 2024, Section CS-E) has TBW in Room C-407 on Monday from 14:30 to 15:50."
-    },
-    {
       "id": "FSC-MON-C408-0830-SED",
       "school": "School of Computing",
       "department": "SE",
@@ -1602,10 +1558,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-B) has AP in Room C-601 on Monday from 08:30 to 09:50."
+      "status": "Scheduled",
+      "rag_summary": "BS SE (Batch 2026, Section SE-B) has AP in Room C-601 on Monday from 08:30 to 09:50."
     },
     {
       "id": "FSC-MON-C601-1000-SEA",
@@ -1624,10 +1580,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-A) has AP in Room C-601 on Monday from 10:00 to 11:20."
+      "status": "Scheduled",
+      "rag_summary": "BS SE (Batch 2026, Section SE-A) has AP in Room C-601 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSC-MON-C601-1130-SEC",
@@ -2288,28 +2244,6 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS SE (Batch 2022, Section SE-A) has PPIT [REPEAT COURSE] in Room D-302 on Monday from 13:00 to 14:20."
-    },
-    {
-      "id": "FSC-MON-D302-1430-AIB",
-      "school": "School of Computing",
-      "department": "AI",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "PF Lab",
-      "section": "AI-B",
-      "instructor": null,
-      "room": "D-302",
-      "day": "Monday",
-      "time_start": "14:30",
-      "time_end": "17:15",
-      "is_lab": true,
-      "is_rescheduled": true,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "ResSch",
-      "rag_summary": "[RESCHEDULED] BS AI (Batch 2026, Section AI-B) has PF Lab (Lab) in Room D-302 on Monday from 14:30 to 17:15."
     },
     {
       "id": "FSC-MON-D303-0830-AIA",
@@ -3054,10 +2988,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS AI (Batch 2023, Section AI-A) has Edge Comp in Room D-401 on Monday from 13:00 to 14:20."
+      "status": "Scheduled",
+      "rag_summary": "BS AI (Batch 2023, Section AI-A) has Edge Comp in Room D-401 on Monday from 13:00 to 14:20."
     },
     {
       "id": "FSC-MON-D401-1430-AIA",
@@ -3098,10 +3032,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": true,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS DS (Batch 2022, Section DS-A) has Edge Comp [REPEAT COURSE] in Room D-402 on Monday from 11:30 to 12:50."
+      "status": "Scheduled",
+      "rag_summary": "BS DS (Batch 2022, Section DS-A) has Edge Comp [REPEAT COURSE] in Room D-402 on Monday from 11:30 to 12:50."
     },
     {
       "id": "FSC-MON-D402-1300-DSC",
@@ -3164,10 +3098,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS DS (Batch 2023, Section DS-B) has Fund of CV in Room D-403 on Monday from 10:00 to 11:20."
+      "status": "Scheduled",
+      "rag_summary": "BS DS (Batch 2023, Section DS-B) has Fund of CV in Room D-403 on Monday from 10:00 to 11:20."
     },
     {
       "id": "FSC-MON-D403-1130-DSA",
@@ -3186,10 +3120,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS DS (Batch 2023, Section DS-A) has Fund of CV in Room D-403 on Monday from 11:30 to 12:50."
+      "status": "Scheduled",
+      "rag_summary": "BS DS (Batch 2023, Section DS-A) has Fund of CV in Room D-403 on Monday from 11:30 to 12:50."
     },
     {
       "id": "FSC-MON-D403-1300-DSA",
@@ -3588,6 +3522,28 @@
       "rag_summary": "BS CS (Batch 2023, Section CS-A) has Deep Learn in Room D-412 on Monday from 11:30 to 12:50."
     },
     {
+      "id": "FSC-MON-D413-0830-CYB2",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 2",
+      "section": "CY-B2",
+      "instructor": null,
+      "room": "D-413",
+      "day": "Monday",
+      "time_start": "08:30",
+      "time_end": "10:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS CY (Batch 2026, Section CY-B2) has Func Eng Lab - 2 in Room D-413 on Monday from 08:30 to 10:15."
+    },
+    {
       "id": "FSC-MON-D413-1130-CSRobo",
       "school": "School of Computing",
       "department": "CS",
@@ -3608,6 +3564,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2023, Section CS-Robo) has Embed Robo in Room D-413 on Monday from 11:30 to 12:50."
+    },
+    {
+      "id": "FSC-MON-D414-0830-CYB1",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "CY-B1",
+      "instructor": null,
+      "room": "D-414",
+      "day": "Monday",
+      "time_start": "08:30",
+      "time_end": "10:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS CY (Batch 2026, Section CY-B1) has Func Eng Lab - 1 in Room D-414 on Monday from 08:30 to 10:15."
     },
     {
       "id": "FSC-MON-D414-1130-CYA",
@@ -4000,10 +3978,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-C) has IICT (Lab) in Room IT Lab 1 (D-210) on Monday from 08:30 to 11:20."
+      "status": "Scheduled",
+      "rag_summary": "BS SE (Batch 2026, Section SE-C) has IICT (Lab) in Room IT Lab 1 (D-210) on Monday from 08:30 to 11:20."
     },
     {
       "id": "FSC-MON-IT Lab 1 (D210)-1130-CSG",
@@ -4110,10 +4088,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS SE (Batch 2026, Section SE-D) has IICT (Lab) in Room IT Lab 2 (D-211) on Monday from 14:30 to 17:15."
+      "status": "Scheduled",
+      "rag_summary": "BS SE (Batch 2026, Section SE-D) has IICT (Lab) in Room IT Lab 2 (D-211) on Monday from 14:30 to 17:15."
     },
     {
       "id": "FSC-MON-IT Lab 3 (D213)-0830-AIC",
@@ -4440,10 +4418,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "status": "Cancelled",
-      "rag_summary": "[CANCELLED] BS SE (Batch 2025, Section SE-C) has Data St Lab (Lab) in Room Margala 4 (C-212 on Monday from 14:30 to 17:15."
+      "status": "Scheduled",
+      "rag_summary": "BS SE (Batch 2025, Section SE-C) has Data St Lab (Lab) in Room Margala 4 (C-212 on Monday from 14:30 to 17:15."
     },
     {
       "id": "FSC-MON-Rawal 1 (C509)-0830-CSE",
@@ -6156,10 +6134,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2024, Section CS-D) has Algo in Room C-405 on Tuesday from 10:00 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CS (Batch 2024, Section CS-D) has Algo in Room C-405 on Tuesday from 10:00 to 11:20."
     },
     {
       "id": "FSC-TUE-C405-1130-CSC",
@@ -13598,6 +13576,28 @@
       "rag_summary": "BS DS (Batch 2026, Section DS-C) has Func Eng in Room D-313 on Wednesday from 13:00 to 14:45."
     },
     {
+      "id": "FSC-WED-D313-1430-DSC1",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "DS-C1",
+      "instructor": null,
+      "room": "D-313",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS DS (Batch 2026, Section DS-C1) has Func Eng Lab - 1 in Room D-313 on Wednesday from 14:30 to 16:15."
+    },
+    {
       "id": "FSC-WED-D314-0830-DSA",
       "school": "School of Computing",
       "department": "DS",
@@ -15468,48 +15468,26 @@
       "rag_summary": "BS DS (Batch 2025, Section DS-B) has Intro to DS Lab (Lab) in Room IT Lab 4-GPU (D-203) on Wednesday from 11:30 to 14:20."
     },
     {
-      "id": "FSC-WED-IT Lab 4GPU (D203)-1430-AIA",
+      "id": "FSC-WED-IT Lab 4GPU (D203)-1430-SEE",
       "school": "School of Computing",
-      "department": "AI",
+      "department": "SE",
       "degree": "BS",
-      "batch": "2023",
+      "batch": "2026",
       "semester": "Unknown",
-      "course_name": "Project",
-      "section": "AI-A",
+      "course_name": "PF Lab",
+      "section": "SE-E",
       "instructor": null,
       "room": "IT Lab 4-GPU (D-203)",
       "day": "Wednesday",
       "time_start": "14:30",
       "time_end": "17:15",
       "is_lab": true,
-      "is_rescheduled": false,
+      "is_rescheduled": true,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2023, Section AI-A) has Project (Lab) in Room IT Lab 4-GPU (D-203) on Wednesday from 14:30 to 17:15."
-    },
-    {
-      "id": "FSC-WED-IT Lab 4GPU (D203)-1430-DSA",
-      "school": "School of Computing",
-      "department": "DS",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "Unknown",
-      "course_name": "Project",
-      "section": "DS-A",
-      "instructor": null,
-      "room": "IT Lab 4-GPU (D-203)",
-      "day": "Wednesday",
-      "time_start": "14:30",
-      "time_end": "17:15",
-      "is_lab": true,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS DS (Batch 2023, Section DS-A) has Project (Lab) in Room IT Lab 4-GPU (D-203) on Wednesday from 14:30 to 17:15."
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-E) has PF Lab (Lab) in Room IT Lab 4-GPU (D-203) on Wednesday from 14:30 to 17:15."
     },
     {
       "id": "FSC-WED-Margala 1 (C209)-0830-CSH",
@@ -19208,6 +19186,28 @@
       "rag_summary": "BS DS (Batch 2026, Section DS-A) has Islamic in Room D-312 on Thursday from 13:00 to 14:45."
     },
     {
+      "id": "FSC-THU-D312-1430-DSA2",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 2",
+      "section": "DS-A2",
+      "instructor": null,
+      "room": "D-312",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS DS (Batch 2026, Section DS-A2) has Func Eng Lab - 2 in Room D-312 on Thursday from 14:30 to 16:15."
+    },
+    {
       "id": "FSC-THU-D313-0830-DSA",
       "school": "School of Computing",
       "department": "DS",
@@ -20394,6 +20394,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2023, Section CS-G) has App HCI in Room D-413 on Thursday from 10:00 to 11:20."
+    },
+    {
+      "id": "FSC-THU-D413-1430-SEE1",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "SE-E1",
+      "instructor": null,
+      "room": "D-413",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS SE (Batch 2026, Section SE-E1) has Func Eng Lab - 1 in Room D-413 on Thursday from 14:30 to 16:15."
     },
     {
       "id": "FSC-THU-D414-0830-CYA",
