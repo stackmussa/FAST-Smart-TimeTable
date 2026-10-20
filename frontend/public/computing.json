@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T07:27:22.653421Z",
+  "last_updated": "2026-10-20T12:52:45.570622Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -7630,10 +7630,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": true,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2024, Section AI-A) has COAL [REPEAT COURSE] in Room D-306 on Tuesday from 15:55 to 17:15."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2024, Section AI-A) has COAL [REPEAT COURSE] in Room D-306 on Tuesday from 15:55 to 17:15."
     },
     {
       "id": "FSC-TUE-D306-1555-DSA",
@@ -7652,10 +7652,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": true,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS DS (Batch 2024, Section DS-A) has COAL [REPEAT COURSE] in Room D-306 on Tuesday from 15:55 to 17:15."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS DS (Batch 2024, Section DS-A) has COAL [REPEAT COURSE] in Room D-306 on Tuesday from 15:55 to 17:15."
     },
     {
       "id": "FSC-TUE-D311-0830-DSA",
@@ -10936,6 +10936,28 @@
       "rag_summary": "BS CS (Batch 2026, Section CS-G) has Seerah in Room C-305 on Wednesday from 14:50 to 15:45."
     },
     {
+      "id": "FSC-WED-C305-1555-CSH",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Calculus",
+      "section": "CS-H",
+      "instructor": null,
+      "room": "C-305",
+      "day": "Wednesday",
+      "time_start": "15:55",
+      "time_end": "17:15",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2026, Section CS-H) has Calculus in Room C-305 on Wednesday from 15:55 to 17:15."
+    },
+    {
       "id": "FSC-WED-C307-0830-CSA",
       "school": "School of Computing",
       "department": "CS",
@@ -11678,10 +11700,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2024, Section CS-A) has Comp Net in Room C-403 on Wednesday from 13:00 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CS (Batch 2024, Section CS-A) has Comp Net in Room C-403 on Wednesday from 13:00 to 14:20."
     },
     {
       "id": "FSC-WED-C403-1430-CSA",
@@ -11854,10 +11876,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2024, Section CS-B) has Comp Net in Room C-405 on Wednesday from 14:30 to 15:50."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CS (Batch 2024, Section CS-B) has Comp Net in Room C-405 on Wednesday from 14:30 to 15:50."
     },
     {
       "id": "FSC-WED-C406-0830-CSD",
@@ -12872,6 +12894,28 @@
       "rag_summary": "BS SE (Batch 2022, Section SE-A) has PPIT [REPEAT COURSE] in Room C-609 on Wednesday from 13:00 to 14:20."
     },
     {
+      "id": "FSC-WED-D301-0830-AIA",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Calculus",
+      "section": "AI-A",
+      "instructor": null,
+      "room": "D-301",
+      "day": "Wednesday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS AI (Batch 2026, Section AI-A) has Calculus in Room D-301 on Wednesday from 08:30 to 09:50."
+    },
+    {
       "id": "FSC-WED-D301-1000-AIA",
       "school": "School of Computing",
       "department": "AI",
@@ -13224,6 +13268,28 @@
       "rag_summary": "BS AI (Batch 2025, Section AI-C) has Pak Studies in Room D-305 on Wednesday from 11:15 to 13:00."
     },
     {
+      "id": "FSC-WED-D305-1300-CSE",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "LA",
+      "section": "CS-E",
+      "instructor": null,
+      "room": "D-305",
+      "day": "Wednesday",
+      "time_start": "13:00",
+      "time_end": "14:20",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-E) has LA in Room D-305 on Wednesday from 13:00 to 14:20."
+    },
+    {
       "id": "FSC-WED-D305-1430-AIB",
       "school": "School of Computing",
       "department": "AI",
@@ -13508,6 +13574,50 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS AI (Batch 2024, Section AI-C) has TBW in Room D-312 on Wednesday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSC-WED-D312-1430-AIA",
+      "school": "School of Computing",
+      "department": "AI",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "COAL",
+      "section": "AI-A",
+      "instructor": null,
+      "room": "D-312",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": true,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS AI (Batch 2024, Section AI-A) has COAL [REPEAT COURSE] in Room D-312 on Wednesday from 14:30 to 15:50."
+    },
+    {
+      "id": "FSC-WED-D312-1430-DSA",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "COAL",
+      "section": "DS-A",
+      "instructor": null,
+      "room": "D-312",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": true,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS DS (Batch 2024, Section DS-A) has COAL [REPEAT COURSE] in Room D-312 on Wednesday from 14:30 to 15:50."
     },
     {
       "id": "FSC-WED-D313-0830-DSC",
@@ -14168,6 +14278,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2023, Section CS-A) has SMD in Room D-405 on Wednesday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSC-WED-D405-1430-CSA",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "Unknown",
+      "course_name": "Agentic AI",
+      "section": "CS-A",
+      "instructor": null,
+      "room": "D-405",
+      "day": "Wednesday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": true,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2023, Section CS-A) has Agentic AI in Room D-405 on Wednesday from 14:30 to 15:50. This is an elective course."
     },
     {
       "id": "FSC-WED-D406-0830-CSC",
@@ -14938,6 +15070,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CY (Batch 2025, Section CY-B) has Cy Sec in Room D-502 on Wednesday from 14:30 to 15:50."
+    },
+    {
+      "id": "FSC-WED-D502-1555-CYB",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "Pak Studies",
+      "section": "CY-B",
+      "instructor": null,
+      "room": "D-502",
+      "day": "Wednesday",
+      "time_start": "15:55",
+      "time_end": "17:15",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CY (Batch 2025, Section CY-B) has Pak Studies in Room D-502 on Wednesday from 15:55 to 17:15."
     },
     {
       "id": "FSC-WED-D503-0830-CYC",
