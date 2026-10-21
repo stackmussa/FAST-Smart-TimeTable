@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T12:52:53.407551Z",
+  "last_updated": "2026-10-21T07:23:19.022520Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -2753,6 +2753,27 @@
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-019 on Wednesday from 09:55 to 11:15."
     },
     {
+      "id": "FSE-WED-B019-1125",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Reserved",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-019",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Reserved in Room B-019 on Wednesday from 11:25 to 12:45."
+    },
+    {
       "id": "FSE-WED-B019-1250",
       "school": "School of Engineering",
       "department": "EE",
@@ -3832,7 +3853,7 @@
       "semester": "Unknown",
       "course_name": "Applied Cal  EE",
       "section": "B",
-      "instructor": "12: 20        22/10/26",
+      "instructor": "12: 45        22/10/26",
       "room": "B-028",
       "day": "Thursday",
       "time_start": "12:50",
@@ -3916,7 +3937,7 @@
       "semester": "Unknown",
       "course_name": "Applied Cal  EE",
       "section": "C",
-      "instructor": "12: 20        22/10/26",
+      "instructor": "12: 45        22/10/26",
       "room": "B-030",
       "day": "Thursday",
       "time_start": "12:50",
@@ -5636,26 +5657,6 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engr. in Room B-027 on Wednesday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-WED-B019-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FSE Faculty Meeting",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-019",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has FSE Faculty Meeting in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-Room-1420",

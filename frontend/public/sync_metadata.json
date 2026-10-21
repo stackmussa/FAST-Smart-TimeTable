@@ -1,48 +1,50 @@
 {
-  "last_updated": 1792500773,
+  "last_updated": 1792567399,
   "changed_schools": [
     "computing",
+    "management",
     "engineering"
   ],
   "changed_files": [
     "Computing",
+    "Management",
     "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-WED-D502-1555-CYB",
-      "course": "Pak Studies",
-      "day": "Wednesday",
-      "section": "CY-B",
+      "id": "FSC-FRI-C307-1000-SEB",
+      "course": "AP",
+      "day": "Friday",
+      "section": "SE-B",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D312-1430-AIA",
-      "course": "COAL",
-      "day": "Wednesday",
-      "section": "AI-A",
+      "id": "FSC-MON-C307-1555-CSA",
+      "course": "SDA",
+      "day": "Monday",
+      "section": "CS-A",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D312-1430-AIA",
-      "course": "COAL",
-      "day": "Wednesday",
-      "section": "AI-A",
-      "field": "is_repeat",
+      "id": "FSC-FRI-C302-1430-SEE",
+      "course": "AP",
+      "day": "Friday",
+      "section": "SE-E",
+      "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D305-1300-CSE",
-      "course": "LA",
-      "day": "Wednesday",
+      "id": "FSC-THU-C304-1615-CSE",
+      "course": "Ideology of Pak",
+      "day": "Thursday",
       "section": "CS-E",
       "field": "is_rescheduled",
       "old": null,
@@ -50,92 +52,72 @@
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D312-1430-DSA",
-      "course": "COAL",
-      "day": "Wednesday",
-      "section": "DS-A",
+      "id": "FSC-TUE-D402-1430-SEE1",
+      "course": "Func Eng Lab - 1",
+      "day": "Tuesday",
+      "section": "SE-E1",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D312-1430-DSA",
-      "course": "COAL",
-      "day": "Wednesday",
-      "section": "DS-A",
+      "id": "FSC-MON-C307-1430-CSC",
+      "course": "SDA",
+      "day": "Monday",
+      "section": "CS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C307-1130-SEA",
+      "course": "AP",
+      "day": "Friday",
+      "section": "SE-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D413-0830-CYB",
+      "course": "Pak Studies",
+      "day": "Thursday",
+      "section": "CY-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D305-1300-CS3Z",
+      "course": "Calculus",
+      "day": "Tuesday",
+      "section": "CS-3Z",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D305-1300-CS3Z",
+      "course": "Calculus",
+      "day": "Tuesday",
+      "section": "CS-3Z",
       "field": "is_repeat",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-C305-1555-CSH",
-      "course": "Calculus",
-      "day": "Wednesday",
-      "section": "CS-H",
+      "id": "FSC-THU-C409-1130-SEB",
+      "course": "AP",
+      "day": "Thursday",
+      "section": "SE-B",
       "field": "is_rescheduled",
       "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D405-1430-CSA",
-      "course": "Agentic AI",
-      "day": "Wednesday",
-      "section": "CS-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D405-1430-CSA",
-      "course": "Agentic AI",
-      "day": "Wednesday",
-      "section": "CS-A",
-      "field": "is_elective",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D301-0830-AIA",
-      "course": "Calculus",
-      "day": "Wednesday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C403-1300-CSA",
-      "course": "Comp Net",
-      "day": "Wednesday",
-      "section": "CS-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D306-1555-DSA",
-      "course": "COAL",
-      "day": "Tuesday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C405-1430-CSB",
-      "course": "Comp Net",
-      "day": "Wednesday",
-      "section": "CS-B",
-      "field": "is_cancelled",
-      "old": false,
       "new": true,
       "school": "computing"
     },
@@ -145,10 +127,80 @@
       "day": "Tuesday",
       "section": "AI-A",
       "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-Margala 1 (C209)-1430-CSB",
+      "course": "Data St Lab",
+      "day": "Tuesday",
+      "section": "CS-B",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C405-1000-CSD",
+      "course": "Algo",
+      "day": "Tuesday",
+      "section": "CS-D",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D306-1555-DSA",
+      "course": "COAL",
+      "day": "Tuesday",
+      "section": "DS-A",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C301-0830-CSF",
+      "course": "PF",
+      "day": "Tuesday",
+      "section": "CS-F",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSM-WED-A 203-1425",
+      "course": "SS1007 Islamic Studies/Ethics (02:25-04:15)",
+      "day": "Wednesday",
+      "section": "Unknown",
+      "field": "is_cancelled",
       "old": false,
       "new": true,
-      "school": "computing"
+      "school": "management"
+    },
+    {
+      "id": "FSM-TUE-A210-1425",
+      "course": "SS1007 Islamic Studies/Ethics (02:25-04:15)",
+      "day": "Tuesday",
+      "section": "Unknown",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "management"
+    },
+    {
+      "id": "FSE-WED-B019-1125",
+      "course": "Reserved",
+      "day": "Wednesday",
+      "section": "Unknown",
+      "field": "is_elective",
+      "old": null,
+      "new": false,
+      "school": "engineering"
     }
   ],
-  "last_checked": "2026-10-20T12:52:53.415688Z"
+  "last_checked": "2026-10-21T07:23:19.030830Z"
 }

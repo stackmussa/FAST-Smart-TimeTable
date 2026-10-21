@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T07:27:24.515318Z",
+  "last_updated": "2026-10-21T07:23:13.687610Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -4260,9 +4260,9 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "[CANCELLED] BBA BBA (Batch 2026, Section Unknown) has SS1007 Islamic Studies/Ethics (02:25-04:15) in Room A-210 on Tuesday from 14:25 to 15:45."
+      "rag_summary": "BBA BBA (Batch 2026, Section Unknown) has SS1007 Islamic Studies/Ethics (02:25-04:15) in Room A-210 on Tuesday from 14:25 to 15:45."
     },
     {
       "id": "FSM-TUE-A211-0830",
@@ -6990,9 +6990,9 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "rag_summary": "BS FT (Batch 2026, Section Unknown) has SS1007 Islamic Studies/Ethics (02:25-04:15) in Room A- 203 on Wednesday from 14:25 to 15:45."
+      "rag_summary": "[CANCELLED] BS FT (Batch 2026, Section Unknown) has SS1007 Islamic Studies/Ethics (02:25-04:15) in Room A- 203 on Wednesday from 14:25 to 15:45."
     },
     {
       "id": "FSM-WED-A210-0830",
@@ -8828,19 +8828,19 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "CL3003 Management Information System Lab",
+      "course_name": "BSBA05A",
       "section": "AF05C",
       "instructor": "Fatima Azfar",
       "room": "Khyber III",
       "day": "Wednesday",
       "time_start": "13:00",
       "time_end": "14:20",
-      "is_lab": true,
+      "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS AF (Batch 2024, Section AF05C) has CL3003 Management Information System Lab (Lab) in Room Khyber III on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS AF (Batch 2024, Section AF05C) has BSBA05A in Room Khyber III on Wednesday from 13:00 to 14:20."
     },
     {
       "id": "FSM-WED-Khyber III-1425",
@@ -9345,27 +9345,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BBA BBA (Batch 2025, Section BBA03A) has MG2009 Data Analysis for Business II in Room A-03 on Thursday from 14:25 to 15:45."
-    },
-    {
-      "id": "FSM-THU-A03-1550",
-      "school": "School of Management",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "SS 1018U-Holy Quran (04:20-05:10)",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "A-03",
-      "day": "Thursday",
-      "time_start": "15:50",
-      "time_end": "17:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has SS 1018U-Holy Quran (04:20-05:10) in Room A-03 on Thursday from 15:50 to 17:10."
     },
     {
       "id": "FSM-THU-A04-0830",
@@ -10563,6 +10542,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BBA BBA (Batch 2026, Section BBA01A) has MG1001 Fundamental of Management in Room A-302 on Thursday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSM-THU-A302-1550",
+      "school": "School of Management",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "SS 1018U-Holy Quran (04:20-05:10)",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "A-302",
+      "day": "Thursday",
+      "time_start": "15:50",
+      "time_end": "17:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has SS 1018U-Holy Quran (04:20-05:10) in Room A-302 on Thursday from 15:50 to 17:10."
     },
     {
       "id": "FSM-THU-A303-0830",
