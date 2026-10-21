@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T07:23:13.687610Z",
+  "last_updated": "2026-10-21T13:03:57.882357Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -8828,19 +8828,19 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "BSBA05A",
+      "course_name": "CL3003 Management Information System Lab",
       "section": "AF05C",
       "instructor": "Fatima Azfar",
       "room": "Khyber III",
       "day": "Wednesday",
       "time_start": "13:00",
       "time_end": "14:20",
-      "is_lab": false,
+      "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS AF (Batch 2024, Section AF05C) has BSBA05A in Room Khyber III on Wednesday from 13:00 to 14:20."
+      "rag_summary": "BS AF (Batch 2024, Section AF05C) has CL3003 Management Information System Lab (Lab) in Room Khyber III on Wednesday from 13:00 to 14:20."
     },
     {
       "id": "FSM-WED-Khyber III-1425",

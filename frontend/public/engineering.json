@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T07:23:19.022520Z",
+  "last_updated": "2026-10-21T13:04:02.940615Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -2585,27 +2585,6 @@
       "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Communication & Networks in Room B-028 on Wednesday from 14:20 to 15:40."
     },
     {
-      "id": "FSE-WED-B028-1545",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "7th",
-      "course_name": "Applied Thermodynamics   (Repeat)",
-      "section": "EE-A",
-      "instructor": "Mr. Albara Shalaby (Resch) Oct 21, 2026",
-      "room": "B-028",
-      "day": "Wednesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Applied Thermodynamics   (Repeat) in Room B-028 on Wednesday from 15:45 to 17:05."
-    },
-    {
       "id": "FSE-WED-B030-0830",
       "school": "School of Engineering",
       "department": "EE",
@@ -2751,27 +2730,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-019 on Wednesday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-WED-B019-1125",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Reserved",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-019",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Reserved in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B019-1250",
@@ -3045,27 +3003,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has English Language Skills in Room B-119 on Wednesday from 14:20 to 15:40."
-    },
-    {
-      "id": "FSE-WED-B119-1545",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Reserved Dr Awais.",
-      "section": "Unknown",
-      "instructor": null,
-      "room": "B-119",
-      "day": "Wednesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Reserved Dr Awais. in Room B-119 on Wednesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-WED-B127-0830",
@@ -3780,27 +3717,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2025, Section CE-C) has Electronics Devices Circuits Lab (Lab) in Room Elect on Wednesday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSE-WED-Elect-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "7th",
-      "course_name": "Embedded Systems",
-      "section": "EE-A",
-      "instructor": "Reserved",
-      "room": "Elect",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Embedded Systems in Room Elect on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-Circuit \nLab-0830",
@@ -5657,6 +5573,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engr. in Room B-027 on Wednesday from 12:50 to 14:10."
+    },
+    {
+      "id": "FSE-WED-B019-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "FSE Faculty Meeting",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-019",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has FSE Faculty Meeting in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-Room-1420",
