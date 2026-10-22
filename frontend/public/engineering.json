@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T13:04:02.940615Z",
+  "last_updated": "2026-10-22T04:58:10.017917Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -2839,13 +2839,13 @@
     {
       "id": "FSE-WED-B020-1125",
       "school": "School of Engineering",
-      "department": "CE",
+      "department": "EE",
       "degree": "BS",
       "batch": "2024",
       "semester": "5th",
-      "course_name": "Digital Signal Processing",
-      "section": "CE-A",
-      "instructor": "Engr. Shehzad Ahmed",
+      "course_name": "Electromagnetic Theory",
+      "section": "EE-B",
+      "instructor": "Dr. Irum Saba  (Resch)      Oct 28, 2026",
       "room": "B-020",
       "day": "Wednesday",
       "time_start": "11:25",
@@ -2855,7 +2855,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Digital Signal Processing in Room B-020 on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Electromagnetic Theory in Room B-020 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B020-1250",
