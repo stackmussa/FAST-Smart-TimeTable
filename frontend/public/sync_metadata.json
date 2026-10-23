@@ -1,34 +1,72 @@
 {
-  "last_updated": 1792751548,
+  "last_updated": 1792768859,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-MON-D305-1555-AIC",
-      "course": "Knowl Rep",
-      "day": "Monday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
+      "id": "FSC-SAT-Rawal 1 (C509)-1130-AIB1",
+      "course": "Func Eng Lab - 1",
+      "day": "Saturday",
+      "section": "AI-B1",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-MON-D305-1430-AIB",
-      "course": "Knowl Rep",
-      "day": "Monday",
+      "id": "FSC-SAT-Margala 3 (C211)-1430-DSC1",
+      "course": "Func Eng Lab - 1",
+      "day": "Saturday",
+      "section": "DS-C1",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-Margala 4 (C212-1430-DSC2",
+      "course": "Func Eng Lab - 2",
+      "day": "Saturday",
+      "section": "DS-C2",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-Margala 1 (C209)-1130-AIB2",
+      "course": "Func Eng Lab - 2",
+      "day": "Saturday",
+      "section": "AI-B2",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-IT Lab 2 (D211)-0830-AIB",
+      "course": "PF Lab",
+      "day": "Saturday",
       "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-IT Lab 1 (D210)-0830-DSC",
+      "course": "IICT Lab",
+      "day": "Saturday",
+      "section": "DS-C",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-23T10:32:28.458322Z"
+  "last_checked": "2026-10-23T15:20:59.549690Z"
 }

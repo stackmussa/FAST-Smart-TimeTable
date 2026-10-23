@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T10:32:21.926234Z",
+  "last_updated": "2026-10-23T15:20:51.175264Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -23558,10 +23558,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS DS (Batch 2026, Section DS-C) has IICT Lab (Lab) in Room IT Lab 1 (D-210) on Saturday from 08:30 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS DS (Batch 2026, Section DS-C) has IICT Lab (Lab) in Room IT Lab 1 (D-210) on Saturday from 08:30 to 11:20."
     },
     {
       "id": "FSC-SAT-IT Lab 1 (D210)-1130-CYA",
@@ -23624,10 +23624,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2026, Section AI-B) has PF Lab (Lab) in Room IT Lab 2 (D-211) on Saturday from 08:30 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2026, Section AI-B) has PF Lab (Lab) in Room IT Lab 2 (D-211) on Saturday from 08:30 to 11:20."
     },
     {
       "id": "FSC-SAT-IT Lab 2 (D211)-1130-CYA",
@@ -23690,9 +23690,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS AI (Batch 2026, Section AI-B2) has Func Eng Lab - 2 in Room Margala 1 (C-209) on Saturday from 11:30 to 13:15."
     },
     {
@@ -23756,9 +23756,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS DS (Batch 2026, Section DS-C1) has Func Eng Lab - 1 in Room Margala 3 (C-211) on Saturday from 14:30 to 16:15."
     },
     {
@@ -23822,9 +23822,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS DS (Batch 2026, Section DS-C2) has Func Eng Lab - 2 in Room Margala 4 (C-212 on Saturday from 14:30 to 16:15."
     },
     {
@@ -23844,9 +23844,9 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
+      "status": "Cancelled",
       "rag_summary": "BS AI (Batch 2026, Section AI-B1) has Func Eng Lab - 1 in Room Rawal 1 (C-509) on Saturday from 11:30 to 13:15."
     },
     {
