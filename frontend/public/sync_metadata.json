@@ -1,102 +1,86 @@
 {
-  "last_updated": 1792680697,
+  "last_updated": 1792733416,
   "changed_schools": [
-    "computing"
+    "computing",
+    "management",
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Management",
+    "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-MON-C304-1555-CSD",
-      "course": "Calculus",
-      "day": "Monday",
-      "section": "CS-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D305-0830-SEA",
-      "course": "S/w Const Lab",
-      "day": "Friday",
-      "section": "SE-A",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D415-1130-CYB",
-      "course": "PF",
-      "day": "Monday",
-      "section": "CY-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C309-0830-CYD",
-      "course": "PF",
-      "day": "Friday",
-      "section": "CY-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C304-1555-CSE",
-      "course": "Calculus",
-      "day": "Wednesday",
-      "section": "CS-E",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D306-1300-CSE1",
-      "course": "Func Eng Lab - 1",
-      "day": "Friday",
-      "section": "CS-E1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C305-1430-CSC",
-      "course": "Calculus",
+      "id": "FSC-TUE-D402-1300-SEA",
+      "course": "Arts & Humanities",
       "day": "Tuesday",
-      "section": "CS-C",
+      "section": "SE-A",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-C307-1000-CSA",
-      "course": "LA",
-      "day": "Friday",
-      "section": "CS-A",
+      "id": "FSC-TUE-D402-1000-SED",
+      "course": "Arts & Humanities",
+      "day": "Tuesday",
+      "section": "SE-D",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-D306-1000-CSD1",
+      "id": "FSC-SAT-Margala 4 (C212-1130-SEE2",
+      "course": "Func Eng Lab - 2",
+      "day": "Saturday",
+      "section": "SE-E2",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-Margala 3 (C211)-1130-SEE1",
       "course": "Func Eng Lab - 1",
-      "day": "Friday",
-      "section": "CS-D1",
-      "field": "is_rescheduled",
-      "old": null,
+      "day": "Saturday",
+      "section": "SE-E1",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-Rawal 1 (C509)-1430-SEE",
+      "course": "PF Lab",
+      "day": "Saturday",
+      "section": "SE-E",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D311-1000-AIA",
+      "course": "ML",
+      "day": "Thursday",
+      "section": "AI-A",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C301-0930-SEE",
+      "course": "PF",
+      "day": "Saturday",
+      "section": "SE-E",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-22T14:51:37.345262Z"
+  "last_checked": "2026-10-23T05:30:16.942817Z"
 }
