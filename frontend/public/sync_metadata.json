@@ -1,5 +1,5 @@
 {
-  "last_updated": 1792768859,
+  "last_updated": 1792955799,
   "changed_schools": [
     "computing"
   ],
@@ -8,65 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-SAT-Rawal 1 (C509)-1130-AIB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Saturday",
-      "section": "AI-B1",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-Margala 3 (C211)-1430-DSC1",
-      "course": "Func Eng Lab - 1",
-      "day": "Saturday",
-      "section": "DS-C1",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-Margala 4 (C212-1430-DSC2",
-      "course": "Func Eng Lab - 2",
-      "day": "Saturday",
-      "section": "DS-C2",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-Margala 1 (C209)-1130-AIB2",
-      "course": "Func Eng Lab - 2",
-      "day": "Saturday",
-      "section": "AI-B2",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-IT Lab 2 (D211)-0830-AIB",
-      "course": "PF Lab",
-      "day": "Saturday",
-      "section": "AI-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-IT Lab 1 (D210)-0830-DSC",
-      "course": "IICT Lab",
-      "day": "Saturday",
-      "section": "DS-C",
-      "field": "is_cancelled",
-      "old": false,
+      "id": "FSC-MON-C602-1130-SEB",
+      "course": "LA",
+      "day": "Monday",
+      "section": "SE-B",
+      "field": "is_rescheduled",
+      "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-23T15:20:59.549690Z"
+  "last_checked": "2026-10-25T19:16:39.764685Z"
 }
