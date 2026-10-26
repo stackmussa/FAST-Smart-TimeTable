@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T10:32:28.401433Z",
+  "last_updated": "2026-10-26T07:05:19.119566Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -5229,6 +5229,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Friday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-FRI-Circuit \nLab-0830",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "ENA Sec",
+      "section": "C",
+      "instructor": "2026-11-06 00:00:00",
+      "room": "Circuit \nLab",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:50",
+      "is_lab": true,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section C) has ENA Sec (Lab) in Room Circuit \nLab on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-Poth-0955",
