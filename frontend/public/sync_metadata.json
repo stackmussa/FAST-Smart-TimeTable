@@ -1,74 +1,22 @@
 {
-  "last_updated": 1793024555,
+  "last_updated": 1793045256,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-C602-1130-DSC",
-      "course": "IICT Lab",
-      "day": "Tuesday",
-      "section": "DS-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D414-1130-CYD",
+      "id": "FSC-TUE-C307-1130-SEE",
       "course": "PF",
       "day": "Tuesday",
-      "section": "CY-D",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-IT Lab 4GPU (D203)-1130-AIB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Tuesday",
-      "section": "AI-B1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D301-1430-AIC",
-      "course": "Calculus",
-      "day": "Tuesday",
-      "section": "AI-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C605-1130-SEB",
-      "course": "PF",
-      "day": "Tuesday",
-      "section": "SE-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C602-0830-DSC2",
-      "course": "Func Eng Lab - 2",
-      "day": "Tuesday",
-      "section": "DS-C2",
+      "section": "SE-E",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-26T14:22:35.064926Z"
+  "last_checked": "2026-10-26T20:07:36.524814Z"
 }
