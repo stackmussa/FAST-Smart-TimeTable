@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T14:22:35.056376Z",
+  "last_updated": "2026-10-27T08:11:06.500382Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1627,7 +1627,7 @@
       "semester": "2nd",
       "course_name": "Linear Algebra",
       "section": "EE-A",
-      "instructor": "Reschedule              20 & 27 Oct, 2026",
+      "instructor": "Reschedule                     27 Oct, 2026",
       "room": "B-119",
       "day": "Tuesday",
       "time_start": "15:45",
@@ -1816,7 +1816,7 @@
       "semester": "Unknown",
       "course_name": "Reserved for",
       "section": "FSM",
-      "instructor": null,
+      "instructor": "2026-10-27 00:00:00",
       "room": "B-129",
       "day": "Tuesday",
       "time_start": "11:25",
@@ -1827,6 +1827,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section FSM) has Reserved for in Room B-129 on Tuesday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-TUE-B129-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Reserved for",
+      "section": "FSM",
+      "instructor": "2026-10-27 00:00:00",
+      "room": "B-129",
+      "day": "Tuesday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section FSM) has Reserved for in Room B-129 on Tuesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-TUE-B129-1420",
@@ -2965,13 +2986,13 @@
     {
       "id": "FSE-WED-B119-1125",
       "school": "School of Engineering",
-      "department": "Unknown",
+      "department": "CE",
       "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "FSE Faculty Meeting  \n\nEvery Wednesday",
-      "section": "Unknown",
-      "instructor": null,
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Applied Calculus",
+      "section": "CE-A",
+      "instructor": "2026-10-28 00:00:00",
       "room": "B-119",
       "day": "Wednesday",
       "time_start": "11:25",
@@ -2981,7 +3002,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has FSE Faculty Meeting  \n\nEvery Wednesday in Room B-119 on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Applied Calculus in Room B-119 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B119-1250",
@@ -3066,6 +3087,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Resrved for IC Design in Room B-127 on Wednesday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-WED-B127-1125",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "FSE Faculty Meeting  \n\nEvery Wednesday",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-127",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has FSE Faculty Meeting  \n\nEvery Wednesday in Room B-127 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B127-1250",
