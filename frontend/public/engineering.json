@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T08:11:06.500382Z",
+  "last_updated": "2026-10-27T14:36:29.125239Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1806,48 +1806,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section CE-A) has Comp.Var. & Transforms in Room B-129 on Tuesday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-TUE-B129-1125",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Reserved for",
-      "section": "FSM",
-      "instructor": "2026-10-27 00:00:00",
-      "room": "B-129",
-      "day": "Tuesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section FSM) has Reserved for in Room B-129 on Tuesday from 11:25 to 12:45."
-    },
-    {
-      "id": "FSE-TUE-B129-1250",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Reserved for",
-      "section": "FSM",
-      "instructor": "2026-10-27 00:00:00",
-      "room": "B-129",
-      "day": "Tuesday",
-      "time_start": "12:50",
-      "time_end": "14:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section FSM) has Reserved for in Room B-129 on Tuesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-TUE-B129-1420",
