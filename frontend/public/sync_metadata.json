@@ -1,42 +1,34 @@
 {
-  "last_updated": 1793176826,
+  "last_updated": 1793201274,
   "changed_schools": [
-    "computing"
+    "computing",
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-WED-CRawal 4 (C512)-1430-CSF",
-      "course": "Data St Lab",
+      "id": "FSC-WED-C305-1450-CSG",
+      "course": "Seerah",
       "day": "Wednesday",
-      "section": "CS-F",
+      "section": "CS-G",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-D415-0830-CYC",
-      "course": "PF",
+      "id": "FSE-WED-B019-1125",
+      "course": "FSE Faculty Meeting  \n\nEvery Wednesday",
       "day": "Wednesday",
-      "section": "CY-C",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-CALL3 (A308)-1430-SEC1",
-      "course": "Func Eng Lab - 1",
-      "day": "Wednesday",
-      "section": "SE-C1",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
+      "section": "Unknown",
+      "field": "is_elective",
+      "old": null,
+      "new": false,
+      "school": "engineering"
     }
   ],
-  "last_checked": "2026-10-28T08:40:26.806618Z"
+  "last_checked": "2026-10-28T15:27:54.421402Z"
 }

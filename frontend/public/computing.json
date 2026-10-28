@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T08:40:19.308467Z",
+  "last_updated": "2026-10-28T15:27:46.749524Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -10468,10 +10468,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2026, Section CS-G) has Seerah in Room C-305 on Wednesday from 14:50 to 15:45."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CS (Batch 2026, Section CS-G) has Seerah in Room C-305 on Wednesday from 14:50 to 15:45."
     },
     {
       "id": "FSC-WED-C307-0830-CSA",
