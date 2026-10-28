@@ -1,84 +1,42 @@
 {
-  "last_updated": 1793111789,
+  "last_updated": 1793176826,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-WED-IT Lab 1 (D210)-1130-CYB",
-      "course": "IICT Lab",
+      "id": "FSC-WED-CRawal 4 (C512)-1430-CSF",
+      "course": "Data St Lab",
       "day": "Wednesday",
-      "section": "CY-B",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-Mehran2 (A306)-1130-CSC2",
-      "course": "Func Eng Lab - 2",
-      "day": "Tuesday",
-      "section": "CS-C2",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C405-0830-CSD",
-      "course": "TBW",
-      "day": "Tuesday",
-      "section": "CS-D",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-IT Lab 2 (D211)-1430-DSA",
-      "course": "Data Ware & BI Lab",
-      "day": "Wednesday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": false,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D412-1300-CSF",
-      "course": "App HCI",
-      "day": "Tuesday",
       "section": "CS-F",
       "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "old": false,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-TUE-D412-1000-CSG",
-      "course": "App HCI",
-      "day": "Tuesday",
-      "section": "CS-G",
+      "id": "FSC-WED-D415-0830-CYC",
+      "course": "PF",
+      "day": "Wednesday",
+      "section": "CY-C",
       "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "old": false,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-TUE-IT Lab 2 (D211)-0830-SEA",
-      "course": "IICT",
-      "day": "Tuesday",
-      "section": "SE-A",
+      "id": "FSC-WED-CALL3 (A308)-1430-SEC1",
+      "course": "Func Eng Lab - 1",
+      "day": "Wednesday",
+      "section": "SE-C1",
       "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "old": false,
+      "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-27T14:36:29.131866Z"
+  "last_checked": "2026-10-28T08:40:26.806618Z"
 }
