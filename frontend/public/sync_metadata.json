@@ -1,92 +1,11 @@
 {
-  "last_updated": 1793253372,
+  "last_updated": 1793276056,
   "changed_schools": [
     "computing"
   ],
   "changed_files": [
     "Computing"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-WED-C602-1500-SED",
-      "course": "Arts & Humanities",
-      "day": "Wednesday",
-      "section": "SE-D",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-CALL3 (A308)-1430-SEC1",
-      "course": "Func Eng Lab - 1",
-      "day": "Wednesday",
-      "section": "SE-C1",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-IT Lab 1 (D210)-1130-CYB",
-      "course": "IICT Lab",
-      "day": "Wednesday",
-      "section": "CY-B",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-IT Lab 2 (D211)-1430-DSA",
-      "course": "Data Ware & BI Lab",
-      "day": "Wednesday",
-      "section": "DS-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C305-1450-CSG",
-      "course": "Seerah",
-      "day": "Wednesday",
-      "section": "CS-G",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C409-1300-SEA",
-      "course": "Arts & Humanities",
-      "day": "Wednesday",
-      "section": "SE-A",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-CRawal 4 (C512)-1430-CSF",
-      "course": "Data St Lab",
-      "day": "Wednesday",
-      "section": "CS-F",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D415-0830-CYC",
-      "course": "PF",
-      "day": "Wednesday",
-      "section": "CY-C",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-10-29T05:56:12.384728Z"
+  "status_changes": [],
+  "last_checked": "2026-10-29T12:14:16.045317Z"
 }
