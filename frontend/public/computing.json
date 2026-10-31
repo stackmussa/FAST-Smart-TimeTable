@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-29T12:14:08.143686Z",
+  "last_updated": "2026-10-31T08:57:13.859342Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -20614,6 +20614,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS DS (Batch 2023, Section DS-A) has Project (Lab) in Room IT Lab 4-GPU (D-203) on Thursday from 11:30 to 14:20."
+    },
+    {
+      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSB",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "COAL Lab",
+      "section": "DS-B",
+      "instructor": null,
+      "room": "IT Lab 4-GPU (D-203)",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "17:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS DS (Batch 2025, Section DS-B) has COAL Lab (Lab) in Room IT Lab 4-GPU (D-203) on Thursday from 14:30 to 17:15."
     },
     {
       "id": "FSC-THU-Margala 1 (C209)-1130-CSC",
