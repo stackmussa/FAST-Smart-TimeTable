@@ -1,5 +1,5 @@
 {
-  "last_updated": 1793611375,
+  "last_updated": 1793648434,
   "changed_schools": [
     "computing"
   ],
@@ -8,65 +8,55 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-WED-D304-1430-AIB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Wednesday",
-      "section": "AI-B1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D402-1130-DSC",
-      "course": "IICT Lab",
+      "id": "FSC-TUE-C404-1430-CSE",
+      "course": "Comp Net Lab",
       "day": "Tuesday",
-      "section": "DS-C",
+      "section": "CS-E",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-TUE-D403-1430-DSC2",
+      "id": "FSC-TUE-D502-1430-SEE2",
       "course": "Func Eng Lab - 2",
       "day": "Tuesday",
-      "section": "DS-C2",
+      "section": "SE-E2",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-TUE-C406-1130-SEC",
-      "course": "Arts & Humanities",
+      "id": "FSC-FRI-IT Lab 4GPU (D203)-0830-CSH",
+      "course": "Data St Lab",
+      "day": "Friday",
+      "section": "CS-H",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C305-1430-CSG",
+      "course": "IICT Lab",
+      "day": "Friday",
+      "section": "CS-G",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D502-0830-CYC",
+      "course": "Data St",
       "day": "Tuesday",
-      "section": "SE-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D403-0830-AIB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Tuesday",
-      "section": "AI-B1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C407-1555-SEE",
-      "course": "PF",
-      "day": "Wednesday",
-      "section": "SE-E",
-      "field": "is_rescheduled",
-      "old": null,
+      "section": "CY-C",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-02T09:22:55.944598Z"
+  "last_checked": "2026-11-02T19:40:34.778068Z"
 }
