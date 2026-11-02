@@ -1,5 +1,5 @@
 {
-  "last_updated": 1793437040,
+  "last_updated": 1793611375,
   "changed_schools": [
     "computing"
   ],
@@ -8,15 +8,65 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSB",
-      "course": "COAL Lab",
-      "day": "Thursday",
-      "section": "DS-B",
+      "id": "FSC-WED-D304-1430-AIB1",
+      "course": "Func Eng Lab - 1",
+      "day": "Wednesday",
+      "section": "AI-B1",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D402-1130-DSC",
+      "course": "IICT Lab",
+      "day": "Tuesday",
+      "section": "DS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D403-1430-DSC2",
+      "course": "Func Eng Lab - 2",
+      "day": "Tuesday",
+      "section": "DS-C2",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C406-1130-SEC",
+      "course": "Arts & Humanities",
+      "day": "Tuesday",
+      "section": "SE-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D403-0830-AIB1",
+      "course": "Func Eng Lab - 1",
+      "day": "Tuesday",
+      "section": "AI-B1",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-C407-1555-SEE",
+      "course": "PF",
+      "day": "Wednesday",
+      "section": "SE-E",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-10-31T08:57:20.642713Z"
+  "last_checked": "2026-11-02T09:22:55.944598Z"
 }
