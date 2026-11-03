@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T05:30:11.640531Z",
+  "last_updated": "2026-11-03T08:39:03.489634Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -6344,6 +6344,27 @@
       "rag_summary": "BBA BBA (Batch 2023, Section BBA07B) has MG4003 Strategic Management in Room A-101 on Wednesday from 11:30 to 12:50."
     },
     {
+      "id": "FSM-WED-A101-1425",
+      "school": "School of Management",
+      "department": "FT",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "AF1003 Intro to Financial Accounting",
+      "section": "FT01B",
+      "instructor": "Riffat Shaheen",
+      "room": "A-101",
+      "day": "Wednesday",
+      "time_start": "14:25",
+      "time_end": "15:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS FT (Batch 2026, Section FT01B) has AF1003 Intro to Financial Accounting in Room A-101 on Wednesday from 14:25 to 15:45."
+    },
+    {
       "id": "FSM-WED-A101-1550",
       "school": "School of Management",
       "department": "AF",
@@ -6657,27 +6678,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS BA (Batch 2026, Section Unknown) has AF1003 Intro to Financial Accounting in Room A-104 on Wednesday from 13:00 to 14:20."
-    },
-    {
-      "id": "FSM-WED-A104-1425",
-      "school": "School of Management",
-      "department": "FT",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "Unknown",
-      "course_name": "AF1003 Intro to Financial Accounting",
-      "section": "FT01B",
-      "instructor": "Syed Jawad Ali Kazmi",
-      "room": "A-104",
-      "day": "Wednesday",
-      "time_start": "14:25",
-      "time_end": "15:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS FT (Batch 2026, Section FT01B) has AF1003 Intro to Financial Accounting in Room A-104 on Wednesday from 14:25 to 15:45."
     },
     {
       "id": "FSM-WED-A 201-0830",
