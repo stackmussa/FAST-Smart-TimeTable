@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T16:38:32.070554Z",
+  "last_updated": "2026-11-05T09:50:06.471293Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -5281,7 +5281,7 @@
       "semester": "Unknown",
       "course_name": "11:25 - 12:45",
       "section": "Unknown",
-      "instructor": null,
+      "instructor": "OODS Lab Sec -C",
       "room": "Labs",
       "day": "Friday",
       "time_start": "11:25",
@@ -5294,7 +5294,28 @@
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Friday from 11:25 to 12:45."
     },
     {
-      "id": "FSE-FRI-Circuit \nLab-0830",
+      "id": "FSE-FRI-Koh-1125",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "OODS Lab Sec",
+      "section": "C",
+      "instructor": "06/Nov/26",
+      "room": "Koh",
+      "day": "Friday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": true,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section C) has OODS Lab Sec (Lab) in Room Koh on Friday from 11:25 to 12:45."
+    },
+    {
+      "id": "FSE-FRI-CompII-0830",
       "school": "School of Engineering",
       "department": "Unknown",
       "degree": "BS",
@@ -5302,8 +5323,8 @@
       "semester": "Unknown",
       "course_name": "ENA Lab Sec",
       "section": "C",
-      "instructor": "2026-11-06 00:00:00",
-      "room": "Circuit \nLab",
+      "instructor": "6-11-26     am",
+      "room": "Comp-II",
       "day": "Friday",
       "time_start": "08:30",
       "time_end": "09:50",
@@ -5312,7 +5333,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section C) has ENA Lab Sec (Lab) in Room Circuit \nLab on Friday from 08:30 to 09:50."
+      "rag_summary": "BS Unknown (Batch Unknown, Section C) has ENA Lab Sec (Lab) in Room Comp-II on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-Poth-0955",
