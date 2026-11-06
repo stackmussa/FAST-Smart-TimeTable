@@ -1,64 +1,42 @@
 {
-  "last_updated": 1793961929,
+  "last_updated": 1793986977,
   "changed_schools": [
-    "computing",
-    "management"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Management"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-D314-1430-DSA",
-      "course": "UHQ-I&II",
+      "id": "FSC-TUE-D413-1430-CYD1",
+      "course": "Func Eng Lab - 1",
       "day": "Tuesday",
-      "section": "DS-A",
+      "section": "CY-D1",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-THU-Mehran2 (A306)-0830-AIA2",
-      "course": "Func Eng Lab - 2",
-      "day": "Thursday",
-      "section": "AI-A2",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C408-1000-SEC",
-      "course": "AI",
-      "day": "Thursday",
+      "id": "FSC-TUE-C605-1430-SEC",
+      "course": "Pak Studies",
+      "day": "Tuesday",
       "section": "SE-C",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-THU-C303-0830-CSH",
-      "course": "Islamic",
-      "day": "Thursday",
+      "id": "FSC-TUE-C309-1000-CSH",
+      "course": "DLD",
+      "day": "Tuesday",
       "section": "CS-H",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
       "school": "computing"
-    },
-    {
-      "id": "FSM-FRI-A310-0830",
-      "course": "AF2003 Management Accounting",
-      "day": "Friday",
-      "section": "BBA03B",
-      "field": "is_cancelled",
-      "old": true,
-      "new": false,
-      "school": "management"
     }
   ],
-  "last_checked": "2026-11-06T10:45:29.292492Z"
+  "last_checked": "2026-11-06T17:42:57.082228Z"
 }

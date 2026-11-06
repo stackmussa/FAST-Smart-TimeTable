@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06T10:45:23.325371Z",
+  "last_updated": "2026-11-06T17:42:50.275644Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -5370,6 +5370,28 @@
       "rag_summary": "BS CS (Batch 2025, Section CS-H) has SDA in Room C-309 on Tuesday from 08:30 to 09:50."
     },
     {
+      "id": "FSC-TUE-C309-1000-CSH",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "DLD",
+      "section": "CS-H",
+      "instructor": null,
+      "room": "C-309",
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "11:20",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-H) has DLD in Room C-309 on Tuesday from 10:00 to 11:20."
+    },
+    {
       "id": "FSC-TUE-C309-1130-CSH",
       "school": "School of Computing",
       "department": "CS",
@@ -6622,6 +6644,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS SE (Batch 2025, Section SE-C) has Data St in Room C-605 on Tuesday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSC-TUE-C605-1430-SEC",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "Pak Studies",
+      "section": "SE-C",
+      "instructor": null,
+      "room": "C-605",
+      "day": "Tuesday",
+      "time_start": "14:30",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS SE (Batch 2025, Section SE-C) has Pak Studies in Room C-605 on Tuesday from 14:30 to 15:50."
     },
     {
       "id": "FSC-TUE-C607-0830-SEB",
@@ -8580,6 +8624,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2022, Section CS-A) has Stat Modeling [REPEAT COURSE] in Room D-413 on Tuesday from 13:00 to 14:20."
+    },
+    {
+      "id": "FSC-TUE-D413-1430-CYD1",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "CY-D1",
+      "instructor": null,
+      "room": "D-413",
+      "day": "Tuesday",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS CY (Batch 2026, Section CY-D1) has Func Eng Lab - 1 in Room D-413 on Tuesday from 14:30 to 16:15."
     },
     {
       "id": "FSC-TUE-D414-0830-CYA",
