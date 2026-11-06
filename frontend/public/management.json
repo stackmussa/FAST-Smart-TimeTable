@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T09:50:00.966927Z",
+  "last_updated": "2026-11-06T10:45:25.226360Z",
   "classes": [
     {
       "id": "FSM-MON-A02-0830",
@@ -13122,9 +13122,9 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": true,
+      "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "[CANCELLED] BBA BBA (Batch 2025, Section BBA03B) has AF2003 Management Accounting in Room A-310 on Friday from 08:30 to 09:50."
+      "rag_summary": "BBA BBA (Batch 2025, Section BBA03B) has AF2003 Management Accounting in Room A-310 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSM-FRI-A310-1000",
