@@ -1,5 +1,5 @@
 {
-  "last_updated": 1793986977,
+  "last_updated": 1794041140,
   "changed_schools": [
     "computing"
   ],
@@ -8,35 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-TUE-D413-1430-CYD1",
-      "course": "Func Eng Lab - 1",
-      "day": "Tuesday",
-      "section": "CY-D1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C605-1430-SEC",
-      "course": "Pak Studies",
-      "day": "Tuesday",
-      "section": "SE-C",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C309-1000-CSH",
-      "course": "DLD",
-      "day": "Tuesday",
-      "section": "CS-H",
+      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSB",
+      "course": "COAL Lab",
+      "day": "Thursday",
+      "section": "DS-B",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-06T17:42:57.082228Z"
+  "last_checked": "2026-11-07T08:45:40.466810Z"
 }
