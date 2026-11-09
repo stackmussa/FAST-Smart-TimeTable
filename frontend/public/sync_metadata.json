@@ -1,11 +1,32 @@
 {
-  "last_updated": 1794221961,
+  "last_updated": 1794259320,
   "changed_schools": [
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Engineering"
+    "Computing"
   ],
-  "status_changes": [],
-  "last_checked": "2026-11-09T10:59:21.448151Z"
+  "status_changes": [
+    {
+      "id": "FSC-TUE-C307-1000-CYA",
+      "course": "OS",
+      "day": "Tuesday",
+      "section": "CY-A",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C307-1300-DSA",
+      "course": "OS",
+      "day": "Tuesday",
+      "section": "DS-A",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    }
+  ],
+  "last_checked": "2026-11-09T21:22:00.465113Z"
 }

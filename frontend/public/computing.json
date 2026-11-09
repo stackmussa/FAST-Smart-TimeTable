@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T08:45:33.756867Z",
+  "last_updated": "2026-11-09T21:21:53.581840Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -5166,10 +5166,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2024, Section CY-A) has OS in Room C-307 on Tuesday from 10:00 to 11:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CY (Batch 2024, Section CY-A) has OS in Room C-307 on Tuesday from 10:00 to 11:20."
     },
     {
       "id": "FSC-TUE-C307-1300-DSA",
@@ -5188,10 +5188,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": true,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS DS (Batch 2024, Section DS-A) has OS [REPEAT COURSE] in Room C-307 on Tuesday from 13:00 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS DS (Batch 2024, Section DS-A) has OS [REPEAT COURSE] in Room C-307 on Tuesday from 13:00 to 14:20."
     },
     {
       "id": "FSC-TUE-C307-1430-CSC",
