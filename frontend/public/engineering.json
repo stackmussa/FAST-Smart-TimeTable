@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T09:50:06.471293Z",
+  "last_updated": "2026-11-09T10:59:21.440509Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1617,6 +1617,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-119 on Tuesday from 12:50 to 14:10."
+    },
+    {
+      "id": "FSE-TUE-B119-1545",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "2nd",
+      "course_name": "Linear Algebra",
+      "section": "EE-A",
+      "instructor": "Dr. Sumaira Azhar  Resch   Niv 10, 2026",
+      "room": "B-119",
+      "day": "Tuesday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Algebra in Room B-119 on Tuesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-TUE-B127-0830",

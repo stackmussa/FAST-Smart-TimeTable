@@ -1,22 +1,11 @@
 {
-  "last_updated": 1794041140,
+  "last_updated": 1794221961,
   "changed_schools": [
-    "computing"
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Engineering"
   ],
-  "status_changes": [
-    {
-      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-DSB",
-      "course": "COAL Lab",
-      "day": "Thursday",
-      "section": "DS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    }
-  ],
-  "last_checked": "2026-11-07T08:45:40.466810Z"
+  "status_changes": [],
+  "last_checked": "2026-11-09T10:59:21.448151Z"
 }
