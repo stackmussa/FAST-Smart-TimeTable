@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T11:50:42.470215Z",
+  "last_updated": "2026-11-11T04:30:44.225048Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1619,27 +1619,6 @@
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-119 on Tuesday from 12:50 to 14:10."
     },
     {
-      "id": "FSE-TUE-B119-1545",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "2nd",
-      "course_name": "Linear Algebra",
-      "section": "EE-A",
-      "instructor": "Dr. Sumaira Azhar  Resch   Nov 10, 2026",
-      "room": "B-119",
-      "day": "Tuesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Linear Algebra in Room B-119 on Tuesday from 15:45 to 17:05."
-    },
-    {
       "id": "FSE-TUE-B127-0830",
       "school": "School of Engineering",
       "department": "Unknown",
@@ -1953,27 +1932,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture in Room B-230 on Tuesday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-TUE-B230-1545",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "5th",
-      "course_name": "Computer Organization and Architecture",
-      "section": "CE-A",
-      "instructor": "Dr. Nasir Ali Shah (Resch)    Nov 10, 2026",
-      "room": "B-230",
-      "day": "Tuesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture in Room B-230 on Tuesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-TUE-Labs-0830",
