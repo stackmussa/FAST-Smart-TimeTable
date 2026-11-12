@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T08:51:19.936476Z",
+  "last_updated": "2026-11-12T17:19:46.322306Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -4055,27 +4055,6 @@
       "rag_summary": "BS EE (Batch 2025, Section EE-C) has Digital Logic Design in Room B-020 on Thursday from 14:20 to 15:40."
     },
     {
-      "id": "FSE-THU-B020-1545",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "7th",
-      "course_name": "Final Year Project – I",
-      "section": "EE-A",
-      "instructor": "Dr. M. Adnan  Resch  12-Nov-26",
-      "room": "B-020",
-      "day": "Thursday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Final Year Project – I in Room B-020 on Thursday from 15:45 to 17:05."
-    },
-    {
       "id": "FSE-THU-B119-0830",
       "school": "School of Engineering",
       "department": "EE",
@@ -5343,7 +5322,7 @@
       "batch": "2025",
       "semester": "3rd",
       "course_name": "Discrete Structures",
-      "section": "CE-A",
+      "section": "CE-B",
       "instructor": "Dr. Mukhtar Ullah (Resch) Nov 13, 2026",
       "room": "B-130",
       "day": "Friday",
@@ -5354,7 +5333,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Discrete Structures in Room B-130 on Friday from 08:30 to 09:50."
+      "rag_summary": "BS CE (Batch 2025, Section CE-B) has Discrete Structures in Room B-130 on Friday from 08:30 to 09:50."
     },
     {
       "id": "FSE-FRI-B130-0955",
