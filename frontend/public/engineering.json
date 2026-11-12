@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11T12:05:27.496866Z",
+  "last_updated": "2026-11-12T08:51:19.936476Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1619,25 +1619,25 @@
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-119 on Tuesday from 12:50 to 14:10."
     },
     {
-      "id": "FSE-TUE-B119-1545",
+      "id": "FSE-TUE-B119-1420",
       "school": "School of Engineering",
-      "department": "Unknown",
+      "department": "CE",
       "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Basic Mechanical Engg.",
-      "section": "B",
-      "instructor": "Dr. M. Adnan  Resch  17-Nov-26",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Pakistan Studies",
+      "section": "CE-A",
+      "instructor": "Ms. Asefa Zareen  (reschedule)      17 Nov, 2026",
       "room": "B-119",
       "day": "Tuesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
+      "time_start": "14:20",
+      "time_end": "15:40",
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section B) has Basic Mechanical Engg. in Room B-119 on Tuesday from 15:45 to 17:05."
+      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Pakistan Studies in Room B-119 on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-B127-0830",
@@ -1953,6 +1953,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture in Room B-230 on Tuesday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-TUE-B230-1545",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Basic Mechanical Engg.",
+      "section": "B",
+      "instructor": "Dr. M. Adnan  Resch  17-Nov-26",
+      "room": "B-230",
+      "day": "Tuesday",
+      "time_start": "15:45",
+      "time_end": "17:05",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section B) has Basic Mechanical Engg. in Room B-230 on Tuesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-TUE-Labs-0830",
@@ -4095,27 +4116,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2023, Section EE-A) has Embedded Systems in Room B-119 on Thursday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-THU-B119-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "5th",
-      "course_name": "Microprocessor Interfacing & Programming",
-      "section": "EE-B",
-      "instructor": "Engr. Shehzad Ahmed  Resch  12-Nov-26",
-      "room": "B-119",
-      "day": "Thursday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Microprocessor Interfacing & Programming in Room B-119 on Thursday from 11:25 to 12:45."
     },
     {
       "id": "FSE-THU-B119-1250",
