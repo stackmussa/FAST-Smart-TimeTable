@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T10:42:43.843405Z",
+  "last_updated": "2026-11-13T18:08:23.396945Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -2759,9 +2759,9 @@
       "degree": "BS",
       "batch": "Unknown",
       "semester": "Unknown",
-      "course_name": "Reatke Sessional II Exam",
+      "course_name": "Retake Sessional II Exam",
       "section": "Unknown",
-      "instructor": null,
+      "instructor": "2026-11-18 00:00:00",
       "room": "B-019",
       "day": "Wednesday",
       "time_start": "11:25",
@@ -2771,7 +2771,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Reatke Sessional II Exam in Room B-019 on Wednesday from 11:25 to 12:45."
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Retake Sessional II Exam in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B019-1250",
