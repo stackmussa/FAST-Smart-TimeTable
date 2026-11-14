@@ -1,5 +1,5 @@
 {
-  "last_updated": 1794627025,
+  "last_updated": 1794653440,
   "changed_schools": [
     "computing"
   ],
@@ -8,25 +8,135 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-SAT-C404-1000-CSC",
-      "course": "Comp Net",
-      "day": "Saturday (Nov.14,2026)",
+      "id": "FSC-FRI-IT Lab 2 (D211)-1430-CYC",
+      "course": "COAL Lab",
+      "day": "Friday",
+      "section": "CY-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C302-1130-CSF",
+      "course": "Calculus",
+      "day": "Tuesday",
+      "section": "CS-F",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-C309-1000-CSC",
+      "course": "Data St",
+      "day": "Wednesday",
       "section": "CS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C301-1430-SEE",
+      "course": "IICT",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "SE-E",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-C301-1130-CSD",
+      "course": "Calculus",
+      "day": "Wednesday",
+      "section": "CS-D",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-Margala 4 (C212-1430-SEC",
+      "course": "Data St Lab",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "SE-C",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-SAT-C404-0830-CSD",
-      "course": "Comp Net",
+      "id": "FSC-SAT-C605-0830-SEF",
+      "course": "PF",
       "day": "Saturday (Nov.14,2026)",
-      "section": "CS-D",
+      "section": "SE-F",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C605-1130-SEC",
+      "course": "Calculus",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "SE-C",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C605-1300-SED",
+      "course": "Calculus",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "SE-D",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-D312-1000-DSA",
+      "course": "LA",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "DS-A",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-D312-0830-DSB",
+      "course": "LA",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "DS-B",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C602-1000-SEB",
+      "course": "PF",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "SE-B",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C307-1130-CSC",
+      "course": "Data St",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "CS-C",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-14T03:30:25.689293Z"
+  "last_checked": "2026-11-14T10:50:40.463836Z"
 }
