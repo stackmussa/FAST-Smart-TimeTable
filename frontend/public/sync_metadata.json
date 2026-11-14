@@ -1,11 +1,32 @@
 {
-  "last_updated": 1794593303,
+  "last_updated": 1794627025,
   "changed_schools": [
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Engineering"
+    "Computing"
   ],
-  "status_changes": [],
-  "last_checked": "2026-11-13T18:08:23.404849Z"
+  "status_changes": [
+    {
+      "id": "FSC-SAT-C404-1000-CSC",
+      "course": "Comp Net",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "CS-C",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C404-0830-CSD",
+      "course": "Comp Net",
+      "day": "Saturday (Nov.14,2026)",
+      "section": "CS-D",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    }
+  ],
+  "last_checked": "2026-11-14T03:30:25.689293Z"
 }
