@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T10:50:34.098037Z",
+  "last_updated": "2026-11-14T16:46:09.574696Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -264,6 +264,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CS (Batch 2026, Section CS-C) has Ideology of Pak in Room C-303 on Monday from 13:00 to 14:45."
+    },
+    {
+      "id": "FSC-MON-C303-1430-CSC1",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "CS-C1",
+      "instructor": null,
+      "room": "C-303",
+      "day": "Monday",
+      "time_start": "14:30",
+      "time_end": "16:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS CS (Batch 2026, Section CS-C1) has Func Eng Lab - 1 in Room C-303 on Monday from 14:30 to 16:15."
     },
     {
       "id": "FSC-MON-C304-0830-CSD",
@@ -3676,6 +3698,28 @@
       "rag_summary": "BS CS (Batch 2023, Section CS-Robo) has Embed Robo in Room D-413 on Monday from 11:30 to 12:50."
     },
     {
+      "id": "FSC-MON-D414-0830-CYB1",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 1",
+      "section": "CY-B1",
+      "instructor": null,
+      "room": "D-414",
+      "day": "Monday",
+      "time_start": "08:30",
+      "time_end": "10:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS CY (Batch 2026, Section CY-B1) has Func Eng Lab - 1 in Room D-414 on Monday from 08:30 to 10:15."
+    },
+    {
       "id": "FSC-MON-D414-1130-CYA",
       "school": "School of Computing",
       "department": "CY",
@@ -4092,6 +4136,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CY (Batch 2023, Section CY-A) has Cloud Comp in Room D-504 on Monday from 11:30 to 12:50."
+    },
+    {
+      "id": "FSC-MON-D505-1130-DSC2",
+      "school": "School of Computing",
+      "department": "DS",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Func Eng Lab - 2",
+      "section": "DS-C2",
+      "instructor": null,
+      "room": "D-505",
+      "day": "Monday",
+      "time_start": "11:30",
+      "time_end": "13:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "BS DS (Batch 2026, Section DS-C2) has Func Eng Lab - 2 in Room D-505 on Monday from 11:30 to 13:15."
     },
     {
       "id": "FSC-MON-C110-1130-CSA",
