@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T16:46:09.574696Z",
+  "last_updated": "2026-11-15T20:08:41.535089Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -13024,6 +13024,28 @@
       "is_elective": false,
       "status": "Scheduled",
       "rag_summary": "BS CY (Batch 2023, Section CY-A) has Blockchain in Room D-302 on Wednesday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSC-WED-D302-1130-SEA",
+      "school": "School of Computing",
+      "department": "SE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "Unknown",
+      "course_name": "Ideology of Pak",
+      "section": "SE-A",
+      "instructor": null,
+      "room": "D-302",
+      "day": "Wednesday",
+      "time_start": "11:30",
+      "time_end": "13:15",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS SE (Batch 2026, Section SE-A) has Ideology of Pak in Room D-302 on Wednesday from 11:30 to 13:15."
     },
     {
       "id": "FSC-WED-D302-1300-CYB",

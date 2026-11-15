@@ -1,5 +1,5 @@
 {
-  "last_updated": 1794674775,
+  "last_updated": 1794773327,
   "changed_schools": [
     "computing"
   ],
@@ -8,35 +8,15 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-MON-D414-0830-CYB1",
-      "course": "Func Eng Lab - 1",
-      "day": "Monday",
-      "section": "CY-B1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-C303-1430-CSC1",
-      "course": "Func Eng Lab - 1",
-      "day": "Monday",
-      "section": "CS-C1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-D505-1130-DSC2",
-      "course": "Func Eng Lab - 2",
-      "day": "Monday",
-      "section": "DS-C2",
+      "id": "FSC-WED-D302-1130-SEA",
+      "course": "Ideology of Pak",
+      "day": "Wednesday",
+      "section": "SE-A",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-14T16:46:15.386412Z"
+  "last_checked": "2026-11-15T20:08:47.644243Z"
 }
