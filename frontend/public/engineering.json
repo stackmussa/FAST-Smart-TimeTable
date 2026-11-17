@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T13:35:56.759398Z",
+  "last_updated": "2026-11-17T05:03:16.776660Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3824,27 +3824,6 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 09:50."
     },
     {
-      "id": "FSE-THU-B028-1250",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Physics for Engineers",
-      "section": "EE-B",
-      "instructor": "Dr. Mukhtar Ullah (Resch)  Nov 19, 2026",
-      "room": "B-028",
-      "day": "Thursday",
-      "time_start": "12:50",
-      "time_end": "14:10",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Physics for Engineers in Room B-028 on Thursday from 12:50 to 14:10."
-    },
-    {
       "id": "FSE-THU-B028-1545",
       "school": "School of Engineering",
       "department": "CE",
@@ -5166,6 +5145,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-C) has Engineering Drawing in Room B-028 on Friday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-FRI-B028-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Physics for Engineers",
+      "section": "EE-B",
+      "instructor": "Dr. Mukhtar Ullah (Resch)  Nov 20, 2026",
+      "room": "B-028",
+      "day": "Friday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Physics for Engineers in Room B-028 on Friday from 11:25 to 12:45."
     },
     {
       "id": "FSE-FRI-B030-0830",
