@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17T05:03:16.776660Z",
+  "last_updated": "2026-11-17T14:18:46.528909Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1598,27 +1598,6 @@
       "rag_summary": "BS Unknown (Batch Unknown, Section A) has Holy Quran I,II /Ethics I & II in Room B-020 on Tuesday from 15:45 to 17:05."
     },
     {
-      "id": "FSE-TUE-B119-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "5th",
-      "course_name": "Data Communication & Networks",
-      "section": "EE-B",
-      "instructor": "Dr. Aamer Hafeez (Resch) Nov 17, 2026",
-      "room": "B-119",
-      "day": "Tuesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Data Communication & Networks in Room B-119 on Tuesday from 11:25 to 12:45."
-    },
-    {
       "id": "FSE-TUE-B119-1250",
       "school": "School of Engineering",
       "department": "CE",
@@ -1638,27 +1617,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-119 on Tuesday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-TUE-B119-1420",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Pakistan Studies",
-      "section": "CE-A",
-      "instructor": "Ms. Asefa Zareen  (reschedule)      17 Nov, 2026",
-      "room": "B-119",
-      "day": "Tuesday",
-      "time_start": "14:20",
-      "time_end": "15:40",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2026, Section CE-A) has Pakistan Studies in Room B-119 on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-B127-0830",
@@ -1974,27 +1932,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture in Room B-230 on Tuesday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-TUE-B230-1545",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Basic Mechanical Engg.",
-      "section": "B",
-      "instructor": "Dr. M. Adnan  Resch  17-Nov-26",
-      "room": "B-230",
-      "day": "Tuesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section B) has Basic Mechanical Engg. in Room B-230 on Tuesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-TUE-Labs-0830",
@@ -2499,6 +2436,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2025, Section EE-A) has Electrical Network Analysis Lab (Lab) in Room Circuit \nLab on Tuesday from 08:30 to 09:50."
+    },
+    {
+      "id": "FSE-TUE-CompIII-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "2023",
+      "semester": "7th",
+      "course_name": "Embedded Systems Lab",
+      "section": "EE-B",
+      "instructor": "Engr. Sajjal Mudassar       (Reschedule)   Nov 24, 2026",
+      "room": "Comp-III",
+      "day": "Tuesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": true,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS EE (Batch 2023, Section EE-B) has Embedded Systems Lab (Lab) in Room Comp-III on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-CompIII-1420",
@@ -4209,7 +4167,7 @@
       "batch": "2026",
       "semester": "1st",
       "course_name": "English Language Skills",
-      "section": "EE-B",
+      "section": "EE-C",
       "instructor": "Ms. Hajra Khalid (Resc)  Nov 19, 2026",
       "room": "B-119",
       "day": "Thursday",
@@ -4220,7 +4178,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has English Language Skills in Room B-119 on Thursday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-C) has English Language Skills in Room B-119 on Thursday from 14:20 to 15:40."
     },
     {
       "id": "FSE-THU-B119-1545",
