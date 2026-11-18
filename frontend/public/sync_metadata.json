@@ -1,32 +1,204 @@
 {
-  "last_updated": 1794973761,
+  "last_updated": 1795004449,
   "changed_schools": [
-    "computing"
+    "computing",
+    "engineering"
   ],
   "changed_files": [
-    "Computing"
+    "Computing",
+    "Engineering"
   ],
   "status_changes": [
     {
-      "id": "FSC-WED-C307-1430-CSB",
-      "course": "Calculus",
-      "day": "Wednesday",
-      "section": "CS-B",
+      "id": "FSC-MON-D305-1000-DSB",
+      "course": "UHQ-II",
+      "day": "Monday",
+      "section": "DS-B",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-WED-C407-1430-CSH",
+      "id": "FSC-THU-C302-1130-CSG",
       "course": "Calculus",
-      "day": "Wednesday",
-      "section": "CS-H",
+      "day": "Thursday",
+      "section": "CS-G",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D412-1130-AIA",
+      "course": "Business Research",
+      "day": "Thursday",
+      "section": "AI-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-C309-1030-CSC",
+      "course": "Data St",
+      "day": "Wednesday",
+      "section": "CS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C403-1000-CSE2",
+      "course": "Func Eng Lab - 2",
+      "day": "Friday",
+      "section": "CS-E2",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-C311-0830-CSC",
+      "course": "LA",
+      "day": "Tuesday",
+      "section": "CS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C401-1130-CSD",
+      "course": "LA",
+      "day": "Thursday",
+      "section": "CS-D",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D305-1430-AIB",
+      "course": "Knowl Rep",
+      "day": "Thursday",
+      "section": "AI-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D305-1300-AIB",
+      "course": "Business Research",
+      "day": "Thursday",
+      "section": "AI-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-C302-1430-SEE",
+      "course": "AP",
+      "day": "Friday",
+      "section": "SE-E",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C602-1430-SEA",
+      "course": "S/w Re-Engg",
+      "day": "Monday",
+      "section": "SE-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-C602-1430-SEA",
+      "course": "S/w Re-Engg",
+      "day": "Monday",
+      "section": "SE-A",
+      "field": "is_repeat",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C309-1430-CSC",
+      "course": "PDC",
+      "day": "Thursday",
+      "section": "CS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C309-1430-CSC",
+      "course": "PDC",
+      "day": "Thursday",
+      "section": "CS-C",
+      "field": "is_repeat",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D502-0830-CYA1",
+      "course": "Func Eng Lab - 1",
+      "day": "Monday",
+      "section": "CY-A1",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C309-1130-CSA",
+      "course": "Data St",
+      "day": "Thursday",
+      "section": "CS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-Mehran2 (A306)-1430-SEA2",
+      "course": "Func Eng Lab - 2",
+      "day": "Thursday",
+      "section": "SE-A2",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-Mehran2 (A306)-1300-SEA2",
+      "course": "Func Eng Lab - 2",
+      "day": "Thursday",
+      "section": "SE-A2",
+      "field": "is_cancelled",
+      "old": false,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSE-WED-B019-1125",
+      "course": "FSE Faculty Meeting",
+      "day": "Wednesday",
+      "section": "Unknown",
+      "field": "is_elective",
+      "old": false,
+      "new": null,
+      "school": "engineering"
     }
   ],
-  "last_checked": "2026-11-18T03:49:21.085320Z"
+  "last_checked": "2026-11-18T12:20:49.114302Z"
 }

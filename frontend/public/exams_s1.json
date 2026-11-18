@@ -16,10 +16,10 @@
       "id": "EXAM-SS1012FunctionalEnglish-2026",
       "departments": [
         "DS",
-        "AI",
+        "CS",
         "SE",
-        "CY",
-        "CS"
+        "AI",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS1012  Functional English",
@@ -53,8 +53,8 @@
       "id": "EXAM-EE2003ComputerOrganizationandAssemblyLanguage-2025",
       "departments": [
         "CY",
-        "DS",
         "SE",
+        "DS",
         "AI"
       ],
       "batch": "2025",
@@ -217,9 +217,9 @@
     {
       "id": "EXAM-SS2012TechnicalandBusinessWriting-2024",
       "departments": [
-        "DS",
         "CS",
         "SE",
+        "DS",
         "AI"
       ],
       "batch": "2024",
@@ -232,10 +232,10 @@
       "id": "EXAM-CS1002ProgrammingFundamentals-2026",
       "departments": [
         "DS",
-        "AI",
+        "CS",
         "SE",
-        "CY",
-        "CS"
+        "AI",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "CS1002   Programming Fundamentals",
@@ -444,10 +444,10 @@
       "id": "EXAM-SS1013IdeologyandConstitutionofPakistan-2026",
       "departments": [
         "DS",
-        "AI",
+        "CS",
         "SE",
-        "CY",
-        "CS"
+        "AI",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "SS1013 Ideology and Constitution of Pakistan",
@@ -483,10 +483,10 @@
       "id": "EXAM-CS2001DataStructures-2025",
       "departments": [
         "DS",
-        "AI",
+        "CS",
         "SE",
-        "CY",
-        "CS"
+        "AI",
+        "CY"
       ],
       "batch": "2025",
       "course_name": "CS2001 Data Structures",
@@ -497,9 +497,9 @@
     {
       "id": "EXAM-CS2009DesignandAnalysisofAlgorithms-2024",
       "departments": [
-        "DS",
         "CS",
         "SE",
+        "DS",
         "AI"
       ],
       "batch": "2024",
@@ -670,10 +670,10 @@
       "id": "EXAM-MT1003CalculusandAnalyticalGeometry-2026",
       "departments": [
         "DS",
-        "AI",
+        "CS",
         "SE",
-        "CY",
-        "CS"
+        "AI",
+        "CY"
       ],
       "batch": "2026",
       "course_name": "MT1003   Calculus and Analytical Geometry",
@@ -696,10 +696,10 @@
       "id": "EXAM-MT1004LinearAlgebra-2025",
       "departments": [
         "DS",
-        "AI",
+        "CS",
         "SE",
-        "CY",
-        "CS"
+        "AI",
+        "CY"
       ],
       "batch": "2025",
       "course_name": "MT1004 Linear Algebra",

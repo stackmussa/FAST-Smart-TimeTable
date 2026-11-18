@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17T14:18:46.528909Z",
+  "last_updated": "2026-11-18T12:20:49.107542Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1787,6 +1787,27 @@
       "rag_summary": "BS Unknown (Batch Unknown, Section CE-A) has Comp.Var. & Transforms in Room B-129 on Tuesday from 09:55 to 11:15."
     },
     {
+      "id": "FSE-TUE-B129-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "ICT Quiz  Sec",
+      "section": "A",
+      "instructor": "2026-11-24 13:45:00",
+      "room": "B-129",
+      "day": "Tuesday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section A) has ICT Quiz  Sec in Room B-129 on Tuesday from 12:50 to 14:10."
+    },
+    {
       "id": "FSE-TUE-B129-1420",
       "school": "School of Engineering",
       "department": "EE",
@@ -1871,6 +1892,27 @@
       "rag_summary": "BS CE (Batch 2025, Section CE-A) has Linear Algebra in Room B-130 on Tuesday from 11:25 to 12:45."
     },
     {
+      "id": "FSE-TUE-B130-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "ICT Quiz  Sec",
+      "section": "B",
+      "instructor": "2026-11-24 13:45:00",
+      "room": "B-130",
+      "day": "Tuesday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section B) has ICT Quiz  Sec in Room B-130 on Tuesday from 12:50 to 14:10."
+    },
+    {
       "id": "FSE-TUE-B130-1420",
       "school": "School of Engineering",
       "department": "EE",
@@ -1932,6 +1974,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2024, Section CE-A) has Computer Organization and Architecture in Room B-230 on Tuesday from 09:55 to 11:15."
+    },
+    {
+      "id": "FSE-TUE-B230-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "ICT Quiz  Sec",
+      "section": "C",
+      "instructor": "2026-11-24 13:45:00",
+      "room": "B-230",
+      "day": "Tuesday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section C) has ICT Quiz  Sec in Room B-230 on Tuesday from 12:50 to 14:10."
     },
     {
       "id": "FSE-TUE-Labs-0830",
@@ -2751,27 +2814,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has Physics for Engineers in Room B-019 on Wednesday from 09:55 to 11:15."
-    },
-    {
-      "id": "FSE-WED-B019-1125",
-      "school": "School of Engineering",
-      "department": "Unknown",
-      "degree": "BS",
-      "batch": "Unknown",
-      "semester": "Unknown",
-      "course_name": "Understanding of Holy Quran-II\nRetake Sessional II Exam",
-      "section": "Unknown",
-      "instructor": "2026-11-18 00:00:00",
-      "room": "B-019",
-      "day": "Wednesday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Understanding of Holy Quran-II\nRetake Sessional II Exam in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-B019-1250",
@@ -5720,6 +5762,26 @@
       "is_repeat": false,
       "is_cancelled": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Physics for Engr. in Room B-027 on Wednesday from 12:50 to 14:10."
+    },
+    {
+      "id": "FSE-WED-B019-1125",
+      "school": "School of Engineering",
+      "department": "EE",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "FSE Faculty Meeting",
+      "section": "Unknown",
+      "instructor": null,
+      "room": "B-019",
+      "day": "Wednesday",
+      "time_start": "11:25",
+      "time_end": "12:45",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "rag_summary": "BS EE (Batch Unknown, Section Unknown) has FSE Faculty Meeting in Room B-019 on Wednesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-WED-Room-1420",
