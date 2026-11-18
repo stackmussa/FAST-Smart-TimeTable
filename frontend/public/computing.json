@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T12:20:42.639732Z",
+  "last_updated": "2026-11-18T20:44:04.171284Z",
   "classes": [
     {
       "id": "FSC-MON-C301-0830-CSA",
@@ -16238,6 +16238,28 @@
       "rag_summary": "BS CS (Batch 2026, Section CS-H) has Islamic in Room C-303 on Thursday from 08:30 to 10:15."
     },
     {
+      "id": "FSC-THU-C303-1000-CSE",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Comp Arch",
+      "section": "CS-E",
+      "instructor": null,
+      "room": "C-303",
+      "day": "Thursday",
+      "time_start": "10:00",
+      "time_end": "11:20",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2024, Section CS-E) has Comp Arch in Room C-303 on Thursday from 10:00 to 11:20."
+    },
+    {
       "id": "FSC-THU-C303-1130-CSH",
       "school": "School of Computing",
       "department": "CS",
@@ -17300,7 +17322,7 @@
       "degree": "BS",
       "batch": "2024",
       "semester": "Unknown",
-      "course_name": "Comp Wrch",
+      "course_name": "Comp Arch",
       "section": "CS-E",
       "instructor": null,
       "room": "C-404",
@@ -17313,7 +17335,7 @@
       "is_cancelled": false,
       "is_elective": false,
       "status": "Scheduled",
-      "rag_summary": "BS CS (Batch 2024, Section CS-E) has Comp Wrch in Room C-404 on Thursday from 08:30 to 09:50."
+      "rag_summary": "BS CS (Batch 2024, Section CS-E) has Comp Arch in Room C-404 on Thursday from 08:30 to 09:50."
     },
     {
       "id": "FSC-THU-C404-1000-CSG",
@@ -20110,6 +20132,28 @@
       "rag_summary": "BS CS (Batch 2023, Section CS-B) has Gen AI in Room D-405 on Thursday from 13:00 to 14:20."
     },
     {
+      "id": "FSC-THU-D405-1430-CSG",
+      "school": "School of Computing",
+      "department": "CS",
+      "degree": "BS",
+      "batch": "2025",
+      "semester": "Unknown",
+      "course_name": "Data St Lab",
+      "section": "CS-G",
+      "instructor": null,
+      "room": "D-405",
+      "day": "Thursday",
+      "time_start": "14:30",
+      "time_end": "17:15",
+      "is_lab": true,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CS (Batch 2025, Section CS-G) has Data St Lab (Lab) in Room D-405 on Thursday from 14:30 to 17:15."
+    },
+    {
       "id": "FSC-THU-D406-0830-CSC",
       "school": "School of Computing",
       "department": "CS",
@@ -21688,10 +21732,10 @@
       "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS AI (Batch 2024, Section AI-A) has Comp Net Lab (Lab) in Room C-Rawal 4 (C-512) on Thursday from 11:30 to 14:20."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS AI (Batch 2024, Section AI-A) has Comp Net Lab (Lab) in Room C-Rawal 4 (C-512) on Thursday from 11:30 to 14:20."
     },
     {
       "id": "FSC-THU-CRawal 4 (C512)-1430-CYC",
@@ -22304,10 +22348,10 @@
       "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
-      "is_cancelled": false,
+      "is_cancelled": true,
       "is_elective": false,
-      "status": "Scheduled",
-      "rag_summary": "BS CY (Batch 2024, Section CY-B) has Web Prog in Room C-303 on Friday from 11:30 to 12:50."
+      "status": "Cancelled",
+      "rag_summary": "[CANCELLED] BS CY (Batch 2024, Section CY-B) has Web Prog in Room C-303 on Friday from 11:30 to 12:50."
     },
     {
       "id": "FSC-FRI-C304-0830-DSC",
@@ -22638,6 +22682,28 @@
       "is_elective": false,
       "status": "ResSch",
       "rag_summary": "[RESCHEDULED] BS CY (Batch 2024, Section CY-C) has DB Lab (Lab) in Room C-310 on Friday from 14:30 to 17:15."
+    },
+    {
+      "id": "FSC-FRI-C311-1300-CYB",
+      "school": "School of Computing",
+      "department": "CY",
+      "degree": "BS",
+      "batch": "2024",
+      "semester": "Unknown",
+      "course_name": "Web Prog",
+      "section": "CY-B",
+      "instructor": null,
+      "room": "C-311",
+      "day": "Friday",
+      "time_start": "13:00",
+      "time_end": "15:50",
+      "is_lab": false,
+      "is_rescheduled": true,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "status": "ResSch",
+      "rag_summary": "[RESCHEDULED] BS CY (Batch 2024, Section CY-B) has Web Prog in Room C-311 on Friday from 13:00 to 15:50."
     },
     {
       "id": "FSC-FRI-C401-1130-DSB",
