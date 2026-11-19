@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T10:12:42.877439Z",
+  "last_updated": "2026-11-19T19:02:19.612957Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -3801,27 +3801,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2026, Section EE-B) has Applications of ICT in Room B-028 on Thursday from 08:30 to 09:50."
-    },
-    {
-      "id": "FSE-THU-B028-1545",
-      "school": "School of Engineering",
-      "department": "CE",
-      "degree": "BS",
-      "batch": "2025",
-      "semester": "3rd",
-      "course_name": "Discrete Structures",
-      "section": "CE-A",
-      "instructor": "Dr. Mukhtar Ullah (Resch)  Nov 19, 2026",
-      "room": "B-028",
-      "day": "Thursday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS CE (Batch 2025, Section CE-A) has Discrete Structures in Room B-028 on Thursday from 15:45 to 17:05."
     },
     {
       "id": "FSE-THU-B030-0830",
