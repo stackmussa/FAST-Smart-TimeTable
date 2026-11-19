@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T12:20:49.107542Z",
+  "last_updated": "2026-11-19T10:12:42.877439Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1098,21 +1098,21 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Engineering Drawing",
-      "section": "EE-D",
-      "instructor": "Engr. Moiza Eman",
+      "batch": "2025",
+      "semester": "3rd",
+      "course_name": "Digital Logic Design Lab",
+      "section": "EE-A",
+      "instructor": "Engr. Abdur Rehman",
       "room": "Koh",
       "day": "Monday",
       "time_start": "14:20",
       "time_end": "15:40",
-      "is_lab": false,
+      "is_lab": true,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Engineering Drawing in Room Koh on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Digital Logic Design Lab (Lab) in Room Koh on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-Phy-1125",
@@ -1203,21 +1203,21 @@
       "school": "School of Engineering",
       "department": "EE",
       "degree": "BS",
-      "batch": "2025",
-      "semester": "3rd",
-      "course_name": "Digital Logic Design Lab",
-      "section": "EE-A",
-      "instructor": "Engr. Abdur Rehman",
+      "batch": "2026",
+      "semester": "1st",
+      "course_name": "Engineering Drawing",
+      "section": "EE-D",
+      "instructor": "Engr. Moiza Eman",
       "room": "Comp-III",
       "day": "Monday",
       "time_start": "14:20",
       "time_end": "15:40",
-      "is_lab": true,
+      "is_lab": false,
       "is_rescheduled": false,
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2025, Section EE-A) has Digital Logic Design Lab (Lab) in Room Comp-III on Monday from 14:20 to 15:40."
+      "rag_summary": "BS EE (Batch 2026, Section EE-D) has Engineering Drawing in Room Comp-III on Monday from 14:20 to 15:40."
     },
     {
       "id": "FSE-MON-Circuit \nLab-0830",
@@ -2209,12 +2209,12 @@
     {
       "id": "FSE-TUE-Koh-1125",
       "school": "School of Engineering",
-      "department": "EE",
+      "department": "CE",
       "degree": "BS",
       "batch": "2024",
       "semester": "5th",
-      "course_name": "Analog & Digital Communications Lab",
-      "section": "EE-B",
+      "course_name": "Digital Signal Processing Lab",
+      "section": "CE-B",
       "instructor": "Engr. Abdur Rehman",
       "room": "Koh",
       "day": "Tuesday",
@@ -2225,7 +2225,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analog & Digital Communications Lab (Lab) in Room Koh on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Digital Signal Processing Lab (Lab) in Room Koh on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-Koh-1420",
@@ -2251,12 +2251,12 @@
     {
       "id": "FSE-TUE-CompI-1125",
       "school": "School of Engineering",
-      "department": "CE",
+      "department": "EE",
       "degree": "BS",
       "batch": "2024",
       "semester": "5th",
-      "course_name": "Digital Signal Processing Lab",
-      "section": "CE-B",
+      "course_name": "Analog & Digital Communications Lab",
+      "section": "EE-B",
       "instructor": "Engr. Abu Bakar",
       "room": "Comp-I",
       "day": "Tuesday",
@@ -2267,7 +2267,7 @@
       "is_repeat": false,
       "is_cancelled": false,
       "is_elective": false,
-      "rag_summary": "BS CE (Batch 2024, Section CE-B) has Digital Signal Processing Lab (Lab) in Room Comp-I on Tuesday from 11:25 to 12:45."
+      "rag_summary": "BS EE (Batch 2024, Section EE-B) has Analog & Digital Communications Lab (Lab) in Room Comp-I on Tuesday from 11:25 to 12:45."
     },
     {
       "id": "FSE-TUE-CompI-1420",
@@ -2646,27 +2646,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Communication & Networks in Room B-028 on Wednesday from 14:20 to 15:40."
-    },
-    {
-      "id": "FSE-WED-B028-1545",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2024",
-      "semester": "5th",
-      "course_name": "Data Communication & Networks",
-      "section": "EE-A",
-      "instructor": "Dr. Aamer Hafeez (Resch) Nov 18, 2026",
-      "room": "B-028",
-      "day": "Wednesday",
-      "time_start": "15:45",
-      "time_end": "17:05",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2024, Section EE-A) has Data Communication & Networks in Room B-028 on Wednesday from 15:45 to 17:05."
     },
     {
       "id": "FSE-WED-B030-0830",
@@ -3908,6 +3887,27 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-030 on Thursday from 11:25 to 12:45."
     },
     {
+      "id": "FSE-THU-B030-1250",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "English Language Skills CE-A, EE-ABC (Combine Prsentations)",
+      "section": "Unknown",
+      "instructor": "Ms. Hajra Khalid         (Venue: D-Block Main Auditoriam)            Nov 26, 2026",
+      "room": "B-030",
+      "day": "Thursday",
+      "time_start": "12:50",
+      "time_end": "14:10",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has English Language Skills CE-A, EE-ABC (Combine Prsentations) in Room B-030 on Thursday from 12:50 to 14:10."
+    },
+    {
       "id": "FSE-THU-B030-1545",
       "school": "School of Engineering",
       "department": "Unknown",
@@ -4200,27 +4200,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS CE (Batch 2026, Section CE-A) has English Language Skills in Room B-119 on Thursday from 12:50 to 14:10."
-    },
-    {
-      "id": "FSE-THU-B119-1420",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "English Language Skills",
-      "section": "EE-C",
-      "instructor": "Ms. Hajra Khalid (Resc)  Nov 19, 2026",
-      "room": "B-119",
-      "day": "Thursday",
-      "time_start": "14:20",
-      "time_end": "15:40",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-C) has English Language Skills in Room B-119 on Thursday from 14:20 to 15:40."
     },
     {
       "id": "FSE-THU-B119-1545",
