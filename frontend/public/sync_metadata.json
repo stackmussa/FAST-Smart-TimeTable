@@ -1,5 +1,5 @@
 {
-  "last_updated": 1795195023,
+  "last_updated": 1795216418,
   "changed_schools": [
     "computing"
   ],
@@ -8,35 +8,215 @@
   ],
   "status_changes": [
     {
-      "id": "FSC-SAT-C305-1000-CYA",
-      "course": "Web Prog",
-      "day": "Saturday",
-      "section": "CY-A",
+      "id": "FSC-THU-IT Lab 4GPU (D203)-1430-AIC",
+      "course": "Data St Lab",
+      "day": "Thursday",
+      "section": "AI-C",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-TUE-D501-1555-CYC",
-      "course": "Ideology of Pak",
+      "id": "FSC-THU-C110-1000-CSE",
+      "course": "App HCI",
+      "day": "Thursday",
+      "section": "CS-E",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C302-1130-CSG",
+      "course": "Islamic",
+      "day": "Saturday",
+      "section": "CS-G",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-MON-D505-1115-CSA",
+      "course": "Seerah",
+      "day": "Monday",
+      "section": "CS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C307-1430-DSB",
+      "course": "Data Ware & BI Lab",
+      "day": "Saturday",
+      "section": "DS-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C304-1430-AIC",
+      "course": "UHQ-II",
+      "day": "Saturday",
+      "section": "AI-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C307-1130-DSA",
+      "course": "Data Ware & BI Lab",
+      "day": "Saturday",
+      "section": "DS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C309-1130-CSH",
+      "course": "Seerah",
+      "day": "Saturday",
+      "section": "CS-H",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C310-1000-DSA",
+      "course": "DAV",
+      "day": "Saturday",
+      "section": "DS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C310-1130-DSB",
+      "course": "DAV",
+      "day": "Saturday",
+      "section": "DS-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C308-1000-CSA",
+      "course": "Seerah",
+      "day": "Saturday",
+      "section": "CS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C307-0930-DSB",
+      "course": "Seerah",
+      "day": "Saturday",
+      "section": "DS-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C303-1430-AIA",
+      "course": "AI Prod Dev",
+      "day": "Saturday",
+      "section": "AI-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-D316-1555-DSB",
+      "course": "DAV",
+      "day": "Thursday",
+      "section": "DS-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C309-1300-CSH",
+      "course": "Seerah",
+      "day": "Saturday",
+      "section": "CS-H",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-D504-1115-CSA",
+      "course": "Seerah",
+      "day": "Wednesday",
+      "section": "CS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C308-1130-CSF",
+      "course": "Algo",
+      "day": "Saturday",
+      "section": "CS-F",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-SAT-C308-0830-CSA",
+      "course": "Seerah",
+      "day": "Saturday",
+      "section": "CS-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D315-1430-DSB",
+      "course": "DAV",
       "day": "Tuesday",
-      "section": "CY-C",
-      "field": "is_rescheduled",
-      "old": null,
+      "section": "DS-B",
+      "field": "is_cancelled",
+      "old": false,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-SAT-C305-1130-CYB",
+      "id": "FSC-FRI-C303-1130-CYB",
       "course": "Web Prog",
-      "day": "Saturday",
+      "day": "Friday",
       "section": "CY-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-FRI-IT Lab 2 (D211)-1000-SEE",
+      "course": "IICT Lab",
+      "day": "Friday",
+      "section": "SE-E",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-20T17:17:03.747894Z"
+  "last_checked": "2026-11-20T23:13:38.009566Z"
 }
