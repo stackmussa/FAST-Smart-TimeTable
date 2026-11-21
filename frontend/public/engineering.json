@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T08:38:51.766057Z",
+  "last_updated": "2026-11-21T12:13:14.649453Z",
   "classes": [
     {
       "id": "FSE-MON-B028-0830",
@@ -1575,6 +1575,27 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS EE (Batch 2025, Section EE-B) has Electrical Network Analysis in Room B-020 on Tuesday from 12:50 to 14:10."
+    },
+    {
+      "id": "FSE-TUE-B020-1420",
+      "school": "School of Engineering",
+      "department": "Unknown",
+      "degree": "BS",
+      "batch": "Unknown",
+      "semester": "Unknown",
+      "course_name": "Retake Sessional-2  OODS",
+      "section": "Unknown",
+      "instructor": "2026-11-24 00:00:00",
+      "room": "B-020",
+      "day": "Tuesday",
+      "time_start": "14:20",
+      "time_end": "15:40",
+      "is_lab": false,
+      "is_rescheduled": false,
+      "is_repeat": false,
+      "is_cancelled": false,
+      "is_elective": false,
+      "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has Retake Sessional-2  OODS in Room B-020 on Tuesday from 14:20 to 15:40."
     },
     {
       "id": "FSE-TUE-B020-1545",
@@ -5126,27 +5147,6 @@
       "rag_summary": "BS EE (Batch 2026, Section EE-A) has Applications of ICT in Room B-027 on Friday from 08:30 to 09:50."
     },
     {
-      "id": "FSE-FRI-B028-1125",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2026",
-      "semester": "1st",
-      "course_name": "Physics for Engineers",
-      "section": "EE-B",
-      "instructor": "Dr. Mukhtar Ullah (Resch)  Nov 20, 2026",
-      "room": "B-028",
-      "day": "Friday",
-      "time_start": "11:25",
-      "time_end": "12:45",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2026, Section EE-B) has Physics for Engineers in Room B-028 on Friday from 11:25 to 12:45."
-    },
-    {
       "id": "FSE-FRI-B127-0830",
       "school": "School of Engineering",
       "department": "Unknown",
@@ -5323,7 +5323,7 @@
       "semester": "Unknown",
       "course_name": "09:55 - 11:15",
       "section": "Unknown",
-      "instructor": "Applied Machine Learning Lab A",
+      "instructor": null,
       "room": "Labs",
       "day": "Friday",
       "time_start": "09:55",
@@ -5355,27 +5355,6 @@
       "is_cancelled": false,
       "is_elective": false,
       "rag_summary": "BS Unknown (Batch Unknown, Section Unknown) has 11:25 - 12:45 (Lab) in Room Labs on Friday from 11:25 to 12:45."
-    },
-    {
-      "id": "FSE-FRI-Koh-0955",
-      "school": "School of Engineering",
-      "department": "EE",
-      "degree": "BS",
-      "batch": "2023",
-      "semester": "7th",
-      "course_name": "Applied Machine Learning",
-      "section": "EE-A",
-      "instructor": "Engr. Fasih Ahmed Janjua    (Reschedule)         Nov 20, 2026",
-      "room": "Koh",
-      "day": "Friday",
-      "time_start": "09:55",
-      "time_end": "11:15",
-      "is_lab": false,
-      "is_rescheduled": false,
-      "is_repeat": false,
-      "is_cancelled": false,
-      "is_elective": false,
-      "rag_summary": "BS EE (Batch 2023, Section EE-A) has Applied Machine Learning in Room Koh on Friday from 09:55 to 11:15."
     },
     {
       "id": "FSE-FRI-Poth-0955",
