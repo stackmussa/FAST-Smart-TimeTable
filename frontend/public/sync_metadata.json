@@ -1,147 +1,35 @@
 {
-  "last_updated": 1795423184,
+  "last_updated": 1795466028,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-THU-C307-1555-CSB",
-      "course": "PDC",
-      "day": "Thursday",
-      "section": "CS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C307-1555-CSB",
-      "course": "PDC",
-      "day": "Thursday",
-      "section": "CS-B",
-      "field": "is_repeat",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C310-1000-SEB",
-      "course": "Intro to SE",
-      "day": "Friday",
-      "section": "SE-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-IT Lab 2 (D211)-1430-DSB",
-      "course": "PF Lab",
-      "day": "Friday",
-      "section": "DS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C602-1000-CSE",
-      "course": "Comp Arch",
-      "day": "Tuesday",
-      "section": "CS-E",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-C302-1130-CSG",
-      "course": "Func Eng",
-      "day": "Thursday",
-      "section": "CS-G",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-C301-1500-CSF2",
-      "course": "Func Eng Lab - 2",
-      "day": "Tuesday",
-      "section": "CS-F2",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-THU-D312-1500-DSA2",
-      "course": "Func Eng Lab - 2",
-      "day": "Thursday",
-      "section": "DS-A2",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-D306-1430-AIB",
-      "course": "PF Lab",
-      "day": "Wednesday",
-      "section": "AI-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-TUE-D402-0830-DSB",
-      "course": "LA",
-      "day": "Tuesday",
-      "section": "DS-B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D301-0830-SED1",
+      "id": "FSC-WED-C302-1430-CSB1",
       "course": "Func Eng Lab - 1",
-      "day": "Friday",
-      "section": "SE-D1",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-C310-0830-SEA",
-      "course": "Intro to SE",
-      "day": "Friday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-WED-C607-1430-SEC",
-      "course": "Data St Lab",
       "day": "Wednesday",
-      "section": "SE-C",
+      "section": "CS-B1",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-TUE-D402-1130-DSA",
-      "course": "LA",
+      "id": "FSC-TUE-D402-1000-CSC",
+      "course": "Comp Net",
+      "day": "Tuesday",
+      "section": "CS-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D314-1430-DSA",
+      "course": "Seerah",
       "day": "Tuesday",
       "section": "DS-A",
       "field": "is_rescheduled",
@@ -150,45 +38,85 @@
       "school": "computing"
     },
     {
-      "id": "FSC-WED-C603-1430-SEE",
-      "course": "IICT",
+      "id": "FSC-TUE-D505-0830-CYB",
+      "course": "Cloud Comp",
+      "day": "Tuesday",
+      "section": "CY-B",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-WED-C311-1130-CSF",
+      "course": "Comp Net",
       "day": "Wednesday",
-      "section": "SE-E",
+      "section": "CS-F",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-D301-1300-CSH1",
-      "course": "Func Eng Lab - 1",
-      "day": "Friday",
-      "section": "CS-H1",
+      "id": "FSC-WED-C401-0830-CSJ",
+      "course": "Seerah",
+      "day": "Wednesday",
+      "section": "CS-J",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-MON-C601-1430-SEE",
-      "course": "IICT",
+      "id": "FSC-MON-Cyber (D514)-1430-AIA",
+      "course": "Comp Net Lab",
       "day": "Monday",
-      "section": "SE-E",
-      "field": "is_cancelled",
-      "old": false,
+      "section": "AI-A",
+      "field": "is_rescheduled",
+      "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-MON-Margala 4 (C212-1430-SEC",
-      "course": "Data St Lab",
-      "day": "Monday",
+      "id": "FSC-THU-C605-1430-SEC",
+      "course": "AI Lab",
+      "day": "Thursday",
       "section": "SE-C",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-THU-C408-1130-CSD",
+      "course": "Comp Net",
+      "day": "Thursday",
+      "section": "CS-D",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D505-1300-CYA",
+      "course": "Cloud Comp",
+      "day": "Tuesday",
+      "section": "CY-A",
+      "field": "is_rescheduled",
+      "old": null,
+      "new": true,
+      "school": "computing"
+    },
+    {
+      "id": "FSC-TUE-D302-0830-AIC",
+      "course": "Data St",
+      "day": "Tuesday",
+      "section": "AI-C",
       "field": "is_cancelled",
       "old": false,
       "new": true,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-23T08:39:44.317374Z"
+  "last_checked": "2026-11-23T20:33:48.077660Z"
 }
