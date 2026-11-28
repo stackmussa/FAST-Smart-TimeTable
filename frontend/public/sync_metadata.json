@@ -1,64 +1,32 @@
 {
-  "last_updated": 1795722575,
+  "last_updated": 1795863057,
   "changed_schools": [
-    "computing",
-    "engineering"
+    "computing"
   ],
   "changed_files": [
-    "Computing",
-    "Engineering"
+    "Computing"
   ],
   "status_changes": [
     {
-      "id": "FSC-SAT-C305-1130-CYA&B",
-      "course": "Web Prog",
-      "day": "Saturday",
-      "section": "CY-A&B",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-FRI-D304-1300-SEA",
-      "course": "S/w Const",
-      "day": "Friday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-MON-C301-1130-CSB",
-      "course": "Calculus",
+      "id": "FSC-MON-D502-1000-CYD2",
+      "course": "Func Eng Lab - 2",
       "day": "Monday",
-      "section": "CS-B",
+      "section": "CY-D2",
       "field": "is_rescheduled",
       "old": null,
       "new": true,
       "school": "computing"
     },
     {
-      "id": "FSC-FRI-D316-0830-AIA",
-      "course": "Comp Net Lab",
-      "day": "Friday",
-      "section": "AI-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
-      "school": "computing"
-    },
-    {
-      "id": "FSC-SAT-C305-1000-SEA",
-      "course": "S/w Const",
-      "day": "Saturday",
-      "section": "SE-A",
-      "field": "is_rescheduled",
-      "old": null,
-      "new": true,
+      "id": "FSC-THU-D304-1300-AIC",
+      "course": "Prog for AI",
+      "day": "Thursday",
+      "section": "AI-C",
+      "field": "is_cancelled",
+      "old": true,
+      "new": false,
       "school": "computing"
     }
   ],
-  "last_checked": "2026-11-26T19:49:35.557607Z"
+  "last_checked": "2026-11-28T10:50:57.980984Z"
 }
